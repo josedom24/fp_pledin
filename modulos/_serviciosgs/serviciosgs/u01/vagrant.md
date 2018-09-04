@@ -88,7 +88,7 @@ usuario@maquina:~$ vagrant box list
     2. ¿Qué usuario tiene creado por defecto el sistema?¿Cómo se ejecutan instrucciones de superusuario?
     3. ¿Cuantas tarjetas de red tiene?¿Para qué sirve la eth0?
     4. Investiga el funcionamiento de la instrucción ``vagrant ssh``. ¿Por que interfaz se conecta? ¿Qué certificado se utiliza para acceder?
-{: .notice--warning}
+    {: .notice--warning}
 
 * **Práctica 4: Creación de varias máquinas virtuales**
 
