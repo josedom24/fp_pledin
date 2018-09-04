@@ -1,5 +1,6 @@
 ---
 title: Introducción a los servicios en red
+permalink: /serviciosgs/u01/index.html
 ---
 
 En este primer apartado vamos a estudiar los siguientes apartados:
