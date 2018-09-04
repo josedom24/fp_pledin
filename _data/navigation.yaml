@@ -1,0 +1,12 @@
+main:
+  - title: "Inicio"
+    url: https://www.josedomingo.org
+  - title: "Blog"
+    url: https://www.josedomingo.org/pledin/blog
+  - title: "Plataforma"
+    url: https://plataforma.josedomingo.org
+  - title: "Módulos"
+    url: http://fp2.josedomingo.org
+  - title: "Presentación"
+    url: https://www.josedomingo.org/pledin/about/
+
