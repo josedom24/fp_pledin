@@ -1,0 +1,79 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+@charset "utf-8";
+
+$monospace  : "Liberation Mono", Consolas, Monaco, "Lucida Console", monospace;
+$text-color: #24292e;
+
+$code-background-color-dark: #fafafa;
+$code-background-color: #fafafa;
+$muted-text-color: #8e8b82 !default;
+$primary-color: #e2cdcd !default;
+$border-color: #837b6b !default;
+$footer-background-color: #24292e !default;
+
+$link-color: #0366d6;
+$link-color-hover: #0272f1;
+$link-color-visited: #4d96eb;
+$masthead-link-color: $primary-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: $primary-color !default;
+
+$base00: #f6f8fa;
+$base01: #e0e0e0;
+$base02: #d0d0d0;
+$base03: #b0b0b0;
+$base04: #000000;
+$base05: #101010;
+$base06: #151515;
+$base07: #202020;
+$base08: #ff0086;
+$base09: #fd8900;
+$base0a: #aba800;
+$base0b: #00c918;
+$base0c: #1faaaa;
+$base0d: #3777e6;
+$base0e: #ad00a1;
+$base0f: #cc6633;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+html {
+    font-size: 12px; // originally 16px
+    @include breakpoint($medium) {
+        font-size: 14px; // originally 18px
+    }
+
+    @include breakpoint($large) {
+        font-size: 16px; // originally 20px
+    }
+
+        @include breakpoint($x-large) {
+        font-size: 18px; // originally 22px
+    }
+}
+
+a.site-title
+{
+    font-size: 2.2em;
+}
+
+div.masthead 
+{
+    background-color: #24292e;
+    color: #8e8b82;
+}
+nav#site-nav
+{
+    background-color: #24292e;
+    color: #8e8b82;
+}
+.archive__item-teaser img {
+    width: auto;
+}
+
