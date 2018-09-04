@@ -13,20 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: PLEDIN 3.0
+email: josedom24@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Plataforma Educativa Informática. Página personal de José Domingo Muñoz
+url: "http://fp2.josedomingo.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: pledin_jd
+github_username:  josedom24
+paginate: 0
+
+timezone: Europe/Madrid
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
@@ -41,3 +41,23 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+locale: "es-ES"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+name: "José Domingo Muñoz"
+search: true
+repository: "josedom24/plataforma_pledin"
+
+twitter:
+  username: "pledin_jd"
+
+author:
+  name   : "José Domingo Muñoz"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Plataforma Educativa Informática"
+  email  : "josedom24@gmail.com"
+  uri    : "https://www.josedomingo.org"
+  github : "josedom24"
+  gitlab : "josedom24"
+  twitter : "pledin_jd"
+  location: "Utrera, Sevilla,ES" # null (default), "absolute or relative url to link to author home"
