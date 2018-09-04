@@ -3,12 +3,9 @@ title: Python para sysadmins
 ---
 
 Para automatizar muchas de las tareas que realizan los administrador de sistemas es necesario crear scripts. Éstos se pueden crear en distintos lenguajes de programación, por ejemplo bash. En este apartado vamos a introducir las posibilidades que nos ofrece python para crear script de administración.
-
-```eval_rst
-.. note:: 
-
-	Si quieres más información puedes consultar la página  `Python for system administrators <http://www.ibm.com/developerworks/aix/library/au-python>`_.
-```
+ 
+Si quieres más información puedes consultar la página  [Python for system administrators](http://www.ibm.com/developerworks/aix/library/au-python).
+{: .notice--info}
 
 ## Resumen de instrucciones
 
