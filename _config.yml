@@ -62,10 +62,10 @@ author:
   twitter : "pledin_jd"
   location: "Utrera, Sevilla,ES" # null (default), "absolute or relative url to link to author home"
 
-  collections:
-    serviciosgs:
-      output: true
-      permalink: :path
+collections:
+  serviciosgs:
+    output: true
+    permalink: /:path
 
 collections_dir: modulos
 
