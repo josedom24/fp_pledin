@@ -65,7 +65,6 @@ author:
   collections:
   serviciosgs:
     output: true
-    permalink: :path
 
 collections_dir: modulos
 defaults:
