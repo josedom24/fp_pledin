@@ -61,3 +61,23 @@ author:
   gitlab : "josedom24"
   twitter : "pledin_jd"
   location: "Utrera, Sevilla,ES" # null (default), "absolute or relative url to link to author home"
+
+  collections:
+  serviciosgs:
+    output: true
+    permalink: /modulos/:path
+
+collections_dir: modulos
+defaults:
+  - scope:
+      path: ""
+      type: serviciosgs
+    values:
+      layout: single
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "serviciosgs"
