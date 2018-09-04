@@ -14,7 +14,7 @@ serviciosgs:
   - title: Servicios de Red e Internet
     children:
       - title: Introducción a los servicios en red
-        url: #
+        url: /serviciosgs/u01
       - title: Servidor DHCP
         url: #
       - title: Servidor Web
