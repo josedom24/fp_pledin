@@ -46,7 +46,7 @@ locale: "es-ES"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 name: "José Domingo Muñoz"
 search: true
-repository: "josedom24/plataforma_pledin"
+repository: "josedom24/fp_pledin"
 
 twitter:
   username: "pledin_jd"
@@ -65,7 +65,7 @@ author:
   collections:
   serviciosgs:
     output: true
-    permalink: /modulos/:path
+    permalink: /:path
 
 collections_dir: modulos
 defaults:
