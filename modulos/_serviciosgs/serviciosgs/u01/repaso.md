@@ -1,5 +1,6 @@
 ---
 title: Cuestionario de repaso
+permalink: /serviciosgs/u01/repaso.html
 ---
 
 ## Repaso TCP/IP
