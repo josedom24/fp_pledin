@@ -12,14 +12,8 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 ## Índice
 
 * [PDF] Introducción a los servicios de red
-* Cuestionario de repaso
-    * Repaso TCP/IP
-    * Repaso DNS
-* Python para sysadmins
-    * Resumen de instrucciones
-    * Ejercicios
-* Introducción a vagrant
-    * Práctica con vagrant
-    * Enlaces interesantes
-
+* [Cuestionario de repaso](repaso.html)
+* [Python para sysadmins](python.html)
+* [Introducción a vagrant](vagrant.html)
+    
    
