@@ -1,0 +1,6 @@
+_site
+.sass-cache
+.jekyll-metadata
+post.sh
+__pycache__
+update.sh
