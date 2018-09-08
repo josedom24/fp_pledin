@@ -72,15 +72,14 @@ Sólo falta configurar los clientes para que tomen la configuración de red de f
 En Windows la instrucción ``ipconfig /release`` libera la concesión, la instrucción ``ipconfig /renew`` la renueva. En linux el comando para liberar la concesión es ``dhclient -r`` y el que nos permite renovarla será ``dhclient``.
 {: .notice--info}
 
-	**Ejercicios**
-
-	1. Configura el servidor dhcp con las siguientes características
-	 * Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110 
-	 * Máscara de red: 255.255.255.0
-	 * Duración de la concesión: 1 hora
-	 * Puerta de enlace: 192.168.0.1
-	 * Servidores DNS: 8.8.8.8, 8.8.4.4
-	2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. Visualiza el fichero del servidor donde se guarda las configuraciones asignadas.
+**Ejercicios**
+1. Configura el servidor dhcp con las siguientes características
+	* Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110 
+	* Máscara de red: 255.255.255.0
+	* Duración de la concesión: 1 hora
+	* Puerta de enlace: 192.168.0.1
+	* Servidores DNS: 8.8.8.8, 8.8.4.4
+2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. Visualiza el fichero del servidor donde se guarda las configuraciones asignadas.
 {: .notice--warning}
 
 ## Creando reservas
