@@ -14,14 +14,10 @@ Para instalar nuestro servidor dhcp ejecutamos:
 apt-get install isc-dhcp-server
 ```
 
-```eval_rst
-.. note ::
-
-	Cuando instalamos el servidor por primera se produce un error, ya que no está configurado. Puedes ver los errores producidos por el servidor en el fichero /var/log/syslog
-```
+Cuando instalamos el servidor por primera se produce un error, ya que no está configurado. Puedes ver los errores producidos por el servidor en el fichero /var/log/syslog
+{: .notice--info}
 
 ## Configuración del servidor isc-dhcp-server
-
 
 Lo primero que tenemos que hacer es configurar el interfaz de red por el que va a trabajar el servidor dhcp, para ello editamos el siguiente fichero `/etc/default/isc-dhcp-server`.
 
@@ -73,12 +69,8 @@ service isc-dhcp-server restart
 
 Sólo falta configurar los clientes para que tomen la configuración de red de forma dinámica.
 
-```eval_rst
-.. note::
-
-	En Windows la instrucción ``ipconfig /release`` libera la concesión, la instrucción ``ipconfig /renew`` la renueva. En linux el comando para liberar la concesión es ``dhclient -r`` y el que nos permite renovarla será ``dhclient``.
-
-.. warning::
+En Windows la instrucción ``ipconfig /release`` libera la concesión, la instrucción ``ipconfig /renew`` la renueva. En linux el comando para liberar la concesión es ``dhclient -r`` y el que nos permite renovarla será ``dhclient``.
+{: .notice--info}
 
 	**Ejercicios**
 
@@ -89,11 +81,9 @@ Sólo falta configurar los clientes para que tomen la configuración de red de f
 	 * Puerta de enlace: 192.168.0.1
 	 * Servidores DNS: 8.8.8.8, 8.8.4.4
 	2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. Visualiza el fichero del servidor donde se guarda las configuraciones asignadas.
-
-```
+{: .notice--warning}
 
 ## Creando reservas
-
 
 Veamos la sección host, en ella configuramos un host para reservar una dirección IP para él.
 
@@ -103,15 +93,11 @@ En una sección host debemos poner el nombre que identifica al host y los siguie
 * ``fixed-address``: La dirección IP que le vamos a asignar. 
 * Podemos usar también las opciones ya explicadas en la sección principal.
 
-```eval_rst
-.. warning::
-
 	**Ejercicios**	
 
 	1. Crea en el servidor dhcp una sección HOST para conceder a un cliente una dirección IP determinada (por ejemplo la 192.168.0.105)
 	2. Obtén una nueva dirección IP en el cliente y comprueba que es la que has asignado por medio de la sección host.
 
-.. warning::
 
 	**Realiza las siguientes comprobaciones**
 
@@ -119,5 +105,4 @@ En una sección host debemos poner el nombre que identifica al host y los siguie
 
 	1. Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
 	2. Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
-
-```
+{: .notice--warning}
