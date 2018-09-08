@@ -83,6 +83,7 @@ En Windows la instrucción ``ipconfig /release`` libera la concesión, la instru
 	* Servidores DNS: 8.8.8.8, 8.8.4.4
 2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. Visualiza el fichero del servidor donde se guarda las configuraciones asignadas.
 </div>
+{::options parse_block_html="true" /}
 {: .notice--warning}
 
 ## Creando reservas
