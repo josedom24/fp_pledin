@@ -72,8 +72,7 @@ Sólo falta configurar los clientes para que tomen la configuración de red de f
 En Windows la instrucción ``ipconfig /release`` libera la concesión, la instrucción ``ipconfig /renew`` la renueva. En linux el comando para liberar la concesión es ``dhclient -r`` y el que nos permite renovarla será ``dhclient``.
 {: .notice--info}
 
-{:bloque: .notice--warning}
-
+<div>
 **Ejercicios**
 
 1. Configura el servidor dhcp con las siguientes características
@@ -83,7 +82,8 @@ En Windows la instrucción ``ipconfig /release`` libera la concesión, la instru
 	* Puerta de enlace: 192.168.0.1
 	* Servidores DNS: 8.8.8.8, 8.8.4.4
 2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. Visualiza el fichero del servidor donde se guarda las configuraciones asignadas.
-{: bloque}
+</div>
+{: .notice--warning}
 
 ## Creando reservas
 
@@ -102,7 +102,7 @@ En una sección host debemos poner el nombre que identifica al host y los siguie
 
 **Realiza las siguientes comprobaciones**
 
-Vamos a comprobar que ocurre con la configuración de los clientes en determinadas circunstacia, para ello vamos a poner un tiempo de conseción muy bajo.
+Vamos a comprobar que ocurre con la configuración de los clientes en determinadas circunstancias, para ello vamos a poner un tiempo de concesión muy bajo.
 
 1. Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
 2. Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
