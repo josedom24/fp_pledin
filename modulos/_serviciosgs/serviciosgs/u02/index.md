@@ -34,15 +34,6 @@ Conocer los conceptos básicos sobre configuración dinámica con IPv6:
 
 **Indice**
 
-*```eval_rst
-.. toctree::
-
-   enlaces
-   dhcp
-   cuestionario
-   ejercicio1
-   
-```*
 
 * [Enlaces interesantes](enlaces.html)
 * [¿Cómo funciona el servidor DHCP?](dhcp.html)
