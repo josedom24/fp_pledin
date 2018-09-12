@@ -11,7 +11,7 @@ El objetivo principal de vagrant es aproximar los entornos de desarrollo y produ
 
 ## Práctica con vagrant
 
-* **Práctica 1: Instalación de vagrant**
+### Práctica 1: Instalación de vagrant
 
 Instalar virtualbox y vagrant:
 
@@ -21,7 +21,7 @@ root@maquina:~$ wget https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_
 root@maquina:~$ dpkg -i vagrant_2.0.0_x86_64.deb
 ```
 
-* **Práctica 2: Instalación de un "box" debian/stretch**
+### Práctica 2: Instalación de un "box" debian/stretch
 
 Nos descargamos desde el repositorio oficial el box de Debian stretch de 64 bits, esto lo hacemos un usuario sin privilegios:
 
@@ -45,7 +45,7 @@ Puedo ver la lista de boxes que tengo instalada en mi usuario ejecutando la sigu
 usuario@maquina:~$ vagrant box list
 ```
 
-* **Práctica 3: Creación de una máquina virtual**
+### Práctica 3: Creación de una máquina virtual
 
 1. Nos creamos un directorio y dentro vamos a crear el fichero Vagrantfile, podemos crear uno vacío con la instrucción:
         
@@ -91,7 +91,7 @@ usuario@maquina:~$ vagrant box list
     4. Investiga el funcionamiento de la instrucción ``vagrant ssh``. ¿Por que interfaz se conecta? ¿Qué certificado se utiliza para acceder?
     {: .notice--warning}
 
-* **Práctica 4: Creación de varias máquinas virtuales**
+### Práctica 4: Creación de varias máquinas virtuales
 
 En esta ocasión vamos a crear otro directorio y dentro un fichero Vagrantfile con el siguiente contenido:
 
@@ -121,7 +121,7 @@ nodo1 tendrá una red interna con ip 10.1.1.101, y nodo2 tendrá una interfaz de
 Si accedemos por ssh a nodo1 podremos hacer ping a nodo2.
 
 
-* **Práctica 5: Añadir un dico duro adicional y modificar la RAM a una máquina virtual**
+### Práctica 5: Añadir un dico duro adicional y modificar la RAM a una máquina virtual
 
 Por últimos vamos a crear un nuevo Vagranfile en un nuevo directorio con este contenido:
 
