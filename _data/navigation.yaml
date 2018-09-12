@@ -13,24 +13,26 @@ main:
 serviciosgs:
   - title: Servicios de Red e Internet
     children:
+      - title: "Inicio"
+        url: /serviciosgs/
       - title: Introducción a los servicios en red
         url: /serviciosgs/u01
-      - title: Servidor DHCP
-        url: #
-      - title: Servidor Web
-        url: #
-      - title: Servidor DNS
-        url: #
-      - title: Servidor FTP
-        url: #
-      - title: Gestión de peticiones y rendimiento en servidores Web
-        url: #
-      - title: Servidor de correo electrónico
-        url: #
-      - title: Servidor proxy/cache Squid
-        url: #
-      - title: Proxy inverso y Balanceador de carga
-        url: #
-      - title: Prácticas
-        url: #
+      #- title: Servidor DHCP
+      #  url: #
+      #- title: Servidor Web
+      #  url: #
+      #- title: Servidor DNS
+      #  url: #
+      #- title: Servidor FTP
+      #  url: #
+      #- title: Gestión de peticiones y rendimiento en servidores Web
+      #  url: #
+      #- title: Servidor de correo electrónico
+      #  url: #
+      #- title: Servidor proxy/cache Squid
+      #  url: #
+      #- title: Proxy inverso y Balanceador de carga
+      #  url: #
+      #- title: Prácticas
+      #  url: #
 
