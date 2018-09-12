@@ -10,6 +10,8 @@ classes: wide
 
 ### 1º ASIR
 
+* [Lenguajes de marcas](lmgs)
+
 ### 2º ASIR
 
 * [Servicios de red e internet](serviciosgs)
