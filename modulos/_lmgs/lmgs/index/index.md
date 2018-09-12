@@ -1,6 +1,6 @@
 ---
 title: "Lenguajes de Marcas"
-permalink: /iawgs/index.html
+permalink: /lmgs/index.html
 ---
 
 
