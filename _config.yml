@@ -69,6 +69,9 @@ collections:
   iawgs:
     output: true
     permalink: /:path
+  lmgs:
+    output: true
+    permalink: /:path
 
 collections_dir: modulos
 
@@ -97,3 +100,15 @@ defaults:
       comments: false
       sidebar:
         nav: "iawgs"
+  - scope:
+      path: ""
+      type: lmgs
+    values:
+      layout: single2
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "lmgs"

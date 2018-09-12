@@ -41,5 +41,14 @@ iawgs:
     children:
       - title: "Inicio"
         url: /iawgs/
-      - title: Introducción a la implantación de aplicaciones web
+      - title: Introducción
         url: /iawgs/u01
+
+lmgs:
+  - title: Lenguajes de marcas
+    children:
+      - title: "Inicio"
+        url: /lmgs/
+      - title: Pseudocódigo
+        url: https://github.com/josedom24/curso_programacion
+
