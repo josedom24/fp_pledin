@@ -36,3 +36,10 @@ serviciosgs:
       #- title: Prácticas
       #  url: #
 
+iawgs:
+  - title: Implantación de aplicaciones web
+    children:
+      - title: "Inicio"
+        url: /iawgs/
+      - title: Introducción a la implantación de aplicaciones web
+        url: /iawgs/u01
