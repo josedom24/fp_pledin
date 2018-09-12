@@ -74,7 +74,7 @@ defaults:
       path: ""
       type: serviciosgs
     values:
-      layout: single
+      layout: single2
       classes: wide
       read_time: false
       author_profile: false
