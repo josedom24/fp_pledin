@@ -72,12 +72,14 @@ El módulo [os](https://docs.python.org/3.4/library/os.html#module-os) nos permi
 </tbody>
 </table>
 
+	```python
 	>>> import os
 	>>> os.getcwd()
 	'/home/jose/github/curso_python3/curso/u40'
 	>>> os.chdir("..")
 	>>> os.getcwd()
 	'/home/jose/github/curso_python3/curso'
+	```
 
 El módulo os también nos provee del submódulo path (os.path) el cual nos permite acceder a ciertas funcionalidades relacionadas con los nombres de las rutas de archivos y directorios.
 
