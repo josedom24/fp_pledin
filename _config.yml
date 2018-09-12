@@ -17,7 +17,7 @@ title: PLEDIN 3.0
 email: josedom24@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Plataforma Educativa Informática. Página personal de José Domingo Muñoz
-url: "http://fp2.josedomingo.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fp.josedomingo.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pledin_jd
 github_username:  josedom24
 paginate: 0
