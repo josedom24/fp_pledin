@@ -138,29 +138,32 @@ El módulo os también nos provee del submódulo path (os.path) el cual nos perm
 
 Con la función `system()` del módulo `os` nos permite ejecutar comandos del sistema operativo.
 
-	>>> os.system("ls")
-	curso  modelo.odp  README.md
-	0
+```python
+>>> os.system("ls")
+curso  modelo.odp  README.md
+0
+```
 
 La función nos devuelve un código para indicar si la instrucción se ha ejecutado con éxito.
 
 Tenemos otra forma de ejecutar comandos del sistema operativo que nos da más funcionalidad, por ejemplo nos permite guardar la salida del comando en una variable. Para ello podemos usar el módulo [subprocess](https://docs.python.org/3.4/library/subprocess.html)
 
-	>>> import subprocess
-	>>> subprocess.call("ls")
-	curso  modelo.odp  README.md
-	0
-
-	>>> salida=subprocess.check_output("ls")
-	>>> print(salida.decode())
-	curso
-	modelo.odp
-	README.md
-
-	>>> salida=subprocess.check_output(["df","-h"])
-
-	>>> salida = subprocess.Popen(["df","-h"], stdout=subprocess.PIPE)
-	>>> salida.communicate()[0]
+```python
+>>> import subprocess
+>>> subprocess.call("ls")
+curso  modelo.odp  README.md
+0
+```
+```python
+>>> salida=subprocess.check_output("ls")
+>>> print(salida.decode())
+curso
+modelo.odp
+README.md
+```
+```python
+>>> salida=subprocess.check_output(["df","-h"])
+```
 
 ## Módulo shutil
 
