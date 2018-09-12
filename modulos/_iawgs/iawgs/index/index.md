@@ -13,6 +13,7 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * Introducción a la implantación de aplicaciones web
+
 {::comment}
 * Implantación de aplicaciones web PHP
 * Implantación de aplicaciones web Python
@@ -24,6 +25,7 @@ El índice de contenidos que vamos a estudiar será:
 Y las prácticas que vamos a realizar son:
 
 ...
+
 {::comment}
 * Implantación de una aplicación web estática en Github Pages
 * Instalación local de un CMS PHP
