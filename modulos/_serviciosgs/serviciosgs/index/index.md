@@ -10,6 +10,7 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a los servicios en red](u01)
+
 {::comment}
 * [Servidor DHCP](u02)
 * Servidor Web
@@ -20,6 +21,6 @@ El índice de contenidos que vamos a estudiar será:
 * Servidor proxy/cache Squid
 * Proxy inverso y Balanceador de carga
 * Prácticas
-{/:comment}
+{:/comment}
 
 
