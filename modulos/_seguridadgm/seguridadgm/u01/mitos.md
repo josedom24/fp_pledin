@@ -3,7 +3,7 @@ title: "Mitos de la seguridad"
 permalink: /seguridadgm/u01/mitos.html
 ---
 
-# ¿Qué piensas de las siguientes afirmaciones? ¿Son ciertas o no? Justifica tu respuesta lo mejor que puedas.
+# ¿Qué piensas de las siguientes afirmaciones? ¿Son ciertas o no? **Justifica** tu respuesta lo mejor que puedas. Índica los enlaces donde has encontrado la información.
 
 ## Sistemas Operativos
 
