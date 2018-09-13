@@ -1,6 +1,6 @@
 ---
 title: "Uso del analizador de protocolos Wireshark"
-permalink: /seguridadgm/u01/whireshark.html
+permalink: /seguridadgm/u01/wireshark.html
 ---
 
 1. Antes de nada deberás recordar (y documentar adecuadamente) los protocolos ICMP, ARP, DNS y HTTP
