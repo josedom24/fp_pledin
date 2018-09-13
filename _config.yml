@@ -72,6 +72,9 @@ collections:
   lmgs:
     output: true
     permalink: /:path
+  seguridadgm:
+    output: true
+    permalink: /:path
 
 collections_dir: modulos
 
@@ -112,3 +115,15 @@ defaults:
       comments: false
       sidebar:
         nav: "lmgs"
+  - scope:
+      path: ""
+      type: seguridadgm
+    values:
+      layout: single2
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "seguridadgm"

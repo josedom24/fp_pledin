@@ -52,3 +52,9 @@ lmgs:
       - title: Pseudocódigo
         url: https://github.com/josedom24/curso_programacion
 
+serviciosgm:
+  - title: Seguridad Informática
+    children:
+      - title: "Inicio"
+        url: /seguridadgm/
+      
