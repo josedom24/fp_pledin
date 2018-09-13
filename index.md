@@ -5,6 +5,7 @@ classes: wide
 ---
 # Plataforma Educativa Informática
 # Módulos de Formación Profesional
+# Curso 2018-2019
 
 ## Ciclo de Grado Superior de Administración de sistemas Informáticos
 
@@ -16,3 +17,9 @@ classes: wide
 
 * [Servicios de red e internet](serviciosgs)
 * [Implantación de aplicaciones web](iawgs)
+
+## Ciclo de grado Medio de Técnico en Sistemas Microinformáticos y Redes (SMR)
+
+### 2º SMR
+
+* [Seguridad Informática](seguridadgm)
