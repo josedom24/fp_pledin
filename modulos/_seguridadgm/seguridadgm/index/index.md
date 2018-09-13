@@ -7,6 +7,8 @@ El módulo profesional de **Seguridad Informática** se imparte durante el segun
 
 De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional de Servicios en red se imparte durante el segundo curso y tiene asignadas un total de 105 horas, a razón de 5 horas semanales durante 21 semanas.
 
+* [Presentación del módulo](presentacion.html)
+
 El índice de contenidos que vamos a estudiar será:
 
 ## Bloque: Introducción a la seguridad informática
