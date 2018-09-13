@@ -19,23 +19,23 @@ El índice de contenidos que vamos a estudiar será:
 
 ## Bloque: Legislacióm
 
-Unidad didáctica 3: Normativa sobre seguridad y protección de datos
+* Unidad didáctica 3: Normativa sobre seguridad y protección de datos
 
 ## Bloque: Almacenamiento de Información
 
-Unidad didáctica 4: Gestión del Almacenamiento de la información
-Unidad didáctica 5: Copias de Seguridad e imágenes de respaldo
+* Unidad didáctica 4: Gestión del Almacenamiento de la información
+* Unidad didáctica 5: Copias de Seguridad e imágenes de respaldo
 
 ## Bloque: Seguridad lógica
 
-Unidad didáctica 6: Seguridad Lógica
-Unidad didáctica 7: Criptografía
-Unidad didáctica 8: Fraudes y Software Malicioso
-Unidad didáctica 9: Medidas de protección contra el Malware
+* Unidad didáctica 6: Seguridad Lógica
+* Unidad didáctica 7: Criptografía
+* Unidad didáctica 8: Fraudes y Software Malicioso
+* Unidad didáctica 9: Medidas de protección contra el Malware
 
 ## Bloque: Seguridad en redes
 
-Unidad didáctica 10: Seguridad en redes
-Unidad didáctica 11: Ataques y contramedidas
-Unidad didáctica 12: Auditorías de Seguridad
+* Unidad didáctica 10: Seguridad en redes
+* Unidad didáctica 11: Ataques y contramedidas
+* Unidad didáctica 12: Auditorías de Seguridad
 
