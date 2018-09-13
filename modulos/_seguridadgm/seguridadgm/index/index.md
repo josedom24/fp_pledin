@@ -19,7 +19,7 @@ El índice de contenidos que vamos a estudiar será:
 
 * Unidad didáctica 2: Seguridad física
 
-## Bloque: Legislacióm
+## Bloque: Legislación
 
 * Unidad didáctica 3: Normativa sobre seguridad y protección de datos
 
