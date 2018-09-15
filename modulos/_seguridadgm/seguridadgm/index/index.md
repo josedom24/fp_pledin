@@ -16,18 +16,18 @@ El índice de contenidos que vamos a estudiar será:
 
 * Unidad didáctica 1: Introducción a la seguridad informática
 
+## Bloque: Almacenamiento de Información
+
+* Unidad didáctica 2: Gestión del Almacenamiento de la información
+* Unidad didáctica 3: Copias de Seguridad e imágenes de respaldo
+
 ## Bloque: Seguridad física
 
-* Unidad didáctica 2: Seguridad física
+* Unidad didáctica 4: Seguridad física
 
 ## Bloque: Legislación
 
-* Unidad didáctica 3: Normativa sobre seguridad y protección de datos
-
-## Bloque: Almacenamiento de Información
-
-* Unidad didáctica 4: Gestión del Almacenamiento de la información
-* Unidad didáctica 5: Copias de Seguridad e imágenes de respaldo
+* Unidad didáctica 5: Normativa sobre seguridad y protección de datos
 
 ## Bloque: Seguridad lógica
 
