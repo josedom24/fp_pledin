@@ -1,6 +1,6 @@
 ---
 title: "Implantación de aplicaciones web"
-permalink: /iawgs/u01/estatica.html
+permalink: /iawgs/index.html
 ---
 
 El módulo profesional de **Implantación de aplicaciones web** se imparte durante el segundo curso del [Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos en Red (ASIR)](http://www.aapri.es/curriculo/fp/asir).
