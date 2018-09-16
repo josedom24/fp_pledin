@@ -48,7 +48,7 @@ Los servicios modernos para alojar páginas estáticas pueden proporcionar méto
 
 Ejemplos de servicios de despliegue de páginas estáticas: Netlify, Surge, GitHub Pages, GitLab Pages, Neocities,... Puedes enontras más opciones [aquí](https://stackshare.io/netlify/alternatives), [aquí](https://alternativeto.net/software/netlify/) o [aqui](https://siftery.com/netlify/alternatives).
 
-
+.notice--info[
 ## Ejercicios
 
 1. Selecciona una combinación entre generador de páginas estáticas y servicio donde desplegarlo. Escribe tu propuesta en redmine, cada propuesta debe ser original.
@@ -57,4 +57,5 @@ Ejemplos de servicios de despliegue de páginas estáticas: Netlify, Surge, GitH
 4. Genera un sitio web estático con al menos 3 páginas. Deben estar escritas en Markdown y deben tener los siguientes elementos: títulos, listas, párrafos, enlaces e imágenes. El código generado debe estar en un repositorio Git. (3 puntos).
 5. Explica el proceso de despliegue utilizado por el servicio de hosting que vas a utilizar. (2 puntos)
 6. Piensa algún método (script, scp, rsync, git,...) que te permita automatizar la integración continua y el despliegue de la página en el entorno de desarrollo, después de realizar un cambio de la página en el entorno de desarrollo. Entrega un vídeo donde expliques el proceso. (3 puntos).
+]
 
