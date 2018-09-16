@@ -51,7 +51,7 @@ Ejemplos de servicios de despliegue de páginas estáticas: Netlify, Surge, GitH
 
 ## Ejercicios
 
-1. Selecciona una combinación entre generador de página estático y servicio donde desplegarlo. Escribe tu propuesta en redmine, cada propuesta debe ser original.
+1. Selecciona una combinación entre generador de páginas estáticas y servicio donde desplegarlo. Escribe tu propuesta en redmine, cada propuesta debe ser original.
 2. Comenta la instalación del generador de página estática. Recuerda que el generador tienes que instalarlo en tu entorno de desarrollo. Indica el lenguaje en el que está desarrollado y el sistema de plantillas que utiliza. (2 puntos)
 3. Configura el generador de página para cambiar el nombre de tu página, el tema o estilo de la página,... Indica cualquier otro cambio de configuración que hayas hecho. (1 punto)
 4. Genera un sitio web estático con al menos 3 páginas. Deben estar escritas en Markdown y deben tener los siguientes elementos: títulos, listas, párrafos, enlaces e imágenes. El código generado debe estar en un repositorio Git. (3 puntos).
