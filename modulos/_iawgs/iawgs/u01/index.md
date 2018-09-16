@@ -14,3 +14,7 @@ permalink: /iawgs/u01/index.html
 * [Evolución de la web (Pablo E. Lozada Y.)](http://profesores.elo.utfsm.cl/~tarredondo/info/networks/Evolucion_Web.pdf)
 * [Aplicaciones web en la Wikipedia](https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_web)
 * [Diferencias y beneficios entre páginas estáticas y dinámicas](http://nilclass.com/courses/what-is-a-static-website/#1)
+
+## Pŕactica
+
+* [Implantación y despliegue de una aplicación web estática](estatica.html)
