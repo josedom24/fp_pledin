@@ -4,7 +4,7 @@ permalink: /iawgs/u01/index.html
 ---
 ## Objetivos
 
-* Aprender a trabajar con git y github
+* Aprender a trabajar con git
 * Aprender lenguaje de marcas markdown
 * Comprender que existe un integración continua y un despliegue continuo en el proceso de despliegue de la página
 
