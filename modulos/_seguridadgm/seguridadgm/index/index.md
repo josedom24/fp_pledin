@@ -12,18 +12,15 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 
 El índice de contenidos que vamos a estudiar será:
 
-## Bloque: Introducción a la seguridad informática
+## Bloque: Seguridad Física
 
 * [Unidad didáctica 1: Introducción a la seguridad informática](u01)
+* Unidad didáctica 2: Seguridad física
 
 ## Bloque: Almacenamiento de Información
 
-* Unidad didáctica 2: Gestión del Almacenamiento de la información
-* Unidad didáctica 3: Copias de Seguridad e imágenes de respaldo
-
-## Bloque: Seguridad física
-
-* Unidad didáctica 4: Seguridad física
+* Unidad didáctica 3: Gestión del Almacenamiento de la información
+* Unidad didáctica 4: Copias de Seguridad e imágenes de respaldo
 
 ## Bloque: Legislación
 
