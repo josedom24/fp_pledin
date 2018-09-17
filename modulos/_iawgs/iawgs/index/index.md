@@ -21,9 +21,6 @@ El índice de contenidos que vamos a estudiar será:
 * Despliegue de aplicaciones con contenedores
 {:/comment}
 
-Y las prácticas que vamos a realizar son:
-
-...
 
 {::comment}
 * Implantación de una aplicación web estática en Github Pages

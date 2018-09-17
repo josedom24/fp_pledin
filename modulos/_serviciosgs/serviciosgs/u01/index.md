@@ -12,7 +12,7 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 
 ## Índice
 
-* [PDF] Introducción a los servicios de red
+* [Introducción a los servicios de red](presentacion.html)
 * [Cuestionario de repaso](repaso.html)
 * [Python para sysadmins](python.html)
 * [Introducción a vagrant](vagrant.html)
