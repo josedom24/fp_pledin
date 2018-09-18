@@ -20,3 +20,6 @@ permalink: /seguridadgm/u01/index.html
 * [Centro de Criptografía Nacional](https://www.ccn-cert.cni.es/)
 * [El lado del mal](http://www.elladodelmal.com/)
 * [VIDEO: Ciberterrorismo, el lado oscuro de la red](http://www.rtve.es/alacarta/videos/informe-semanal/informe-semanal-ciberterrorismo-lado-oscuro-red/798175/)
+* [Securityfocus](https://www.securityfocus.com/)
+* [Noticias de seguridad informática](http://noticiasseguridad.com/)
+* [MuySeguridad.net](https://www.muyseguridad.net/)
