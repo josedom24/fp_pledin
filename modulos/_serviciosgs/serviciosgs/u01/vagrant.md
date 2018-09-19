@@ -35,8 +35,8 @@ Si el box lo tenemos en la *nas* de nuestro instituto:
 usuario@maquina:~$ vagrant box add debian/stretch64 http://nas.gonzalonazareno.org/...
 ```
 
-Es importante fijarnos que lo estamos haciendo con usuarios sin privilegios. Cada usuario tendrás sus box propios.
-{: .notice--info}        
+**Es importante fijarnos que lo estamos haciendo con usuarios sin privilegios. Cada usuario tendrás sus box propios.**
+{: .notice--warning}        
 
 Puedo ver la lista de boxes que tengo instalada en mi usuario ejecutando la siguiente instrucción:
     
@@ -83,12 +83,14 @@ usuario@maquina:~$ vagrant box list
     usuario@maquina:~/vagrant$ vagrant halt
     usuario@maquina:~/vagrant$ vagrant destroy
     ```
+{% capture notice-text %}
+## Ejercicios
 
-    1. Entra en virtualbox y comprueba las características de la máquina que se ha creado.
-    2. ¿Qué usuario tiene creado por defecto el sistema?¿Cómo se ejecutan instrucciones de superusuario?
-    3. ¿Cuantas tarjetas de red tiene?¿Para qué sirve la eth0?
-    4. Investiga el funcionamiento de la instrucción ``vagrant ssh``. ¿Por que interfaz se conecta? ¿Qué certificado se utiliza para acceder?
-    {: .notice--warning}
+1. Entra en virtualbox y comprueba las características de la máquina que se ha creado.
+2. ¿Qué usuario tiene creado por defecto el sistema?¿Cómo se ejecutan instrucciones de superusuario?
+3. ¿Cuantas tarjetas de red tiene?¿Para qué sirve la eth0?
+4. Investiga el funcionamiento de la instrucción ``vagrant ssh``. ¿Por que interfaz se conecta? ¿Qué certificado se utiliza para acceder?
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Práctica 4: Creación de varias máquinas virtuales
 
