@@ -287,7 +287,7 @@ Podemos enviar información (argumentos) a un programa cuando se ejecuta como un
 	Has introducido 4 argumento
 	La suma es  12
 
-
+{% capture notice-text %}
 ## Ejercicios
 
 Realiza un script en python que realice la siguiente función:
@@ -314,3 +314,4 @@ Realiza un script en python que realice la siguiente función:
     * Crea un script python que cree un usuario, para ello debe recibir el nombre de usuario y nombre completo por parámetros, por defecto se pone uid y gid a 2000. Mejorar el programa para que:
     * Da un error si se intenta dar de alta un usuario que ya existe
     * Al ir dando de alta a distintos usuarios vaya incrementando automáticamente el uid y el gid a partir de 2000
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
