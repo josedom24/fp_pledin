@@ -32,10 +32,14 @@ Conocer los conceptos básicos sobre configuración dinámica con IPv6:
 * **DHCPv6** con estado: Toda la información de direccionamiento y de configuración debe obtenerse de un servidor de DHCPv6 con estado.
 * La **delegación de prefijo DHCPv6** provee de un método automatizado para que un cliente DHCPv6 solicite un prefijo IPv6 desde un servidor DHCPv6. 
 
-**Indice**
+## Indice
 
 
 * [Enlaces interesantes](enlaces.html)
 * [¿Cómo funciona el servidor DHCP?](dhcp.html)
 * [Cuestionario DHCP](cuestionario.hrml)
 * [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
+
+## Práctica
+
+* [Práctica: Servidor DHCP](practica_dhcp.html)
