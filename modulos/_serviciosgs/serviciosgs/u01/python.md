@@ -305,11 +305,11 @@ Realiza un script en python que realice la siguiente función:
     * Copia los archivos de ``/etc/skel`` al nuevo directorio creado 
     * Corrige la pertenencia del dueño y permisos con los comandos *chown* y *chmod* (Ver paginas de manual de los respectivos comandos). La opción ``-R`` es muy útil. Los permisos correctos varían un poco de un sitio a otro, pero generalmente los siguientes comandos harán lo correcto:
 
-	```bash
-	cd /home/nuevo-nombre-de-usuario
-	chown -R nombre-de-usuario:group .
-	chmod -R 755 .
-	```
+    ```bash
+    	cd /home/nuevo-nombre-de-usuario
+    	chown -R nombre-de-usuario:group .
+    	chmod -R 755 .
+    	```
     * Asigne una contraseña con el comando *passwd*
     * Crea un script python que cree un usuario, para ello debe recibir el nombre de usuario y nombre completo por parámetros, por defecto se pone uid y gid a 2000. Mejorar el programa para que:
     * Da un error si se intenta dar de alta un usuario que ya existe
