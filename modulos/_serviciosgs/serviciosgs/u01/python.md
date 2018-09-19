@@ -299,7 +299,7 @@ Realiza un script en python que realice la siguiente función:
 5. Pasa por parámetros una dirección ip y un nombre de máquina e inserta en ``/etc/hosts`` (en la tercera línea) la resolución estática. Si no se introducen dos parámetros se da un error.
 6. Para crear un usuario "a mano":
 
-    * Editar ``/etc/passwd`` y agregar una nueva linea por cada nueva cuenta. Teniendo cuidado con la sintaxis. Debería hacer que el campo de la contraseña sea '*', de esta forma es imposible ingresar al sistema.
+  * Editar ``/etc/passwd`` y agregar una nueva linea por cada nueva cuenta. Teniendo cuidado con la sintaxis. Debería hacer que el campo de la contraseña sea '*', de esta forma es imposible ingresar al sistema.
     * De forma similar, edite ``/etc/group`` para crear también un grupo.
     * Crea el directorio Inicio del usuario con el comando *mkdir*.
     * Copia los archivos de ``/etc/skel`` al nuevo directorio creado 
