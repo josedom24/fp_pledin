@@ -3,7 +3,7 @@ title: "Práctica: Servidor DHCP"
 permalink: /serviciosgs/u02/practica_dhcp.html
 ---
 
-**(16 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**
+### **(16 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
 
 * Muestra al profesor: Tarea 4, Tarea 7, Tarea 13, Tarea 14
@@ -11,11 +11,9 @@ permalink: /serviciosgs/u02/practica_dhcp.html
 
 ## Teoría
 
-```eval_rst
-.. note::
-
-	* **Tarea 1 (1 punto):** Lee el documento `Teoría: Servidor DHCP <http://serviciosgs.readthedocs.io/es/latest/dhcp/dhcp.html>`_ y explica el funcionamiento del servidor DHCP resumido en este `gráfico <http://serviciosgs.readthedocs.io/es/latest/_images/dhcp.png>`_.	
-```
+{% capture notice-text %}
+* **Tarea 1 (1 punto):** Lee el documento [Teoría: Servidor DHCP](dhcp.html) y explica el funcionamiento del servidor DHCP resumido en este [gráfico](img/dhcp.png>.	
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## DHCPv4
 
