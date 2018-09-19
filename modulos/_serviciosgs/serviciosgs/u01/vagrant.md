@@ -169,5 +169,6 @@ Para terminar, indicar que tenemos más parámetros de configuración que nos pe
 ## Enlaces interesantes
 
 * [Página oficial de Vagrant](http://www.vagrantup.com/)
+* [Curso de vagrant (Alberto Molina)](https://github.com/albertomolina/curso-vagrant)
 * [Gestionando máquinas virtuales con Vagrant](http://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/)
 * [Boxes oficiales para Vagrant](https://atlas.hashicorp.com/boxes/search)
