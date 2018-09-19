@@ -48,10 +48,6 @@ Los servicios modernos para alojar páginas estáticas pueden proporcionar méto
 
 Ejemplos de servicios de despliegue de páginas estáticas: Netlify, Surge, GitHub Pages, GitLab Pages, Neocities,... Puedes enontras más opciones [aquí](https://stackshare.io/netlify/alternatives), [aquí](https://alternativeto.net/software/netlify/) o [aqui](https://siftery.com/netlify/alternatives).
 
-
-You can also add the `.notice` class to a `<div>` element.
-
-
 {% capture notice-text %}
 ## Ejercicios
 
