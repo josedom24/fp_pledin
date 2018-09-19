@@ -3,9 +3,8 @@ title: "Práctica: Servidor DHCP"
 permalink: /serviciosgs/u02/practica_dhcp.html
 ---
 
-## (16 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)
+# (16 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)
 {: .notice--warning}
-
 * Muestra al profesor: Tarea 4, Tarea 7, Tarea 13, Tarea 14
 {: .notice--warning}
 
