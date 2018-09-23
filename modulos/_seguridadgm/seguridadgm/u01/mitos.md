@@ -5,7 +5,7 @@ permalink: /seguridadgm/u01/mitos.html
 
 # Responde las siguientes peguntas. Razona tus respuestas.
 
-1. ¿Qué tres elementos principales de un sistema informático deseamos proteger?. Explica as razones por las que hay que proteger cada uno de ellos.
+1. ¿Qué tres elementos principales de un sistema informático deseamos proteger?. Explica las razones por las que hay que proteger cada uno de ellos.
 
 2. ¿Cuáles son los objetivos de la seguridad informática?. Si un incendio fortuito destruye completamente todos los recursos de la biblioteca. ¿En qué grado crees que se verían comprometidas la integridad, la confidencialidad y la disponibilidad de la información?
 
@@ -25,7 +25,7 @@ permalink: /seguridadgm/u01/mitos.html
     * Ataque DOS
     * Incendio
     * Usuario del sistema que formatee accidentalmente un disco
-    * Perdido o robo del movil de la empresa
+    * Perdido o robo del móvil de la empresa
     * Fallo de funcionamiento en un disco duro de un servidor
 
 5.  Explica brevemente y clasifica los siguientes mecanismos de seguridad (según las dos clasificaciones que hemos estudiado):
