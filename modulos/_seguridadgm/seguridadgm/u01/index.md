@@ -4,6 +4,8 @@ permalink: /seguridadgm/u01/index.html
 ---
 
 * [Introducción a la Seguridad Informática](presentacion.html)
+* [VÍDEO: Como encontrar archivos en la nube con Dorks](https://www.youtube.com/channel/UCJcA7xm3ktxCO9PdKTmqeUg?app=desktop)
+* [VÍDEO: Como protegernos del hacking de buscadores](https://www.youtube.com/watch?v=V9EDMnguQfU)
 
 ## Prácticas
 
