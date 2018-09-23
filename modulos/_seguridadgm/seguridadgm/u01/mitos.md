@@ -3,56 +3,52 @@ title: "Mitos de la seguridad"
 permalink: /seguridadgm/u01/mitos.html
 ---
 
-# ¿Qué piensas de las siguientes afirmaciones? ¿Son ciertas o no? **Justifica** tu respuesta lo mejor que puedas. Índica los enlaces donde has encontrado la información.
+# Responde las siguientes peguntas. Razona tus respuestas.
 
-## Sistemas Operativos
+1. ¿Qué tres elementos principales de un sistema informático deseamos proteger?. Explica as razones por las que hay que proteger cada uno de ellos.
+
+2. ¿Cuáles son los objetivos de la seguridad informática?. Si un incendio fortuito destruye completamente todos los recursos de la biblioteca. ¿En qué grado crees que se verían comprometidas la integridad, la confidencialidad y la disponibilidad de la información?
+
+3. De los siguientes elementos describe cuál es la función de cada uno y asócialos con el tipo de seguridad:
+
+* a) Ventilador de un sistema informático
+* b) Detector de incendios
+* c) Cámara de seguridad
+* d) Cortafuegos en Ubuntu
+* e) SAI o UPS
+* f) Control de acceso mediante el iris del ojo
+* g) Contraseña para acceder al equipo
+* h) Control de acceso a un edificio
+
+4. Relaciona el siguiente listado de amenazas con los objetivos de la seguridad que vulnerarían. Piensa en los mecanismos de seguridad que podrían evitar o solucionar estas amenazas:
+* Programa espía
+* Ataque DOS
+* Incendio
+* Usuario del sistema que formatee accidentalmente un disco
+* Perdido o robo del movil de la empresa
+* Fallo de funcionamiento en un disco duro de un servidor
+
+5.  Explica brevemente y clasifica los siguientes mecanismos de seguridad (según las dos clasificaciones que hemos estudiado):
+
+* Sistemas de control de acceso
+* Cifrado
+* Copias de seguridad
+* Software anti-malware
+* Firewall
+* Sistemas de detección de intrusos / IDS
+* Certificados
+* Auditoría
+* Uso adecuado de contraseñas
+
+6. ¿Qué piensas de las siguientes afirmaciones? ¿Son ciertas o no? **Justifica** tu respuesta lo mejor que puedas. Índica los enlaces donde has encontrado la información.
 
 * Un firewall es lo único que necesito.
-* Uso antivirus, puedo navegar seguro.
-* Uso dos antivirus a la vez, así me mantengo más seguro.
 * Mi equipo tiene GNU/Linux y no soy vulnerable.
-* Tengo un MAC, no puedo tener virus.
 * Mi sistema operativo está actualizado, no habrá problema.
-* Mi usuario tiene privilegios de administrador, pero yo controlo qué se instala.
 * Hago backups cada día, si pasa algo, puedo restaurar el sistema.
-* He reinstalado correctamente el sistema tras un virus, ya está eliminado.
-* En mi PC no hay nada que pueda interesar a otra persona.
-* En mi ordenador no meto cuentas bancarias ni hago transiciones de dinero, no tengo dinero que perder. 
-* Apagar mi ordenador incorrectamente no supone ningún riesgo.
 * Los móviles Android no pueden infectarse si solo uso aplicaciones oficiales.
-* En un iPad no hay problemas de seguridad.
-* El firewall de mi proveedor de Internet me protege, no hace falta que instale otro.
-* A un hacker no le interesa acceder a la máquina de un usuario normal.
-
-## Navegadores
-
-* No uso Outlook Express ni Internet Explorer, así que estoy a salvo.
-* Los únicos sitios peligrosos son los de pornografía, juegos de azar y otras páginas “extrañas".
-* Firefox es más seguro que Internet Explorer.
-* Cuando aparece el icono del candado en la barra del navegador, significa que es seguro.
-* El mejor navegador hasta el momento es el Opera, que por el momento tiene una gran variedad de funciones, seguridad y rapidez.
-* Opera funciona en una gran variedad de sistemas operativos, incluyendo Microsoft Windows, Mac OS X, GNU/Linux y FreeBSD.
-* Internet Explorer 9 es menos seguro que Google Chrome.
-*  Sólo se puede ser víctima de infecciones si se descargan archivos.
-* Mozilla Firefox ofrece toda la protección anti-spyware que necesito.
-* Nunca dejo mi mail en ningún sitio ni estoy registrado en páginas Web, así que es imposible que me roben la dirección.
-* Se puede obtener un virus desde los cookies de la Web, es mejor desactivarlos.
-* El proxy de la empresa controla la navegación por Internet y los usuarios solo pueden acceder a páginas seguras.
-* No abro los adjuntos de mis correos, no me pueden entrar virus.
-
-## Aplicaciones
-
+* Firefox es el navegador web más seguro.
 * Nuestras aplicaciones no tienen brechas de seguridad, porque están escritas en lenguajes como Java y C# que son totalmente seguros.
-* Un test de penetración detectará todas las vulnerabilidades.
-* Pasamos un pentest el mes pasado, nuestro sistema ahora es seguro.
 * Los antivirus gratuitos no sirven.
 * El software libre es menos seguro.
-* Sólo los ficheros .exe pueden contener virus.
-* Sólo los usuarios ingenuos que clickan donde no deben son víctimas de infecciones causadas por el malware y virus.
-* No abro los adjuntos de mis correos, no me pueden entrar virus.
-
-## Actualizaciones
-
-* Mi antivirus está al día, así que no puede entrar ningún virus.
-* Tengo todos los parches de Windows instalados, no puede pasar nada. 
-* Tengo todos los parches de mi navegador instalados, no puede pasar nada. 
+* Tengo todos los parches de Windows instalados, no puede pasar nada.
