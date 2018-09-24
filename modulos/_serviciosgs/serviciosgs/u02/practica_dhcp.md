@@ -20,8 +20,8 @@ permalink: /serviciosgs/u02/practica_dhcp.html
 
 Crea un escenario usando Vagrant que defina las siguientes máquinas:
 
-* Servidor: Tiene dos tarjetas de red: una pública y una privada que se conectan a la red local.
-* nodo_lan1: Un cliente conectado a la red local.
+* **Servidor**: Tiene dos tarjetas de red: una pública y una privada que se conectan a la red local.
+* **nodo_lan1**: Un cliente conectado a la red local.
 
 ### Servidor dhcp
 
