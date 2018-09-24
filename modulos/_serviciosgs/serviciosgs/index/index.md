@@ -10,9 +10,8 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a los servicios en red](u01)
-
-{::comment}
 * [Servidor DHCP](u02)
+{::comment}
 * Servidor Web
 * Servidor DNS
 * Servidor FTP

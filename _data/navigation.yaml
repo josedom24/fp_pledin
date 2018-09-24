@@ -17,8 +17,8 @@ serviciosgs:
         url: /serviciosgs/
       - title: Introducción a los servicios en red
         url: /serviciosgs/u01
-      #- title: Servidor DHCP
-      #  url: #
+      - title: Servidor DHCP
+        url: /serviciosgs/u02
       #- title: Servidor Web
       #  url: #
       #- title: Servidor DNS
