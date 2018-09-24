@@ -3,8 +3,6 @@ title: Cuestionario DHCP
 permalink: /serviciosgs/u02/cuestionario.html
 ---
 
-# 
-
 1. ¿Qué es un servidor DHCP?
 2. ¿Cómo hay que configurar un cliente DHCP?
 3. Ventajas de usar un servidor DHCP
