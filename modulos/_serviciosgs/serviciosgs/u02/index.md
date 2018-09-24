@@ -30,14 +30,13 @@ Conocer los conceptos básicos sobre configuración dinámica con IPv6:
 * **SLAAC** (Stateless Address Autoconfiguration) es un método en el cual un dispositivo puede obtener una dirección IPv6 de unidifusión global sin los servicios de un servidor de DHCPv6.
 * La opción de **DHCPv6** sin estado informa al cliente que utilice la información del mensaje RA para el direccionamiento, pero que hay más parámetros de configuración disponibles de un servidor de DHCPv6. 
 * **DHCPv6** con estado: Toda la información de direccionamiento y de configuración debe obtenerse de un servidor de DHCPv6 con estado.
-* La **delegación de prefijo DHCPv6** provee de un método automatizado para que un cliente DHCPv6 solicite un prefijo IPv6 desde un servidor DHCPv6. 
 
 ## Indice
 
 
 * [Enlaces interesantes](enlaces.html)
 * [¿Cómo funciona el servidor DHCP?](dhcp.html)
-* [Cuestionario DHCP](cuestionario.hrml)
+* [Cuestionario DHCP](cuestionario.html)
 * [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
 
 ## Práctica

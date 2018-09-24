@@ -3,7 +3,7 @@ title: "Práctica: Servidor DHCP"
 permalink: /serviciosgs/u02/practica_dhcp.html
 ---
 
-**(16 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**
+**(15 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
 **Muestra al profesor: Tarea 4, Tarea 7, Tarea 13, Tarea 14**
 {: .notice--warning}
@@ -74,7 +74,7 @@ Vamos a usar el primer escenario para configurar en el cliente el programa `radv
 
 {% capture notice-text %}
 * **Tarea 12 (1 punto)(Obligatorio):** Configura de manera adecuada en el servidor el programa `radvd` y comprueba que los clientes (Linux y Windows) se configuran coun ipv6 global.
-* **Tarea 13 (1 punto):** Configura `radvd` para entregar también el servidor DNS (RDNSS) y el campo *search* (SNSSL). Comprueba qué esos datos lo configura el cliente Linux. ¿Y el cliente Windows?
+* **Tarea 13 (3 punto):** Configura `radvd` para entregar también el servidor DNS (RDNSS) y el campo *search* (SNSSL). Comprueba qué esos datos lo configura el cliente Linux. ¿Y el cliente Windows?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### DCHPv6
@@ -85,14 +85,7 @@ Configura en el servidor isc-dhcp-server una zona para repartir los siguientes e
 * El DNS y el campo *search*.
 
 {% capture notice-text %}
-* **Tarea 14 (2 puntos)(Obligatorio):** Configura de manera adecuada en el servidor dhcpv6 y comprueba que los clientes (Linux y Windows) se configuran con ipv6 global.
-* **Tarea 15 (1 punto):** Configura una reserva para que el cliente linux se configure con la dirección `2001:abcd::a`.
+* **Tarea 14 (3 puntos)(Obligatorio):** Configura de manera adecuada en el servidor dhcpv6 y comprueba que los clientes (Linux y Windows) se configuran con ipv6 global.
+* **Tarea 15 (2 punto):** Configura una reserva para que el cliente linux se configure con la dirección `2001:abcd::a`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-### Delegación de prefijo (PD)
-
-En nuestra red tenemos un servidor DHCPv6 puede repartir un prefijo cuando se realiza una petición (es decir cuando se solicita el prefijo), esto nos puede servir para crear un router dentro de nuestra red interna que reparta direcciones ipv6 con un determinado prefijo.
-
-{% capture notice-text %}
-* **Tarea 16 (3 puntos):** Configura en tu servidor un cliente dibbler-dhcp que es capaz de recoger el prefijo delegado por nuestro servidor `macaco`. Condigura `radvd` para que reparta direcciones con ese prefijo. Comprueba que los clientes (Linux y Windows) se configuran con ipv6 global. Realiza un ping desde el cliente a la dirección `2001:ccba:470::1` que es la de macaco.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
