@@ -8,7 +8,7 @@ Tienes dos opciones para realizar esta práctica:
 
 1. Consideramos que el primer hosting compartido es tu servidor dedicado, posteriormente tendrás que hacer la migración a un hosting externo.
 2. Utilizar dos servicios de hosting distintos (tal cómo se explica en la práctica.)
-{% endcapture %}<div class="warning--info">{{ warning-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ warning-text | markdownify }}</div>
 
 ## Tarea 1: Elección del escenario que vas a montar
 
@@ -68,5 +68,5 @@ Entrega una documentación donde indiques los pasos para realizar una copia de s
 * Identificación de problemas: el uso de FTP no me permite control de versiones y no es el mecanismo más eficiente.
 * Identificación de problemas: Este esquema no funciona si tenemos un equipo de desarrollo construyendo una aplicación web a medida.
 * Identificación de problemas: Las copias de seguridad pueden ser complicadas de realizar y además es complicado la automatización.
-{% endcapture %}<div class="warning--info">{{ warning-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ warning-text | markdownify }}</div>
 
