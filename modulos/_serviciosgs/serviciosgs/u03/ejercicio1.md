@@ -13,11 +13,10 @@ permalink: /serviciosgs/u03/ejercicio1.html
 
 	Utiliza algún plugin de firefox  para identificar las cabeceras de las peticiones y de las respuestas.
 
+2. Utiliando el método GET obtén el contenido de la página:
 
-2. Utilizando el método GET obtén el contenido de la página:
-
-    	http://dit.gonzalonazareno.org/moodle/index.php
-    	http://dit http://www.debian.org/index.html
+		http://dit.gonzalonazareno.org/moodle/index.php
+		http://dit http://www.debian.org/index.html
 
 	Comprueba con el plugin de firefox cuantas peticiones se realizan al acceder a estas páginas.
 
