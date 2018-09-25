@@ -70,19 +70,16 @@ Cuando desde el cliente intentamos acceder a una URL que esta controlada por el 
 
 En realidad la información que se manda es el nombre de usuario y la contraseña en base 64, que se puede decodificar fácilmente con cualquier [utilidad](http://www.base64decode.org/).
 
+{% capture notice-text %}
 **Ejercicios**
 
 1. Crea cuatro  usuarios de apache: pepe, maria, juan, ana.
-
 2. Crea dos grupos de usuarios: grupo1 (pepe,maria), grupo2 (juan,ana).
-
 3. Crea un directorio llamado privado1 en el host virtual default, que permita el acceso a todos los usuarios.
-
 4. Crea un directorio llamado privado2 en el host virtual default, que permita el acceso sólo a juan y a ana.
-
 5. Crea un directorio llamado privado3 en el host virtual default, que permita el acceso sólo los usuarios del grupo1.
 6. El directorio privado3 del ejercicio5 haz que sólo sea accesible desde el localhost.
-    
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>    
  
 ## Autentificación tipo digest
 
@@ -147,7 +144,8 @@ La información que se manda es *responde* que en este caso esta cifrada usando 
 
 Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar si la información que se ha enviado es válida, con lo que se permitiría el acceso.
  
-
+{% capture notice-text %}
 **Ejercicio:**
 
 1. Crea dos subdirectorios en el host virtual defaul que se llamen ``grupo1`` y ``grupo2``. Crea varios usuarios con la utilidad ``htdigest``, asignando a cada uno un dominio distinto (``domgrupo1`` y ``domgrupo2``). Configura los directorios para que al primero grupo1 sólo puedan acceder los usuarios del dominio domgrupo1, y el directorio grupo2 solo accedan los usuarios del dominio domgrupo2.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
