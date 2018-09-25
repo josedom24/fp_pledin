@@ -8,11 +8,11 @@ permalink: /serviciosgs/u03/ejercicio2.html
 
 1. Instala el servidor web Apache:
 
-	apt-get install apache2
+		apt-get install apache2
 
-Para controlar el servicio apache2 podemos usar (para más [información](http://httpd.apache.org/docs/2.4/es/stopping.html)):
+	Para controlar el servicio apache2 podemos usar (para más [información](http://httpd.apache.org/docs/2.4/es/stopping.html)):
 
-    apache2ctl [-k start|restart|graceful|graceful-stop|stop]
+		apache2ctl [-k start|restart|graceful|graceful-stop|stop]
 
 2. ¿Qué es la opción graceful?
 
