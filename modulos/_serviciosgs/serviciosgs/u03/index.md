@@ -17,17 +17,9 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 	* Módulos de multiprocesamiento
 	* Ejecución de scripts en el servidor: PHP, Python,...
 	
-**Indice**
+## Indice
 
-```eval_rst
-.. toctree::
-   
-   enlaces
-   ejercicio1
-   ejercicio2
-   ejercicio3
-   ejercicio4
-   ejercicio5
-   ejercicio6
-   ejercicio7
-```
+* [Enlaces interesantes](enlaces.html)
+* [Curso Apache24](https://plataforma.josedomingo.org/pledin/cursos/apache24/)
+
+## Prácticas
