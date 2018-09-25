@@ -3,9 +3,8 @@ title: Instalación local de un CMS PHP
 permalink: /iawgs/u02/practica_php1.html
 ---
 
-{% capture warning-text %}
+{: .notice--warning}
 Investiga las funcionalidades y características de la última versión del CMS drupal. (https://www.drupal.org)
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 Esta tarea consiste en instalar un CMS de tecnología PHP (drupal 7 o drupal 8) en un servidor local. Los pasos que tendrás que dar los siguientes:
 
