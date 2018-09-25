@@ -6,13 +6,14 @@ permalink: /serviciosgs/u03/ejercicio7.html
 ## Directorios web para cada usuario (public_html)
 
 El módulo [userdir](http://httpd.apache.org/docs/2.4/mod/mod_userdir.html) permite que cada usuario del sistema tenga la posibilidad de tener un directorio (por defecto se llama ``public_html``) donde alojar su página web.
-
+{% capture notice-text %}
 **Ejercicios**
 
 1. Activa el módulo y comprueba su funcionamiento.
 2. Comprueba las opciones configuradas para los directorios public_html.
 3. Cambia el nombre de directorio public_html por otro nombre.
 4. Publica una página de un usuario, y accede a la misma.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Creación de un servidor WebDAV
 
@@ -119,11 +120,14 @@ De esta forma accederíamos por medio de la URL:
 
     http://localhost/buscar?id=hola
 
+{% capture notice-text %}
 **Ejercicio:** 
 
 Siguiendo las técnicas anteriormente vistas, realiza una reescritura de URL para que pudiéramos realizar búsquedas con URL de la siguiente manera:
 
     http://localhost/buscar/hola.html
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 **Ejemplo 5: Uso del RewriteCond**
 
@@ -176,10 +180,17 @@ También podemos controlar la reescritura de URL según la hora y la fecha, para
 
 En el anterior ejemplo el primer ``RewriteCond`` permite la solicitud directa pero no desde otras páginas (referrer vacío). La siguiente línea indica que si el navegador ha enviado una cabecera ``Referrer`` y esta no contiene la palabra "dominio.com" se ejecutará el ``RewriteRule``. La ultima instrucción ``RewriteCond`` indica que si en la url solicitada se encuentra el nombre de la imagen "hotlink" no se realizará el ``RewriteRule``; esto se pone porque la imagen hotlink.png va a ser la que vamos a usar en ``RewriteRule`` y si no ponemos este ``RewriteCond`` también sería redirigida la solicitud a esta imagen. La última instrucción del ejemplo es el ``RewriteRule`` que indica que cualquier solicitud a una imagen desde otro referrer será reescrita en el servidor hacia la imagen hotlink.png y esta será la imagen que se vea en la web que te esté intentando robar la imagen.
 
+{% capture notice-text %}
 **Ejercicio:** 
 
 Realiza un ``.htaccess`` para evitar el hot-linking. Puedes usar esta esta [imagen](https://raw.githubusercontent.com/josedom24/serviciosgs_doc/master/web/doc/hotlink.gif) para realizar el ejercicio.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 **Ejemplo 6: URL amigables con WordPress**
 
-Ejercicio: Instala wordpress en tu servidor con el módulo rewrite desactivado, comprueba que las URL no son amigables. Activa el módulo y a continuación configura el blog para que tenga URL amigables (Settings->Permalink).
+{% capture notice-text %}
+
+**Ejercicio**
+
+Instala wordpress en tu servidor con el módulo rewrite desactivado, comprueba que las URL no son amigables. Activa el módulo y a continuación configura el blog para que tenga URL amigables (Settings->Permalink).
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

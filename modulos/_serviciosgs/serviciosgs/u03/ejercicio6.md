@@ -6,7 +6,7 @@ permalink: /serviciosgs/u03/ejercicio6.html
 Un fichero ``.htaccess`` (hypertext access), también conocido como archivo de configuración distribuida, es un fichero especial, popularizado por el Servidor HTTP Apache que nos permite definir diferentes directivas de configuración para cada directorio (con sus respectivos subdirectorios) sin necesidad de editar el archivo de configuración principal de Apache.
 
 Para permitir el uso de los ficheros .htaccess o restringir las directivas que se puedn aplicar usamos ela directiva [AllowOverride](http://httpd.apache.org/docs/2.4/mod/core.html#allowoverride>), que puede ir acompañada de una o varias opciones: ``All``, ``AuthConfig``, ``FileInfo``, ``Indexes``, ``Limit``, ... Estudia para que sirve cada una de las opciones.
-
+{% capture notice-text %}
 **Ejercicios**
 
 Utiliza una cuenta de un servidor remoto para comprobar el uso de ``.htacces``. Crea un directorio dentro de html_public y crea un fichero .htaccess que nos permita:
@@ -21,3 +21,4 @@ Utiliza una cuenta de un servidor remoto para comprobar el uso de ``.htacces``. 
 8. Crea una redirección permanente: cuando entremos en este directorio salte a www,google.es
 9. Permitir la entrada desde un cliente en concreto (utilizando el nombre del host), si no se entra desde esa máquina, pedir autentificación.
 10. Usar negociación de contenidos: tener dos páginas en distinto idioma y configurar en el .htaccess que idioma es el prioritario.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
