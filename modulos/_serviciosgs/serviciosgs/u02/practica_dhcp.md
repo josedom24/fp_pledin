@@ -29,7 +29,7 @@ Instala un servidor dhcp en el ordenador "servidor" que de servicio a los ordena
 
 {% capture notice-text %}
 * **Tarea 2 (1 punto)(Obligatorio):** Entrega el fichero Vagrantfile que define el escenario.
-* **Tarea 3 (3 puntos)(Obligatorio):** Muestra al profesor el servidor DHCP funcionando. Muestra el fichero de configuración del servidor, la lista de concesiones, la modificación en la configuración que has hecho en el cliente para que tome la configuración de forma automática y muestra la salida del comando `ifconfig`.
+* **Tarea 3 (3 puntos)(Obligatorio):** Muestra el fichero de configuración del servidor, la lista de concesiones, la modificación en la configuración que has hecho en el cliente para que tome la configuración de forma automática y muestra la salida del comando ` ip address`.
 * **Tarea 4 (2 puntos):** Muestra al profesor el servidor funcionando como router y NAT, de esta forma los clientes tendrán internet.
 * **Tarea 5 (1 punto):** Realizar una captura, desde el servidor usando **tcpdump**, de los cuatro paquetes que corresponden a una concesión: DISCOVER, OFFER, REQUEST, ACK.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
