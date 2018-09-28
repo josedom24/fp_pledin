@@ -17,3 +17,4 @@ permalink: /serviciosgs/u02/enlaces.html
 * [DHCPv6 Based IPv6 Access Services](https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/enterprise-ipv6-solution/whitepaper_c11-689821.html)
 * [resolvconf: Gestionando /etc/resolv.conf](https://enavas.blogspot.com.es/2012/11/resolvconf-gestionando-etcresolvconf.html)
 * [IPv6 and DNS](https://www.ipsidixit.net/2010/04/02/243/)
+* [SLAAC y DHCPv6: Introducción y Funcionamiento](https://ccnadesdecero.es/slaac-dhcpv6-funcionamiento/)
