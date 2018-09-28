@@ -5,7 +5,7 @@ permalink: /serviciosgs/u03/practica_web_apache.html
 
 **(17 tareas - 21 puntos)(8 tareas obligatorias - 11 puntos)**
 {: .notice--warning}
-* Muestra al profesor: *Tarea 4, Tarea 9 y Tarea 13*
+**Muestra al profesor: *Tarea 4, Tarea 9 y Tarea 13**
 {: .notice--warning}
 
 {% capture notice-text %}
