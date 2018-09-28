@@ -24,3 +24,6 @@ permalink: /seguridadgm/u02/index.html
 * [Vídeo: SoftLayer DAL05 Data Center Tour ≡ 'Cribs' Style](https://www.youtube.com/watch?v=YQERVf9ibzY)
 * [Vídeo: Inside a Google data center](https://www.youtube.com/watch?v=XZmGGAbHqa0)
 * [Take a walk through a Google data center](https://www.google.com/about/datacenters/inside/streetview/)
+* [¿Cuánto consume realmente nuestr ordenador?](https://hardzone.es/cuanto-consume-realmente-nuestro-ordenador/)
+* [80 PLUS](https://es.m.wikipedia.org/wiki/80_PLUS)
+* [Qué es el PFC de una fuente de alimentación y cómo mejora su eficiencia](https://hardzone.es/2018/06/03/pfc-fuente-alimentacion-mejora-eficiencia/)
