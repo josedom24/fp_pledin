@@ -5,7 +5,7 @@ permalink: /seguridadgm/u02/seguridadfisica.html
 
 Realizar una **propuesta para la instalación y configuración** en un CPD de:
 
-* un sistema de control de acceso 
+* Un sistema de control de acceso 
 * Un sistema de control de presencia, 
 * Un sistema de prevención y extinción de incendios
 
