@@ -18,7 +18,6 @@ permalink: /seguridadgm/u02/index.html
 
 ## Enlaces interesantes
 
-* [Segu-info: Seguridad física](http://www.segu-info.com.ar/fisica/seguridadfisica.htm)
 * [Artículo: Pasillos fríos y calientes, ¿y después?](https://www.nixval.com/blog/2008/12/31/pasillos-frios-y-calientes-y-despues/)
 * [Vídeo: Cabling a SoftLayer Data Center Server Rack](https://www.youtube.com/watch?v=jLgvDValxFE)
 * [Vídeo: SoftLayer DAL05 Data Center Tour ≡ 'Cribs' Style](https://www.youtube.com/watch?v=YQERVf9ibzY)
