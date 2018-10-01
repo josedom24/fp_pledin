@@ -15,7 +15,7 @@ El índice de contenidos que vamos a estudiar será:
 ## Bloque: Seguridad Física
 
 * [Unidad didáctica 1: Introducción a la seguridad informática](u01)
-* Unidad didáctica 2: Seguridad física
+* [Unidad didáctica 2: Seguridad física](u02)
 
 ## Bloque: Almacenamiento de Información
 

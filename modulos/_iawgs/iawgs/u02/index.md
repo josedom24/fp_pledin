@@ -33,3 +33,5 @@ permalink: /iawgs/u02/index.html
 
 ## Prácticas
 
+* [Instalación local de un CMS PHP](practica_php1.html)
+

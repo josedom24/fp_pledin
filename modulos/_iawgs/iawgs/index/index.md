@@ -12,9 +12,9 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la implantación de aplicaciones web](u01)
+* [Implantación de aplicaciones web PHP](u02)
 
 {::comment}
-* Implantación de aplicaciones web PHP
 * Implantación de aplicaciones web Python
 * Introducción a la integración continúa y despliegue continuo
 * Despliegue de aplicaciones web Java

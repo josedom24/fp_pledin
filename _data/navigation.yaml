@@ -43,6 +43,8 @@ iawgs:
         url: /iawgs/
       - title: Introducción
         url: /iawgs/u01
+      - title: PHP
+        url: /iawgs/u02
 
 lmgs:
   - title: Lenguajes de marcas
@@ -59,4 +61,6 @@ seguridadgm:
         url: /seguridadgm/
       - title: "Introducción"
         url: /seguridadgm/u01
+      - title: "Seguridad Física"
+        url: /seguridadgm/u02
       
