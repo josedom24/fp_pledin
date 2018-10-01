@@ -59,4 +59,6 @@ seguridadgm:
         url: /seguridadgm/
       - title: "Introducción"
         url: /seguridadgm/u01
+      - title: "Seguridad Física"
+        url: /seguridadgm/u02
       
