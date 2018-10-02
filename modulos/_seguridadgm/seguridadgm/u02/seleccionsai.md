@@ -5,9 +5,8 @@ permalink: /seguridadgm/u02/seleccionsai.html
 
 1. Tenemos en nuestro CPD un conjunto de doce servidores con un consumo total de 8200W, dos routers cisco serie 2600 (cuyo consumo tendrás que hallar) y cuatro switches D-Link DGS-1248T (cuyo consumo tampoco conocemos).
 
-    Deseamos garantizar la alimentación de dichos dispositivos durante un mínimo de 20 minutos mediante uno o varios SAIs enrackables (máximo 3). El tiempo máximo de recarga de los mismos será de cuatro horas.
-
-    Busca tres presupuestos de SAIs de distintas marcas que cubran nuestras necesidades adecuadamente.
+    * Deseamos garantizar la alimentación de dichos dispositivos durante un mínimo de 20 minutos mediante uno o varios SAIs enrackables (máximo 3). El tiempo máximo de recarga de los mismos será de cuatro horas.
+    * Busca tres presupuestos de SAIs de distintas marcas que cubran nuestras necesidades adecuadamente.
 
 2. Explica las diferencias entre los distintos tipos de SAIs existentes (stand by, online, etc...)
 
