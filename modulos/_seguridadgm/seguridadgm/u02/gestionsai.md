@@ -3,7 +3,16 @@ title: "Gestión SAI"
 permalink: /seguridadgm/u02/gestionsai.html
 ---
 
-Instala un entorno de monitorización y administración del SAI bajo entorno Linux.
+Para realzar esta práctica te puede ser útil [la página web de nuestro SAI](https://www.apc.com/shop/es/es/products/APC-Power-Saving-Back-UPS-Pro-900-230V/P-BR900GI) y su [documentación](doc/manual_sai_apc.pdf).
+
+1. Gestión del SAI:
+
+* Conecta al SAI un ordenador y un monitor, comprueba en la documentación que enchufes del SAI debes utilizar.
+* Comprueba en la pantalla del SAI, cuanta carga se ha conectado al SAI, cuanto tiempo de autonomía proporciona,...
+* Simula un corte de corriente, apachando el SAI y comprueba qué pasa.
+* ¿Cuál es el tiempo habitual de recarga de la baterías?
+
+2. Instala un entorno de monitorización y administración del SAI bajo entorno Linux.
 
 * a) Documenta el proceso de instalación y configuración.
 * b) Indica cómo realizar las siguientes operaciones:
