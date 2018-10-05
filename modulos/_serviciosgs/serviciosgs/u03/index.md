@@ -31,3 +31,5 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Ejercicio 7: Módulos en apache](ejercicio7.html)
 
 ## Prácticas
+
+* [Práctica: Servidor Web Apache 2.4](practica_web_apache.html)
