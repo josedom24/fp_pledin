@@ -13,6 +13,7 @@ permalink: /seguridadgm/u02/index.html
 * [Práctica 5 (Por grupo): Videovigilancia IP](videovigilancia.html)
 * [Práctica 6: Selección SAIs](seleccionsai.html)
 * [Práctica 7 (Por grupo): Gestión SAIs](gestionsai.html)
+
 {::comment}
 * [Práctica: Normativa videovigilancia](http://dit.gonzalonazareno.org/moodle/pluginfile.php/3838/mod_resource/content/2/guia_videovigilancia.pdf)
 {:/comment}
