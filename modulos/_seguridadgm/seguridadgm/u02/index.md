@@ -9,11 +9,11 @@ permalink: /seguridadgm/u02/index.html
 
 ## Prácticas
 
-{::comment}
 * [Práctica 4: Incendios, control de acceso y de presencia](seguridadfisica.html)
-* [Práctica 5: Videovigilancia IP](videovigilancia.html)
+* [Práctica 5 (Por grupo): Videovigilancia IP](videovigilancia.html)
 * [Práctica 6: Selección SAIs](seleccionsai.html)
-* [Práctica 7: Gestión SAIs](gestionsai.html)
+* [Práctica 7 (Por grupo): Gestión SAIs](gestionsai.html)
+{::comment}
 * [Práctica: Normativa videovigilancia](http://dit.gonzalonazareno.org/moodle/pluginfile.php/3838/mod_resource/content/2/guia_videovigilancia.pdf)
 {:/comment}
 
