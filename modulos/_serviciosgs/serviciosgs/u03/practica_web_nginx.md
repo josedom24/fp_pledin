@@ -3,9 +3,9 @@ title: "Práctica: Servidor Web Nginx"
 permalink: /serviciosgs/u03/practica_web_nginx.html
 ---
 
-**(12 tareas - 13 puntos)(6 tareas obligatorias - 8 puntos)**
+**(12 tareas - 13 puntos)(5 tareas obligatorias - 7 puntos)**
 {: .notice--warning}
-**Muestra al profesor: *Tarea 4, Tarea 9**
+**Muestra al profesor: Tarea 4, Tarea 9**
 {: .notice--warning}
 
 {% capture notice-text %}
@@ -43,7 +43,7 @@ Cambia la configuración del sitio web ``www.iesgn.org`` para que se comporte de
 {% capture notice-text %}
 * **Tarea 6 (1 punto)(Obligatorio):** Añade al escenario Vagrant otra máquina conectada por una red interna al servidor. A la URL ``departamentos.iesgn.org/intranet`` sólo se debe tener acceso desde el cliente de la red local, y no se pueda acceder desde la anfitriona por la red pública. A la URL ``departamentos.iesgn.org/internet``, sin embargo, sólo se debe tener acceso desde la anfitriona por la red pública, y no desde la red local.
 * **Tarea 7 (1 punto):** Autentificación básica. Limita el acceso a la URL ``departamentos.iesgn.org/secreto``. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo se manda la contraseña entre el cliente y el servidor?. Entrega una breve explicación del ejercicio.
-* **Tarea 8 (1 punto)(Obligatorio):** Cómo hemos visto la autentificación básica no es segura, modifica la autentificación para que sea del tipo *digest*, y sólo sea accesible a los usuarios pertenecientes al grupo *directivos*. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo funciona esta autentificación?
+* **Tarea 8 (1 punto):** Cómo hemos visto la autentificación básica no es segura, modifica la autentificación para que sea del tipo *digest*, y sólo sea accesible a los usuarios pertenecientes al grupo *directivos*. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo funciona esta autentificación?
 * **Tarea 9 (1 punto):** Vamos a combinar el control de acceso (tarea 6) y la autentificación (tareas 7 y 8), y vamos a configurar el virtual host para que se comporte de la siguiente manera: el acceso a la URL ``departamentos.iesgn.org/secreto`` se hace forma directa desde la intranet, desde la red pública te pide la autentificación. Muestra el resultado al profesor.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
