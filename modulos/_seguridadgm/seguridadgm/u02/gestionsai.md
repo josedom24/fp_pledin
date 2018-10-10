@@ -9,10 +9,10 @@ Para realzar esta práctica te puede ser útil [la página web de nuestro SAI](h
 
     * Conecta al SAI un ordenador y un monitor, comprueba en la documentación que enchufes del SAI debes utilizar.
     * Comprueba en la pantalla del SAI, cuanta carga se ha conectado al SAI, cuanto tiempo de autonomía proporciona,...
-    * Simula un corte de corriente, apachando el SAI y comprueba qué pasa.
+    * Simula un corte de corriente, apagando el SAI y comprueba qué pasa.
     * ¿Cuál es el tiempo habitual de recarga de la baterías?
 
-2. Instala un entorno de monitorización y administración del SAI bajo entorno Linux.
+2. Instala un entorno de monitorización y administración del SAI bajo entorno Linux y bajo Windows.
 
     * a) Documenta el proceso de instalación y configuración.
     * b) Indica cómo realizar las siguientes operaciones:
