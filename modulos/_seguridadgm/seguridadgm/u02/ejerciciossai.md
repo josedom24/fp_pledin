@@ -13,6 +13,8 @@ Un equipo informático domestico está compuesto por un ordenador de 200 W de co
 
 Encuentra un SAI, justificando tu respuesta, para un equipo que tiene una fuente de alimentación ATX de 450W (80 PLUS) y un monitor de 17", que consume 75W, teniendo en cuenta que se quiere dimensionar para que el consumo de equipos alcance el 75% de la potencia suministrada por el SAI. 
 
+¿Cuanto tiempo de autonomía nos ofrece el SAI elegido con la carga que necesitan nuestros dispositivos?
+
 ## Ejercicio 3
 
 Nos han asignado la tarea de decidir qué SAI se adapta mejor a nuestras necesidades, teniendo en cuenta que necesitamos ofrecer la posibilidad de conectar dispositivos que consuman 800 W en total. Los SAI que estamos estudiando son los siguientes: (2 puntos)
