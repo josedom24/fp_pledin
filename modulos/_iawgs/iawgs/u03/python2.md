@@ -9,7 +9,7 @@ Formas parte del equipo de desarrollo de la aplicación "Gestión IESGN", aplica
 
 * Realiza un fork del repositorio de GitHub: [https://github.com/jd-iesgn/iaw_gestionGN](https://github.com/jd-iesgn/iaw_gestionGN).
 * Clona el repositorio en tu equipo.
-* Crea un entorno virtual e instala las dependencias necesarias para que funcione el proyecto (fichero `requierements.txt`).
+* Crea un entorno virtual python2 e instala las dependencias necesarias para que funcione el proyecto (fichero `requierements.txt`).
 * Comprueba que vamos a trabajar con una base de datos sqlite (`gestion\settings.py`). ¿Cómo se llama la base de datos que vamos a crear?
 * Crea la base de datos: `python manage.py migrate`. A partir del modelo de datos se crean las tablas de la base de datos.
 * Añade los datos de prueba a la base de datos. Para más información: [https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata). Utiliza el fichero `datos.json`.
