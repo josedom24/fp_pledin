@@ -1,6 +1,9 @@
-# Entorno de desarrollo y producción con aplicaciones web python
+---
+title: Entorno de desarrollo y producción con aplicaciones web python
+permalink: /iawgs/u03/python2.html
+---
 
-## Tarea 1: Entrono de desarrollo 
+## Tarea 1: Entorno de desarrollo 
 
 Formas parte del equipo de desarrollo de la aplicación "Gestión IESGN", aplicación web desarrollada con python, con el framework django. Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:
 
@@ -13,10 +16,9 @@ Formas parte del equipo de desarrollo de la aplicación "Gestión IESGN", aplica
 * Entra en la zona de administración para comprobar que los datos se han añadido correctamente. Usuario: `admin` ontraseña: `asdasd1234`).
 * Ejecuta el servidor web de desarrollo y comprueba en el navegador que la aplicación está funcionando. Accede con el usuario `usuario` (contraseña: `asdasd1234`).
 
-```eval_rst
-.. note:: 
-	En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (3 puntos)
-```
+{% capture notice-text %}
+En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (3 puntos)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 2: Desarrollando nuestra aplicación
 
@@ -25,10 +27,9 @@ Vamos a realizar un cambio en la aplicación y comprobar que los cambios se real
 * Modifica la página inicial de la aplicación para que aparezca tu nombre.
 * Sube los cambios al repositorio
 
-```eval_rst
-.. note:: 
-	Muestra una captura de pantalla donde sea la modificación realizada. (1 punto)
-```
+{% capture notice-text %}
+Muestra una captura de pantalla donde sea la modificación realizada. (1 punto)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 3: Entorno de producción
 
@@ -64,10 +65,9 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 * Desactiva en la configuración (fichero `settings.py`) el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.
 * Muestra la página funcionando.
 
-```eval_rst
-.. note:: 
-	En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (4 puntos)
-```
+{% capture notice-text %}
+En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (4 puntos)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 4: Modificación de la aplicación en el entorno de producción
 
@@ -108,27 +108,25 @@ Y añade al final la siguiente línea:
 
 * Despliega el cambio producido al crear la nueva tabla en el entorno de producción.
 
-```eval_rst
-.. note:: 
-	Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
+{% capture notice-text %}
+Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
 	En este momento, muestra al profesor la aplicación funcionando en el otro hosting. (4 puntos)
-```
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 5: Despliegue de nuestra aplicación en un hosting python: pythonanywhere
 
 * Siguiendo la [documentación](https://help.pythonanywhere.com/pages/) despliega nuestra aplicación django en pythonanwhere. Utiliza git para desplegar los ficheros y crea una base de datos en tu proyecto. Si con la documentación no es suficiente puede seguir mi documento: [Despliegue de aplicación flask en hosting pythonanywhere](https://github.com/josedom24/curso_flask/tree/master/curso/u34).
 
-```eval_rst
-.. note:: 
-	Entrega una breve documentación donde expliques los pasos más importantes para el despliegue en pythonanywhere (3 puntos)
-```
+{% capture notice-text %}
+Entrega una breve documentación donde expliques los pasos más importantes para el despliegue en pythonanywhere (3 puntos)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-```eval_rst
-.. warning:: 
-	* Identificación de problemas: si estamos desarrollando una aplicación es necesario probarla, realizar test.
-	* Identificación de problemas: además de lo anterior el equipo de desarrollo necesita ir haciendo otros procesos: analizando el código generado, generar documentación,...
-	* Identificación de problemas: Nuestro equipo de desarrollo las componen varios miembros: es fundamental utilizar un repositorio común (git)
-	* Identificación de problemas: Si seguimos una metodología ágil es deseable que todos los cambios que vayan realizando los programadores se vayan probando, analizando, ... de forma continúa
-	* Identificación de problemas: ¿Y si esas tareas las automatizamos? -> Integración continúa	
+{% capture warning-text %}
+* Identificación de problemas: si estamos desarrollando una aplicación es necesario probarla, realizar test.
+* Identificación de problemas: además de lo anterior el equipo de desarrollo necesita ir haciendo otros procesos: analizando el código generado, generar documentación,...
+* Identificación de problemas: Nuestro equipo de desarrollo las componen varios miembros: es fundamental utilizar un repositorio común (git)
+* Identificación de problemas: Si seguimos una metodología ágil es deseable que todos los cambios que vayan realizando los programadores se vayan probando, analizando, ... de forma continúa
+* Identificación de problemas: ¿Y si esas tareas las automatizamos? -> Integración continúa
+{% endcapture %}<div class="notice--warning">{{ warning-text | markdownify }}</div>
 
 
