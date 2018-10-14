@@ -32,3 +32,6 @@ permalink: /iawgs/u03/index.html
 * [Despliegue de aplicaciones flask](http://flask.pocoo.org/docs/0.12/deploying/)
 * [Despliegue de aplicaciones django](https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/)
 
+## Prácticas
+
+* [Introducción al despliegue de aplicaciones python](python1.html)
