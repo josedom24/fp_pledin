@@ -19,7 +19,7 @@ Nos han asignado la tarea de decidir qué SAI se adapta mejor a nuestras necesid
 
 
 |    |      Potencia      |  Batería |
-|----------|:-------------:|------:|
+|----------|:-------------:|:------:|
 | SAI 1 | 1100 VA | 1 batería V=12,  Ah =9 |
 | SAI 2 | 1260 W / 1400 VA |1 batería V=12,  Ah = 9,7 |
 | SAI 3 | 900 W fp = 70 % | 2 baterías V*Ah=408 |
