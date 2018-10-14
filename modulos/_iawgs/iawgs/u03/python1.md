@@ -14,7 +14,7 @@ Vamos a desarrollar la aplicación del [tutorial de django 1.10](https://docs.dj
 * Crea un usuario administrador: `python3 manage.py createsuperuser`.
 * Ejecuta el servidor web de desarrollo y entra en la zona de administración (`\admin`) para comprobar que los datos se han añadido correctamente.
 * Crea dos preguntas, con posibles respuestas.
-* Ejecuta el servidor web de desarrollo y comprueba en el navegador que la aplicación está funcionando.
+* Comprueba en el navegador que la aplicación está funcionando.
 
 {% capture notice-text %}
 En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (2 puntos)
