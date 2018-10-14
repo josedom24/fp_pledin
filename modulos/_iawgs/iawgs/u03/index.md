@@ -1,6 +1,6 @@
 ---
 title: Implantación de aplicaciones web Python
-permalink: /iawgs/u02/index.html
+permalink: /iawgs/u03/index.html
 ---
 
 ## Entorno de desarrollo y producción con aplicaciones web python
