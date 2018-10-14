@@ -39,4 +39,4 @@ De los siguientes SAIs:
 Calcula:
 
 1. Factor de potencia
-2. Si el SAI lo soporta, tiempo de autonomía si le conectamos un ordenador con la siguiente fuente de alimentación.
+2. Si el SAI lo soporta, tiempo de autonomía si le conectamos un ordenador con la siguiente [fuente de alimentación](https://www.pccomponentes.com/corsair-rm850x-v2-850w-80-plus-gold-modular).
