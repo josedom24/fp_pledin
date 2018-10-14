@@ -6,6 +6,7 @@ permalink: /seguridadgm/u02/index.html
 * [PDF: Seguridad física I](doc/SI_tema2_seguridad_fisica.pdf)
 * [PDF: Seguridad física II](doc/SI_tema2_seguridad_fisica_II.pdf)
 * [PDF: Consumo de equipos y elección de SAI](doc/consumo.pdf)
+* [Ejercicios: SAI](ejerciciossai.html)
 
 ## Prácticas
 
