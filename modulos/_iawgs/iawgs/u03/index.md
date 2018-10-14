@@ -22,7 +22,7 @@ permalink: /iawgs/u03/index.html
 
 ## Enlaces
 
-* [Crear una página web con Python](https://github.com/josedom24/curso_flask/tree/master/curso/u4)
+* [Crear una página web con Python](https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u04/)
 * [Ficheros de ejemplo](https://github.com/josedom24/python_web)
 * [Lista de framework Python](https://wiki.python.org/moin/WebFrameworks)
 * [Lista de cms desarrollados en Django](https://djangopackages.org/grids/g/cms/)
@@ -30,5 +30,5 @@ permalink: /iawgs/u03/index.html
 * [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
 * [WSGI](http://wsgi.readthedocs.io/en/latest/)
 * [Despliegue de aplicaciones flask](http://flask.pocoo.org/docs/0.12/deploying/)
-* [Despliegue de aplicaiones django](https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/)
+* [Despliegue de aplicaciones django](https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/)
 
