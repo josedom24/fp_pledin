@@ -27,3 +27,16 @@ Nos han asignado la tarea de decidir qué SAI se adapta mejor a nuestras necesid
 1. Indica el SAI que no se adapta nuestra necesidad de potencia máxima. Razona la respuesta.
 2. Para una carga media de 400 W, necesito un tiempo de autonomía de como mínimo 8 minutos. ¿Qué SAI me da esas prestaciones? Razona la respuesta.
 3. Para una carga media de 200 W, ¿qué tiempo de autonomía me da cada SAI?
+
+## Ejercicio 4
+
+De los siguientes SAIs:
+
+* [SAI 1](https://www.pccomponentes.com/l-link-ll5707-interactive-sai-700va) 
+* [SAI 2](https://www.pccomponentes.com/conceptronic-ups-zeus-2200va-1320w-sai)
+* [SAI 3](http://www.cablematic.es/producto/SAI-on_hyphen_line-Galleon-de-1-KVA-con-2-schuko/)
+
+Calcula:
+
+1. Factor de potencia
+2. Si el SAI lo soporta, tiempo de autonomía si le conectamos un ordenador con la siguiente fuente de alimentación.
