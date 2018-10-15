@@ -7,7 +7,7 @@ permalink: /seguridadgm/u02/ejerciciossai.html
 
 Un equipo informático domestico está compuesto por un ordenador de 200 W de consumo, un monitor (50w), un router (10w) y una impresora de 10w. Queremos instalar un SAI que proteja toda esa instalación y vamos a una tienda donde nos enseñan un modelo de 300 VA por 78€ y otro de 500VA por 118€. Ambos tienen un factor de potencia del 60%, cuál deberíamos elegir?
 
-¿Cuanto tiempo de autonomía nos ofrece el SAI elegido con la carga que necesitan nuestros dispositivos?
+¿Cuanto tiempo de autonomía nos ofrece el SAI elegido con la carga que necesitan nuestros dispositivos suponiendo que es [este](https://images-eu.ssl-images-amazon.com/images/G/30/CE/Electronica/Manuals/B00564ZRRG.pdf) (en la página 9 puedes encontrar información de la batería)?
 
 ## Ejercicio 2
 
