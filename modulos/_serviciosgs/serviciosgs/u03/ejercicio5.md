@@ -122,7 +122,7 @@ Cuando desde el cliente intentamos acceder a una URL que esta controlada por el 
                      nonce="cIIDldTpBAA=9b0ce6b8eff03f5ef8b59da45a1ddfca0bc0c485", 
                      algorithm=MD5, 
                      qop="auth"
-
+	```
 2. El navegador del cliente muestra una ventana emergente preguntando por el nombre de usuario y contraseña y cuando se rellena se manda una petición con una cabecera *Authorization*
 
     ```bash
@@ -135,7 +135,7 @@ Cuando desde el cliente intentamos acceder a una URL que esta controlada por el 
                     qop=auth, 
                     nc=00000001, 
                     cnonce="3da69c14300e446b"
-
+	```
 La información que se manda es *responde* que en este caso esta cifrada usando md5 y que se calcula de la siguiente manera:
 
 * Se calcula el md5 del nombre de usuario, del dominio (realm) y la contraseña, la llamamos HA1.
