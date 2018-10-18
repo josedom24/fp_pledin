@@ -15,7 +15,7 @@ El tipo de registro por defecto es ADDRESS y el servidor DNS por defecto el defi
 Nota: si no funciona el comando dig, instala el paquete `dnsutils` que lo incluye.
 
 
-**nslookup**
+## nslookup
 
 [Como realizar consultas DNS con el nslookup de Windows](http://systemadmin.es/2010/09/como-realizar-consultas-dns-con-el-nslookup-de-windows).
 
