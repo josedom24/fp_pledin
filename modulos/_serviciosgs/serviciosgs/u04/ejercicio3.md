@@ -3,12 +3,9 @@ title: "Ejercicio 3: Instalación y configuración del servidor bind9 en nuestra
 permalink: /serviciosgs/u04/ejercicio3.html
 ---
 
-```eval_rst
-.. note::
-
-	1. Desinstala el servidor dnsmasq que has instalado en la práctica anterior para que no tengas conflictos.
-	2. Para hacer este ejercicio vamos a suponer que nuestro ordenadores están en la red 10.0.0.0/24, siendo nuestro servidor el 10.0.0.3, y los clientes 10.0.0.4 y 10.0.0.5. Adapta este direccionamiento a tu escenario.
-```
+1. Desinstala el servidor dnsmasq que has instalado en la práctica anterior para que no tengas conflictos.
+2. Para hacer este ejercicio vamos a suponer que nuestro ordenadores están en la red 10.0.0.0/24, siendo nuestro servidor el 10.0.0.3, y los clientes 10.0.0.4 y 10.0.0.5. Adapta este direccionamiento a tu escenario.
+{: .notice--warning}
 
 Queremos instalar un servidor DNS local en nuestra intranet que nos permita gestionar los nombres de las máquinas y recursos de nuestra red, vamos a instalar el servidor DNS en nuestro servidor debian. Las características del servidor DNS que queremos instalar son las siguientes:
 
