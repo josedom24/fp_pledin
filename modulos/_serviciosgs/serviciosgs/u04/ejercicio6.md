@@ -3,11 +3,9 @@ title: "Ejercicio 6: Delegación de subdominios con bind9"
 permalink: /serviciosgs/u04/ejercicio6.html
 ---
 
-```eval_rst
-.. note::
-
-	Suponemos que tenemos instalado el servidor DNS del `ejercicio anterior <ejercicio3.html>`_.
-```
+{% capture notice-text %}
+Suponemos que tenemos instalado el servidor DNS del [ejercicio anterior](ejercicio3.html).
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 Tenemos un servidor DNS que gestiona la zona correspondiente al nombre de dominio ``iesgn.org``, en esta ocasión queremos delegar el subdominio ``informatica.iesgn.org`` para que lo gestione otro servidor DNS. Por lo tanto tenemos un escenario con dos servidores DNS:
 
@@ -20,14 +18,12 @@ Los nombres que vamos a tener en ese subdominio son los siguientes:
 * Vamos a suponer que tenemos un servidor ftp que se llame ``ftp.informatica.iesgn.org`` y que está en la misma máquina.
 *  Vamos a suponer que tenemos un servidor para recibir los correos que se llame ``correo.informatica.iesgn.org`` y que está en 10.0.0.51.
 
-```eval_rst
-.. warning:: 
+{% capture notice-text %}
+1. Configura el primer servidor DNS para poder tener el subdominio virtual ``informatica.iesgn.org``. 
+2. Configura el segundo servidor DNS con los registros A, CNAME, MX y NS necesarios para el subdominio ``informatica.iesgn.org``. 
+3. Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
 
-	1. Configura el primer servidor DNS para poder tener el subdominio virtual ``informatica.iesgn.org``. 
-	2. Configura el segundo servidor DNS con los registros A, CNAME, MX y NS necesarios para el subdominio ``informatica.iesgn.org``. 
-	3. Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
-
-		* Dirección de ``www.informatica.iesgn.org``, ``ftp.informatica.iesgn.org``
-		* El servidor DNS que tiene configurado la zona del dominio ``informatica.iesgn.org``. ¿Es el mismo que el servidor DNS con autoridad para la zona ``iesgn.org``?
-		* El servidor de correo configurado para ``informatica.iesgn.org``
-```
+	* Dirección de ``www.informatica.iesgn.org``, ``ftp.informatica.iesgn.org``
+	* El servidor DNS que tiene configurado la zona del dominio ``informatica.iesgn.org``. ¿Es el mismo que el servidor DNS con autoridad para la zona ``iesgn.org``?
+	* El servidor de correo configurado para ``informatica.iesgn.org``
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
