@@ -19,14 +19,12 @@ Una vez instalado, el paquete, editamos el fichero ``/etc/dnsmasq.conf`` y modif
 
 Finalmente reiniciamos el servicio.
 
-```eval_rst
-.. warning::
+{% capture notice-text %}
+1. Configura los clientes para que utilicen el servidor DNS que has instalado.
+2. Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:	
 
-	1. Configura los clientes para que utilicen el servidor DNS que has instalado.
-	2. Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:	
+	* Dirección de ``nombredelservidor.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
+	* La dirección IP de ``www.josedomingo.org``	
 
-		* Dirección de ``nombredelservidor.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
-		* La dirección IP de ``www.josedomingo.org``	
-
-	3. Comprueba que se puede entrar en las páginas webs
-```
+3. Comprueba que se puede entrar en las páginas webs
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
