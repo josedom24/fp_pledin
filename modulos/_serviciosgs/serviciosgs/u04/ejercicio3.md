@@ -19,16 +19,14 @@ Queremos instalar un servidor DNS local en nuestra intranet que nos permita gest
 * Además queremos nombrar a varios clientes.
 * Suponemos que tenemos un servidor web con las páginas: ``www.iesgn.org`` y ``departementos.iesgn.org``
 
-```eval_rst
-.. warning::
-
-	1. Configura el servidor DNS con los registros A, CNAME, MX y NS necesarios, configura el SOA. 
-	2. Configura los clientes para que su DNS sea el servidor Debian, debes indicar en la configuración de red del cliente como DNS primario la ip del servidor linux.
-	3. Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
+{% capture notice-text %}
+1. Configura el servidor DNS con los registros A, CNAME, MX y NS necesarios, configura el SOA. 
+2. Configura los clientes para que su DNS sea el servidor Debian, debes indicar en la configuración de red del cliente como DNS primario la ip del servidor linux.
+3. Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
 
 	* Dirección de ``nombredelservidor.iesgn.org``,``www.iesgn.org``,``ftp.iesgn.org``
 	* El servidor DNS que tiene configurado la zona del dominio ``iesgn.org``
 	* El servidor de correo configurado para ``iesgn.org``
 	* La dirección IP de ``www.josedomingo.org``
 	* Un resolución inversa
-```
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
