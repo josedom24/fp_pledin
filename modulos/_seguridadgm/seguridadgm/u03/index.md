@@ -10,7 +10,7 @@ permalink: /seguridadgm/u03/index.html
 
 * [Práctica 8: Congelación del sistema](congelacion.html)
 * Práctica 9: RAID 1
-* Práctica 10: Almacenamiento en la nube
+* [Práctica 10: Almacenamiento en la nube](nube.html)
 
 ## Enlaces interesantes
 
