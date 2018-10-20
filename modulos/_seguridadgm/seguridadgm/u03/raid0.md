@@ -40,6 +40,13 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
         mdadm: Defaulting to version 1.2 metadata
         mdadm: array /dev/md0 started.
 
+    Donde hemos indicado los siguientes parámetros:
+
+    * `/dev/dm0`: Es el nombre que le asignamos al RAID0.
+    * `--level=0`:  Especifica el tipo de RAID.
+    * `--raid-devices=2`: Indica el número de dispositivos que forman el RAID.
+    * `/dev/sdb /dev/sdc`: El nombre de los dispositivos que forman el RAID.
+
     Ahora podemos comprobar que hemos creado el raid:
 
         # cat /proc/mdstat 
@@ -78,3 +85,48 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
                0       8       16        0      active sync   /dev/sdb
                1       8       32        1      active sync   /dev/sdc
 
+3. Ya tenmos un nuevo dispositivo de bloque (`/dev/md0`) que representa el raid0, ahora lo podemos tratar como otro dispositivo de bloque más, es decir lo puedo particionar, formatear y montarlo en mi sistema de ficheros.
+
+    Podríamos particionar el dispositivo de bloque:
+
+        # fdisk /dev/md0
+        Welcome to fdisk (util-linux 2.29.2).
+        Changes will remain in memory only, until you decide to write them.
+        Be careful before using the write command.
+
+        Device does not contain a recognized partition table.
+        Created a new DOS disklabel with disk identifier 0x90678bec.
+
+        Command (m for help): 
+
+    Pero nosotros lo vamos a formatear directamente:
+
+        # mkfs.ext4 /dev/md
+        mke2fs 1.43.4 (31-Jan-2017)
+        Creating filesystem with 523776 4k blocks and 131072 inodes
+        Filesystem UUID: cbe308a1-9109-4029-b564-38a93b8537ee
+        Superblock backups stored on blocks: 
+        	32768, 98304, 163840, 229376, 294912
+
+        Allocating group tables: done                            
+        Writing inode tables: done                            
+        Creating journal (8192 blocks): done
+        Writing superblocks and filesystem accounting information: done 
+
+    Ahora vamos a montarlo en el directorio `/mnt/raid0`, para ello:
+
+        # mkdir -p /mnt/raid0
+        # mount /dev/md0 /mnt/raid0
+        # df -f
+        ...
+        /dev/md0        2.0G  6.0M  1.9G   1% /mnt/raid0
+
+    Si queremos que el dispositivo se monte automáticamente tenmos que añadir al fichero `/etc/fstab` la siguiente línea:
+
+        /dev/md0	/mnt/raid0	ext4	defaults		    0       0
+
+    Y para montarlo ejecutamos:
+
+        # umount -a
+
+    
