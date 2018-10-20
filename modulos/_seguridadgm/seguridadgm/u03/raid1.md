@@ -1,6 +1,6 @@
 ---
 title: "Práctica RAID 1"
-permalink: /seguridadgm/u04/index.html
+permalink: /seguridadgm/u03/raid1.html
 ---
 
 ## RAID 1 en windows
