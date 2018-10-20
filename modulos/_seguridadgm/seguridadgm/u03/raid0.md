@@ -3,6 +3,8 @@ title: "RAID 0 en Linux"
 permalink: /seguridadgm/u03/raid0.html
 ---
 
+## Raid0 en Linux
+
 Vamos a configurar en una máquina virtual con Debian un raid0 por software entre dos discos de 1Gb que le hemos conectado. Para ello seguimos los siguientes pasos:
 
 1. Instalación de mdadm
@@ -129,4 +131,12 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
 
         # umount -a
 
-    
+## Raid0 en Windows 10
+
+En este caso tenemos una máquina virtual con Windows 10, y acabos de conectarle dos discos duros. Los pasos que vamos a dar son los siguientes:
+
+1. Activamos los discos:
+
+    Para ello vamos a **Herramientas administrativas -> Administración de equipos -> Almacenamiento  -> Gestión de discos**. La primera vez que entremos nos va a pedir que activemos los dos discos (escogemos partición MBR).
+
+2. Desde esa misma ventana escogemos uno de los discos, botón derecho y escogemos la opción **Añadir nuevo striped volumen**, y a continuación se elegen los dos discos, se formatea y se asigna una letra de unidad.
