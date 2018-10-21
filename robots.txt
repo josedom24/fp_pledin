@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /report*.html$
+Sitemap: https://fp.josedomingo.org/sitemap.xml
+
