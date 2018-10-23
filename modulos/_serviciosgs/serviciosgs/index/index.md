@@ -13,8 +13,8 @@ El índice de contenidos que vamos a estudiar será:
 * [Servidor DHCP](u02)
 * [Servidor Web](u03)
 * [Servidor DNS](u04)
+
 {::comment}
-* Servidor DNS
 * Servidor FTP
 * Gestión de peticiones y rendimiento en servidores Web
 * Servidor de correo electrónico
