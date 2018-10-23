@@ -45,6 +45,8 @@ iawgs:
         url: /iawgs/u01
       - title: PHP
         url: /iawgs/u02
+      - title: Python
+        url: /iawgs/u03
 
 lmgs:
   - title: Lenguajes de marcas

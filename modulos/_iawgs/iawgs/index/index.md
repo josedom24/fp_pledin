@@ -13,9 +13,10 @@ El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la implantación de aplicaciones web](u01)
 * [Implantación de aplicaciones web PHP](u02)
+* [Implantación de aplicaciones web Python](u03)
 
 {::comment}
-* Implantación de aplicaciones web Python
+
 * Introducción a la integración continúa y despliegue continuo
 * Despliegue de aplicaciones web Java
 * Despliegue de aplicaciones con contenedores
