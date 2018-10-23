@@ -12,7 +12,7 @@ El índice de contenidos que vamos a estudiar será:
 * [Introducción a los servicios en red](u01)
 * [Servidor DHCP](u02)
 * [Servidor Web](u03)
-
+* [Servidor DNS](u04)
 {::comment}
 * Servidor DNS
 * Servidor FTP
