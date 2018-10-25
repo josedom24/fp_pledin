@@ -21,7 +21,7 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 
 * [Enlaces interesantes](enlaces.html)
 * [Presentación: Servidor web Apache 2.4](https://docs.google.com/presentation/d/e/2PACX-1vSciwRh5eeUkr3EDC3gpzcL-FVD11Fh7oBBfniqEnn4LUgm8FfKc4m9kuRRIJg8VWsNqnXJyZp8Fo1B/pub?start=true&loop=false&delayms=3000)
-* [Curso Apache24](https://plataforma.josedomingo.org/pledin/cursos/apache24/)
+* [Curso Apache2.4](https://plataforma.josedomingo.org/pledin/cursos/apache24/)
 * [Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST](ejercicio1.html)
 * [Ejercicio 2: Instalación y configuración básica de Apache](ejercicio2.html)
 * [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html)
