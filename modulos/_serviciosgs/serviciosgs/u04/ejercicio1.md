@@ -31,13 +31,13 @@ Utilizando el comando dig/nslookup realiza las siguientes consultas al servidor 
 
 2. Preguntas a registros tipo NS: Obtén la dirección y los servidor DNS que corresponden a los siguientes dominios:
 
-    	dominio raíz
-    	com
-    	org
-    	es
-    	us.es
-    	wikipedia.org
-    	ubuntu.com
+        dominio raíz
+        com
+        org
+        es
+        us.es
+        wikipedia.org
+        ubuntu.com
 
 3. Preguntas a registros MX: Obtén el nombre y la dirección del ordenador al que se mandan los correos que se envían a los siguientes dominios:
 
