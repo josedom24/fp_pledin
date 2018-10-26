@@ -3,7 +3,7 @@ title: "Práctica: Servidor DNS"
 permalink: /serviciosgs/u04/practica_dns.html
 ---
 
-**(8 tareas - 25 puntos)(3 tareas obligatorias - 10 puntos)**
+**(9 tareas - 25 puntos)(3 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
 **Muestra al profesor: Tarea 2, Tarea 6 y Tarea 7**
 {: .notice--warning}
@@ -56,11 +56,11 @@ El servidor DNS actual funciona como **DNS maestro**. Vamos a instalar un nuevo 
 	* Comprueba si la configuración de ``named.conf`` tiene algún error con el comando adecuado.
 	* Reinicia los servidores y comprueba en los logs si hay algún error. **No olvides incrementar el número de serie en el registro SOA si has modificado la zona en el maestro**.
 	* Muestra la salida del log donde se demuestra que se ha realizado la transferencia de zona.
-* **Tarea 5 (3 puntos):** Documenta los siguientes apartados:
+* **Tarea 5 (1 punto):** Documenta los siguientes apartados:
 	* Configura un cliente para que utilice los dos servidores como servidores DNS.
 	* Realiza una consulta con ``dig`` tanto al maestro como al esclavo para comprobar que las respuestas son autorizadas. ¿En qué te tienes que fijar?
 	* Solicita una copia completa de la zona desde el cliente ¿qué tiene que ocurrir?. Solicita una copia completa desde el esclavo ¿qué tiene que ocurrir?
-* **Tarea 6 (2 puntos):** Muestra al profesor el funcionamiento del DNS esclavo:
+* **Tarea 6 (1 punto):** Muestra al profesor el funcionamiento del DNS esclavo:
 	* Realiza una consulta desde el cliente y comprueba que servidor está respondiendo.
 	* Posteriormente apaga el servidor maestro y vuelve a realizar una consulta desde el cliente ¿quién responde?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
@@ -79,8 +79,8 @@ Los nombres que vamos a tener en ese subdominio son los siguientes:
 * Vamos a suponer que tenemos un servidor para recibir los correos que se llame ``correo.informatica.iesgn.org``.
 
 {% capture notice-text %}
-* **Tarea 7 (4 puntos):** Realiza la instalación y configuración del nuevo servidor dns con las características anteriormente señaladas. Muestra el resultado al profesor.
-* **Tarea 8 (3 puntos):** Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
+* **Tarea 7 (3 puntos):** Realiza la instalación y configuración del nuevo servidor dns con las características anteriormente señaladas. Muestra el resultado al profesor.
+* **Tarea 8 (2 puntos):** Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
 
 	* Dirección de ``www.informatica.iesgn.org``, ``ftp.informatica.iesgn.org``
 	* El servidor DNS que tiene configurado la zona del dominio ``informatica.iesgn.org``. ¿Es el mismo que el servidor DNS con autoridad para la zona ``iesgn.org``?
