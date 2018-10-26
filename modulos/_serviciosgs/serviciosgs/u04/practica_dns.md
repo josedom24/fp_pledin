@@ -3,13 +3,12 @@ title: "Práctica: Servidor DNS"
 permalink: /serviciosgs/u04/practica_dns.html
 ---
 
-(8 tareas - 25 puntos)(3 tareas obligatorias - 10 puntos)
+**(8 tareas - 25 puntos)(3 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
-* Muestra al profesor: *Tarea 2, Tarea 6 y Tarea 7*
+**Muestra al profesor: Tarea 2, Tarea 6 y Tarea 7**
 {: .notice--warning}
 
 ## Escenario
-
 
 1. En nuestra red local tenemos un **servidor Web** que sirve dos páginas web: *www.iesgn.org*, *departamentos.iesgn.org*
 2. Vamos a instalar en nuestra red local un servidor DNS (lo puedes instalar en el mismo equipo que tiene el servidor web)
