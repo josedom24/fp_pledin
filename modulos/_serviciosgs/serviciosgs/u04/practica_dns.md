@@ -35,7 +35,7 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 * Se tienen que configurar la zona de resolución inversa.
 
 {% capture notice-text %}
-* **Tarea 2 (4 puntos)(Obligatorio):** Realiza la instalación y configuración del servidor bind9 con las características anteriomente señaladas. Entrega las zonas que has definido.
+* **Tarea 2 (4 puntos)(Obligatorio):** Realiza la instalación y configuración del servidor bind9 con las características anteriomente señaladas. Entrega las zonas que has definido. Muestra al profesor su funcionamiento.
 * **Tarea 3 (4 puntos)(Obligatorio):** Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:
 	* Dirección de ``pandora.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
 	* El servidor DNS con autoridad sobre la zona del dominio ``iesgn.org``
@@ -85,4 +85,14 @@ Los nombres que vamos a tener en ese subdominio son los siguientes:
 	* Dirección de ``www.informatica.iesgn.org``, ``ftp.informatica.iesgn.org``
 	* El servidor DNS que tiene configurado la zona del dominio ``informatica.iesgn.org``. ¿Es el mismo que el servidor DNS con autoridad para la zona ``iesgn.org``?
 	* El servidor de correo configurado para ``informatica.iesgn.org``
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## DNS dínamico
+
+Instala un servidor DHCP que configure de forma automática a los clientes. Este servidor DHCP debe mandar a los clientes los servidores DNS que deben utilizar.
+
+Configura el servidor DHCP y el DNS maestro para que cada vez que se asigne o modifique una ip a un cliente se actulice de forma automática las zonas del servidor DNS.
+
+{% capture notice-text %}
+* **Tarea 9 (5 puntos):** Documenta en redmine el proceso que has realizado para configurar un DNS dinámico. Muestra un aprueba de funcionamiento.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
