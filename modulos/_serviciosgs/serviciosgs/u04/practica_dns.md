@@ -10,7 +10,7 @@ permalink: /serviciosgs/u04/practica_dns.html
 
 ## Escenario
 
-1. En nuestra red local tenemos un **servidor Web** que sirve dos páginas web: *www.iesgn.org*, *departamentos.iesgn.org*
+1. En nuestra red local tenemos un **servidor Web** que sirve dos páginas web: `www.iesgn.org`, `departamentos.iesgn.org`
 2. Vamos a instalar en nuestra red local un servidor DNS (lo puedes instalar en el mismo equipo que tiene el servidor web)
 3. Voy a suponer en este documento que el nombre del servidor DNS va a ser ``pandora.iesgn.org``. Si quieres puedes utilizar otro nombre.
 
@@ -19,7 +19,7 @@ permalink: /serviciosgs/u04/practica_dns.html
 Instala el servidor dns **dnsmasq** en ``pandora.iesgn.org`` y configúralo para que los clientes puedan conocer los nombres necesarios.
 
 {% capture notice-text %}
-* **Tarea 1 (2 punto)(Obligatorio):** Modifica los clientes para que utilicen el nuevo servidor dns. Realiza una consulta a www.iesgn.org, y a www.josedomingo.org. Realiza una prueba de funcionamiento para comprobar que el servidor dnsmasq funciona como cache dns. Muestra el fichero ``hosts`` del cliente para demostrar que no estás utilizando resolución estática. ¿Se puede realizar resolución inversa?. Documenta la tarea en redmine.
+* **Tarea 1 (2 punto)(Obligatorio):** Modifica los clientes para que utilicen el nuevo servidor dns. Realiza una consulta a `www.iesgn.org`, y a `www.josedomingo.org`. Realiza una prueba de funcionamiento para comprobar que el servidor dnsmasq funciona como cache dns. Muestra el fichero ``hosts`` del cliente para demostrar que no estás utilizando resolución estática. Realiza una consulta directa al servidor **dnsmasq**. ¿Se puede realizar resolución inversa?. Documenta la tarea en redmine.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Servidor bind9 
@@ -41,7 +41,7 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 	* El servidor DNS con autoridad sobre la zona del dominio ``iesgn.org``
 	* El servidor de correo configurado para ``iesgn.org``
 	* La dirección IP de ``www.josedomingo.org``
-	* Un resolución inversa
+	* Una resolución inversa
 	* La dirección ipv6 de ``pandora.iesgn.org``
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
