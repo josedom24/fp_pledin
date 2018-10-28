@@ -9,7 +9,7 @@ Tienes que montar un raid 1 en windows con dos discos de 1 Gb. ¿Cuánto ocupara
 
 ## RAID 1 en linux
 
-Realiza el mismos ejercicio en Linux, utilizando la herramienta `mdadm`. Documenta con detalle todo el proceso de realización del RAID (suponemos que partimos de una máquina con dos discos conectados y con una partición primaria). ¿Qué significa las dos U que aparecen cuando ejecutas el comando `cat /dev/mdstat`.
+Realiza el mismos ejercicio en Linux, utilizando la herramienta `mdadm`. Documenta con detalle todo el proceso de realización del RAID (suponemos que partimos de una máquina con dos discos conectados y con una partición primaria). ¿Qué significa las dos U que aparecen cuando ejecutas el comando `cat /dev/mdstat`?.
 
 ### ¿Qué ocurre cuando un disco falla?
 
