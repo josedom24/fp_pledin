@@ -3,7 +3,7 @@ title: "3.-  Gestión del Almacenamiento de la información"
 permalink: /seguridadgm/u03/index.html
 ---
 
-* [Gestión del Almacenmaiento de la Información](https://docs.google.com/presentation/d/e/2PACX-1vQx7XvilZBzhrLZTEIgRIJRI_nexTThIK6HSzPxNoHrRTqUzyGEtHpJ-PM0cIKYEnKsiYM4T118sgls/pub?start=false&loop=false&delayms=3000)
+* [Gestión del Almacenamiento de la Información](https://docs.google.com/presentation/d/e/2PACX-1vQx7XvilZBzhrLZTEIgRIJRI_nexTThIK6HSzPxNoHrRTqUzyGEtHpJ-PM0cIKYEnKsiYM4T118sgls/pub?start=false&loop=false&delayms=3000)
 * [RAID 0 en Linux](raid0.html)
 
 ## Prácticas
