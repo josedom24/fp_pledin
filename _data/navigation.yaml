@@ -63,4 +63,6 @@ seguridadgm:
         url: /seguridadgm/u01
       - title: "Seguridad Física"
         url: /seguridadgm/u02
+      - title: "Gestión de Almacenamiento"
+        url: /seguridadgm/u03
       
