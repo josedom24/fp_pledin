@@ -5,16 +5,16 @@ permalink: /iawgs/u03/python1.html
 
 ## Tarea 1: Entorno de desarrollo 
 
-Vamos a desarrollar la aplicación del [tutorial de django 1.10](https://docs.djangoproject.com/en/1.10/intro/tutorial01/). Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:
+Vamos a desarrollar la aplicación del [tutorial de django 2.1](https://docs.djangoproject.com/en/2.1/intro/tutorial01/). Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:
 
 * Clona el repositorio de GitHub: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
 * Crea un entorno virtual de python3 e instala las dependencias necesarias para que funcione el proyecto (fichero `requierements.txt`).
-* Comprueba que vamos a trabajar con una base de datos sqlite (`django_tutorial/\settings.py`). ¿Cómo se llama la base de datos que vamos a crear?
+* Comprueba que vamos a trabajar con una base de datos sqlite (`django_tutorial/settings.py`). ¿Cómo se llama la base de datos que vamos a crear?
 * Crea la base de datos: `python3 manage.py migrate`. A partir del modelo de datos se crean las tablas de la base de datos.
 * Crea un usuario administrador: `python3 manage.py createsuperuser`.
 * Ejecuta el servidor web de desarrollo y entra en la zona de administración (`\admin`) para comprobar que los datos se han añadido correctamente.
 * Crea dos preguntas, con posibles respuestas.
-* Comprueba en el navegador que la aplicación está funcionando.
+* Comprueba en el navegador que la aplicación está funcionando, accede a la url `\polls`.
 
 {% capture notice-text %}
 En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (2 puntos)

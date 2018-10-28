@@ -21,8 +21,8 @@ serviciosgs:
         url: /serviciosgs/u02
       - title: Servidor Web
         url: /serviciosgs/u03
-      #- title: Servidor DNS
-      #  url: #
+      - title: Servidor DNS
+        url: /serviciosgs/u04
       #- title: Servidor FTP
       #  url: #
       #- title: Gestión de peticiones y rendimiento en servidores Web
@@ -45,6 +45,8 @@ iawgs:
         url: /iawgs/u01
       - title: PHP
         url: /iawgs/u02
+      - title: Python
+        url: /iawgs/u03
 
 lmgs:
   - title: Lenguajes de marcas
@@ -66,3 +68,4 @@ seguridadgm:
       - title: "Gestión de Almacenamiento"
         url: /seguridadgm/u03
       
+
