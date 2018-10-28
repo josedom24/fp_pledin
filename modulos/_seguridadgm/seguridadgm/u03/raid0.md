@@ -29,7 +29,7 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
         # mdadm --detail /dev/md1
         mdadm: cannot open /dev/md1: No such file or directory
 
-2. Vamos a montar un raid 0 de los dos discos que hemos añadido. Para realizar un raid tenemos que indicar dispositivos de bloques, que puedes ser discos completos o particiones. Nosotros vamos a usar los dos discos completos:
+2. Vamos a montar un raid 0 de los dos discos que hemos añadido. Para realizar un raid tenemos que indicar dispositivos de bloques, que pueden ser discos completos o particiones. Nosotros vamos a usar los dos discos completos:
 
         # lsblk
         ...
@@ -139,4 +139,4 @@ En este caso tenemos una máquina virtual con Windows 10, y acabos de conectarle
 
     Para ello vamos a **Herramientas administrativas -> Administración de equipos -> Almacenamiento  -> Gestión de discos**. La primera vez que entremos nos va a pedir que activemos los dos discos (escogemos partición MBR).
 
-2. Desde esa misma ventana escogemos uno de los discos, botón derecho y escogemos la opción **Añadir nuevo striped volumen**, y a continuación se elegen los dos discos, se formatea y se asigna una letra de unidad.
+2. Desde esa misma ventana escogemos uno de los discos, botón derecho y escogemos la opción **Añadir nuevo striped volumen**, y a continuación se eligen los dos discos, se formatea y se asigna una letra de unidad.
