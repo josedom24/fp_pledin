@@ -123,13 +123,13 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
         ...
         /dev/md0        2.0G  6.0M  1.9G   1% /mnt/raid0
 
-    Si queremos que el dispositivo se monte automáticamente tenmos que añadir al fichero `/etc/fstab` la siguiente línea:
+    Si queremos que el dispositivo se monte automáticamente tenemos que añadir al fichero `/etc/fstab` la siguiente línea:
 
         /dev/md0	/mnt/raid0	ext4	defaults		    0       0
 
     Y para montarlo ejecutamos:
 
-        # umount -a
+        # mount -a
 
 ## Raid0 en Windows 10
 
