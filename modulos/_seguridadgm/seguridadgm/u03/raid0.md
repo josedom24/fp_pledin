@@ -119,7 +119,7 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
 
         # mkdir -p /mnt/raid0
         # mount /dev/md0 /mnt/raid0
-        # df -f
+        # df -h
         ...
         /dev/md0        2.0G  6.0M  1.9G   1% /mnt/raid0
 
