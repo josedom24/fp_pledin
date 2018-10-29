@@ -103,7 +103,7 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
 
     Pero nosotros lo vamos a formatear directamente:
 
-        # mkfs.ext4 /dev/md
+        # mkfs.ext4 /dev/md0
         mke2fs 1.43.4 (31-Jan-2017)
         Creating filesystem with 523776 4k blocks and 131072 inodes
         Filesystem UUID: cbe308a1-9109-4029-b564-38a93b8537ee
