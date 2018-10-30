@@ -2,7 +2,7 @@
 title: Ficheros importantes en la resolución de nombres
 permalink: /serviciosgs/u04/ficheros.html
 ---
-## /etc/nsswitch.conf*
+## /etc/nsswitch.conf
 
 Hay varios mecanismos de resolución de nombres y los que utilice una máquina GNU/Linux se especifican en el fichero ``/etc/nsswitch.conf``, que contiene una línea como::
 
