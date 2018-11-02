@@ -15,3 +15,5 @@ El índice de contenidos que vamos a estudiar será:
 
 * [Presentación: Programación en psudocódigo](https://docs.google.com/presentation/d/e/2PACX-1vRUh9rGAN2AJmtreO0WR_a9_s2aLOPBZF-yoHgqvG0JXn1tHdhe78ocg2Enh_uDQZ461N34PZ7_6CGh/pub?start=true&loop=false&delayms=3000)
 * [Programación en pseudocódigo](https://github.com/josedom24/curso_programacion)
+* [Presentación: Programación con Python3](https://docs.google.com/presentation/d/e/2PACX-1vQFNORQfZymIauAJgFZyLK_FdsitQe9ZUFoF7G-0CiwnmNUzFoJSBLm_Sa8kmxlBa1v3l5aaaMzFNO8/pub?start=true&loop=false&delayms=3000)
+* [Introducción a la programación con Python3](https://gitlab.com/josedom24/curso_programacion_python3)
