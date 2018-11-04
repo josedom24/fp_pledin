@@ -3,8 +3,6 @@ title: "Boletín 2: Ejercicios listas"
 permalink: /lmgs/u02/boletin2.html
 ---
 
-# Boletín 4: Ejercicios listas
-
 1. Lee por teclado números y guardalo en una lista, el proceso finaliza cuando metamos un número negativo. Muestra el máximo de los números guardado en la lista, muestra los números pares.
 
 2. Escribe un programa que permita crear una lista de palabras. Para ello, el programa tiene que pedir un número y luego solicitar ese número de palabras para crear la lista. Por último, el programa tiene que escribir la lista.
