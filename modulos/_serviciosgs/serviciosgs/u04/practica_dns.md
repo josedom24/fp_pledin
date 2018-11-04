@@ -3,7 +3,7 @@ title: "Práctica: Servidor DNS"
 permalink: /serviciosgs/u04/practica_dns.html
 ---
 
-**(9 tareas - 25 puntos)(3 tareas obligatorias - 10 puntos)**
+**(13 tareas - 30 puntos)(3 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
 **Muestra al profesor: Tarea 2, Tarea 6 y Tarea 7**
 {: .notice--warning}
