@@ -1,6 +1,6 @@
 ---
 title: "Solución Boletín 1: Ejercicios fáciles"
-permalink: /lmgs/u02/resuleto1.html
+permalink: /lmgs/u02/resuelto1.html
 ---
 
 1. Calcular el perímetro y área de un círculo dado su radio.
