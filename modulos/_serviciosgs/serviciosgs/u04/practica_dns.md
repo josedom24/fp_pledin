@@ -45,7 +45,7 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 	* La dirección ipv6 de ``pandora.iesgn.org``
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Servidor DNS esclavo
+### Servidor DNS esclavo
 
 El servidor DNS actual funciona como **DNS maestro**. Vamos a instalar un nuevo servidor DNS que va a estar configurado como **DNS esclavo** del anterior, donde se van a ir copiando periódicamente las zonas del DNS maestro. Suponemos que el nombre del servidor DNS esclavo se va llamar ``afrodita.iesgn.org``.
 
@@ -65,7 +65,7 @@ El servidor DNS actual funciona como **DNS maestro**. Vamos a instalar un nuevo 
 	* Posteriormente apaga el servidor maestro y vuelve a realizar una consulta desde el cliente ¿quién responde?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Delegación de dominios
+### Delegación de dominios
 
 Tenemos un servidor DNS que gestiona la zona correspondiente al nombre de dominio ``iesgn.org``, en esta ocasión queremos delegar el subdominio ``informatica.iesgn.org`` para que lo gestione otro servidor DNS. Por lo tanto tenemos un escenario con dos servidores DNS:
 
@@ -87,7 +87,7 @@ Los nombres que vamos a tener en ese subdominio son los siguientes:
 	* El servidor de correo configurado para ``informatica.iesgn.org``
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## DNS dínamico
+### DNS dínamico
 
 Instala un servidor DHCP que configure de forma automática a los clientes. Este servidor DHCP debe mandar a los clientes los servidores DNS que deben utilizar.
 
@@ -95,4 +95,20 @@ Configura el servidor DHCP y el DNS maestro para que cada vez que se asigne o mo
 
 {% capture notice-text %}
 * **Tarea 9 (5 puntos):** Documenta en redmine el proceso que has realizado para configurar un DNS dinámico. Muestra un aprueba de funcionamiento.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## Servidor PowerDNS
+
+PowerDNS es un servidor DNS escrito en C++ que nos permite guardar la información de las zonas en distintos *backends* (bases de datos, ficheros, ...).
+
+PowerDNS está formado por dos componentes:
+
+* El servidor recursor: pdns-recursor
+* El servidor "autoritativo": pdns.
+
+{% capture notice-text %}
+* **Tarea 10 (1 punto):** Instala el servidor recursor de PowerDns y realiza pruebas de funcionamiento para comoprobar su funcionamiento. (Aunque este servidor está preparado para ahcer las consultas recursivas tendrás que configurarlo para hacer forward a nuestro servidor DNS local).
+* **Tarea 11 (2 puntos):** Instala el servidor "autorirativo" de PowerDns, elige una base de datos para guardar los registros y realiza la configuración de las zonas que hemos definido en la **Tarea 2**. Debes configurar el servidor para que consulte al servidor recursivo cuando no tiene autoridad sobre una zona.
+* **Tarea 12 (1 punto):** Realiza las mismas consultas que hemos realizado en la **Tarea 3**.
+* **Tarea 13 (1 punto):** Instala un WebFrontend para manejar PowerDns. [WebFrontends](https://github.com/PowerDNS/pdns/wiki/WebFrontends)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
