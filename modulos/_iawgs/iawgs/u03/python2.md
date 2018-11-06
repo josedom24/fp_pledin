@@ -9,11 +9,11 @@ Formas parte del equipo de desarrollo de la aplicación "Gestión IESGN", aplica
 
 * Realiza un fork del repositorio de GitHub: [https://github.com/jd-iesgn/iaw_gestionGN](https://github.com/jd-iesgn/iaw_gestionGN).
 * Clona el repositorio en tu equipo.
-* Crea un entorno virtual python2 e instala las dependencias necesarias para que funcione el proyecto (fichero `requierements.txt`).
+* Crea un entorno virtual python3 e instala las dependencias necesarias para que funcione el proyecto (fichero `requierements.txt`).
 * Comprueba que vamos a trabajar con una base de datos sqlite (`gestion\settings.py`). ¿Cómo se llama la base de datos que vamos a crear?
-* Crea la base de datos: `python manage.py migrate`. A partir del modelo de datos se crean las tablas de la base de datos.
+* Crea la base de datos: `python3 manage.py migrate`. A partir del modelo de datos se crean las tablas de la base de datos.
 * Añade los datos de prueba a la base de datos. Para más información: [https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata). Utiliza el fichero `datos.json`.
-* Entra en la zona de administración para comprobar que los datos se han añadido correctamente. Usuario: `admin` ontraseña: `asdasd1234`).
+* Entra en la zona de administración para comprobar que los datos se han añadido correctamente. Usuario: `admin` contraseña: `asdasd1234`).
 * Ejecuta el servidor web de desarrollo y comprueba en el navegador que la aplicación está funcionando. Accede con el usuario `usuario` (contraseña: `asdasd1234`).
 
 {% capture notice-text %}
@@ -40,7 +40,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 * Crea un entorno virtual e instala las dependencias de tu aplicación.
 * Instala el módulo que permite que python trabaje con mysql: 
 
-		$ apt-get install python-mysqldb
+		$ apt-get install python3-mysqldb
 
 	Y en el entorno virtual:
 
@@ -90,8 +90,8 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
 				verbose_name="Modulo"
 				verbose_name_plural="Modulos"
 
-2. Crea una nueva migración: `python manage.py makemigrations`. 
-3. Y realiza la migración: `python manage.py migrate`
+2. Crea una nueva migración: `python3 manage.py makemigrations`. 
+3. Y realiza la migración: `python3 manage.py migrate`
 4. Añade el nuevo modelo al sitio de administración de django:
 
 Para ello cambia la siguiente línea en el fichero `centro/admin.py`:
