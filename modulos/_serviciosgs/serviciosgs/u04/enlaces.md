@@ -6,7 +6,7 @@ permalink: /serviciosgs/u04/enlaces.html
 **Protocolo DNS**
 
 * [¿Cómo funciona el DNS?](http://blog.smaldone.com.ar/2006/12/05/como-funciona-el-dns/)
-* [Ficheros importantes en la resolución de nombres](fichero.html)
+* [Ficheros importantes en la resolución de nombres](ficheros.html)
 
 **DNSmasq**
 

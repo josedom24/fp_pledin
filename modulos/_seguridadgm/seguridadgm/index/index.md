@@ -19,7 +19,7 @@ El índice de contenidos que vamos a estudiar será:
 
 ## Bloque: Almacenamiento de Información
 
-* Unidad didáctica 3: Gestión del Almacenamiento de la información
+* [Unidad didáctica 3: Gestión del Almacenamiento de la información](u03)
 * Unidad didáctica 4: Copias de Seguridad e imágenes de respaldo
 
 ## Bloque: Legislación

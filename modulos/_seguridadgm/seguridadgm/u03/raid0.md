@@ -29,7 +29,7 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
         # mdadm --detail /dev/md1
         mdadm: cannot open /dev/md1: No such file or directory
 
-2. Vamos a montar un raid 0 de los dos discos que hemos añadido. Para realizar un raid tenemos que indicar dispositivos de bloques, que puedes ser discos completos o particiones. Nosotros vamos a usar los dos discos completos:
+2. Vamos a montar un raid 0 de los dos discos que hemos añadido. Para realizar un raid tenemos que indicar dispositivos de bloques, que pueden ser discos completos o particiones. Nosotros vamos a usar los dos discos completos:
 
         # lsblk
         ...
@@ -103,7 +103,7 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
 
     Pero nosotros lo vamos a formatear directamente:
 
-        # mkfs.ext4 /dev/md
+        # mkfs.ext4 /dev/md0
         mke2fs 1.43.4 (31-Jan-2017)
         Creating filesystem with 523776 4k blocks and 131072 inodes
         Filesystem UUID: cbe308a1-9109-4029-b564-38a93b8537ee
@@ -119,17 +119,17 @@ Vamos a configurar en una máquina virtual con Debian un raid0 por software entr
 
         # mkdir -p /mnt/raid0
         # mount /dev/md0 /mnt/raid0
-        # df -f
+        # df -h
         ...
         /dev/md0        2.0G  6.0M  1.9G   1% /mnt/raid0
 
-    Si queremos que el dispositivo se monte automáticamente tenmos que añadir al fichero `/etc/fstab` la siguiente línea:
+    Si queremos que el dispositivo se monte automáticamente tenemos que añadir al fichero `/etc/fstab` la siguiente línea:
 
         /dev/md0	/mnt/raid0	ext4	defaults		    0       0
 
     Y para montarlo ejecutamos:
 
-        # umount -a
+        # mount -a
 
 ## Raid0 en Windows 10
 
@@ -139,4 +139,4 @@ En este caso tenemos una máquina virtual con Windows 10, y acabos de conectarle
 
     Para ello vamos a **Herramientas administrativas -> Administración de equipos -> Almacenamiento  -> Gestión de discos**. La primera vez que entremos nos va a pedir que activemos los dos discos (escogemos partición MBR).
 
-2. Desde esa misma ventana escogemos uno de los discos, botón derecho y escogemos la opción **Añadir nuevo striped volumen**, y a continuación se elegen los dos discos, se formatea y se asigna una letra de unidad.
+2. Desde esa misma ventana escogemos uno de los discos, botón derecho y escogemos la opción **Añadir nuevo striped volumen**, y a continuación se eligen los dos discos, se formatea y se asigna una letra de unidad.

@@ -31,3 +31,4 @@ Los contenidos que vamos a estudiar en este bloque serán:
 
 ## Prácticas
 
+* [Práctica DNS](practica_dns.html)
