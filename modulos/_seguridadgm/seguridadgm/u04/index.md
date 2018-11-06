@@ -13,6 +13,7 @@ permalink: /seguridadgm/u04/index.html
 ## Enlaces interesantes
 
 * [Backups con tar: fullbackups, incrementales y diferenciales](https://nebul4ck.wordpress.com/2015/03/20/backups-con-tar-full-backups-e-incrementales/)
+* [Backup y restauración de backups incrementales con tar](http://systemadmin.es/2015/04/backup-y-restauracion-de-backups-incrementales-con-tar)
 * [Copias de seguridad en Linux con rsync](https://gigastur.es/copias-seguridad-linux-rsync)
 * [10 Software de backup gratis para prevenir desastres](https://esgeeks.com/mejores-software-backup-gratis/)
-* [Las 15 mejores Aplicaciones de Backup para Linux](https://www.neoguias.com/mejores-aplicaciones-backup-linux/)
+* [Las 15 mejores Aplicaciones de Backup para Linux](https://www.neoguias.com/mejores-aplicaciones-backup-linux/    )
