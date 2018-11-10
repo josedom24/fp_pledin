@@ -7,9 +7,11 @@ permalink: /seguridadgm/u04/index.html
 
 ## Prácticas
 
-* [Práctica 11: Recuperación de ficheros borrados](recuperacion.html)
+* [Práctica 11: Realización y restauración de copias de seguridad en windows](windows.html)
 * [Práctica 12: Realización y restauración de copias de seguridad en linux](linux.html)
-* [Práctica 12: Realización y restauración de copias de seguridad en windows](windows.html)
+* [Práctica 14: Recuperación de información](recuperacion.html)
+
+
 
 
 ## Enlaces interesantes
