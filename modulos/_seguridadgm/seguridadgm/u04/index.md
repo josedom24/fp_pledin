@@ -8,7 +8,7 @@ permalink: /seguridadgm/u04/index.html
 ## Prácticas
 
 * [Práctica 11: Recuperación de ficheros borrados](recuperacion.html)
-* [Práctica 12: Realización y restauración de copias de seguridad](copiaseguridad.html)
+* [Práctica 12: Realización y restauración de copias de seguridad con tar](tar.html)
 
 ## Enlaces interesantes
 
