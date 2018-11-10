@@ -7,7 +7,7 @@ permalink: /seguridadgm/u04/recuperacion.html
 
 Vamos a añadir un disco a una máquina virtual y vamos a crear dos particiones: una `ext4` y otra `ntfs`. Formatealas, monta las particiones y crea ficheros en ellas (copia ficheros reales en ellas).
 
-A continuación vamos a simular la perdida de particiones. Con ´fdisk´ borra las particiones del disco.
+A continuación vamos a simular la perdida de particiones. Con `fdisk` borra las particiones del disco.
 
 El ejercicio que tienes que hacer es utilizando la herramienta [`TestDisk`](https://www.cgsecurity.org/wiki/TestDisk). Recupera las dos particiones. ¿Has podido recuperar los ficheros?
 

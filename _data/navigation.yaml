@@ -69,5 +69,7 @@ seguridadgm:
         url: /seguridadgm/u02
       - title: "Gestión de Almacenamiento"
         url: /seguridadgm/u03
+      - title: "Copias de Seguridad"
+        url: /seguridadgm/u04
       
 
