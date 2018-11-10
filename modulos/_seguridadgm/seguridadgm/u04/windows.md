@@ -1,12 +1,11 @@
 ---
-title: "Realización y restauración de copias de seguridad con tar"
-permalink: /seguridadgm/u04/tar.html
+title: "Realización y restauración de copias de seguridad en windows"
+permalink: /seguridadgm/u04/windows.html
 ---
 
-Vamos a crear diferentes tipos de copias de seguridad con el comando de linux `tar`. Los siguientes enlaces te pueden ayudar a aprender como hacer copias totales, diferenciales e incrementales con tar:
+# Copias de seguridad en Windows
 
-* [Backups con tar: fullbackups, incrementales y diferenciales](https://nebul4ck.wordpress.com/2015/03/20/backups-con-tar-full-backups-e-incrementales/)
-* [Backup y restauración de backups incrementales con tar](http://systemadmin.es/2015/04/backup-y-restauracion-de-backups-incrementales-con-tar)
+Haz un estudio de las herramientas propias que te ofrecen las distintas versiones de Windows para realizar las copias de seguridad. ¿Hay alguna versión en que se puedan hacer copias de seguridad incrementales y diferenciales? Si la respuesta es positiva realiza el siguiente ejercicio:
 
 ## Copias incrementales
 
@@ -51,3 +50,8 @@ Vamos a repetir el ejercicio, realizando las mismas modificaciones a los fichero
 * Octavo día: Copia incremental
 
 Realiza las mismas restauraciones.
+
+# Copias de seguridad en windows con programa de terceros
+
+Selecciona una herramienta de terceros, explicando las características de la aplicación y las ventajas que ofrece sobre las propias de Windows y realiza el ejercicio planteado anteriormente.
+
