@@ -25,7 +25,6 @@ Herramientas:
 
 * [Foremost](http://foremost.sourceforge.net)
 * [Scalpel](http://www.digitalforensicssolutions.com/Scalpel)
-* [Magicrescue](http://www.itu.dk/people/jobr/magicrescue)
 * [PhotoRec](http://www.cgsecurity.org/wiki/PhotoRec)
 * [Recuva](http://www.piriform.com/recuva)
 
