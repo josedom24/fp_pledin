@@ -1,4 +1,7 @@
-# Práctica: Configuración de servidores GNU/Linux
+---
+title: "Práctica: Configuración de servidores GNU/Linux"
+permalink: /serviciosgs/u04/practica_linux_server.html
+---    
 
 **(12 tareas - 20 puntos)(6 tareas obligatorias - 7 puntos)**
 {: .notice--warning}
