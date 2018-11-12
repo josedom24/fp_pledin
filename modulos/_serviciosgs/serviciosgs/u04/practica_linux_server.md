@@ -7,7 +7,6 @@ permalink: /serviciosgs/u04/practica_linux_server.html
 {: .notice--warning}
 
 {% capture notice-text %}
-
 **Objetivo**
 
 El objetivo de esta práctica es montar una infraestructura de servicios que se mantenga en el tiempo y que nos sirva para montar servicios y aplicaciones en los distintos módulos durante el curso. Esta práctica la tenéis que realizar en la infraestructura de máquinas que hemos creado en el cloud para todas los módulos. En cualquier momento del curso los servicios que instalemos en esta práctica deben estar funcionando de manera adecuada.
@@ -15,10 +14,9 @@ El objetivo de esta práctica es montar una infraestructura de servicios que se 
 * Servidor1: mickie (Debian)
 * Servidor2: minnie (Ubuntu)
 * Servidor3: donald (CentOs)
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 {% capture notice-text %}
-
 Ejemplo de nombres, suponiendo que mi nombre de dominio va a ser ``josedom.gonzalonazareno.org``:
 
 Los nombres de los equipos van a ser:
@@ -36,7 +34,7 @@ Vamos a instalar los siguientes servicios:
     * ``informatica.josedom.gonzalonazareno.org``
 
 * El servidor de base de datos va a estar instalado en ``minnie.josedom.gonzalonazareno.org``
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Servidor DNS
 
@@ -57,7 +55,7 @@ El servidor DNS se va a instalar en el servidor1 (mickie). Y en un primer moment
 * Debes determinar si la resolución directa se hace con dirección ip fijas o flotantes del cloud depediendo del servicio que se este prestando.
 * Debes considerar la posibilidad de hacer dos zonas de resolución inversa para resolver ip fijas o flotantes del cloud.
 * Debes modificar la configuración del servidor DHCP del cloud para que mande a los servidores el nuevo nombre de dominio.
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 {% capture notice-text %}
 * **Tarea 1 (1 puntos):** Comprueba que los servidores tienen configurados el nuevo nombre de dominio de forma adecuada después de volver a renovar la concesión del servidor DHCP. Documenta el contenido del fichero en el que se puede comprobar este punto (ejecuta el comando ``hostname -f`` y muestra el fichero ``/etc/resolv.conf``).
