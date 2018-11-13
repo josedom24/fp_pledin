@@ -23,7 +23,7 @@ Vamos a crear diferentes tipos de copias de seguridad con el comando de linux `t
 5. Cuarto día: Crea un directorio `carpeta1` y dentro crea un nuevo fichero `fichero6.txt`. Realiza una copia incremental del directorio (`copiaincremental4.tgz`).
 6. Quinto día: Borra el `fichero1.txt` y renombre la carpeta a `carpeta2`. Realiza una copia incremental del directorio (`copiaincremental5.tgz`).
 7. Sexto día: Realiza otra copia completa del directorio (`copiacompleta7.tgz`).
-8. Séptimo día: Crea otro directorio `carpeta2` y dentro el fichero `fichero6.txt`. Borra el `fichero4.txt`. Realiza una copia incremental del directorio (`copiaincremental8.tgz`).
+8. Séptimo día: Crea otro directorio `carpeta3` y dentro el fichero `fichero6.txt`. Borra el `fichero4.txt`. Realiza una copia incremental del directorio (`copiaincremental8.tgz`).
 9. Octavo día: Borra el `fichero5.txt`. Realiza una copia incremental del directorio (`copiaincremental9.tgz`).
 
 Una vez tenemos nuestras copias, imaginemos que hemos tenido un problema de seguridad y hemos perdido la carpeta `datos`. Recupera la información de la carpeta `datos` para que aparezcan los ficheros que había:
