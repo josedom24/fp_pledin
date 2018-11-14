@@ -3,7 +3,7 @@ title: "Práctica: Configuración de servidores GNU/Linux"
 permalink: /serviciosgs/u04/practica_linux_server.html
 ---    
 
-**(12 tareas - 20 puntos)(6 tareas obligatorias - 7 puntos)**
+**(13 tareas - 20 puntos)(6 tareas obligatorias - 7 puntos)**
 {: .notice--warning}
 
 {% capture notice-text %}
@@ -11,9 +11,9 @@ permalink: /serviciosgs/u04/practica_linux_server.html
 
 El objetivo de esta práctica es montar una infraestructura de servicios que se mantenga en el tiempo y que nos sirva para montar servicios y aplicaciones en los distintos módulos durante el curso. Esta práctica la tenéis que realizar en la infraestructura de máquinas que hemos creado en el cloud para todas los módulos. En cualquier momento del curso los servicios que instalemos en esta práctica deben estar funcionando de manera adecuada.
 
-* Servidor1: mickie (Debian)
-* Servidor2: minnie (Ubuntu)
-* Servidor3: donald (CentOs)
+* Servidor1: rajoy (Debian)
+* Servidor2: aznar (Ubuntu)
+* Servidor3: zapatero (CentOs)
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 {% capture notice-text %}
@@ -21,19 +21,19 @@ Ejemplo de nombres, suponiendo que mi nombre de dominio va a ser ``josedom.gonza
 
 Los nombres de los equipos van a ser:
 
-* ``minnie.josedom.gonzalonazareno.org``
-* ``mickie.josedom.gonzalonazareno.org``
-* ``donald.josedom.gonzalonazareno.org``
+* ``aznar.josedom.gonzalonazareno.org``
+* ``rajoy.josedom.gonzalonazareno.org``
+* ``zapatero.josedom.gonzalonazareno.org``
 
 Vamos a instalar los siguientes servicios:
 
-* El servidor DNS va a estar instalado en ``mickie.josedom.gonzalonazareno.org``
-* El servidor web va a estar instalado en ``donald.josedom.gonzalonazareno.org``, y vamos a tener dos páginas webs:
+* El servidor DNS va a estar instalado en ``rajoy.josedom.gonzalonazareno.org``
+* El servidor web va a estar instalado en ``zapatero.josedom.gonzalonazareno.org``, y vamos a tener dos páginas webs:
        
     * ``www.josedom.gonzalonazareno.org``
     * ``informatica.josedom.gonzalonazareno.org``
 
-* El servidor de base de datos va a estar instalado en ``minnie.josedom.gonzalonazareno.org``
+* El servidor de base de datos va a estar instalado en ``aznar.josedom.gonzalonazareno.org``
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Servidor DNS
@@ -45,9 +45,9 @@ Indica al profesor el nombre de tu dominio para que pueda realizar la delegació
 
 ### Instalación del servidor DNS
 
-El servidor DNS se va a instalar en el servidor1 (mickie). Y en un primer momento se configurará de la siguiente manera:
+El servidor DNS se va a instalar en el servidor1 (rajoy). Y en un primer momento se configurará de la siguiente manera:
 
-* El servidor DNS se llama ``mickie.tu_nombre.gonzalonazareno.org`` y va a ser el servidor con autoridad para la zona ``tu_nombre.gonzalonazareno.org``.
+* El servidor DNS se llama ``rajoy.tu_nombre.gonzalonazareno.org`` y va a ser el servidor con autoridad para la zona ``tu_nombre.gonzalonazareno.org``.
 * El servidor debe resolver el nombre de los tres servidores.
 * Se debe configurar las zonas de resolución inversa.
 
@@ -99,23 +99,24 @@ Todos los registros creados o borrados pertenecen a las zonas ``tu_nombre.gonzal
 
 ## Servidor Web
 
-En nuestro servidor3 (donald) vamos a instalar un servidor Web apache2 con las siguientes características.
+En nuestro servidor3 (zapatero) vamos a instalar un servidor Web apache2 con las siguientes características.
 
 {% capture notice-text %}
 * **Tarea 4 (1 punto)(Obligatorio):** Nuestro servidor va  a tener dos hosts virtuales: ``www.tu_nombre.gonzalonazareno.org`` y ``informatica.tu_nombre.gonzalonazareno.org``. Explica los pasos fundamentales para realizar los dos virtual hosts.
 * **Tarea 5 (1 punto):** Comenta los cambios en el servidor DNS para de dar de alta los dos nuevos nombres.
 * **Tarea 6 (1 punto)(Obligatorio):** La página ``www.tu_nombre.gonzalonazareno.org`` va a ser la página principal, busca una plantilla html, modifícala un poco y desplégala en el primer virtual host. 
 * **Tarea 7 (1 punto)(Obligatorio):** Por seguridad, en la página ``www.tu_nombre.gonzalonazareno.org``, no se permite que se sigan enlaces simbólicos, no se permite negociación de contenidos, no se permite visualizar la lista de ficheros y no se permite usar ficheros .htaccess. Entrega la modificaciones en la configuración necesarias.
-* **Tarea 8 (1 punto)(Obligatorio):** La página ``informatica.tu_nombre.gonzalonazareno.org`` es una página relacionada con el mundo de la informática, busca una plantilla html, modificarla un poco y desplegala en el primer virtual host. La página se guardará en  un directorio llamado plataforma. Por lo tanto si accedemos a ``informatica.example.com`` se deberá redirigir automáticamente a ``informatica.example.com/plataforma``. Muestra el resultado al profesor.
-* **Tarea 9 (3 puntos):** Para llevar una estadística de visitas y accesos instala la aplicación awstats en el servidor. Configura el cron para que la estadistíca se vaya actualizando. Debes realizar dos estadísticas, una para cada host virtual.
-* **Tarea 10 (3 puntos):** En el directorio ``/srv/isos`` tenemos una colección de imágenes isos, queremos acceder a ella en la dirección ``informatica.tu_nombre.gonzalonazareno.org/isos``. Esta dirección debe ser sólo accesible desde la intranet, si accedemos desde fuera tenemos que autentificarnos (digest) con un usuario.
+* **Tarea 8 (1 punto)(Obligatorio):** La página ``informatica.tu_nombre.gonzalonazareno.org`` es una página relacionada con el mundo de la informática, busca una plantilla html, modificarla un poco y desplegala en el primer virtual host. La página se guardará en  un directorio llamado `plataforma`. Por lo tanto si accedemos a ``informatica.tu_nombre.gonzalonazareno.org`` se deberá redirigir automáticamente a ``informatica.tu_nombre.gonzalonazareno.org/plataforma``. 
+* **Tarea 9 (2 puntos):** Para llevar una estadística de visitas y accesos instala la aplicación **awstats** en el servidor. Configura el cron para que la estadistíca se vaya actualizando. Debes realizar dos estadísticas, una para cada host virtual.
+* **Tarea 10 (1 punto):** **GoAccess** es otro analizador de logs, configura esta herramienta para obtener las estadísticas de tus sitios virtuales.
+* **Tarea 11 (3 puntos):** En el directorio ``/srv/isos`` tenemos una colección de imágenes isos, queremos acceder a ella en la dirección ``informatica.tu_nombre.gonzalonazareno.org/isos``. Esta dirección debe ser sólo accesible desde la intranet, si accedemos desde fuera tenemos que autentificarnos (digest) con un usuario.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Servidor de Base de Datos
 
-En nuestro servidor2 (minnie) vamos a instalar un servidor de base de datos mysql.
+En nuestro servidor2 (aznar) vamos a instalar un servidor de base de datos mysql.
 
 {% capture notice-text %}
-* **Tarea 11 (1 punto)(Obligatorio):** Configura el servidor para que sea accesible por los equipos de la red local. Muestra al profesor una conexión a la base de datos desde el servidor3 (donald).
-* **Tarea 12 (2 puntos):** Instala en el servidor3 (donald) la aplicación phpmyadmin que nos permite gestionar las bases de datos de nuestro servidor. Esta aplicación sólo será accesible desde la URL ``www.tu_nombre.gonzalonazareno.org/basededatos``. Muestra el acceso al profesor.
+* **Tarea 12 (1 punto)(Obligatorio):** Configura el servidor para que sea accesible por los equipos de la red local. Muestra al profesor una conexión a la base de datos desde el servidor3 (zapatero).
+* **Tarea 13 (2 puntos):** Instala en el servidor3 (zapatero) la aplicación phpmyadmin que nos permite gestionar las bases de datos de nuestro servidor. Esta aplicación sólo será accesible desde la URL ``www.tu_nombre.gonzalonazareno.org/basededatos``. Muestra el acceso al profesor.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

@@ -32,3 +32,4 @@ Los contenidos que vamos a estudiar en este bloque serán:
 ## Prácticas
 
 * [Práctica DNS](practica_dns.html)
+* [Práctica: Configuración de servidores GNU/Linux](practica_linux_server.html)
