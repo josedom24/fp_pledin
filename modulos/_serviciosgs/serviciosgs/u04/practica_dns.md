@@ -3,7 +3,7 @@ title: "Práctica: Servidor DNS"
 permalink: /serviciosgs/u04/practica_dns.html
 ---
 
-**(13 tareas - 30 puntos)(3 tareas obligatorias - 10 puntos)**
+**(13 tareas - 25 puntos)(3 tareas obligatorias - 6 puntos)**
 {: .notice--warning}
 **Muestra al profesor: Tarea 2, Tarea 6 y Tarea 7**
 {: .notice--warning}
@@ -35,8 +35,8 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 * Se tienen que configurar la zona de resolución inversa.
 
 {% capture notice-text %}
-* **Tarea 2 (4 puntos)(Obligatorio):** Realiza la instalación y configuración del servidor bind9 con las características anteriomente señaladas. Entrega las zonas que has definido. Muestra al profesor su funcionamiento.
-* **Tarea 3 (4 puntos)(Obligatorio):** Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:
+* **Tarea 2 (2 puntos)(Obligatorio):** Realiza la instalación y configuración del servidor bind9 con las características anteriomente señaladas. Entrega las zonas que has definido. Muestra al profesor su funcionamiento.
+* **Tarea 3 (2 puntos)(Obligatorio):** Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:
 	* Dirección de ``pandora.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
 	* El servidor DNS con autoridad sobre la zona del dominio ``iesgn.org``
 	* El servidor de correo configurado para ``iesgn.org``
@@ -80,7 +80,7 @@ Los nombres que vamos a tener en ese subdominio son los siguientes:
 
 {% capture notice-text %}
 * **Tarea 7 (3 puntos):** Realiza la instalación y configuración del nuevo servidor dns con las características anteriormente señaladas. Muestra el resultado al profesor.
-* **Tarea 8 (2 puntos):** Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
+* **Tarea 8 (1 punto):** Realiza las consultas dig/neslookup desde los clientes preguntando por los siguientes:	
 
 	* Dirección de ``www.informatica.iesgn.org``, ``ftp.informatica.iesgn.org``
 	* El servidor DNS que tiene configurado la zona del dominio ``informatica.iesgn.org``. ¿Es el mismo que el servidor DNS con autoridad para la zona ``iesgn.org``?
