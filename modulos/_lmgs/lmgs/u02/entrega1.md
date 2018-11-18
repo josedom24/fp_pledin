@@ -85,20 +85,20 @@ Escriba un programa que genere una multiplicación de dos números del 2 al 10 a
 
 Para generar números al azar puedes utilizar el siguiente código:
 
-	```python
-	from random import randint
-	a = randint(2, 10)
-	```
-
-	```bash
-	¿Cuánto es 7 x 8? 56
-	¡Respuesta correcta!	
-	```	
-
-	```bash
-	¿Cuánto es 4 x 9? 35
-	¡Respuesta incorrecta!
-	```
+    	```python
+    	from random import randint
+    	a = randint(2, 10)
+    	```
+    
+    	```bash
+    	¿Cuánto es 7 x 8? 56
+    	¡Respuesta correcta!	
+    	```	
+    
+    	```bash
+    	¿Cuánto es 4 x 9? 35
+    	¡Respuesta incorrecta!
+    	```
 
 **Apartado 2**
 
