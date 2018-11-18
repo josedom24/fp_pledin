@@ -3,10 +3,10 @@ title: "Práctica: Gestionar un hosting por ftp"
 permalink: /serviciosgs/u05/practica_ftp.html
 ---
 
-(5 tareas - 15 puntos)(2 tareas obligatorias - 5 puntos)
+(11 tareas - 25 puntos)(3 tareas obligatorias - 8 puntos)
 {: .notice--warning}
 
-* Cuando termines las tareas tienes que realizar una prueba de funcionamiento al profesor.
+Cuando termines las tareas tienes que realizar una prueba de funcionamiento al profesor.
 {: .notice--warning}
 
 Vamos a montar un hosting en nuestro servidor web. Por lo tanto tendremos que ir combinando la configuración de varios servicios (web, dns, ftp, mysql, ...)
@@ -94,6 +94,6 @@ Vamos a modificar nuestro script `alta_pagina_web`, para que al dar de alta un n
 Ya tenemos todos los elementos para poder instalar un CMS en nuestro hosting. 
 
 {% capture notice-text %}
-* **Tarea 11 (4 puntos):** Enseña al profesor el proceso completo de un CMS dando de alta a un nuevo usuario.
+* **Tarea 11 (5 puntos):** Enseña al profesor el proceso completo de un CMS dando de alta a un nuevo usuario.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
