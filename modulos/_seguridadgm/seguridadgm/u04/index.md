@@ -1,5 +1,5 @@
 ---
-title: "4.- Copias de Seguridad e imágenes de respaldo"
+title: "4.- Copias de Seguridad"
 permalink: /seguridadgm/u04/index.html
 ---
 
