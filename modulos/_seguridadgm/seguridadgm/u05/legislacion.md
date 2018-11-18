@@ -8,11 +8,10 @@ permalink: /seguridadgm/u05/legislacion.html
 En nuestro país, las leyes que se aplican a la mayoría de los casos relacionados con la informática son las siguientes:
 
 * Código Penal /Código Civil
-* Reglamento de Seguridad de la LORTAD
 * Ley Orgánica de Protección de Datos de carácter personal (LOPD)
 * Ley de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE)
 
-Podéis encontrar un interesante resumen de las tres primeras en el [siguiente documento](unixsec-2.1-437-463.pdf)  y en Internet está el texto completo de todas ellas.
+Podéis encontrar un interesante resumen de las dos primeras en el [siguiente documento](unixsec-2.1-437-463.pdf) y en Internet está el texto completo de todas ellas.
 
 ## Responsabilidades y roles
 
