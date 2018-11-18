@@ -3,7 +3,9 @@ title: "Entrega 1: Ejercicios alternativas y repetitivas"
 permalink: /lmgs/u02/entrega1.html
 ---
 
-1. Escriba un programa que pida dos números enteros y que calcule su división, escribiendo si la división es exacta o no. Se puede mejorar el programa haciendo que tenga en cuenta que no se puede dividir por cero.
+## Ejercicio 1
+
+Escriba un programa que pida dos números enteros y que calcule su división, escribiendo si la división es exacta o no. Se puede mejorar el programa haciendo que tenga en cuenta que no se puede dividir por cero.
 
 	```bash
 	DIVISOR DE NÚMEROS
@@ -19,7 +21,9 @@ permalink: /lmgs/u02/entrega1.html
 	La división es exacta. Cociente: 5
 	```
 
-2. Escriba un programa que pida el año actual y un año cualquiera y que escriba cuántos años han pasado desde ese año o cuántos años faltan para llegar a ese año. Se puede mejorar el programa haciendo que cuando la diferencia sea exactamente un año y escriba la frase en singular.
+## Ejercicio 2
+
+Escriba un programa que pida el año actual y un año cualquiera y que escriba cuántos años han pasado desde ese año o cuántos años faltan para llegar a ese año. Se puede mejorar el programa haciendo que cuando la diferencia sea exactamente un año y escriba la frase en singular.
 
 	```bash
 	COMPARADOR DE AÑOS
@@ -39,8 +43,9 @@ permalink: /lmgs/u02/entrega1.html
 	Escriba un año cualquiera: 2015
 	¡Son el mismo año!
     ```
+## Ejercicio 3
 
-3. Escriba un programa que pida tres números y que escriba si son los tres iguales, si hay dos iguales o si son los tres distintos.
+Escriba un programa que pida tres números y que escriba si son los tres iguales, si hay dos iguales o si son los tres distintos.
 
 	```bash
 	COMPARADOR DE TRES NÚMEROS
@@ -64,7 +69,9 @@ permalink: /lmgs/u02/entrega1.html
 	Los tres números que ha escrito son distintos.
 	```
 
-4. Escriba un programa que pida un número entero mayor que cero y que escriba sus divisores.
+## Ejercicio 4
+
+Escriba un programa que pida un número entero mayor que cero y que escriba sus divisores.
 
 	Notas:
 
@@ -82,8 +89,9 @@ permalink: /lmgs/u02/entrega1.html
 	Escriba un número entero mayor que cero: 200
 	Los divisores de 200 son 1 2 4 5 8 10 20 25 40 50 100 200
 	```
+## Ejercicio 5
 
-5. Escriba un programa que pregunte cuántos números se van a introducir, pida esos números, y muestre un mensaje cada vez que un número no sea mayor que el primero.
+Escriba un programa que pregunte cuántos números se van a introducir, pida esos números, y muestre un mensaje cada vez que un número no sea mayor que el primero.
 
 	```bash
 	MAYORES QUE EL PRIMERO
@@ -102,7 +110,9 @@ permalink: /lmgs/u02/entrega1.html
 	Gracias por su colaboración
 	```
 
-6. Juego de las multiplicaciones
+## Ejercicio 6
+
+Juego de las multiplicaciones
 
 **Apartado 1**
 
