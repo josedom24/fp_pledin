@@ -1,6 +1,6 @@
 ---
 title: "Legislación e Informática"
-permalink: /seguridadgm/u05/legislación.html
+permalink: /seguridadgm/u05/legislacion.html
 ---
 
 ## Introducción
