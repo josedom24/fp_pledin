@@ -55,8 +55,8 @@ Instala la aplicación web `net2ftp` en el servidor por si tenemos problemas de 
 
 El uso de usuarios reales del sistema para el acceso FTP puede tener varias desventajas (gestión, seguridad,...). Modifica la configuración del sistema para que se usen usuarios virtuales para el acceso por FTP, cuya información este guardada en vuestro directorio ldap.
 {% capture notice-text %}
-**Tarea 5 (3 puntos):** Entrega los pasos más relevantes para realizar esta tarea. Y muestra al profesor su funcionamiento.
-**Tarea 6 (2 puntos):** Modifica el script `alta_pagina_web` para que la gestión de los usuarios FTP se haga a través del servidor LDAP.
+* **Tarea 5 (3 puntos):** Entrega los pasos más relevantes para realizar esta tarea. Y muestra al profesor su funcionamiento.
+* **Tarea 6 (2 puntos):** Modifica el script `alta_pagina_web` para que la gestión de los usuarios FTP se haga a través del servidor LDAP.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Ejecución de scripts PHP
