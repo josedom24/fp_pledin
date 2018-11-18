@@ -7,99 +7,84 @@ permalink: /lmgs/u02/entrega1.html
 
 Escriba un programa que pida dos números enteros y que calcule su división, escribiendo si la división es exacta o no. Se puede mejorar el programa haciendo que tenga en cuenta que no se puede dividir por cero.
 
-	```bash
 	DIVISOR DE NÚMEROS
 	Escriba el dividendo: 14
 	Escriba el divisor: 5
 	La división no es exacta. Cociente: 2 Resto: 4	
-	```	
 
-	```bash
 	DIVISOR DE NÚMEROS
 	Escriba el dividendo: 20
 	Escriba el divisor: 4
 	La división es exacta. Cociente: 5
-	```
 
 ## Ejercicio 2
 
 Escriba un programa que pida el año actual y un año cualquiera y que escriba cuántos años han pasado desde ese año o cuántos años faltan para llegar a ese año. Se puede mejorar el programa haciendo que cuando la diferencia sea exactamente un año y escriba la frase en singular.
 
-	```bash
 	COMPARADOR DE AÑOS
 	¿En qué año estamos?: 2015
 	Escriba un año cualquiera: 2020
 	Para llegar al año 2020 faltan 5 años.
-	```
-	```bash
-	COMPARADOR DE AÑOS
+    
+    COMPARADOR DE AÑOS
 	¿En qué año estamos?: 2015
 	Escriba un año cualquiera: 1997
 	Desde el año 1997 han pasado 18 años.
-	```
-	```bash
-	COMPARADOR DE AÑOS
+    
+    COMPARADOR DE AÑOS
 	¿En qué año estamos?: 2015
 	Escriba un año cualquiera: 2015
 	¡Son el mismo año!
-    ```
+    
 ## Ejercicio 3
 
 Escriba un programa que pida tres números y que escriba si son los tres iguales, si hay dos iguales o si son los tres distintos.
 
-	```bash
 	COMPARADOR DE TRES NÚMEROS
 	Escriba un número: 6
 	Escriba otro número: 6
 	Escriba otro número más: 6
 	Ha escrito tres veces el mismo número.
-	```
-	```bash
-	COMPARADOR DE TRES NÚMEROS
+
+    COMPARADOR DE TRES NÚMEROS
 	Escriba un número: 6
 	Escriba otro número: 6.5
 	Escriba otro número más: 6
 	Ha escrito uno de los números dos veces.
-	```
-	```bash
-	COMPARADOR DE TRES NÚMEROS
+    
+    COMPARADOR DE TRES NÚMEROS
 	Escriba un número: 4
 	Escriba otro número: 5
 	Escriba otro número más: 6
 	Los tres números que ha escrito son distintos.
-	```
 
 ## Ejercicio 4
 
 Escriba un programa que pida un número entero mayor que cero y que escriba sus divisores.
 
-	Notas:
+Notas:
 
-	* Un número es divisible por otro cuando el resto de su división es cero (``numero % divisor == 0``).
-    * Se puede hacer un programa más rápido, teniendo en cuenta que los divisores son siempre menores (o iguales) que la mitad del número. Es decir, no hace falta probar todos los números entre 1 y el propio número, sino únicamente hasta la mitad. Si se hace así, no hay que olvidarse de añadir el propio número a la lista de divisores.
+* Un número es divisible por otro cuando el resto de su división es cero (``numero % divisor == 0``).
+* Se puede hacer un programa más rápido, teniendo en cuenta que los divisores son siempre menores (o iguales) que la mitad del número. Es decir, no hace falta probar todos los números entre 1 y el propio número, sino únicamente hasta la mitad. Si se hace así, no hay que olvidarse de añadir el propio número a la lista de divisores.
 
-	```bash
+Ejemplo:
+
 	DIVISORES
 	Escriba un número mayor que cero: -5
 	¡Le he pedido un número entero mayor que cero!
-	```
 
-	```bash
 	DIVISORES
 	Escriba un número entero mayor que cero: 200
 	Los divisores de 200 son 1 2 4 5 8 10 20 25 40 50 100 200
-	```
-## Ejercicio 5
+
+# Ejercicio 5
 
 Escriba un programa que pregunte cuántos números se van a introducir, pida esos números, y muestre un mensaje cada vez que un número no sea mayor que el primero.
 
-	```bash
 	MAYORES QUE EL PRIMERO
 	¿Cuántos valores va a introducir? -1
 	¡Imposible!
-	```
-	
-	```bash
+
 	MAYORES QUE EL PRIMERO
 	¿Cuántos valores va a introducir? 4
 	Escriba un número: 6
@@ -108,7 +93,6 @@ Escriba un programa que pregunte cuántos números se van a introducir, pida eso
 	¡3 no es mayor que 6!
 	Escriba un número más grande que 6: 9
 	Gracias por su colaboración
-	```
 
 ## Ejercicio 6
 
