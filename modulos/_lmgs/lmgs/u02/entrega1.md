@@ -1,5 +1,5 @@
 ---
-title: "Entrega 1: Ejercicios alternativas y repetitivas"
+title: "Entrega 1: Ejercicios alternativas y repetitivas (6 puntos)"
 permalink: /lmgs/u02/entrega1.html
 ---
 
