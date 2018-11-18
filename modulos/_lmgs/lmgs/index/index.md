@@ -18,4 +18,4 @@ El índice de contenidos que vamos a estudiar será:
 * [Presentación: Programación con Python3](https://docs.google.com/presentation/d/e/2PACX-1vQFNORQfZymIauAJgFZyLK_FdsitQe9ZUFoF7G-0CiwnmNUzFoJSBLm_Sa8kmxlBa1v3l5aaaMzFNO8/pub?start=true&loop=false&delayms=3000)
 * [Introducción a la programación con Python3](https://gitlab.com/josedom24/curso_programacion_python3)
     * [Boletin 1: Ejercicios fáciles](u02/boletin1.html)
-    * [Entrega 1: Ejercicios alternativas y repetitivas](u03/entrega1.html)
+    * [Entrega 1: Ejercicios alternativas y repetitivas](u02/entrega1.html)
