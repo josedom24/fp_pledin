@@ -15,8 +15,8 @@ Vamos a montar un hosting en nuestro servidor web. Por lo tanto tendremos que ir
 
 Queremos ofrecer una colección de documentos, y lo vamos a hacer mediante http y ftp anónimo, de esta forma se accederá al mismo directorio si accedo a las siguientes URL:
 
-	* ``http://www.tunombre.gonzalonazareno.org/documentos``
-	* ``ftp://ftp.tunombre.gonzalonazareno.org``
+* ``http://www.tunombre.gonzalonazareno.org/documentos``
+* ``ftp://ftp.tunombre.gonzalonazareno.org``
 
 El servidor ftp lo vamos a instalar en el mismo equipo donde tenemos el servidor web.
 
@@ -53,15 +53,47 @@ Instala la aplicación web `net2ftp` en el servidor por si tenemos problemas de 
 * **Tarea 4 (3 puntos):** Entrega el proceso de instalación y la configuración de `net2ftp` y de apache2. realiza una prueba de funcionamiento al profesor.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+El uso de usuarios reales del sistema para el acceso FTP puede tener varias desventajas (gestión, seguridad,...). Modifica la configuración del sistema para que se usen usuarios virtuales para el acceso por FTP, cuya información este guardada en vuestro directorio ldap.
+{% capture notice-text %}
+**Tarea 5 (3 puntos):** Entrega los pasos más relevantes para realizar esta tarea. Y muestra al profesor su funcionamiento.
+**Tarea 6 (2 puntos):** Modifica el script `alta_pagina_web` para que la gestión de los usuarios FTP se haga a través del servidor LDAP.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 ## Ejecución de scripts PHP
 
+Queremos que nuestro hosting sea capaz de ejecutar ficheros PHP. realiza la instalación de los paquetes y las configuraciones necesarias para ello.
 
+{% capture notice-text %}
+* **Tarea 7 (3 puntos)(Obligatorio):** Sube un fichero `index.php` que contenga la función `phpinfo()` y comprueba la página que obtenemos.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+## Gestión de los datos: servidor MySQL
 
+En uno de nuestros servidores tenemos instalado un servidor mysql. Vamos a utilizarlos para dar más servicios a nuestro hosting. En este momento a la hora de dar de alta un usuario para que pueda tener una página web, vamos a crear un usuario en la base de datos.
 
-* El uso de usuarios reales del sistema para el acceso FTP puede tener varias desventajas (gestión, seguridad,...). Modifica la configuración del sistema para que se usen usuarios virtuales para el acceso por FTP, cuya información este guardada en una tabla mysql o en un directorio ldap.
-```eval_rst
-.. warning::
+Siguiendo el ejemplo del usuario `josedom` se creará un usuario en la base de datos llamado `myjosedom`. Este usuario tendrá una contraseña distinta a la del usuario del servidor FTP.
 
-	**Tarea 5 (4 puntos):** Entrega los pasos más relevantes para realizar esta tarea. Y muestra al profesor su funcionamiento.
-```
+{% capture notice-text %}
+* **Tarea 8 (1 punto):** Explica el proceso que tienes que hacer para crear un nuevo usuario a la base de datos.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+Vamos a tener la aplicación `phpmyadmin` accesible en la url ``www.tu_nombre.gonzalonazareno.org/basededatos``. (**Esto es una tarea de la práctica anterior**)
+
+{% capture notice-text %}
+* **Tarea 9 (1 punto):** Comprueba que el usuario creado en la tarea 6 es accesible a la base de datos utilizando la aplicación `phpmyadmin`. Comprueba que puede crear una base de datos.**
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+Vamos a modificar nuestro script `alta_pagina_web`, para que al dar de alta un nuevo cliente cree el usuario de la base de datos. El script devolverá también la contraseña del usuario de la base de datos.
+
+{% capture notice-text %}
+* **Tarea 10 (1 punto):** Entrega la url del repositorio github, y haz una prueba al profesor.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## Instalación de un CMS
+
+Ya tenemos todos los elementos para poder instalar un CMS en nuestro hosting. 
+
+{% capture notice-text %}
+* **Tarea 11 (4 puntos):** Enseña al profesor el proceso completo de un CMS dando de alta a un nuevo usuario.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
