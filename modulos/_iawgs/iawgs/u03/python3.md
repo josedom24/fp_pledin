@@ -3,6 +3,7 @@ title: "Depliegue de CMS python: Mezzanine"
 permalink: /iawgs/u03/python3.html
 ---
 
+
 En estas práctica vamos a desplegar un [CMS python](https://wiki.python.org/moin/ContentManagementSystems). Hemos elegido [Mezzanine](http://mezzanine.jupo.org/).
 
 ## Tarea 1: Instalación de Mezzanine en el entorno de desarrollo
@@ -28,5 +29,5 @@ Entrega una breve documentación de los pasos para realizar la instalación. Ten
 * Usar mysql (1 punto), usar postgreSQL (2 puntos).
 * Usar una URL del tipo ``www.tupagina.com`` (1 punto), usar una URL del tipo ``www.tupagina.com/blog`` (2 puntos)
 
- Entrega una captura de pantalla donde se vea el acceso al servidor web de producción.
+Entrega una captura de pantalla donde se vea el acceso al servidor web de producción.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
