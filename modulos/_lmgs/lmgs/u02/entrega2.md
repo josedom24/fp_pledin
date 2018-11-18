@@ -1,5 +1,5 @@
 ---
-title: "Entrega 2: Ejercicios cadenas de caracteres y listas
+title: "Entrega 2: Ejercicios cadenas de caracteres y listas"
 permalink: /lmgs/u02/entrega2.html
 ---
 
