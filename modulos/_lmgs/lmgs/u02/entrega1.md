@@ -92,26 +92,23 @@ Para generar números al azar puedes utilizar el siguiente código:
 Ejemplos:    
 
     ¿Cuánto es 7 x 8? 56
-    ¡Respuesta correcta!	
-   	¿Cuánto es 4 x 9? 35
-   	¡Respuesta incorrecta!
+    ¡Respuesta correcta!
+    
+    ¿Cuánto es 4 x 9? 35
+    ¡Respuesta incorrecta!
 
 
 **Apartado 2**
 
 Amplie el programa anterior haciendo que el programa pida primero al usuario cuántas multiplicaciones se van a plantear.
 
-	```bash
+	
 	Número de preguntas: 0
 	El número de preguntas debe ser al menos 1	
-	```
-
-	```bash
+	
 	Número de preguntas: 2	
-
 	¿Cuánto es 7 x 8? 56
 	¡Respuesta correcta!	
-
 	¿Cuánto es 4 x 9? 35
 	¡Respuesta incorrecta!
 	```
@@ -119,44 +116,38 @@ Amplie el programa anterior haciendo que el programa pida primero al usuario cu�
 **Apartado 3**
 
 Amplíe el programa anterior haciendo que el programa lleve la cuenta de las respuestas correctas e incorrectas e indique la nota correspondiente. Si la nota es igual o mayor que 9, el programa felicitará al usuario por el resultado.
-	Ayuda: La nota se calcula con la fórmula Nota=Correctas / Total * 10.
+Ayuda: La nota se calcula con la fórmula Nota=Correctas / Total * 10.
 
-	```bash
 	Número de preguntas: 2	
 
 	¿Cuánto es 7 x 8? 56
 	¡Respuesta correcta!	
-
 	¿Cuánto es 4 x 9? 35
 	¡Respuesta incorrecta!	
 
 	Ha contestado correctamente 1 pregunta
 	Le corresponde una nota de 5.0	
-	```
-	```bash
+
+	
 	Número de preguntas: 3	
 
 	¿Cuánto es 7 x 8? 56
 	¡Respuesta correcta!	
-
 	¿Cuánto es 4 x 9? 35
 	¡Respuesta incorrecta!	
-
 	¿Cuánto es 2 x 3? 6
 	¡Respuesta correcta!	
 
 	Ha contestado correctamente 2 preguntas
 	Le corresponde una nota de 6.7	
-	```
-	```bash
-	Número de preguntas: 1	
 
+	Número de preguntas: 1	
 	¿Cuánto es 7 x 8? 56
 	¡Respuesta correcta!	
 
 	Ha contestado correctamente 1 pregunta
 	Le corresponde una nota de 10.0
 	¡Enhorabuena!
-	```
+
 
 NOTA: **Tienes que entregar sólo el código del apartado 3.**
