@@ -11,7 +11,7 @@ En estas práctica vamos a desplegar un [CMS python](https://wiki.python.org/moi
 Instala localmente (usando un entrono virtual) el CMS Mezzazine. Realiza una modificación en la página web. Guarda los ficheros generados durante la instalación en un repositorio github.
 
 {% capture notice-text %}
-Entrega una breve documentación de los pasos para realizar la instalación. Entrega una captura de pantalla donde se vea el acceso al servidor web de desarollo (2 punto)
+Entrega una breve documentación de los pasos para realizar la instalación. Entrega una captura de pantalla donde se vea el acceso al servidor web de desarrollo (2 punto)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 2: Migración a un entorno de producción
