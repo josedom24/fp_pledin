@@ -7,15 +7,15 @@ permalink: /lmgs/u02/entrega2.html
 
 Realiza un programa que pida un cadena. A continuación debe pedir otra cadena. El programa debe buscar la segunda cadena en la primera (ignorando mayúsculas o minúsculas) y podrá responder una de las siguientes opciones:
 	
-	* La segunda cadena es una subcadena de la primera
-	* La segunda cadena no es una subcadena de la primera
+* La segunda cadena es una subcadena de la primera
+* La segunda cadena no es una subcadena de la primera
 
-	Ejemplo:
+Ejemplo:
 
-		Cadena 1: Java es un lenguaje de programación
-		Cadena 2: LENGUAJE
-		Respuesta:
-		La segunda cadena es una subcadena de la primera
+	Cadena 1: Java es un lenguaje de programación
+	Cadena 2: LENGUAJE
+	Respuesta:
+	La segunda cadena es una subcadena de la primera
 
 ## Ejercicio 2
 
