@@ -46,14 +46,7 @@ permalink: /lmgs/u02/entreganavidad.html
 		1 moneda de 2 c
 		1 moneda 1 c
 
-3. Realiza un programa en Python que pida por teclados números y se vayan guardando en una lista. Se terminará de pedir número cuando se introduzca un 0. Cuando se termine se mostrará la siguiente información:
-
-	* Cuántos números hay en la lista
-	* El número mayor que hay en la lista.
-	* La lista ordenada de menor a mayor.
-	* Muestra la media de los números.
-
-4. Escriba un programa que permita crear una lista de palabras y que, a continuación de tres opciones: 
+3. Escriba un programa que permita crear una lista de palabras y que, a continuación de tres opciones: 
 
 	* Contar: Me pide una cadena, y me dice cuantas veces aparece en la lista
 	* Modificar: Me pide una cadena, y otra cadena a modificar, y modifica todas alas apariciones de la primera por la segunda en la lista.
@@ -89,7 +82,7 @@ permalink: /lmgs/u02/entreganavidad.html
 		0
 		Adiós!!!
 
-5. Escriba un programa que permita crear dos listas de palabras y que, a continuación, escriba las siguientes listas (en las que no debe haber repeticiones):
+4. Escriba un programa que permita crear dos listas de palabras y que, a continuación, escriba las siguientes listas (en las que no debe haber repeticiones):
 
 	* Lista de palabras que aparecen en las dos listas.
 	* Lista de palabras que aparecen en la primera lista, pero no en la segunda.
@@ -114,13 +107,13 @@ permalink: /lmgs/u02/entreganavidad.html
 		Palabras que sólo aparecen en la segunda lista: ['Juan']
 		Todas las palabras: ['Carmen', 'Benito', 'Alberto', 'Juan']	
 
-6. Realizar un programa que guarde en una lista los nombre y edades de los alumnos de una clase. El programa ira pidiendo por teclado el nombre (string) y la edad (int) hasta que se introduzca como nombre un "\*". Las posiciones pares (0,2,4,...) de la lista serán cadenas y las impares son enteros. Cuando terminemos de meter datos hay que mostrar la siguiente información:
+5. Realizar un programa que guarde en una lista los nombre y edades de los alumnos de una clase. El programa ira pidiendo por teclado el nombre (string) y la edad (int) hasta que se introduzca como nombre un "\*". Las posiciones pares (0,2,4,...) de la lista serán cadenas y las impares son enteros. Cuando terminemos de meter datos hay que mostrar la siguiente información:
 
 	* Los nombres de los alumnos con más edad.
 	* La media de edad de la clase
 	* Te pide por teclado un nombre y te dice la edad que tiene. Si hay varios alumnos con el mismo nombre te muestra todos.
 	* Genera una nueva lista con los nombres y edades de los mayores de edad.
 
-7. Repite el ejercicio 4, pero utilizando la siguiente estructura: una lista, en la cual cada elemento es una lista con dos elementos: el nombre y la edad. Por ejemplo:
+6. Repite el ejercicio 4, pero utilizando la siguiente estructura: una lista, en la cual cada elemento es una lista con dos elementos: el nombre y la edad. Por ejemplo:
 
 	[ ["juan",18],["maría",21],["pablo",15] ]
