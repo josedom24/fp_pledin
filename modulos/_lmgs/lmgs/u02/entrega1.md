@@ -93,7 +93,6 @@ Ejemplos:
 
     ¿Cuánto es 7 x 8? 56
     ¡Respuesta correcta!	
-
    	¿Cuánto es 4 x 9? 35
    	¡Respuesta incorrecta!
 
