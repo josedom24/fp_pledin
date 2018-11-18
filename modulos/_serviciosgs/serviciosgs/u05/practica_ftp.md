@@ -94,6 +94,6 @@ Vamos a modificar nuestro script `alta_pagina_web`, para que al dar de alta un n
 Ya tenemos todos los elementos para poder instalar un CMS en nuestro hosting. 
 
 {% capture notice-text %}
-* **Tarea 11 (5 puntos):** Enseña al profesor el proceso completo de un CMS dando de alta a un nuevo usuario.
+* **Tarea 11 (3 puntos):** Enseña al profesor el proceso completo de un CMS dando de alta a un nuevo usuario.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
