@@ -38,6 +38,7 @@ permalink: /lmgs/u02/entrega1.html
 	¿En qué año estamos?: 2015
 	Escriba un año cualquiera: 2015
 	¡Son el mismo año!
+    ```
 
 3. Escriba un programa que pida un número entero mayor que cero y que escriba sus divisores.
 
@@ -89,12 +90,12 @@ Para generar números al azar puedes utilizar el siguiente código:
     	from random import randint
     	a = randint(2, 10)
     	```
-    
+
     	```bash
     	¿Cuánto es 7 x 8? 56
     	¡Respuesta correcta!	
     	```	
-    
+
     	```bash
     	¿Cuánto es 4 x 9? 35
     	¡Respuesta incorrecta!
