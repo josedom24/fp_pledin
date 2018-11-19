@@ -44,6 +44,7 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [Go-Ci](http://www.thoughtworks.com/products/go-continuous-delivery)
 * [snap-ci](http://snap-ci.com)
 * [appveyor](http://www.appveyor.com/)
+* [gilab](https://about.gitlab.com/product/continuous-integration/)
 
 ## Enlaces
 
