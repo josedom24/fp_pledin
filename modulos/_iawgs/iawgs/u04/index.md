@@ -27,8 +27,8 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 
 ![IC](img/ic.png)
 
-* Entrega continua (EC): Es el siguiente paso de IC, y consiste en preparar la aplicación web para su puesta en producción. El paso a producción se hace de forma manual.
-* Despliegue continuo (DC): Es similar a la anterior pero en este caso también se automatiza el despliegue final en producción.
+* **Entrega continua (EC)**: Es el siguiente paso de IC, y consiste en preparar la aplicación web para su puesta en producción. El paso a producción se hace de forma manual.
+* **Despliegue continuo (DC)**: Es similar a la anterior pero en este caso también se automatiza el despliegue final en producción.
 
 **Herramientas**
 
@@ -44,7 +44,7 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [Go-Ci](http://www.thoughtworks.com/products/go-continuous-delivery)
 * [snap-ci](http://snap-ci.com)
 * [appveyor](http://www.appveyor.com/)
-* [gilab](https://about.gitlab.com/product/continuous-integration/)
+* [gitlab](https://about.gitlab.com/product/continuous-integration/)
 
 ## Enlaces
 

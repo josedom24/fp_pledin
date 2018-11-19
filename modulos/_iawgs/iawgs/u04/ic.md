@@ -43,12 +43,12 @@ Vamos a añadir la funcionalidad de IC y DC con travis, para ello:
 * Modifica el fichero `.travis.yml` para poner el nombre de dominio que vas a utilziar.
 * Para que travis pueda hacer el despliegue en surge le tenemos que indicar un TOKEN. Genera el token:
 	
-	surge token
+		surge token
 
 * Crea dos variables de entorno en *settings* del proyecto travis:
 	
-    * SURGE_LOGIN: Indica el correo electrónico que has utilizado como lógin en surge
-    * SURGE_TOKEN: Indica el TOKEN que has obtenido en el paso anterior.
+    * `SURGE_LOGIN`: Indica el correo electrónico que has utilizado como lógin en surge
+    * `SURGE_TOKEN`: Indica el TOKEN que has obtenido en el paso anterior.
 
 * Realiza cambios en el fichero index.html del directorio `_build` y comprueba, que si el código html5 es válido se despliega y puedes aceder a la página web. Si el código html5 no es válido no se realiza el despliegue y te mandan un correo informando de la incidencia.
 
@@ -76,17 +76,17 @@ Ahora queremos que este proceso de "build" se haga de manera automática con tra
 * Activa tu repositorio en Travis.
 * Crea el fichero `.travis.yml` con el siguiente contenido:
 
-	language: python
-	branches:
-	  only:
-	  - master
-	install:
-	- pip install pelican ghp-import markdown
-	script:
-	- make publish github
+		language: python
+		branches:
+		  only:
+		  - master
+		install:
+		- pip install pelican ghp-import markdown
+		script:
+		- make publish github
 
 * Sigue las instrucciones de este artículo: [Publish your Pelican blog on Github pages via Travis-CI](http://blog.mathieu-leplatre.info/publish-your-pelican-blog-on-github-pages-via-travis-ci.html) para crear un TOKEN en github, encriptarlo y añadirlo en el fichero `.travis.yml`.
-* Por último, cómo indica en el artículo, modifica el fichero `Makefile` para poder desplegar en github usando tu TOKEN. (Sustituye la variable `$(TRAVIS_REPO_SLUG)` pon el nombre de tu repositorio.)
+* Por último, cómo indica en el artículo, modifica el fichero `Makefile` para poder desplegar en github usando tu TOKEN. (Sustituye la variable `$(`TRAVIS_REPO_SLUG`)` pon el nombre de tu repositorio.)
 
 {% capture notice-text %}
 Describe los pasos más importantes para realzar dicha práctica, y entrega una captura de pantalla donde se vea el blog con la nueva entrada en el GitHub Page. (1 punto)
@@ -105,7 +105,7 @@ Estudia las distintas pruebas que se han realizado, y modifica el código de la 
 A continuación vamos a configurar la integración continúa para que cada vez que hagamos un commit se haga la ejecución de test en travis.
 
 {% capture notice-text %}
-Crea un fichero ``.travis.yml`` para realizar de los tests en travis. Entrega el fichero ``.travis.yml``, una captura de pantalla con un resltado existoso de la IC y otro con un error.(1 punto)
+Crea un fichero ``.travis.yml`` para realizar de los tests en travis. Entrega el fichero ``.travis.yml``, una captura de pantalla con un resltado exitoso de la IC y otro con un error.(1 punto)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 Siguiendo la guía de esta página: [Continuous delivery of a Django app from Travis CI to PythonAnywhere](https://flowfx.de/blog/continuous-delivery-of-a-django-app-from-travis-ci-to-pythonanywhere/). Para además de realizar los tests, se haga un despliegue al servicio **pythonanyhere**.
