@@ -7,7 +7,7 @@ permalink: /seguridadgm/u05/index.html
 
 ## Prácticas
 
-* [Práctica 16: Lesgilación e Informática](legislacion.html)
+* [Práctica 15: Lesgilación e Informática](legislacion.html)
 
 ## Enlaces interesantes
 

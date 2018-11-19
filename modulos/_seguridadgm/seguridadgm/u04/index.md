@@ -9,8 +9,8 @@ permalink: /seguridadgm/u04/index.html
 
 * [Práctica 11: Realización y restauración de copias de seguridad en windows](windows.html)
 * [Práctica 12: Realización y restauración de copias de seguridad en linux](linux.html)
-* [Práctica 14: Recuperación de información](recuperacion.html)
-* [Práctica 15: Sincronización de carpetas con rsync](rsync.html)
+* [Práctica 13: Recuperación de información](recuperacion.html)
+* [Práctica 14: Sincronización de carpetas con rsync](rsync.html)
 
 ## Enlaces interesantes
 
