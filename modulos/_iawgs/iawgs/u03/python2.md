@@ -44,7 +44,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 
 	Y en el entorno virtual:
 
-		(env)$ pip install mysql-python
+		(env)$ pip install mysql-connector-python
 
 * Configura un virtualhost en apache2 con la configuración adecuada para que funcione la aplicación. El punto de entrada de nuestro servidor será `iaw_gestionGN/gestion/wsgi.py`.
 * Crea una base de datos y un usuario en mysql.
@@ -52,7 +52,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 
 		DATABASES = {
 		    'default': {
-		        'ENGINE': 'django.db.backends.mysql',
+		        'ENGINE': 'mysql.connector.django',
 		        'NAME': 'myproject',
 		        'USER': 'myprojectuser',
 		        'PASSWORD': 'password',

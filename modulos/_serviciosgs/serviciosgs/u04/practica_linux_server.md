@@ -57,7 +57,7 @@ El servidor DNS se va a instalar en el servidor1 (rajoy). Y en un primer momento
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 {% capture notice-text %}
-* **Tarea 1 (1 puntos):** Comprueba que los servidores tienen configurados el nuevo nombre de dominio de forma adecuada después de volver a reiniciar el servidor (o tomar una nueva configuración DHCP). Para que el servidor tenga el FQDH debes terner configurado de forma correcta el parámetro `domain` en el fichero ``/etc/resolv.conf``, además debemos evitar que este fichero se sobreescriba con los datos que manda el servidor DHCP de OpenStack. Documenta la configuración que has tenido que modificar y muestra el contenido del fichero ``/etc/resolv.conf`` y la salida del comando ``hostname -f`` después de un reincio..
+* **Tarea 1 (1 puntos):** Comprueba que los servidores tienen configurados el nuevo nombre de dominio de forma adecuada después de volver a reiniciar el servidor (o tomar una nueva configuración DHCP). Para que el servidor tenga el FQDN debes terner configurado de forma correcta el parámetro `domain` en el fichero ``/etc/resolv.conf``, además debemos evitar que este fichero se sobreescriba con los datos que manda el servidor DHCP de OpenStack. Documenta la configuración que has tenido que modificar y muestra el contenido del fichero ``/etc/resolv.conf`` y la salida del comando ``hostname -f`` después de un reincio..
 * **Tarea 2 (2 puntos)(Obligatorio):** Entrega el resultado de las siguientes consultas :
 
     * El servidor DNS con autoridad sobre la zona del dominio ``tu_nombre.gonzalonazareno.org``
