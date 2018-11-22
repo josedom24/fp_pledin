@@ -47,6 +47,8 @@ iawgs:
         url: /iawgs/u02
       - title: Python
         url: /iawgs/u03
+      - title: Integración Continúa
+        url: /iawgs/u04
 
 lmgs:
   - title: Lenguajes de marcas
