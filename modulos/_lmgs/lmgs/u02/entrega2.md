@@ -36,7 +36,7 @@ En esa cadena se definen nombres de poblaciones y las temperaturas máximas y m�
 
 Realiza un programa que muestre el nombre de las poblaciones y la temperatura media. Además el programa te debe pedir el nombre de una población y nos debe dar la temperatura máxima y mínima (si la población no existe se debe dar une error.)
 
-**Ayuda: Puede venir muy bien utilizar el método `split` de cadenas.**
+**Ayuda: Puede venir muy bien utilizar los métodos `splitlines` y `split` de cadenas.**
 
 ## Ejercicio 4
 
