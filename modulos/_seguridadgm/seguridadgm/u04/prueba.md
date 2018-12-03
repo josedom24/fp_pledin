@@ -3,7 +3,7 @@ title: "Prueba: RAID y copia de seguridad"
 permalink: /seguridadgm/u04/prueba.html
 ---
 
-# RAID5
+# RAID5 (7,5 puntos)
 
 1. Utilizando discos de 1Gb queremos crear un disco RAID5 de 3Gb con un disco de reserva. Explica los pasos para realizarlo. Muestra información sobre el raid creado.
 
@@ -13,7 +13,7 @@ permalink: /seguridadgm/u04/prueba.html
 
 4. Simula el fallo de otro disco. ¿Qué ocurre ahora? Realiza las acciones que creas conveniente para que vuelva a funcionar el RAID. Demuestra que el RAID sigue funcionando y muestra información sobre el RAID.
 
-# Copia de seguridad
+# Copia de seguridad (7,5 puntos)
 
 1. Descarga las siguientes [copias de seguridad](backup.zip) y recupera:
 
