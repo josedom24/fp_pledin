@@ -114,6 +114,6 @@ Realizar un programa que guarde en una lista los nombre y edades de los alumnos 
 
 ## Ejercicio 7
 
-Repite el ejercicio 4, pero utilizando la siguiente estructura: una lista, en la cual cada elemento es una lista con dos elementos: el nombre y la edad. Por ejemplo:
+Repite el ejercicio 6, pero utilizando la siguiente estructura: una lista, en la cual cada elemento es una lista con dos elementos: el nombre y la edad. Por ejemplo:
 
 	[ ["juan",18],["maría",21],["pablo",15] ]
