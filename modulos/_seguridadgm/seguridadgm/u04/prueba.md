@@ -17,12 +17,12 @@ permalink: /seguridadgm/u04/prueba.html
 
 1. Descarga las siguientes [copias de seguridad](backup.zip) y recupera:
 
-* El día 2
-* El día 4
+    * El día 2
+    * El día 4
 
 2. Añade el `fich5.txt` a los ficheros del día 4 y crea una copia total. Realiza los siguientes copias:
 
-* Borra el `fich5.txt`, añade el `fich6.txt` y crea una copia incremental.
-* Borra el `fich6.txt` y crea una copia diferencial.
+    * Borra el `fich5.txt`, añade el `fich6.txt` y crea una copia incremental.
+    * Borra el `fich6.txt` y crea una copia diferencial.
 
 Recupera los ficheros de la última copia.
