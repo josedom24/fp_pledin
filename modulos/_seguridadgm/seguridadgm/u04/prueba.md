@@ -15,7 +15,7 @@ permalink: /seguridadgm/u04/prueba.html
 
 # Copia de seguridad (7,5 puntos)
 
-1. Descarga las siguientes [copias de seguridad](backup.zip) y recupera:
+1. Descarga las siguientes [copias de seguridad](backup.zip) y recupera los ficheros en una carpeta que tenga tu nombre:
 
     * El día 2
     * El día 4
