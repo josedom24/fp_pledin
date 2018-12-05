@@ -22,4 +22,4 @@ Los contenidos que vamos a estudiar del servidor FTP, nos van a posibilitar resp
 
 ## Prácticas
 
-* [Práctica: Gestionar un hosting por ftp](practica_fpt.html)
+* [Práctica: Gestionar un hosting por ftp](practica_ftp.html)
