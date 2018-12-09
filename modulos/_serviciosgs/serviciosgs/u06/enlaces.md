@@ -10,5 +10,5 @@ permalink: /serviciosgs/u06/enlaces.html
 
 ## Postfix
 
-* [Documentación: correo electrónico (Postfix)](https://github.com/josedom24/serviciosgs_doc/raw/master/correo/doc/correo-e.pdf)
+* [Documentación: correo electrónico (Postfix)](doc/correo-e.pdf)
 * [Documentación oficial postfix](http://www.postfix.org/documentation.html)
