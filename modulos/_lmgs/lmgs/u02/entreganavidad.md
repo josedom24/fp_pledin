@@ -29,20 +29,77 @@ permalink: /lmgs/u02/entreganavidad.html
 		Propone otro código: 6940
 		Felicitaciones! Adivinaste el código en 7 intentos.
 
-2. Realizar una aplicación que recoja por teclado la cantidad total a pagar y la cantidad que se ha entregado. La aplicación debe calcular el cambio correspondiente con el menor número de monedas y/o billetes posibles.
+2. Escribe un programa para jugar al ahorcado.
 
-	Por ejemplo:
+	* Un jugador introduce una palabra secreta y otro jugador tratará de adivinarla.
+	* La pantalla se limpia y aparece la horca vacía, el número de intentos y la palabra a acertar, donde cada letra se sustituye por un asterisco.
 
-		Cantidad total: 7,17 €
-		Cantidad entregada: 100 €
-		Cantidad a devolver: 92,83 €
+		```
+		EL JUEGO DEL AHORCADO
 
-		1  billete de 50 €
-		2 billete de 20 €
-		1 monedas de 2 €
-		1 monda de 50 c
-		1 moneda de 20 c
-		1 moneda de 10 c
-		1 moneda de 2 c
-		1 moneda 1 c
+		  +---+
+		  |	  |
+		  	  |
+		  	  |
+		  	  |
+		  	  |
+		  ======
+
+		Palabra a acertar :********
+		Fallos : 0
+		Letras utilizadas :
+
+		Introduce una letra ( '*' para resolver ):
+		```
+	Reglas del juego:
+
+	* El jugador puede cometer como máximo 6 fallos. Por cada fallo aparecerá un elemento más en la horca: cabeza, tronco, brazo izquierdo, brazo derecho,
+pierna izquierda y pierna derecha.
+	* Cada letra acertada aparecerá en la lista de letras utilizadas y se sustituirá en la posición que corresponda en la palabra a acertar.
+	* Una letra ya utilizada contará siempre como fallo (Esté o no en la palabra a acertar)
+	* No se permite el uso de vocales
+	* El jugador puede intentar resolver la palabra a acertar en cualquier momento tecleando la tecla `*`, tras lo cual se solicitará la palabra.
+	* El juego termina cuando el número de fallos es igual a 6 o cuando el jugador acierta la palabra, solicitando la resolución de la misma.
+	* Cualquier otro carácter que se introduzca: numero o signo de puntuación, contará como fallo.
+	* En un momento cualquiera el programa mostrará:
+
+		```
+		EL JUEGO DEL AHORCADO
+
+		   +---+
+		   |   |
+		   o   |
+		  /|   |
+		       |
+		       |
+		   ======
+
+		Palabra a acertar :y**t*p***t*
+		Fallos : 3
+		Letras utilizadas : y n m p t b 
+
+		Introduce una letra ( '*' para resolver ):
+		```
+
+	* Se obtendrá mayor puntuación en el ejercicio si se estructura adecuadamente el código mediante el uso de funciones.
+	* Para que no se desplacen los caracteres a posiciones no deseadas, utiliza el triple apóstrofe con el print, por ejemplo:
+
+		```
+		>>> print('''
+		  +---+
+		  |	  |
+		  o	  |
+		 /|	  |
+		  	  |
+		  	  |
+		  ======
+		''')
+		```
+
+	* Para limpiar la pantalla se puede utilizar (en GNU/Linux):
+		```
+		import os
+		os.system ('clear')
+		```
+
 
