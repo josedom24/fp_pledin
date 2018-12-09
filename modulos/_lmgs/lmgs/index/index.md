@@ -21,5 +21,5 @@ El índice de contenidos que vamos a estudiar será:
     * [Entrega 1: Ejercicios alternativas y repetitivas](u02/entrega1.html)
     * [Entrega 2: Ejercicios cadenas de caracteres y listas](u02/entrega2.html)
     * [Boletín 2: Ejercicio listas](u02/boletin2.html)
-    * [Boletín 3: Ejercicios variados](u03/boletin3.html)
+    * [Boletín 3: Ejercicios variados](u02/boletin3.html)
     
