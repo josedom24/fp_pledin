@@ -26,10 +26,10 @@ Los modos que podemos indicar son los siguientes:
 	<tr><td>rb</td><td>Solo lectura en modo binario </td><td></td></tr>
 	<tr><td>r+</td><td>Lectura y escritura </td><td>Al inicio del archivo</td></tr>
 	<tr><td>rb+</td><td>Lectura y escritura binario</td><td>Al inicio del archivo</td></tr>
-	<tr><td>w</td><td>Solo escritura. Sobreescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
-	<tr><td>wb</td><td>Solo escritura en modo binario. Sobreescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
-	<tr><td>w+</td><td>Escritura y lectura. Sobreescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
-	<tr><td>wb+</td><td>Escritura y lectura binaria. Sobreescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
+	<tr><td>w</td><td>Solo escritura. Sobrescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
+	<tr><td>wb</td><td>Solo escritura en modo binario. Sobrescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
+	<tr><td>w+</td><td>Escritura y lectura. Sobrescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
+	<tr><td>wb+</td><td>Escritura y lectura binaria. Sobrescribe si existe. Crea el archivo si no existe.</td><td>Al inicio del archivo</td></tr>
 	<tr><td>a</td><td>Añadido (agregar contenido). Crea el archivo si no existe.</td><td>Si el archivo existe, al final de éste. Si el archivo no existe, al comienzo.</td></tr>
 	<tr><td>ab</td>Añadido en modo binario. Crea si éste no existe<td></td><td>Si el archivo existe, al final de éste. Si el archivo no existe, al comienzo.</td></tr>
 	<tr><td>a+</td><td>Añadido y lectura. Crea el archivo si no existe.</td><td>Si el archivo existe, al final de éste. Si el archivo no existe, al comienzo.</td></tr>
