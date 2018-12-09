@@ -1,7 +1,9 @@
-# Caso 2: Envío de correos desde internet a usuarios del servidor
+---
+title: "Caso 2: Envío de correos desde internet a usuarios del servidor"
+permalink: /serviciosgs/u06/postfix4.html
+---
 
-
-**DESDE EL AULA**
+## Desde el aula
 
 Vamos a tener un correo de la forma ``usuario@dominio_de_cada_alumno``, para nuestro ejemplos pongamos ``jose@josedom.gonzalonazareno.org``.
 
@@ -14,9 +16,9 @@ Tenemos que tener en cuenta los siguientes aspectos:
     * Para que conozca la IP de nuestro servidor de correo tendremos que crear un registro MX en nuestro servidor DNS  para realizar la resolución.
 4. Con la configuración que tenemos en el servidor de correo de nuestra máquina debe ser suficiente para recibir el correo. Recuerda mandar un mensaje a un usuario que exista en el servidor.
 
-**DESDE CASA**
+## Desde casa
 
-*Usando un nombre de dominio*
+### Usando un nombre de dominio
 
 En este caso vamos a utilizar un nombre de dominio, en mi caso he usado ``josedomingo.org``. Tenemos que tener en cuenta los siguientes aspectos:
 
@@ -45,7 +47,7 @@ En este caso vamos a utilizar un nombre de dominio, en mi caso he usado ``josedo
 
 3. En tu router haz DNAT para redirigir las peticiones por el puerto 25 al ordenador local que tiene instalado el servidor de correos.
 
-*Usando un nombre de máquina*
+### Usando un nombre de máquina
 
 En el caso de que utilices un servicio gratuito como no-ip o dyndns, estarás reservando un nombre de máquina y no de dominio, por ejemplo ``avatar.dyndns.com``, en este caso no tiene sentido configurar el registro MX:
 

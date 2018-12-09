@@ -1,13 +1,15 @@
-# Caso 3: Envío de correo desde usuarios del servidor a correos de internet
+---
+title: "Caso 3: Envío de correo desde usuarios del servidor a correos de internet"
+permalink: /serviciosgs/u06/postfix6.html
+---
 
-
-**DESDE EL AULA**
+## Desde el aula
 
 En el caso de la configuración de nuestra red del insitituto sólo puede enviar correo el servidor de correo de babuino. Por lo tanto tenemos que configurar nuestro servidor para que utilice a babuino como relay para enviar nuestros correos, para ello, modificamos la siguiente directiva en el fichero de configuración:
 
 	ralayhost = babuino.gonzalonazareno.org
 
-**DESDE CASA**
+## Desde casa
 
 Con la configuración que tienes actualmente podrías mandar correos al exterior.
 
@@ -17,6 +19,6 @@ Si en tu casa tienes un dirección IP dinámica seguramente gmail /hotmail/yahoo
 
 Para solucionar este problema tenemos varias soluciones, que veremos en los siguientes apartados:
 
-* Enviar correos a partir de un realy host autentificado
+* Enviar correos a partir de un relay host autentificado
 * Estudiar las listas de bloqueos
 * Crear registros SPF

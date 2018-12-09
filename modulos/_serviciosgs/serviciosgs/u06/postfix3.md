@@ -1,4 +1,7 @@
-# Caso 1: Envío local, entre usuarios del mismo servidor
+---
+title: "Caso 1: Envío local, entre usuarios del mismo servidor"
+permalink: /serviciosgs/u06/postfix3.html
+---
 
 Esta situación podemos aprovecharla para el envío de correos entre usuarios de la máquina, disponiendo de correo interno. Con utilidades como ``mail usuario`` podemos enviar mensajes a usuarios del propio sistema.
 
@@ -33,7 +36,7 @@ Pasemos a describir los pasos:
 
 ![postfix3](img/postfix3.jpg)
 
-**Fases en el envío de un mensaje de correo**
+## Fases en el envío de un mensaje de correo
 
 * **Fase de autenticación** (puede haber otra si la sesión es cifrada). El cliente lanza los comandos siguientes para indicar qué usuario envía el correo, y a quién va dirigido. En nuestro ejemplo el cliente no llega a autenticarse al no estar configurado el servidor de correo para ello, tan sólo se intercambian estos mensajes.
     * EHLO o HELO “cadena presentándose el cliente ante el servidor”
@@ -61,7 +64,7 @@ Podemos comprobar el log ``/var/log/mail.log`` para comproar que se ha mandado e
 	Feb 6 18:11:08 vostro postfix/qmgr[3531]: DE3232C16A: removed
 	Feb 6 18:11:09 vostro postfix/smtpd[3660]: disconnect from localhost[127.0.0.1]
 
-Y podemos leer el mansaje del usuario "usuario" con el programa ``mail``:
+Y podemos leer el mensaje del usuario "usuario" con el programa ``mail``:
 
 	Mail version 8.1.2 01/15/2001. Type ? for help.
 	"/var/mail/usuario": 1 message 1 new

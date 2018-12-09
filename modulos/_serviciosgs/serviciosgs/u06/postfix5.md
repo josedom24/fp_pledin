@@ -1,6 +1,9 @@
-# Alias y redirecciones
+---
+title: "Alias y redirecciones"
+permalink: /serviciosgs/u06/postfix5.html
+---
 
-**Alias**
+## Alias
 
 Cuando se define un alias para un determinado usuario se redirige el correo que llegue a otro usuario de la misma máquina. Los alias de correo se utilizan principalmente para gestionar el correo de las "cuentas de administración" y se definen en el fichero ``/etc/aliases``, que tiene el siguiente aspecto::
 
@@ -25,7 +28,7 @@ En este caso el correo que llega a los usuarios postmaster, webmaster, etc. se r
 
 Cada vez que se modifica el fichero ``/etc/aliases`` hay que ejecutar la instrucción ``newaliases`` para que los cambios tengan efecto.
 
-**Redirecciones**
+## Redirecciones
 
 Una redirección se utiliza para enviar el correo que llegue a un usuario a una cuenta de correo exterior. Para usuarios reales las redirecciones se definen en el fichero ``~/.forward`` y el formato de este fichero es simplemente un listado de cuentas de correo a las que se quiere redirigir el correo.
 
