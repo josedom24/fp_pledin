@@ -73,5 +73,7 @@ seguridadgm:
         url: /seguridadgm/u03
       - title: "Copias de Seguridad"
         url: /seguridadgm/u04
+      - title: "Seguridad Lógica"
+        url: /seguridadgm/u06
       
 
