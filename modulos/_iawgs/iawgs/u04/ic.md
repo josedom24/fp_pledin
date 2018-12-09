@@ -50,7 +50,7 @@ Vamos a añadir la funcionalidad de IC y DC con travis, para ello:
     * `SURGE_LOGIN`: Indica el correo electrónico que has utilizado como lógin en surge
     * `SURGE_TOKEN`: Indica el TOKEN que has obtenido en el paso anterior.
 
-* Realiza cambios en el fichero index.html del directorio `_build` y comprueba, que si el código html5 es válido se despliega y puedes aceder a la página web. Si el código html5 no es válido no se realiza el despliegue y te mandan un correo informando de la incidencia.
+* Realiza cambios en el fichero index.html del directorio `_build` y comprueba, que si el código html5 es válido se despliega y puedes acceder a la página web. Si el código html5 no es válido no se realiza el despliegue y te mandan un correo informando de la incidencia.
 
 {% capture notice-text %}
 Entrega una descripción con los pasos fundamentales que has realizado. Entrega varias capturas de pantalla donde se vea una prueba que termina en éxito (HTML5 válido) y otra que no termine en éxito (1 punto)
@@ -61,7 +61,7 @@ Entrega una descripción con los pasos fundamentales que has realizado. Entrega 
 En esta última tarea vamos a construir una página web (blog) con una herramienta escrita en python que se llama Pelican, y la vamos a desplegar en GitHub Page. Todo esto lo vamos a realizar co IC con Travis. Sigue los siguientes pasos:
 
 * Crea un repositorio en GitHub con un README.md, crea también una rama `gh-pages` donde vamos  a publicar el blog.
-* Crea un entorno virtual e instala Pelican (Puedes seguir las instrucciones que encenstras en esta página: [https://www.fullstackpython.com/blog/generating-static-websites-pelican-jinja2-markdown.html](https://www.fullstackpython.com/blog/generating-static-websites-pelican-jinja2-markdown.html)). (En el artículo se explica como crear un entrono virtual con python3, pero también funciona con un virtualenv de python2).
+* Crea un entorno virtual e instala Pelican (Puedes seguir las instrucciones que encuentras en esta [página](https://www.fullstackpython.com/blog/generating-static-websites-pelican-jinja2-markdown.html)). 
 * Crea un proyecto, en tu repositorio local de github, con `pelican-quickstart`, aquí es muy importante que pongas la URL base (si suponemos que he creado un repositorio llamado `ic-blog` la URL base sería: `https://josedom24.github.io/ic-blog`).
 * Con `make html` se genera el contenido estático, comprueba el resultado en el directorio `output`.
 * Con `make devserver` se ejecuta un servidor web para desarrollo, con `make stopserver` se detiene dicho servidor.
@@ -94,9 +94,9 @@ Describe los pasos más importantes para realzar dicha práctica, y entrega una 
 
 ## Tarea 4: Integración continúa de aplicación django (Test + Deploy)
 
-Vamos a trabajar con el repositorio de la aplicación `django_tutorial`. Esta aplicación tiene definidas una serie de test, que podemos estudiar en el fichero `tests.py` del directorio `polls`.
+Vamos a trabajar con el repositorio de la aplicación [`django_tutorial`](https://github.com/josedom24/django_tutorial). Esta aplicación tiene definidas una serie de test, que podemos estudiar en el fichero `tests.py` del directorio `polls`.
 
-Para ejecutar las pruebas unitarias, ejecutamos la instrucción `python manage.py test`.
+Para ejecutar las pruebas unitarias, ejecutamos la instrucción `python3 manage.py test`.
 
 {% capture notice-text %}
 Estudia las distintas pruebas que se han realizado, y modifica el código de la aplicación para que al menos una de ella no se ejecute de manera exitosa. (1 punto)
