@@ -64,15 +64,21 @@ seguridadgm:
   - title: Seguridad Informática
     children:
       - title: "Inicio"
+  - title: Seguridad Física
+    children:
         url: /seguridadgm/
       - title: "Introducción"
         url: /seguridadgm/u01
       - title: "Seguridad Física"
         url: /seguridadgm/u02
+  - title: Almacenamiento de la Información
+    children:
       - title: "Gestión de Almacenamiento"
         url: /seguridadgm/u03
       - title: "Copias de Seguridad"
         url: /seguridadgm/u04
+  - title: Seguridad Lógica
+    children:
       - title: "Control de Acceso"
         url: /seguridadgm/u06
       
