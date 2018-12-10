@@ -10,7 +10,8 @@ permalink: /serviciosgs/u06/practica_correo.html
 {: .notice--warning}
 
 Esta tarea consiste en instalar y configurar un servidor de correo similar al de cualquier organización, capaz de enviar y recibir directamente correo, almacenar los usuarios en LDAP, filtrar el correo en busca de virus o spam y servirlo a sus usuarios a través de los protocolos POP, IMAP y configurar un Webmail.
-Objetivos
+
+## Objetivos
 
 1. Instalar y configurar un servidor postfix en un equipo con dirección IP pública dinámica
 2. Aprender a configurar todos los componentes de un servidor de correos completo
@@ -51,7 +52,7 @@ Instala un webmail (roundcube) para gestionar el correo del equipo mediante una 
 
 {% capture notice-text %}
 * **Tarea 8 (2 puntos)**: Envía el correo a `jose@gonzalonazareno.org`
-* **Tarea 9 (3 puntos)**: Responde al cor reo que yo te voy a mandar desde esa dirección.
+* **Tarea 9 (3 puntos)**: Responde al correo que yo te voy a mandar desde esa dirección.
 * **Tarea 10 (4 puntos)**: ¿Te rebota el correo enviado al exterior por qué estas usando ip dinámica? Independientemente de la respuesta, muestra el log donde se vea el envío de ese correo y documenta la configuración del relay con gmail. Finalmente envía un correo a `josedom24@gmail.com`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
