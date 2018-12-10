@@ -11,5 +11,5 @@ La **seguridad lógica**, se refiere a la seguridad de uso del software, a la pr
 
 ## Prácticas
 
-* [Políticas de contraseñas](password.html)
-* [Directivas de seguridad en Windows](directivas.html)
+* [Práctica 16: Políticas de contraseñas](password.html)
+* [Práctica 17: Directivas de seguridad en Windows](directivas.html)
