@@ -64,9 +64,9 @@ seguridadgm:
   - title: Seguridad Informática
     children:
       - title: "Inicio"
+        url: /seguridadgm/
   - title: Seguridad Física
     children:
-        url: /seguridadgm/
       - title: "Introducción"
         url: /seguridadgm/u01
       - title: "Seguridad Física"
