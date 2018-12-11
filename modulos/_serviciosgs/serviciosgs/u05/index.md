@@ -15,7 +15,7 @@ Los contenidos que vamos a estudiar del servidor FTP, nos van a posibilitar resp
 6. ¿Qué tipo de clientes FTP existen?
 7. Si usas un cliente FTP de línea de comandos, que comando tendrías que ejecutar para conectarte al servidor `ftp.gonzalonazareno.org` y subir un fichero `practica.pdf`.
 
-## Indice
+## Índice
 
 * [Enlaces interesantes](enlaces.html)
 * [Ejercicio: Instalación de proFTPd y uso de clientes FTP](ejercicio1.html)

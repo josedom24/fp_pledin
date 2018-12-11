@@ -1,6 +1,6 @@
 ---
 title: "Caso 3: Envío de correo desde usuarios del servidor a correos de internet"
-permalink: /serviciosgs/u06/postfix6.html
+permalink: /serviciosgs/u07/postfix6.html
 ---
 
 ## Desde el aula

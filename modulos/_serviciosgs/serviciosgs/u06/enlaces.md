@@ -3,12 +3,15 @@ title: Enlaces interesantes
 permalink: /serviciosgs/u06/enlaces.html
 ---
 
-* [Cómo funciona el correo electrónico (MTA, MDA, MUA)](http://es.ccm.net/contents/115-como-funciona-el-correo-electronico-mta-mda-mua)
-* [Simple Mail Transfer Protocol](https://es.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
-* [Multipurpose Internet Mail Extensions](https://es.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
-* [Entender una cabecera de correo](https://clouding.io/kb/entender-una-cabecera-de-correo/)
+## Módulos de multiprocesamiento
 
-## Postfix
+* [Módulos de multiprocesamiento (MPMs)](http://httpd.apache.org/docs/2.4/mpm.html)
+* [Entendiendo los modos multiproceso de Apache](http://www.maestrosdelweb.com/entendiendo-los-modos-multiproceso-de-apache/)
+* [Diferencias entre apache prefork, event y worker](http://www.vozidea.com/diferencias-entre-apache-prefork-event-worker)
+* [Apache2 us ngninx](https://www.1and1.es/digitalguide/servidores/know-how/apache-vs-nginx-una-comparativa-de-servidores-web/)
+* [How to Configure nginx for Optimized Performance](https://linode.com/docs/web-servers/nginx/configure-nginx-for-optimized-performance/)
 
-* [Documentación: correo electrónico (Postfix)](doc/correo-e.pdf)
-* [Documentación oficial postfix](http://www.postfix.org/documentation.html)
+
+
+
+

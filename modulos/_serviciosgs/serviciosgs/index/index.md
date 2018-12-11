@@ -14,9 +14,9 @@ El índice de contenidos que vamos a estudiar será:
 * [Servidor Web](u03)
 * [Servidor DNS](u04)
 * [Servidor FTP](u05)
+* [Gestión de peticiones y rendimiento en servidores Web](u06)
 
 {::comment}
-* Gestión de peticiones y rendimiento en servidores Web
 * Servidor de correo electrónico
 * Servidor proxy/cache Squid
 * Proxy inverso y Balanceador de carga

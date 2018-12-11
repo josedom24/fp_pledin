@@ -1,14 +1,16 @@
 ---
-title: Servidor de correo electrónico
+title: Gestión de peticiones y rendimiento en servidores Web
 permalink: /serviciosgs/u06/index.html
 ---
 
-## Indice
+Los servidores web pueden ser configurado para manejar las peticiones de diferente forma, desde el punto de vista en que son creados y manejados los subprocesos necesarios que atienden a cada cliente conectado a este. En esta unidad vamos a explicar los MPM (Módulos de multiprocesamiento) que nos permiten configurar el servidor Web para gestionar las peticiones que llegan al servidor.
+
+Vamos a estudiar también las distintas configuraciones que podemos realizar para que los servidores web sean capaces de servir páginas realizadas en PHP y Python y vamos a estudiar las diferencias de rendimientos (respuestas por segundos) que podemos obtener utilizando las distintas configuraciones. Por último estudiaremos diferentes aplicaciones que pueden mejorar el rendimiento de nuestro servidor: aceleradores PHP, memcache, varnish, ...
+
+Para terminar la unidad vamos a hacer un estudio comparativo sobre el rendimiento entre distintos servidores web.
+
+## Índice
 
 * [Enlaces interesantes](enlaces.html)
-* [Instalación y configuración básica de postfix](postfix1.html)
-* [Gestión de correo desde el servidor](postfix2.html)
-* [Caso 1: Envío local, entre usuarios del mismo servidor](postfix3.html)
-* [Caso 2: Envío de correos desde internet a usuarios del servidor](postfix4.html)
-* [Alias y redirecciones](postfix5.html)
-* [Caso 3: Envío de correo desde usuarios del servidor a correos de internet](postfix6.html)
+* [Ejercicio: Gestión de peticiones](ejercicio1.html)
+   
