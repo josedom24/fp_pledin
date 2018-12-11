@@ -1,4 +1,7 @@
-# Ejecución de script PHP
+---
+title: "Ejecución de script PHP"
+permalink: /serviciosgs/u06/script_php.html
+---
 
 ## Apache2 y módulo PHP
 
