@@ -194,14 +194,14 @@ Por último activamos la configuración:
 
 En el virtualhost descomentamos las siguientes líneas:
 
-  		location ~ \.php$ {
-                include snippets/fastcgi-php.conf;
+	location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
 
-                # With php-fpm (or other unix sockets):
-                #fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-                # With php-cgi (or other tcp sockets):
-                #fastcgi_pass 127.0.0.1:9000;
-        }
+        # With php-fpm (or other unix sockets):
+        #fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+        # With php-cgi (or other tcp sockets):
+        #fastcgi_pass 127.0.0.1:9000;
+    }
 
 Descomentando la opción si php-fpm está en un socket Unix o en un socket TCP.
 
