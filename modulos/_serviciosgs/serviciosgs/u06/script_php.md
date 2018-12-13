@@ -145,7 +145,7 @@ Por último reiniciamos el servicio:
 
 ### Configuración de Apache2 con php-fpm
 
-Necesito activar los siguientes módulos_
+Necesito activar los siguientes módulos:
 
 	a2enmod proxy proxy_fcgi
 
@@ -194,7 +194,7 @@ Por último activamos la configuración:
 
 En el virtualhost descomentamos las siguientes líneas:
 
-  	location ~ \.php$ {
+  		location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
 
                 # With php-fpm (or other unix sockets):
