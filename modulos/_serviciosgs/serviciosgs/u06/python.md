@@ -1,5 +1,7 @@
-# Ejecución de script python
-
+---
+title: "Ejecución de script Python"
+permalink: /serviciosgs/u06/script_python.html
+---
 
 ## Apache2 y módulo wsgi
 
