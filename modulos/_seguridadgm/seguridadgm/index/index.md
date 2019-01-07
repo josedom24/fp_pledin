@@ -29,7 +29,7 @@ El índice de contenidos que vamos a estudiar será:
 ## Bloque: Seguridad lógica
 
 * [Unidad didáctica 6: Seguridad Lógica: Control de acceso](u06)
-* Unidad didáctica 7: Criptografía
+* [Unidad didáctica 7: Criptografía](u07)
 * Unidad didáctica 8: Fraudes y Software Malicioso
 * Unidad didáctica 9: Medidas de protección contra el Malware
 
