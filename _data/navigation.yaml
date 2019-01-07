@@ -81,5 +81,7 @@ seguridadgm:
     children:
       - title: "Control de Acceso"
         url: /seguridadgm/u06
+      - title: "Criptografía"
+        url: /seguridadgm/u07
       
 
