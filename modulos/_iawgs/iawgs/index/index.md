@@ -15,26 +15,5 @@ El índice de contenidos que vamos a estudiar será:
 * [Implantación de aplicaciones web PHP](u02)
 * [Implantación de aplicaciones web Python](u03)
 * [Introducción a la integración continúa y despliegue continuo](u04)
-
-
-{::comment}
-
-
-* Despliegue de aplicaciones web Java
-* Despliegue de aplicaciones con contenedores
-{:/comment}
-
-
-{::comment}
-* Implantación de una aplicación web estática en Github Pages
-* Instalación local de un CMS PHP
-* Despliegue tradicional de CMS PHP
-* Introducción al despliegue de aplicaciones python
-* Entorno de desarrollo y producción con aplicaciones web python
-* Depliegue de CMS python: Mezzanine
-* Introducción a la integración continua
-* Despliegue de CMS java
-* Introducción a docker
-* Implantación de aplicaciones web PHP en docker
-{:/comment}
+* [Despliegue de aplicaciones web Java](u05)
 

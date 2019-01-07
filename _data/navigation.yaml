@@ -49,6 +49,8 @@ iawgs:
         url: /iawgs/u03
       - title: Integración Continúa
         url: /iawgs/u04
+      - title: Java
+        url: /iawgs/u05
 
 lmgs:
   - title: Lenguajes de marcas
