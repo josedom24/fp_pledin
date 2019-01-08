@@ -30,7 +30,7 @@ Las configuraciones que vamos a realizar son las siguientes:
 
 ## Estudio de rendimiento
 
-Ahora utilizando el script [benchmark.py](https://github.com/josedom24/serviciosgs_doc/blob/master/rendimiento/benchmark.py), realiza las pruebas de rendiemento para cada una de las configuraciones anteriores:
+Ahora utilizando el script [benchmark.py](https://github.com/josedom24/serviciosgs_doc/blob/master/rendimiento/benchmark.py), realiza las pruebas de rendimiento para cada una de las configuraciones anteriores:
 
 * Módulo php5-apache2
 * FPM-PHP + apache2 (escuchando en un socket UNIX o en un socket TCP)
@@ -45,7 +45,7 @@ Ahora utilizando el script [benchmark.py](https://github.com/josedom24/servicios
 
 {% capture notice-text %}
 
-* **Tarea 7 (2 puntos)(Obligatorio)**: Añade a la configuración ** ganadora del punto anterior** memcached. Documenta la instalación y configuración memcached. Recuerda que para que Wordpress utilice memcached le tenemos que instalar un plugin. Muestra las estadísticas de memcached después de acceder varias veces a wordpress para comprobar que esa funcionando.
+* **Tarea 7 (2 puntos)(Obligatorio)**: Añade a la configuración **ganadora del punto anterior** memcached. Documenta la instalación y configuración memcached. Recuerda que para que Wordpress utilice memcached le tenemos que instalar un plugin. Muestra las estadísticas de memcached después de acceder varias veces a wordpress para comprobar que esa funcionando.
 * **Tarea 8 (3 puntos)(Obligatorio)**: Configura un proxy inverso - caché Varnish escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
