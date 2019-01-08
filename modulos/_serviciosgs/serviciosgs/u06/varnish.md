@@ -34,3 +34,11 @@ A continuación debemos cambiar la configuración del servidor para que deje de 
 
 Varnish utiliza un lenguaje de configuración llamado apropiadamente VCL (Varnish Configuration Language). Su sintaxis recuerda un poco a C o Perl y es compilado a C por Varnish, que ejecutará las directivas de caché según estén definidas en un archivo de configuración, situado en `/etc/varnish/default.vcl`. En la web de Varnish hay un completo [manual de VCL](http://varnish-cache.org/docs/3.0/reference/vcl.html) que recomiendo seguir para poder dominar VCL en profundidad.
 
+En este fichero tenemos que configurar donde se encuentra el servidor web (backend), si suponemos que hemos configurado el servidor web para que escuche en el puerto 8080:
+
+    backend default {
+        .host = "127.0.0.1";
+        .port = "8080";
+    }
+
+Por último indicar que con el comando `varnishstat` podemos obtener la estadística de uso de varnish.
