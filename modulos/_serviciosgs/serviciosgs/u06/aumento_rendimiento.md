@@ -3,7 +3,7 @@ title: "Aumento de rendimiento en servidores web"
 permalink: /serviciosgs/u06/aumento_rendimiento.html
 ---
 
-**Memcached**
+## Memcached
 
 [Memcached](http://memcached.org/) es un sistema distribuido de propósito general y que es muy usado en la actualidad por múltiples sitios web. Memcached es empleado para el almacenamiento en caché de datos u objetos en la memoria RAM, reduciendo así las necesidades de acceso a un origen de datos externo (como una base de datos o una API).
 
@@ -11,7 +11,7 @@ permalink: /serviciosgs/u06/aumento_rendimiento.html
 * [Como utilizar Memcached con WordPress](https://raiolanetworks.es/blog/como-utilizar-memcached-con-wordpress/)
 * [Memcached para optimizar WordPress](https://raiolanetworks.es/blog/memcached/#memcached_para_optimizar_wordpress)
 
-**Varnish**
+## Varnish
 
 Varnish es un acelerador HTTP que funciona como un proxy inverso. Se sitúa por delante del servidor web, cacheando la respuesta de dicho servidor web en memoria. La próxima vez que un visitante visite la misma URL, la página será servida desde Varnish en lugar de desde el servidor web, ahorrando recursos en el backend y permitiendo más conexiones simultáneas.
 
