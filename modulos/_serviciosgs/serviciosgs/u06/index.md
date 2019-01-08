@@ -14,3 +14,7 @@ Para terminar la unidad vamos a hacer un estudio comparativo sobre el rendimient
 * [Enlaces interesantes](enlaces.html)
 * [Ejercicio: Gestión de peticiones](ejercicio1.html)
 * [Ejecución de script PHP](script_php.html)
+* [Aumento de rendimiento en servidores web](aumento_rendimiento.html)
+* [Ejecución de script Python](script_python.html)
+* [El comando ab](ab.html)
+* [Estudio de rendimiento de servidores web](rendimiento.html)

@@ -1,4 +1,7 @@
-# Estudio de rendimiento de servidores web
+---
+title: "Estudio de rendimiento de servidores web"
+permalink: /serviciosgs/u06/rendimiento.html
+---
 
 Vamos a utilizar la herramienta `ab` para realizar pruebas sobre servidores web con distintas configuraciones y hacer un estudio del rendimiento de cada configuración. Para estudiar el rendimiento nos vamos a fijar en el número de peticiones respondidas por segundo por el servidor.
 

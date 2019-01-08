@@ -1,9 +1,13 @@
-# Aumento de rendimiento en servidores web
+---
+title: "Aumento de rendimiento en servidores web"
+permalink: /serviciosgs/u06/aumento_rendimiento.html
+---
+# 
 
 
 **Memcached**
 
-[Memcached](http://memcached.org/>) es un sistema distribuido de propósito general y que es muy usado en la actualidad por múltiples sitios web. Memcached es empleado para el almacenamiento en caché de datos u objetos en la memoria RAM, reduciendo así las necesidades de acceso a un origen de datos externo (como una base de datos o una API).
+[Memcached](http://memcached.org/) es un sistema distribuido de propósito general y que es muy usado en la actualidad por múltiples sitios web. Memcached es empleado para el almacenamiento en caché de datos u objetos en la memoria RAM, reduciendo así las necesidades de acceso a un origen de datos externo (como una base de datos o una API).
 
 * [Manual de instalación de memcached](http://www.pontikis.net/blog/install-memcached-php-debian>)
 * [Como utilizar Memcached con WordPress](https://raiolanetworks.es/blog/como-utilizar-memcached-con-wordpress/>)
