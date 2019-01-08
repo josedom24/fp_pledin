@@ -18,3 +18,8 @@ Para terminar la unidad vamos a hacer un estudio comparativo sobre el rendimient
 * [Ejecución de script Python](script_python.html)
 * [El comando ab](ab.html)
 * [Estudio de rendimiento de servidores web](rendimiento.html)
+
+## Prácticas
+
+* [Práctica: Ejecución de script PHP. Rendimiento](practica_php.html)
+* [Práctica: Ejecución de script Python. Rendimiento](practica_python.html)
