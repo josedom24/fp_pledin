@@ -37,6 +37,15 @@ En nginx no funciona los ficheros `.htaccess`, donde está definido la configura
 
 ## Estudio de rendimiento
 
+{% capture notice-text %}
+## Una buena idea...
+
+**Abre una terminal en el servidor y comprueba que las peticiones se están haciendo de forma correcta (devuelve código 200):**
+
+    tailf /var/log/xxxxxx/access.log
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
+
 Ahora utilizando el script [benchmark.py](https://github.com/josedom24/serviciosgs_doc/blob/master/rendimiento/benchmark.py), realiza las pruebas de rendimiento para cada una de las configuraciones anteriores:
 
 * Módulo php5-apache2
@@ -46,7 +55,7 @@ Ahora utilizando el script [benchmark.py](https://github.com/josedom24/servicios
 {% capture notice-text %}
 ## En las pruebas con nginx...
 
-##Asegurate que cambias las URL que has configurado en tu instalación de Wordpress##
+**Asegurate que cambias las URL que has configurado en tu instalación de Wordpress**
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 {% capture notice-text %}
