@@ -13,7 +13,14 @@ Las configuraciones que vamos a realizar son las siguientes:
 * Módulo php5-apache2
 * PHP-FPM + apache2
 * PHP-FPM + nginx 
-	
+
+
+{% capture notice-text %}
+## Consideraciones a la hora de instalr WordPress en nginx
+
+En nginx no funciona los ficheros `.htaccess`, donde está definido la configuración de reescrituras de URL de WordPress para apache2. Por lo tanto para tener URL limpias puedes utilizar la información del siguiente [enlace](https://www.cyberciti.biz/faq/how-to-configure-nginx-for-wordpress-permalinks/).
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
 {% capture notice-text %}
 ### Apache2
 
@@ -35,6 +42,12 @@ Ahora utilizando el script [benchmark.py](https://github.com/josedom24/servicios
 * Módulo php5-apache2
 * FPM-PHP + apache2 (escuchando en un socket UNIX o en un socket TCP)
 * FPM-PHP + nginx (escuchando en un socket UNIX o en un socket TCP)
+
+{% capture notice-text %}
+## En las pruebas con nginx...
+
+##Asegurate que cambias las URL que has configurado en tu instalación de Wordpress##
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 {% capture notice-text %}
 
