@@ -27,4 +27,5 @@ El índice de contenidos que vamos a estudiar será:
 * [Boletín 2: Ejercicio listas](u02/boletin2.html)
 * [Boletín 3: Ejercicios variados](u02/boletin3.html)
 * [Entrega 3: Ejercicios diccionarios, ficheros, ...](u02/entrega3.html)
+* [Boletin 4: Ejercicios funciones](u02/boletin4.html)
     
