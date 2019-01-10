@@ -26,4 +26,5 @@ permalink: /iawgs/u05/index.html
 
 ## Prácticas
 
+* [Práctica: Despliegue de CMS java](practica_java.html)
 
