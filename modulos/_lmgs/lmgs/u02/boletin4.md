@@ -15,9 +15,7 @@ permalink: /lmgs/u02/boletin4.html
 
 3. Queremos hacer una función que añada a una lista los contactos de una agenda. Los contactos se van a guardar en un diccionario, y al menos debe tener el campo de nombre, el campo del teléfono, aunque puede tener más campos. Los datos se irán pidiendo por teclado, se pedirá de antemanos cuantos contactos se van a guardar. Si vamos a guardar más información en el contacto, se irán pidiendo introduciendo campos hasta que introduzcamos el `*`. 
 
-4. Amplía el programa anterior para hacer una función de búsqueda, que reciba un conjunto de parámetros keyword y devuelve los contactos (en una lista) que coincidan con los criterios de búsqueda.
-
-5. Realizar una función recursiva que reciba una lista y que calcule el producto de los elementos de la lista.
+4. Realizar una función recursiva que reciba una lista y que calcule el producto de los elementos de la lista.
 
 
 
