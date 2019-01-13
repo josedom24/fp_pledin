@@ -8,3 +8,4 @@ permalink: /seguridadgm/u07/index.html
 
 ## Prácticas
 
+* [Práctica 18: Cifrado de un disco/particion/pendrive en Linux y Windows](cifrado_usb.html)
