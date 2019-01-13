@@ -3,6 +3,9 @@ title: "Boletín 4: Ejercicios de funciones"
 permalink: /lmgs/u02/boletin4.html
 ---
 
+**Te recuero que tienes un boletín de ejercicios de funciones resueltos es esta [página](https://gitlab.com/josedom24/curso_programacion_python3/tree/master/curso/u37).**
+{: .notice--warning}
+
 1. Escribir dos funciones que permitan calcular:
 
     * La cantidad de segundos en un tiempo dado en horas, minutos y segundos.
