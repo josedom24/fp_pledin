@@ -22,7 +22,7 @@ Veamos un ejemplo de configuración para una aplicación django. Suponemos que e
         </Directory>
     </VirtualHost>
 
-Si hemos usado un entorno virtual ecreado en el directorio ``/home/debian/python``, la siguiente línea de configuración quedaría de la siguiente manera:
+Si hemos usado un entorno virtual creado en el directorio ``/home/debian/python``, la siguiente línea de configuración quedaría de la siguiente manera:
 
     ...
     WSGIDaemonProcess mysite user=www-data group=www-data processes=1 threads=5 python-path=/var/www/html/mysite:/home/debian/python/lib/python2.7/site-packages
