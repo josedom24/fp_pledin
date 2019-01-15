@@ -14,6 +14,8 @@ permalink: /iawgs/u06/index.html
 
 ## Contenidos
 
+* [Ciclo de vida de nuestras aplicaciones en docker](https://iesgn.github.io/cloudandrelated/es_docker.html#/)
+
 Mis apuntes sobre docker...
 
 * [Introducción a docker](https://www.josedomingo.org/pledin/2015/12/introduccion-a-docker/)
