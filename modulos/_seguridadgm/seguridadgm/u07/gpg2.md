@@ -3,7 +3,7 @@ title: "Cifrado asimétrico con gpg"
 permalink: /seguridadgm/u07/gpg2.html
 ---
 
-En esta práctica vamos a cifrar ficheros utilizando cifrado asimétrico utilizando el programa gpg. Puedes encontrar el resumen de comando en esta [cluleta](https://elbauldelprogramador.com/chuleta-de-comandos-para-gpg/) o buscar información en internet.
+En esta práctica vamos a cifrar ficheros utilizando cifrado asimétrico utilizando el programa gpg. Puedes encontrar el resumen de comando en esta [chuleta](https://elbauldelprogramador.com/chuleta-de-comandos-para-gpg/) o buscar información en internet.
 
 ## Generación de claves
 
