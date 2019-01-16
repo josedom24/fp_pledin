@@ -5,7 +5,7 @@ permalink: /serviciosgs/u06/script_python.html
 
 ## Apache2 y módulo wsgi
 
-Instalamos el módulo de apache2 que nos permite ejecutar código python: `libapache2-mod-wsgi`.
+Instalamos el módulo de apache2 que nos permite ejecutar código python: `libapache2-mod-wsgi-py3`.
 
 Veamos un ejemplo de configuración para una aplicación django. Suponemos que el fichero wsgi se encuentra en el directorio: ``/var/www/html/mysite/mysite/wsgi.py`` y configuramos apache2 de la siguiente manera::
 
@@ -66,7 +66,7 @@ Finalmente podemos configurar apache2 o nginx como proxy inversos para enviar to
 Para instalarlo en Debian 9 Stretch:
 
     apt install uwsgi
-    apt install uwsgi-plugin-python
+    apt install uwsgi-plugin-python3
 
 También lo podemos instalar con `pip` en un entorno virtual.  
 
@@ -74,7 +74,7 @@ También lo podemos instalar con `pip` en un entorno virtual.
 
 Hemos creado una aplicación django en el directorio: `/home/debian/myapp` para desplegarla con uwsgi ejecutamos:
 
-    uwsgi --http :8080 --plugin python --chdir /home/debian/myapp --wsgi-file myapp/wsgi.py --process 4 --threads 2 --master 
+    uwsgi --http :8080 --plugin python35 --chdir /home/debian/myapp --wsgi-file myapp/wsgi.py --process 4 --threads 2 --master 
 
 Otra alternativa es crear un fichero `.ini` de configuración, `ejemplo.ini` de la siguiente manera:
 
