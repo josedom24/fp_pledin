@@ -66,6 +66,11 @@ Ahora utilizando el script [benchmark.py](https://github.com/josedom24/servicios
 
 ## Estudio de rendimiento
 
+{% capture notice-text %}
+Como no hemos configurado varnish de manera adecuada, vamos tener problemas si utilizamos URL de la forma `http://up/wirdpess/?p=1`. Por lo tanto debes configurar nginx para que wordpress tenga URL limpias. Puedes seguir el siguiente artículo: [How to configure Nginx for WordPress permalinks](https://www.cyberciti.biz/faq/how-to-configure-nginx-for-wordpress-permalinks/).
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
 A continuación hacemos el estudio de rendimiento para las siguientes configuraciones:
 
 * Configuración ganadora
