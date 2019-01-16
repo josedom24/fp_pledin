@@ -28,4 +28,5 @@ El índice de contenidos que vamos a estudiar será:
 * [Boletín 3: Ejercicios variados](u02/boletin3.html)
 * [Entrega 3: Ejercicios diccionarios, ficheros, ...](u02/entrega3.html)
 * [Boletin 4: Ejercicios funciones](u02/boletin4.html)
+* [Entrega 4: Ejercicios funciones](u02/entrega4.html)
     
