@@ -1,7 +1,6 @@
-
 ---
 title: "Integridad, firmas y autenticación"
-permalink: /seguridadgm/u07/firmas.html
+permalink: /seguridadgm/u07/gpg3.html
 ---
 
 ## Firmas digitales
