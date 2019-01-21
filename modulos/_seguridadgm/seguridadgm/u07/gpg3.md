@@ -7,7 +7,7 @@ permalink: /seguridadgm/u07/gpg3.html
 
 ### Ejercicio 1
 
-Verifica que el documento [`importante.txt`](importante.txt) ha sido firmado por mí, para ello puedes obtener la firma del documente en el fichero [`importante.txt.asc`](importante.txt.asc). ¿Necesitas alguna otra cosa para verificar la firma?. ¿Podemos asegurar que el documento no ha sido manipulado?. Razona la respuesta.
+Verifica que el documento [`importante.txt`](importante.txt){: download=importante.txt} ha sido firmado por mí, para ello puedes obtener la firma del documente en el fichero [`importante.txt.asc`](importante.txt.asc). ¿Necesitas alguna otra cosa para verificar la firma?. ¿Podemos asegurar que el documento no ha sido manipulado?. Razona la respuesta.
 
 ### Ejercicio 2
 
