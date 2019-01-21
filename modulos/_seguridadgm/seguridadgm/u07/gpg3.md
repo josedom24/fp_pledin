@@ -11,7 +11,7 @@ Verifica que el documento [`importante.txt`](importante.txt) ha sido firmado por
 
 ### Ejercicio 2
 
-Envíame por correo electrónico un documento (fichero plano cuto contenido sea tu nombre completo) que esté encriptado y firmado por tí. Envíame toda la información que necesito para desencriptar y verificar el documento recibido.
+Envíame por correo electrónico un documento (fichero plano cuyo contenido sea tu nombre completo) que esté encriptado y firmado por tí. Envíame toda la información que necesito para desencriptar y verificar el documento recibido.
 
 ### Ejercicio 3
 
