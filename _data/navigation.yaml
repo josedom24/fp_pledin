@@ -27,8 +27,8 @@ serviciosgs:
         url: /serviciosgs/u05
       - title: Gestión de peticiones - Rendimiento
         url: /serviciosgs/u06
-      #- title: Servidor de correo electrónico
-      #  url: #
+      - title: Servidor de correo electrónico
+        url: /serviciosgs/u07
       #- title: Servidor proxy/cache Squid
       #  url: #
       #- title: Proxy inverso y Balanceador de carga
