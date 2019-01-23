@@ -58,9 +58,9 @@ lmgs:
       - title: "Inicio"
         url: /lmgs/
       - title: Pseudocódigo
-        url: https://github.com/josedom24/curso_programacion
+        url: /lmgs/u01
       - title: Python3
-        url: https://gitlab.com/josedom24/curso_programacion_python3
+        url: /lmgs/u02
 
 seguridadgm:
   - title: Seguridad Informática
