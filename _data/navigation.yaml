@@ -61,6 +61,8 @@ lmgs:
         url: /lmgs/u01
       - title: Python3
         url: /lmgs/u02
+      - title: Introducción a los LM
+        url: /lmgs/u03
 
 seguridadgm:
   - title: Seguridad Informática
