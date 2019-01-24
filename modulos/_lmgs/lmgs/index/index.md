@@ -15,6 +15,7 @@ El índice de contenidos que vamos a estudiar será:
 
 * [Programación con pseudocódigo](u01)
 * [Programación con python3](u02)
+* [Examen funciones](https://docs.google.com/document/d/e/2PACX-1vSHXoRWY9Jfj25eHHzPyiR2lATnk6GXTkkgJBIheXHRdohMZS7oGKPPwUMsiaCqKzw16sa6JltmLxu-/pub)
 
 ## Lenguajes de Marcas
 
