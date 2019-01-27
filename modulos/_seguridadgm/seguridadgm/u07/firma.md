@@ -14,7 +14,7 @@ Puedes seguir el [manual de GPG para firmar y verificas firmas](https://www.gnup
 {% capture notice-text %}
 ## Ejercicios
 
-1. Selecciona un documento pdf y encriptalo y firmalo(opción `--sign`). Envíalo a un compañero, que debe en primer lugar verificar la firma y posteriormente descifrar el documento.
+1. Selecciona un documento pdf y encríptalo y fírmalo(opción `--sign`). Envíalo a un compañero, que debe en primer lugar verificar la firma y posteriormente descifrar el documento.
 2. Realiza el mismo ejercicio pero obteniendo una firma ASCII.
-3. Ahora sólo queremos firmar un documento. Firma un documento (opción --detach-sig). A continuación envía el documento original y la firma a un compañero para que verifique que el documento está firmado por tí.
+3. Ahora sólo queremos firmar un documento. Firma un documento (opción `--detach-sig`). A continuación envía el documento original y la firma a un compañero para que verifique que el documento está firmado por tí.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
