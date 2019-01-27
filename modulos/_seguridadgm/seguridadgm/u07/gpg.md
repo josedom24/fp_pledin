@@ -26,7 +26,7 @@ Si queremos recuperar el fichero original:
     gpg -d fichero.txt.gpg > fichero2.txt
 
 {% capture notice-text %}
-## Ejercicio
+## Ejercicios
 
 1. Crea un documento de texto con cualquier editor o utiliza uno del que dispongas.
 2. Cifra este documento con alguna contraseña acordada con el compañero de al lado.
