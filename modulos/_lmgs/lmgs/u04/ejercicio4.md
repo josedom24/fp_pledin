@@ -14,4 +14,4 @@ Queremos estructurar la información que genera un proceso de facturación de un
 
 Razona la siguiente pregunta: ¿Es necesario guardar el importe total por producto y el importe total de la factura?
 
-* [Una posible solución](factura.xml)
+* [Una posible solución](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/factura.xml)

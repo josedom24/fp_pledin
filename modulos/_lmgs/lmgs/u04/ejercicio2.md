@@ -24,4 +24,4 @@ Crea un documento XML bien formado que pueda utilizarse en un panel de informaci
 	* Kilómetros de retención: 3 
 
 
-* [Una posible solución](autopistas.xml)
+* [Una posible solución](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/autopistas.xml)
