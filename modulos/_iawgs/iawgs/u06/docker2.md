@@ -7,14 +7,12 @@ Como hemos estudiado la información que se guarda en un contenedor no es persis
 
 ## Contenedor mysql con almacenamiento persistente
 
-Contenedor con mysql. guardamos la información de la base de datos en un volumen persistente:
-
+Contenedor con mysql. Guardamos la información de la base de datos en un volumen persistente:
 
     $ docker run --name some-mysql \ 
                  -v /opt/mysql:/var/lib/mysql \
                  -e MYSQL_ROOT_PASSWORD=asdasd \
                  -d mysql
-  
 
 Comprobamos que se ha guardado la BD en el host:
 
@@ -28,7 +26,6 @@ Ahora podemos crear una base de datos:
     ...
     create database dbtest;
     Query OK, 1 row affected (0.07 sec)
-  
 
 Si simulamos que nuestro contenedor ha fallado: 
 
