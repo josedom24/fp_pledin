@@ -17,7 +17,7 @@ Envíame por correo electrónico un documento (fichero plano cuyo contenido sea 
 
 Sería muy recomendable poder escribir correos electrónicos cifrados y firmados directamente desde nuestro gestor de correo electrónico. Siguiendo este [tutorial](https://www.redeszone.net/2017/01/21/aprende-usar-cifrado-pgp-gmail-outlook-la-extension-mailvelope-firefox-chrome/) envía un correo cifrado y firmado a un compañero. Recibe de un compañero otro correo cifrado y firmado y verifica la firma y desencripta el correo.
 
-**Nota: Se valorará más ejercicio si no generáis nuevas claves en la extensión. Es muy recomendable que importar las claves que ya poseéis.**
+**Nota: Se valorará más ejercicio si no generáis nuevas claves en la extensión. Es muy recomendable importar las claves que ya poseéis.**
 
 ## Integridad
 
