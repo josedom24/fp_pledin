@@ -13,7 +13,7 @@ Un objetivo de la asignatura es participar en este movimiento de código abierto
 
 ## Empecemos
 
-1. Crea una cuenta en GitHub y envía un correo a pledin.jd@gmail.com con la dirección de tu página GitHub y tu nombre completo. La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública a GitHub, para ello:
+1. Crea una cuenta en GitHub. La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública a GitHub, para ello:
 	* Copia el contenido de tu fichero `~/.ssh/id_rsa.pub`, para ello: añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
 	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública: [http://librosweb.es/pro_git/capitulo_4/generando_tu_clave_publica_ssh.html](http://librosweb.es/pro_git/capitulo_4/generando_tu_clave_publica_ssh.html).
 
@@ -27,7 +27,7 @@ Un objetivo de la asignatura es participar en este movimiento de código abierto
 		git config --global user.name "John Doe"
 		git config --global user.email johndoe@example.com
 
-	De nuevo, sólo necesitas hacer esto una vez si especificas la opción --global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
+	De nuevo, sólo necesitas hacer esto una vez si especificas la opción `--global`, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
 
 5. Clonar el repositorio remoto. Copia la url SSH del repositorio (no copies la URL https) y vamos a clonar el repositorio en nuestro ordenador.
 
