@@ -22,16 +22,16 @@ Un objetivo de la asignatura es participar en este movimiento de código abierto
 
 		apt-get install git
 
-4. Copia la url SSH del repositorio (no copies la URL https) y vamos a clonar el repositorio en nuestro ordenador.
+4. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico. Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
+
+		git config --global user.name "John Doe"
+		git config --global user.email johndoe@example.com
+
+	De nuevo, sólo necesitas hacer esto una vez si especificas la opción --global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
+
+5. Clonar el repositorio remoto. Copia la url SSH del repositorio (no copies la URL https) y vamos a clonar el repositorio en nuestro ordenador.
 
 		git clone git@github.com:josedom24/prueba.git
-
-5. Entramos en el nuestro repositorio local y configuramos git:
-
-		cd prueba
-		git config --global user.name "Pepito Pérez"
-		git config --global user.email pepito.perez@gmail.com
-		git commit --amend --reset-author
 
 	Comprueba que dentro del repositorio que hemos creado se encuentra el fichero README.md, en este fichero podemos poner la descripción del proyecto.
 
