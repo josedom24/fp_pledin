@@ -52,9 +52,7 @@ Para instalar el servidor IMAP ejecutamos la siguiente instrucción:
 
 Ya podríamos configurar nuestro cliente de correos para recibir correo utilizando el protocolo imap, para ello tendríamos creado un nombre en el servidor DNS, por ejemplo, ``imap.josedom.gonzalonazreno.org``.
 
-```eval_rst
-.. note::
+Podrías hacer la prueba de ver la diferencia entre los dos protocolo: como si usas pop3 los correos se borran del servidor (hay que configurar algunos clientes para que funcionen de esta forma) y cómo sin embargo al usar el servidor imap los correos no se borran del servidor.
+{: .notice--warning}
 
-	Podrías hacer la prueba de ver la diferencia entre los dos protocolo: como si usas pop3 los correos se borran del servidor (hay que configurar algunos clientes para que funcionen de esta forma) y cómo sin embargo al usar el servidor imap los correos no se borran del servidor.
-```
-En este caso también puedes instalar un cliente web de correos para leer los correos del servidor. Hay muchas: squirrelmail, round cube,...
+En este caso también puedes instalar un cliente web de correos para leer los correos del servidor. Hay muchas: squirrelmail, round cube, horde, ...
