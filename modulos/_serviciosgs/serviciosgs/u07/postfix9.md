@@ -1,5 +1,7 @@
-# Caso 5: Recepción de correo electrónico usando nuestro servidor de correos
-
+---
+title: "Caso 5: Recepción de correo electrónico usando nuestro servidor de correos"
+permalink: /serviciosgs/u07/postfix9.html
+---
 
 En este caso vamos a utilizar el [protocolo pop3](https://es.wikipedia.org/wiki/Post_Office_Protocol/) y el [protocolo imap](https://es.wikipedia.org/wiki/Internet_Message_Access_Protocol) para obtener los correos electrónicos que hemos recibio en nuestro servidor. 
 

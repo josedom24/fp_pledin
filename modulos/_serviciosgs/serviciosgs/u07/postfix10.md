@@ -1,5 +1,7 @@
-# Antispam y antivirus en nuestro ervidor de correos
-
+---
+title: "Antispam y antivirus en nuestro servidor de correos"
+permalink: /serviciosgs/u07/postfix10.html
+---
 
 En este apartado vamos a realizar una introducción a la configuración de nuestro servidor de correos postfix para que sea capaz de determinar si los correos que le llegan tienen algun virus o son spam. Para ello vamos a utilizar tres programas:
 

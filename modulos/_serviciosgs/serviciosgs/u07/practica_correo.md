@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Servidor de correos"
-permalink: /serviciosgs/u06/practica_correo.html
+permalink: /serviciosgs/u07/practica_correo.html
 ---
 
 **(13 tareas - 35 puntos)(5 tareas obligatorias - 8 puntos)**

@@ -1,5 +1,7 @@
-# Soluciones al problema del spam
-
+---
+title: "Soluciones al problema del spam"
+permalink: /serviciosgs/u07/postfix7.html
+---
 
 Como hemos visto en el caso 3 es posible que nuestra ip dinámica que tenemos en casa sea rechazada por los servidores de correo. En este apartado vamos a ver distintas técnicas que nos permiten luchar contra el spam y que nos pueden permitir que nuestro correo llegue a su destino y no sea rechazado. Veamos las posibles técnicas:
 
