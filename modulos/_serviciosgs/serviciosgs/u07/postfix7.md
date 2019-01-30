@@ -23,7 +23,7 @@ En este apartado vamos a ver distintas técnicas que nos permiten luchar contra 
 
 * **SMTP submission**: Para que no se permita conectar directamente a un servidor de correo de destino, una técnica para evitar a los spammer sería cambiar el puerto estándar del protocolo SMTP, normalmente se cambia al 587. Para más información leer el siguiente artículo: [Para que el correo llegue a buen puerto](http://blog.arsys.es/para-que-el-correo-llegue-a-buen-puerto/)
 
-* **Enviar correo a través Relay autentifcado**: En este caso podemos hacer relay utilizando un servidor de correos autentificado por ejemplo gmail: 
+* **Enviar correo a través Relay autentificado**: En este caso podemos hacer relay utilizando un servidor de correos autentificado por ejemplo gmail: 
 
 	* [Configurar postfix a través de un relay host autenticado (Gmail)](http://albertomolina.wordpress.com/2009/01/04/configurar-postfix-a-traves-de-un-relay-host-autenticado-gmail/)
 	* [MailGun: Free Open SMTP Relay for Your Emails](https://www.mailgun.com/smtp/free-smtp-service/free-open-smtp-relay)
