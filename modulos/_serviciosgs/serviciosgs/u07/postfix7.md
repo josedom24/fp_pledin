@@ -13,9 +13,9 @@ Por ejemplo acabo de mandar un correo desde mi servidor a gmail que no ha sido a
 	tication checks. To best protect our users from spam, the 550-5.7.1 message has been blocked. Please visit 550-5.7.1  https://support.google.com/mail/answer/81126#authentication for more 550 5.7.1 information. r127si1861865wmf.152 - 
 	gsmtp (in reply to end of DATA command))
 
-He enviado un mensaje a hotmail y si lo he podido mandar pero lo ha guardado en el SPAM.
+He enviado un mensaje a hotmail y si lo he podido mandar pero lo ha guardado en el SPAM. Con yahoo me ha pasado lo mismo.
 
-Mi dirección dinámica asigna a mi router es la 190.131.201.21, y podemos comprobar que está en una lista de ip de envío de spam, por lo que es posible que tengamos problemas al enviar el correo.
+Mi dirección dinámica asignada a mi router es la 190.131.201.21, y podemos comprobar que está en una lista de ip de envío de spam, por lo que es posible que tengamos problemas al enviar el correo.
 
 
 En este apartado vamos a ver distintas técnicas que nos permiten luchar contra el spam y que nos pueden permitir que nuestro correo llegue a su destino y no sea rechazado. Veamos las posibles técnicas:
