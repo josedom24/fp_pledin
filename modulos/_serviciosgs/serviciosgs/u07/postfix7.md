@@ -38,4 +38,6 @@ En este apartado vamos a ver distintas técnicas que nos permiten luchar contra 
 
 * **Lita gris**: El servidor de correo si determina que el origen puede ser una amenaza, rechazada por defecto el correo, los servidores de correo legítimos volverán a enviar el correo transcurrido un tiempo, este correo será aceptado. Sin embargo un sistema que manda spam no suele reenviar el correo rechazado. Para más información puede leer en la wikipedia: [Lista gris](https://es.wikipedia.org/wiki/Lista_gris) 
 
+* Uso de **antispammer (Apache SpamAssassin) y antivirus**: lo veremos en los próximos puntos de la unidad.
+
 Para terminar os dejo una presentación: [Univ. de Deusto: Seguridad en sistemas de correo electrónico](http://www.slideshare.net/alvmarin/seguridad-en-sistemas-de-correo-electrnico-3131736)
