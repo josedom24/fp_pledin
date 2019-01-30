@@ -10,7 +10,8 @@ Por ejemplo acabo de mandar un correo desde mi servidor a gmail que no ha sido a
 	Jan 30 20:36:29 buster postfix/smtp[3290]: 2F7894001D: to=<josedom24@gmail.com>, relay=gmail-smtp-in.l.google.com[17
 	3.194.76.26]:25, delay=1.7, delays=0.08/0.01/1.1/0.45, dsn=5.7.1, status=bounced (host gmail-smtp-in.l.google.com[17
 	3.194.76.26] said: 550-5.7.1 This message does not have authentication information or fails to pass 550-5.7.1 authen
-	tication checks. To best protect our users from spam, the 550-5.7.1 message has been blocked. Please visit 550-5.7.1  https://support.google.com/mail/answer/81126#authentication for more 550 5.7.1 information. r127si1861865wmf.152 - 
+	tication checks. To best protect our users from spam, the 550-5.7.1 message has been blocked. Please visit 550-5.7.1 
+	https://support.google.com/mail/answer/81126#authentication for more 550 5.7.1 information. r127si1861865wmf.152 - 
 	gsmtp (in reply to end of DATA command))
 
 He enviado un mensaje a hotmail y si lo he podido mandar pero lo ha guardado en el SPAM. Con yahoo me ha pasado lo mismo.
