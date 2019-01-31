@@ -65,6 +65,8 @@ lmgs:
         url: /lmgs/u02
       - title: Introducción a los LM
         url: /lmgs/u03
+      - title: Introducción a XML
+        url: /lmgs/u04
 
 seguridadgm:
   - title: Seguridad Informática
