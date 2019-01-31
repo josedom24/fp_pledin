@@ -35,7 +35,7 @@ Instala y configura un servidor dovecot POP e IMAP en tu equipo. Configura adecu
 * **Tarea 5 (2 puntos)(Obligatorio)**: Documenta en redmine una prueba de funcionamiento, donde recibas un correo desde el exterior (gmail, hotmail,...) y lo leas  en tu cliente de correo. Utiliza el protocolo IMAP. ¿Cómo se llama el servidor para enviar el correo? (Muestra la configuración). Muestra una prueba de funcionamiento de cómo funciona el protocolo IMAP.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-Instala un webmail (roundcube) para gestionar el correo del equipo mediante una interfaz web. Instala y configura correctamente un sistema de filtrado de virus y spam utilizando amavis, clamav y spamassasin .
+Instala un webmail (roundcube, horde, ...) para gestionar el correo del equipo mediante una interfaz web. Instala y configura correctamente un sistema de filtrado de virus y spam utilizando amavis, clamav y spamassasin .
 
 {% capture notice-text %}
 * **Tarea 6 (3 puntos)**: Muestra al profesor el envío y recepción de correos utilizando el webmail.
@@ -48,12 +48,12 @@ Instala un webmail (roundcube) para gestionar el correo del equipo mediante una 
 * Date de alta en un servidor DNS dinámico como `dyndns.org`, `no-ip.com`, etc. o usa el nombre de dominio propio.
 * Configura el DNS  de tu * Configura el DNS de tu proveedor para que la máquina a la que apunta el registro MX corresponda a tu IP pública. Si vas a utilizar un servicio gratuito como `dyndns.org`, `no-ip.com`, simplemente debes configurarlo para que apunte a tu ip. Instala postfix en tu máquina y comprueba que recibe correo directamente desde un equipo de Internet (hotmail, gmail, etc.)
 * Prueba a enviar desde tu equipo un correo electrónico a `jose@gonzalonazareno.org`, que no lo rechazará aunque venga de una dirección IP dinámica. Prueba a enviar desde tu equipo un correo electrónico a hotmail/gmail. Comprueba si llega bien, si lo mete en SPAM o si rebota los mensajes (mira en `/var/log/mail.log`), ya que no acepta correos de direcciones IP dinámicas.
-* Configura postfix para que envíe el correo electrónico a través de gmail como se indica en la documentación. Cuando funcione envía un correo a `josedom24@gmail.com`
+* Configura postfix para que envíe el correo electrónico a través de servidor SMTP relay (gmail, mailgun, sendgrid,...). Cuando funcione envía un correo a `josedom24@gmail.com`
 
 {% capture notice-text %}
 * **Tarea 8 (2 puntos)**: Envía el correo a `jose@gonzalonazareno.org`
 * **Tarea 9 (3 puntos)**: Responde al correo que yo te voy a mandar desde esa dirección.
-* **Tarea 10 (4 puntos)**: ¿Te rebota el correo enviado al exterior por qué estas usando ip dinámica? Independientemente de la respuesta, muestra el log donde se vea el envío de ese correo y documenta la configuración del relay con gmail. Finalmente envía un correo a `josedom24@gmail.com`.
+* **Tarea 10 (4 puntos)**: ¿Te rebota el correo enviado al exterior por qué estas usando ip dinámica? Independientemente de la respuesta, muestra el log donde se vea el envío de ese correo y documenta la configuración del relay. Finalmente envía un correo a `josedom24@gmail.com`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea adicional: Configuración de usuarios virtuales con LDAP
