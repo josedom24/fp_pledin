@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Implantación de aplicaciones web PHP en docker"
-permalink: /iawgs/u06/docker1.html
+permalink: /iawgs/u06/docker_php.html
 ---
 
 ## Tarea 1: Ejecución de una aplicación web PHP en docker (1)
