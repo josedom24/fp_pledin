@@ -42,5 +42,5 @@ Mis apuntes sobre docker...
 
 ## Prácticas
 
-
+* [Práctica: Implantación de aplicaciones web PHP en docker](docker_php.html)
 
