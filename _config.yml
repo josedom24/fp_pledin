@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: PLEDIN 3.0
-email: josedom24@gmail.com
+email: josedom24@josedomingo.org
 description: >- # this means to ignore newlines until "baseurl:"
   Plataforma Educativa Informática. Página personal de José Domingo Muñoz
 url: "https://fp.josedomingo.org" # the base hostname & protocol for your site, e.g. http://example.com
@@ -55,7 +55,7 @@ author:
   name   : "José Domingo Muñoz"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Plataforma Educativa Informática"
-  email  : "josedom24@gmail.com"
+  email  : "josedom24@josedomingo.org"
   uri    : "https://www.josedomingo.org"
   github : "josedom24"
   gitlab : "josedom24"
