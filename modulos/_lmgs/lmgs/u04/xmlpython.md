@@ -43,4 +43,17 @@ Hemos obtenido una lista de elementos que podemos recorrer:
         print(libro.xpath("./@category")[0])
         print(libro.xpath(".//author/text()"))
 
-En este caso hemos mostrado el título, la categoría y la lista de autores de cada libro.
+En este caso hemos mostrado el título, la categoría y la lista de autores de cada libro:
+
+    Everyday Italian
+    COOKING
+    ['Giada De Laurentiis']
+    Harry Potter
+    CHILDREN
+    ['J K. Rowling']
+    XQuery Kick Start
+    WEB
+    ['James McGovern', 'Per Bothner', 'Kurt Cagle', 'James Linn', 'Vaidyanathan Nagarajan']
+    Learning XML
+    WEB
+    ['Erik T. Ray']
