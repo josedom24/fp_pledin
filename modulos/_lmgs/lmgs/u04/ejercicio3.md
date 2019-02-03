@@ -1,19 +1,12 @@
 ---
-title: "Inventar un lenguaje XML para almacenar información meteorológica"
+title: "Ejercicio: Información meteorológica de Sevilla"
 permalink: /lmgs/u04/ejercicio3.html
 ---
 
-Escribe un documento XML que almacene la siguiente información sobre la predicción metorológica de Dos Hermanas para el día 25 de Octubre de 2011:
+Utilizando el fichero [sevilla.xml](xml/sevilla.xml.zip), realiza varias funciones en python que nos den la siguiente información:
 
-* Probabilidad de precipitación: 55%
-* Estado del cielo: Intervalos nubosos
-* Dirección del viento:Suroeste
-* Velocidad del viento: 10 Km/h
-* Temperatura máxima: 21ºC
-* Temperatura mínima: 10ºC
-* Sensación térmica máxima: 21ºC
-* Sensación térmica mínima: 10ºC
-* Humedad relativa máxima: 90%
-* Humedad relativa mínima: 50%
-* Índice Ultravioleta máximo: 3
+* Latitud y longitud de Sevilla
+* Temperatura, viento y humedad actuales en Sevilla
+* Temperatura máxima y mínima de los próximos 7 días (pronostico) hay que indicar también la fecha.
+* Una función que reciba una fecha y una hora y si existe en el pronostico devuelva temperatura, viento, precipitación, presión y humedad.
 
