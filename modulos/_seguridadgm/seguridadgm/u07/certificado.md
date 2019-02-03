@@ -23,6 +23,8 @@ Utilizando la página VALDe y el programa autofirma, firma un documento con tu c
 
 Tu debes recibir otro documento firmado por un compañero y utilizando las herramientas anteriores debes visualizar la firma (**Visualizar Firma**) y (**Verificar Firma**). ¿Puedes verificar la firma aunque no tengas la clave pública de tu compañero?, ¿Es necesario estar conectado a internet para hacer la validación de la firma?. Razona tus respuestas.
 
+### Entre dos compañeros, firmar los dos un documento, verificar la firma para comprobar que está firmado por los dos.
+
 ## Autentificación
 
 ### Ejercicio 4
