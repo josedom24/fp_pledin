@@ -1,35 +1,27 @@
 ---
-title: "Ejercicio: Usuarios de la moodle"
+title: "Inventar un lenguaje XML para paneles de información de autopistas"
 permalink: /lmgs/u04/ejercicio2.html
 ---
 
-Utilizando el fichero [users.xml](xml/users.xml.zip), realiza diferentes funciones python para obtener la  la siguiente información:
+Crea un documento XML bien formado que pueda utilizarse en un panel de información de una autopista, en concreto crea los siguientes eventos:
 
-1. Lista de usuarios (profesores y alumnos) matriculados en el módulo "Lenguaje de marcas".
-2. Mostrar el nombre de usuario de los usuarios que han cambiado su avatar en nuestra plataforma moodle (Elemento `picture`)
-3. Mostrar los correos electrónicos de los usuarios que han accedido por última vez desde fuera del instituto (elemento `lastip`)
-4. Pedir una cadena por teclado y mostrar todos los usuarios cuyo nombre empieza por dicha cadena (Ejemplo: si meto la cadena "A" mostrará todos los usuarios cuyo nombre empieza por A...)
-5. Mostrar la lista de usuarios agrupados por localidades.
+* Evento 1:
+	* Señal de accidente
+	* Punto kilométrico 42,200
+	* Nombre de la vía: A-49
+	* Sentido: Huelva
+	* Corte de la vía: 1 carril
+	* Fecha y hora del evento
+	* Retención: Sí
+	* Kilómetros de retención: 8
+* Evento 2:
+	* Señal de retención
+	* Punto kilométrico: 550
+	* Nombre de la vía: A-4
+	* Sentido: Sevilla
+	* Fecha y hora del evento
+	* Retención: Sí
+	* Kilómetros de retención: 3 
 
-		Ejemplo:		
 
-		Sevilla
-		-------
-		Alberto Molina
-		...
-		...
-		...		
-
-		Utrera
-		------
-		José Domingo Muñoz
-		...
-		...		
-
-		Dos Hermanas
-		------------
-		...
-		...
-		...
-
-6. Mostrar la lista de usuarios ordenada por el último acceso (Elemento `lastaccess`)
+* [Una posible solución](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/autopistas.xml)
