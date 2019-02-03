@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Información meteorológica de Sevilla"
-permalink: /lmgs/u04/ejercicio3.html
+permalink: /lmgs/u04/ejercicio_python_3.html
 ---
 
 Utilizando el fichero [sevilla.xml](xml/sevilla.xml.zip), realiza varias funciones en python que nos den la siguiente información:

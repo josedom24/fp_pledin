@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Provincias y poblaciones"
-permalink: /lmgs/u04/ejercicio1.html
+permalink: /lmgs/u04/ejercicio_python_1.html
 ---
 
 Utilizando el fichero [provinciasypoblaciones.xml](xml/provinciasypoblaciones.xml.zip), crea distintas funciones en python, utilizando la libreria lxml, que realicen las siguientes tareas:

@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Mapa de Utrera"
-permalink: /lmgs/u04/ejercicio4.html
+permalink: /lmgs/u04/ejercicio_python_4.html
 ---
 
 Utiliza el fichero [Utrera.xml](xml/utrera.xml.zip), realiza varias funciones python que devuelvan la siguiente información:

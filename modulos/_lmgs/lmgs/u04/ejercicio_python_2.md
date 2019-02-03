@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Usuarios de la moodle"
-permalink: /lmgs/u04/ejercicio2.html
+permalink: /lmgs/u04/ejercicio_python_2.html
 ---
 
 Utilizando el fichero [users.xml](xml/users.xml.zip), realiza diferentes funciones python para obtener la  la siguiente información:
