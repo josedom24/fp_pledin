@@ -7,7 +7,7 @@ permalink: /seguridadgm/u07/certificado.html
 
 ### Ejercicio 1
 
-Una vez que hayas obtenido tu certificado, explica brevemente como se instala en tu navegador favorito. Muestra una captura de pantalla donde se vea las preferencias del navegador donde se ve instalado tu certificado. ¿Como vas a realizar la copia de seguridad de tu certificado?
+Una vez que hayas obtenido tu certificado, explica brevemente como se instala en tu navegador favorito. Muestra una captura de pantalla donde se vea las preferencias del navegador donde se ve instalado tu certificado. ¿Cómo puedes hacer una copia de tu certificado?, ¿Como vas a realizar la copia de seguridad de tu certificado?. Razona la respuesta.
 
 Investiga como exportar la clave pública de tu certificado.
 
