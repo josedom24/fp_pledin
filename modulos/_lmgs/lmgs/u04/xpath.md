@@ -46,6 +46,6 @@ Todas las búsquedas se hacen desde el nodo raíz.
 
 3. Algunas funciones xpath
 
-	* `count(book/title)`: Devuelve el número de nodos seleccionados.
+	* `count(//book/title)`: Devuelve el número de nodos seleccionados.
 	* `sum(//book/price)`: Devuelve la suma de los valores de los nodos seleccionados.
 	* `//book/author[contains(text(),'De')]`: Devuelve los autores cuya información contine la subcadena "De".
