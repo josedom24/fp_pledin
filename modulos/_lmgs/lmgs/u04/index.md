@@ -21,6 +21,7 @@ permalink: /lmgs/u04/index.html
 * [Introducción a xpath](xpath.html)
 * [XPath: XML Path language](http://www.mclibre.org/consultar/xml/lecciones/xml-xpath.html)
 * [Code Beauty - XPath Tester](https://codebeautify.org/Xpath-Tester)
+* [Ejercicio de introducción a xpath](ejercicio_xpath.html)
 
 ## Recursos
 
