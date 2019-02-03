@@ -14,4 +14,4 @@ permalink: /seguridadgm/u07/index.html
 * [Práctica 18: Cifrado de un disco/particion/pendrive en Linux y Windows](cifrado_usb.html)
 * [Práctica 19: Cifrado asimétrico con gpg](gpg2.html)
 * [Práctica 20: Integridad, firmas y autenticación](gpg3.html)
-* [Práctica 21: Certificados digitales](certificado.md)
+* [Práctica 21: Certificados digitales](certificado.html)
