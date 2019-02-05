@@ -7,8 +7,5 @@ permalink: /seguridadgm/u08/index.html
 
 ## Prácticas
 
-* Cuestionario malware
-* keylogger
-* Instalación de malware, y anti malware
-
-https://protegermipc.net/2017/06/22/donde-descargar-virus-malware/
+* [Práctica 22: Cuestionario malware](malware.html)
+* [Práctica 23: AntiVirus / AntiMalware](antivirus.html)
