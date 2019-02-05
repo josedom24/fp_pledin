@@ -15,3 +15,10 @@ permalink: /seguridadgm/u07/index.html
 * [Práctica 19: Cifrado asimétrico con gpg](gpg2.html)
 * [Práctica 20: Integridad, firmas y autenticación](gpg3.html)
 * [Práctica 21: Certificados digitales](certificado.html)
+
+## Enlaces
+
+* [Esteganografía: para cifrar mensajes en imágenes](https://www.unocero.com/noticias/esteganografia-para-cifrar-mensajes-en-imagenes/)
+* [Cifrar texto en una imagen con steghide](https://mundo-hackers.weebly.com/steghidescifrar.html)
+
+![gato](gato.jpg)
