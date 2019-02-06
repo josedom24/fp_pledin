@@ -59,8 +59,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
         año="2008"
 
 6. Ciclos Formativos de Grado Medio (se trata de obtener el elemento <ciclo> completo):
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         <ciclo id="SMR">
           <nombre>Sistemas Microinformáticos y Redes</nombre>
           <grado>Medio</grado>
@@ -68,20 +67,17 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
         </ciclo>
 
 7. Nombre de los Ciclos Formativos de Grado Superior:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         <nombre>Administración de Sistemas Informáticos en Red</nombre>
         <nombre>Desarrollo de Aplicaciones Web</nombre>
 
 8. Nombre de los Ciclos Formativos anteriores a 2010:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         Administración de Sistemas Informáticos en Red
         Sistemas Microinformáticos y Redes
 
 9. Nombre de los Ciclos Formativos de 2008 o 2010:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         Desarrollo de Aplicaciones Web
         Sistemas Microinformáticos y Redes
 
@@ -129,33 +125,28 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
         Implantación de aplicaciones web
 
 2. Nombre de los módulos del ciclo ASIR:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         Gestión de bases de datos
         Lenguajes de marcas y sistemas de gestión de información
         Implantación de aplicaciones web
 
 3. Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         Aplicaciones web
         Implantación de aplicaciones web
 
 4. Nombre de los módulos de menos de 5 horas semanales:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         Aplicaciones web
         Lenguajes de marcas y sistemas de gestión de información
 
 5. Nombre de los módulos que se imparten en el primer curso de ASIR:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         Gestión de bases de datos
         Lenguajes de marcas y sistemas de gestión de información
 
 6. Horas semanales de los módulos de más de 3 horas semanales:
-    Nota: Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-
+    
         4
         5
         5
