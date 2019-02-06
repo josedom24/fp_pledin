@@ -238,3 +238,65 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
         Superior
         Superior
         
+
+## Ejercicio 4
+
+Vamos a trabajar con el fichero [`universidad.xml`](xml/universidad.xml). Obten la siguiente información:
+
+1. Nombre de la Universidad.
+2. Pais de la Universidad.
+3. Nombres de las Carreras.
+4. Años de plan de estudio de las carreras.
+5. Nombres de todos los alumnos.
+6. Identificadores de todas las carreras.
+7. Datos de la carrera cuyo id es c01.
+8. Centro en que se estudia de la carrera cuyo id es c02.
+9. Nombre de las carreras que tengan subdirector.
+10. Nombre de los alumnos que estén haciendo proyecto.
+11. Códigos de las carreras en las que hay algún alumno matriculado.
+12. Apellidos y Nombre de los alumnos con beca.
+13. Nombre de las asignaturas de la titulación c04.
+14. Nombre de las asignaturas de segundo trimestre.
+15. Nombre de las asignaturas que no tienen 4 créditos teóricos.
+16. Código de la carrera que estudia el último alumno.
+17. Código de las asignaturas que estudian mujeres.
+18. Nombre de los alumnos que matriculados en la asignatura a02.
+19. Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+20. Apellidos de todos los hombres.
+21. Nombre de la carrera que estudia Víctor Manuel.
+22. Nombre de las asignaturas que estudia Luisa.
+23. Primer apellido de los alumnos matriculados en Ingeniería del Software.
+24. Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos.
+25. Nombre de los alumnos matriculados en carreras que no tienen subdirector.
+26. Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática .
+27. Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002.
+
+#### Soluciones
+
+1. `/universidad/nombre`
+2. `/universidad/pais`
+3. `//carrera/nombre`
+4. `//carrera/plan`
+5. `//alumno/nombre`
+6. `//carrera/@id`
+7. `//carrera[@id='c01']`
+8. `//carrera[@id='c02']/centro`
+9. `//subdirector/../nombre`
+10. `//alumno//proyecto/../../nombre`
+11. `//alumno//carrera/@codigo`
+12. `//alumno[@beca]/nombre | //alumno[@beca]/apellido1 | //alumno[@beca]/apellido2`
+13. `//asignatura[@titulacion='c04']/nombre`
+14. `//asignatura[trimestre=2]/nombre`
+15. `//asignatura[not(creditos_teoricos=4)]/nombre`
+16. `//alumno[last()]//carrera/@codigo`
+17. `//alumno[sexo='Mujer']//asignatura/@codigo`
+18. `//alumno[.//asignatura/@codigo='a02']/nombre`
+19. `//alumno//asignatura/../../carrera/@codigo`
+20. `//alumno[sexo='Hombre']/apellido1 | //alumno[sexo='Hombre']/apellido2`
+21. `//carrera[@id=//alumno[nombre='Víctor Manuel']//carrera/@codigo]/nombre`
+22. `//asignatura[@id=//alumno[nombre='Luisa']//asignatura/@codigo]/nombre`
+23. `//alumno[.//asignatura/@codigo=//asignatura[nombre='Ingeniería del Software']/@id]/apellido1`
+24. `//carrera[@id=//alumno[.//asignatura[@codigo=//asignatura[nombre='Tecnología de los Alimentos']/@id]]//carrera/@codigo]/nombre`
+25. `//alumno[not (.//carrera/@codigo=//carrera[subdirector]/@codigo)]/nombre`
+26. `//alumno[.//asignatura/@codigo=//asignatura[creditos_practicos=0]/@id][.//carrera/@codigo=//carrera[nombre='I.T. Informática']/@id]/nombre`
+27. `//alumno[.//carrera/@codigo=//carrera[not(plan>=2002)]/@id]/nombre`
