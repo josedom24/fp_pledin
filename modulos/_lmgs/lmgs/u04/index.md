@@ -23,6 +23,14 @@ permalink: /lmgs/u04/index.html
 * [Code Beauty - XPath Tester](https://codebeautify.org/Xpath-Tester)
 * [Ejercicio de introducción a xpath](ejercicio_xpath.html)
 
+## XML y python
+
+* [XML y python](xmlpython.html)
+* [Ejercicio: Provincias y poblaciones](ejercicio_python_1.html)
+* [Ejercicio: Usuarios de la moodle](ejercicio_python_2.html)
+* [Ejercicio: Información meteorológica de Sevilla](ejercicio_python_3.html)
+* [Ejercicio: Mapa de Utrera](ejercicio_python_4.html)
+
 ## Recursos
 
 * [World Wide Web Consortium (W3C)](https://www.w3.org/)
