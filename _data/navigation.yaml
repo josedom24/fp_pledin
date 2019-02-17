@@ -91,5 +91,7 @@ seguridadgm:
         url: /seguridadgm/u06
       - title: "Criptografía"
         url: /seguridadgm/u07
+      - title: "Malware"
+        url: /seguridadgm/u08
       
 
