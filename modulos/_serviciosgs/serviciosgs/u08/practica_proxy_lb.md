@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Proxy, proxy inverso y balanceadores de carga"
-permalink: /serviciosgs/u08/practica_proxy_lb.html.html
+permalink: /serviciosgs/u08/practica_proxy_lb.html
 ---
 
 **(12 tareas - 15 puntos)**
