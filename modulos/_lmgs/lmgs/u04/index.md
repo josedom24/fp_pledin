@@ -26,7 +26,7 @@ permalink: /lmgs/u04/index.html
 ## XML y python
 
 * [XML y python](xmlpython.html)
-* [Ejercicio: Provincias y poblaciones](ejercicio_python_1.html)
+* [Ejercicio: Provincias y poblaciones](ejercicio_python_1.html)[Solución](ejercicio1_xpath.py)
 * [Ejercicio: Usuarios de la moodle](ejercicio_python_2.html)
 * [Ejercicio: Información meteorológica de Sevilla](ejercicio_python_3.html)
 * [Ejercicio: Mapa de Utrera](ejercicio_python_4.html)
