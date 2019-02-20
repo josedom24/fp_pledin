@@ -23,7 +23,7 @@ A partir de este momento podemos leer y escribir el documento XML con distintos 
 * [Trabajar con ficheros xml desde python (1ª parte)](http://www.josedomingo.org/pledin/2015/01/trabajar-con-ficheros-xml-desde-python_1/)
 * [Trabajar con ficheros xml desde python (2ª parte)](http://www.josedomingo.org/pledin/2015/01/trabajar-con-ficheros-xml-desde-python_2/)
 
-**Pero nosotros lo único que necesitamos es ejecutar consultas xpath sobre los cocumentos XML con python.**
+**Pero nosotros lo único que necesitamos es ejecutar consultas xpath sobre los documentos XML con python.**
 
 ## Realizando consultas xpath con lmxl
 
