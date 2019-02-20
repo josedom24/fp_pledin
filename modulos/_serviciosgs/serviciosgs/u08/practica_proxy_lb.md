@@ -172,8 +172,9 @@ Reiniciamos el balanceador y realizamos las siguientes acciones:
 * desde el navegador web acceder varias veces a la URL `http://172.22.x.x/sesion.php`(comprobar el incremento del contador [variable de sesión])
 * acceder la misma URL desde el navegador en modo texto lynx (o desde una pestaña de "incógnito"’’" del Navegador para forzar la creación de una nueva sesión)::
 
-    cliente:~# lynx -accept-all-cookies http://172.22.x.x/sesion.php
+        cliente:~# lynx -accept-all-cookies http://172.22.x.x/sesion.php
 
-
+{% capture notice-text %}
 * **Tarea 12 (2 puntos)**:Verificar la estructura y valores de las cookies PHPSESSID intercambiadas. En la primera respuesta HTTP (inicio de sesión), se establece su valor con un parámetro HTTP SetCookie en la cabecera de la respuesta. Las sucesivas peticiones del cliente incluyen el valor de esa cookie (parámetro HTTP Cookie en la cabecera de las peticiones)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
