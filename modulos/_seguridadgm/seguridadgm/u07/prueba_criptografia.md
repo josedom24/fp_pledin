@@ -3,7 +3,7 @@ title: "Prueba: Criptografía"
 permalink: /seguridadgm/u07/prueba_criptografia.html
 ---
 
-1. El fichero [documento.txt.gpg](prueba/documento.txt.gpg) está cifrado con criptografía simétrica. La clave de de4scifrado es `asdasd`. Muestra el comando para descifrarlo y el contenido del mensaje.
+1. El fichero [documento.txt.gpg](prueba/documento.txt.gpg) está cifrado con criptografía simétrica. La clave de descifrado es `asdasd`. Muestra el comando para descifrarlo y el contenido del mensaje.
 
 2. Desencripta el mensaje que te voy a mandar (para ello necesito que me envíes tu clave pública).
 
