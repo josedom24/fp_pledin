@@ -170,7 +170,7 @@ El parámetro cookie especifica el nombre de la cookie que se usa como identific
 Reiniciamos el balanceador y realizamos las siguientes acciones:
 
 * desde el navegador web acceder varias veces a la URL `http://172.22.x.x/sesion.php`(comprobar el incremento del contador [variable de sesión])
-* acceder la misma URL desde el navegador en modo texto lynx (o desde una pestaña de "incógnito"’’" del Navegador para forzar la creación de una nueva sesión)::
+* acceder la misma URL desde el navegador en modo texto lynx (o desde una pestaña de "incógnito" del Navegador para forzar la creación de una nueva sesión)::
 
         cliente:~# lynx -accept-all-cookies http://172.22.x.x/sesion.php
 
