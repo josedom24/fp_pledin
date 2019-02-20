@@ -29,12 +29,9 @@ serviciosgs:
         url: /serviciosgs/u06
       - title: Servidor de correo electrónico
         url: /serviciosgs/u07
-      #- title: Servidor proxy/cache Squid
-      #  url: #
-      #- title: Proxy inverso y Balanceador de carga
-      #  url: #
-      #- title: Prácticas
-      #  url: #
+#      - title: Proxy, proxy inverso y balanceador de carga
+#        url: /serviciosgs/u08
+ 
 
 iawgs:
   - title: Implantación de aplicaciones web
@@ -67,6 +64,8 @@ lmgs:
         url: /lmgs/u03
       - title: Introducción a XML
         url: /lmgs/u04
+      - title: Introducción a JSON
+        url: /lmgs/u05
 
 seguridadgm:
   - title: Seguridad Informática
