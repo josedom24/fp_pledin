@@ -25,7 +25,12 @@ En esta práctica vamos a instalar un pequeño proxy llamado `tinyproxy` para qu
 
 ## Proxy inverso
 
-...
+Configura en un servidor interno dos aplicaciones web (puedes usar por ejemplo docker). Podemos instalar aplicaciones que usaen sqlite, para no tener que instalar contenedores con bases de datos. Por ejemplo podemos instalar nextcloud y ghosts:
+
+    docker run -d --name some-nextcloud -p 8080:80 nextcloud
+    docker run -d --name some-ghost -p 8081:2368 ghost
+
+Instala en un ordenador al que tengas acceso desde tu máquina un proxy inverso que lo vamos a configurar para acceder a las aplicaciones de dos formas distintas:
 
 * Para que se acceda a la primera aplicación con la URL `www.servidor.org\app1` y a la segunda aplicación con la URL `www.servidor.org\app2`.
 * Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
