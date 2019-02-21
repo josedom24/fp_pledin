@@ -1,6 +1,6 @@
 ---
 title: "Gestionar ficheros json"
-permalink: /lmgs/u05/index.html
+permalink: /lmgs/u05/python_json.html
 ---
 
 El módulo [json](https://docs.python.org/3.4/library/json.html) nos permite gestionar ficheros con formato [JSON (JavaScript Object Notation)](http://json.org/).
