@@ -16,5 +16,5 @@ El proyecto de esta evaluación consiste en realizar dos programas en Python que
 
 Debes entregar estos enunciados al profesor en cuanto antes para que te de la aprobación de los mismos.
 
-Crea dos repositorios en GiHub (ejercicio_xml y ejercicio_json) donde irás registrando los cambios que vas realizando en los dos programas Python. Los enunciados deben estar escritos en el fichero `README.md` de los repositorios.
+Crea dos repositorios en GiHub (`ejercicio_xml` y `ejercicio_json`) donde irás registrando los cambios que vas realizando en los dos programas Python. Los enunciados deben estar escritos en el fichero `README.md` de los repositorios.
 
