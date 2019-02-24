@@ -9,8 +9,8 @@ permalink: /seguridadgm/u07/prueba_criptografia.html
 
 3. Mándame un fichero pdf (el fichero debe contener tu nombre completo) encriptado a mi correo electrónico. Muestra el comando correcto para ver si tienes importada mi clave pública.
 
-4. El fichero [documento.pdf.gpg](prueba/documento.pdf.gpg) está encriptado y fitrmado por mi. Muetsra el comando y la salida que verifica que está firmado por mi. Desencripta el fichero y pon una captura de pantalla del contenido del mismo.
+4. El fichero [documento.pdf.gpg](prueba/documento.pdf.gpg) está encriptado y firmado por mi. Muestra el comando y la salida que verifica que está firmado por mi. Desencripta el fichero y pon una captura de pantalla del contenido del mismo.
 
 5. Envíame un correo electrónico con un fichero pdf (que contenga tu nombre completo) cifrado y firmado por ti. 
 
-6. El documento []() está firmado con mi certificado digital. Verifica con alguna herramienta que realmente está firmado por mi.
+6. El documento [seguridad_signed.pdf](prueba/seguridad_signed.pdf) está firmado con mi certificado digital. Verifica con alguna herramienta que realmente está firmado por mi.
