@@ -20,3 +20,5 @@ permalink: /lmgs/u05/index.html
 ## Proyecto 2ª evaluación: XML y JSON
 
 * [Enunciado proyecto 2ª Evaluación](proyecto.html)
+    * [Ejemplo ejercicio XML](ejemploXML.html)
+    * [Ejemplo ejercicio JSON](ejemploJSON.html)
