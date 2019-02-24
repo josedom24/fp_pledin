@@ -29,8 +29,11 @@ permalink: /lmgs/u04/index.html
 * [Ejercicio: Provincias y poblaciones](ejercicio_python_1.html)
     * [Solución](ejercicio1_xpath.py)
 * [Ejercicio: Usuarios de la moodle](ejercicio_python_2.html)
+    * [Solución](ejercicio2_xpath.py)
 * [Ejercicio: Información meteorológica de Sevilla](ejercicio_python_3.html)
+    * [Solución](ejercicio3_xpath.py)
 * [Ejercicio: Mapa de Utrera](ejercicio_python_4.html)
+    * [Solución](ejercicio4_xpath.py)
 
 ## Recursos
 
