@@ -16,3 +16,7 @@ permalink: /lmgs/u05/index.html
     * [Solución](ejercicio2.py)
 * [Ejercicio: Provincias y municipios](ejercicio3.html)
     * [Solución](ejercicio3.py)
+
+## Proyecto 2ª evaluación: XML y JSON
+
+* [Enunciodo proyecto 2ª Evalaución](proyecto.html)
