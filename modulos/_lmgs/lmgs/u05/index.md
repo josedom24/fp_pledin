@@ -15,3 +15,4 @@ permalink: /lmgs/u05/index.html
 * [Ejercicio: Pruebas nivel de idioma](ejercicio2.html)
     * [Solución](ejercicio2.py)
 * [Ejercicio: Provincias y municipios](ejercicio3.html)
+    * [Solución](ejercicio3.py)
