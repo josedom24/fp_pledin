@@ -19,4 +19,4 @@ permalink: /lmgs/u05/index.html
 
 ## Proyecto 2ª evaluación: XML y JSON
 
-* [Enunciodo proyecto 2ª Evalaución](proyecto.html)
+* [Enunciado proyecto 2ª Evaluación](proyecto.html)
