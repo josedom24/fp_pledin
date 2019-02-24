@@ -32,7 +32,7 @@ def seleccionar_autores(doc):
 
 ########################
 
-with open("book.json") as fichero:
+with open("ej1.json") as fichero:
 	doc=json.load(fichero)
 
 
@@ -56,3 +56,4 @@ for titulo,autores in seleccionar_autores(doc):
 	for autor in autores:
 		print(autor)	
 	print("")
+

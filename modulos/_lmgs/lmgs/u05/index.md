@@ -11,5 +11,7 @@ permalink: /lmgs/u05/index.html
 ## Ejercicios
 
 * [Ejercicio: Librería](ejercicio1.html)
+    * [Solución](ejercicio1.py)
 * [Ejercicio: Pruebas nivel de idioma](ejercicio2.html)
+    * [Solución](ejercicio2.py)
 * [Ejercicio: Provincias y municipios](ejercicio3.html)
