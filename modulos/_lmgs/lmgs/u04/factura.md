@@ -18,4 +18,4 @@ Tienes que incluir todas las restricciones posibles para que los valores permiti
 
 ## Solución
 
-* [factura.sxd](https://raw.githubusercontent.com/josedom24/lmgs_doc/master/modulos/_lmgs/lmgs/u04/fich/factura.xsd)
+* [factura.sxd](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/factura.xml)

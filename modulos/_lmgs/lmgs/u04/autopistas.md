@@ -21,3 +21,7 @@ Implementa un esquema XML adecuado para almacenar información de paneles de aut
     * "sentido" puede tener los valores -1, 0 ó 1.
     * "retencion" tiene el atributo opcional "long" que es del mismo tipo que pk
     * "carrilescortados" tiene el atributo obligatorio "valor" que tiene que ser un número entre 1 y 8.
+
+## Solución
+
+* [autopistas.sxd](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/autopistas.xml)
