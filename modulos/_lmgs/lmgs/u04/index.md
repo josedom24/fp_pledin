@@ -35,8 +35,21 @@ permalink: /lmgs/u04/index.html
 * [Ejercicio: Mapa de Utrera](ejercicio_python_4.html)
     * [Solución](ejercicio4_xpath.py)
 
+## Validación de XML
+
+* [Introducción al lenguaje XSD (XML Schema Definition)](http://josedom24.github.io/mod/lm/slide/xsd.html#slide1)
+
+### Ejercicios
+
+* [Ejercicio Esquemas XML: Biblioteca](esquema.html)
+* [Ejercicio: Esquema XML para factura](factura.html)
+* [Ejercicio: esquema XML para panales de autopistas](autopistas.html)
+
 ## Recursos
 
 * [World Wide Web Consortium (W3C)](https://www.w3.org/)
 * [Wikipedia - XML](http://en.wikipedia.org/wiki/Xml)
-
+* [Eric Wilde. XML Foundations: XSD - Part I](http://dret.net/lectures/xml-fall10/xsd-1)
+* [Eric Wilde. XML Foundations: XSD - Part II](http://dret.net/lectures/xml-fall10/xsd-2)
+* [Eric Wilde. XML Foundations: XSD - Part III](http://dret.net/lectures/xml-fall10/xsd-3)
+* [aemet - XSD](http://www.aemet.es/xsd/localidades.xsd)

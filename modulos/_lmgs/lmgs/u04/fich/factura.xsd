@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="factura">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="emision" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="vendedor" minOccurs="1" maxOccurs="1">
+	<xs:complexType>
+	  <xs:sequence>
+	  <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	  </xs:sequence>
+	  <xs:attribute name="id" use="required">
+	    <xs:simpleType>
+	      <xs:restriction base="xs:integer"/>
+	    </xs:simpleType>
+	  </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cliente" minOccurs="1" maxOccurs="1">
+	<xs:complexType>
+	  <xs:sequence>
+	    <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	    <xs:element name="direccion" minOccurs="1" maxOccurs="1">
+	      <xs:complexType>
+		<xs:sequence>
+		  <xs:element name="via" type="xs:string"/>
+		  <xs:element name="cp" type="xs:integer"/>
+		  <xs:element name="localidad" type="xs:string"/>
+		  <xs:element name="provincia" type="xs:string"/>
+		</xs:sequence>
+	      </xs:complexType>
+	    </xs:element>
+	    <xs:element name="telefono" minOccurs="0" maxOccurs="unbounded">
+	      <xs:complexType>
+		<xs:sequence> 
+		</xs:sequence>
+		<xs:attribute name="num">
+		  <xs:simpleType>
+		    <xs:restriction base="xs:integer"/>
+		  </xs:simpleType>
+		</xs:attribute>
+	      </xs:complexType>
+	    </xs:element>
+	  </xs:sequence>
+	  <xs:attribute name="id" use="required">
+	    <xs:simpleType>
+	      <xs:restriction base="xs:integer"/>
+	    </xs:simpleType>
+	  </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+	<xs:complexType>
+	  <xs:sequence>
+	    <xs:element name="denominacion" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	    <xs:element name="precio" type="xs:float" minOccurs="1" maxOccurs="1"/>
+	    <xs:element name="cantidad" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+	  </xs:sequence>
+	  <xs:attribute name="id" use="required">
+	    <xs:simpleType>
+	      <xs:restriction base="xs:integer"/>
+	    </xs:simpleType>
+	  </xs:attribute>
+	  <xs:attribute name="iva" use="required">
+	    <xs:simpleType>
+	      <xs:restriction base="xs:integer"/>
+	    </xs:simpleType>
+	  </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="descuento" minOccurs="0" maxOccurs="1">
+	<xs:simpleType>
+	  <xs:restriction base="xs:integer">
+	    <xs:maxInclusive value="100"/>
+	    <xs:minInclusive value="0"/>
+	  </xs:restriction>
+	</xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" use="required">
+      <xs:simpleType>
+	<xs:restriction base="xs:positiveInteger"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

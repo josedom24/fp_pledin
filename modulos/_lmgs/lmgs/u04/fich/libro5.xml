@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca>
+	<libro codigo="123" ubicacion="estantería 1">
+		<autor>Miguel de Cervantes Saavedra</autor>
+		<titulo>El Quijote de la Mancha</titulo>
+	</libro>
+	<libro codigo="1023" ubicacion="estantería 3">
+		<autor>Pablo Neruda</autor>
+		<titulo>Veinte poemas de amor y una canción desesperada</titulo>
+	</libro>
+</biblioteca>

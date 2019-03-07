@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="biblioteca">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element name="libro" minOccurs="0" maxOccurs="unbounded">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="autor" />
+	      <xs:element name="titulo" />
+	      <xs:element name="codigo">
+		<xs:simpleType>
+		  <xs:restriction base="xs:integer">
+		    <xs:minInclusive value="1"/>
+		    <xs:maxInclusive value="9999"/>
+		  </xs:restriction>
+		</xs:simpleType>
+	      </xs:element>
+	      <xs:element name="ubicacion">
+		<xs:simpleType>
+		  <xs:restriction base="xs:string">
+		    <xs:enumeration value="estantería 1"/>
+		    <xs:enumeration value="estantería 2"/>
+		    <xs:enumeration value="estantería 3"/>
+		    <xs:enumeration value="estantería 4"/>
+		    <xs:enumeration value="estantería 5"/>
+		    <xs:enumeration value="estantería 6"/>
+		    <xs:enumeration value="estantería 7"/>
+		    <xs:enumeration value="estantería 8"/>
+		    <xs:enumeration value="estantería 9"/>
+		    <xs:enumeration value="estantería 10"/>
+		    <xs:enumeration value="estantería 11"/>
+		    <xs:enumeration value="estantería 12"/>
+		    <xs:enumeration value="estantería 13"/>
+		    <xs:enumeration value="estantería 14"/>
+		  </xs:restriction>
+		</xs:simpleType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

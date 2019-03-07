@@ -1,0 +1,12 @@
+<biblioteca>
+  <libro>
+    <autor>Miguel de Cervantes Saavedra</autor>
+    <titulo>El Quijote de la Mancha</titulo>
+    <codigo>123</codigo>
+  </libro>
+  <libro>
+    <autor>Pablo Neruda</autor>
+    <titulo>Veinte poemas de amor y una canción desesperada</titulo>
+    <codigo>124</codigo>
+  </libro>
+</biblioteca>

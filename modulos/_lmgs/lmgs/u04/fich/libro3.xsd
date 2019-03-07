@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="biblioteca">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element name="libro" minOccurs="0" maxOccurs="unbounded">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="autor" />
+	      <xs:element name="titulo" />
+	      <xs:element name="codigo">
+		<xs:simpleType>
+		  <xs:restriction base="xs:integer">
+		    <xs:minInclusive value="1"/>
+		    <xs:maxInclusive value="9999"/>
+		  </xs:restriction>
+		</xs:simpleType>
+	      </xs:element>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
