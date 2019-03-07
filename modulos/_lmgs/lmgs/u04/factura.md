@@ -3,7 +3,7 @@ title: "Ejercicio: Esquema XML para facturas"
 permalink: /lmgs/u04/factura.html
 ---
 
-Utilizando como base el fichero [factura.xml](https://raw.githubusercontent.com/josedom24/lmgs_doc/master/unidades/u7/fich/factura.xml) que se te facilita, crea un esquema en formato XSD (XMLSchema) que permita validar facturas como la anterior y que tengan en cuenta también los siguientes aspectos:
+Utilizando como base el fichero [factura.xml](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/factura.xml) que se te facilita, crea un esquema en formato XSD (XMLSchema) que permita validar facturas como la anterior y que tengan en cuenta también los siguientes aspectos:
 
 1. Toda factura tiene un identificador obligatorio
 2. Los elementos emision, vendedor, cliente y articulo son obligatorios, mientras que descuento es opcional
@@ -18,4 +18,4 @@ Tienes que incluir todas las restricciones posibles para que los valores permiti
 
 ## Solución
 
-* [factura.sxd](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/factura.xml)
+* [factura.sxd](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/factura.xsd)

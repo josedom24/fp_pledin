@@ -3,7 +3,7 @@ title: "Ejercicio: Esquema XML para panales de autopistas"
 permalink: /lmgs/u04/autopista.html
 ---
 
-Implementa un esquema XML adecuado para almacenar información de paneles de autopista como el del fichero [autopistas.xml](https://raw.githubusercontent.com/josedom24/lmgs_doc/master/unidades/u7/fich/autopistas.xml) con las siguientes características:
+Implementa un esquema XML adecuado para almacenar información de paneles de autopista como el del fichero [autopistas.xml](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/autopistas.xml) con las siguientes características:
 
 1. El elemento raíz se denomina "paneles"
 2. "paneles" contiene un número indeterminado de elementos denominados "evento"
@@ -21,7 +21,3 @@ Implementa un esquema XML adecuado para almacenar información de paneles de aut
     * "sentido" puede tener los valores -1, 0 ó 1.
     * "retencion" tiene el atributo opcional "long" que es del mismo tipo que pk
     * "carrilescortados" tiene el atributo obligatorio "valor" que tiene que ser un número entre 1 y 8.
-
-## Solución
-
-* [autopistas.sxd](https://raw.githubusercontent.com/josedom24/fp_pledin/master/modulos/_lmgs/lmgs/u04/fich/autopistas.xml)
