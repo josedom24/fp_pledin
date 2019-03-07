@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio Esquemas XML: Biblioteca"
-permalink: /lmgs/u06/esquema.html
+permalink: /lmgs/u04/esquema.html
 ---
 
 La herramienta de validación desde línea de comandos que utilizaremos se llama `xmllint`, que pertenece al paquete debian `libxml2-utils` Para validar un fichero xml con un fichero XSD (XML Schema Definition) ejecutamos el siguiente comando:

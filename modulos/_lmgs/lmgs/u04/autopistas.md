@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Esquema XML para panales de autopistas"
-permalink: /lmgs/u06/autopista.html
+permalink: /lmgs/u04/autopista.html
 ---
 
 Implementa un esquema XML adecuado para almacenar información de paneles de autopista como el del fichero [autopistas.xml](https://raw.githubusercontent.com/josedom24/lmgs_doc/master/unidades/u7/fich/autopistas.xml) con las siguientes características:
