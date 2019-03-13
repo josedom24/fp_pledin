@@ -66,6 +66,8 @@ lmgs:
         url: /lmgs/u04
       - title: Introducción a JSON
         url: /lmgs/u05
+      - title: Introducción a HTML/CSS
+        url: /lmgs/u06
 
 seguridadgm:
   - title: Seguridad Informática
