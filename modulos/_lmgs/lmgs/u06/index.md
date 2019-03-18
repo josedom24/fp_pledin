@@ -45,7 +45,7 @@ permalink: /lmgs/u06/index.html
 
 ## Recursos
 
-https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos
+* [Resumen de etiquetas HTML5](https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos)
 * [Tutorial HTML5 de w3c](https://www.w3schools.com/html/default.asp)
 * [Tutorial de css de w3c](https://www.w3schools.com/css/default.asp)
 * [W3C validator](http://validator.w3.org/)
