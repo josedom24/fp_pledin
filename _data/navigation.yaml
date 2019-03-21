@@ -62,13 +62,13 @@ lmgs:
         url: /lmgs/u02
       - title: Introducción a los LM
         url: /lmgs/u03
-      - title: Introducción a XML
+      - title: XML
         url: /lmgs/u04
-      - title: Introducción a JSON
+      - title: JSON
         url: /lmgs/u05
-      - title: Introducción a HTML/CSS
+      - title: HTML/CSS
         url: /lmgs/u06
-      - title: Introducción a YAML
+      - title: YAML
         url: /lmgs/u07
 
 seguridadgm:
