@@ -5,7 +5,7 @@ permalink: /lmgs/u07/ejercicio2.html
 
 Ansible es un software que nos permite la configuración automática de nuestra infraestructura. Las tareas que se van a ejecutar de forma automática en nuestros servidores se escriben en playbook que son ficheros escrito en YAML.
 
-El fichero [ansible.yaml](https://github.com/josedom24/lmgs_doc/raw/master/unidades/u9/fich/ansible.yaml) es un playbook para instalar mysql en un servidor. Crea distintas funciones en python que nos devuelvan la siguiente información:
+El fichero [ansible.yaml](fich/ansible.yaml.zip) es un playbook para instalar mysql en un servidor. Crea distintas funciones en python que nos devuelvan la siguiente información:
 
 * Cuantas tareas se ejecutan en el playbook.
 * La lista de los nombres de las distintas tareas.
