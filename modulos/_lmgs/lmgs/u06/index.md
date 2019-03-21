@@ -40,7 +40,7 @@ permalink: /lmgs/u06/index.html
 * [Ejemplo de formulario HTML5](formulario.html)
 * [Aprende a crear tu propio sitio Web con HTML5 y CSS3](https://openclassrooms.com/en/courses/3339201-aprende-a-crear-tu-propio-sitio-web-con-html5-y-css3/3349087-ejercicio-practico-creacion-de-una-pagina-web-paso-por-paso)
     * [Ficheros](https://github.com/josedom24/ejemplo_html5_css3)
-* Proyecto HTML5 y CSS3
+* [Proyecto HTML5 y CSS3](proyecto.html)
 
 
 ## Recursos
