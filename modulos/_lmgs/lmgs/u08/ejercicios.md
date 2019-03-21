@@ -34,4 +34,4 @@ Cada nombre de museo será un enlace que me llevará a otra página con los deta
 	
 Los datos los debes leer del fichero [Museos.xml](http://josedom24.github.io/mod/lm/fich/Museos.xml)
 
-[Ejercicios resuletos](https://github.com/josedom24/lmgs_doc/tree/master/unidades/u12/resueltos)
+[Ejercicios resuletos](https://github.com/josedom24/fp_pledin/tree/master/modulos/_lmgs/lmgs/u08/resueltos)
