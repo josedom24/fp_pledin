@@ -1,0 +1,18 @@
+{%extends "base.html" %}
+{%block titulo%}Nuestra Calculadora{%endblock%}
+{%block contenido%}
+
+<form action="/calculadora" method="post">
+	Número 1:<input type="text" name="num1"/><br/>
+	Número 2:<input type="text" name="num2"/><br/>
+	<select name="operacion">
+		<option value="sumar">Sumar</option>
+		<option value="restar">Restar</option>
+		<option value="multiplicar">Multiplicar</option>
+		<option value="dividir">Dividir</option>
+	</select>
+	<input type="submit" value="operar"/>
+</form>
+{% endblock %}
+
+

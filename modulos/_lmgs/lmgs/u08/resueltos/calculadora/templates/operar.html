@@ -1,0 +1,8 @@
+{%extends "base.html" %}
+{%block titulo%}resultado de la operación{%endblock%}
+{%block contenido%}
+
+<p>Operacion:<strong>{{operacion|title}}</strong></p>
+<p>{{numero1}}{{signo}}{{numero2}}=<strong>{{resultado}}</strong></p>
+<p><a href="/calculadora">Volver</a></p>
+{% endblock %}

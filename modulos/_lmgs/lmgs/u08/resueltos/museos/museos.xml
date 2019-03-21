@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Document><Folder><name>OGRGeoJSON</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">1</SimpleData>
+		<SimpleData name="NOMBRE">Museo Arqueológico</SimpleData>
+		<SimpleData name="DIRECCION">Plaza de Amorica, s/n</SimpleData>
+		<SimpleData name="TELEFONO">954786465</SimpleData>
+		<SimpleData name="HORARIO">Mar -Sdb 9.00-20:30h / Dom y festivos 9-14:30h. Festivos, consultar</SimpleData>
+		<SimpleData name="WEB">http://www.juntadeandalucia.es/cultura/museos/MASE/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">f02403f2-bedc-4b64-8be1-c77481e528dc</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.987133,37.370965</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">2</SimpleData>
+		<SimpleData name="NOMBRE">Museo de Artes y Costumbres Populares</SimpleData>
+		<SimpleData name="DIRECCION">Plaza de Amtrica, 3 - Pabellón Mudejar, Parque de Maria Luisa</SimpleData>
+		<SimpleData name="TELEFONO">954712391</SimpleData>
+		<SimpleData name="HORARIO">Mar -Sdb 9.00-20:30h / Dom y festivos 9-14:30h. Festivos, consultar</SimpleData>
+		<SimpleData name="WEB">http://www.juntadeandalucia.es/cultura/museoartesycostumbrespopulares</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/listados/public/parque.jpg</SimpleData>
+		<SimpleData name="Texto">Costumbres Populares de Sevilla, está localizado en el Parque de María Luisa, dentro de la Plaza de América. Ocupa el Pabellón Mudéjar, edificio construido en 1914, por el arquitecto Aníbal González, con motivo de la Exposición Iberoamericana de Sevilla.</SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">9065a6b3-3cdc-4051-8c1c-77954938a5cb</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-28T20:01:19.101Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.987839,37.372076</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">3</SimpleData>
+		<SimpleData name="NOMBRE">Museo Casa de Murillo</SimpleData>
+		<SimpleData name="DIRECCION">C/ Santa Teresa, 8</SimpleData>
+		<SimpleData name="TELEFONO">955037263</SimpleData>
+		<SimpleData name="HORARIO">Lun-Vie 10-14h</SimpleData>
+		<SimpleData name="WEB">http://es.wikipedia.org/wiki/Museo_Casa_de_Murillo</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">426c345f-c90e-4786-996a-8f34e4cee619</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.988946,37.385693</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">4</SimpleData>
+		<SimpleData name="NOMBRE">Museo de Baile Flamenco</SimpleData>
+		<SimpleData name="DIRECCION">C/ Manuel Rojas Marcos, 3</SimpleData>
+		<SimpleData name="TELEFONO">954340311</SimpleData>
+		<SimpleData name="HORARIO">Lun-Dom y festivos de 9:30-19h</SimpleData>
+		<SimpleData name="WEB">http://www.museoflamenco.com/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">2f7e1f0b-eed3-49a5-8a21-75ad8f95be35</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.99116,37.389135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">5</SimpleData>
+		<SimpleData name="NOMBRE">Museo de Bellas Artes</SimpleData>
+		<SimpleData name="DIRECCION">Plaza del Museo, 9</SimpleData>
+		<SimpleData name="TELEFONO">954786502</SimpleData>
+		<SimpleData name="HORARIO">Mar-S b de 9- 20:30h Dom y festivos de 9-14:30h.Consultar festivos abiertos.</SimpleData>
+		<SimpleData name="WEB">http://www.juntadeandalucia.es/cultura/museobellasartessevilla</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/bellas_artes.jpg</SimpleData>
+		<SimpleData name="Texto">Fue instituido en septiembre del año 1835 e inaugurado oficialmente en 1841. Se ubica en la llamada Plaza del Museo, que está presidida por una escultura dedicada a Bartolomé Esteban Murillo.</SimpleData>
+		<SimpleData name="Texto2">Es un museo fundamental para conocer tanto la pintura barroca sevillana, especialmente de Zurbarán, Murillo y Valdés Leal, como la pintura andaluza del siglo XIX.</SimpleData>
+		<SimpleData name="GlobalID">4bd18918-7e46-4c0f-b4e4-0b9f1808459a</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T19:24:08.875Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.999737,37.392623</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">6</SimpleData>
+		<SimpleData name="NOMBRE">Museo de Carruajes</SimpleData>
+		<SimpleData name="DIRECCION">Antiguo Instituto Hispano-Cubano - Plaza de Cuba, s/n</SimpleData>
+		<SimpleData name="TELEFONO">954272604</SimpleData>
+		<SimpleData name="HORARIO">15 septiembre a 15 de junio: Lun-Vie no festivos: 9-14h / 16:30-19:30h.Stb, Dom y festivos cerrado</SimpleData>
+		<SimpleData name="WEB">http://www.museodecarruajes.com/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/listados/public/012_m_carruajes.jpg</SimpleData>
+		<SimpleData name="Texto">El Museo de Carruajes de Sevilla se encuentra situado en el antiguo Convento de Los Remedios, en el barrio sevillano del mismo nombre.</SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">a853e20f-8e8c-46ac-a3bf-0b0eb9ccd0ae</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-28T20:03:14.892Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.996786,37.379431</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">7</SimpleData>
+		<SimpleData name="NOMBRE">Museo de la Ciudad, Convento Sta. Clara, Torre D. Fadrique</SimpleData>
+		<SimpleData name="DIRECCION">C/ Santa Clara, 40</SimpleData>
+		<SimpleData name="TELEFONO">954379905</SimpleData>
+		<SimpleData name="HORARIO">Iglesia: Slb 19.00h / Torre: Lun-Vie 11.00-17.30h</SimpleData>
+		<SimpleData name="WEB">http://espaciosantaclara.org/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">5f0d0ff1-f17d-44a3-ad0a-497375e787e8</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-28T19:47:27.371Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.996373,37.400236</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">8</SimpleData>
+		<SimpleData name="NOMBRE">Museo de la Congregación de Terciarias Franciscanas</SimpleData>
+		<SimpleData name="DIRECCION">Hospital del Santísimo Cristo de los Dolores / Plaza del Pozon Santo, 1</SimpleData>
+		<SimpleData name="TELEFONO">954219430</SimpleData>
+		<SimpleData name="HORARIO">Mar, Jue, Slb y Dom de 12.00-13.30h</SimpleData>
+		<SimpleData name="WEB"></SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">eabeee07-e1c2-482c-be85-057d0365a0a6</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.992611,37.394413</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">9</SimpleData>
+		<SimpleData name="NOMBRE">Museo de la Reales Atarazanas</SimpleData>
+		<SimpleData name="DIRECCION">C/ Temprado, 1 esquina C/ Dos de Mayo</SimpleData>
+		<SimpleData name="TELEFONO">954901957</SimpleData>
+		<SimpleData name="HORARIO"></SimpleData>
+		<SimpleData name="WEB">http://www.visitasevilla.es/es/lugar-interes/reales-atarazanas</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">1534bde0-bf32-4d9b-aa23-717157117d87</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.995907,37.384523</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">10</SimpleData>
+		<SimpleData name="NOMBRE">Museo de Muñecas y Juguetes Antiguos</SimpleData>
+		<SimpleData name="DIRECCION">C/ Castellar, 43</SimpleData>
+		<SimpleData name="TELEFONO">954387555</SimpleData>
+		<SimpleData name="HORARIO">Lun-Vie: 10.30-14.00h;18.00-20.30h</SimpleData>
+		<SimpleData name="WEB"></SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">2ad17e7f-5770-411a-b723-9609566fabee</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.990021,37.39631</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">11</SimpleData>
+		<SimpleData name="NOMBRE">Museo Militar Regional</SimpleData>
+		<SimpleData name="DIRECCION">Plaza de España, Puerta de Aragón, Parque de Maria Luisa</SimpleData>
+		<SimpleData name="TELEFONO">954938283</SimpleData>
+		<SimpleData name="HORARIO">Mar-Vier 9:30-13:30h. S b 10:00-14:00h</SimpleData>
+		<SimpleData name="WEB">http://www.ejercito.mde.es/unidades/Madrid/ihycm/Museos/sevilla.html</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">60b06fa1-184e-4e1e-ae0c-5ad88b3a39e5</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.986618,37.378248</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">17</SimpleData>
+		<SimpleData name="NOMBRE">Museo de la Cerámica de Triana</SimpleData>
+		<SimpleData name="DIRECCION">C/ San Jorge, 31</SimpleData>
+		<SimpleData name="TELEFONO">955471422</SimpleData>
+		<SimpleData name="HORARIO">10 a 14 horas y de 17 a 20 horas. Cerrado: 1 y 6 de enero, Jueves y Viernes Santo y 25 de diciembre.</SimpleData>
+		<SimpleData name="WEB">http://www.icas-sevilla.org/visita-el-centro-ceramica-triana/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/listados/public/022_ceramica.jpg</SimpleData>
+		<SimpleData name="Texto">La creación del centro Cerámica Triana es una de las actuaciones más ambiciosas del plan turístico, y su objetivo dentro de la estrategia del Plan Turístico, persigue representar la historia de la tradición alfarera en Triana, así como servir de centro n</SimpleData>
+		<SimpleData name="Texto2">Todos los elementos con significado arqueológico, antropológico y arquitectónico han sido mostrados insertos en su contexto original: los hornos han sido restaurados y puestos en valor, y se conservan los recorridos y las relaciones de las distintas prof</SimpleData>
+		<SimpleData name="GlobalID">1bb1009d-4b04-4ec1-9dd5-4d27c60a8053</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-28T20:00:45.906Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-6.004655,37.385542</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">13</SimpleData>
+		<SimpleData name="NOMBRE">Museo Taurino y Pza. Toros Real Maestranza</SimpleData>
+		<SimpleData name="DIRECCION">Paseo de Cristóbal Colón, 12</SimpleData>
+		<SimpleData name="TELEFONO">954224577</SimpleData>
+		<SimpleData name="HORARIO">Nov-Abril: 9:30-19:00h / May-Oct: 9:30-20:00h todos los d1as</SimpleData>
+		<SimpleData name="WEB">http://www.realmaestranza.com/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/listados/public/museo_taurino.jpg</SimpleData>
+		<SimpleData name="Texto">La Plaza de Toros de la Real Maestranza de Caballería de Sevilla es el coso taurino más antiguo de España. Sede de las corridas de toros que se realizan en el marco de la Feria de Abril de Sevilla, uno de los festejos taurinos más reconocidos en el mundo</SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">fffa3354-9ec1-4e61-ab4a-37ca33997991</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-28T19:52:52.432Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.999038,37.385866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">15</SimpleData>
+		<SimpleData name="NOMBRE">Museo Tesoro del Templo Gran Poder</SimpleData>
+		<SimpleData name="DIRECCION">Plaza de San Lorenzo, 13</SimpleData>
+		<SimpleData name="TELEFONO">954915686</SimpleData>
+		<SimpleData name="HORARIO">Diario (excepto viernes): 8-13:30h;18-21h/ Vie: 7:30-22h</SimpleData>
+		<SimpleData name="WEB">http://www.gran-poder.es/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">e0960692-277c-4aa9-bf75-be7e978f7a06</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.996442,37.397305</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">12</SimpleData>
+		<SimpleData name="NOMBRE">Museo Palacio de la Condesa de Lebrija</SimpleData>
+		<SimpleData name="DIRECCION">C/ Cuna, 8</SimpleData>
+		<SimpleData name="TELEFONO">954227802</SimpleData>
+		<SimpleData name="HORARIO">(Septiembre a Junio) Lun-Vie 10.30-19:30h y SMb de 10:00-14:00h Dom de 10:00-14:00h / Lun-Vie de 9:00-15:00h S</SimpleData>
+		<SimpleData name="WEB">http://www.palaciodelebrija.com/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">8b44f470-0fcf-45c1-b39f-e36813e16c7d</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.993681,37.392284</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">18</SimpleData>
+		<SimpleData name="NOMBRE">Museo del castillo de San Jorge</SimpleData>
+		<SimpleData name="DIRECCION">Plaza del Altozano, s/n</SimpleData>
+		<SimpleData name="TELEFONO">954332240</SimpleData>
+		<SimpleData name="HORARIO">Martes-Sábado:10.00h -13.30 h /17.00h.- 19.30h. Domingo:10.00h.-13.30h</SimpleData>
+		<SimpleData name="WEB">http://www.visitasevilla.es/es/lugar-interes/castillo-de-san-jorge-centro-temati</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/listados/public/005_castillo_sj.jpg</SimpleData>
+		<SimpleData name="Texto">La importancia defensiva del Castillo fue disminuyendo con los siglos y en 1481 se convertiría en sede de la Inquisición Española, que lo abandonaría en 1626.Tras esto, fue cedido al Conde Duque de Olivares.</SimpleData>
+		<SimpleData name="Texto2">En 1639 volvería a ser de la Inquisición hasta su marcha definitiva en 1785. En el siglo XIX el Castillo fue demolido para crear un ensanche desde la Plaza del Altozano hasta la Calle Castilla.</SimpleData>
+		<SimpleData name="GlobalID">ad51d841-267c-4115-bdb0-96962ac734e4</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T19:21:43.857Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-6.003354,37.3858</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">16</SimpleData>
+		<SimpleData name="NOMBRE">Torre del Oro / Museo Naval</SimpleData>
+		<SimpleData name="DIRECCION">Paseo de Crist/bal ColNn, s/n</SimpleData>
+		<SimpleData name="TELEFONO">954222419</SimpleData>
+		<SimpleData name="HORARIO">Mar-Vie: 9.30-13.30h/SNb, Dom: 10.30-13.30h</SimpleData>
+		<SimpleData name="WEB"></SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">7a2b500a-53fc-4a7d-9e39-7528f00d9674</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.996317,37.382402</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">14</SimpleData>
+		<SimpleData name="NOMBRE">Tesoro de la Macarena</SimpleData>
+		<SimpleData name="DIRECCION">C/ Bocquer, 1</SimpleData>
+		<SimpleData name="TELEFONO">954901800</SimpleData>
+		<SimpleData name="HORARIO">Lun-Dom 9.30-13.00h;17.00-20.00h / Bas</SimpleData>
+		<SimpleData name="WEB">http://www.hermandaddelamacarena.es/tesoro-de-la-macarena/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">e60cc3e1-1c8e-48f2-8ec0-80e1ab07fe3a</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-28T19:47:01.421Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.989589,37.402728</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">19</SimpleData>
+		<SimpleData name="NOMBRE">Antiquarium</SimpleData>
+		<SimpleData name="DIRECCION">Plaza de la Encarnación, s/n</SimpleData>
+		<SimpleData name="TELEFONO">955471580</SimpleData>
+		<SimpleData name="HORARIO">Martes a sábado de 10h a 20h. Domingos y festivos de 10h a 14h.</SimpleData>
+		<SimpleData name="WEB">http://antiquarium.icas-sevilla.org/antiquarium/el-espacio/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto">El Antiquarium es un museo arqueológico ubicado en el subsuelo de Metropol Parasol de la plaza de la Encarnación de la ciudad de Sevilla, en la comunidad autónoma de Andalucía.</SimpleData>
+		<SimpleData name="Texto2">Fue inaugurado el 27 de marzo de 2011, y se compone del yacimiento arqueológico más importante que de la etapa romana de Sevilla se conserva, que fue hallado tras una primera excavación en la plaza en los años 1990.</SimpleData>
+		<SimpleData name="GlobalID">c45ca27f-5ffe-4419-afd6-37b74f0ef9d7</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T19:13:49.408Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.991909,37.39318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">21</SimpleData>
+		<SimpleData name="NOMBRE">Museo Casa de la Ciencia</SimpleData>
+		<SimpleData name="DIRECCION">Avenida de Chile, 2</SimpleData>
+		<SimpleData name="TELEFONO">954232349</SimpleData>
+		<SimpleData name="HORARIO">Horario verano: Julio: de 10 a 21 h. Agosto: del 1 al 24 de 10h a 14h. / del 25 al 31 cerrado. Septiembre: del 1 al 8 cerrado. A partir del 9 de , horario habitual.</SimpleData>
+		<SimpleData name="WEB">http://www.casadelaciencia.csic..es</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto">El Museo Casa de la Ciencia de Sevilla es el único espacio de la capital andaluza que ofrece una programación dedicada a la divulgación del conocimiento científico y medioambiental.</SimpleData>
+		<SimpleData name="Texto2">Cuenta con tres exposiciones permanentes: “La Mar de Cetáceos en Andalucía”, “Invertebrados de Andalucía”  y “GEO Sevilla. Explora 540 millones de años”.</SimpleData>
+		<SimpleData name="GlobalID">1e32221d-63d6-4e7d-8fce-821fff0e7acd</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T19:16:14.744Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.991182,37.377441</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">20</SimpleData>
+		<SimpleData name="NOMBRE">Acuario de Sevilla</SimpleData>
+		<SimpleData name="DIRECCION">Avda. Santiago Montoto s/n. Muelle de las Delicias</SimpleData>
+		<SimpleData name="TELEFONO">955441541</SimpleData>
+		<SimpleData name="HORARIO">De lunes a jueves: De 10:00 a 19:00 y de viernes a domingo: De 10:00 a 21:00. Ver en Web horario verano.</SimpleData>
+		<SimpleData name="WEB">http://www.acuariosevilla.es/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">92467e33-584f-45c5-90fb-a70e6e88300d</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.991061,37.370575</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">22</SimpleData>
+		<SimpleData name="NOMBRE">Centro Andaluz de Arte Contemporáneo</SimpleData>
+		<SimpleData name="DIRECCION">C/ Américo Vespucio, 2</SimpleData>
+		<SimpleData name="TELEFONO">955037070</SimpleData>
+		<SimpleData name="HORARIO">Lunes cerrado. Mart-Sáb: 11-21 h. Dom: 11-15h. Festivos consultar Precio: 1.80 € (monumento o exposiciones temporales); 3.01 € (visita completa). Gratis: Mart-vier: 19 a 21 y Sáb. 11-21h.</SimpleData>
+		<SimpleData name="WEB">http://www.caac.es/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto">Antes de pasar a ser terreno monástico, los almohades en el siglo XII le dieron uso ubicando en el lugar hornos alfareros de cocción aprovechando su situación junto al río.</SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">4eecada1-8756-46f1-87e0-8ae5e5e4ddef</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-6.009059,37.398499</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="FID">23</SimpleData>
+		<SimpleData name="NOMBRE">Pabellón de la Navegación</SimpleData>
+		<SimpleData name="DIRECCION">Camino de los Descubrimientos, 2</SimpleData>
+		<SimpleData name="TELEFONO">954043111</SimpleData>
+		<SimpleData name="HORARIO">Invierno: martes a sábado 10 a 19:30, D y Fest. 10 a 15. Julio y Agosto de 10 a 15. Resto de 11 a 20:30. Lunes no festivo cerrado</SimpleData>
+		<SimpleData name="WEB">http://www.pabellondelanavegacion.es/</SimpleData>
+		<SimpleData name="Foto">http://www.visitasevilla.es/sites/default/files/styles/imagen_210x280/public/067.jpg</SimpleData>
+		<SimpleData name="Texto"></SimpleData>
+		<SimpleData name="Texto2"></SimpleData>
+		<SimpleData name="GlobalID">17b898b3-527d-4109-95de-56790a75d8b8</SimpleData>
+		<SimpleData name="CreationDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Creator">Urbanismo</SimpleData>
+		<SimpleData name="EditDate">2015-01-27T18:55:41.961Z</SimpleData>
+		<SimpleData name="Editor">Urbanismo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-6.007836,37.394276</coordinates></Point>
+  </Placemark>
+</Folder>
+<Schema name="OGRGeoJSON" id="OGRGeoJSON">
+	<SimpleField name="FID" type="int"></SimpleField>
+	<SimpleField name="NOMBRE" type="string"></SimpleField>
+	<SimpleField name="DIRECCION" type="string"></SimpleField>
+	<SimpleField name="TELEFONO" type="int"></SimpleField>
+	<SimpleField name="HORARIO" type="string"></SimpleField>
+	<SimpleField name="WEB" type="string"></SimpleField>
+	<SimpleField name="Foto" type="string"></SimpleField>
+	<SimpleField name="Texto" type="string"></SimpleField>
+	<SimpleField name="Texto2" type="string"></SimpleField>
+	<SimpleField name="GlobalID" type="string"></SimpleField>
+	<SimpleField name="CreationDate" type="string"></SimpleField>
+	<SimpleField name="Creator" type="string"></SimpleField>
+	<SimpleField name="EditDate" type="string"></SimpleField>
+	<SimpleField name="Editor" type="string"></SimpleField>
+</Schema>
+</Document>

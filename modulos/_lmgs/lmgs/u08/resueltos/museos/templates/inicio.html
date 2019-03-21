@@ -1,0 +1,11 @@
+{%extends "base.html" %}
+{%block titulo%}Musesos{%endblock%}
+{%block contenido%}
+<ul>
+	{% for museo in datos %}
+		<li><a href="/museosinfo/{{museo[0]}}">{{museo[1]}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+
