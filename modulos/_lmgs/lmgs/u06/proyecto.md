@@ -1,4 +1,7 @@
-# Proyecto HTML5 y CCS
+---
+title: "Proyecto HTML5 y CCS"
+permalink: /lmgs/u06/proyecto.html
+---
 
 El proyecto consiste en realizar una web sobre alguna temática que te interese.
 
