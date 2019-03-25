@@ -8,7 +8,8 @@ permalink: /lmgs/u08/index.html
 * [flask: Miniframework python para desarrollar páginas web (1ª parte)](https://www.josedomingo.org/pledin/2018/03/flask-miniframework-python-para-desarrollar-paginas-web-1a-parte/)
 * [flask: Enrutamiento (2ª parte)](https://www.josedomingo.org/pledin/2018/03/flask-enrutamiento-2a-parte/)
 * [flask: Trabajando con peticiones y respuestas (3ª parte)](https://www.josedomingo.org/pledin/2018/03/flask-trabajando-con-peticiones-y-respuestas-3a-parte/)
-* [flask: Plantillas con jinja2 (4ª parte)](https://www.josedomingo.org/pledin/2018/03/flask-plantillas-con-jinja2-4a-parte)
+* [flask: Plantillas con jinja2 (4ª parte)](https://www.josedomingo.org/pledin/2018/04/flask-plantillas-con-jinja2-4a-parte)
+
 
 ### Heroku
 
