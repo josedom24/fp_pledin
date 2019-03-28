@@ -70,6 +70,8 @@ lmgs:
         url: /lmgs/u06
       - title: YAML
         url: /lmgs/u07
+      - title: Flask
+        url: /lmgs/u08
 
 seguridadgm:
   - title: Seguridad Informática
