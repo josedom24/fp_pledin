@@ -10,6 +10,10 @@ permalink: /lmgs/u08/index.html
 * [flask: Trabajando con peticiones y respuestas (3ª parte)](https://www.josedomingo.org/pledin/2018/03/flask-trabajando-con-peticiones-y-respuestas-3a-parte/)
 * [flask: Plantillas con jinja2 (4ª parte)](https://www.josedomingo.org/pledin/2018/04/flask-plantillas-con-jinja2-4a-parte)
 
+### Ejemplos
+
+* [Ejemplos para aprender flask](https://github.com/josedom24/ejemplos_flask)
+
 ### pip
 
 * [Instalación de módulos en python 3](virtualenv.html)
