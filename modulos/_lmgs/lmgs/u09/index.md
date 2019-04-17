@@ -5,7 +5,7 @@ permalink: /lmgs/u09/index.html
 
 ## Teoría
 
-* Presentación servicios web
+* [Presentación servicios web](Presentacion_python_requests.pdf)
 * [Requests: HTTP for Humans](http://docs.python-requests.org/en/latest/)
 
 ## Ejercicios
