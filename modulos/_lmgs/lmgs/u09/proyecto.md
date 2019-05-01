@@ -75,6 +75,6 @@ Muestra al profesor y entrega una captura de pantalla donde se vea el funcionami
 
 La evaluación final del proyecto se realizará teniendo en cuenta los siguientes aspectos:
 
-* Puntuación técnica del proyecto (teniendo en cuenta la valoración del apartado **Pre-evaluación del proyecto**) (70%).
-* Asistencia a clase y participación activa en el proyecto: Es importante hablar, preguntar, discutir con el profesor acerca de tu proyecto. Sería muy importante que desde el primer momento el profesor supiera que vas a hacer, que problemas tienes, por donde vas, ... En este punto también se tendrá en cuenta los puntos que hemos indicado que debes enseñar al profesor.(20%).
-* Corrección del proyecto: Se valorará el repositorio GitHub entregado (debe tener un fichero `README.md` explicando de forma clara el contenido del repositorio), además la corrección se realizará de la aplicación web ejecutándose en Heroku. Se valorará la originalidad del proyecto, la facilidad de uso y la funcionalidad del mismo.(10%).
+* Puntuación técnica del proyecto (teniendo en cuenta la valoración del apartado **Pre-evaluación del proyecto**) 
+* Asistencia a clase y participación activa en el proyecto: Es importante hablar, preguntar, discutir con el profesor acerca de tu proyecto. Sería muy importante que desde el primer momento el profesor supiera que vas a hacer, que problemas tienes, por donde vas, ... En este punto también se tendrá en cuenta las entregas de las diferentes fases que hemos indicado en este enunciado.
+* Corrección del proyecto: Se valorará el repositorio GitHub entregado (debe tener un fichero `README.md` explicando de forma clara el contenido del repositorio), además la corrección se realizará de la aplicación web ejecutándose en Heroku. Se valorará la originalidad del proyecto, la facilidad de uso y la funcionalidad del mismo.
