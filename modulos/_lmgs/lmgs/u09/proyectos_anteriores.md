@@ -90,6 +90,11 @@ También se dará la oportunidad de buscar la película o serie y productos rela
 
 #### José Manuel Lobato
 
+GhibliProyect:  Tiene un apartado de enlaces a paginas de anime para que puedas encontrar tus series favoritas. Muestra todas las películas realizadas por el estudio Ghibli. Tiene un buscador donde podrás buscar cosas de las peliculas del studio ghibli. Podrás conectarte a spotify para ver tu perfil y escuchar las canciones del estudio ghibli.
+
+* Github: [https://github.com/JMLobato/GhibliProyect](https://github.com/JMLobato/GhibliProyect)
+* Web: [https://proyecto-ghibli.herokuapp.com](https://proyecto-ghibli.herokuapp.com)
+
 #### Carlos Hijano
 
 Alacena: Alacena pretende solventar esa gran duda que envuelve a todos los hogares. Que hacemos para comer? Alacena es una aplicación web que ofrece múltiples recetas en función de los ingredientes que tengas en casa. El usuario solo tiene que acceder al sitio web de Alacena , introducir los ingredientes que tienen en casa y te aparecerán una variedad de recetas que podrás preparar. Los usuarios también podrán registrarse en el sitio web y tener un registro de todos los ingredientes que tiene en casa, añadiendo o eliminando. De esta forma la aplicación podrá hacer una búsqueda más exhaustiva y listar las recetas de la que dispongas todos los ingredientes.

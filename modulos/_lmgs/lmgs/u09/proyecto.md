@@ -53,15 +53,23 @@ Debes entregar al menos tres peticiones a la API que vayas a realizar en el proy
 
 Entrega un programa python (que funcione en la terminal) que haga una de las tres peticiones que has mostrado en la fase anterior.
 
-### Fase 3: Aplicación web en heroku
+### Fase 3: Diseño de la aplicación
+
+Explica cada una de las rutas que va a tener la aplicación web:
+
+* Nombre de la ruta
+* ¿Se accede con get o con post?
+* ¿Qué se hace en esa ruta?
+
+### Fase 4: Aplicación web en heroku
 
 Muestra al profesor y entrega una captura de pantalla donde se vea la página web escrita en flask (con la hoja de estilo) desplegada en heroku.
 
-### Fase 4: Peticiones y formularios
+### Fase 5: Peticiones y formularios
 
 Muestra al profesor y entrega una captura de pantalla donde se vea el funcionamiento de algún formulario en tu aplicación y la realización de alguna petición a algún servicio web en el mismo.
 
-### Fase 5: Termina la aplicación
+### Fase 6: Termina la aplicación
 
 ## Evaluación final
 
