@@ -45,7 +45,3 @@ Mis apuntes sobre docker...
 * [Práctica: Implantación de aplicaciones web PHP en docker](docker_php.html)
 * [Práctica: Implantación de aplicaciones web Python en docker](docker_python.html)
 
-## Proyecto final
-
-* [Proyecto Servicios Web](proyecto.html)
-* [Proyectos de otros años](proyecto_anteriores.html)

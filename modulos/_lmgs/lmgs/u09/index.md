@@ -22,3 +22,8 @@ permalink: /lmgs/u09/index.html
 * [Vídeo: ¿Qué es REST?](https://www.youtube.com/watch?v=aoOKxUOhg18)
 * [ProgrammableWeb - APIs, Mashups and the Web as Platform](http://www.programmableweb.com/)
 * [Public APIs](https://github.com/toddmotto/public-apis)
+
+## Proyecto final
+
+* [Proyecto Servicios Web](proyecto.html)
+* [Proyectos de otros años](proyecto_anteriores.html)
