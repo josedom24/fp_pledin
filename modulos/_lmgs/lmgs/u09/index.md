@@ -26,4 +26,4 @@ permalink: /lmgs/u09/index.html
 ## Proyecto final
 
 * [Proyecto Servicios Web](proyecto.html)
-* [Proyectos de otros años](proyecto_anteriores.html)
+* [Proyectos de otros años](proyectos_anteriores.html)
