@@ -23,6 +23,11 @@ permalink: /lmgs/u09/index.html
 * [ProgrammableWeb - APIs, Mashups and the Web as Platform](http://www.programmableweb.com/)
 * [Public APIs](https://github.com/toddmotto/public-apis)
 
+## Autentificación oauth
+
+* [Repositorio oauth](https://github.com/josedom24/flask_oauth)
+* [Página ejemplo oauth](http://oauth-jd.herokuapp.com/google)
+
 ## Proyecto final
 
 * [Proyecto Servicios Web](proyecto.html)
