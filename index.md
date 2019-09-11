@@ -18,7 +18,7 @@ classes: wide
 * [Implantación de aplicaciones web](iawgs)
 * [Seguridad y alta disponibilidad](seguridadgs)
 
-
+<br/><br/>
 # Curso 2018-2019
 
 ## Ciclo de grado Medio de Técnico en Sistemas Microinformáticos y Redes (SMR)
