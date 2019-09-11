@@ -1,5 +1,5 @@
 ---
-title: "Servicios de Red e Internet"
+title: "Seguridad y Alta Disponibilidad"
 permalink: /seguridadgs/index.html
 ---
 
