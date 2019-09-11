@@ -75,6 +75,13 @@ lmgs:
 #      - title: Servicios Web
 #        url: /lmgs/u09
 
+seguridadgs:
+  - title: Seguridad y Alta Disponibilidad
+    children:
+      - title: "Inicio"
+        url: /seguridadgs/
+
+
 
 seguridadgm:
   - title: Seguridad Informática
