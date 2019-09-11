@@ -15,22 +15,22 @@ serviciosgs:
     children:
       - title: "Inicio"
         url: /serviciosgs/
-      - title: Introducción a los servicios en red
-        url: /serviciosgs/u01
-      - title: Servidor DHCP
-        url: /serviciosgs/u02
-      - title: Servidor Web
-        url: /serviciosgs/u03
-      - title: Servidor DNS
-        url: /serviciosgs/u04
-      - title: Servidor FTP
-        url: /serviciosgs/u05
-      - title: Gestión de peticiones - Rendimiento
-        url: /serviciosgs/u06
-      - title: Servidor de correo electrónico
-        url: /serviciosgs/u07
-      - title: Proxy, proxy inverso y balanceador de carga
-        url: /serviciosgs/u08
+#      - title: Introducción a los servicios en red
+#        url: /serviciosgs/u01
+#      - title: Servidor DHCP
+#        url: /serviciosgs/u02
+#      - title: Servidor Web
+#        url: /serviciosgs/u03
+#      - title: Servidor DNS
+#        url: /serviciosgs/u04
+#      - title: Servidor FTP
+#        url: /serviciosgs/u05
+#      - title: Gestión de peticiones - Rendimiento
+#        url: /serviciosgs/u06
+#      - title: Servidor de correo electrónico
+#        url: /serviciosgs/u07
+#      - title: Proxy, proxy inverso y balanceador de carga
+#        url: /serviciosgs/u08
  
 
 iawgs:
@@ -38,42 +38,42 @@ iawgs:
     children:
       - title: "Inicio"
         url: /iawgs/
-      - title: Introducción
-        url: /iawgs/u01
-      - title: PHP
-        url: /iawgs/u02
-      - title: Python
-        url: /iawgs/u03
-      - title: Integración Continúa
-        url: /iawgs/u04
-      - title: Java
-        url: /iawgs/u05
-      - title: Docker
-        url: /iawgs/u06
+#      - title: Introducción
+#        url: /iawgs/u01
+#      - title: PHP
+#        url: /iawgs/u02
+#      - title: Python
+#        url: /iawgs/u03
+#      - title: Integración Continúa
+#        url: /iawgs/u04
+#      - title: Java
+#        url: /iawgs/u05
+#      - title: Docker
+#        url: /iawgs/u06
 
 lmgs:
   - title: Lenguajes de marcas
     children:
       - title: "Inicio"
         url: /lmgs/
-      - title: Pseudocódigo
-        url: /lmgs/u01
-      - title: Python3
-        url: /lmgs/u02
-      - title: Introducción a los LM
-        url: /lmgs/u03
-      - title: XML
-        url: /lmgs/u04
-      - title: JSON
-        url: /lmgs/u05
-      - title: HTML/CSS
-        url: /lmgs/u06
-      - title: YAML
-        url: /lmgs/u07
-      - title: Flask
-        url: /lmgs/u08
-      - title: Servicios Web
-        url: /lmgs/u09
+#      - title: Pseudocódigo
+#        url: /lmgs/u01
+#      - title: Python3
+#        url: /lmgs/u02
+#      - title: Introducción a los LM
+#        url: /lmgs/u03
+#      - title: XML
+#        url: /lmgs/u04
+#      - title: JSON
+#        url: /lmgs/u05
+#      - title: HTML/CSS
+#        url: /lmgs/u06
+#      - title: YAML
+#        url: /lmgs/u07
+#      - title: Flask
+#        url: /lmgs/u08
+#      - title: Servicios Web
+#        url: /lmgs/u09
 
 
 seguridadgm:
