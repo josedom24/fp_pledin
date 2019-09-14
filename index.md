@@ -21,7 +21,7 @@ classes: wide
 <br/><br/>
 # Curso 2018-2019
 
-## Ciclo de grado Medio de Técnico en Sistemas Microinformáticos y Redes (SMR)
+## Ciclo de Grado Medio de Técnico en Sistemas Microinformáticos y Redes (SMR)
 
 ### 2º SMR
 
