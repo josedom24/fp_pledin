@@ -10,7 +10,9 @@ permalink: /iawgs/u01/index.html
 
 ## Git
 
-
+* [Introducción a  git/github](github.html)
+* [git - la guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html)
+* [Pro Git, el libro oficial de Git](http://librosweb.es/pro_git/)
 
 ## Enlaces
 
