@@ -13,26 +13,24 @@ El objetivo principal de vagrant es aproximar los entornos de desarrollo y produ
 
 ### Práctica 1: Instalación de vagrant
 
-Instalar virtualbox y vagrant:
+Instalar virtualbox y vagrant (en Debian Buster lo podemos instalar de repositorios, si queremos la última versión lo podemos descargar desde la [página oficial](https://www.vagrantup.com/downloads.html).):
 
 ```bash
-root@maquina:~$ apt-get install virtualbox
-root@maquina:~$ wget https://releases.hashicorp.com/vagrant/2.x.x/vagrant_2.x.x_x86_64.deb
-root@maquina:~$ dpkg -i vagrant_2.x.x_x86_64.deb
+root@maquina:~$ apt install virtualbox vagrant
 ```
 
-### Práctica 2: Instalación de un "box" debian/stretch
+### Práctica 2: Instalación de un "box" debian/buster
 
-Nos descargamos desde el repositorio oficial el box de Debian stretch de 64 bits, esto lo hacemos un usuario sin privilegios:
+Nos descargamos desde el repositorio oficial el box de Debian buster de 64 bits, esto lo hacemos un usuario sin privilegios:
 
 ```bash
-usuario@maquina:~$ vagrant box add debian/stretch64
+usuario@maquina:~$ vagrant box add debian/buster64
 ```
 
 Si el box lo tenemos en la *nas* de nuestro instituto:
 
 ```bash
-usuario@maquina:~$ vagrant box add debian/stretch64 http://nas.gonzalonazareno.org/...
+usuario@maquina:~$ vagrant box add debian/buster64 http://nas.gonzalonazareno.org/...
 ```
 
 **Es importante fijarnos que lo estamos haciendo con usuarios sin privilegios. Cada usuario tendrás sus box propios.**
