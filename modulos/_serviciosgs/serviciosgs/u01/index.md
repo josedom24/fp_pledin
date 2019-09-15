@@ -16,5 +16,3 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 * [Cuestionario de repaso](repaso.html)
 * [Python para sysadmins](python.html)
 * [Introducción a vagrant](vagrant.html)
-    
-   
