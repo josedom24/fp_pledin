@@ -8,7 +8,6 @@ El módulo profesional de **Lenguajes de Marcas** se imparte durante el primer c
 
 De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional de Lenguajes de Marcas se imparte durante el primer curso y tiene asignadas un total de 128 horas, a razón de 4 horas semanales.
 
-<!--
 El índice de contenidos que vamos a estudiar será:
 
 ## Introducción a la programación
@@ -28,4 +27,3 @@ El índice de contenidos que vamos a estudiar será:
 
 * [Flask: (Miniframework python para desarrollar páginas web)](u08)
 * [Servicios Web](u09)
--->

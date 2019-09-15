@@ -56,25 +56,24 @@ lmgs:
     children:
       - title: "Inicio"
         url: /lmgs/
-#      - title: Pseudocódigo
-#        url: /lmgs/u01
-#      - title: Python3
-#        url: /lmgs/u02
-#      - title: Introducción a los LM
-#        url: /lmgs/u03
-#      - title: XML
-#        url: /lmgs/u04
-#      - title: JSON
-#        url: /lmgs/u05
-#      - title: HTML/CSS
-#        url: /lmgs/u06
-#      - title: YAML
-#        url: /lmgs/u07
-#      - title: Flask
-#        url: /lmgs/u08
-#      - title: Servicios Web
-#        url: /lmgs/u09
-
+      - title: Pseudocódigo
+        url: /lmgs/u01
+      - title: Python3
+        url: /lmgs/u02
+      - title: Introducción a los LM
+        url: /lmgs/u03
+      - title: XML
+        url: /lmgs/u04
+      - title: JSON
+        url: /lmgs/u05
+      - title: HTML/CSS
+        url: /lmgs/u06
+      - title: YAML
+        url: /lmgs/u07
+      - title: Flask
+        url: /lmgs/u08
+      - title: Servicios Web
+        url: /lmgs/u09
 seguridadgs:
   - title: Seguridad y Alta Disponibilidad
     children:
