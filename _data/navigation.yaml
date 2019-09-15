@@ -38,8 +38,8 @@ iawgs:
     children:
       - title: "Inicio"
         url: /iawgs/
-#      - title: Introducción
-#        url: /iawgs/u01
+      - title: Introducción
+        url: /iawgs/u01
 #      - title: PHP
 #        url: /iawgs/u02
 #      - title: Python

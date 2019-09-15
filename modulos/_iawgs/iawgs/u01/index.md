@@ -8,6 +8,10 @@ permalink: /iawgs/u01/index.html
 * Aprender lenguaje de marcas markdown
 * Comprender que existe un integración continua y un despliegue continuo en el proceso de despliegue de la página
 
+## Git
+
+
+
 ## Enlaces
 
 * [Aspectos básicos de las aplicaciones Web](https://helpx.adobe.com/es/dreamweaver/using/web-applications.html)
