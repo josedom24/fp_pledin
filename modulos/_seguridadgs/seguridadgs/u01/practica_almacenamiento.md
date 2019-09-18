@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Gestión del almacenamiento de la información" 
-permalink: /seguridadgs/u01/practica_almacenmaiento.html
+permalink: /seguridadgs/u01/practica_almacenamiento.html
 ---
 
 ## Ejercicio: RAID 1
