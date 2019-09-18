@@ -1,6 +1,6 @@
 ---
 title: "Git y GitHub"
-permalink: /lmgs/u03/github.html
+permalink: /iawgs/u01/github.html
 ---
 
 Utilizaremos git para realizar el control de versiones de los proyectos que realicemos en la asignatura. Deberás ir realizando los proyectos de forma incremental, y registrar los cambios (commits) realizados.
