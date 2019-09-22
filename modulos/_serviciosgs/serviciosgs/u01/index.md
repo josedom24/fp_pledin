@@ -15,4 +15,5 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 * [Introducción a los servicios de red](presentacion.html)
 * [Cuestionario de repaso](repaso.html)
 * [Python para sysadmins](python.html) - [Curso de introducción a python](https://gitlab.com/josedom24/curso_programacion_python3)
+    * [Ejercicios resueltos](https://github.com/josedom24/python_for_admin)
 * [Introducción a vagrant](vagrant.html)
