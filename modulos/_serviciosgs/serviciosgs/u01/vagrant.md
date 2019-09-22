@@ -16,8 +16,12 @@ El objetivo principal de vagrant es aproximar los entornos de desarrollo y produ
 Instalar virtualbox y vagrant (en Debian Buster lo podemos instalar de repositorios, si queremos la última versión lo podemos descargar desde la [página oficial](https://www.vagrantup.com/downloads.html).):
 
 ```bash
-root@maquina:~$ apt install virtualbox vagrant
+root@maquina:~$ apt install virtualbox-5.0 vagrant
 ```
+**Actualmente vagrant no es compatible con la última versión de VirtualBox (la versión 6.0)**
+{: .notice--warning}        
+
+
 
 ### Práctica 2: Instalación de un "box" debian/buster
 
@@ -27,7 +31,7 @@ Nos descargamos desde el repositorio oficial el box de Debian buster de 64 bits,
 usuario@maquina:~$ vagrant box add debian/buster64
 ```
 
-Si el box lo tenemos en la *nas* de nuestro instituto:
+Si el box lo tenemos en la *nas* de nuestro instituto (o en otro servidor web):
 
 ```bash
 usuario@maquina:~$ vagrant box add debian/buster64 http://nas.gonzalonazareno.org/...
@@ -56,7 +60,7 @@ usuario@maquina:~$ vagrant box list
     # -*- mode: ruby -*-
     # vi: set ft=ruby :
     Vagrant.configure("2") do |config|
-                config.vm.box = "debian/stretch64"
+                config.vm.box = "debian/buster64"
                 config.vm.hostname = "mimaquina"
                 config.vm.network :public_network,:bridge=>"eth0"
     end    
@@ -101,12 +105,12 @@ En esta ocasión vamos a crear otro directorio y dentro un fichero Vagrantfile c
 Vagrant.configure("2") do |config|
 
   config.vm.define :nodo1 do |nodo1|
-    nodo1.vm.box = "debian/stretch64"
+    nodo1.vm.box = "debian/buster64"
     nodo1.vm.hostname = "nodo1"
     nodo1.vm.network :private_network, ip: "10.1.1.101"
   end
   config.vm.define :nodo2 do |nodo2|
-    nodo2.vm.box = "debian/stretch64"
+    nodo2.vm.box = "debian/buster64"
     nodo2.vm.hostname = "nodo2"
     nodo2.vm.network :public_network,:bridge=>"eth0"
     nodo2.vm.network :private_network, ip: "10.1.1.102"
@@ -131,7 +135,7 @@ Por últimos vamos a crear un nuevo Vagranfile en un nuevo directorio con este c
 Vagrant.configure("2") do |config|
 
   config.vm.define :nodo1 do |nodo1|
-    nodo1.vm.box = "debian/jessie64"
+    nodo1.vm.box = "debian/buster64"
     nodo1.vm.hostname = "nodo1"
     nodo1.vm.network :private_network, ip: "10.1.1.101"
     nodo1.vm.provider :virtualbox do |v|
@@ -142,7 +146,7 @@ Vagrant.configure("2") do |config|
 
   disco = '.vagrant/midisco.vdi'
   config.vm.define :nodo2 do |nodo2|
-    nodo2.vm.box = "debian/jessie64"
+    nodo2.vm.box = "debian/buster64"
     nodo2.vm.hostname = "nodo2"
     nodo2.vm.network :public_network,:bridge=>"eth0"
     nodo2.vm.network :private_network, ip: "10.1.1.102"
@@ -162,11 +166,11 @@ Como podemos ver al `nodo1` le hemos modificado el tamaño de la memoria RAM y e
 usuario@maquina:~/vagrant$ vagrant reload
 ```
 
-Para terminar, indicar que tenemos más parámetros de configuración que nos permiten configurar otros aspectos de la máquina virtual. Puedes encontrar más información en la [documentación oficial de vagrant](http://docs.vagrantup.com/v2/)
+Para terminar, indicar que tenemos más parámetros de configuración que nos permiten configurar otros aspectos de la máquina virtual. Puedes encontrar más información en la [documentación oficial de vagrant](https://www.vagrantup.com/docs/)
 
 ## Enlaces interesantes
 
 * [Página oficial de Vagrant](http://www.vagrantup.com/)
 * [Curso de vagrant (Alberto Molina)](https://github.com/albertomolina/curso-vagrant)
-* [Gestionando máquinas virtuales con Vagrant](http://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/)
+* [PLEDIN: Gestionando máquinas virtuales con Vagrant](http://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/)
 * [Boxes oficiales para Vagrant](https://atlas.hashicorp.com/boxes/search)
