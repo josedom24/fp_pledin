@@ -16,12 +16,8 @@ El objetivo principal de vagrant es aproximar los entornos de desarrollo y produ
 Instalar virtualbox y vagrant (en Debian Buster lo podemos instalar de repositorios, si queremos la última versión lo podemos descargar desde la [página oficial](https://www.vagrantup.com/downloads.html).):
 
 ```bash
-root@maquina:~$ apt install virtualbox-5.0 vagrant
+root@maquina:~$ apt install virtualbox-6.0 vagrant
 ```
-**Actualmente vagrant no es compatible con la última versión de VirtualBox (la versión 6.0)**
-{: .notice--warning}        
-
-
 
 ### Práctica 2: Instalación de un "box" debian/buster
 
