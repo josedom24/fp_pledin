@@ -1,5 +1,5 @@
 ---
-title: "1.- Introducción a la seguridad informática"
+title: "Introducción a la seguridad informática"
 permalink: /seguridadgs/u01/index.html
 ---
 
