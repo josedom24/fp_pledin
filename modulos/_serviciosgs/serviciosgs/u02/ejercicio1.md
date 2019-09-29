@@ -64,7 +64,7 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
 Reinciciamos el servidor dhcp:
 
 ```bash
-service isc-dhcp-server restart
+systemctl restart isc-dhcp-server
 ```
 
 Sólo falta configurar los clientes para que tomen la configuración de red de forma dinámica.
