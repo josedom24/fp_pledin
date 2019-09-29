@@ -25,7 +25,7 @@ Vamos a crear una máquina virtual con un sistema operativo Linux. Esta máquina
 A continuación queremos crear un raid 5 en una máquina de 2 GB, para ello vamos a utilizar discos virtuales de 1 GB. Modifica el fichero `Vagrantfile` del ejercicio anterior para crear una nueva máquina.
 
 {% capture notice-text %}
-* **Tarea 1:** Crea una raid llamado md5 con los dos discos que hemos conectado a la máquina.
+* **Tarea 1:** Crea una raid llamado md5 con los discos que hemos conectado a la máquina.
 * **Tarea 2:** Comprueba las características del RAID. Comprueba el estado del RAID. ¿Qué capacidad tiene el RAID que hemos creado?
 * **Tarea 3:** Crea un volumen lógico de 500Mb en el raid 5.
 * **Tarea 4:** Formatea ese volumen con un sistema de archivo xfs.
