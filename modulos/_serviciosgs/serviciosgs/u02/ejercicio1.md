@@ -14,7 +14,7 @@ Para instalar nuestro servidor dhcp ejecutamos:
 apt-get install isc-dhcp-server
 ```
 
-Cuando instalamos el servidor por primera se produce un error, ya que no está configurado. Puedes ver los errores producidos por el servidor en el fichero /var/log/syslog
+Cuando instalamos el servidor por primera se produce un error, ya que no está configurado. Puedes ver los errores producidos por el servidor en el fichero `/var/log/syslog`.
 {: .notice--info}
 
 ## Configuración del servidor isc-dhcp-server
