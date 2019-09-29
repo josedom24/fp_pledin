@@ -30,8 +30,12 @@ permalink: /iawgs/u02/index.html
 
 * [Opensource CMS](http://www.opensourcecms.com)
 * [How to Install a LAMP Server on Debian 9 Stretch Linux](https://t.co/A7zG7Ak2Y2)
+* [How to Install LAMP Stack on Debian 10 Buster](https://computingforgeeks.com/install-lamp-stack-on-debian-10-buster/)
 
 ## Prácticas
 
 * [Instalación local de un CMS PHP](practica_php1.html)
+
+<!--
 * [Despliegue tradicional de CMS PHP](practica_php2.html)
+-->

@@ -80,13 +80,15 @@ nav#site-nav
 .notice--info {
     font-size: 0.9em !important;
     background-color: #ebfaff;
-    #border-radius: 25px;
+    border: 4px outset #0366D6;
+    border-radius: 0px 40px 0px 0px;
 }
 
 .notice--warning {
     font-size: 0.9em !important;
     background-color: #f5dda7;
-    #border-radius: 25px;
+    border: 4px outset #fd8900;
+    border-radius: 0px 40px 0px 0px;
 }
 
 .nav__list a {
