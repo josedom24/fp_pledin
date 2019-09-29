@@ -81,6 +81,8 @@ seguridadgs:
         url: /seguridadgs/
       - title: "Introducción"
         url: /seguridadgs/u01
+      - title: "Criptografía"
+        url: /seguridadgs/u02
 
 
 
