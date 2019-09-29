@@ -57,7 +57,7 @@ En este momento, muestra al profesor la aplicación funcionando en local. Y desc
 * La mayoría de los CMS tienen la posibilidad de mandar correos electrónicos (por ejemplo para notificar una nueva versión, notificar un comentario,...)
 * Instala un servidor de correo electrónico en tu servidor. debes configurar un servidor relay de correo, para ello en el fichero `/etc/postfix/main.cf`, debes poner la siguiente línea:
 
-		relayhost = babuino.gonzalonazareno.org
+		relayhost = babuino-smtp.gonzalonazareno.org
 
 * Configura alguno de los CMS para utilizar tu servidor de correo y realiza una prueba de funcionamiento.
 
