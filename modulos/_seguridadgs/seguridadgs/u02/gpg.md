@@ -19,7 +19,7 @@ Para desencriptar el fichero simplemente ejecutamos:
 
     gpg -d fichero.txt.gpg
 
-Nos pide la clave y nos muestra el contenido del fichero original (**Nota: si estaís usando gnome al introducir la clave para realizar la encriptación se guarda en una cache, por lo que no os va a pedir la clave a la hora de desencriptar**)
+Nos pide la clave y nos muestra el contenido del fichero original (**Nota: si estáis usando gnome al introducir la clave para realizar la encriptación se guarda en una cache, por lo que no os va a pedir la clave a la hora de desencriptar**)
 
 Si queremos recuperar el fichero original:
 
@@ -34,5 +34,5 @@ Si queremos recuperar el fichero original:
 4. Descifra el documento que te ha hecho llegar tu compañero de al lado.
 5. ¿Con qué algoritmo se ha cifrado el fichero? Vuelve a cifrar el fichero usando el algoritmo AES256. ¿Puedes hacer permanente esta configuración?
 6. Instala gpg en windows ([Gpg4win](https://gnupg.org/download/)), repite el ejercicio en Windows. Puedes encriptar un mensaje en linux y desencriptarlo en windows y al contrario.
-7. `openssl` es otra herramienta que nos permite cifrar mensajes de forma simetríca, investiga como se realiza este ejercicio utilizando esta herramienta.
+7. `openssl` es otra herramienta que nos permite cifrar mensajes de forma simétrica, investiga como se realiza este ejercicio utilizando esta herramienta.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
