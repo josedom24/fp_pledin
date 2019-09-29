@@ -16,6 +16,10 @@ permalink: /seguridadgs/u02/index.html
 
 * [Cifrado simétrico con gpg](gpg.html)
 
+## Enlaces interesantes
+
+* [The GNU Privacy Guard](https://gnupg.org/)
+* [OpenSSL](https://www.openssl.org/)
 
 <!--
 
