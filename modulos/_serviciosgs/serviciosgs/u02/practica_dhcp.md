@@ -36,9 +36,9 @@ Instala un servidor dhcp en el ordenador **"servidor"** que de servicio a los or
 
 ### Funcionamiento del dhcp
 
-{% capture notice-text %}
-Vamos a comprobar que ocurre con la configuración de los clientes en determinadas circunstancias, para ello vamos a poner un tiempo de concesión muy bajo. Muestra los resultados al profesor.	
+Vamos a comprobar que ocurre con la configuración de los clientes en determinadas circunstancias, para ello vamos a poner un tiempo de concesión muy bajo. 
 
+{% capture notice-text %}
 * **Tarea 6 (2 punto):** Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
 * **Tarea 7 (2 punto)(Obligatorio):** Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿qué ocurriría con un cliente windows? ¿Y con el cliente linux?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
