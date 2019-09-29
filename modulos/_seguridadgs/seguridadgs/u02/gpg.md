@@ -32,6 +32,7 @@ Si queremos recuperar el fichero original:
 2. Cifra este documento con alguna contraseña acordada con el compañero de al lado.
 3. Haz llegar por algún medio al compañero de al lado el documento que acabas de cifrar.
 4. Descifra el documento que te ha hecho llegar tu compañero de al lado.
-5. Instala gpg en windows ([Gpg4win](https://gnupg.org/download/)), repite el ejercicio en Windows. Puedes encriptar un mensaje en linux y desencriptarlo en windows y al contrario.
-6. `openssl` es otra herramienta que nos permite cifrar mensajes de forma simetríca, investiga como se realiza este ejercicio utilizando esta herramienta.
+5. ¿Con qué algoritmo se ha cifrado el fichero? Vuelve a cifrar el fichero usando el algoritmo AES256. ¿Puedes hacer permanente esta configuración?
+6. Instala gpg en windows ([Gpg4win](https://gnupg.org/download/)), repite el ejercicio en Windows. Puedes encriptar un mensaje en linux y desencriptarlo en windows y al contrario.
+7. `openssl` es otra herramienta que nos permite cifrar mensajes de forma simetríca, investiga como se realiza este ejercicio utilizando esta herramienta.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
