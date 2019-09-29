@@ -13,14 +13,4 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la seguridad informática](u01)
-
-<!--
-* [Servidor DHCP](u02)
-* [Servidor Web](u03)
-* [Servidor DNS](u04)
-* [Servidor FTP](u05)
-* [Gestión de peticiones y rendimiento en servidores Web](u06)
-* [Servidor de correo electrónico](u07)
-* [Porxy, proxy inverso y balanceador de carga](u08)
--->
-
+* [Criptografía](u02)
