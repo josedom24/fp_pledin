@@ -39,9 +39,7 @@ Conocer los conceptos básicos sobre configuración dinámica con IPv6:
 * [Cuestionario DHCP](cuestionario.html)
 * [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
 
-<!--
 ## Práctica
 
 * [Práctica: Servidor DHCP](practica_dhcp.html)
 
--->
