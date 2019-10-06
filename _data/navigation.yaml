@@ -19,8 +19,7 @@ serviciosgs:
         url: /serviciosgs/u01
       - title: Servidor DHCP
         url: /serviciosgs/u02
-#      - title: Servidor Web
-#        url: /serviciosgs/u03
+      - title: Servidor Web
 #      - title: Servidor DNS
 #        url: /serviciosgs/u04
 #      - title: Servidor FTP
