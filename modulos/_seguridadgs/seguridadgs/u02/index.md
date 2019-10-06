@@ -16,24 +16,12 @@ permalink: /seguridadgs/u02/index.html
 
 * [Cifrado simétrico con gpg y openssl](gpg.html)
 
-<!--
-* Cifrado asimético con gpg y openssl
-* Firma digital con gpg y openssl
--->
 ## Enlaces interesantes
 
 * [The GNU Privacy Guard](https://gnupg.org/)
 * [OpenSSL](https://www.openssl.org/)
 
-<!--
-
 ## Prácticas
 
-* [Práctica 18: Cifrado de un disco/particion/pendrive en Linux y Windows](cifrado_usb.html)
-* [Práctica 19: Cifrado asimétrico con gpg](gpg2.html)
-* [Práctica 20: Integridad, firmas y autenticación](gpg3.html)
-* [Práctica 21: Certificados digitales](certificado.html)
+* [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
 
-## Enlaces
-
-*-->
