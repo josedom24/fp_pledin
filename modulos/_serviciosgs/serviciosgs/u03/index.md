@@ -29,6 +29,7 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
 * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
 * [Ejercicio 7: Módulos en apache](ejercicio7.html)
+* [Servidor web nginx](nginx.html)
 
 <!--
 ## Prácticas
