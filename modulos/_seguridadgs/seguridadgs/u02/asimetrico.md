@@ -39,7 +39,7 @@ Tras realizar el ejercicio anterior, podemos enviar ya documentos cifrados utili
 2. Nuestro compañero, a su vez, nos remitirá un archivo cifrado para que nosotros lo descifremos.
 3. Tanto  nosotros  como  nuestro  compañero  comprobaremos  que  hemos  podido descifrar los mensajes recibidos respectivamente.
 4. Por último, enviaremos el documento cifrado a alguien que no estaba en la lista de destinatarios y comprobaremos que este usuario no podrá descifrar este archivo.
-5. Para terminar, indica los comando necesarios para borrar las claves públicas y privadas que posees.
+5. Para terminar, indica los comandos necesarios para borrar las claves públicas y privadas que posees.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 4: Exportar clave a un servidor público de claves PGP (2 puntos)
