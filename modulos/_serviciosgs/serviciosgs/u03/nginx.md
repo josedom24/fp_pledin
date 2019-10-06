@@ -84,7 +84,6 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 
 	Apache                                 Nginx
 	------                                 ------
-
 	<VirtualHost *:80>                     server {
 	                                            listen 80;
 	ServerName yoursite.com	      	       server_name www.yoursite.com;
@@ -102,9 +101,9 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 	Alias /url/ "/path/to/files"           location /url/ {
 	<Directory "/path/to/files">                 alias /path/to/files;
 
-	Options Indexes						   autoindex on
+	Options Indexes                        autoindex on
 
-	Require all granted					   allow all
+	Require all granted                    allow all
 
-	allow 127.0.0.1;					   allow 127.0.0.1;
-	deny all;						       deny all;
+	allow 127.0.0.1                        allow 127.0.0.1;
+	deny all                               deny all;
