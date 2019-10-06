@@ -48,7 +48,7 @@ Para distribuir las claves públicas es mucho más habitual utilizar un servidor
 
 {% capture notice-text %}
 1. Genera la clave de revocación de tu clave pública para utilizarla en caso de que haya problemas.
-2. Exporta tu clave pública al servidor pgp.rediris.es
+2. Exporta tu clave pública al servidor `pgp.rediris.es`
 3. Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
