@@ -30,7 +30,7 @@ Para enviar archivos cifrados a otras personas, necesitamos disponer de sus clav
 3. Comprueba que las claves se han incluido correctamente en vuestro keyring.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 3: Cifrado asimétrico con claves públicas (2 puntos)
+## Tarea 3: Cifrado asimétrico con claves públicas (3 puntos)
 
 Tras realizar el ejercicio anterior, podemos enviar ya documentos cifrados utilizando la clave pública de los destinatarios del mensaje. 
 
@@ -52,17 +52,8 @@ Para distribuir las claves públicas es mucho más habitual utilizar un servidor
 3. Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 5: Correo seguro con evolution/thunderbird (2 puntos)
 
-Ahora vamos a configurar nuestro cliente de correo electrónico para poder mandar correos cifrados, para ello:
-
-{% capture notice-text %}
-1. Configura el cliente de correo evolution con tu cuenta de correo habitual
-2. Añade a la cuenta las opciones de seguridad para poder enviar correos firmados con tu clave privada o cifrar los mensajes para otros destinatarios
-3. Envía y recibe varios mensajes con tus compañeros y comprueba el funcionamiento adecuado de GPG
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
-# Tarea 6: Cifrado asimétrico con openssl (2 puntos)
+# Tarea 5: Cifrado asimétrico con openssl (3 puntos)
 
 En esta ocasión vamos a cifrar nuestros ficheros de forma asimétrica utilizando la herramienta openssl.
 
