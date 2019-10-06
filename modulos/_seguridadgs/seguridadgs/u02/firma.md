@@ -31,3 +31,4 @@ https://www.taringa.net/+linux/llaves-repositorios-y-secure-apt-debian_137kl8
 
 Estudio del protocolo ssh
 https://www.hostinger.es/tutoriales/que-es-ssh
+http://es.tldp.org/Tutoriales/doc-ssh-intro/introduccion_ssh-0.2.pdf
