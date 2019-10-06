@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Cifrado asimétrico con gpg y openssl"
-permalink: /seguridadgm/u02/asimetrico.html
+permalink: /seguridadgs/u02/asimetrico.html
 ---
 
 # Cifrado asimétrico con gpg
