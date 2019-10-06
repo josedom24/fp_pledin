@@ -6,7 +6,7 @@ permalink: /serviciosgs/u03/enlaces.html
 **Protocolo HTTP**
 
 * [Introducción al protocolo HTTP](https://github.com/josedom24/serviciosgs_doc/raw/master/web/doc/Tema10_HTTP.pdf)
-* [Protocolo HTTP (Univ. Valencia) Vídeo 1](https://www.youtube.com/watch?v=wHXRmq75N_Y) Vídeo 1)
+* [Protocolo HTTP (Univ. Valencia) Vídeo 1](https://www.youtube.com/watch?v=wHXRmq75N_Y) 
 * [Protocolo HTTP (Univ. Valencia) Vídeo 2](https://www.youtube.com/watch?v=CPUbmKc3rtM)
 * [Qué son los MIME Types](http://www.webtaller.com/maletin/articulos/que-son-mime-types.php)
 * [Lista de cabeceras HTTP 1.1](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
