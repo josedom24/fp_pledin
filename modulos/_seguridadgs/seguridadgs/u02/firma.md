@@ -30,3 +30,4 @@ https://www.taringa.net/+linux/llaves-repositorios-y-secure-apt-debian_137kl8
 # Autenticación
 
 Estudio del protocolo ssh
+https://www.hostinger.es/tutoriales/que-es-ssh
