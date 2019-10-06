@@ -7,7 +7,7 @@ permalink: /seguridadgm/u02/asimetrico.html
 
 En esta práctica vamos a cifrar ficheros utilizando cifrado asimétrico utilizando el programa gpg. Puedes encontrar el resumen de comando en esta [chuleta](https://elbauldelprogramador.com/chuleta-de-comandos-para-gpg/) o buscar información en internet.
 
-## Generación de claves
+## Tarea 1: Generación de claves (1 punto)
 
 Los algoritmos de cifrado asimétrico utilizan dos claves para el cifrado y descifrado de mensajes. Cada persona involucrada (receptor y emisor) debe disponer, por tanto, de una pareja de claves pública y privada.
 Para generar nuestra pareja de claves con gpg utilizamos la opción `--gen-key`:
@@ -20,7 +20,7 @@ Para esta práctica no es necesario que indiquemos frase de paso en la generaci�
 3. Lista las claves privadas de tu almacén de claves.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Importar / exportar clave pública
+## Tarea 2: Importar / exportar clave pública (1 punto)
 
 Para enviar archivos cifrados a otras personas, necesitamos disponer de sus claves públicas. De la misma manera, si queremos que cierta persona pueda enviarnos datos cifrados, ésta necesita conocer nuestra clave pública. Para ello, podemos hacérsela llegar por email por ejemplo. Cuando recibamos una clave pública de otra persona, ésta deberemos incluirla en nuestro keyring o anillo de claves, que es el lugar donde se almacenan todas las claves públicas de las que disponemos. 
 
@@ -30,7 +30,7 @@ Para enviar archivos cifrados a otras personas, necesitamos disponer de sus clav
 3. Comprueba que las claves se han incluido correctamente en vuestro keyring.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Cifrado asimétrico con claves públicas
+## Tarea 3: Cifrado asimétrico con claves públicas (2 puntos)
 
 Tras realizar el ejercicio anterior, podemos enviar ya documentos cifrados utilizando la clave pública de los destinatarios del mensaje. 
 
@@ -42,7 +42,7 @@ Tras realizar el ejercicio anterior, podemos enviar ya documentos cifrados utili
 5. Para terminar, indica los comando necesarios para borrar las claves públicas y privadas que posees.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Exportar clave a un servidor público de claves PGP
+## Tarea 4: Exportar clave a un servidor público de claves PGP (2 puntos)
 
 Para distribuir las claves públicas es mucho más habitual utilizar un servidor específico para distribuirlas, que permite a los clientes añadir las claves públicas a sus anillos de forma mucho más sencilla.
 
@@ -52,7 +52,7 @@ Para distribuir las claves públicas es mucho más habitual utilizar un servidor
 3. Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Correo seguro con evolution/thunderbird
+## Tarea 5: Correo seguro con evolution/thunderbird (2 puntos)
 
 Ahora vamos a configurar nuestro cliente de correo electrónico para poder mandar correos cifrados, para ello:
 
@@ -62,7 +62,7 @@ Ahora vamos a configurar nuestro cliente de correo electrónico para poder manda
 3. Envía y recibe varios mensajes con tus compañeros y comprueba el funcionamiento adecuado de GPG
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-# Cifrado asimétrico con openssl
+# Tarea 6: Cifrado asimétrico con openssl (2 puntos)
 
 En esta ocasión vamos a cifrar nuestros ficheros de forma asimétrica utilizando la herramienta openssl.
 
