@@ -26,3 +26,5 @@ permalink: /serviciosgs/u03/enlaces.html
 **Servidor nginx**
 
 * [Documentación oficial de nginx](https://nginx.org/en/docs/)
+* [Virtual Hosting en nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
+
