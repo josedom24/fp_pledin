@@ -77,6 +77,7 @@ Para conseguir estos dos sitios virtuales debes seguir los siguientes pasos:
         a2ensite iesgn
         a2ensite departamentos
 
+	La creación de los enlaces simbólicos se puede hacer con la instrucción ``a2ensite nombre_fichero_configuracion``, para deshabilitar el sitio tenemos que borrar el enlace simbólico o usar la instrucción ``a2dissite nombre_fichero_configuracion``.
 
 4. Crea los directorios y los ficheros index.html necesarios en ``/var/www`` y reiniciamos el servicio.
 
