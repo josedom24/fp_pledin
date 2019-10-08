@@ -3,7 +3,7 @@ title: "Práctica: Servidor Web Apache 2.4"
 permalink: /serviciosgs/u03/practica_web_apache.html
 ---
 
-**(17 tareas - 21 puntos)(8 tareas obligatorias - 11 puntos)**
+**(17 tareas - 20 puntos)(8 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
 **Muestra al profesor: Tarea 4, Tarea 9 y Tarea 13**
 {: .notice--warning}
@@ -25,7 +25,7 @@ Los dos sitios web tendrán las siguientes características:
 * En el segundo sitio vamos a crear una página donde se pondrán noticias por parte de los departamento, el nombre de este sitio será ``departamentos.iesgn.org``, y su directorio base será ``/srv/www/departamentos``. En este sitio sólo tendremos una página inicial ``index.html``, dando la bienvenida a la página de los departamentos del instituto.
 
 {% capture notice-text %}
-* **Tarea 2 (3 punto)(Obligatorio):** Configura la resolución estática en los clientes y muestra el acceso a cada una de las páginas.
+* **Tarea 2 (2 puntos)(Obligatorio):** Configura la resolución estática en los clientes y muestra el acceso a cada una de las páginas.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Mapeo de URL
