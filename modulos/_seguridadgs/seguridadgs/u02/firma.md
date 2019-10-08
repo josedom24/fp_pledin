@@ -2,6 +2,8 @@
 title: "Práctica: Integridad, firmas y autenticación"
 permalink: /seguridadgs/u02/firma.html
 ---
+
+
 ## firmas
 
 https://www.gnupg.org/gph/es/manual/x75.html firmas del fingerprint de una clave pública para validarla
@@ -10,7 +12,9 @@ Autentificación de claves públicas https://cran.rstudio.com/web/packages/gpg/v
 
 https://www.infotics.es/articulo/manual-de-creaci%C3%B3n-y-mantenimiento-de-clave-gpg/
 
+## red de confianza
 
+https://www.gnupg.org/gph/es/manual/x75.html
 
 ## Tarea 5: Correo seguro con evolution/thunderbird (2 puntos)
 
