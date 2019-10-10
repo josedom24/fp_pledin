@@ -64,7 +64,7 @@ Puedes encontrar la ISO en la dirección: [https://cdimage.debian.org/debian-cd/
 
 ## Integridad y autenticidad (apt secure)
 
-Cuando nos instalamos un paquete en nuestra distribución linux tenemos que asegurarno que ese paquete es legítimo. Para conseguir este objetivo se utiliza criptografía asimétrica, y en el caso de Debian a este sistema se llama **apt secure**. Esto lo debemos tener en cuenta al utilizar los repositorios oficiales. Cuando añadamos nuevos repositorios tendremos que añadir las firmas necesarias para confiar en que los paquetes son legítimos y no han sido modificados.
+Cuando nos instalamos un paquete en nuestra distribución linux tenemos que asegurarnos que ese paquete es legítimo. Para conseguir este objetivo se utiliza criptografía asimétrica, y en el caso de Debian a este sistema se llama **apt secure**. Esto lo debemos tener en cuenta al utilizar los repositorios oficiales. Cuando añadamos nuevos repositorios tendremos que añadir las firmas necesarias para confiar en que los paquetes son legítimos y no han sido modificados.
 
 {% capture notice-text %}
 Busca información sobre **apt secure** y responde las siguientes preguntas:
