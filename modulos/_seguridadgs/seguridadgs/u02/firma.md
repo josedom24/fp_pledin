@@ -4,9 +4,13 @@ permalink: /seguridadgs/u02/firma.html
 ---
 
 
-## Firmas electrónicas
+## Tarea 1: Firmas electrónicas
 
-En este primer apartado vamos a trabajar con las firmas electrónicas, para ello:
+En este primer apartado vamos a trabajar con las firmas electrónicas, para ello te pueden ayudar los siguientes enlaces:
+
+* [Intercambiar claves](https://www.gnupg.org/gph/es/manual/x75.html)
+* [[Firmado de claves (Debian)](https://www.debian.org/events/keysigning.es.html)]
+* [Manual de creación y mantenimiento de clave GPG](https://www.infotics.es/articulo/manual-de-creaci%C3%B3n-y-mantenimiento-de-clave-gpg/)
 
 {% capture notice-text %}
 
@@ -24,7 +28,7 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
     * Escribe tu fingerprint en un papel y dárselo a tu compañero, para que puede descargarse tu clave pública.
     * Te debes bajar al menos tres claves públicas de compañeros. Firma estas claves.
     * Tu te debes asegurar que tu clave pública es firmada por al menos tres compañeros de la clase.
-    * Puedes seguir el esquema que se nos presenta en la siguiente página de Debian:  [Firmado de claves](https://www.debian.org/events/keysigning.es.html)
+    * Puedes seguir el esquema que se nos presenta en la siguiente página de Debian:  
     * Una vez que firmes una clave se la tendrás que devolver a su dueño, para que otra persona se la firme.
     * Cuando tengas las tres firmas sube la clave al servidor de claves y rellena tus datos en la tabla [Claves públicas PGP 2019-2020](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_PGP_2019-2020)
     * Asegurate que te vuelves a bajar las claves públicas de tus compañeros que tengan las tres firmas.
@@ -35,17 +39,7 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
         
     {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-https://www.gnupg.org/gph/es/manual/x75.html firmas del fingerprint de una clave pública para validarla
-
-Autentificación de claves públicas https://cran.rstudio.com/web/packages/gpg/vignettes/intro.html
-
-https://www.infotics.es/articulo/manual-de-creaci%C3%B3n-y-mantenimiento-de-clave-gpg/
-
-## red de confianza
-
-https://www.gnupg.org/gph/es/manual/x75.html
-
-## Tarea 5: Correo seguro con evolution/thunderbird (2 puntos)
+## Tarea 2: Correo seguro con evolution/thunderbird (2 puntos)
 
 Ahora vamos a configurar nuestro cliente de correo electrónico para poder mandar correos cifrados, para ello:
 
@@ -54,6 +48,20 @@ Ahora vamos a configurar nuestro cliente de correo electrónico para poder manda
 2. Añade a la cuenta las opciones de seguridad para poder enviar correos firmados con tu clave privada o cifrar los mensajes para otros destinatarios
 3. Envía y recibe varios mensajes con tus compañeros y comprueba el funcionamiento adecuado de GPG
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+
+## Integridad
+
+Vamos a descargarnos la ISO de debian, y posteriormente vamos a comprobar su integridad.
+
+Puedes encontrar la ISO en la dirección: [https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/).
+
+{% capture notice-text %}
+1. Para validar el contenido de la imagen CD, solo asegúrese de usar la herramienta apropiada para sumas de verificación. Para cada versión publicada existen archivos de suma de comprobación con algoritmos fuertes (SHA256 y SHA512); debería usar las herramientas `sha256sum` o `sha512sum` para trabajar con ellos. 
+2. Verifica que el contenido del hash que has utilizado no ha sido manipulado, usando la firma digital que encontrarás en el repositorio. Puedes encontrar una guía para realizarlo en este artículo: [How to verify an authenticity of downloaded Debian ISO images ](https://linuxconfig.org/how-to-verify-an-authenticity-of-downloaded-debian-iso-images)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+
 
 ## integridad
 
