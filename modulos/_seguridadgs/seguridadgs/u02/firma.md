@@ -12,6 +12,8 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
 * [Firmado de claves (Debian)](https://www.debian.org/events/keysigning.es.html)
 * [Manual de creación y mantenimiento de clave GPG](https://www.infotics.es/articulo/manual-de-creaci%C3%B3n-y-mantenimiento-de-clave-gpg/)
 
+### GPG
+
 {% capture notice-text %}
 
 1. Manda un documento y la firma electrónica del mismo a un compañero. Verifica la firma que tu has recibido.
@@ -38,6 +40,17 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
 6. Comprueba que puedes verificar sin "problemas" una firma recibida por una tercera problema en la que confía una persona en la que tu confías.
         
     {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+### openssl
+
+{% capture notice-text %}
+
+1. Selecciona un documento pdf y encríptalo y fírmalo. Envíalo a un compañero, que debe en primer lugar verificar la firma y posteriormente descifrar el documento.
+2. Realiza el mismo ejercicio pero obteniendo una firma ASCII.
+3. Ahora sólo queremos firmar un documento. Firma un documento. A continuación envía el documento original y la firma a un compañero para que verifique que el documento está firmado por tí.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 
 ## Tarea 2: Correo seguro con evolution/thunderbird (2 puntos)
 
