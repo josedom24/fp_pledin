@@ -74,6 +74,7 @@ Busca información sobre **apt secure** y responde las siguientes preguntas:
 3. En que fichero se guarda el anillo de claves que guarda la herramienta `apt-key`?
 4. ¿Qué contiene el archivo `Release` de un repositorio de paquetes?. ¿Y el archivo `Release.gpg`?. Puedes ver estos archivos en el repositorio `http://ftp.debian.org/debian/dists/Debian10.1/`. Estos archivos se descargan cuando hacemos un `apt update`.
 5. Explica el proceso por el cual el sistema nos asegura que los ficheros que estamos descargando son legítimos.
+6. añade de forma correcta el repositorio de virtualbox añadiendo la clave pública de virtualbox como se indica en la [documentación](https://www.virtualbox.org/wiki/Linux_Downloads).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 # Autenticación ssh
