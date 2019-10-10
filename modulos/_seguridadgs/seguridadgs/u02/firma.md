@@ -50,7 +50,7 @@ Ahora vamos a configurar nuestro cliente de correo electrónico para poder manda
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-## Integridad
+## Tarea 3: Integridad de ficheros
 
 Vamos a descargarnos la ISO de debian, y posteriormente vamos a comprobar su integridad.
 
@@ -62,7 +62,7 @@ Puedes encontrar la ISO en la dirección: [https://cdimage.debian.org/debian-cd/
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-## Integridad y autenticidad (apt secure)
+## Tarea 4: Integridad y autenticidad (apt secure)
 
 Cuando nos instalamos un paquete en nuestra distribución linux tenemos que asegurarnos que ese paquete es legítimo. Para conseguir este objetivo se utiliza criptografía asimétrica, y en el caso de Debian a este sistema se llama **apt secure**. Esto lo debemos tener en cuenta al utilizar los repositorios oficiales. Cuando añadamos nuevos repositorios tendremos que añadir las firmas necesarias para confiar en que los paquetes son legítimos y no han sido modificados.
 
@@ -77,7 +77,7 @@ Busca información sobre **apt secure** y responde las siguientes preguntas:
 6. añade de forma correcta el repositorio de virtualbox añadiendo la clave pública de virtualbox como se indica en la [documentación](https://www.virtualbox.org/wiki/Linux_Downloads).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-# Autentificación: ejemplo ssh
+## Tarea 5: Autentificación: ejemplo SSH
 
 Vamos a estudiar como la criptografía nos ayuda a cifrar las comunicaciones que hacemos utilizando el protocolo ssh, y cómo nos puede servir también para conseguir que un cliente se autentifique contra el servidor. Responde las siguientes cuestiones:
 
