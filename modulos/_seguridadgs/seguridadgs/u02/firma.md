@@ -9,7 +9,7 @@ permalink: /seguridadgs/u02/firma.html
 En este primer apartado vamos a trabajar con las firmas electrónicas, para ello te pueden ayudar los siguientes enlaces:
 
 * [Intercambiar claves](https://www.gnupg.org/gph/es/manual/x75.html)
-* [[Firmado de claves (Debian)](https://www.debian.org/events/keysigning.es.html)]
+* [Firmado de claves (Debian)](https://www.debian.org/events/keysigning.es.html)
 * [Manual de creación y mantenimiento de clave GPG](https://www.infotics.es/articulo/manual-de-creaci%C3%B3n-y-mantenimiento-de-clave-gpg/)
 
 {% capture notice-text %}
@@ -62,13 +62,21 @@ Puedes encontrar la ISO en la dirección: [https://cdimage.debian.org/debian-cd/
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
+## Integridad y autenticidad (apt secure)
 
-## integridad
+Cuando nos instalamos un paquete en nuestra distribución linux tenemos que asegurarno que ese paquete es legítimo. Para conseguir este objetivo se utiliza criptografía asimétrica, y en el caso de Debian a este sistema se llama **apt secure**. Esto lo debemos tener en cuenta al utilizar los repositorios oficiales. Cuando añadamos nuevos repositorios tendremos que añadir las firmas necesarias para confiar en que los paquetes son legítimos y no han sido modificados.
 
-apt secure
-https://www.taringa.net/+linux/llaves-repositorios-y-secure-apt-debian_137kl8
+{% capture notice-text %}
+Busca información sobre **apt secure** y responde las siguientes preguntas:
 
-# Autenticación
+1. ¿Qué software utiliza **apt secure** para realizar la criptografía asimétrica?
+2. ¿Para que sirve el comando `apt-key`? ¿Qué muestra el comando `apt-key list`?
+3. En que fichero se guarda el anillo de claves que guarda la herramienta `apt-key`?
+4. ¿Qué contiene el archivo `Release` de un repositorio de paquetes?. ¿Y el archivo `Release.gpg`?. Puedes ver estos archivos en el repositorio `http://ftp.debian.org/debian/dists/Debian10.1/`. Estos archivos se descargan cuando hacemos un `apt update`.
+5. Explica el proceso por el cual el sistema nos asegura que los ficheros que estamos descargando son legítimos.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+# Autenticación ssh
 
 Estudio del protocolo ssh
 https://www.hostinger.es/tutoriales/que-es-ssh
