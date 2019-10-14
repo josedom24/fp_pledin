@@ -31,17 +31,17 @@ Lo que indica la directiva no es ni el nombre de un archivo ni el de una carpeta
 
 A continuación creamos una sección directory para el directorio que queremos acceder por WebDav y activar el modo WebDav con la directiva ``dav on``. Además por seguridad se debe autentificar el acceso, por lo que quedaría parecido a esto:
 
-    DavLockDB /tmp/DavLock
-   ](Directory /var/www/webdav>
-            dav on
-            Options Indexes FollowSymLinks MultiViews
-            AllowOverride None
-            Require all granted
-            AuthType digest
-            AuthUserFile "/etc/apache2/digest.txt"
-            AuthName "Dominio"
-            Require valid-user
-   ](/Directory>
+    <Directory /var/www/webdav>
+        DavLockDB /tmp/DavLock
+        dav on
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride None
+        Require all granted
+        AuthType digest
+        AuthUserFile "/etc/apache2/digest.txt"
+        AuthName "Dominio"
+        Require valid-user
+    </Directory>
 
 Por último prueba un cliente WebDAV en Linux y otro en Windows y comprueba el funcionamiento.
 
