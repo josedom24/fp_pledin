@@ -4,7 +4,7 @@ permalink: /seguridadgs/u02/firma.html
 ---
 
 
-## Tarea 1: Firmas electrónicas
+## Tarea 1: Firmas electrónicas (3 puntos)
 
 En este primer apartado vamos a trabajar con las firmas electrónicas, para ello te pueden ayudar los siguientes enlaces:
 
@@ -41,16 +41,6 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
         
     {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-### openssl
-
-{% capture notice-text %}
-
-1. Selecciona un documento pdf y encríptalo y fírmalo. Envíalo a un compañero, que debe en primer lugar verificar la firma y posteriormente descifrar el documento.
-2. Realiza el mismo ejercicio pero obteniendo una firma ASCII.
-3. Ahora sólo queremos firmar un documento. Firma un documento. A continuación envía el documento original y la firma a un compañero para que verifique que el documento está firmado por tí.
-
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
 
 ## Tarea 2: Correo seguro con evolution/thunderbird (2 puntos)
 
@@ -63,7 +53,7 @@ Ahora vamos a configurar nuestro cliente de correo electrónico para poder manda
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-## Tarea 3: Integridad de ficheros
+## Tarea 3: Integridad de ficheros (1 punto)
 
 Vamos a descargarnos la ISO de debian, y posteriormente vamos a comprobar su integridad.
 
@@ -75,7 +65,7 @@ Puedes encontrar la ISO en la dirección: [https://cdimage.debian.org/debian-cd/
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-## Tarea 4: Integridad y autenticidad (apt secure)
+## Tarea 4: Integridad y autenticidad (apt secure) (2 puntos)
 
 Cuando nos instalamos un paquete en nuestra distribución linux tenemos que asegurarnos que ese paquete es legítimo. Para conseguir este objetivo se utiliza criptografía asimétrica, y en el caso de Debian a este sistema se llama **apt secure**. Esto lo debemos tener en cuenta al utilizar los repositorios oficiales. Cuando añadamos nuevos repositorios tendremos que añadir las firmas necesarias para confiar en que los paquetes son legítimos y no han sido modificados.
 
@@ -90,7 +80,7 @@ Busca información sobre **apt secure** y responde las siguientes preguntas:
 6. añade de forma correcta el repositorio de virtualbox añadiendo la clave pública de virtualbox como se indica en la [documentación](https://www.virtualbox.org/wiki/Linux_Downloads).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 5: Autentificación: ejemplo SSH
+## Tarea 5: Autentificación: ejemplo SSH (2 puntos)
 
 Vamos a estudiar como la criptografía nos ayuda a cifrar las comunicaciones que hacemos utilizando el protocolo ssh, y cómo nos puede servir también para conseguir que un cliente se autentifique contra el servidor. Responde las siguientes cuestiones:
 
