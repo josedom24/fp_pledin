@@ -14,3 +14,7 @@ El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la seguridad informática](u01)
 * [Criptografía](u02)
+
+<hr/>
+
+<a class="twitter-moment" href="https://twitter.com/i/moments/1183765559416119297?ref_src=twsrc%5Etfw">Seguridad</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
