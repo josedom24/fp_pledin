@@ -34,7 +34,4 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 ## Prácticas
 
 * [Práctica: Servidor Web Apache 2.4](practica_web_apache.html)
-
-<!--
 * [Práctica: Servidor Web Nginx](practica_web_nginx.html)
--->
