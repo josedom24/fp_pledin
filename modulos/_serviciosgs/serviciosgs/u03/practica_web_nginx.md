@@ -9,7 +9,7 @@ permalink: /serviciosgs/u03/practica_web_nginx.html
 {: .notice--warning}
 
 {% capture notice-text %}
-* **Tarea 1 (1 punto)(Obligatorio):** Crea un escenario Vagrant con una máquina con una red pública. Instala el servidor web nginx en la máquina. Modifica la página index.html que viene por defecto y accede a ella desde un navegador. Entrega una captura de pantalla accediendo a ella.
+* **Tarea 1 (1 punto)(Obligatorio):** Crea un escenario Vagrant o utiliza una máquina del cloud con una red pública. Instala el servidor web nginx en la máquina. Modifica la página index.html que viene por defecto y accede a ella desde un navegador. Entrega una captura de pantalla accediendo a ella.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Virtual Hosting
