@@ -3,7 +3,7 @@ title: "Práctica: Servidor Web Nginx"
 permalink: /serviciosgs/u03/practica_web_nginx.html
 ---
 
-**(12 tareas - 13 puntos)(5 tareas obligatorias - 7 puntos)**
+**(11 tareas - 10 puntos)(5 tareas obligatorias - 5 puntos)**
 {: .notice--warning}
 **Muestra al profesor: Tarea 4, Tarea 9**
 {: .notice--warning}
@@ -25,7 +25,7 @@ Los dos sitios web tendrán las siguientes características:
 * En el segundo sitio vamos a crear una página donde se pondrán noticias por parte de los departamento, el nombre de este sitio será ``departamentos.iesgn.org``, y su directorio base será ``/srv/www/departamentos``. En este sitio sólo tendremos una página inicial ``index.html``, dando la bienvenida a la página de los departamentos del instituto.
 
 {% capture notice-text %}
-* **Tarea 2 (3 punto)(Obligatorio):** Configura la resolución estática en los clientes y muestra el acceso a cada una de las páginas.
+* **Tarea 2 (1 punto)(Obligatorio):** Configura la resolución estática en los clientes y muestra el acceso a cada una de las páginas.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Mapeo de URL
@@ -50,7 +50,6 @@ Cambia la configuración del sitio web ``www.iesgn.org`` para que se comporte de
 ## IPv6
 
 {% capture notice-text %}
-* **Tarea 10 (1 punto)**: Comprueba que el servidor web con la configuración por defecto está escuchando por el puerto 80 en ipv6.
-* **Tarea 11 (1 punto)**: Configura la máquina para que tenga una ipv6 global. Activa el virtualhost por defecto y accede a la página principal utilizando la ipv6 global que tiene asignada.
-* **Tarea 12 (1 punto)**: Configura la resolución estática para acceder a los virtualhost utilizando ipv6.
+* **Tarea 10 (1 punto)**: Comprueba que el servidor web con la configuración por defecto está escuchando por el puerto 80 en ipv6. Configura la máquina para que tenga una ipv6 global. Activa el virtualhost por defecto y accede a la página principal utilizando la ipv6 global que tiene asignada.
+* **Tarea 11 (1 punto)**: Configura la resolución estática para acceder a los virtualhost utilizando ipv6.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
