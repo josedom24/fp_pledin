@@ -81,6 +81,7 @@ Si queremos usar la extensión do en vez de html podríamos usar este ``.htacces
 
     Options FollowSymLinks
     RewriteEngine On
+    RewriteBase /
     RewriteRule ^(.+).do$ $1.html [nc]
 
 Esto puede ser penalizado por los motores de búsqueda ya que podemos acceder a la misma página con dos URL distintas, para solucionar esto podemos hacer una redirección:
