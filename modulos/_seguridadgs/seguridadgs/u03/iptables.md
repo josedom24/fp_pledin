@@ -76,7 +76,6 @@ Muestra un listado de todas las reglas de una cadena, o de todas ellas. Las opci
 * `-v`: información detallada de una regla
 * `-N`: crear una nueva cadena
 * `-X`: Borrar una cadena vacía
-* `-Z`: Poner los contadores a 0
  
 #### Borrado de contadores:
 
