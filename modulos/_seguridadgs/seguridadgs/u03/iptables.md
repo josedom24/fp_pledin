@@ -83,13 +83,13 @@ Muestra un listado de todas las reglas de una cadena, o de todas ellas. Las opci
 
 Borra los contadores de una determinada chain, o de todas ellas. Es habitual colocar este comando al principio de todos los script de configuración, para borrar las reglas que existieran de antemano. Se puede combinar con la opción -L para mostrar la información justo antes de borrarla.
  
-#### Borrado de reglas:
+#### Borrado de todas las reglas:
 
     iptables [-t tabla] -F [chain]
 
 Borra las reglas de una determinada chain o de todas ellas.
  
-#### Creado y borrado de reglas:
+#### Creación y borrado de reglas:
 
     iptables [-t table] -A chain rule-spec
     iptables [-t table] -I chain [rulenum] rule-spec
@@ -160,20 +160,22 @@ Existen otros target diferentes a DROP y ACCEPT que permiten que nuestro cortafu
  
 * MASQUERADE: sólo es válida en la chain `POSTROUTING`. Indica que la dirección origen del paquete (y de todos los de esa conexión) será cambiada por la IP local de esta máquina. Muy útil para IP dinámica (es lo que se conoce como NAT)
 
-Ejemplo:
+    Ejemplo:
 
-    iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+        iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
  
 * SNAT: sólo es válida en la chain POSTROUTING. Indica que la dirección y puerto origen del paquete (y de todos los de esa conexión) sea modificada según se especifica con la opción `--to-source`. El target será `SNAT` (en lugar de `MASQUERADE`) cuando tengamos una IP fija.
 
-Ejemplo:
+    Ejemplo:
 
-    iptables -t nat -A POSTROUTING -o eth1 -j SNAT --to-source 189.29.35.15
+        iptables -t nat -A POSTROUTING -o eth1 -j SNAT --to-source 189.29.35.15
  
-* DNAT: sólo es válida en las chains `PREROUTING` y `OUTPUT`. Cambia la dirección IP destino (y de todos los futuros de esta misma conexión) por el especificado con la opción `--to-destination`. Es lo que se conoce como 'abrir el puerto' en el router.
-Por ejemplo, si la máquina 192.168.1.2 de nuestra red local aloja un servidor web que queremos que sea accesible desde la red externa:
+* DNAT: sólo es válida en las chains `PREROUTING` y `OUTPUT`. Cambia la dirección IP destino (y de todos los futuros de esta misma conexión) 
+por el especificado con la opción `--to-destination`. Es lo que se conoce como 'abrir el puerto' en el router.
 
-    iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination 192.168.1.2:80
+    Por ejemplo, si la máquina 192.168.1.2 de nuestra red local aloja un servidor web que queremos que sea accesible desde la red externa:
+
+        iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination 192.168.1.2:80
 
 ## DMZ, zona desmilitarizada
 
