@@ -20,8 +20,9 @@ permalink: /seguridadgs/u02/index.html
 * [OpenSSL](https://www.openssl.org/)
 * [Vídeo SSL/TLS](https://www.youtube.com/watch?v=xkipgsvlb68)
 * [HTTPS en Apache2](https://plataforma.josedomingo.org/pledin/cursos/servicios2011/files/https.pdf)
+* [Esquema: Ficheros HTTPS](https://plataforma.josedomingo.org/pledin/cursos/servicios2011/#3--servidor-apache-m%C3%B3dulos-https)
 * [Let's Enrypt](https://letsencrypt.org/es/)
-
+* [Comparador de Certificados SSL](https://www.dondominio.com/products/ssl/business-validation/)
 
 ## Prácticas
 
