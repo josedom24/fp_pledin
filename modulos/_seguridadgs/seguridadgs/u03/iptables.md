@@ -73,9 +73,10 @@ Vamos a ir explicando, a continuación, los comandos básicos de configuración 
 
 Muestra un listado de todas las reglas de una cadena, o de todas ellas. Las opciones disponibles son:
 
-* `-v`: información detallada
-* `-n`: salida numérica
-* `-x`: valor exacto de cada número
+* `-v`: información detallada de una regla
+* `-N`: crear una nueva cadena
+* `-X`: Borrar una cadena vacía
+* `-Z`: Poner los contadores a 0
  
 #### Borrado de contadores:
 
