@@ -154,6 +154,45 @@ Los comandos que deberíamos usar para conseguir estos objetivos son los siguien
     iptables -t filter -A FORWARD -p tcp -s 192.168.1.2 -d 192.168.2.1 -j ACCEPT
     iptables -t filter -A FORWARD -p tcp -s 192.168.2.1 -d 192.168.1.2 -j ACCEPT
 
+## Extensiones de las reglas
+
+Con las opciones vistas hasta el momento podemos controlar los parámetros más básicos de la cabecera IP del paquete. Puede ser necesario un control más estricto, por ello existen una serie de extensiones que permiten utilizar opciones nuevas:
+
+* `-m extensión`: activa una extensión para poder especificar los parámetros del paquete.
+ 
+Veamos algunas extensiones de las reglas:
+
+* `tcp`: añade las siguientes opciones
+
+    * `--sport [!] port[:port]`: especifica el puerto o rango de puertos origen
+    * `--dport [!] port[:port]`: especifica el puerto o rango de puertos destino
+    * `[!] --syn`: la regla concordará sólo con los paquetes cuyo bit SYN=1 y los flags ACK y FIN valgan 0. Los datagramas con estos valores se utilizan para abrir las conexiones TCP
+
+* `udp`: añade las siguientes opciones:
+
+    * `--sport [!] port[:port]`: especifica el puerto o rango de puertos origen
+    * `--dport [!] port[:port]`: especifica el puerto o rango de puertos destino
+
+    **Ejemplo**: supongamos que quieres crear una regla para permitir el paso a las peticiones a un servidor web que tiene la IP 172.16.0.254.
+
+        iptables -A FORWARD -p tcp -d 172.16.0.254 --dport 80 -j ACCEPT
+
+* `icmp`: añade la opción `--icmp-type tipo`, que indica qué tipo ICMP debe tener el paquete (echo-request, echo-reply, network-unreachable...)
+* `mac`: añade la opción `--mac-source [!] dir_mac`, que especifica la dirección MAC que debe tener el paquete.
+
+    **Ejemplo**: quieres permitir que se realice ping al cortafuegos desde la máquina del administrador, que tiene IP dinámica y MAC 00:21:00:16:82:9f 
+
+        iptables -A INPUT -p icmp --icmp-type echo-request -m mac --mac-source 00:21:00:16:82:9f -j ACCEPT  
+        iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
+
+
+ * `state`: Añade la opción `--state valor`, que indica el estado en el que debe estar la conexión correspondiente a dicho paquete. Los tipos de estado principales son:
+
+    * `NEW`: el paquete corresponde a una conexión nueva
+    * `ESTABLISHED`: el paquete está asociado a una conexión ya establecida
+    * `RELATED`: el paquete corresponde a una conexión nueva, pero relacionada con una que ya está establecida (como un canal de datos FTP o un error de ICMP)
+
+
 ## Extensiones de target
  
 Existen otros target diferentes a DROP y ACCEPT que permiten que nuestro cortafuegos realice otras funciones a parte del filtrado de paquetes:
