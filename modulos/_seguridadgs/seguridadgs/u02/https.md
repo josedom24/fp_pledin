@@ -50,7 +50,7 @@ El alumno que hace de Autoridad Certificadora deberá entregar una documentació
 1. Crear su autoridad certificadora (generar el certificado digital de la CA).
 2. Debe recibir el fichero CSR (Solicitud de Firmar un Certificado) de su compañero, debe firmarlo y enviar el certificado generado a su compañero.
 3. ¿Qué otra información debe aportar a tu compañero para que éste configure de forma adecuada su servidor web con el certificado generado?
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 El alumno que hace de administrador del servidor web, debe entregar una documentación que describa los siguientes puntos:
 
@@ -60,7 +60,7 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 3. Envía la solicitud de firma a la entidad certificadora (su compañero).
 4. Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.
 5. Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Certificados digital con CAcert
 
@@ -77,4 +77,4 @@ Los pasos que hay que dar para utilizar un certificado X.509 emitido por CAcert 
 
 {% capture notice-text %}
 Escribe una documentación donde expliques el proceso y muestra al profesor su funcionamiento.
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
