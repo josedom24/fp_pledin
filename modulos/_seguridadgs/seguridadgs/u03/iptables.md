@@ -11,7 +11,7 @@ Para comprender el funcionamiento de un cortafuegos, podemos pensar en cómo des
 
 En la siguiente figura se representa el esquema de una red de ordenadores que utiliza un cortafuegos para proteger la red local de la red externa:
 
-![iptables](img/iiptables.png)
+![iptables](img/iptables1.png)
 
 Se pueden construir cortafuegos más sofisticados, como veremos a lo largo del artículo, que incluyen equipos separados del resto de la red local (**DMZ: Zona Desmilitarizada**) para aumentar aún más la seguridad. De hecho, en las grandes corporaciones, es posible encontrar instalaciones con más de un cortafuegos, que separan los equipos de diferentes áreas de la empresa.
  
