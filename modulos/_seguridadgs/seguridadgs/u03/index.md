@@ -5,6 +5,7 @@ permalink: /seguridadgs/u03/index.html
 
 ## Teoría
 
+* [Presentación: iptables](https://docs.google.com/presentation/d/e/2PACX-1vSDP6RNlDWZV2JnBES3u-IPGf4_F8TNYzOjKiESMAcWxS741Ise6kGCmTawhfAn0Q34qB8MHSJ2DRdu/pub?start=false&loop=false&delayms=3000)
 * [iptables, un manual sencillo](iptables.html)
 * [Desde lo alto del Cerro - Cortafuegos con iptables](https://albertomolina.wordpress.com/2011/12/08/cortafuegos-con-iptables/)
 * [Desde lo alto del Cerro - NAT con iptables](https://albertomolina.wordpress.com/2009/01/09/nat-con-iptables/)
