@@ -18,6 +18,10 @@ permalink: /seguridadgs/u02/index.html
 
 * [The GNU Privacy Guard](https://gnupg.org/)
 * [OpenSSL](https://www.openssl.org/)
+* [Vídeo SSL/TLS](https://www.youtube.com/watch?v=xkipgsvlb68)
+* [HTTPS en Apache2](https://plataforma.josedomingo.org/pledin/cursos/servicios2011/files/https.pdf)
+* [Let's Enrypt](https://letsencrypt.org/es/)
+
 
 ## Prácticas
 
