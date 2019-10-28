@@ -192,6 +192,7 @@ Veamos algunas extensiones de las reglas:
     * `ESTABLISHED`: el paquete está asociado a una conexión ya establecida
     * `RELATED`: el paquete corresponde a una conexión nueva, pero relacionada con una que ya está establecida (como un canal de datos FTP o un error de ICMP)
 
+* `multiport`: Nos permite indicar con las opciones `--sports` y `--dports` varios puertos.
 
 ## Extensiones de target
  
