@@ -66,7 +66,9 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 
 El lema de **CAcert** es *Free digital certificates for everyone* y es que la utilización de certificados emitidos por CA comerciales no es posible para todos los sitios de Internet debido a su coste, lo que los limita su uso a transacciones económicas o sitios con datos relevantes. **CAcert** es una organización sin ánimo de lucro que mantiene una infraestructura equivalente a una CA comercial aunque con ciertas limitaciones.
 
-Los pasos que hay que dar para utilizar un certificado X.509 emitido por CAcert son los siguientes:
+Vamos a cambiar el certificado de la página que has desarrollado en el punto anterior para usar el nuevo certificado emitido por **CAcert**.
+
+Los pasos que hay que dar para utilizar un certificado X.509 emitido por **CAcert** son los siguientes:
 
 1. Darse de alta como usuario en el sitio web.
 2. Dar de alta el dominio para el que queremos obtener el certificado. (opción Domains -> Add)
