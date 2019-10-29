@@ -49,19 +49,18 @@ resources:
       network: { get_resource: red1 }
       port_security_enabled: False
       security_groups: []
+      
   r1_red1:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red1 }
-      port_security_enabled: False
-      security_groups: []
+      
       
   r1_red2:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red2 }
-      port_security_enabled: False
-      security_groups: []
+      
       
   r1_network_ext:
     type: OS::Neutron::Port
@@ -74,6 +73,8 @@ resources:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red2 }
+      port_security_enabled: False
+      security_groups: []
 
   pc1:
     type: OS::Nova::Server
