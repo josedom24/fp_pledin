@@ -76,7 +76,7 @@ Los pasos que hay que dar para utilizar un certificado X.509 emitido por **CAcer
 4. Dar de alta el certificado de un servidor mediante una solicitud de firma certificado (CSR).
 5. Configurar el servidor web con el certificado X.509 emitido por la CA.
 6. Al acceder a la página debemos evitar el mensaje de error de "Conexión segura fallida".
-
+7. ¿Qué fecha de caducidad tiene el certificado? ¿Qué tendrás que hacer cuando termine ese tiempo?
 {% capture notice-text %}
 Escribe una documentación donde expliques el proceso y muestra al profesor su funcionamiento.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

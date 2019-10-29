@@ -67,8 +67,7 @@ resources:
     type: OS::Neutron::Port
     properties:
       network: {get_param: red_externa}
-      port_security_enabled: False
-      security_groups: []
+      
       
 
   pc2_red2:
