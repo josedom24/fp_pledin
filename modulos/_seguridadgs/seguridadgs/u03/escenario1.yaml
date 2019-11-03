@@ -44,10 +44,9 @@ resources:
         - { port: { get_resource: r1_network_ext } }
       user_data: |
           #!/bin/bash -v
-           
-        
+          apt update
+          apt install -y apache2 mariadb-server
 
- 
   r1_ip:
     type: OS::Neutron::FloatingIP
     properties:

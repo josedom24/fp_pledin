@@ -1,0 +1,98 @@
+heat_template_version: newton
+
+description: 1 router,  1 lan
+
+parameters:
+  flavor:
+    type: string
+    default: "m1.mini"
+  image:
+    type: string
+    default: "bf688ff8-549e-4de6-8e96-13b10e85f1fe"
+  red_externa:
+    type: string
+    description: red para conectarse a internet
+    constraints:
+      - custom_constraint: neutron.network
+
+  key_name:
+    type: string
+    description: SSH key pair
+    constraints:
+      - custom_constraint: nova.keypair
+  
+resources:
+
+  red1:
+    type: OS::Neutron::Net
+    properties:
+      name: "Red 1"
+  
+  subnet1:
+    type: OS::Neutron::Subnet
+    properties:
+      network: { get_resource: red1 }
+      cidr: 192.168.100.0/24
+      dns_nameservers: [192.168.202.2]
+
+  pc1_red1:
+    type: OS::Neutron::Port
+    properties:
+      network: { get_resource: red1 }
+      port_security_enabled: False
+      fixed_ips: [{"ip_address": "192.168.100.10", "subnet": { get_resource: subnet1 }}]
+      security_groups: []
+      
+  r1_red1:
+    type: OS::Neutron::Port
+    properties:
+      network: { get_resource: red1 }
+      port_security_enabled: False
+      fixed_ips: [{"ip_address": "192.168.100.1", "subnet": { get_resource: subnet1 }}]
+      security_groups: []
+  
+  
+  r1_network_ext:
+    type: OS::Neutron::Port
+    properties:
+      network: {get_param: red_externa}
+      device_owner: "compute:nova"
+      port_security_enabled: False
+      security_groups: []
+  
+  r1:
+    type: OS::Nova::Server
+    properties:
+      name: "Router 1"
+      flavor: { get_param: flavor }
+      image: { get_param: image }
+      key_name: { get_param: key_name }
+      networks:
+        - { port: { get_resource: r1_network_ext } }
+        - { port: { get_resource: r1_red1 } }
+      user_data: |
+          #!/bin/bash -v
+          sudo ip r del default
+          sudo ip r add default via 10.0.0.1
+    
+            
+        
+
+ 
+  r1_ip:
+    type: OS::Neutron::FloatingIP
+    properties:
+      floating_network: ext-net
+      port_id: { get_resource: r1_network_ext  }
+  pc1:
+    type: OS::Nova::Server
+    properties:
+      name: "PC 1"
+      flavor: { get_param: flavor }
+      image: { get_param: image }
+      key_name: { get_param: key_name }
+      networks:
+        - { port: { get_resource: pc1_red1 } }
+  
+outputs:
+  
