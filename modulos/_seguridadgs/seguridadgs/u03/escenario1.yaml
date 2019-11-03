@@ -1,0 +1,58 @@
+heat_template_version: newton
+
+description: 1 equipo
+
+parameters:
+  flavor:
+    type: string
+    default: "m1.mini"
+  image:
+    type: string
+    default: "bf688ff8-549e-4de6-8e96-13b10e85f1fe"
+  red_externa:
+    type: string
+    description: red para conectarse a internet
+    constraints:
+      - custom_constraint: neutron.network
+
+  key_name:
+    type: string
+    description: SSH key pair
+    constraints:
+      - custom_constraint: nova.keypair
+  
+resources:
+ 
+  
+
+  r1_network_ext:
+    type: OS::Neutron::Port
+    properties:
+      network: {get_param: red_externa}
+      device_owner: "compute:nova"
+      port_security_enabled: False
+      security_groups: []
+  
+  r1:
+    type: OS::Nova::Server
+    properties:
+      name: "maquina"
+      flavor: { get_param: flavor }
+      image: { get_param: image }
+      key_name: { get_param: key_name }
+      networks:
+        - { port: { get_resource: r1_network_ext } }
+      user_data: |
+          #!/bin/bash -v
+           
+        
+
+ 
+  r1_ip:
+    type: OS::Neutron::FloatingIP
+    properties:
+      floating_network: ext-net
+      port_id: { get_resource: r1_network_ext  }
+
+outputs:
+  

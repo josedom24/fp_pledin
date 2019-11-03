@@ -27,55 +27,93 @@ resources:
     type: OS::Neutron::Net
     properties:
       name: "Red 1"
-  red2:
-    type: OS::Neutron::Net
-    properties:
-      name: "Red 2"
-
+  
   subnet1:
     type: OS::Neutron::Subnet
     properties:
       network: { get_resource: red1 }
-      cidr: 10.0.100.0/24
-  subnet2:
-    type: OS::Neutron::Subnet
-    properties:
-      network: { get_resource: red2 }
-      cidr: 10.0.110.0/24
+      cidr: 192.168.100.0/24
+      dns_nameservers: [192.168.202.2]
 
   pc1_red1:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red1 }
       port_security_enabled: False
+      fixed_ips: [{"ip_address": "192.168.100.10", "subnet": { get_resource: subnet1 }}]
       security_groups: []
       
   r1_red1:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red1 }
-      
-      
-  r1_red2:
-    type: OS::Neutron::Port
+      port_security_enabled: False
+      fixed_ips: [{"ip_address": "192.168.100.1", "subnet": { get_resource: subnet1 }}]
+      security_groups: []
+  
+  red2:
+    type: OS::Neutron::Net
+    properties:
+      name: "Red 2"
+  
+  subnet2:
+    type: OS::Neutron::Subnet
     properties:
       network: { get_resource: red2 }
-      
-      
-  r1_network_ext:
-    type: OS::Neutron::Port
-    properties:
-      network: {get_param: red_externa}
-      
-      
+      cidr: 192.168.200.0/24
+      dns_nameservers: [192.168.202.2]
 
   pc2_red2:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red2 }
       port_security_enabled: False
+      fixed_ips: [{"ip_address": "192.168.200.10", "subnet": { get_resource: subnet2 }}]
       security_groups: []
+      
+  r1_red2:
+    type: OS::Neutron::Port
+    properties:
+      network: { get_resource: red2 }
+      port_security_enabled: False
+      fixed_ips: [{"ip_address": "192.168.200.1", "subnet": { get_resource: subnet2 }}]
+      security_groups: []
+  
+  
 
+  r1_network_ext:
+    type: OS::Neutron::Port
+    properties:
+      network: {get_param: red_externa}
+      device_owner: "compute:nova"
+      port_security_enabled: False
+      security_groups: []
+  
+  r1:
+    type: OS::Nova::Server
+    properties:
+      name: "Router 1"
+      flavor: { get_param: flavor }
+      image: { get_param: image }
+      key_name: { get_param: key_name }
+      networks:
+        - { port: { get_resource: r1_network_ext } }
+        - { port: { get_resource: r1_red1 } }
+        - { port: { get_resource: r1_red2 } }
+      user_data: |
+          #!/bin/bash -v
+          sudo ip r del default
+          sudo ip r add default via 10.0.0.1
+    
+            
+        
+
+ 
+  r1_ip:
+    type: OS::Neutron::FloatingIP
+    properties:
+      floating_network: ext-net
+      port_id: { get_resource: r1_network_ext  }
   pc1:
     type: OS::Nova::Server
     properties:
@@ -85,19 +123,6 @@ resources:
       key_name: { get_param: key_name }
       networks:
         - { port: { get_resource: pc1_red1 } }
-        
-  r1:
-    type: OS::Nova::Server
-    properties:
-      name: "Router 1"
-      flavor: { get_param: flavor }
-      image: { get_param: image }
-      key_name: { get_param: key_name }
-      networks:
-        - { port: { get_resource: r1_red1 } }
-        - { port: { get_resource: r1_red2 } }
-        - { port: { get_resource: r1_network_ext } }
-
   pc2:
     type: OS::Nova::Server
     properties:
@@ -107,17 +132,6 @@ resources:
       key_name: { get_param: key_name }
       networks:
         - { port: { get_resource: pc2_red2 } }
-  
-  r1_ip:
-    type: OS::Neutron::FloatingIP
-    properties:
-      floating_network: ext-net
-      port_id: { get_resource: r1_network_ext  }
 
 outputs:
-  mac_r1_red1:
-    description: "Router 1 - Red 1"
-    value: { get_attr: [r1_red1, mac_address] } 
-  mac_r1_red2:
-    description: "Router 1 - Red 2"
-    value: { get_attr: [r1_red2, mac_address] } 
+  
