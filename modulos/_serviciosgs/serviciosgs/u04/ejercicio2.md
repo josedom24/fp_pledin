@@ -26,6 +26,6 @@ Finalmente reiniciamos el servicio.
 	* La dirección IP de ``www.josedomingo.org``	
 	* El nombre de la ip `192.168.1.200`
 	* ¿Te devuelve el nombre del servidor DNS con autoridad para la zona `iesgn.com`?
-
+3. Demuestra que dnsmasq en us servidor web cache
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
