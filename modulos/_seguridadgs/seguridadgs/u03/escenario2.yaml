@@ -34,6 +34,7 @@ resources:
       network: { get_resource: red1 }
       cidr: 192.168.100.0/24
       dns_nameservers: [192.168.202.2]
+      gateway_ip: ""
 
   pc1_red1:
     type: OS::Neutron::Port
@@ -48,7 +49,7 @@ resources:
     properties:
       network: { get_resource: red1 }
       port_security_enabled: False
-      fixed_ips: [{"ip_address": "192.168.100.1", "subnet": { get_resource: subnet1 }}]
+      fixed_ips: [{"ip_address": "192.168.100.2", "subnet": { get_resource: subnet1 }}]
       security_groups: []
   
   
@@ -63,7 +64,7 @@ resources:
   r1:
     type: OS::Nova::Server
     properties:
-      name: "Router 1"
+      name: "router-fw"
       flavor: { get_param: flavor }
       image: { get_param: image }
       key_name: { get_param: key_name }
@@ -87,12 +88,15 @@ resources:
   pc1:
     type: OS::Nova::Server
     properties:
-      name: "PC 1"
+      name: "lan"
       flavor: { get_param: flavor }
       image: { get_param: image }
       key_name: { get_param: key_name }
       networks:
         - { port: { get_resource: pc1_red1 } }
+      user_data: |
+          #!/bin/bash -v
+          sudo ip r add default via 192.168.100.2
   
 outputs:
   
