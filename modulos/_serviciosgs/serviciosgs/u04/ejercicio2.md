@@ -22,7 +22,7 @@ Finalmente reiniciamos el servicio.
 1. Configura los clientes para que utilicen el servidor DNS que has instalado.
 2. Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:	
 
-	* Dirección de  ``www.iesgn.org``, ``ftp.iesgn.org``
+	* Dirección de  ``www.iesgn.com``, ``ftp.iesgn.com``
 	* La dirección IP de ``www.josedomingo.org``	
 	* El nombre de la ip `192.168.1.200`
 	* ¿Te devuelve el nombre del servidor DNS con autoridad para la zona `iesgn.com`?
