@@ -40,7 +40,7 @@ permalink: /seguridadgs/u02/https.html
 Antes de hacer esta práctica vamos a crear una página web (puedes usar una página estática o instalar una aplicación web) en un servidor web apache2 que se acceda con el nombre `tunombre.iesgn.org`.
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
-### Certificado autofirmado
+### Tarea 1: Certificado autofirmado
 
 Esta práctica la vamos a realizar con un compañero. En un primer momento un alumno creará una **Autoridad Certficadora** y firmará un certificado para la página del otro alumno. Posteriormente se volverá a realizar la práctica con los roles cambiados.
 
@@ -62,7 +62,7 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 5. Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-### Certificados digital con CAcert
+### Tarea 2: Certificados digital con CAcert
 
 El lema de **CAcert** es *Free digital certificates for everyone* y es que la utilización de certificados emitidos por CA comerciales no es posible para todos los sitios de Internet debido a su coste, lo que los limita su uso a transacciones económicas o sitios con datos relevantes. **CAcert** es una organización sin ánimo de lucro que mantiene una infraestructura equivalente a una CA comercial aunque con ciertas limitaciones.
 
