@@ -49,7 +49,7 @@ El alumno que hace de Autoridad Certificadora deberá entregar una documentació
 {% capture notice-text %}
 1. Crear su autoridad certificadora (generar el certificado digital de la CA).
 2. Debe recibir el fichero CSR (Solicitud de Firmar un Certificado) de su compañero, debe firmarlo y enviar el certificado generado a su compañero.
-3. ¿Qué otra información debe aportar a tu compañero para que éste configure de forma adecuada su servidor web con el certificado generado?
+3. ¿Qué otra información debes aportar a tu compañero para que éste configure de forma adecuada su servidor web con el certificado generado?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 El alumno que hace de administrador del servidor web, debe entregar una documentación que describa los siguientes puntos:
