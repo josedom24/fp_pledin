@@ -45,7 +45,7 @@ resources:
       user_data: |
           #!/bin/bash -v
           apt update
-          apt install -y apache2 mariadb-server
+          apt install -y apache2 curl dnsutils
 
   r1_ip:
     type: OS::Neutron::FloatingIP
