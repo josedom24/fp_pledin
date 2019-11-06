@@ -115,3 +115,10 @@ Editamos un fichero y añadimos todas las reglas anteriores:
 
     iptables -A OUTPUT -o eth0 -p tcp --sport 80 -j ACCEPT
     iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
+
+
+## Ejercicios
+
+1. Permite poder hacer conexiones ssh al exterior.
+2. Deniega el acceso a tu servidor web desde una ip concreta.
+3. Permitir hacer ping a máquinas externas.
