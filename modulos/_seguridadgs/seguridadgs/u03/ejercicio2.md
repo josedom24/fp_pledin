@@ -7,7 +7,7 @@ Vamos a realizar los primeros pasos para implementar un cortafuegos que protege 
 
 ## Esquema de red
 
-Vamos a utilizar dos máquinas en openstack, que vamos a crear con la receta heat: [escenario2.yaml](escenario2.yaml). La receta heat ha deshabilitado el cortafuego que nos ofrece openstack (todos los puertos de todos los protocolos están abiertos). Una máquina (que tiene asignada una IP flotante) hara de cortafuegos, y la otra será una máquina de la red interna 192.168.100.0/24.
+Vamos a utilizar dos máquinas en openstack, que vamos a crear con la receta heat: [escenario2.yaml](escenario2.yaml). La receta heat ha deshabilitado el cortafuego que nos ofrece openstack (todos los puertos de todos los protocolos están abiertos). Una máquina (que tiene asignada una IP flotante) hará de cortafuegos, y la otra será una máquina de la red interna 192.168.100.0/24.
 
 ## Limpieza de las reglas previas
 
