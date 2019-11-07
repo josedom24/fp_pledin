@@ -107,10 +107,10 @@ Y necesitamos configurar una regla DNAT:
 
 Editamos un fichero y añadimos todas las reglas anteriores:
 
-    
 
 ## Ejercicios
 
 1. Permite realizar conexiones ssh desde los equipos de la LAN
-2. Permite poder hacer conexiones ssh desde exterior a la LAN
-3. ¿Tendría resolución de nombres y navegación web el cortafuego? ¿Sería necesario? ¿Tendráin que estar esas de reglas de forma constante en el cortafuego?
+2. Instala un servidor de correos en la máquina de la LAN. Permite el acceso desde el exterior y desde el cortafuego al servidor de correos. Para probarlo puedes ejecutar un `telnet` al puerto 25 tcp.
+3. Permite poder hacer conexiones ssh desde exterior a la LAN
+4. ¿Tendría resolución de nombres y navegación web el cortafuego? ¿Sería necesario? ¿Tendrían que estar esas de reglas de forma constante en el cortafuego?
