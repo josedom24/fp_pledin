@@ -8,7 +8,7 @@ permalink: /iawgs/u03/python1.html
 Vamos a desarrollar la aplicación del [tutorial de django 2.1](https://docs.djangoproject.com/en/2.1/intro/tutorial01/). Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:
 
 * Clona el repositorio de GitHub: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
-* Crea un entorno virtual de python3 e instala las dependencias necesarias para que funcione el proyecto (fichero `requierements.txt`).
+* Crea un entorno virtual de python3 e instala las dependencias necesarias para que funcione el proyecto (fichero `requirements.txt`).
 * Comprueba que vamos a trabajar con una base de datos sqlite (`django_tutorial/settings.py`). ¿Cómo se llama la base de datos que vamos a crear?
 * Crea la base de datos: `python3 manage.py migrate`. A partir del modelo de datos se crean las tablas de la base de datos.
 * Crea un usuario administrador: `python3 manage.py createsuperuser`.
@@ -32,7 +32,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 
     Con el comando `pip3` instala la misma versión de django que has utilizado en el entorno de desarrollo.
 
-* Configura un virtualhost en apache2 con la configuración adecuada para que funcione la aplicación. El punto de entrada de nuestro servidor será `django_tutorial/wsgi.py`. Es recomendable que sigas este manual: [https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/modwsgi/](https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/modwsgi/). También te puede ayudar este artículo: [Despliegue de aplicación flask en un servidor LAMP](https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u33/) o la primera parte de este otro: [Ejecución de script python](https://plataforma.josedomingo.org/pledin/cursos/apache24/curso/u26/).
+* Configura un virtualhost en apache2 con la configuración adecuada para que funcione la aplicación. Accede a la página con un nombre. El punto de entrada de nuestro servidor será `django_tutorial/wsgi.py`. Es recomendable que sigas este manual: [https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/modwsgi/](https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/modwsgi/). También te puede ayudar este artículo: [Despliegue de aplicación flask en un servidor LAMP](https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u33/) o la primera parte de este otro: [Ejecución de script python](https://plataforma.josedomingo.org/pledin/cursos/apache24/curso/u26/).
 * Crea la base de datos.
 * Crea un usuario administrador.
 * Desactiva en la configuración (fichero `settings.py`) el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.
