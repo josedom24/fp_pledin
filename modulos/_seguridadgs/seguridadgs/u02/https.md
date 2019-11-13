@@ -73,6 +73,8 @@ Vamos a a crear un certificado para una página web que se llame `www.tunombre.g
 
 **Tienes que decirle al profesor el nombre de subdominio que vas a utilizar.**
 
+**Tienes que mandar el correo al usuario root**
+
 **Otra opción es uqe uses un dominio que sea tuyo!!!**
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
