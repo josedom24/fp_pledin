@@ -74,7 +74,7 @@ Vamos a a crear un certificado para una página web que se llame `www.tunombre.g
 **Tienes que decirle al profesor el nombre de subdominio que vas a utilizar.**
 
 **Otra opción es uqe uses un dominio que sea tuyo!!!**
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 Los pasos que hay que dar para utilizar un certificado X.509 emitido por **CAcert** son los siguientes:
 
