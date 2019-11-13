@@ -66,13 +66,21 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 
 El lema de **CAcert** es *Free digital certificates for everyone* y es que la utilización de certificados emitidos por CA comerciales no es posible para todos los sitios de Internet debido a su coste, lo que los limita su uso a transacciones económicas o sitios con datos relevantes. **CAcert** es una organización sin ánimo de lucro que mantiene una infraestructura equivalente a una CA comercial aunque con ciertas limitaciones.
 
-Vamos a cambiar el certificado de la página que has desarrollado en el punto anterior para usar el nuevo certificado emitido por **CAcert**.
+Vamos a a crear un certificado para una página web que se llame `www.tunombre.gonzalonazareno.org` en el punto anterior para usar el nuevo certificado emitido por **CAcert**.
+
+{% capture notice-text %}
+¿Por qué no podemos usar un dominio inventado? Por que CaCert para verificar que sómos los administradores del dominio nos va a mandar un correo a ese dominio. Por lo tanto al usar un subdominio de `gonzalonazareno.org` podemos hacer que el correo llegue a nuestro servidor de correo y el profesor lo recibe.
+
+**Tienes que decirle al profesor el nombre de subdominio que vas a utilizar.**
+
+**Otra opción es uqe uses un dominio que sea tuyo!!!**
+{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
 
 Los pasos que hay que dar para utilizar un certificado X.509 emitido por **CAcert** son los siguientes:
 
 1. Darse de alta como usuario en el sitio web.
 2. Dar de alta el dominio para el que queremos obtener el certificado. (opción Domains -> Add)
-3. CAcert verifica que podemos hacer uso legítimo del dominio enviando un mensaje de correo electrónico.
+3. CAcert verifica que podemos hacer uso legítimo del dominio enviando un mensaje de correo electrónico. (**Que recibirá y contestará el profesor!!!**)
 4. Dar de alta el certificado de un servidor mediante una solicitud de firma certificado (CSR).
 5. Configurar el servidor web con el certificado X.509 emitido por la CA.
 6. Al acceder a la página debemos evitar el mensaje de error de "Conexión segura fallida".
