@@ -16,7 +16,7 @@ Entrega una breve documentación de los pasos para realizar la instalación. Ent
 
 ## Tarea 2: Migración a un entorno de producción
 
-Prepara el entorno de producción con un entrono virtual. Instala el servidor web que vas a utilizar (apache o nginx). Instala el gestor de base de datos que vas a utilizar (mysql, postgress).
+Prepara el entorno de producción con un entorno virtual. Instala el servidor web que vas a utilizar (apache o nginx). Instala el gestor de base de datos que vas a utilizar (mysql, postgress).
 
 * Clona tu repositorio con tus ficheros del CMS.
 * Realiza una copia de seguridad de los datos del gestor de contenido en desarrollo, y realiza la migración de forma adecuada.
