@@ -83,6 +83,8 @@ seguridadgs:
         url: /seguridadgs/u01
       - title: "Criptografía"
         url: /seguridadgs/u02
+      - title: "Cortafuegos"
+        url: /seguridadgs/u03
 
 
 
