@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio2: Implementación de un cortafuego perimetral"
+title: "Ejercicio 2: Implementación de un cortafuego perimetral"
 permalink: /seguridadgs/u03/ejercicio2.html
 ---
 
@@ -55,15 +55,15 @@ Hacemos SNAT para que los equipos de la LAN puedan acceder al exterior:
     iptables -A INPUT -i lo -p icmp -j ACCEPT
     iptables -A OUTPUT -o lo -p icmp -j ACCEPT
 
-## Peticiones y respuestas al ping
+## Peticiones y respuestas protocolo ICMP
 
-    iptables -A OUTPUT -o eth0 -p icmp -m icmp --icmp-type echo-request -j ACCEPT
-    iptables -A INPUT -i eth0 -p icmp -m icmp --icmp-type echo-reply -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth0 -p icmp -j ACCEPT
 
 Si queremos permitir también los ping a la LAN:
 
-    iptables -A OUTPUT -o eth1 -p icmp -m icmp --icmp-type echo-request -j ACCEPT
-    iptables -A INPUT -i eth1 -p icmp -m icmp --icmp-type echo-reply -j ACCEPT
+    iptables -A OUTPUT -o eth1 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth1 -p icmp -j ACCEPT
 
 ## Reglas forward
 
@@ -107,6 +107,51 @@ Y necesitamos configurar una regla DNAT:
 
 Editamos un fichero y añadimos todas las reglas anteriores:
 
+    # Limpiamos las tablas
+    iptables -F
+    iptables -t nat -F
+    iptables -Z
+    iptables -t nat -Z
+    # Establecemos la política
+    iptables -P INPUT DROP
+    iptables -P OUTPUT DROP
+
+    # SNAT
+    echo 1 > /proc/sys/net/ipv4/ip_forward
+    iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+
+    # DNAT
+    iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to 192.168.200.10
+
+    # Reglas INPUT/OUTPUT
+
+    iptables -A OUTPUT -p tcp -o eth1 -d 192.168.100.0/24 --dport 22 -j ACCEPT
+    iptables -A INPUT -p tcp -i eth1 -s 192.168.100.0/24 --sport 22 -j ACCEPT
+
+    iptables -A INPUT -i lo -p icmp -j ACCEPT
+    iptables -A OUTPUT -o lo -p icmp -j ACCEPT
+
+    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth0 -p icmp -j ACCEPT
+
+    iptables -A OUTPUT -o eth1 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth1 -p icmp -j ACCEPT
+
+    # Reglas FORWARD
+
+    iptables -A FORWARD -o eth0 -i eth1 -s 192.168.100.0/24 -p icmp -j ACCEPT
+    iptables -A FORWARD -i eth0 -o eth1 -d 192.168.100.0/24 -p icmp -j ACCEPT
+
+    iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p udp --dport 53 -j ACCEPT
+    iptables -A FORWARD -o eth1 -i eth0 -d 192.168.100.0/24 -p udp --sport 53 -j ACCEPT
+
+    iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p tcp --dport 80 -j ACCEPT
+    iptables -A FORWARD -o eth1 -i eth0 -d 192.168.100.0/24 -p tcp --sport 80 -j ACCEPT
+    iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p tcp --dport 443 -j ACCEPT
+    iptables -A FORWARD -o eth1 -i eth0 -d 192.168.100.0/24 -p tcp --sport 443 -j ACCEPT
+
+    iptables -A FORWARD -i eth0 -o eth1 -d 192.168.100.0/24 -p tcp --dport 80 -j ACCEPT
+    iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p tcp --sport 80 -j ACCEPT
 
 ## Ejercicios
 

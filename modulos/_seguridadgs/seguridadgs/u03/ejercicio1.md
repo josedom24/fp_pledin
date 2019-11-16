@@ -35,10 +35,10 @@ Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni 
     iptables -A INPUT -i lo -p icmp -j ACCEPT
     iptables -A OUTPUT -o lo -p icmp -j ACCEPT
 
-## Peticiones y respuestas al ping
+## Peticiones y respuestas protocolo ICMP
 
-    iptables -A OUTPUT -o eth0 -p icmp -m icmp --icmp-type echo-request -j ACCEPT
-    iptables -A INPUT -i eth0 -p icmp -m icmp --icmp-type echo-reply -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth0 -p icmp -j ACCEPT
 
 Comprobamos su funcionamiento haciendo ping a una IP pública:
 
@@ -88,10 +88,12 @@ Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio we
 
 Editamos un fichero y añadimos todas las reglas anteriores:
 
+    # Limpiamos las tablas
     iptables -F
     iptables -t nat -F
     iptables -Z
     iptables -t nat -Z
+    # Establecemos la política
     iptables -P INPUT DROP
     iptables -P OUTPUT DROP
 
@@ -101,8 +103,8 @@ Editamos un fichero y añadimos todas las reglas anteriores:
     iptables -A INPUT -s 172.22.0.0/16 -p tcp -m tcp --dport 22 -j ACCEPT
     iptables -A OUTPUT -d 172.22.0.0/16 -p tcp -m tcp --sport 22 -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p icmp -m icmp --icmp-type echo-request -j ACCEPT
-    iptables -A INPUT -i eth0 -p icmp -m icmp --icmp-type echo-reply -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp -m icmp -j ACCEPT
+    iptables -A INPUT -i eth0 -p icmp -j ACCEPT
 
     iptables -A OUTPUT -o eth0 -p udp --dport 53 -j ACCEPT
     iptables -A INPUT -i eth0 -p udp --sport 53 -j ACCEPT
