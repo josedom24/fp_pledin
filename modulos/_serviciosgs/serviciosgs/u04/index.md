@@ -24,13 +24,11 @@ Los contenidos que vamos a estudiar en este bloque serán:
 * [Ejercicio 1: Consultas DNS](ejercicio1.html)
 * [Ejercicio 2: DNSmasq como DNS cache/forward en una red local](ejercicio2.html)
 * [Ejercicio 3: Instalación y configuración del servidor bind9 en nuestra red local](ejercicio3.html)
-
-<!--
 * [Ejercicio 4: Instalación y configuración de un servidor DNS esclavo](ejercicio4.html)
 * [Ejercicio 5: Configuración de subdominios virtuales con bind9](ejercicio5.html)
 * [Ejercicio 6: Delegación de subdominios con bind9](ejercicio6.html)
 * [Ejercicio 7: Instalación y configuración de un servidor DNS dinámico](ejercicio7.html)
--->
+
 
 ## Prácticas
 
