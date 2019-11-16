@@ -20,7 +20,7 @@ permalink: /serviciosgs/u04/enlaces.html
 * [Servidores DNS esclavos (1ª parte)](http://www.josedomingo.org/pledin/2011/11/configuracion-de-un-servidor-dns-esclavo/)
 * [Servidores DNS esclavos (2ª parte)](http://www.josedomingo.org/pledin/2013/11/configurar_servidor_dns_esclavo_2/)
 * [Configurar subdominios en bind9](http://www.josedomingo.org/pledin/2013/11/configurar-subdominios-en-bind9)
-* [Servidor DNS dinámico](https://github.com/josedom24/serviciosgs_doc/raw/master/dns/doc/ddns.pdf)
+* [Servidor DNS dinámico](doc/ddns.pdf)
 * [Esquema: Proceso DNS dinámico [jpg]](https://github.com/josedom24/serviciosgs_doc/raw/master/dns/doc/ddns.jpg)
 * [DNS dinámico (Desde lo alto del cerro)](http://albertomolina.wordpress.com/2008/11/14/dns-dinamico/)
 * [Zonas inversas IPv6](https://blog.hbis.fr/2013/11/22/bind-reverse_ipv6/)
