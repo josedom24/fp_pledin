@@ -20,8 +20,8 @@ Vamos a utilizar una máquina en openstack, que vamos a crear con la receta heat
 
 Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:
 
-    iptables -A INPUT -s 172.22.0.0/16 -p tcp -m tcp --dport 22 -j ACCEPT
-    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp -m tcp --sport 22 -j ACCEPT
+    iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -j ACCEPT
+    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -j ACCEPT
 
 ## Política por defecto
 
@@ -37,8 +37,9 @@ Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni 
 
 ## Peticiones y respuestas protocolo ICMP
 
-    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
     iptables -A INPUT -i eth0 -p icmp -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
+    
 
 Comprobamos su funcionamiento haciendo ping a una IP pública:
 
@@ -123,4 +124,4 @@ Editamos un fichero y añadimos todas las reglas anteriores:
 
 1. Permite poder hacer conexiones ssh al exterior.
 2. Deniega el acceso a tu servidor web desde una ip concreta.
-3. Permitir hacer ping a máquinas externas.
+3. Permite hacer consultas DNS sñolo al servidor 1.1.1.1
