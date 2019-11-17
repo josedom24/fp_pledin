@@ -21,6 +21,7 @@ Los contenidos que vamos a estudiar en este bloque serán:
 ## Indice
 
 * [Enlaces interesantes](enlaces.html)
+* [Presentación servidor DNS: bind9](https://docs.google.com/presentation/d/e/2PACX-1vTMcnRn32srL05Zb-Ah7X6J_avhVl4sXI9qq6CdI0S9T2903Kl_11xA9eiMYrHDubqzS2dFimNQP6V4/pub?start=false&loop=false)
 * [Ejercicio 1: Consultas DNS](ejercicio1.html)
 * [Ejercicio 2: DNSmasq como DNS cache/forward en una red local](ejercicio2.html)
 * [Ejercicio 3: Instalación y configuración del servidor bind9 en nuestra red local](ejercicio3.html)
