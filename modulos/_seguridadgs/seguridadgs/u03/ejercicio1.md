@@ -124,8 +124,8 @@ Editamos un fichero y añadimos todas las reglas anteriores:
 
 1. Permite poder hacer conexiones ssh al exterior.
 2. Deniega el acceso a tu servidor web desde una ip concreta.
-3. Permite hacer consultas DNS sólo al servidor `192.168.202.2`.
+3. Permite hacer consultas DNS sólo al servidor `192.168.202.2`. Comprueba que no puedes hacer un `dig @1.1.1.1`.
 4. No permitir el acceso al servidor web de `www.josedomingo.org` (Tienes que utilizar la ip). ¿Puedes acceder a `fp.josedomingo.org`?
 5. Permite mandar un correo usando nuestro servidor de correo: `babuino-smtp`. Para probarlo ejecuta un `telnet bubuino-smtp.gonzalonazareno.org 25`.
-6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente.
+6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
