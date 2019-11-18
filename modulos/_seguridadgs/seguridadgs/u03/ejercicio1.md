@@ -101,10 +101,10 @@ Editamos un fichero y añadimos todas las reglas anteriores:
     iptables -A INPUT -i lo -p icmp -j ACCEPT
     iptables -A OUTPUT -o lo -p icmp -j ACCEPT
 
-    iptables -A INPUT -s 172.22.0.0/16 -p tcp -m tcp --dport 22 -j ACCEPT
-    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp -m tcp --sport 22 -j ACCEPT
+    iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -j ACCEPT
+    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p icmp -m icmp -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
     iptables -A INPUT -i eth0 -p icmp -j ACCEPT
 
     iptables -A OUTPUT -o eth0 -p udp --dport 53 -j ACCEPT
@@ -119,9 +119,12 @@ Editamos un fichero y añadimos todas las reglas anteriores:
     iptables -A OUTPUT -o eth0 -p tcp --sport 80 -j ACCEPT
     iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
 
-
+{% capture notice-text %}
 ## Ejercicios
 
 1. Permite poder hacer conexiones ssh al exterior.
 2. Deniega el acceso a tu servidor web desde una ip concreta.
-3. Permite hacer consultas DNS sñolo al servidor 1.1.1.1
+3. Permite hacer consultas DNS sólo al servidor `192.168.202.2`.
+4. No permitir el acceso al servidor web de `www.josedomingo.org` (Tienes que utilizar la ip). ¿Puedes acceder a `fp.josedomingo.org`?
+5. Permite mandar un correo usando nuestro servidor de correo: `babuino-smtp`. Para probarlo ejecuta un `telnet bubuino-smtp.gonzalonazareno.org 25`.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
