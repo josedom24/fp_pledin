@@ -127,4 +127,5 @@ Editamos un fichero y añadimos todas las reglas anteriores:
 3. Permite hacer consultas DNS sólo al servidor `192.168.202.2`.
 4. No permitir el acceso al servidor web de `www.josedomingo.org` (Tienes que utilizar la ip). ¿Puedes acceder a `fp.josedomingo.org`?
 5. Permite mandar un correo usando nuestro servidor de correo: `babuino-smtp`. Para probarlo ejecuta un `telnet bubuino-smtp.gonzalonazareno.org 25`.
+6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
