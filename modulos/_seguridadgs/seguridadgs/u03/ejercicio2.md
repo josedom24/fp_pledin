@@ -115,6 +115,7 @@ Editamos un fichero y añadimos todas las reglas anteriores:
     # Establecemos la política
     iptables -P INPUT DROP
     iptables -P OUTPUT DROP
+    iptables -P FORWARD DROP
 
     # SNAT
     echo 1 > /proc/sys/net/ipv4/ip_forward
