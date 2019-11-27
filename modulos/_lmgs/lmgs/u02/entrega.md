@@ -148,7 +148,7 @@ El programa te muestra el menú, hasta que introduzcamos la opción 0 de salir.
 	Dígame la palabra 2: Alberto
 	Dígame la palabra 3: Benito
 	Dígame la palabra 4: Carmen
-	La lista creada es: ['Carmen', 'Alberto', 'Benito', 'Carmen']
+	La lista creada es: Carmen, Alberto, Benito, Carmen
 	Elige opción:
 	1. Contar
 	2. Modificar
@@ -162,10 +162,10 @@ El programa te muestra el menú, hasta que introduzcamos la opción 0 de salir.
 	2
 	Sustituir la palabra: Carmen
 	por la palabra: David
-	La lista es ahora: ['Alberto', 'David', 'Benito', 'David']		
+	La lista es ahora: Alberto, David, Benito, David
 
 	3
 	Palabra a eliminar: David
-	La lista es ahora: ['Alberto', 'Benito']	
+	La lista es ahora: Alberto, Benito	
 	0
 	Adiós!!!
