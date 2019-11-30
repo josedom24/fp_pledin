@@ -51,6 +51,7 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [Introducción a la integración continua](https://code2read.com/2015/11/04/ci-integracion-continua-introduccion/)
 * [Instalación de Jenkins en debian](http://red-orbita.com/?p=6622)
 * [QUÉ ES TDD - Test-driven development](https://www.youtube.com/watch?v=q6z3jFZl8oI)
+* [Integración continúa, entrega continúa y despliegue continuo](https://www.youtube.com/watch?v=REMAgB7m1ig)
 
 ## Prácticas
 
