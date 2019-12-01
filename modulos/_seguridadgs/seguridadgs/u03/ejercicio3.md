@@ -88,8 +88,8 @@ Actualmente estamos permitiendo que desde la LAN se pueda hacer ping al cortafue
 
 **Mejora: Vamos a limitar el estado de las conexiones.**
 
-    iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p udp --dport 53 -j ACCEPT
-    iptables -A FORWARD -o eth1 -i eth0 -d 192.168.100.0/24 -p udp --sport 53 -j ACCEPT
+    iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A FORWARD -o eth1 -i eth0 -d 192.168.100.0/24 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
 
 
 ## Permitimos la navegación web desde la LAN
