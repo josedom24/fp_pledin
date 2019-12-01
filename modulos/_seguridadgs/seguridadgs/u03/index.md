@@ -18,6 +18,7 @@ permalink: /seguridadgs/u03/index.html
 
 ## Ejercicios
 
-* [Ejercicio1: Implementación de un cortafuego personal](ejercicio1.html)
-* [Ejercicio 2: Implementación de un cortafuego perimetral](ejercicio2.html)
+* [Ejercicio1: Implementación de un cortafuegos personal](ejercicio1.html)
+* [Ejercicio 2: Implementación de un cortafuegos perimetral](ejercicio2.html)
+* [Ejercicio 3: Mejoramos nuestro cortafuegos perimetral](ejercicio3.html)
 

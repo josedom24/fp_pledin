@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 2: Implementación de un cortafuego perimetral"
+title: "Ejercicio 2: Implementación de un cortafuegos perimetral"
 permalink: /seguridadgs/u03/ejercicio2.html
 ---
 

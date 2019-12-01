@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio1: Implementación de un cortafuego personal"
+title: "Ejercicio1: Implementación de un cortafuegos personal"
 permalink: /seguridadgs/u03/ejercicio1.html
 ---
 
