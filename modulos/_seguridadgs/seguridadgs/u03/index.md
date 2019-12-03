@@ -22,3 +22,6 @@ permalink: /seguridadgs/u03/index.html
 * [Ejercicio 2: Implementación de un cortafuegos perimetral](ejercicio2.html)
 * [Ejercicio 3: Mejoramos nuestro cortafuegos perimetral](ejercicio3.html)
 
+## Práctica
+
+* [Práctica: Cortafuegos perimetral con DMZ](practica.html)
