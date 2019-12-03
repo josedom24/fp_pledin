@@ -20,6 +20,8 @@ Los contenidos que vamos a estudiar del servidor FTP, nos van a posibilitar resp
 * [Enlaces interesantes](enlaces.html)
 * [Ejercicio: Instalación de proFTPd y uso de clientes FTP](ejercicio1.html)
 
+<!--
 ## Prácticas
 
 * [Práctica: Gestionar un hosting por ftp](practica_ftp.html)
+* -->
