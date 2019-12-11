@@ -53,6 +53,14 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [QUÉ ES TDD - Test-driven development](https://www.youtube.com/watch?v=q6z3jFZl8oI)
 * [Integración continúa, entrega continúa y despliegue continuo](https://www.youtube.com/watch?v=REMAgB7m1ig)
 
+
+## Ejercicios
+
+* [Ejercicio 1: Corrector ortográfico de documentos markdown (test)](ejercicio1.html)
+
+<!--
 ## Prácticas
 
 * [Introducción a la integración continua](ic.html)
+
+-->
