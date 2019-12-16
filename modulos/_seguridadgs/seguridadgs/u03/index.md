@@ -9,6 +9,8 @@ permalink: /seguridadgs/u03/index.html
 * [iptables, un manual sencillo](iptables.html)
 * [Desde lo alto del Cerro - Cortafuegos con iptables](https://albertomolina.wordpress.com/2011/12/08/cortafuegos-con-iptables/)
 * [Desde lo alto del Cerro - NAT con iptables](https://albertomolina.wordpress.com/2009/01/09/nat-con-iptables/)
+* [Presentación: nftables](https://docs.google.com/presentation/d/e/2PACX-1vRmCJr5FJXf47EaR3JOCVk2drs6mqrYPdckvty7q9TeUTJL8u4S5VHJu_u6KzMV0a2zeVdeXsfz9Xky/pub?start=false&loop=false&delayms=3000)
+
 
 ## Enlaces interesantes
 
