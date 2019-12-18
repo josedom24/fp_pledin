@@ -58,3 +58,34 @@ Veamos las tres opciones que hemos configurado y veamos los resultados después 
 
 Podemos observar como el uso de varnishd aumenta muy significativamente el rendimiento de nuestro servidor.
 
+## Ejecución de scripts Python
+
+Vamos a comparar el rendimiento de distintas configuraciones de servidores web sirviendo páginas dinámicas programadas con Python, en concreto vamos a servir un CMS Mezzanine (Instala algunas páginas de demostración durante la instalación: `Would you like to install some initial demo pages?`).
+
+Las configuraciones que vamos a realizar son las siguientes:
+	
+* apache2 + Módulo wsgi
+* apache2 + gunicorn
+* apache2 + uwsgi
+* nginx + gunicorn
+* nginx + uwsgi
+
+{% capture notice-text %}
+
+### Apache2
+
+* **Tarea 9 (2 puntos)**: Documenta la instalación del módulo wsgi de apache2. Muestra los ficheros de configuración y muestra la ejecución del CMS.
+* **Tarea 10 (2 puntos)**: Documenta la instalación y configuración de gunicorn y apache2. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando gunicorn.
+* **Tarea 11 (2 puntos)**: Documenta la instalación y configuración de uwsgi y apache2. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando wusgi.
+	    
+### nginx
+
+* **Tarea 12 (2 puntos)**: Documenta la instalación y configuración de gunicorn y nginx. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando gunicorn.
+* **Tarea 13 (2 puntos)**: Documenta la instalación y configuración de uwsgi y nginx. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando wusgi.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## Rendimiento
+
+![python](img/python1.png)
+
+Podemos observar que la opción que más rendimiento ofrece es nginx + uwsgi.
