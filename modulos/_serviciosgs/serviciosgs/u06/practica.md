@@ -86,6 +86,6 @@ Las configuraciones que vamos a realizar son las siguientes:
 
 ## Rendimiento
 
-![python](img/python1.png)
+![python](img/python.png)
 
 Podemos observar que la opción que más rendimiento ofrece es nginx + uwsgi.
