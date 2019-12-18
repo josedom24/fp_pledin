@@ -21,5 +21,4 @@ Para terminar la unidad vamos a hacer un estudio comparativo sobre el rendimient
 
 ## Prácticas
 
-* [Práctica: Ejecución de script PHP. Rendimiento](practica_php.html)
-* [Práctica: Ejecución de script Python. Rendimiento](practica_python.html)
+* [Práctica: Ejecución de scripts PHP y Python. Rendimiento](practica.html)
