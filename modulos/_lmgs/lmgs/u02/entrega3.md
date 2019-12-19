@@ -63,7 +63,7 @@ Supongamos que tenemos en nuestro sistema el usuario `prueba` con contraseña `a
 * La función `crypt` del módulo `crypt` permite formar los hashes con sal utilizados por linux, de la siguiente manera:
 
     ```python
-        >>> from crypt import crypt
+    >>> from crypt import crypt
 	>>> crypt("asdasd","$6$aiozD6dU.MJeURsH$")
 	'$6$aiozD6dU.MJeURsH$g.syV5NgBk7VqWiekTbhwZsfJwDNuujx76P.bUBUMoKpTVVCXAQ84JlQVdd85fPyIO5fYiJjd2DJObWNu.o/R0'
 
