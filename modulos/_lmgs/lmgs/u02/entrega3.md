@@ -5,7 +5,7 @@ permalink: /lmgs/u02/entrega3.html
 
 ### Ejercicio 1
 
-El Código Cuenta Cliente (CCC) es el código que identifica en España las cuentas corrientes de los clientes de bancos. El CCC tiene 20 dígitos en formato AAA-BBBB-CC-
+El Código Cuenta Cliente (CCC) es el código que identifica en España las cuentas corrientes de los clientes de bancos. El CCC tiene 20 dígitos en formato AAAA-BBBB-CC-
 DDDDDDDDDD.
 
 * AAAA son cuatro dígitos que identifican la entidad bancaria.
@@ -59,13 +59,14 @@ Supongamos que tenemos en nuestro sistema el usuario `prueba` con contraseña `a
 
 	prueba:$6$/nNkCgcv$r.FooJSMDwP2gd4MAsoRTTLoOVpsIF2EyxW59ryWW7bpKUxulWX9CpEWknaDBzHWYJ2q9gqxEyfQl93u7okPa.:15059:0:99999:7::::
 
-* La sal de una contraseña cifrada se indica en linux por los 12 primeros caracteres del hash de la contraseña, en el caso anterior la sal sería **$6$/nNkCgcv$**.
+* La sal de una contraseña cifrada se indica en linux por los 20 primeros caracteres del hash de la contraseña, en el caso anterior la sal sería **$6$aiozD6dU.MJeURsH$**.
 * La función `crypt` del módulo `crypt` permite formar los hashes con sal utilizados por linux, de la siguiente manera:
 
     ```python
-    >>> from crypt import crypt
-	>>> crypt('asdasd','$6$/nNkCgcv$')
-	'$6$/nNkCgcv$r.FooJSMDwP2gd4MAsoRTTLoOVpsIF2EyxW59ryWW7bpKUxul\WX9CpEWknaDBzHWYJ2q9gqxEyfQl93u7okPa.'
+        >>> from crypt import crypt
+	>>> crypt("asdasd","$6$aiozD6dU.MJeURsH$")
+	'$6$aiozD6dU.MJeURsH$g.syV5NgBk7VqWiekTbhwZsfJwDNuujx76P.bUBUMoKpTVVCXAQ84JlQVdd85fPyIO5fYiJjd2DJObWNu.o/R0'
+
     ```
 
 donde `asdasd` es la contraseña en claro.
