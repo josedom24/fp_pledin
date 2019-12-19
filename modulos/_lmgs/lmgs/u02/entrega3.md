@@ -21,20 +21,20 @@ Cada uno de los dígitos del DC se calcula utilizando el mismo algoritmo, para l
 La siguiente función en Python calcula el DC correspondiente para una lista de 10 número enteros:
 
 	def calcula_dc(lista):
-	"""Calcula el dígito de control de una CCC.
-	Recibe una lista con 10 numeros enteros y devuelve el DC
-	correspondiente"""
-	pesos = [1, 2, 4, 8, 5, 10, 9, 7, 3, 6]
-	aux = []
-	for i in range(10):
-		aux.append(lista[i]*pesos[i])
-	resto = 11 - sum(aux) %11
-	if resto == 10:
-		return 1
-	elif resto == 11:
-		return 0
-	else:
-		return resto
+		"""Calcula el dígito de control de una CCC.
+		Recibe una lista con 10 numeros enteros y devuelve el DC
+		correspondiente"""
+		pesos = [1, 2, 4, 8, 5, 10, 9, 7, 3, 6]
+		aux = []
+		for i in range(10):
+			aux.append(lista[i]*pesos[i])
+		resto = 11 - sum(aux) %11
+		if resto == 10:
+			return 1
+		elif resto == 11:
+			return 0
+		else:
+			return resto
 
 Por ejemplo:
 
