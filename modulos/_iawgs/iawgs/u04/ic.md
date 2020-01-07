@@ -3,56 +3,20 @@ title: Introducción a la integración continua
 permalink: /iawgs/u04/ic.html
 ---
 
+Para realizar la tareas podemos escoger el sistema de integración continúa que queramos: travis, gitlab, github actions, ...
 
-
-
-## Tarea 2: Comprobación de html5 válido y despliegue en surge.sh (test y deploy) **(2 puntos)**
-
-En esta tarea queremos desplegar una página html5 en el servicio surge.sh, además queremos comprobar si el código html5 es válido. Estas dos operaciones: comprobar si el html5 es válido (test) y el despliegue en surge.sh (deploy) lo vamos a hacer con travis de forma automática (IC y DC).
-
-Antes de empezar vamos a aprender a trabajar con [surge.sh](http://surge.sh/):
-
-* Siguiendo las instrucciones de esta [página](https://linuxconfig.org/how-to-install-nodejs-on-debian-9-stretch-linux) instala NodeJS y npm.
-* Instala surge.sh
-* Despliega una pequeña página web en el dominio `tunombre.surge.sh`.
-
-{% capture notice-text %}
-Entrega una descripción con los pasos fundamentales para la instalación y una captura de la página web que has realizado. (1 punto)
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
-Vamos a añadir la funcionalidad de IC y DC con travis, para ello:
-
-* Realiza un fork del repositorio de GitHub: [https://github.com/josedom24/ic-travis-html5](https://github.com/josedom24/ic-travis-html5)
-* Activa la IC en travis de tu repositorio.
-* Comprueba la prueba y el despliegue que vamos a realizar estudiando el fichero `.travis.yml`.
-* Modifica el fichero `.travis.yml` para poner el nombre de dominio que vas a utilizar.
-* Para que travis pueda hacer el despliegue en surge le tenemos que indicar un TOKEN. Genera el token:
-	
-		surge token
-
-* Crea dos variables de entorno en *settings* del proyecto travis:
-	
-    * `SURGE_LOGIN`: Indica el correo electrónico que has utilizado como lógin en surge
-    * `SURGE_TOKEN`: Indica el TOKEN que has obtenido en el paso anterior.
-
-* Realiza cambios en el fichero index.html del directorio `_build` y comprueba, que si el código html5 es válido se despliega y puedes acceder a la página web. Si el código html5 no es válido no se realiza el despliegue y te mandan un correo informando de la incidencia.
-
-{% capture notice-text %}
-Entrega una descripción con los pasos fundamentales que has realizado. Entrega varias capturas de pantalla donde se vea una prueba que termina en éxito (HTML5 válido) y otra que no termine en éxito (1 punto)
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
-## Tarea 3: Despliegue de una página web estática (build, deploy) **(3 puntos)**
+## Tarea 1: Despliegue de una página web estática (build, deploy) **(4 puntos)**
 
 {% capture notice-text %}
 En esta práctica investiga como generar una página web estática con la herramienta que elegiste en la práctica 1 de la asignatura y desplegarla en el servicio que utilizaste en esa práctica. 
 
 * En el repositorio GitHub sólo tienen que estar los ficheros markdown.
-* La página se debe generar en travis, por lo tanto debemos instalar las herramientas necesarias.
-* Investiga si desde travis se puede desplegar de forma automática en el servicio elegido (si es necesario cambia el servicio de hosting para el despliegue).
+* La página se debe generar en el sistema de integración continúa, por lo tanto debemos instalar las herramientas necesarias.
+* Investiga si podemos desplegar de forma automática en el servicio elegido (si es necesario cambia el servicio de hosting para el despliegue).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-## Tarea 4: Integración continúa de aplicación django (Test + Deploy) **(4 puntos)**
+## Tarea 2: Integración continúa de aplicación django (Test + Deploy) **(6 puntos)**
 
 Vamos a trabajar con el repositorio de la aplicación [`django_tutorial`](https://github.com/josedom24/django_tutorial). Esta aplicación tiene definidas una serie de test, que podemos estudiar en el fichero `tests.py` del directorio `polls`.
 
