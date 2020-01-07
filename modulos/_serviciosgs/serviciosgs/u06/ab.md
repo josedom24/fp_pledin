@@ -3,7 +3,7 @@ title: "El comando ab"
 permalink: /serviciosgs/u06/ab.html
 ---
 
-La utilidad [ab](http://httpd.apache.org/docs/2.4/programs/ab.html>) (Apache Benchmark) sirve para hacer pruebas de carga a un servidor apache. Es un programa que forma parte del apaquete ``apache2-utils``.
+La utilidad [ab](http://httpd.apache.org/docs/2.4/programs/ab.html) (Apache Benchmark) sirve para hacer pruebas de carga a un servidor apache. Es un programa que forma parte del apaquete ``apache2-utils``.
 
 Veamos un ejemplo::
 
@@ -68,3 +68,9 @@ Tenemos otra opción donde indicamos el tiempo que va a durar la prueba y el niv
 	ab -t 10 -c 5 -k http://localhost/
 
 En este caso se va a realizar la prueba durante 10 segundos.
+
+## Pruebas de rendimiento de los distintos MPM en apache2
+
+Si realizamos varias pruebas de rendimiento variando el número de peticiones concurrentes sobre un servidor web apache2 sirviendo una página estática con las distintas configuraciones de MPM obtenemos el siguiente resultado:
+
+![estatica](img/estatica.png)
