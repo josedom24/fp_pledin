@@ -32,19 +32,17 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 
 **Herramientas**
 
-* [CloudBees (jenkins)](http://www.cloudbees.com/dev)
-* [Cloud Foundry](http://www.cloudfoundry.com/)
+* [Jenkins](https://jenkins.io/)
+* [Travis](https://travis-ci.com/)
+* [gitlab](https://about.gitlab.com/product/continuous-integration/)
+* [github actions](https://github.com/features/actions)
 * [CircleCi](https://circleci.com/)
 * [Semaphore](https://semaphoreapp.com/)
-* [Travis](https://travis-ci.com/)
 * [Codeship](https://www.codeship.io/)
-* [tddium](https://www.solanolabs.com/)
-* [Wercker](http://wercker.com/)
 * [Shippable](http://www.shippable.com/)
 * [Go-Ci](http://www.thoughtworks.com/products/go-continuous-delivery)
-* [snap-ci](http://snap-ci.com)
 * [appveyor](http://www.appveyor.com/)
-* [gitlab](https://about.gitlab.com/product/continuous-integration/)
+
 
 ## Enlaces
 
