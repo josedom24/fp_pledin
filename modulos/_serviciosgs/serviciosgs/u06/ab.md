@@ -71,6 +71,6 @@ En este caso se va a realizar la prueba durante 10 segundos.
 
 ## Pruebas de rendimiento de los distintos MPM en apache2
 
-Si realizamos varias pruebas de rendimiento variando el número de peticiones concurrentes sobre un servidor web apache2 sirviendo una página estática con las distintas configuraciones de MPM obtenemos el siguiente resultado:
+Si realizamos varias pruebas de rendimiento variando el número de peticiones concurrentes sobre un servidor web apache2 sirviendo una página estática con las distintas configuraciones de MPM y sobre un servidor nginx obtenemos el siguiente resultado:
 
 ![estatica](img/estatica.png)
