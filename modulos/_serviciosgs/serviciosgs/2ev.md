@@ -7,7 +7,7 @@
 * 20/1: Ejecución de script python. TRabajo en clase
 * 21/1: Trabajo en clase Python.
 * 22/1: Trabajo en clase Python. Rendimiento Python.
-* 27/1:
+* 27/1: Correo electrónico
 * 28/1:
 * 29/1:
 * 3/2:
@@ -16,11 +16,11 @@
 * 10/2:
 * 11/2:
 * 12/2:
-* 17/2:
+* 17/2: Proxy
 * 18/2:
 * 19/2:
 * 24/2:
-* 25/2:
+* 25/2: Proxy inverso
 * 26/2:
 * 3/3:
 * 4/3:
