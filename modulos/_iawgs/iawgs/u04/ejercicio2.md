@@ -1,4 +1,3 @@
-
 ---
 title: "Ejercicio 2: Comprobación de html5 válido y despliegue en surge.sh (test y deploy)"
 permalink: /iawgs/u04/ejercicio2.html
