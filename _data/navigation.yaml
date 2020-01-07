@@ -25,8 +25,8 @@ serviciosgs:
         url: /serviciosgs/u04
       - title: Servidor FTP
         url: /serviciosgs/u05
-#      - title: Gestión de peticiones - Rendimiento
-#        url: /serviciosgs/u06
+      - title: Gestión de peticiones - Rendimiento
+        url: /serviciosgs/u06
 #      - title: Servidor de correo electrónico
 #        url: /serviciosgs/u07
 #      - title: Proxy, proxy inverso y balanceador de carga
