@@ -9,7 +9,7 @@ En esta ejercicio vamos a ver cómo configurar una VPN de acceso remoto utilizan
 
 Supongamos que la siguiente figura representa la red de nuestra organización, en la que tenemos varios servidores internos que no queremos que sean accesibles desde Internet y, por tanto, están protegidos por el cortafuegos de nuestra red local. Sin embargo, uno de nuestros empleados debe conectarse de forma remota y utilizar estos servicios, pero debido a su criticidad no queremos abrir un puerto y que se conecte directamente desde Internet. En este escenario podemos utilizar OpenVPN para configurar de forma sencilla una VPN de acceso remoto, de forma que todo el tráfico entre el cliente y el servidor VPN viaje cifrado a través de Internet.
 
-![vpn](img/vpn.png)
+![vpn](img/vpn.jpg)
 
 ## Configuración
 
