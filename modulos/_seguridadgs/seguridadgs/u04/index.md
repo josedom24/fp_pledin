@@ -6,7 +6,7 @@ permalink: /seguridadgs/u04/index.html
 ## Teoría
 
 * [Presentación: VPN](doc/VPN.pdf)
-* [Presentación: OpenVpn](doc/OpenVPN.pdf)
+* [Presentación: OpenVPN](doc/OpenVPN.pdf)
 
 
 ## Enlaces interesantes
