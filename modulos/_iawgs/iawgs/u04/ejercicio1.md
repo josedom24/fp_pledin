@@ -14,5 +14,5 @@ Por lo tanto realiza los siguientes pasos:
 * Comprueba la prueba que vamos a realizar estudiando el fichero `.travis.yml`.
 * Realiza cambios en los ficheros que están en el directorio `doc` y comprueba en travis como se van ejecutando las pruebas.
 
-Para seguir profundizanod en la integración continúa investiga y realiza el mismo ejercicio usando [gitlab](https://about.gitlab.com/product/continuous-integration/) o [github actions](https://github.com/features/actions).
+Para seguir profundizando en la integración continúa investiga y realiza el mismo ejercicio usando [gitlab](https://about.gitlab.com/product/continuous-integration/) o [github actions](https://github.com/features/actions).
 

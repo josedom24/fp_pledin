@@ -28,4 +28,4 @@ Vamos a añadir la funcionalidad de IC y DC con travis, para ello:
 
 * Realiza cambios en el fichero `index.html` del directorio `_build` y comprueba, que si el código html5 es válido se despliega y puedes acceder a la página web. Si el código html5 no es válido no se realiza el despliegue y te mandan un correo informando de la incidencia.
 
-Para seguir profundizanod en la integración continúa investiga y realiza el mismo ejercicio usando [gitlab](https://about.gitlab.com/product/continuous-integration/) o [github actions](https://github.com/features/actions).
+Para seguir profundizando en la integración continúa investiga y realiza el mismo ejercicio usando [gitlab](https://about.gitlab.com/product/continuous-integration/) o [github actions](https://github.com/features/actions).
