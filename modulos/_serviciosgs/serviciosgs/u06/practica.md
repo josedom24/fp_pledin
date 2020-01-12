@@ -48,8 +48,8 @@ A partir de esa configuración vamos a intentar aumentar el rendimiento de nuest
 
 {% capture notice-text %}
 
-* **Tarea 7 (2 puntos)**: Añade a la configuración **ganadora del punto anterior** memcached. Documenta la instalación y configuración memcached. Recuerda que para que Wordpress utilice memcached le tenemos que instalar un plugin. Muestra las estadísticas de memcached después de acceder varias veces a wordpress para comprobar que esa funcionando.
-* **Tarea 8 (3 puntos)**: Configura un proxy inverso - caché Varnish escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración.
+* **Tarea 2 (2 puntos)**: Añade a la configuración **ganadora del punto anterior** memcached. Documenta la instalación y configuración memcached. Recuerda que para que Wordpress utilice memcached le tenemos que instalar un plugin. Muestra las estadísticas de memcached después de acceder varias veces a wordpress para comprobar que esa funcionando.
+* **Tarea 3 (3 puntos)**: Configura un proxy inverso - caché Varnish escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Rendimiento
@@ -74,16 +74,7 @@ Las configuraciones que vamos a realizar son las siguientes:
 
 {% capture notice-text %}
 
-### Apache2
-
-* **Tarea 9 (2 puntos)**: Documenta la instalación del módulo wsgi de apache2. Muestra los ficheros de configuración y muestra la ejecución del CMS.
-* **Tarea 10 (2 puntos)**: Documenta la instalación y configuración de gunicorn y apache2. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando gunicorn.
-* **Tarea 11 (2 puntos)**: Documenta la instalación y configuración de uwsgi y apache2. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando wusgi.
-	    
-### nginx
-
-* **Tarea 12 (2 puntos)**: Documenta la instalación y configuración de gunicorn y nginx. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando gunicorn.
-* **Tarea 13 (2 puntos)**: Documenta la instalación y configuración de uwsgi y nginx. Muestra mezzanine funcionando y una comprobación de que, efectivamente, se está usando wusgi.
+* **Tarea 4 (5 puntos)**: Documenta la instalación y configuración para cada una de las configuraciones propuestas en el ejercicio. En cada una de las configuraciones debe ejecutarse un CMS python, por ejemplo, Mezzanine.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Rendimiento
