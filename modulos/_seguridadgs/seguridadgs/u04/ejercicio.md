@@ -11,6 +11,11 @@ Supongamos que la siguiente figura representa la red de nuestra organización, e
 
 ![vpn](img/vpn.jpg)
 
+* Red interna: 192.168.100.0/24
+* IP Cliente: 172.22.200.214
+* IP Servidor: 172.22.200.249
+* IP VPN punto a punto: 10.0.0.1 - 10.0.0.2
+
 ## Configuración
 
 Para este ejemplo, tanto el router que conecta nuestra red local con Internet como el cliente VPN son máquinas Debian, pero la configuración es prácticamente igual con otros SOs.
@@ -21,13 +26,13 @@ Tras instalar OpenVPN en ambas máquinas (puede compilarse el código fuente o i
 
 Lo primero que hay que hacer es generar la clave compartida en el servidor:
 
-    $ openvpn --genkey --secret secreto.key
+    $ openvpn --genkey --secret static.key
 
 Esta orden nos genera la clave que utilizaremos para autenticar a los extremos de la VPN.
 
 ### Configuración del servidor
 
-Tras mover el secreto compartido al directorio `/etc/openvpn` crearemos el archivo `/etc/openvpn/servidor.cfg` con el siguiente contenido:
+Tras mover el secreto compartido al directorio `/etc/openvpn` crearemos el archivo `/etc/openvpn/server.conf` con el siguiente contenido:
 
     dev tun
     ifconfig 10.0.0.1 10.0.0.2
@@ -39,9 +44,9 @@ A diferencia de otras soluciones más complejas como OpenSwan, basada en IPSec, 
 
 ### Configuración del cliente
 
-Tras copiar a la máquina cliente el secreto compartido y moverlo al directorio `/etc/openvpn`, crearemos el archivo `/etc/openvpn/cliente.cfg` con el siguiente contenido:
+Tras copiar a la máquina cliente el secreto compartido y moverlo al directorio `/etc/openvpn`, crearemos el archivo `/etc/openvpn/client.conf` con el siguiente contenido:
 
-    remote 80.154.67.89
+    remote 172.22.200.249
     dev tun
     ifconfig 10.0.0.2 10.0.0.1
     route 192.168.2.0 255.255.255.0 10.0.0.1
@@ -53,8 +58,8 @@ La dirección `80.154.67.89` de la directiva remote es la IP pública del servid
 
 Para establecer la VPN hay que arrancar OpenVPN en ambos extremos:
 
-    $ openvpn --config /etc/openvpn/servidor.conf    (En el servidor)
-    $ openvpn --config /etc/openvpn/cliente.conf    (En el cliente)
+    $ openvpn --config /etc/openvpn/server.conf    (En el servidor)
+    $ openvpn --config /etc/openvpn/client.conf    (En el cliente)
 
 Una vez establecida la VPN, se habrá creado una interfaz virtual de tipo túnel en ambas máquinas, que simulan un enlace PPP:
 
