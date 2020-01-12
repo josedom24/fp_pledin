@@ -19,6 +19,7 @@ permalink: /seguridadgs/u04/index.html
 
 ## Ejercicios
 
+* [Configuración de openVPN de acceso remoto con clave estática compartida](ejercicio.html)
 
 ## Práctica
 
