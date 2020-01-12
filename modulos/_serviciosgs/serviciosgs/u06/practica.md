@@ -27,7 +27,7 @@ Las configuraciones que vamos a realizar son las siguientes:
 * En cada una de las configuraciones debe funcionar el CMS WordPress.
 * Cuando accedes a la biblioteca de medios de WordPress para subir una imagen, vemos que el tamaño máximo es 512Mb:
 
-    ![fichero](img/fichero.png)
+    ![fichero](img/ficheros.png)
 
     Modifica ela configuración de PHP en cada caso para aumentar el tamaño de los ficheros que podemos subir.
 
