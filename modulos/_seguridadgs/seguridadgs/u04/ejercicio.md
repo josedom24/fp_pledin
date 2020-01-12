@@ -74,7 +74,7 @@ Una vez establecida la VPN, se habrá creado una interfaz virtual de tipo túnel
     inet 10.10.0.2 peer 10.10.0.1/32 scope global tun0
     ...
 
-Y en la tabla de encaminamiento veremos las nuevas entradas que permiten el tráfico con la máquina `10.0.0.1` (el servidor VPN) y con la red local remota (`192.168.100.0`):
+Y en la tabla de encaminamiento veremos las nuevas entradas que permiten el tráfico con la máquina `10.10.0.1` (el servidor VPN) y con la red local remota (`192.168.100.0`):
 
     $ ip r
     default via 10.0.0.1 dev eth0 
