@@ -21,14 +21,16 @@ Las configuraciones que vamos a realizar son las siguientes:
 {% capture notice-text %}
 ### Apache2
 
-* **Tarea 1 (1 punto)**: Documenta la instalación del módulo php de apache2. Muestra wordpress funcionando con el módulo php de apache2. Realiza una comprobación de que, efectivamente, se está usando el módulo php.
-* **Tarea 2 (1 punto)**: Documenta la instalación y configuración de FPM-PHP y apache2 (escuchando en un socket UNIX) con el módulo de multiprocesamiento event. Muestra wordpress funcionando con FPM-PHP. Realiza una comprobación de que, efectivamente, se está usando FPM-PHP.
-* **Tarea 3 (1 punto)**: Cambia la configuración anterior para que PHP-FPM escuche en un socket CP.
-    
-### nginx
+* **Tarea 1 (5 puntos)**: Realiza las configuraciones indicadas anteriormente y muestra una comprobación (con `phpinfo()`) donde se vea la configuración actual.
 
-* **Tarea 4 (1 punto)**: Documenta la instalación y configuración de PHP-FPM y nginx (escuchando en un socket UNIX) con el módulo de multiprocesamiento event. Muestra wordpress funcionando con PHP-FPM. Realiza una comprobación de que, efectivamente, se está usando PHP-FPM.
-* **Tarea 5 (1 punto)**: Cambia la configuración anterior para que PHP-FPM escuche en un socket TCP.
+* Explica brevemente la modificación en los ficheros de configuración para cada una de las opciones.
+* En cada una de las configuraciones debe funcionar el CMS WordPress.
+* Cuando accedes a la biblioteca de medios de WordPress para subir una imagen, vemos que el tamaño máximo es 512Mb:
+
+    ![fichero](img/fichero.png)
+
+    Modifica ela configuración de PHP en cada caso para aumentar el tamaño de los ficheros que podemos subir.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Rendimiento
