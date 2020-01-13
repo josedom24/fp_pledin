@@ -1,6 +1,6 @@
 heat_template_version: newton
 
-description: 1 vpn_server, 1 vpn_client, 1 lan
+description: 1 vpn_server, 1 lan
 
 parameters:
   flavor:
@@ -40,17 +40,17 @@ resources:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red1 }
-      
+      port_security_enabled: False
       fixed_ips: [{"ip_address": "192.168.100.10", "subnet": { get_resource: subnet1 }}]
-      
+      security_groups: []
       
   r1_red1:
     type: OS::Neutron::Port
     properties:
       network: { get_resource: red1 }
-      
+      port_security_enabled: False
       fixed_ips: [{"ip_address": "192.168.100.2", "subnet": { get_resource: subnet1 }}]
-      
+      security_groups: []
   
      
   
@@ -59,7 +59,8 @@ resources:
     properties:
       network: {get_param: red_externa}
       device_owner: "compute:nova"
-      
+      port_security_enabled: False
+      security_groups: []
       
   
   r1:
@@ -95,28 +96,7 @@ resources:
 
 
 
-  pc2_network_ext:
-    type: OS::Neutron::Port
-    properties:
-      network: {get_param: red_externa}
-      device_owner: "compute:nova"
-      
-      
-    
-  pc2:
-    type: OS::Nova::Server
-    properties:
-      name: "vpn_client"
-      flavor: { get_param: flavor }
-      image: { get_param: image }
-      key_name: { get_param: key_name }
-      networks:
-        - { port: { get_resource: pc2_network_ext } }
-  pc2_ip:
-    type: OS::Neutron::FloatingIP
-    properties:
-      floating_network: ext-net
-      port_id: { get_resource: pc2_network_ext  }
+  
       
 outputs:
   

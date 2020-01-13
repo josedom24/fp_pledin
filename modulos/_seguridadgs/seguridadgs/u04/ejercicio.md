@@ -3,6 +3,9 @@ title: "Configuración de openVPN de acceso remoto con clave estática compartid
 permalink: /seguridadgs/u04/ejercicio.html
 ---
 
+Para realizar este ejercicio puedes usar la receta de heat [escenario_vpn.yaml](escenario_vpn.yaml) para crear el servidor vpn y el ordenador de la red local.
+{: .notice--warning}
+
 En esta ejercicio vamos a ver cómo configurar una VPN de acceso remoto utilizando OpenVPN, una solución libre que permite implementar VPNs basadas en SSL/TLS.
 
 ## El escenario

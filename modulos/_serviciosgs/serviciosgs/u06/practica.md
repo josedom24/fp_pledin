@@ -3,7 +3,7 @@ title: "Práctica: Ejecución de scripts PHP y Python. Rendimiento"
 permalink: /serviciosgs/u06/practica.html
 ---
 
-(9 tareas - 20 puntos)(8 tareas obligatorias - 15 puntos)
+(4 tareas - 15 puntos)
 {: .notice--warning}
     
 ## Ejecución de scripts PHP
