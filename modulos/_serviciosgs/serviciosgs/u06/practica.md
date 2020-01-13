@@ -19,7 +19,6 @@ Las configuraciones que vamos a realizar son las siguientes:
 * PHP-FPM (socket TCP) + nginx 
 
 {% capture notice-text %}
-### Apache2
 
 * **Tarea 1 (5 puntos)**: Realiza las configuraciones indicadas anteriormente y muestra una comprobación (con `phpinfo()`) donde se vea la configuración actual.
 
@@ -30,6 +29,12 @@ Las configuraciones que vamos a realizar son las siguientes:
     ![fichero](img/ficheros.png)
 
     Modifica ela configuración de PHP en cada caso para aumentar el tamaño de los ficheros que podemos subir.
+
+* Realiza varias pruebas (al menos 5) de rendimiento sobre cada configuración y quedáte con una media de las peticiones respondidas por segundo. ¿Qué configuración responde más peticiones por segundo?. Vamos a realizar pruebas con 200 peticiones concurrentes:
+
+        ab -t 10 -c 200 -h http://172.22.x.x/index.php
+    
+    Nota: Recuerda reinciar el servidor web entre prueba y prueba.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
