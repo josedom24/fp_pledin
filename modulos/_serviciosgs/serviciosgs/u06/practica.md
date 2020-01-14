@@ -79,7 +79,7 @@ Las configuraciones que vamos a realizar son las siguientes:
 
 {% capture notice-text %}
 
-* **Tarea 4 (5 puntos)**: Documenta la instalación y configuración para cada una de las configuraciones propuestas en el ejercicio. En cada una de las configuraciones debe ejecutarse un CMS python, por ejemplo, Mezzanine.
+* **Tarea 4 (5 puntos)**: Documenta la instalación y configuración para cada una de las configuraciones propuestas en el ejercicio. En cada una de las configuraciones debe ejecutarse un CMS python, por ejemplo, Mezzanine. Realiza varias pruebas (al menos 5) de rendimiento sobre cada configuración y quedáte con una media de las peticiones respondidas por segundo. ¿Qué configuración responde más peticiones por segundo?.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Rendimiento
