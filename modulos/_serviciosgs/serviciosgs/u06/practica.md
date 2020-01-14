@@ -53,8 +53,8 @@ A partir de esa configuración vamos a intentar aumentar el rendimiento de nuest
 
 {% capture notice-text %}
 
-* **Tarea 2 (2 puntos)**: Añade a la configuración **ganadora del punto anterior** memcached. Documenta la instalación y configuración memcached. Recuerda que para que Wordpress utilice memcached le tenemos que instalar un plugin. Muestra las estadísticas de memcached después de acceder varias veces a wordpress para comprobar que esa funcionando.
-* **Tarea 3 (3 puntos)**: Configura un proxy inverso - caché Varnish escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración.
+* **Tarea 2 (2 puntos)**: Añade a la configuración **ganadora del punto anterior** memcached. Documenta la instalación y configuración memcached. Recuerda que para que Wordpress utilice memcached le tenemos que instalar un plugin. Muestra las estadísticas de memcached después de acceder varias veces a wordpress para comprobar que esa funcionando. Realiza varias pruebas de rendimiento y comprueba si hemos aumentado el rendimiento.
+* **Tarea 3 (3 puntos)**: Configura un proxy inverso - caché Varnish escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración. Realiza pruebas de rendimiento y comprueba si hemos aumentado el rendimiento. Si hacemos varias periciones a la misma URL, ¿cuantas peticiones llegan al servidor web? (comprueba el fichero `access.log` para averiguarlo.)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Rendimiento
