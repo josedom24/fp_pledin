@@ -57,9 +57,7 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [Ejercicio 1: Corrector ortográfico de documentos markdown (test)](ejercicio1.html)
 * [Ejercicio 2: Comprobación de html5 válido y despliegue en surge.sh (test y deploy)](ejercicio2.html)
 
-<!--
+
 ## Prácticas
 
 * [Introducción a la integración continua](ic.html)
-
--->
