@@ -19,6 +19,7 @@ Configura una conexión VPN de acceso remoto entre dos equipos:
     * Existirá un fichero de log en el equipo.
     * Se mandarán a los clientes las rutas necesarias.
 * Tras el establecimiento de la VPN, la máquina cliente debe ser capaz de acceder a una máquina que esté en la otra red a la que está conectado el servidor. 
+* Instala el complemento de VPN en networkmanager y configura el cliente de forma gráfica desde este complemento.
 
 Documenta el proceso detalladamente. Explica los distintos parámetros de los ficheros de configuración. ¿Qué es el parámetro Diffie-Helman?
 
