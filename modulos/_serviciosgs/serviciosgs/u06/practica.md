@@ -32,7 +32,7 @@ Las configuraciones que vamos a realizar son las siguientes:
 
 * Realiza varias pruebas (al menos 5) de rendimiento sobre cada configuración y quedáte con una media de las peticiones respondidas por segundo. ¿Qué configuración responde más peticiones por segundo?. Vamos a realizar pruebas con 200 peticiones concurrentes:
 
-        ab -t 10 -c 200 -h http://172.22.x.x/index.php
+        ab -t 10 -c 200 -k http://172.22.x.x/index.php
     
     Nota: Recuerda reinciar el servidor web entre prueba y prueba.
 
