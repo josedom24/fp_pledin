@@ -24,7 +24,10 @@ permalink: /iawgs/u05/index.html
 * [Conector Mysql](https://www.mysql.com/products/connector/)
 * [Conector PostgreSQL](https://jdbc.postgresql.org/)
 
+
+
+<!--
 ## Prácticas
 
 * [Práctica: Despliegue de CMS java](practica_java.html)
-
+-->
