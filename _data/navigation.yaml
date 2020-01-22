@@ -27,8 +27,8 @@ serviciosgs:
         url: /serviciosgs/u05
       - title: Gestión de peticiones - Rendimiento
         url: /serviciosgs/u06
-#      - title: Servidor de correo electrónico
-#        url: /serviciosgs/u07
+      - title: Servidor de correo electrónico
+        url: /serviciosgs/u07
 #      - title: Proxy, proxy inverso y balanceador de carga
 #        url: /serviciosgs/u08
  
@@ -46,8 +46,8 @@ iawgs:
         url: /iawgs/u03
       - title: Integración Continúa
         url: /iawgs/u04
-#      - title: Java
-#        url: /iawgs/u05
+      - title: Java
+        url: /iawgs/u05
 #      - title: Docker
 #        url: /iawgs/u06
 
