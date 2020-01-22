@@ -59,7 +59,10 @@ Desde aquí podremos controlar la aplicación (Arrancarla, pararla, eliminarla,.
 
 ## Despliegue de aplicaciones mediante la terminal
 
-Implantar una aplicación desde la terminal, tampoco es tan difícil, ya que por defecto cualquier fichero .war que se copie o mueva dentro de l directorio /var/lib/tomcat8/webapps/ se desplegaría automáticamente y dependiendo de nuestra configuración se lanzaría o no.
+Implantar una aplicación desde la terminal, tampoco es tan difícil, ya que por defecto cualquier fichero `.war` que se copie o mueva dentro de l directorio `/var/lib/tomcat8/webapps/` se desplegaría automáticamente y dependiendo de nuestra configuración se lanzaría o no.
+
+En mucha documentación sobre tomcat se refiere a la cariable de entorno `$CATALINA_HOME`, en un debian donde hemos instalado tomcat con apt, el valor de esta varibale será `/var/lib/tomcat8`.
+{: .notice--warning}
 
 ## Administración desde la terminal
 
