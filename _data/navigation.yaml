@@ -50,10 +50,14 @@ iawgs:
         url: /iawgs/u05
 #      - title: Docker
 #        url: /iawgs/u06
-  - title: Módulos
+  - title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"
         url: /lmgs/
+      - title: "Seguridad y Alta Disponibilidad"
+        url: /seguridadgs/
+      - title: "Servicios de Red e Internet"
+        url: /serviciosgs/
 
 lmgs:
   - title: Lenguajes de marcas
@@ -78,6 +82,14 @@ lmgs:
         url: /lmgs/u08
       - title: Servicios Web
         url: /lmgs/u09
+  - title: Otros Módulos...
+    children:
+      - title: "Implantación de Aplicaciones Web"
+        url: /iawgs/
+      - title: "Seguridad y Alta Disponibilidad"
+        url: /seguridadgs/
+      - title: "Servicios de Red e Internet"
+        url: /serviciosgs/
 seguridadgs:
   - title: Seguridad y Alta Disponibilidad
     children:
@@ -91,6 +103,14 @@ seguridadgs:
         url: /seguridadgs/u03
       - title: "VPN"
         url: /seguridadgs/u04
+  - title: Otros Módulos...
+    children:
+      - title: "Lenguaje de Marcas"
+        url: /lmgs/
+      - title: "Implantación de Aplicaciones Web"
+        url: /iawgs/
+      - title: "Servicios de Red e Internet"
+        url: /serviciosgs/
 
 
 
