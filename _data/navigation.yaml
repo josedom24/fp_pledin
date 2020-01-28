@@ -50,6 +50,10 @@ iawgs:
         url: /iawgs/u05
 #      - title: Docker
 #        url: /iawgs/u06
+  - title: Modulos
+    children:
+      - title: "Lenguaje de Marcas"
+        url: /lmgs/
 
 lmgs:
   - title: Lenguajes de marcas
