@@ -31,6 +31,14 @@ serviciosgs:
         url: /serviciosgs/u07
 #      - title: Proxy, proxy inverso y balanceador de carga
 #        url: /serviciosgs/u08
+  - title: Otros Módulos...
+    children:
+      - title: "Lenguaje de Marcas"
+        url: /lmgs/
+      - title: "Implantación de Aplicaciones Web"
+        url: /iawgs/
+      - title: "Seguridad y Alta Disponibilidad"
+        url: /seguridadgs/
  
 
 iawgs:
