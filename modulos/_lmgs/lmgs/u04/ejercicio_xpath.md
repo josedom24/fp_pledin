@@ -38,7 +38,7 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
 
 2. Página web del Instituto:
 
-        http://www.iesabastos.org
+        http://www.gonzalonazareno.org
 
 3. Nombre de los Ciclos Formativos:
 
