@@ -32,6 +32,7 @@ Todas las búsquedas se hacen desde el nodo raíz.
 	* `//year`: Selecciona todos los nodos "year" a partir del nodo raíz.
 	* `/bookstore/book/title/text()`: Selecciona todos los nodos texto (información) de los elementos seleccionados con la ruta.
 	* `/bookstore/book/title/@lang`: Selecciona todos los atributos llamados "lang" de los elementos seleccionados con la ruta.
+	* `//book[1]/title/text()`: Selecciona la información del nodo `tittle` del **primer nodo** `book`.
 	* `.` : Selecciona el nodo actual.
 	* `..` : Selecciona al nodo padre.
 	* `*` : Selecciona todos los nodos
