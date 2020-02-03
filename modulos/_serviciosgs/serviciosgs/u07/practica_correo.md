@@ -6,9 +6,6 @@ permalink: /serviciosgs/u07/practica_correo.html
 **(10 tareas - 25 puntos)(5 tareas obligatorias - 8 puntos)**
 {: .notice--warning}
 
-* Para comprobar el funcionamiento envía un correo a `josedom24@josedomingo.org` y comprueba que recibes u correo como respuesta.
-{: .notice--warning}
-
 Esta tarea consiste en instalar y configurar un servidor de correo similar al de cualquier organización, capaz de enviar y recibir directamente correo, almacenar los usuarios en LDAP, filtrar el correo en busca de virus o spam y servirlo a sus usuarios a través de los protocolos POP, IMAP y configurar un Webmail.
 
 * El servidor web se va a instalar en **croqueta** (debian)
