@@ -19,7 +19,9 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
 * [Caso 5: Recepción de correo electrónico usando nuestro servidor de correos](postfix9.html)
 * [Antispam y antivirus en nuestro servidor de correos](postfix10.html)
 
+<!--
 ## Práctica
 
 * [Práctica servidor de correo en servidores cloud](practica_correo.html)
 * [Práctica servidor de correo en casa](practica_correo_casa.html)
+-->

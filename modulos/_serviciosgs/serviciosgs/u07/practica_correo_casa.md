@@ -20,6 +20,6 @@ Esta tarea consiste en instalar y configurar un servidor de correo similar al qu
 * Configura postfix para que envíe el correo electrónico a través de servidor SMTP relay (gmail, mailgun, sendgrid,...). Cuando funcione envía un correo a `josedom24@gmail.com`.
 
 {% capture notice-text %}
-**Ejericio: Documenta las configuraciones que vas realizando. Muestra comprobaciones (fichero log, capturas de pantalla,...) que comprueben el buen funcionamiento del servidor de correos.
+**Ejericio**: Documenta las configuraciones que vas realizando. Muestra comprobaciones (fichero log, capturas de pantalla,...) que comprueben el buen funcionamiento del servidor de correos.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
