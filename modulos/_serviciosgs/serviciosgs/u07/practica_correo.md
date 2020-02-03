@@ -8,7 +8,7 @@ permalink: /serviciosgs/u07/practica_correo.html
 
 Esta tarea consiste en instalar y configurar un servidor de correo similar al de cualquier organización, capaz de enviar y recibir directamente correo, almacenar los usuarios en LDAP, filtrar el correo en busca de virus o spam y servirlo a sus usuarios a través de los protocolos POP, IMAP y configurar un Webmail.
 
-* El servidor web se va a instalar en **croqueta** (debian)
+* El servidor de correos se va a instalar en **croqueta** (debian)
 * Los servidores que necesites para realizar la práctica serán los del cloud: **salmorejo** (servidor web) y **croqueta** (servidor dns y ldap).
 
 ## Pasos a realizar 
