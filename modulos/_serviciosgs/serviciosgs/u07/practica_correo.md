@@ -3,7 +3,7 @@ title: "Práctica: Servidor de correos en los servidores cloud"
 permalink: /serviciosgs/u07/practica_correo.html
 ---
 
-**(10 tareas - 25 puntos)(5 tareas obligatorias - 8 puntos)**
+**(11 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**
 {: .notice--warning}
 
 Esta tarea consiste en instalar y configurar un servidor de correo similar al de cualquier organización, capaz de enviar y recibir directamente correo, almacenar los usuarios en LDAP, filtrar el correo en busca de virus o spam y servirlo a sus usuarios a través de los protocolos POP, IMAP y configurar un Webmail.
@@ -28,11 +28,27 @@ Instala y configura un servidor dovecot POP e IMAP en tu equipo. Configura adecu
 * **Tarea 5 (2 puntos)(Obligatorio)**: Documenta en redmine una prueba de funcionamiento, donde recibas un correo desde el exterior (gmail, hotmail,...) y lo leas  en tu cliente de correo. Utiliza el protocolo IMAP. ¿Cómo se llama el servidor para enviar el correo? (Muestra la configuración). Muestra una prueba de funcionamiento de cómo funciona el protocolo IMAP.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+Vamos a comprobar como los procesos del servidor pueden mandar correos para informar sobre su estado. Por ejemplo cada vez que se ejecuta una tarea cron podemos enviar un correo informando del resultado. Normalmente estos correos se mandan al usuario `root` del servidor, para ello:
+
+    $ crontab -e
+
+E indico donde se envía el correo:
+
+    MAILTO = root
+
+Puedes poner alguna tarea en el cron para ver como se mandan correo.
+
+Posteriormente usando alias y redirecciones podemos hacer llegar esos correos a nuestro correo personal.
+
+{% capture notice-text %}
+* **Tarea 6 (2 puntos)(Obligatorio)**: Configura el `cron` para enviar correo al usuario `root`. Comprueba que están llegando esos correos al `root`. Crea un nuevo alias para que se manden a un usuario sin privilegios. Comprueban que llegan a ese usuario. Por último crea una redirección para enviar esos correo a tu correo de gmail.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 Instala un webmail (roundcube, horde, ...) para gestionar el correo del equipo mediante una interfaz web. Instala y configura correctamente un sistema de filtrado de virus y spam utilizando amavis, clamav y spamassasin .
 
 {% capture notice-text %}
-* **Tarea 6 (3 puntos)**: Muestra al profesor el envío y recepción de correos utilizando el webmail.
-* **Tarea 7 (5 puntos)**: Muestra al profesor el funcionamiento del sistema de filtrado de virus y spam.
+* **Tarea 7 (3 puntos)**: Muestra al profesor el envío y recepción de correos utilizando el webmail.
+* **Tarea 8 (3 puntos)**: Muestra al profesor el funcionamiento del sistema de filtrado de virus y spam.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea adicional: Configuración de usuarios virtuales con LDAP
@@ -46,7 +62,7 @@ Instala un esquema adecuado para usuarios de postfix en LDAP y crea un script qu
 5. El atributo userPassword es un hash SSHA del uid del usuario
 
 {% capture notice-text %}
-* **Tarea 8 (4 puntos)**: Documenta en redmine la configuración realizada. Y realiza una prueba de funcionamiento al profesor.
+* **Tarea 9 (4 puntos)**: Documenta en redmine la configuración realizada. Y realiza una prueba de funcionamiento al profesor.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea adicional: Configuración de seguridad para SMTP, POP e IMAP
@@ -54,6 +70,6 @@ Instala un esquema adecuado para usuarios de postfix en LDAP y crea un script qu
 En el servidor de clase, configura postfix para que las conexiones al servidor SMTP, POP e IMAP sean seguras (SSL). 
 
 {% capture notice-text %}
-* **Tarea 9 (2 puntos)**: Documenta en redmine la configuración realizada para que nuestro servidor SMTP sea seguro. Indica alguna prueba de funcionamiento .
-* **Tarea 10 (3 puntos)**: Documenta en redmine la configuración realizada para que nuestro servidor POP o IMAP sea seguro. Indica alguna prueba de funcionamiento.
+* **Tarea 10 (2 puntos)**: Documenta en redmine la configuración realizada para que nuestro servidor SMTP sea seguro. Indica alguna prueba de funcionamiento .
+* **Tarea 11 (3 puntos)**: Documenta en redmine la configuración realizada para que nuestro servidor POP o IMAP sea seguro. Indica alguna prueba de funcionamiento.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
