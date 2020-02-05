@@ -56,8 +56,8 @@ iawgs:
         url: /iawgs/u04
       - title: Java
         url: /iawgs/u05
-#      - title: Docker
-#        url: /iawgs/u06
+      - title: Docker
+        url: /iawgs/u06
   - title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"
