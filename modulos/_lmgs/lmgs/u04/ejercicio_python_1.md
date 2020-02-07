@@ -25,3 +25,5 @@ Crea en otro fichero el programa principal que te muestre el siguiente menú:
 6. Información por identificador: Pide un conjunto de identificadores de provincias, y te muestra por pantalla las provincias correspondientes y sus poblaciones.
 7. Ciudades grandes: Lee una provincia por teclado y te muestra las poblaciones grandes ("ciudades grandes"). Si la provincia no existe te da un error.
 8. Es ciudad grande: Lee una población y si es ciudad grande te muestra el nombre de la provincia, sino te dice que no es una ciudad grande.
+
+* [Solución](ejercicio1_xpath.py)

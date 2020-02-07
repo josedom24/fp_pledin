@@ -10,3 +10,4 @@ Utilizando el fichero [sevilla.xml](xml/sevilla.xml.zip), realiza varias funcion
 * Temperatura máxima y mínima de los próximos 7 días (pronostico) hay que indicar también la fecha.
 * Una función que reciba una fecha y una hora y si existe en el pronostico devuelva temperatura, viento, precipitación, presión y humedad.
 
+* [Solución](ejercicio3_xpath.py)
