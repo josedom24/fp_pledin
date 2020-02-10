@@ -29,7 +29,7 @@ Para ello crea un entorno donde vamos a tener un ficjero `index.html` y un fiche
 Algunas cosas importantes de esta configuración:
 
 * `ENV APACHE_SERVER_NAME www.example.com`: Hemos creado una variable de entorno que va a existir en el contenedor que creemos a partir de esta imagen. Le damos un valor por defecto.
-* `CMD ["/usr/local/bin/script.sh"]`: Como podemos apreciar el comando (puedes ver la diferencia entre `CMD` y `ENTRYPOINT` en el siguiente [artículo](https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/)) que se ejecuta al crear el contenedor será un script `/usr/local/bin/script.sh`.  Este script se añade a la imagen (Puedes ver la diferencia entre `ADD` y `COPY` en la siguiente [entrada](https://stackoverflow.com/questions/24958140/what-is-the-difference-between-the-copy-and-add-commands-in-a-dockerfile))y se le da permisos de ejecución.
+* `CMD ["/usr/local/bin/script.sh"]`: Como podemos apreciar el comando (puedes ver la diferencia entre `CMD` y `ENTRYPOINT` en el siguiente [artículo](https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/)) que se ejecuta al crear el contenedor será un script `/usr/local/bin/script.sh`. Este script se añade a la imagen (Puedes ver la diferencia entre `ADD` y `COPY` en la siguiente [entrada](https://stackoverflow.com/questions/24958140/what-is-the-difference-between-the-copy-and-add-commands-in-a-dockerfile)) y se le da permisos de ejecución.
 
 Por lo tanto en el contexto también tenemos que crear el fichero `script.sh` que tendrá el siguiente contenido:
 
@@ -90,7 +90,7 @@ La mayoría de las imágenes que encontramos en Docker Hub se pueden configurar 
         mysql -u usuario -p -h 10.0.0.6
 
     Cambiando la ip por la tuya.
-    
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
