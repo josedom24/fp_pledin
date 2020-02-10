@@ -17,6 +17,7 @@ permalink: /iawgs/u06/index.html
 * [Ciclo de vida de nuestras aplicaciones en docker](https://iesgn.github.io/cloudandrelated/es_docker.html#/)
 * [Ejercicio: Despliegue de páginas estáticas con docker](docker1.html)
 * [Ejercicio: Configuración de contenedores docker con variables de entorno](docker2.html)
+* [Ejercicio: Enlazando contenedores docker](docker3.html)
 * [Ejercicio: Almacenamiento persistente en los contenedores](docker4.html)
 
 

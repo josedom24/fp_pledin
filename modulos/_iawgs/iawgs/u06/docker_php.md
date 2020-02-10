@@ -3,7 +3,7 @@ title: "Práctica: Implantación de aplicaciones web PHP en docker"
 permalink: /iawgs/u06/docker_php.html
 ---
 
-## Tarea 1: Ejecución de una aplicación web PHP en docker (1)
+## Tarea 1: Ejecución de una aplicación web PHP en docker
 
 * Queremos ejecutar en un contenedor docker la aplicación web escrita en PHP: bookMedik ([https://github.com/evilnapsis/bookmedik](https://github.com/evilnapsis/bookmedik)).
 * Es necesario tener un contenedor con **mariadb** donde vamos a crear la base de datos y los datos de la aplicación. El script para generar la base de datos y los registros lo encuentras en el repositorio y se llama `schema.sql`. Debes crear un usuario con su contraseña en la base de datos. La base de datos se llama `bookmedik` y se crea al ejecutar el script.
@@ -21,7 +21,7 @@ permalink: /iawgs/u06/docker_php.html
 * Comprueba que si borramos el contenedor **mariadb** y volvemos a crear otro, los datos no se han perdido porque se han guardado en un volumen. (1 punto)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 2: Ejecución de una aplicación web PHP en docker (2)
+## Tarea 2: Ejecución de una aplicación web PHP en docker
 
 * Realiza la imagen docker de la aplicación a partir de la imagen oficial [PHP](https://hub.docker.com/_/php/) que encuentras en docker hub. Lee la documentación de la imagen para configurar una imagen con apache2 y php, además seguramente tengas que instalar alguna extensión de php.
 * Crea esta imagen en docker hub.
@@ -33,7 +33,7 @@ permalink: /iawgs/u06/docker_php.html
 * Docuementa el uso de docker compose, entrega el script que has desarrollado. (1 punto)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 3: Ejecución de una aplicación PHP en docker (3)
+## Tarea 3: Ejecución de una aplicación PHP en docker
 
 * En este caso queremos usar un contenedor que utilice nginx para servir la aplicación PHP. Puedes crear la imagen desde una imagen base debian o ubuntu o desde la imagen oficial de nginx.
 * Vamos a crear otro contenedor que sirva php-fpm.
@@ -48,7 +48,7 @@ A lo mejor te puede ayudar el siguiente enlace: [Dockerise your PHP application 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-## Tarea 4: Ejecución de un CMS en docker (1)
+## Tarea 4: Ejecución de un CMS en docker
 
 * A partir de una imagen base (que no sea una imagen con el CMS), genera una imagen que despliegue un CMS PHP (que no sea wordpress). El contenedor que se crea a partir de esta imagen se tendrá que enlazar con un contenedor mariadb o postgreSQL.
 * Crea los volúmenes necesarios para que la información que se guarda sea persistente.
@@ -59,7 +59,7 @@ A lo mejor te puede ayudar el siguiente enlace: [Dockerise your PHP application 
 	(2 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 5: Ejecución de un CMS en docker (2)
+## Tarea 5: Ejecución de un CMS en docker
 
 Busca una imagen oficial de un CMS PHP en docker hub (distinto al que has instalado en la tarea anterior, ni wordpress), y crea los contenedores necesarios para servir el CMS, siguiendo la documentación de docker hub.
 
