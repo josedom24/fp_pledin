@@ -19,6 +19,7 @@ permalink: /iawgs/u06/index.html
 * [Ejercicio: Configuración de contenedores docker con variables de entorno](docker2.html)
 * [Ejercicio: Enlazando contenedores docker](docker3.html)
 * [Ejercicio: Almacenamiento persistente en los contenedores](docker4.html)
+* [Ejercicio: Creando escenarios docker con docker-compose](docker5.html)
 
 
 Mis apuntes sobre docker...
