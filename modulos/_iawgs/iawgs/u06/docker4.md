@@ -25,7 +25,7 @@ Ahora podemos crear una base de datos:
     Query OK, 1 row affected (0.07 sec)
 
 {% capture notice-text %}
-Podemos conectarnos de una forma más "elegante" al servidor de base de datos con un contenedor temporal (opción `-.rm`):
+Podemos conectarnos de una forma más "elegante" al servidor de base de datos con un contenedor temporal (opción `--rm`):
 
     docker run -it --rm --link some-mysql:mysql mariadb mysql -hmysql -uroot -p
 
