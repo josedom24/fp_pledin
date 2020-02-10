@@ -3,13 +3,13 @@ title: "Ejercicio: Configuración de contenedores docker con variables de entorn
 permalink: /iawgs/u06/docker2.html
 ---
 
-En este ejercicio vamos a configurar una imagen docker al crear el contendor por medio de variables de entorno.
+En este ejercicio vamos a configurar una imagen docker al crear el contenedor por medio de variables de entorno.
 
 ## Configuración de apache2 en un contenedor docker
 
-Imáginamos que creamos una imagen docker que ofrece un servidor web apache2 pero a la hora de crear el contenedor queremos modificar la configuración de este servicio. En nuestro ejemplo vamos a modificar el valor del parametro `ServerName` de la configuración del virtualhost por defecto.
+Imáginamos que creamos una imagen docker que ofrece un servidor web apache2 pero a la hora de crear el contenedor queremos modificar la configuración de este servicio. En nuestro ejemplo vamos a modificar el valor del parámetro `ServerName` de la configuración del virtualhost por defecto.
 
-Para ello crea un entorno donde vamos a tener un ficjero `index.html` y un fichero Dockerfile con el siguiente contenido:
+Para ello crea un entorno donde vamos a tener un fichero `index.html` y un fichero Dockerfile con el siguiente contenido:
 
     FROM debian
     MAINTAINER José Domingo Muñoz "josedom24@gmail.com"
