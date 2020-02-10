@@ -93,6 +93,3 @@ La mayoría de las imágenes que encontramos en Docker Hub se pueden configurar 
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-
-
-
