@@ -3,7 +3,7 @@ title: "Ejercicio: Creando escenarios docker con docker-compose"
 permalink: /iawgs/u06/docker5.html
 ---
 
-Cuando trabajamos con varios contenedores enalzados podemos utilizar [docker-compose](https://docs.docker.com/compose/) para gestionar el escenario.
+Cuando trabajamos con escenarios donde necesitamos correr varios contenedores podemos utilizar [docker-compose](https://docs.docker.com/compose/) para gestionarlos.
 
 ## Instalación de docker-compose
 
@@ -49,11 +49,12 @@ En el fichero `docker-compose.yml` vamos a definir el escenario. El programa `do
         volumes:
           - /opt/mysql_wp:/var/lib/mysql
 
-Cuando creamos un escenario con `docker-compose` se crea una nueva red docker donde se conectan los contenedores, por lo tanto están enlazados, pero no comparten las variables de entorno. Por esta razón hemos creado las variables de entorno al definir el contenedor de wordpress.
+Cuando creamos un escenario con `docker-compose` se crea una nueva red definida por el usuario docker donde se conectan los contenedores, por lo tanto están enlazados, pero no comparten las variables de entorno (Por esta razón hemos creado las variables de entorno al definir el contenedor de wordpress). Además tenemos resolución por dns que resuelve tanto el nombre del contendor (por ejemplo, `servidor_mysql`) como el alias (por ejemplo, `db`).
 
 Para crear el escenario:
 
     # docker-compose up -d
+    Creating network "dc_default" with the default driver
     Creating servidor_wp    ... done
     Creating servidor_mysql ... done
 

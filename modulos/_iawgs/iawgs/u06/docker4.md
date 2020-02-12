@@ -60,10 +60,12 @@ Podemos crear otro contenedor y comprobar como sigue existiendo la BD:
 
 Al instalar el wordpress en el ejercicio anterior, si eliminamos el contenedor todos los datos del wordpress se perdían (directorio `wp-content`). Por lo tanto vamos a crear el contenedor de wordpress con un volumen asociado:
 
-    docker run -d --name servidor_mysql -v /opt/mysql_wp:/var/lib/mysql -e MYSQL_DATABASE=bd_wp -e MYSQL_USER=user_wp -e MYSQL_PASSWORD=asdasd -e MYSQL_ROOT_PASSWORD=asdasd mariadb
 
-    docker run --name servidor_wp -v /opt/wordpress:/var/www/html/wp-content -p 80:80 --link servidor_mysql:mysql -d wordpress
+    docker run -d --name servidor_mysql --network red_wp -v /opt/mysql_wp:/var/lib/mysql -e MYSQL_DATABASE=bd_wp -e MYSQL_USER=user_wp -e MYSQL_PASSWORD=asdasd -e MYSQL_ROOT_PASSWORD=asdasd mariadb
+
+    docker run -d --name servidor_wp --network red_wp -v /opt/wordpress:/var/www/html/wp-content -e WORDPRESS_DB_HOST=servidor_mysql -e WORDPRESS_DB_USER=user_wp -e WORDPRESS_DB_PASSWORD=asdasd -e WORDPRESS_DB_NAME=bd_wp -p 80:80  wordpress
+
 
 ## Creación de imágenes con volúmenes desde Dockerfile
 
-Cuando creamos una imagen desde Dockerfile podemos indicar la creación de volumenes: [Gestionando el almacenamiento docker con Dockerfile](https://www.josedomingo.org/pledin/2016/11/gestionando-el-almacenamiento-docker-con-dockerfile/).
+Cuando creamos una imagen desde Dockerfile podemos indicar la creación de volúmenes: [Gestionando el almacenamiento docker con Dockerfile](https://www.josedomingo.org/pledin/2016/11/gestionando-el-almacenamiento-docker-con-dockerfile/).
