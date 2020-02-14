@@ -10,3 +10,6 @@ Escribe distintas funciones python que lea el siguiente [fichero json](ej2.json)
 * De las pruebas de tipo “No Presencial” devuelve la URL de información.
 * Recibe el código de la prueba “ID” y muestra su título y profesores.
 * Para cada uno de las pruebas, muestra su título y sus profesores.
+
+
+* [Solución](ejercicio2.py)

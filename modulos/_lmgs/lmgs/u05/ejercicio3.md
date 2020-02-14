@@ -12,3 +12,4 @@ Utilizando el fichero [ej3.json](ej3.json.zip) de provincias y municipios de Esp
 * Función que recibe el nombre de un municipio y te devuelve la provincia donde se encuentra.
 * En una lista tenemos distintos identificadores de provincias, devolver el nombre de las provincias y todos los municipios correspondientes a los identificadores que se encuentran en la lista.
 
+* [Solución](ejercicio3.py)
