@@ -24,7 +24,7 @@ En esta práctica vamos a instalar un proxy `squid` para configurar nuestro clie
 
 En esta práctica vamos a hacer uso de este fichero [Vagrantfile](doc/proxy/Vagrantfile) para crear este escenario:
 
-![esquema](img/proxy.jpg)
+![esquema](img/proxy.png)
 
 Tenemos un servidor web interno que está sirviendo dos aplicaciuones web:
 
@@ -45,7 +45,7 @@ Configura en el ordenador `proxy` un proxy inverso para acceder a las aplicacion
 En esta práctica vamos a hacer uso de vagrant para crear este escenario:
 
 
-![haproxy](img/haproxy.png)
+![haproxy](img/haproxy.jpg)
 
 Para ello descarga este [fichero](doc/haproxy/vagrant.zip), descomprímelo en un directorio y crea el escenario vagrant.
 
