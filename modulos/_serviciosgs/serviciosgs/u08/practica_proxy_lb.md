@@ -3,43 +3,40 @@ title: "Práctica: Proxy, proxy inverso y balanceadores de carga"
 permalink: /serviciosgs/u08/practica_proxy_lb.html
 ---
 
-**(12 tareas - 15 puntos)**
-{: .notice--warning}
-
 ## Proxy
 
-En esta práctica vamos a instalar un pequeño proxy llamado `tinyproxy` para que podamos comprobar como funciona este tipo de servicio.
+En esta práctica vamos a instalar un proxy `squid` para configurar nuestro cliente para que acceda a internet por medio de este proxy.
 
 {% capture notice-text %}
-* **Tarea 1 (1 puntos)**: Instala tinyproxy en una máquina y configúralo para que permita conexiones desde la red dopnde este tu ordenador.
-* **Tarea 2 (1 puntos)**: Prueba que tu ordenador está navegando a través del proxy (HTTP/HTTPS) configurando el proxy de tres maneras diferentes:
+* **Tarea 1**: Instala squid en una máquina y configúralo para que permita conexiones desde la red donde este tu ordenador.
+* **Tarea 2**: Prueba que tu ordenador está navegando a través del proxy (HTTP/HTTPS) configurando el proxy de tres maneras diferentes:
 
     * Directamente indicándolo en el navegador.
     * Configurando el proxy del sistema en el entorno gráfico (tienes que indicar en el navegador que vas a hacer uso del proxy del sistema).
     * Configurando el proxy desde la línea de comandos (tienes que indicar en el navegador que vas a hacer uso del proxy del sistema).
 
-    Muestra el contenido del fichero ´/var/log/tinyproxy.log` para comprobar que está funcionando el proxy.
-* **Tarea 3 (2 puntos)**: Con tinyproxy podemos filtrar el acceso por url o dominios, realiza las configuraciones necesarias para implementar un filtro que funcione como lista negra (todo el acceso es permitido menos las url o dominios que indiquemos.)
-* **Tarea 4 (2 puntos)**: Realiza las configuraciones necesarias para implementar un filtro que funcione como lista blanca (todo el acceso es denegado menos las url o dominios que indiquemos.)
+    Muestra el contenido del fichero ´/var/log/squid/access.log` para comprobar que está funcionando el proxy.
+* **Tarea 3**: Con squid podemos filtrar el acceso por url o dominios, realiza las configuraciones necesarias para implementar un filtro que funcione como lista negra (todo el acceso es permitido menos las url o dominios que indiquemos en un fichero.)
+* **Tarea 4**: Realiza las configuraciones necesarias para implementar un filtro que funcione como lista blanca (todo el acceso es denegado menos las url o dominios que indiquemos en un fichero.)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Proxy inverso
 
-Configura en un servidor interno dos aplicaciones web (puedes usar por ejemplo docker). Podemos instalar aplicaciones que usaen sqlite, para no tener que instalar contenedores con bases de datos. Por ejemplo podemos instalar nextcloud y ghosts:
+En esta práctica vamos a hacer uso de este fichero [Vagrantfile](doc/proxy/Vagrantfile) para crear este escenario:
 
-    docker run -d --name some-nextcloud -p 8080:80 nextcloud
-    docker run -d --name some-ghost -p 8081:2368 ghost
+![esquema](img/proxy.png)
 
-Instala en un ordenador al que tengas acceso desde tu máquina un proxy inverso que lo vamos a configurar para acceder a las aplicaciones de dos formas distintas:
+Tenemos un servidor web interno que está sirviendo dos aplicaciuones web:
 
-* Para que se acceda a la primera aplicación con la URL `www.servidor.org\app1` y a la segunda aplicación con la URL `www.servidor.org\app2`.
-* Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
+* nextcloud en el puerto 8080
+* ghosts en el puerto 8081
+
+Configura en el ordenador `proxy` un proxy inverso para acceder a las aplicaciones de dos formas distintas:
 
 {% capture notice-text %}
-* **Tarea 5 (1 punto)**: Configura apache2 como proxy inverso para acceder a los servidores internos de la primera forma.
-* **Tarea 6 (1 punto)**: Configura apache2 como proxy inverso para acceder a los servidores internos de la segunda forma.
-* **Tarea 7 (1 punto)(Obligatorio)**: Configura nginx como proxy inverso para acceder a los servidores internos de la primera forma.
-* **Tarea 8 (1 punto)**: Configura nginx como proxy inverso para acceder a los servidores internos de la segunda forma.
+* **Tarea 1**: * Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
+* **Tarea 2**: Para que se acceda a la primera aplicación con la URL `www.servidor.org\app1` y a la segunda aplicación con la URL `www.servidor.org\app2`.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
