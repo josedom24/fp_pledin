@@ -100,7 +100,7 @@ Por último, desde la máquina cliente abrir en un navegador web la URL `http://
 
 ### Configurar la persistencia de conexiones Web (sticky sessions)
 
-En los servidores internos vamos a crear una aplicación PHP para trabajar con sesiones, vamos a crear el fichero `sesion.php` con el siguiente contenido:
+En los servidores internos hay una aplicación PHP para trabajar con sesiones, puedes encontrar el fichero `sesion.php` con el siguiente contenido:
 
     <?php
          header('Content-Type: text/plain');
