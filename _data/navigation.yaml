@@ -29,8 +29,8 @@ serviciosgs:
         url: /serviciosgs/u06
       - title: Servidor de correo electrónico
         url: /serviciosgs/u07
-#      - title: Proxy, proxy inverso y balanceador de carga
-#        url: /serviciosgs/u08
+      - title: Proxy, proxy inverso y balanceador de carga
+        url: /serviciosgs/u08
   - title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"
