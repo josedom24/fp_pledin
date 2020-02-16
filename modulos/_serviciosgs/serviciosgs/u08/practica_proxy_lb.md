@@ -26,7 +26,7 @@ En esta práctica vamos a hacer uso de este fichero [Vagrantfile](doc/proxy/Vagr
 
 ![esquema](img/proxy.png)
 
-Tenemos un servidor web interno que está sirviendo dos aplicaciuones web:
+Tenemos un servidor web interno que está sirviendo dos aplicaciones web:
 
 * nextcloud en el puerto 8080
 * ghosts en el puerto 8081
