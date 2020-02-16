@@ -24,7 +24,7 @@ En esta práctica vamos a instalar un proxy `squid` para configurar nuestro clie
 
 En esta práctica vamos a hacer uso de este fichero [Vagrantfile](doc/proxy/Vagrantfile) para crear este escenario:
 
-![esquema](img/proxy.png)
+![esquema](img/proxy.jpg)
 
 Tenemos un servidor web interno que está sirviendo dos aplicaciuones web:
 
@@ -42,32 +42,18 @@ Configura en el ordenador `proxy` un proxy inverso para acceder a las aplicacion
 
 ## Balanceador de carga
 
-En primer lugar, construye con KVM con vagrant la siguiente infraestructura:
+En esta práctica vamos a hacer uso de vagrant para crear este escenario:
+
 
 ![haproxy](img/haproxy.png)
 
-Modifica el contenido de los ficheros `index.html` para que indiquen a que servidor se está accediendo:
-En apache1:
-
-    apache1:~# nano /var/www/html/index.html
-     ...
-     <h1> Servidor por APACHE_UNO </h1>
-     ...
-            
-
- En apache2:
-
-    apache2:~# nano /var/www/html/index.html
-    ...
-     <h1> Servidor por APACHE_DOS </h1>
-     ...
+Para ello descarga este [fichero](doc/haproxy/vagrant.zip), descomprímelo en un directorio y crea el escenario vagrant.
 
 ### Configurar y evaluar balanceo de carga con dos servidores Apache
 
-Instala HAproxy en balanceador y configurarlo de la siguiente manera:
+Instala HAproxy en `balanceador` y configuralo de la siguiente manera:
 
     balanceador:~# cd /etc/haproxy
-    balanceador:/etc/haproxy/# mv haproxy.cfg haproxy.cfg.original
     balanceador:/etc/haproxy/# nano haproxy.cfg        
     global
         daemon
@@ -83,7 +69,7 @@ Instala HAproxy en balanceador y configurarlo de la siguiente manera:
         timeout client  50000ms
         timeout server  50000ms        
     listen granja_cda 
-        bind 193.147.87.47:80
+        bind 172.22.x.x:80 #aquí pon la dirección ip del balanceador
         mode http
         stats enable
         stats auth  cda:cda
@@ -91,24 +77,24 @@ Instala HAproxy en balanceador y configurarlo de la siguiente manera:
         server uno 10.10.10.11:80 maxconn 128
         server dos 10.10.10.22:80 maxconn 128
 
-Define (en la sección listen) un "proxy inverso" de nombre granja_cda que:
+Define (en la sección `listen`) un "proxy inverso" de nombre `granja_cda` que:
 
-* trabajará en modo http (la otra alternativa es el modo tcp, pero no analiza las peticiones/respuestas HTTP, sólo retransmite paquetes TCP)
+* trabajará en modo `http` (la otra alternativa es el modo tcp, pero no analiza las peticiones/respuestas HTTP, sólo retransmite paquetes TCP)
 * atendiendo peticiones en el puerto 80 del balanceador
-* con balanceo round-robin
-* que repartirá las peticiones entre dos servidores reales (de nombres uno y dos) en el puerto 80 de las direcciones 10.10.10.11 y 10.10.10.22
-* adicionalmente, habilita la consola Web de estadísticas, accesible con las credenciales cda:cda
+* con balanceo `round-robin`
+* que repartirá las peticiones entre dos servidores reales (de nombres uno y dos) en el puerto 80 de las direcciones `10.10.10.11` y `10.10.10.22`
+* adicionalmente, habilita la consola Web de estadísticas, accesible con las credenciales `cda:cda`
 
-Más detalles en [Opciones de configuración HAPproxy 1.5](http://cbonte.github.io/haproxy-dconv/configuration-1.5.html).
+Más detalles en [Opciones de configuración HAPproxy 1.8](https://cbonte.github.io/haproxy-dconv/1.8/configuration.html).
 
 Inicia HAproxy en balanceador: Antes de hacerlo es necesario habilitar en ``/etc/default/haproxy`` el arranque de HAproxy desde los scripts de inicio, estableciendo la variable ``ENABLED=1``
 
-Por último, desde la máquina cliente abrir en un navegador web la URL http://172.22.x.x y recargar varias veces para comprobar como cambia el servidor real que responde las peticiones.
+Por último, desde la máquina cliente abrir en un navegador web la URL `http://172.22.x.x` y recargar varias veces para comprobar como cambia el servidor real que responde las peticiones.
 
 {% capture notice-text %}
-* **Tarea 9 (1 puntos)**: Muestra al profesor y entrega capturas de pantalla que el balanceador está funcionando.
-* **Tarea 10 (1 punto)**: Entrega una captura de pantalla donde se vea la página web de estadísticas de haproxy (abrir en un navegador web la URL `http://172.22.x.x/haproxy?stats`, pedirá un usuario y un password, ambos `cda`).
-* **Tarea 11 (1 punto)**: Desde uno de los servidores (apache1 ó apache2), verificar los logs del servidor Apache. En todos los casos debería figurar como única dirección IP cliente la IP interna de la máquina balanceador [10.10.10.1]. ¿Por qué?
+* **Tarea 1**: Entrega capturas de pantalla que el balanceador está funcionando.
+* **Tarea 2**: Entrega una captura de pantalla donde se vea la página web de estadísticas de haproxy (abrir en un navegador web la URL `http://172.22.x.x/haproxy?stats`, pedirá un usuario y un password, ambos `cda`).
+* **Tarea 3**: Desde uno de los servidores (apache1 ó apache2), verificar los logs del servidor Apache. En todos los casos debería figurar como única dirección IP cliente la IP interna de la máquina balanceador `10.10.10.1`. ¿Por qué?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
@@ -177,6 +163,6 @@ Reiniciamos el balanceador y realizamos las siguientes acciones:
         cliente:~# lynx -accept-all-cookies http://172.22.x.x/sesion.php
 
 {% capture notice-text %}
-* **Tarea 12 (2 puntos)**:Verificar la estructura y valores de las cookies PHPSESSID intercambiadas. En la primera respuesta HTTP (inicio de sesión), se establece su valor con un parámetro HTTP SetCookie en la cabecera de la respuesta. Las sucesivas peticiones del cliente incluyen el valor de esa cookie (parámetro HTTP Cookie en la cabecera de las peticiones)
+* **Tarea 4**:Verificar la estructura y valores de las cookies PHPSESSID intercambiadas. En la primera respuesta HTTP (inicio de sesión), se establece su valor con un parámetro HTTP SetCookie en la cabecera de la respuesta. Las sucesivas peticiones del cliente incluyen el valor de esa cookie (parámetro HTTP Cookie en la cabecera de las peticiones)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
