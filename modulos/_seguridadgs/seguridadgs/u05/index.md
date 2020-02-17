@@ -5,8 +5,8 @@ permalink: /seguridadgs/u05/index.html
 
 ## Teoría
 
-* [Introducción a los clústeres](doc/intro-clusters.pdf)
-* [Introducción a la alta disponibilidad](intro-ha.pdf)
+* [Introducción a los clústeres](doc/intro-clusteres.pdf)
+* [Introducción a la alta disponibilidad](doc/intro-ha.pdf)
 
 
 ## Enlaces interesantes
