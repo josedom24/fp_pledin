@@ -11,7 +11,6 @@ config.vm.define :proxy do |proxy|
   end
   config.vm.define :cliente_int do |cliente_int|
     cliente_int.vm.box = "debian/buster64"
-    cliente_int.vm.hostname = "cliente_int"
     cliente_int.vm.network :private_network, ip: "10.0.0.11",virtualbox__intnet: "red_privada1"
   end
   
