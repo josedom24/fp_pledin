@@ -158,7 +158,7 @@ En este caso queremos instalar dos servidores web en el **apache1** y en **apach
 Configura en el ordenador `balanceador` (tienes que detener haproxy) un proxy inverso para acceder a las aplicaciones de dos formas distintas:
 
 {% capture notice-text %}
-* **Tarea 1**: * Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
+* **Tarea 1**: Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
 * **Tarea 2**: Para que se acceda a la primera aplicación con la URL `www.servidor.org\app1` y a la segunda aplicación con la URL `www.servidor.org\app2`.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
