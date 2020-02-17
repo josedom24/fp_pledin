@@ -153,7 +153,7 @@ Reiniciamos el balanceador y realizamos las siguientes acciones:
 
 Para hacer esta práctica puedes utilizar el escenario del ejercicio anterior.
 
-En este caso queremos instalar dos servidores web en el `apache1` y en `apache2`, estos servidores deben servir una web completa (con hoja de estilo, imágenes,...) busca alguna plantilla.
+En este caso queremos instalar dos servidores web en el `apache1` y en `apache2`, estos servidores deben servir una web completa (con hoja de estilo, imágenes,...) busca alguna plantilla (debe tener algunas páginas html para probar los enlaces).
 
 Configura en el ordenador `balanceador` (tienes que detener haproxy) un proxy inverso para acceder a las aplicaciones de dos formas distintas:
 
