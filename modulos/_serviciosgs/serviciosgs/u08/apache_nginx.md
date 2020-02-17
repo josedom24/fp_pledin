@@ -45,7 +45,7 @@ En nuestro servidor interno hemos creado un virtual host para servir una página
             <br/>
             <br/>
             <a href="directorio">Redirección</a>
-            <br/>><br/>
+            <br/><br/>
             <a href="http://10.0.0.6/carpeta/index.html">Enlace tipo 1</a><br/>
             <a href="/carpeta/index.html">Enlace tipo 2</a><br/>
             <a href="carpeta/index.html">Enlace tipo 3</a>
