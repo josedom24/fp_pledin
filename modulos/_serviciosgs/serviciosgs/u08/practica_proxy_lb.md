@@ -7,17 +7,20 @@ permalink: /serviciosgs/u08/practica_proxy_lb.html
 
 En esta práctica vamos a instalar un proxy `squid` para configurar nuestro cliente para que acceda a internet por medio de este proxy.
 
+Vamos a usar el fichero [Vagrantfile](doc/squid/Vagrantfile) para crear el escenario: un ordenador llamado `proxy` donde instalaremos squid y un cliente interno (`cliente_int`).
+
 {% capture notice-text %}
-* **Tarea 1**: Instala squid en una máquina y configúralo para que permita conexiones desde la red donde este tu ordenador.
+* **Tarea 1**: Instala squid en la máquina `squid` y configúralo para que permita conexiones desde la red donde este tu ordenador.
 * **Tarea 2**: Prueba que tu ordenador está navegando a través del proxy (HTTP/HTTPS) configurando el proxy de tres maneras diferentes:
 
     * Directamente indicándolo en el navegador.
     * Configurando el proxy del sistema en el entorno gráfico (tienes que indicar en el navegador que vas a hacer uso del proxy del sistema).
-    * Configurando el proxy desde la línea de comandos (tienes que indicar en el navegador que vas a hacer uso del proxy del sistema).
 
-    Muestra el contenido del fichero ´/var/log/squid/access.log` para comprobar que está funcionando el proxy.
-* **Tarea 3**: Con squid podemos filtrar el acceso por url o dominios, realiza las configuraciones necesarias para implementar un filtro que funcione como lista negra (todo el acceso es permitido menos las url o dominios que indiquemos en un fichero.)
-* **Tarea 4**: Realiza las configuraciones necesarias para implementar un filtro que funcione como lista blanca (todo el acceso es denegado menos las url o dominios que indiquemos en un fichero.)
+Muestra el contenido del fichero ´/var/log/squid/access.log` para comprobar que está funcionando el proxy.
+
+* **Tarea 3**: Configura squid para que pueda ser utilizado desde el cliente interno. en el cliente interno configura el proxy desde la línea de comandos (con una variable de entorno).
+* **Tarea 4**: Con squid podemos filtrar el acceso por url o dominios, realiza las configuraciones necesarias para implementar un filtro que funcione como lista negra (todo el acceso es permitido menos las url o dominios que indiquemos en un fichero.)
+* **Tarea 5**: Realiza las configuraciones necesarias para implementar un filtro que funcione como lista blanca (todo el acceso es denegado menos las url o dominios que indiquemos en un fichero.)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Proxy inverso
