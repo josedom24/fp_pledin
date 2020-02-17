@@ -23,26 +23,6 @@ Muestra el contenido del fichero ´/var/log/squid/access.log` para comprobar que
 * **Tarea 5**: Realiza las configuraciones necesarias para implementar un filtro que funcione como lista blanca (todo el acceso es denegado menos las url o dominios que indiquemos en un fichero.)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Proxy inverso
-
-En esta práctica vamos a hacer uso de este fichero [Vagrantfile](doc/proxy/Vagrantfile) para crear este escenario:
-
-![esquema](img/proxy.png)
-
-Tenemos un servidor web interno que está sirviendo dos aplicaciones web:
-
-* nextcloud en el puerto 8080
-* ghosts en el puerto 8081
-
-Configura en el ordenador `proxy` un proxy inverso para acceder a las aplicaciones de dos formas distintas:
-
-{% capture notice-text %}
-* **Tarea 1**: * Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
-* **Tarea 2**: Para que se acceda a la primera aplicación con la URL `www.servidor.org\app1` y a la segunda aplicación con la URL `www.servidor.org\app2`.
-
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
-
 ## Balanceador de carga
 
 En esta práctica vamos a hacer uso de vagrant para crear este escenario:
@@ -169,3 +149,16 @@ Reiniciamos el balanceador y realizamos las siguientes acciones:
 * **Tarea 4**:Verificar la estructura y valores de las cookies PHPSESSID intercambiadas. En la primera respuesta HTTP (inicio de sesión), se establece su valor con un parámetro HTTP SetCookie en la cabecera de la respuesta. Las sucesivas peticiones del cliente incluyen el valor de esa cookie (parámetro HTTP Cookie en la cabecera de las peticiones)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+## Proxy inverso
+
+Para hacer esta práctica puedes utilizar el escenario del ejercicio anterior.
+
+En este caso queremos instalar dos servidores web en el **apache1** y en **apache2**, estos servidores deben servir una web completa (con hoja de estilo, imágenes,...) busca alguna plantilla.
+
+Configura en el ordenador `balanceador` (tienes que detener haproxy) un proxy inverso para acceder a las aplicaciones de dos formas distintas:
+
+{% capture notice-text %}
+* **Tarea 1**: * Para que se acceda a la primera aplicación con la URL `www.app1.org` y a la segunda aplicación con la URL `www.app2.org`.
+* **Tarea 2**: Para que se acceda a la primera aplicación con la URL `www.servidor.org\app1` y a la segunda aplicación con la URL `www.servidor.org\app2`.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
