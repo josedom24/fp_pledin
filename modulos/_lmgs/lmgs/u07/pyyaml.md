@@ -25,7 +25,7 @@ Si tenemos el fichero books.yaml:
 ---
 bookstore:
 	book: 
-    - title: 
+	- title: 
         lang: "en"
         text: "Everyday Italian"
       author: "Giada De Laurentiis"
