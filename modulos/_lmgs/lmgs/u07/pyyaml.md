@@ -26,16 +26,16 @@ Si tenemos el fichero books.yaml:
 bookstore:
 	book: 
 	- title: 
-        lang: "en"
-        text: "Everyday Italian"
-      author: "Giada De Laurentiis"
-      year: "2005"
-      price: "30.00"
-      category: "COOKING"
+		lang: "en"
+		text: "Everyday Italian"
+	  author: "Giada De Laurentiis"
+	  year: "2005"
+	  price: "30.00"
+	  category: "COOKING"
     
-    - title: 
-        lang: "en"
-        text: "Harry Potter"
+	- title: 
+		lang: "en"
+		text: "Harry Potter"
       author: "J K. Rowling"
       year: "2005"
       price: "29.99"
