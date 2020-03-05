@@ -23,8 +23,8 @@ Si tenemos el fichero books.yaml:
 
 	```
 	---
-	bookstore: 
-  		book: 
+	bookstore:
+		book: 
 	    - title: 
 	        lang: "en"
 	        text: "Everyday Italian"
