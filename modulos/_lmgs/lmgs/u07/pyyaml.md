@@ -13,32 +13,37 @@ E instalamos el páquete:
 
 	pip install PyYAML
 
+Con apt en Debian 10:
+
+	apt install python3-yaml
+
 ## Leer un fichero YAML
 
 Si tenemos el fichero books.yaml:
 
+	```
 	---
 	bookstore: 
   		book: 
 	    - title: 
-	        _lang: "en"
-	        __text: "Everyday Italian"
+	        lang: "en"
+	        text: "Everyday Italian"
 	      author: "Giada De Laurentiis"
 	      year: "2005"
 	      price: "30.00"
-	      _category: "COOKING"
+	      category: "COOKING"
 	    
 	    - title: 
-	        _lang: "en"
-	        __text: "Harry Potter"
+	        lang: "en"
+	        text: "Harry Potter"
 	      author: "J K. Rowling"
 	      year: "2005"
 	      price: "29.99"
-	      _category: "CHILDREN"
+	      category: "CHILDREN"
 	    
 	    - title: 
-	        _lang: "en"
-	        __text: "XQuery Kick Start"
+	        lang: "en"
+	        text: "XQuery Kick Start"
 	      author: 
 	        - "James McGovern"
 	        - "Per Bothner"
@@ -47,16 +52,16 @@ Si tenemos el fichero books.yaml:
 	        - "Vaidyanathan Nagarajan"
 	      year: "2003"
 	      price: "49.99"
-	      _category: "WEB"
+	      category: "WEB"
 	    
 	    - title: 
-	        _lang: "en"
-	        __text: "Learning XML"
+	        lang: "en"
+	        text: "Learning XML"
 	      author: "Erik T. Ray"
 	      year: "2003"
 	      price: "39.95"
-	      _category: "WEB"
-
+	      category: "WEB"
+	```
 Podríamos hacer un programa como este:
 
 	import yaml   
@@ -76,7 +81,7 @@ Podríamos hacer un programa como este:
 ### Títulos de los libros
 
 	for libro in doc["bookstore"]["book"]:
-   		print(libro["title"]["__text"])
+   		print(libro["title"]["text"])
 
 ### Autores de los libros
 
