@@ -22,7 +22,6 @@ Con apt en Debian 10:
 Si tenemos el fichero books.yaml:
 
 ```
----
 bookstore:
 	book: 
 	- title: 
