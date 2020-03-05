@@ -36,31 +36,31 @@ bookstore:
 	- title: 
 		lang: "en"
 		text: "Harry Potter"
-      author: "J K. Rowling"
-      year: "2005"
-      price: "29.99"
-      category: "CHILDREN"
+	  author: "J K. Rowling"
+	  year: "2005"
+	  price: "29.99"
+	  category: "CHILDREN"
     
-    - title: 
-        lang: "en"
-        text: "XQuery Kick Start"
-      author: 
-        - "James McGovern"
-        - "Per Bothner"
-        - "Kurt Cagle"
-        - "James Linn"
-        - "Vaidyanathan Nagarajan"
-      year: "2003"
-      price: "49.99"
-      category: "WEB"
+	- title: 
+		lang: "en"
+		text: "XQuery Kick Start"
+	  author: 
+		- "James McGovern"
+		- "Per Bothner"
+		- "Kurt Cagle"
+		- "James Linn"
+		- "Vaidyanathan Nagarajan"
+	  year: "2003"
+	  price: "49.99"
+	  category: "WEB"
     
-    - title: 
-        lang: "en"
-        text: "Learning XML"
-      author: "Erik T. Ray"
-      year: "2003"
-      price: "39.95"
-      category: "WEB"
+	- title: 
+		lang: "en"
+		text: "Learning XML"
+	  author: "Erik T. Ray"
+	  year: "2003"
+	  price: "39.95"
+	  category: "WEB"
 ```
 
 Podríamos hacer un programa como este:
