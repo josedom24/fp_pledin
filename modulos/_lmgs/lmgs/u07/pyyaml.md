@@ -21,47 +21,48 @@ Con apt en Debian 10:
 
 Si tenemos el fichero books.yaml:
 
-	```
-	---
-	bookstore:
-		book: 
-	    - title: 
-	        lang: "en"
-	        text: "Everyday Italian"
-	      author: "Giada De Laurentiis"
-	      year: "2005"
-	      price: "30.00"
-	      category: "COOKING"
-	    
-	    - title: 
-	        lang: "en"
-	        text: "Harry Potter"
-	      author: "J K. Rowling"
-	      year: "2005"
-	      price: "29.99"
-	      category: "CHILDREN"
-	    
-	    - title: 
-	        lang: "en"
-	        text: "XQuery Kick Start"
-	      author: 
-	        - "James McGovern"
-	        - "Per Bothner"
-	        - "Kurt Cagle"
-	        - "James Linn"
-	        - "Vaidyanathan Nagarajan"
-	      year: "2003"
-	      price: "49.99"
-	      category: "WEB"
-	    
-	    - title: 
-	        lang: "en"
-	        text: "Learning XML"
-	      author: "Erik T. Ray"
-	      year: "2003"
-	      price: "39.95"
-	      category: "WEB"
-	```
+```
+---
+bookstore:
+	book: 
+    - title: 
+        lang: "en"
+        text: "Everyday Italian"
+      author: "Giada De Laurentiis"
+      year: "2005"
+      price: "30.00"
+      category: "COOKING"
+    
+    - title: 
+        lang: "en"
+        text: "Harry Potter"
+      author: "J K. Rowling"
+      year: "2005"
+      price: "29.99"
+      category: "CHILDREN"
+    
+    - title: 
+        lang: "en"
+        text: "XQuery Kick Start"
+      author: 
+        - "James McGovern"
+        - "Per Bothner"
+        - "Kurt Cagle"
+        - "James Linn"
+        - "Vaidyanathan Nagarajan"
+      year: "2003"
+      price: "49.99"
+      category: "WEB"
+    
+    - title: 
+        lang: "en"
+        text: "Learning XML"
+      author: "Erik T. Ray"
+      year: "2003"
+      price: "39.95"
+      category: "WEB"
+```
+
 Podríamos hacer un programa como este:
 
 	import yaml   
