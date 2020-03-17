@@ -11,7 +11,7 @@ permalink: /lmgs/u06/formulario.html
     </head>
     <body>  
 
-        <form action="http://www.gonzalonazareno.org/josedom/resultado.php" method="get">
+        <form action="http://www2.gonzalonazareno.org/josedom/resultado.php" method="post">
             <p>
             Nombre: <input type="text" name="name_control" autofocus required />
             <br />
