@@ -1,4 +1,7 @@
-# Lenguaje de marcas. Recuperación de 1ª evaluación
+---
+title: "Lenguaje de marcas. Recuperación de 1ª evaluación"
+permalink: /lmgs/rec_1ev.html
+---
 
 * La recuperación de la primera evaluación corresponde a la recuperación del bloque de python3.
 * Las recuperaciones de los diferentes bloques se realizará durante el mes de junio.

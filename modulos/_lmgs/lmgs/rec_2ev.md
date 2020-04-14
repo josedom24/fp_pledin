@@ -1,4 +1,7 @@
-# Lenguaje de marcas. Recuperación de 2ª evaluación
+---
+title: "Lenguaje de marcas. Recuperación de 2ª evaluación"
+permalink: /lmgs/rec_2ev.html
+---
 
 * La recuperación de la segunda evaluación corresponde a la recuperación del bloque de lenguaje de marcas.
 * Las recuperaciones de los diferentes bloques se realizará durante el mes de junio.
