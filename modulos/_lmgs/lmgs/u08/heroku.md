@@ -5,20 +5,20 @@ permalink: /lmgs/u08/heroku.html
 
 En esta unidad vamos a desplegar nuestra aplicación web desarrollada en python utilizando el framework flask utilizando sólo la aplicación web Heroku (Heroku Dashboard) (no vamos a utilizar el comando `heroku-cli`).
 
-[Heroku](https://www.heroku.com/) es una aplicación que nos ofrece un servicio de Cloud Computing [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) (Plataforma como servicio). Como leemos en la Wikipedia es propiedad de Salesforce.com y es una de las primeras plataformas de computación en la nube, que fue desarrollada desde junio de 2007, con el objetivo de soportar solamente el lenguaje de programación Ruby, pero posteriormente se ha extendido el soporte a Java, Node.js, Scala, Clojure y Python y PHP. La funcionalidad ofrecida por heroku esta disponible con el uso de dynos, que son una adaptación de los contenedores Linux y nos ofrecen la capacidad de computo dentro de la plataforma.
+[Heroku](https://www.heroku.com/) es una aplicación que nos ofrece un servicio de Cloud Computing [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) (Plataforma como servicio). Como leemos en la Wikipedia es propiedad de Salesforce.com y es una de las primeras plataformas de computación en la nube, que fue desarrollada desde junio de 2007, con el objetivo de soportar solamente el lenguaje de programación Ruby, pero posteriormente se ha extendido el soporte a Java, Node.js, Scala, Clojure y Python y PHP. La funcionalidad ofrecida por heroku esta disponible con el uso de dynos, que son una adaptación de los contenedores Linux y nos ofrecen la capacidad de cómputo dentro de la plataforma.
 
-Vamos a utilizar la capa gratuita de Horoku:
+Vamos a utilizar la capa gratuita de Heroku:
 
 * Podemos crear un dyno, que puede ejecutar un máximo de dos tipos de procesos.
-* Nuestro dyno utiliza 512 Mb de RAM
+* Nuestro dyno utiliza 512 MB de RAM
 * Tras 30 minutos de inactividad el dyno se para (sleep), además debe estar parado 6 horas cada 24 horas.
 * Podemos utilizar una base de datos postgreSQL con no más de 10.000 registros
 * Para más información: [planes ofrecido por heroku](https://www.heroku.com/pricing#dynos-table-modal)
 
 ## Preparativos previos
 
-* Tenemos que crear una cuenta gratuita en Heroku (singup)
-* Tenemos que hacer que la palicación escuche en cualquier dirección IP y en un puerto especificado por la variable de entorno de Heroku, `$PORT`. Por lo tanto en el fichero `app.py`:
+* Tenemos que crear una cuenta gratuita en Heroku (signup)
+* Tenemos que hacer que la aplicación escuche en cualquier dirección IP y en un puerto especificado por la variable de entorno de Heroku, `$PORT`. Por lo tanto en el fichero `app.py`:
 
 		port=os.environ["PORT"]
 		app.run('0.0.0.0',int(port), debug=True)
