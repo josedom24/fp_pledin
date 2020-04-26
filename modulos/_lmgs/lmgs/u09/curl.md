@@ -76,12 +76,16 @@ Utilizando el comando `curl` realiza peticiones a las API web de las distintas a
 
 ## API restfull de openweather
 
-openweather es un servicio de informacióm meteorológica, puede ver los datos climáticos desde su página web, o usando su [API](https://openweathermap.org/api). La matoría de los servicios tienen limitaciones al usar las API de forma gratuita, y te tienes que suscribir para obtener todas las funcionalidades de la API.
+openweather es un servicio de información meteorológica, puede ver los datos climáticos desde su página web, o usando su [API](https://openweathermap.org/api). La matoría de los servicios tienen limitaciones al usar las API de forma gratuita, y te tienes que suscribir para obtener todas las funcionalidades de la API.
 
-1. Obtener el tiempo atmoférico de la ciudad de Sevilla:
+1. Obtener el tiempo atmosférico de la ciudad de Sevilla:
 
 		export key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-		curl "http://api.openweathermap.org/data/2.5/weather?q=Sevilla&mode=json&units=metric&APPID=key"
+		curl "http://api.openweathermap.org/data/2.5/weather?q=Sevilla&mode=json&units=metric&APPID=$key"
+
+2. Obtener la predicción de la ciudad de Sevilla:
+
+		curl "http://api.openweathermap.org/data/2.5/forecast?q=Sevilla&mode=json&units=metric&APPID=$key"| json_pp
 
 ## ¿Donde encuentro más API?
 
