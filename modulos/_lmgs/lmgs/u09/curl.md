@@ -3,7 +3,46 @@ title: "Ejercicios peticiones a API web con curl"
 permalink: /lmgs/u09/curl.html
 ---
 
-## API Redmine
+## API restful swapi
+
+[swapi](https://swapi.dev/) es una API restful que ofrece información sobre Star Wars. No es necesario a autentificarte y la documentación la obtienes en la dirección: [https://swapi.dev/documentation](https://swapi.dev/documentation).
+
+1. Muestra información del personaje que tiene el código 1:
+
+	"curl https://swapi.dev/api/people/1/"
+
+2. Realiza la petición HTTP para obtener todos los personajes de la saga:
+
+		curl "https://swapi.dev/api/people/"
+
+	Como hay tantos personajes la respuesta esta páginada, es decir, te devuelve un conjunto de personajes por página, si te fijas al en el json, te indica la dirección de la siguiente página (`next`), a dirección de la página anterior (`previous`) y la cantidad de personajes (`count`):
+
+		...
+		"previous" : null,
+   		"count" : 82,
+   		"next" : "http://swapi.dev/api/people/?page=2"
+		...
+
+	Por la tanto ahora si queremos ver la siguiente página de personajes, hago una petición a (**cuidado que hay que usar https, aunque ponga http**):
+
+		curl "https://swapi.dev/api/people/?page=2"
+
+	Y veamos donde están las siguientes páginas:
+
+		...
+		"next" : "http://swapi.dev/api/people/?page=3",
+	   "previous" : "http://swapi.dev/api/people/?page=1",
+   		"count" : 82
+		...
+
+{% capture notice-text %}
+
+* Ejercicio 1: Muestra la información de Yoda (este persona está en la segunda página de personajes).
+* Ejercicio 2: Muestra todas las películas de la saga. Haz otra petición para mostrar información de la pélicula "El Retorno del Jedi".
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## API restful Redmine
 
 La documentación de la API restful de Redmine está en [https://www.redmine.org/projects/redmine/wiki/Rest_api](https://www.redmine.org/projects/redmine/wiki/Rest_api).
 Utilizando el comando `curl` realiza peticiones a las API web de las distintas aplicaciones para obtener la siguiente información:
