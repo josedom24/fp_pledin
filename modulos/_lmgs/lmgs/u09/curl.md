@@ -73,3 +73,17 @@ Utilizando el comando `curl` realiza peticiones a las API web de las distintas a
 * Ejercicio 2: Obtén información de las tareas que tienes asignadas en el proyecto 1ª ASIR.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## API restfull de openweather
+
+openweather es un servicio de informacióm meteorológica, puede ver los datos climáticos desde su página web, o usando su [API](https://openweathermap.org/api). La matoría de los servicios tienen limitaciones al usar las API de forma gratuita, y te tienes que suscribir para obtener todas las funcionalidades de la API.
+
+1. Obtener el tiempo atmoférico de la ciudad de Sevilla:
+
+	export key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	curl "http://api.openweathermap.org/data/2.5/weather?q=Sevilla&mode=json&units=metric&APPID=key"
+
+## ¿Donde encuentro más API?
+
+* [ProgrammableWeb - APIs, Mashups and the Web as Platform](http://www.programmableweb.com/)
+* [Public APIs](https://github.com/toddmotto/public-apis)
