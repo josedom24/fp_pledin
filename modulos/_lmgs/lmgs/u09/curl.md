@@ -80,8 +80,8 @@ openweather es un servicio de informacióm meteorológica, puede ver los datos c
 
 1. Obtener el tiempo atmoférico de la ciudad de Sevilla:
 
-	export key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-	curl "http://api.openweathermap.org/data/2.5/weather?q=Sevilla&mode=json&units=metric&APPID=key"
+		export key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+		curl "http://api.openweathermap.org/data/2.5/weather?q=Sevilla&mode=json&units=metric&APPID=key"
 
 ## ¿Donde encuentro más API?
 
