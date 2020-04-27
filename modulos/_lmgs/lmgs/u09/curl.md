@@ -91,3 +91,9 @@ Utilizando el comando `curl` realiza peticiones a las API web de las distintas a
 
 * [ProgrammableWeb - APIs, Mashups and the Web as Platform](http://www.programmableweb.com/)
 * [Public APIs](https://github.com/toddmotto/public-apis)
+
+{% capture notice-text %}
+
+* Ejercicio: Busca alguna API de algún tema que te interese de los enlaces anteriores. Recuerda que la API elegida debe ser libre o tener autentificación basada en key. Estudia la documentación y realiza alguna petición con CURL para obtener información.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
