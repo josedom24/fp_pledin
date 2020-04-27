@@ -9,7 +9,7 @@ permalink: /lmgs/u09/curl.html
 
 1. Muestra información del personaje que tiene el código 1:
 
-	"curl https://swapi.dev/api/people/1/"
+		curl "https://swapi.dev/api/people/1/"
 
 2. Realiza la petición HTTP para obtener todos los personajes de la saga:
 
@@ -94,6 +94,6 @@ Utilizando el comando `curl` realiza peticiones a las API web de las distintas a
 
 {% capture notice-text %}
 
-* Ejercicio: Busca alguna API de algún tema que te interese de los enlaces anteriores. Recuerda que la API elegida debe ser libre o tener autentificación basada en key. Estudia la documentación y realiza alguna petición con CURL para obtener información.
+* Ejercicio: Busca alguna API de algún tema que te interese de los enlaces anteriores. Recuerda que la API elegida debe ser libre o tener autentificación basada en key. Estudia la documentación y realiza alguna petición con CURL para obtener información.	
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
