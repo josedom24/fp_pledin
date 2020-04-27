@@ -65,7 +65,7 @@ Utilizando el comando `curl` realiza peticiones a las API web de las distintas a
 
 	Si queremos la respuesta en json:
 
-	curl "https://dit.gonzalonazareno.org/redmine/projects.json?key=$key"
+		curl "https://dit.gonzalonazareno.org/redmine/projects.json?key=$key"
 
 {% capture notice-text %}
 
