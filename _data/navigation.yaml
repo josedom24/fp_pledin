@@ -17,20 +17,20 @@ serviciosgs:
         url: /serviciosgs/
       - title: Introducción a los servicios en red
         url: /serviciosgs/u01
-      - title: Servidor DHCP
-        url: /serviciosgs/u02
-      - title: Servidor Web
-        url: /serviciosgs/u03
-      - title: Servidor DNS
-        url: /serviciosgs/u04
-      - title: Servidor FTP
-        url: /serviciosgs/u05
-      - title: Gestión de peticiones - Rendimiento
-        url: /serviciosgs/u06
-      - title: Servidor de correo electrónico
-        url: /serviciosgs/u07
-      - title: Proxy, proxy inverso y balanceador de carga
-        url: /serviciosgs/u08
+   #   - title: Servidor DHCP
+   #     url: /serviciosgs/u02
+   #   - title: Servidor Web
+   #     url: /serviciosgs/u03
+   #   - title: Servidor DNS
+   #     url: /serviciosgs/u04
+   #   - title: Servidor FTP
+   #     url: /serviciosgs/u05
+   #   - title: Gestión de peticiones - Rendimiento
+   #     url: /serviciosgs/u06
+   #   - title: Servidor de correo electrónico
+   #     url: /serviciosgs/u07
+   #   - title: Proxy, proxy inverso y balanceador de carga
+   #     url: /serviciosgs/u08
   - title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"
@@ -47,17 +47,17 @@ iawgs:
       - title: "Inicio"
         url: /iawgs/
       - title: Introducción
-        url: /iawgs/u01
-      - title: PHP
-        url: /iawgs/u02
-      - title: Python
-        url: /iawgs/u03
-      - title: Integración Continúa
-        url: /iawgs/u04
-      - title: Java
-        url: /iawgs/u05
-      - title: Docker
-        url: /iawgs/u06
+#        url: /iawgs/u01
+#      - title: PHP
+#        url: /iawgs/u02
+#      - title: Python
+#        url: /iawgs/u03
+#      - title: Integración Continúa
+#        url: /iawgs/u04
+#      - title: Java
+#        url: /iawgs/u05
+#      - title: Docker
+#        url: /iawgs/u06
   - title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"
@@ -129,26 +129,27 @@ seguridadgm:
   - title: Seguridad Informática
     children:
       - title: "Inicio"
-        url: /seguridadgm/
-  - title: Seguridad Física
-    children:
-      - title: "Introducción"
-        url: /seguridadgm/u01
-      - title: "Seguridad Física"
-        url: /seguridadgm/u02
-  - title: Almacenamiento de la Información
-    children:
-      - title: "Gestión de Almacenamiento"
-        url: /seguridadgm/u03
-      - title: "Copias de Seguridad"
-        url: /seguridadgm/u04
-  - title: Seguridad Lógica
-    children:
-      - title: "Control de Acceso"
-        url: /seguridadgm/u06
-      - title: "Criptografía"
-        url: /seguridadgm/u07
-      - title: "Malware"
-        url: /seguridadgm/u08
-      
-
+ #       url: /seguridadgm/
+ # - title: Seguridad Física
+ #   children:
+ #     - title: "Introducción"
+ #       url: /seguridadgm/u01
+ #     - title: "Seguridad Física"
+ #       url: /seguridadgm/u02
+ # - title: Almacenamiento de la Información
+ #   children:
+ #     - title: "Gestión de Almacenamiento"
+ #       url: /seguridadgm/u03
+ #     - title: "Copias de Seguridad"
+ #       url: /seguridadgm/u04
+ # - title: Seguridad Lógica
+ #   children:
+ #     - title: "Control de Acceso"
+ #       url: /seguridadgm/u06
+ #     - title: "Criptografía"
+ #       url: /seguridadgm/u07
+ #     - title: "Malware"
+ #       url: /seguridadgm/u08
+ #     
+#
+#
