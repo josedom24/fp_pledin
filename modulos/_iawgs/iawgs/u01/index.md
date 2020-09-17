@@ -26,7 +26,8 @@ permalink: /iawgs/u01/index.html
     
     {% capture notice-text %}
     * **Tarea:** realiza el ejercicio: [Introducción a  git/github](github.html), para preparar tu cuenta en GitHub y recordar los comandos básicos de git.	
-    {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+    {% endcapture %}
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 * **Sesión 3**: Páginas web dinámicas us páginas web estáticas
