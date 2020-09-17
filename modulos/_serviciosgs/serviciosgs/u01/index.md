@@ -12,7 +12,7 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 
 ## Contenidos
 
-### 21/9/2020 - 08/10/2020: Introducción a la implantación de aplicaciones web 
+### 22/9/2020 - 29/10/2020: Introducción a la implantación de aplicaciones web 
 
 |Sesiones|**Grupo A**|**Grupo B**|
 |--------|-----------|-----------|
