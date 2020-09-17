@@ -21,14 +21,14 @@ permalink: /iawgs/u01/index.html
 
 ### Sesión 1: 
 
-*^[Presentación del módulo](http://josedom24.github.io/mod/iaw/presentacion#/)
+* [Presentación del módulo](http://josedom24.github.io/mod/iaw/presentacion#/)
 
 ### Sesión 2: Recordamos Git/GitHub
     
 Para recordar git/github puedes repasar [git - la guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html), y para profundizar [Pro Git, el libro oficial de Git](http://librosweb.es/pro_git/).
    
 {% capture notice-text %}
-### Tarea:** Realiza el ejercicio [Introducción a  git/github](github.html), para preparar tu cuenta en GitHub y recordar los comandos básicos de git.	
+###  Realiza el ejercicio [Introducción a  git/github](github.html), para preparar tu cuenta en GitHub y recordar los comandos básicos de git.	
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Sesión 3: Páginas web dinámicas us páginas web estáticas
