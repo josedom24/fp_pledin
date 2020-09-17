@@ -18,6 +18,9 @@ permalink: /iawgs/u01/index.html
 |24/9/2020 (Jueves)|Sesión 2 (Casa)|Sesión 1 (Clase)|
 |28/9/2020 (Lunes)|Sesión 3 (Casa)|Sesión 4 (Clase)|
 |01/10/2020 (Jueves)|Sesión 4 (Clase)|Sesión 3 (Casa)|
+|05/10/2020 (Lunes)|Sesión 5 (Clase)|Sesión 5 (Casa)|
+|08/10/2020 (Jueves)|Sesión 6 (Casa)|Sesión 6 (Clase)|
+
 
 ### Sesión 1: 
 
@@ -47,3 +50,7 @@ Para estudiar las diferencias entre páginas web dinámicas y estáticas, puedes
 ### Sesión 4: Presentación de la práctica
 
 * [Práctica: Implantación y despliegue de una aplicación web estática](estatica.html)
+
+### Sesión 5: Trabajo Práctica 1
+
+### Sesión 6: Trabajo Práctica 1
