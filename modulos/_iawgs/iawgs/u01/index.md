@@ -10,7 +10,7 @@ permalink: /iawgs/u01/index.html
 
 ## Contenidos
 
-### 21/9/2020 - 02/10/2020: Introducción a la implantación de aplicaciones web 
+### 21/9/2020 - 08/10/2020: Introducción a la implantación de aplicaciones web 
 
 |Sesiones|**Grupo A**|**Grupo B**|
 |--------|-----------|-----------|
