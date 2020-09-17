@@ -8,6 +8,31 @@ permalink: /iawgs/u01/index.html
 * Aprender lenguaje de marcas markdown
 * Comprender que existe un integración continua y un despliegue continuo en el proceso de despliegue de la página
 
+## Contenidos
+
+### 21/9/2020 - 02/10/2020: Introducción a la implantación de aplicaciones web 
+
+|Sesiones|**Grupo A**|**Grupo B**|
+|--------|-----------|-----------|
+|21/9/2020 (Lunes)|Sesión 1 (Clase)|Sesión 3 (Casa)|
+|24/9/2020 (Jueves)|Sesión 2 (Casa)|Sesión 2 (Clase)|
+|28/9/2020 (Lunes)|Sesión 3 (Casa)|Sesión 4 (Clase)|
+|01/10/2020 (Jueves)|Sesión 4 (Clase)|Sesión 1 (Casa)|
+
+#### Sesión 1: Presentación del módulo
+
+* [Presentación del módulo](http://josedom24.github.io/mod/iaw/presentacion#/)
+
+#### Sesión 2: Recordamos Git/GitHub
+
+
+
+* **Sesión 3**: Páginas web dinámicas us páginas web estáticas
+* **Sesión 4**: Presentación de la práctica
+
+
+
+
 ## Git
 
 * [Introducción a  git/github](github.html)
