@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 # Módulos de Formación Profesional
-# Curso 2019-2020
+# Curso 2020-2021
 
 ## Ciclo de Grado Superior de Administración de sistemas Informáticos (ASIR)
 
@@ -18,11 +18,9 @@ classes: wide
 * [Implantación de aplicaciones web](iawgs)
 * [Seguridad y alta disponibilidad](seguridadgs)
 
-<br/><br/>
-# Curso 2018-2019
 
+
+<!-- # Curso 2018-2019
 ## Ciclo de Grado Medio de Técnico en Sistemas Microinformáticos y Redes (SMR)
-
 ### 2º SMR
-
-* [Seguridad Informática](seguridadgm)
+* [Seguridad Informática](seguridadgm)-->

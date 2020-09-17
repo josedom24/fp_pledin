@@ -8,7 +8,7 @@ El módulo profesional de **Implantación de aplicaciones web** se imparte duran
 De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional de Implantación de aplicaciones web se imparte durante el segundo curso y tiene asignadas un total de 84 horas, a razón de 4 horas semanales.
 
 * [Presentación del módulo](http://josedom24.github.io/mod/iaw/presentacion#/)
-
+<!--
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la implantación de aplicaciones web](u01)
@@ -17,3 +17,4 @@ El índice de contenidos que vamos a estudiar será:
 * [Introducción a la integración continúa y despliegue continuo](u04)
 * [Despliegue de aplicaciones web Java](u05)
 * [Despliegue de aplicaciones web con contenedores. Docker](u06)
+-->

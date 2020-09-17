@@ -9,7 +9,7 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 
 * [Presentación del módulo](https://docs.google.com/presentation/d/e/2PACX-1vQCYjdh1xx8HY-rP_D33zlJ-DR9s5knPDbBXPUAZJoLCT8Sb5Iwr56MZXhnodGfYSYx1xfXr8jaCvem/pub?start=false&loop=false&delayms=3000)
 
-
+<!--
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la seguridad informática](u01)
@@ -17,4 +17,4 @@ El índice de contenidos que vamos a estudiar será:
 * [Cortafuegos](u03)
 * [Redes Privadas Virtuales](u04)
 * [Clusters de alta disponibiilidad](u05)
-
+-->
