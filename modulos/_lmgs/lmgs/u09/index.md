@@ -10,6 +10,7 @@ permalink: /lmgs/u09/index.html
 
 ## Ejercicios
 
+* [Ejemplos de peticiones CURL 2019-2020](curl.html)
 * [Ejemplos de peticiones a una API RESTful](rest.html)
 * [Ejercicios librería requests](requests.html)
 	* [Solución ejercicios librería requests](https://github.com/josedom24/requests_python)

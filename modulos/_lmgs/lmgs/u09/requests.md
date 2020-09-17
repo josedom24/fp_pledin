@@ -36,9 +36,11 @@ Realiza programas en python que utilizando la librería `requests`, realicen las
 
 5. Crear un programa que utilizando la API de openwheathermap pida el nombre de una ciudad por teclado y muestre su temperatura actual.	
 
-6. Programa que utilizando la [API de loterías del El País](http://servicios.elpais.com/sorteos/loteria-navidad/api/), pida un número por teclado e informe del premio que tuvo en en el sorteo de lotería de navidad.
+6. Programa que utilizando la API swapi muestre la lista de personajes, cada vez que muestre la información de una página preguntará si quiere seguir mostrando más personajes. A continuación pedirá el nombre de un personaje y te dará información sobre él.
 
 7. Programa que cree un proyecto, llamado "test project" en el redmine de nuestro ciclo.
 
 8. Programa que borre el proyecto creado en el ejercicio anterior.
+
+9. Realizar un programa que te pida el nombre de un proyecto de nuestro Redmine y muestre las 5 últimas tareas y sus descripciones.
 
