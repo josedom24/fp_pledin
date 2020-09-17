@@ -14,10 +14,10 @@ permalink: /iawgs/u01/index.html
 
 |Sesiones|**Grupo A**|**Grupo B**|
 |--------|-----------|-----------|
-|21/9/2020 (Lunes)|Sesión 1 (Clase)|Sesión 3 (Casa)|
-|24/9/2020 (Jueves)|Sesión 2 (Casa)|Sesión 2 (Clase)|
+|21/9/2020 (Lunes)|Sesión 1 (Clase)|Sesión 2 (Casa)|
+|24/9/2020 (Jueves)|Sesión 2 (Casa)|Sesión 1 (Clase)|
 |28/9/2020 (Lunes)|Sesión 3 (Casa)|Sesión 4 (Clase)|
-|01/10/2020 (Jueves)|Sesión 4 (Clase)|Sesión 1 (Casa)|
+|01/10/2020 (Jueves)|Sesión 4 (Clase)|Sesión 3 (Casa)|
 
 ### Sesión 1: 
 
@@ -32,18 +32,18 @@ Para recordar git/github puedes repasar [git - la guía sencilla](https://rogerd
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Sesión 3: Páginas web dinámicas us páginas web estáticas
-### Sesión 4: Presentación de la práctica
 
-
-
-
-## Enlaces
+Para estudiar las diferencias entre páginas web dinámicas y estáticas, puedes seguir estos enlaces u otros parecidos:
 
 * [Aspectos básicos de las aplicaciones Web](https://helpx.adobe.com/es/dreamweaver/using/web-applications.html)
 * [Evolución de la web (Pablo E. Lozada Y.)](http://profesores.elo.utfsm.cl/~tarredondo/info/networks/Evolucion_Web.pdf)
 * [Aplicaciones web en la Wikipedia](https://es.wikipedia.org/wiki/Aplicaci%C3%B3n_web)
 * [Diferencias y beneficios entre páginas estáticas y dinámicas](http://nilclass.com/courses/what-is-a-static-website/#1)
 
-## Pŕactica
+{% capture notice-text %}
+* Realiza el ejercicio [Pagínas web estáticas y dinámicas](ejercicio_estatica_dinamica.html).	
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-* [Implantación y despliegue de una aplicación web estática](estatica.html)
+### Sesión 4: Presentación de la práctica
+
+* [Práctica: Implantación y despliegue de una aplicación web estática](estatica.html)
