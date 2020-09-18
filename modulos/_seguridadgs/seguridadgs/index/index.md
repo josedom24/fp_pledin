@@ -7,8 +7,6 @@ El módulo profesional de **Seguridad y alta disponibilidad** se imparte durante
 
 De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional de Servicios en red se imparte durante el segundo curso y tiene asignadas un total de 84 horas, a razón de 4 horas semanales durante 21 semanas.
 
-* [Presentación del módulo](https://docs.google.com/presentation/d/e/2PACX-1vQCYjdh1xx8HY-rP_D33zlJ-DR9s5knPDbBXPUAZJoLCT8Sb5Iwr56MZXhnodGfYSYx1xfXr8jaCvem/pub?start=false&loop=false&delayms=3000)
-
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la seguridad informática](u01)
