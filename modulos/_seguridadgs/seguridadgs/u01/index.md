@@ -25,8 +25,8 @@ permalink: /seguridadgs/u01/index.html
 ### Sesión 3
 
 * [Práctica 1: Gestión del almacenamiento de la información](practica_almacenamiento.html)
-* [rclone: Gestionando nuestro almacenamiento en la nube](practica_rclone.html)
-* [Integridad de ficheros](practica_integridad.html)
+* [Práctica 2: rclone - Gestionando nuestro almacenamiento en la nube](practica_rclone.html)
+* [Práctica 3: Integridad de ficheros](practica_integridad.html)
 
 ### Sesión 4: Trabajo en las prácticas
 

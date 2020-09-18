@@ -1,5 +1,5 @@
 ---
-title: "Práctica: rclone: Gestionando nuestro almacenamiento en la nube" 
+title: "Práctica 2: rclone - Gestionando nuestro almacenamiento en la nube" 
 permalink: /seguridadgs/u01/practica_rclone.html
 ---
 

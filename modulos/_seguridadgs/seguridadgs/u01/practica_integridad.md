@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Integridad de ficheros" 
+title: "Práctica 3: Integridad de ficheros" 
 permalink: /seguridadgs/u01/practica_integridad.html
 ---
 
