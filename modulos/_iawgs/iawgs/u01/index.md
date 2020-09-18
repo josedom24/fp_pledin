@@ -32,7 +32,7 @@ Para recordar git/github puedes repasar [git - la guía sencilla](https://rogerd
    
 {% capture notice-text %}
 * Realiza el ejercicio [Introducción a  git/github](github.html), para preparar tu cuenta en GitHub y recordar los comandos básicos de git.	
-* Markdown es un lenguaje de marcas que nos facilita la escritura de documentos. Se suele usar normalmente para escribir la información en GitHub (normalmente en ficheros `README.md`, por ejemplo). Repasa la sintáxis básica de Markdown usando este [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (o alguno similar) y práctica la escritura de documentos usando algún edditor online, por ejemplo: [stackedit](https://stackedit.io/app#), [dillinger](https://dillinger.io),...
+* Markdown es un lenguaje de marcas que nos facilita la escritura de documentos. Se suele usar normalmente para escribir la información en GitHub (normalmente en ficheros `README.md`, por ejemplo). Repasa la sintáxis básica de Markdown usando este [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (o alguno similar) y práctica la escritura de documentos usando algún editor online, por ejemplo: [stackedit](https://stackedit.io/app#), [dillinger](https://dillinger.io),...
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Sesión 3: Páginas web dinámicas us páginas web estáticas
