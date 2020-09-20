@@ -15,12 +15,12 @@ Después de buscar información sobre la web, y la diferencias entre las página
 
 5. Tienes que entender cómo se procesa una página web estática:
 
-![img](img/ds_process_static.png)
+    ![img](img/ds_process_static.png)
 
 6. Tienes que entender cómo se procesa una página web dinámica:
 
-![img](ds_process_dynamic.png)
+    ![img](img/ds_process_dynamic.png)
 
 7. Tienes que entender cómo se procesa una página web dinámica con acceso a la base de datos:
 
-![img](ds_process_complete.png)
+    ![img](img/ds_process_complete.png)
