@@ -25,6 +25,7 @@ permalink: /iawgs/u01/index.html
 ### Sesión 1: 
 
 * [Presentación del módulo](http://josedom24.github.io/mod/iaw/presentacion#/)
+* [VIDEO: Clase del 21/9/2020: Presentación del módulo](https://youtu.be/WgBwuq_Ewjw)
 
 ### Sesión 2: Recordamos Git/GitHub
     
