@@ -17,6 +17,7 @@ permalink: /seguridadgs/u01/index.html
 ### Sesión 1
 
 * [Presentación del módulo](https://docs.google.com/presentation/d/e/2PACX-1vQCYjdh1xx8HY-rP_D33zlJ-DR9s5knPDbBXPUAZJoLCT8Sb5Iwr56MZXhnodGfYSYx1xfXr8jaCvem/pub?start=false&loop=false&delayms=3000)
+* [VIDEO: Presentación del módulo (22/09/2020)](https://cloud.josedomingo.org/index.php/s/fNKeycACxyL5dDo)
 
 * [Introducción a la Seguridad Informática](https://docs.google.com/presentation/d/e/2PACX-1vRaEp7Spt2P-ExwK-Pt_Byy0L8TEOLn5fGJ5zspv_87PPsTr8Iw195DcqP9eYCHHHPkLER61CpN6unS/pub?start=false&loop=false&delayms=3000)
 

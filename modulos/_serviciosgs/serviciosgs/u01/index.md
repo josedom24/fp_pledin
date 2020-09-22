@@ -24,6 +24,7 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 ### Sesión 1: 
 
 * [Introducción a los servicios de red](presentacion.html)
+* [VIDEO: Presentación del módulo (22/09/2020)](https://cloud.josedomingo.org/index.php/s/Yy9cXR7wbREZckX)
 * Empezamos la introducción a Vagrtant: [Presentación: Vagrant y ansible. Una combinación explosiva (1ª parte)](http://iesgn.github.io/cloud/curso/u2/presentacion_vagrant)
 
 ### Sesión 2:
