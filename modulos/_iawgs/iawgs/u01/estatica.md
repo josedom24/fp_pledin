@@ -46,8 +46,16 @@ Una vez generada nuestra página podemos desplegarla en nuestro servidor en prod
 
 Los servicios modernos para alojar páginas estáticas pueden proporcionar métodos de despliegues automáticos o semiautomática, y suelen usar repositorios git (el uso de servidores FTP está desapareciendo).
 
-Ejemplos de servicios de despliegue de páginas estáticas: Netlify, Surge, GitHub Pages, GitLab Pages, Neocities,... Puedes encontrar más opciones [aquí](https://stackshare.io/netlify/alternatives), [aquí](https://alternativeto.net/software/netlify/) o [aquí](https://siftery.com/netlify/alternatives).
+Ejemplos de servicios de despliegue de páginas estáticas:
 
+* Netlify
+* Surge 
+* GitHub Pages
+* GitLab Pages
+* Firebase
+* Vercel
+* Neocities
+* ... 
 {% capture notice-text %}
 ## Ejercicios
 
