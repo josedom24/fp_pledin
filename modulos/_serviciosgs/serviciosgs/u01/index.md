@@ -30,7 +30,7 @@ En este primer apartado vamos a estudiar los siguientes apartados:
 ### Sesión 2:
 
 * [Introducción a vagrant](vagrant.html)
-* [Práctica vagrant. Crear un router-nat](ejercicio_vagrant.html)
+* [Ejercicio vagrant. Crear un router-nat](ejercicio_vagrant.html)
 
 ### Sesión 3:
 

@@ -1,5 +1,5 @@
 ---
-title: Práctica vagrant. Crear un router-nat
+title: Ejercicio vagrant. Crear un router-nat
 permalink: /serviciosgs/u01/ejercicio_vagrant.html
 ---
 
