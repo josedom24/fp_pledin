@@ -38,6 +38,7 @@ Al trabajar con el servidor DHCP tenemos que conocer los siguientes conceptos:
 * [¿Cómo funciona el servidor DHCP?](dhcp.html)
 * [Cuestionario DHCP](cuestionario.html)
 * [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
+
 <!--
 ## Práctica
 
