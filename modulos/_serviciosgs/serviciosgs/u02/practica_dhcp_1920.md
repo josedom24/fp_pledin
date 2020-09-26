@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Servidor DHCP" 
-permalink: /serviciosgs/u02/practica_dhcp.html
+permalink: /serviciosgs/u02/practica_dhcp_1920.html
 ---
 
 **(14 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**
