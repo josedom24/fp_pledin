@@ -10,9 +10,9 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * [Introducción a la seguridad informática](u01)
+* [Criptografía](u02)
 
 <!--
-* [Criptografía](u02)
 * [Cortafuegos](u03)
 * [Redes Privadas Virtuales](u04)
 * [Clusters de alta disponibiilidad](u05)
