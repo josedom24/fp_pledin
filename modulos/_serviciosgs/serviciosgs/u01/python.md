@@ -277,15 +277,25 @@ Podemos enviar información (argumentos) a un programa cuando se ejecuta como un
 
 	#!/usr/bin/env python	
 	import sys
-	print("Has instroducido",len(sys.argv),"argumento")
+	print("Has introducido",len(sys.argv),"argumento")
 	suma=0
-	for i in range(1,len(sys.argv)):
-		suma=suma+int(sys.argv[i])
+	for dato in sys.argv[1:]:
+		suma=suma+int(dato)
 	print("La suma es ",suma)
 
 	$  python3 sumar.py 3 4 5
 	Has introducido 4 argumento
 	La suma es  12
+
+Para hacer una gestión más eficiente de los argumentos en la línea de comando podemos usar la librería [argparse](https://docs.python.org/es/3/howto/argparse.html). Ejemplo:
+
+  #!/usr/bin/env python
+  import argparse
+  parser = argparse.ArgumentParser()
+  parser.add_argument("numero", help="muestra el cuadrado de un número dado",type=int)
+  args = parser.parse_args()
+  print(args.numero**2)
+
 
 {% capture notice-text %}
 ## Ejercicios
