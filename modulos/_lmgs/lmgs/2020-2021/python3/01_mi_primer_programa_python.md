@@ -31,4 +31,5 @@ Para escribir un fichero con el código fuente de nuestro programa tenemos varia
 {% capture notice-text %}
 ## Ejercicios
 
+* Elige un editor de texto (si no tienes criterio para elegir uno, pregunta a los compañeros oo al profesor). Instalalo para escribir nuestro primer programa python.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
