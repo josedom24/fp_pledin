@@ -27,3 +27,8 @@ Para escribir un fichero con el código fuente de nuestro programa tenemos varia
 
 * Podemos usar un IDE (entorno de desarrollo integrado), que además de la posibilidad  de editar el código, nos ofrezca otras herramientas: depuración de código, generación automático de código, ayuda integrada, manejo del proyecto, gestión de los sistemas de control de versiones,..). Existen muchos IDE a nuestra disposición: [Entornos de desarrollo para python](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments).
 * En este curso vamos usar un editor de texto: Nos permiten escribir nuestro código fuente de manera eficiente, además los nuevos editores de texto permiten añadir funcionalidades a través de plugin, algunos ejemplos: Sublime Text, Atom, Visual Studio Code, vim, emacs,... aunque hay muchos más:  [Editores de texto para python](https://wiki.python.org/moin/PythonEditors).
+
+{% capture notice-text %}
+## Ejercicios
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
