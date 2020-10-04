@@ -1,14 +1,13 @@
 ---
-title: "Criptografía. Programación de la Unidad"
-permalink: /seguridadgs/u02/programacion.html
+title: "Servidor DHCP. Programación de la Unidad"
+permalink: /servicios/u02/programacion.html
 ---
 
-## Jueves, 1 de Octubre
+## Viernes, 2 de Octubre
 
 ### Grupo A  y Grupo B **(Videoconferencia)**
 
-* De la presentación [Introducción a la criptografía 1: Criptografía simétrica y asimétrica](https://docs.google.com/presentation/d/e/2PACX-1vRBGbFkiTmBJgZe7YAnFhXzzTgHEDgw65-mnCcjv0_xtfRde_bqDylF7cHsQnj7DeQK9IxxYMWCUaPr/pub?start=false&loop=false&delayms=3000) hasta criptografía simétrica.
-* Se manda el ejercicio:[Cifrado simétrico con gpg y openssl](gpg.html)
+* Se introduce el servidor DHCP con el documento 
 
 ## Martes, 6 de Octubre
 

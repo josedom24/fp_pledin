@@ -3,6 +3,8 @@ title: Servidor DHCP
 permalink: /serviciosgs/u02/index.html
 ---
 
+* [Programación de la unidad](programacion.html)
+
 El  protocolo  de  configuración  dinámica  de  host  (**DHCP, Dynamic Host Configuration Protocol**),es un estándar TCP/IP que  simplifica  la  administración  de  la  configuración  IP haciéndola automática. 
 El  servidor  DHCP  recibe  peticiones  de  clientes  solicitando una  configuración  de  red  IP.  Responde  proporcionando  los parámetros que permitan a los clientes autoconfigurarse. Los clientes  hay  que  configurarlo  seleccionando  la  opción *'Obtener dirección IP automáticamente'*. El servidor DHCP proporciona la configuración red, entre los datos que ofrece:
 
@@ -39,8 +41,8 @@ Al trabajar con el servidor DHCP tenemos que conocer los siguientes conceptos:
 * [Cuestionario DHCP](cuestionario.html)
 * [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
 
-<!--
+
 ## Práctica
 
 * [Práctica: Servidor DHCP](practica_dhcp.html)
--->
+
