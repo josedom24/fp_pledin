@@ -8,29 +8,29 @@ layout: single3
 
 ### Grupo A **(Clase)**
 
-* **Boletín 1: Análisis y diseño de problemas**: Seguimos trabajando en los ejercicios, preguntado dudas. Os dejo "mis soluciones", compararla con las vuestras.
-* **Presentación python3**
+* Boletín 1: Análisis y diseño de problemas: Seguimos trabajando en los ejercicios, preguntado dudas. Os dejo "mis soluciones", compararla con las vuestras.
+* Presentación python3
 
-### Grupo B **(Casa)**
+### Grupo B (Casa)
 
-* **Boletín 1: Análisis y diseño de problemas**: Seguimos trabajando en los ejercicios, preguntado dudas por slack. Os dejo "mis soluciones", compararla con las vuestras.
+* Boletín 1: Análisis y diseño de problemas: Seguimos trabajando en los ejercicios, preguntado dudas por slack. Os dejo "mis soluciones", compararla con las vuestras.
 
 # Martes, 6 de Octubre
 
-### Grupo A **(Casa)**
+### Grupo A (Casa)
 
-* **Ejercicio: Mi primer programa Python**
+* Ejercicio: Mi primer programa Python
 
-### Grupo B **(Clase)**
+### Grupo B (Clase)
 
-* **Presentación python3**
+* Presentación python3
 
 # Miércoles, 7 de Octubre
 
-### Grupo A **(Clase)**
+### Grupo A (Clase)
 
-* **Ejercicio: Mi primer programa Python**
+* Ejercicio: Mi primer programa Python
 
-### Grupo B **(Casa)**
+### Grupo B (Casa)
 
-* **Ejercicio: Mi primer programa Python**
+* Ejercicio: Mi primer programa Python
