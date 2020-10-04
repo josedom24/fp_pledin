@@ -1,8 +1,10 @@
 ---
-title: "Mi primer programa en Python3"
 permalink: /lmgs/2020-2021/python/mi_primer_programa.html
 layout: single3
 ---
+
+# Mi primer programa en Python3
+
 Podemos ejecutar código python de varia maneras:
 
 ## Uso del interprete
