@@ -29,7 +29,8 @@ Para escribir un fichero con el código fuente de nuestro programa tenemos varia
 * En este curso vamos usar un editor de texto: Nos permiten escribir nuestro código fuente de manera eficiente, además los nuevos editores de texto permiten añadir funcionalidades a través de plugin, algunos ejemplos: Sublime Text, Atom, Visual Studio Code, vim, emacs,... aunque hay muchos más:  [Editores de texto para python](https://wiki.python.org/moin/PythonEditors).
 
 {% capture notice-text %}
-## Ejercicios
+
+**Ejercicios**
 
 * Elige un editor de texto (si no tienes criterio para elegir uno, pregunta a los compañeros oo al profesor). Instalalo para escribir nuestro primer programa python.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
