@@ -12,7 +12,7 @@ permalink: /lmgs/2020-2021/programacion3.html
 
 ### Grupo B **(Casa)**
 
-* **Boletín 1: Análisis y diseño de problemas**: Seguimos trabajando en los ejercicios, preguntado dudas por slack Os dejo "mis soluciones", compararla con las vuestras.
+* **Boletín 1: Análisis y diseño de problemas**: Seguimos trabajando en los ejercicios, preguntado dudas por slack. Os dejo "mis soluciones", compararla con las vuestras.
 
 # Martes, 6 de Octubre
 
