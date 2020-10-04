@@ -61,7 +61,7 @@ Pide al usuario dos pares de números x1,y2 y x2,y2, que representen dos puntos 
 
 ### Ejercicio 13
 
-Realizar un algoritmos que lea un número y que muestre su raíz cuadrada y su raíz cúbica. Python3 no tiene ninguna función predefinida que permita calcular la raíz cúbica, ¿Cómo se puede calcular?
+Realizar un algoritmos que lea un número y que muestre su raíz cuadrada y su raíz cúbica. 
 
 ### Ejercicio 14
 
