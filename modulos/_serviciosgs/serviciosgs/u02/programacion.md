@@ -37,7 +37,8 @@ permalink: /serviciosgs/u02/programacion.html
 
 ### Grupo A **(Clase)**
 
-* Estamos trabajando en la [Práctica: Servidor DHCP](practica_dhcp.html). **Resolvemos todas las dudas que hayan surgido esta semana**.
+* **Resolvemos todas las dudas que hayan surgido esta semana**.
+* Estamos trabajando en la [Práctica: Servidor DHCP](practica_dhcp.html). 
 
 ### Grupo B **(Casa)**
 
