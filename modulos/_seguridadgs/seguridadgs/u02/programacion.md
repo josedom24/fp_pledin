@@ -1,6 +1,6 @@
 ---
 title: "Criptografía. Progrmación de la Unidad"
-permalink: /seguridadgs/u02/programación.html
+permalink: /seguridadgs/u02/programacion.html
 ---
 
 ## Jueves, 1 de Octubre
