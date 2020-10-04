@@ -5,6 +5,8 @@ layout: single3
 
 # Lenguajes de Marcas - Programación semana 3
 
+Os dejado la presentación: [Programación con Python3](https://docs.google.com/presentation/d/e/2PACX-1vQFNORQfZymIauAJgFZyLK_FdsitQe9ZUFoF7G-0CiwnmNUzFoJSBLm_Sa8kmxlBa1v3l5aaaMzFNO8/pub?start=true&loop=false&delayms=3000) que será la que utilicemos en clase para ir explicando los conceptos sobre Python3.
+
 ## Lunes, 5 de Octubre
 
 ### Grupo A **(Clase)**
