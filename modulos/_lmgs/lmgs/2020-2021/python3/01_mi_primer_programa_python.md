@@ -9,13 +9,23 @@ Podemos ejecutar código python de varia maneras:
 
 ### Uso del interprete
 
-Al instalar python3 el ejecutable del interprete lo podemos encontrar en `/usr/bin/python3` (en debian Stretch). Este directorio por defecto está en el PATH, por lo tanto lo podemos ejecutar directamente en el terminal, para ello ejecutamos:
+Al instalar python3 el ejecutable del interprete lo podemos encontrar en `/usr/bin/python3`. Este directorio por defecto está en el PATH, por lo tanto lo podemos ejecutar directamente en el terminal, para ello ejecutamos:
 
 	$ python3
     Python 3.5.3 (default, Jan 19 2017, 14:11:04) 
     [GCC 6.3.0 20170118] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
+
+Usando el interprete de comandos podemos escribir instrucciones que iremos ejecutando una a una.
+
+{% capture notice-text %}
+
+**Ejercicios**
+
+* Abre el interprete de python3 y ejecuta la instrucción `print("Hola Mundo!!!")`.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 
 ### A partir de un fichero con el código fuente
 
