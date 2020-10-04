@@ -11,12 +11,12 @@ Os dejado la presentación: [Programación con Python3](https://docs.google.com/
 
 ### Grupo A **(Clase)**
 
-* [Boletín 1: Análisis y diseño de problemas](https://fp.josedomingo.org/lmgs/2020-2021/python3/boletin1.html): Seguimos trabajando en los ejercicios, preguntado dudas. Os dejo "mis soluciones", compararla con las vuestras.
+* [Boletín 1: Análisis y diseño de problemas](https://fp.josedomingo.org/lmgs/2020-2021/python3/boletin1.html): Seguimos trabajando en los ejercicios, preguntado dudas. Os dejo ["mis soluciones"](https://fp.josedomingo.org/lmgs/2020-2021/python3/solucion_boletin1.html), compararla con las vuestras.
 * Presentación python3
 
 ### Grupo B (Casa)
 
-* [Boletín 1: Análisis y diseño de problemas](https://fp.josedomingo.org/lmgs/2020-2021/python3/boletin1.html): Seguimos trabajando en los ejercicios, preguntado dudas por slack. Os dejo "mis soluciones", compararla con las vuestras.
+* [Boletín 1: Análisis y diseño de problemas](https://fp.josedomingo.org/lmgs/2020-2021/python3/boletin1.html): Seguimos trabajando en los ejercicios, preguntado dudas por slack. Os dejo ["mis soluciones"](https://fp.josedomingo.org/lmgs/2020-2021/python3/solucion_boletin1.html), compararla con las vuestras.
 
 ## Martes, 6 de Octubre
 
