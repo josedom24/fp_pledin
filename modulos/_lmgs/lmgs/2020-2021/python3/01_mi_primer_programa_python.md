@@ -1,5 +1,5 @@
 ---
-permalink: /lmgs/2020-2021/python/mi_primer_programa.html
+permalink: /lmgs/2020-2021/python3/mi_primer_programa.html
 layout: single3
 ---
 
@@ -43,7 +43,7 @@ Vamos a escribir nuestro primer programa para estudiar la estructura de un progr
 
  A partir del análisis y diseño del problema, podemos realizar un programa en python3 que sería similar a este:
 
-![python3](../img/primer_programa.png)
+![python3](img/primer_programa.png)
     
 ## Estructura del programa
 
