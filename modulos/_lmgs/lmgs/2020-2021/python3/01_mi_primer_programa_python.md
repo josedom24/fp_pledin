@@ -43,7 +43,7 @@ Vamos a escribir nuestro primer programa para estudiar la estructura de un progr
 
  A partir del análisis y diseño del problema, podemos realizar un programa en python3 que sería similar a este:
 
-![python3](img/primer_programa.png)
+![python3](../img/primer_programa.png)
     
 ## Estructura del programa
 
