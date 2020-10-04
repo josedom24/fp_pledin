@@ -44,5 +44,6 @@ Al trabajar con el servidor DHCP tenemos que conocer los siguientes conceptos:
 
 ## Práctica
 
+* [Video: Presentación práctica DHCP](https://youtu.be/v9UmirEidpg)
 * [Práctica: Servidor DHCP](practica_dhcp.html)
 
