@@ -5,24 +5,26 @@ layout: single3
 
 # Análisis y diseño de problemas. Ejercicios resueltos
 
-# Ejercicio 1
+## Ejercicio 1
 
 Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
 
-## Análisis
+### Análisis
 
 * Definición del problema: Tenemos que pedir un nombre por teclado y luego escribir un mensaje de saludo.
 * Datos/Variables de entrada: nombre (Cadena)
 * Datos/Variables de salida: saludo (Cadena)
 
-## Diseño
+### Diseño
  1. Leer nombre
  2. saludo = "Hola " y el nombre
  3. Escribir saludo
 
-# Ejercicio 2
+- - -
 
-## Análisis
+## Ejercicio 2
+
+### Análisis
 
 * Definición del problema: Tenemos que leer la base y la altura del triangulo y calcular el perí­metro y el área. 
 `perimetro = 2*pi*radio`
@@ -30,30 +32,32 @@ Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
 * Datos/Variables de entrada: radio (real)
 * Datos/Variables de salida:  perímetro(real) y área(real)
 
-## Diseño
+### Diseño
 
 1. Leer base y altura
 2. Calcular perí­metro. perí­metro=2*pi*radio
 3. Calcular área. área= pi*radio al cuadrado
 4. Mostrar perí­metro y área
 
-# Ejercicio 3
+- - -
+
+## Ejercicio 3
 
 Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.
 
-## Análisis
+### Análisis
 
 * Definición del problema: Dados los catetos de un triángulo rectángulo, calcular su hipotenusa. En un triángulo rectángulo el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos.
 * Datos/Variables de entrada: cateto1(real), cateto2(real)
 * Datos/Variables de salida:  hipotenusa(real)
 
-## Diseño
+### Diseño
 
 1. Leer la longitud de los catetos
 2. Calcular hipotenusa (igual a la raí­z cuadrada de la suma de los cuadrados de los catetos).
 3. Mostrar la hipotenusa
 
-
+- - -
 
 
 
