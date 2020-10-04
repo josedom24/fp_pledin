@@ -1,7 +1,7 @@
 ---
 title: "Lenguajes de Marcas - Programación semana 3"
 permalink: /lmgs/2020-2021/programacion3.html
-layout: single3
+layout: base
 ---
 
 # Lunes, 5 de Octubre
