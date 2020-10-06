@@ -24,6 +24,8 @@ Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
 
 ## Ejercicio 2
 
+Calcular el perímetro y área de un rectángulo dada su base y su altura.
+
 ### Análisis
 
 * Definición del problema: Tenemos que leer la base y la altura del triangulo y calcular el perí­metro y el área. 
