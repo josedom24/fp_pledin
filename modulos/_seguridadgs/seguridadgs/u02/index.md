@@ -28,10 +28,12 @@ permalink: /seguridadgs/u02/index.html
 * [Let's Enrypt](https://letsencrypt.org/es/)
 * [Comparador de Certificados SSL](https://www.dondominio.com/products/ssl/business-validation/)
 
-<!--
+
 ## Prácticas
 
 * [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+
+<!--
 * [Práctica: Integridad, firmas y autenticación](firma.html)
 * [Práctica: Certificados digitales. HTTPS](https.html)
 -->
