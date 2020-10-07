@@ -5,6 +5,9 @@ layout: single3
 
 # Trabajando con variables
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6lB98ceE1N0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Una variables es un identificador que referencia a un valor. No hay que declarar la variable antes de usarla, el tipo de la variable será el mismo que el del valor al que hace referencia. Por lo tanto su tipo puede cambiar en cualquier momento:
 
 	>>> var = 5

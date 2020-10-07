@@ -5,6 +5,9 @@ layout: single3
 
 # Entrada y salida estándar
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UcvPj1TEdns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Función input
 
 Nos permite leer por teclado información. Devuelve una cadena de caracteres y puede tener como argumento una cadena que se muestra en pantalla.

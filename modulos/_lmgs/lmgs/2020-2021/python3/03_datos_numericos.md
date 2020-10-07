@@ -5,6 +5,9 @@ layout: single3
 
 # Datos numéricos
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8ygasB-FXbM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Python3 trabaja con varios tipos numéricos, pero en este curso sólo vamos a utilizar dos:
 
 * Enteros (int): Representan todos los números enteros (positivos, negativos y 0), sin parte decimal. 
