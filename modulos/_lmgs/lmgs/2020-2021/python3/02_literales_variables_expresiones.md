@@ -5,6 +5,8 @@ layout: single3
 
 # Literales, variables y expresiones
 
+{% include video id="CNtCxItLpao" provider="youtube" %}
+
 ## Literales
 
 Los literales nos permiten representar valores. Estos valores pueden ser de diferentes tipos, de esta manera tenemos diferentes tipos de literales:
