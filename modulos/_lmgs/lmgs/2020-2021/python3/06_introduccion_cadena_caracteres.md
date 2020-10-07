@@ -6,7 +6,7 @@ layout: single3
 # Introducción a las cadenas de caracteres
 
 
-{% include video id="CNtCxItLpao" provider="youtube" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CNtCxItLpao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Las cadenas de caracteres (`str`): Me permiten guardar secuencias de caracteres.
 
