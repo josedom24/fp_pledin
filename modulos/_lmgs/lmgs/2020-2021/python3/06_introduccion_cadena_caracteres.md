@@ -5,6 +5,9 @@ layout: single3
 
 # Introducción a las cadenas de caracteres
 
+
+{% include video id="CNtCxItLpao" provider="youtube" %}
+
 Las cadenas de caracteres (`str`): Me permiten guardar secuencias de caracteres.
 
 ## Definición de cadenas
