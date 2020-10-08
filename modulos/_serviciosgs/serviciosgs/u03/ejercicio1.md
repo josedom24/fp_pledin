@@ -3,33 +3,32 @@ title: "Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST"
 permalink: /serviciosgs/u03/ejercicio1.html
 ---
 
-1. Utilizando el comando de linux HEAD visualiza la información de la cabeceras de los URL:
+Para realizar estos ejercicios utiliza el comando `curl`. Aprende sus distintas opciones para realizar las siguientes peticiones.
 
-		http://dit.gonzalonazareno.org
-		http://informatica.gonzalonazareno.org/proyectos/index.html
-		http://josedom24.github.io/img/yo1.jpg
+1. Realiza una petición con el método HEAD para visualizar la información de la cabeceras de los URL:
 
+		https://dit.gonzalonazareno.org/moodle/index.php
+		
 	Identifica todos los parámetros que puedas.
 
-	Utiliza algún plugin de firefox  para identificar las cabeceras de las peticiones y de las respuestas.
+	Utiliza algún plugin del navegador  para identificar las cabeceras de las peticiones y de las respuestas.
 
-2. Utiliando el método GET obtén el contenido de la página:
+2. Realiza una petición GET obtén el contenido de la página:
 
-		http://dit.gonzalonazareno.org/moodle/index.php
-		http://dit http://www.debian.org/index.html
+		https://dit.gonzalonazareno.org/moodle/index.php
+		
+	Comprueba con el plugin del navegador cuantas peticiones se realizan al acceder a estas páginas. 
+	**Nota: No entregues el contenido completo que te devuelve la petición.**
 
-	Comprueba con el plugin de firefox cuantas peticiones se realizan al acceder a estas páginas.
 
+3. Envío de información al servidor, comprueba como se manda información al servidor mediante el método GET en la URL. ¿Qué pasa si envíamos otro identificador, por ejemplo el 4?:
 
-3. Envío de información al servidor, comprueba como se manda información al servidor mediante el método GET en la URL:
+		https://dit.gonzalonazareno.org/moodle/course/view.php?id=25
 
-		http://playerone.josedomingo.org/ejget.php?valor=hola
-		http://dit.gonzalonazareno.org/moodle/course/view.php?id=4
-
-	Usando el comando GET manda tu nombre a la página: 
+	Usando el método GET manda tu nombre a la página: 
 
 		http://playerone.josedomingo.org/ejget.php
         
-	Usando el comando POST (que envia el contenido en el cuerpo) manda tu nombre a la página:
+	Usando el método POST (que envía el contenido en el cuerpo) manda tu nombre a la página:
 
 		http://playerone.josedomingo.org/ejpost.php
