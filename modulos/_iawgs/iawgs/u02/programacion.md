@@ -14,7 +14,7 @@ permalink: /iawgs/u02/programacion.html
 
     * Seguir trabajando en la práctica de la unidad 1: [Práctica: Implantación y despliegue de una aplicación web estática](../u01/estatica.html)
 
-## Jueves, 8 de Octubre
+### Jueves, 8 de Octubre
 
 * Grupo 1 **(Casa)**
 
@@ -28,7 +28,7 @@ permalink: /iawgs/u02/programacion.html
 
 - - - 
 
-## Jueves, 15 de Octubre
+### Jueves, 15 de Octubre
 
 * Grupo 1 **(Clase)**
 
