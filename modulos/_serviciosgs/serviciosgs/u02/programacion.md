@@ -5,10 +5,10 @@ permalink: /serviciosgs/u02/programacion.html
 
 ### Viernes, 2 de Octubre
 
-#### Grupo 1  y Grupo 2 **(Videoconferencia)**
+* Grupo 1  y Grupo 2 **(Videoconferencia)**
 
-* Se introduce el servidor DHCP con el documento [¿Cómo funciona el servidor DHCP?](dhcp.html).
-* Se deja cómo trabajo el [Cuestionario DHCP](cuestionario.html) y el [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html).
+    * Se introduce el servidor DHCP con el documento [¿Cómo funciona el servidor DHCP?](dhcp.html).
+    * Se deja cómo trabajo el [Cuestionario DHCP](cuestionario.html) y el [Ejercicio: Instalación y configuración del servidor dhcp en linux](ejercicio1.html).
 
 - - -
 
