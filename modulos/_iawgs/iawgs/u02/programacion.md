@@ -32,16 +32,24 @@ permalink: /iawgs/u02/programacion.html
 
 * Grupo 1 **(Clase)**
 
+    * Ver el vídeo [Instalación de CMS basados en PHP]().
+    * Ver el vídeo [Presentación práctica PHP])()
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
 
 * Grupo 2 **(Casa)**
 
+    * Ver el vídeo [Instalación de CMS basados en PHP]().
+    * Ver el vídeo [Presentación práctica PHP])()
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
 
 - - -
 
-## Jueves, 22 de Octubre
+### Jueves, 22 de Octubre
 
 * Grupo 1 **(Casa)**
 
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
 
 * Grupo 2 **(Clase)**
 
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
