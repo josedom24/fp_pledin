@@ -10,6 +10,7 @@ permalink: /serviciosgs/u03/programacion.html
     * Apache2.4: Siguiendo la [Presentación de Apache2.4](https://docs.google.com/presentation/d/e/2PACX-1vSciwRh5eeUkr3EDC3gpzcL-FVD11Fh7oBBfniqEnn4LUgm8FfKc4m9kuRRIJg8VWsNqnXJyZp8Fo1B/pub?start=true&loop=false&delayms=3000), veremos los siguientes apartados:
         * Instalación y configuración básica de Apache
         * VirtualHosting en Apache2
+    * Échale un vistazo (**No hay que entregarlo**) al [Ejercicio 2: Instalación y configuración básica de Apache](ejercicio2.html)
     * Realizar el (**Hay que entregar**) [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html)
 
 * Grupo 2 **(Casa)**
@@ -28,6 +29,7 @@ permalink: /serviciosgs/u03/programacion.html
 
 * Grupo 2 **(Casa)**
 
+    * Échale un vistazo (**No hay que entregarlo**) al [Ejercicio 2: Instalación y configuración básica de Apache](ejercicio2.html)
     * Realizar el (**Hay que entregar**) [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html)
     * Por la tarde: ver el vídeo de la clase de hoy.
 

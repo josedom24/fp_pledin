@@ -71,7 +71,7 @@ Para conseguir estos dos sitios virtuales debes seguir los siguientes pasos:
 
 	De esta manera tendremos un fichero llamado ``iesgn.conf`` para realizar la configuración del sitio web ``www.iesgn.org``, y otro llamado ``departamentos.conf`` para el sitio web ``www.departamentosgn.org``.
 
-2. Modificamos los ficheros ``iesgn.conf`` y ``departamentos.conf``, para indicar el nombre que vamos ausar para acceder al host virtual (``ServerName``) y el directorio detrabajo (``DocumentRoot``).
+2. Modificamos los ficheros ``iesgn.conf`` y ``departamentos.conf``, para indicar el nombre que vamos ausar para acceder al host virtual (``ServerName``) y el directorio de trabajo (``DocumentRoot``).
 3. No es suficiente crear los ficheros de configuración de cada sitio web, es necesario crear un enlace simbólico a estos ficheros dentro del directorio ``/etc/apache2/sites-enabled``, para ello:
 
         a2ensite iesgn
