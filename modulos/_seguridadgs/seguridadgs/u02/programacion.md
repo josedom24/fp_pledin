@@ -59,9 +59,9 @@ permalink: /seguridadgs/u02/programacion.html
 
 * Grupo 1 **(Casa)**
 
-
 * Grupo 2 **(Clase)**
 
+    * Práctica
 
 ### Jueves, 15 de Octubre
 
