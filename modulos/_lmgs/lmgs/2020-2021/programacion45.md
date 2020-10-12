@@ -13,6 +13,9 @@ layout: single3
         * [01. Literales, variables y expresiones](python3/literales_variables_expresiones.html)
         * [02. Datos numérico](python3/datos_numericos.html)
         * [03. Trabajando con variable](python3/variables.html)
+        * [04. Entrada y salida estándar](python3/entrada_salida.html)
+        * [05. Introducción a las cadenas de caracteres](python3/introduccion_cadenas_caracteres.html)
+
 
 * Grupo B (Casa)
 
