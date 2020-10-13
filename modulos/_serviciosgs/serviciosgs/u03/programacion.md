@@ -17,7 +17,11 @@ permalink: /serviciosgs/u03/programacion.html
 
     * Ver el vídeo [Introducción a HTTP](https://www.youtube.com/watch?v=G8if3rk7L-I).
     * Realiza el ejercicio (**No hay que entregar**): [Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST](ejercicio1.html).
-    * Por la tarde: ver el vídeo de la clase de hoy.
+    * Por la tarde: ver los vídeos de la clase de hoy:
+        * [Repasamos el protocolo HTTP. Clase 13/10/2020](https://youtu.be/zlpr8-yqchk)
+        * [Introducción a Apache2.4  (Parte I) - Clase: 13/10/2020](https://youtu.be/K0vZHfwTcvM)
+        * [Introducción a Apache2.4  (Parte II) - Clase: 13/10/2020](https://youtu.be/OsDFHLS2bdg)
+
 
 ### Jueves, 8 de Octubre
 

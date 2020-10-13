@@ -29,6 +29,13 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html)
 * [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
 
+## Vídeos
+
+* [Repasamos el protocolo HTTP. Clase 13/10/2020](https://youtu.be/zlpr8-yqchk)
+* [Introducción a Apache2.4  (Parte I) - Clase: 13/10/2020](https://youtu.be/K0vZHfwTcvM)
+* [Introducción a Apache2.4  (Parte II) - Clase: 13/10/2020](https://youtu.be/OsDFHLS2bdg)
+
+
 <!--
 
 * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
