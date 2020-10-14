@@ -43,11 +43,11 @@ permalink: /serviciosgs/u03/programacion.html
 * Grupo 1 **(Casa)**
 
     * Ver el vídeo [Introducción a HTTP](https://www.youtube.com/watch?v=G8if3rk7L-I).
-    * Realiza el ejercicio (**Hay que entregar**): [Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST](ejercicio1.html).
+    * Realiza el ejercicio (**No hay que entregar**): [Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST](ejercicio1.html).
 
 * Grupo 2 **(Clase)**
 
     * Repaso de todos los conceptos estudiados durante la semana.
-    * Realizar el (**No hay que entregar**) [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
+    * Realizar el (**Hay que entregar**) [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
 
 - - -
