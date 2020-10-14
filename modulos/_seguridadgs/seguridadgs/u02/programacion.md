@@ -51,22 +51,32 @@ permalink: /seguridadgs/u02/programacion.html
 
 * Grupo 1 **(Clase)**
 
+    * Comenzamos a estudiar * [Introducción a la criptografía 2: Integridad, firmas digitales y autenticación](https://docs.google.com/presentation/d/e/2PACX-1vSifw-oLVril_ABXeukhyAcM4vs4o76VoKCwad8ULL7h7XTuNOypdOt80ZC7sEGywnQVSikOOU3dxjQ/pub?start=false&loop=false&delayms=3000)
+    * Ejercicio firma con gpg
 
 * Grupo 2 **(Casa)**
 
+    * Seguimos trabajando  con [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
 
 ### Miércoles, 14 de Octubre
 
 * Grupo 1 **(Casa)**
 
+    * Repaso del trabajo realizado ayer
+
 * Grupo 2 **(Clase)**
 
-    * Práctica
+    * Comenzamos a estudiar * [Introducción a la criptografía 2: Integridad, firmas digitales y autenticación](https://docs.google.com/presentation/d/e/2PACX-1vSifw-oLVril_ABXeukhyAcM4vs4o76VoKCwad8ULL7h7XTuNOypdOt80ZC7sEGywnQVSikOOU3dxjQ/pub?start=false&loop=false&delayms=3000)
+    * Ejercicio firma con gpg
+    * Introducción a Anillos de confianza
 
 ### Jueves, 15 de Octubre
 
 * Grupo 1 **(Clase)**
 
+    * Ejercicio firma con gpg
+    * Introducción a Anillos de confianza
 
 * Grupo 2 **(Casa)**
 
+    * Repaso del trabajo realizado ayer
