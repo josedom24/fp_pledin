@@ -21,7 +21,7 @@ URL ``http://www.mapeo.com/documentos`` y visualice los ficheros del ``/home/usu
 
 	* Crea un enlace directo dentro de ``/home/usuario/document`` y comprueba si es posible seguirlo. Cambia las opciones del directorio para que no siga los enlaces símbolicos.
 	* Deshabilita la opción de que se listen los archivos existentes en la carpeta cuando no existe un fichero definido en la directiva [DirectoryIndex](http://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex).
-	* MultiViews: Para saber más sobre el [negociado de contenido](http://httpd.apache.org/docs/2.4/content-negotiation.html). Siguiendo el ejemplo de esta `página](http://www.howtoforge.com/using-apache2-content-negotiation-to-serve-different-languages) realiza un fichero de bienvenida en español e inglés y compruba como se visualiza.
+	* MultiViews: Para saber más sobre el [negociado de contenido](http://httpd.apache.org/docs/2.4/content-negotiation.html). Siguiendo el ejemplo de esta [página](http://www.howtoforge.com/using-apache2-content-negotiation-to-serve-different-languages) realiza un fichero de bienvenida en español e inglés y compruba como se visualiza.
 
 4. Usando la directiva [Redirect](http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect) realiza una redirección, que permita que cuando entre a tu servidor ``http://www.mapeo.com``, salte a ``http://www.mapeo.com/web``.
 
