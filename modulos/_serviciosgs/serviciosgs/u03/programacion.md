@@ -35,7 +35,10 @@ permalink: /serviciosgs/u03/programacion.html
 
     * Échale un vistazo (**No hay que entregarlo**) al [Ejercicio 2: Instalación y configuración básica de Apache](ejercicio2.html)
     * Realizar el (**Hay que entregar**) [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html)
-    * Por la tarde: ver el vídeo de la clase de hoy.
+    * Por la tarde: ver el vídeo de la clase de hoy:
+        * [Apache2.4: Control acceso (Clase 15/10/2020)](https://www.youtube.com/watch?v=TRoCcxRVhhY)
+        * [Apache2.4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=w4kP9XbuuCA)
+        * [Apache2.4: Ejercicio 4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=G3QhjLBhjMU)
 
 
 ### Viernes, 16 de Octubre
