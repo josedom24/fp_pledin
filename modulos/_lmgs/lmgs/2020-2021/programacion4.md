@@ -5,9 +5,9 @@ layout: single3
 
 # Lenguajes de Marcas - Programación semana 4
 
-### Martes, 6 de Octubre
+### Martes, 13 de Octubre
 
-* Grupo A (Clase)
+* Grupo 1 (Clase)
 
     * Empezamos a trabajar con python3:
         * [01. Literales, variables y expresiones](python3/literales_variables_expresiones.html)
@@ -17,22 +17,22 @@ layout: single3
         * [05. Introducción a las cadenas de caracteres](python3/introduccion_cadenas_caracteres.html)
 
 
-* Grupo B (Casa)
+* Grupo 2 (Casa)
 
     * Realizar los siguientes ejercicios (**Hay que entregarlos!!!, plazo 1 semana**):
         * [Cuestionario: Introducción a la programación](https://dit.gonzalonazareno.org/moodle/mod/quiz/view.php?id=28720)
         * [Tarea 1: Análisis y diseño de problemas](https://dit.gonzalonazareno.org/moodle/mod/assign/view.php?id=28728)
 
 
-### Miércoles, 7 de Octubre
+### Miércoles, 14 de Octubre
 
-* Grupo A (Casa)
+* Grupo 1 (Casa)
 
     * Realizar los siguientes ejercicios (**Hay que entregarlos!!!, plazo 1 semana**):
         * [Cuestionario: Introducción a la programación](https://dit.gonzalonazareno.org/moodle/mod/quiz/view.php?id=28720)
         * [Tarea 1: Análisis y diseño de problemas](https://dit.gonzalonazareno.org/moodle/mod/assign/view.php?id=28728)
 
-* Grupo B (Clase)
+* Grupo 2 (Clase)
 
     * Empezamos a trabajar con python3:
         * [01. Literales, variables y expresiones](python3/literales_variables_expresiones.html)
