@@ -3,9 +3,7 @@ permalink: /lmgs/2020-2021/python3/algoritmo_programa.html
 layout: single3
 ---
 
-# Introducción a las cadenas de caracteresPasando del diseño al programa python3
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h_pxXwhuSOU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Pasando del diseño al programa python3
 
 ## Leer variables por teclado
 
