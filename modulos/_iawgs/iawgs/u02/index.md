@@ -35,6 +35,10 @@ permalink: /iawgs/u02/index.html
 * [How to Install LAMP Stack on Debian 10 Buster](https://computingforgeeks.com/install-lamp-stack-on-debian-10-buster/)
 * [Vídeo: Como instalar Wordpress en un entorno LAMP](https://www.youtube.com/watch?v=muAKPiPqW6g)
 
+## Vídeos de clases
+
+* [[IAW] - Cómo instalar CMS en PHP (Clase 15/10/2020)](https://www.youtube.com/watch?v=dQGmC8MwjqQ)
+* [[IAW] - Práctica 1: PHP (Clase 15/10/2020)](https://www.youtube.com/watch?v=ZnxQL9XNsgY)
 
 ## Prácticas
 

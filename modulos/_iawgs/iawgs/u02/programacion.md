@@ -38,8 +38,9 @@ permalink: /iawgs/u02/programacion.html
 
 * Grupo 2 **(Casa)**
 
-    * Ver el vídeo de la clase: ¿Cómo instalar un CMS PHP en un entorno LAMP? (**Lo subo por la tarde**)
+    * Ver el vídeo de la clase: [Cómo instalar CMS en PHP (Clase 15/10/2020)](https://www.youtube.com/watch?v=dQGmC8MwjqQ)
     * Ver el [Vídeo: Como instalar Wordpress en un entorno LAMP](https://www.youtube.com/watch?v=muAKPiPqW6g)
+    * Ver el vídeo [Práctica 1: PHP (Clase 15/10/2020)](https://www.youtube.com/watch?v=ZnxQL9XNsgY)
     * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
 
 - - -
