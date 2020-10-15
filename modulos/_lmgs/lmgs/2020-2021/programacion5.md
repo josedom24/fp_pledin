@@ -21,7 +21,7 @@ layout: single3
     * Empezamos repasando las [cadenas de caracteres](https://fp.josedomingo.org/lmgs/2020-2021/python3/introduccion_cadenas_caracteres.html)
     * [Pasando del diseño al programa python3](https://fp.josedomingo.org/lmgs/2020-2021/python3/algoritmo_programa.html)
     * [Cuestionario: Introducción a python3](https://dit.gonzalonazareno.org/moodle/mod/quiz/view.php?id=28820)
-    * [Tarea 2: Programas python3] (https://dit.gonzalonazareno.org/moodle/mod/assign/view.php?id=28822)
+    * [Tarea 2: Programas python3](https://dit.gonzalonazareno.org/moodle/mod/assign/view.php?id=28822)
 
 
 ### Miércoles, 21 de Octubre
@@ -42,7 +42,7 @@ layout: single3
     * [VIDEO: Programa en Python3 (Ejercicio 16)](https://www.youtube.com/watch?v=wD6GLCmuMMk&feature=youtu.be)
     * Realiza los programas python3 de los problemas del [Boletín1](https://fp.josedomingo.org/lmgs/2020-2021/python3/boletin1.html)
     * [Cuestionario: Introducción a python3](https://dit.gonzalonazareno.org/moodle/mod/quiz/view.php?id=28820)
-    * [Tarea 2: Programas python3] (https://dit.gonzalonazareno.org/moodle/mod/assign/view.php?id=28822)
+    * [Tarea 2: Programas python3](https://dit.gonzalonazareno.org/moodle/mod/assign/view.php?id=28822)
     
 
 - - -
