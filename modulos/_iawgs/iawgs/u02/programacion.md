@@ -32,14 +32,14 @@ permalink: /iawgs/u02/programacion.html
 
 * Grupo 1 **(Clase)**
 
-    * Ver el vídeo [Instalación de CMS basados en PHP]().
-    * Ver el vídeo [Presentación práctica PHP]()
+    * ¿Cómo instalar un CMS PHP en un entorno LAMP?
+    * Ver el [Vídeo: Como instalar Wordpress en un entorno LAMP](https://www.youtube.com/watch?v=muAKPiPqW6g)
     * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
 
 * Grupo 2 **(Casa)**
 
-    * Ver el vídeo [Instalación de CMS basados en PHP]().
-    * Ver el vídeo [Presentación práctica PHP]()
+    * Ver el vídeo de la clase: ¿Cómo instalar un CMS PHP en un entorno LAMP? (**Lo subo por la tarde**)
+    * Ver el [Vídeo: Como instalar Wordpress en un entorno LAMP](https://www.youtube.com/watch?v=muAKPiPqW6g)
     * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
 
 - - -

@@ -33,6 +33,7 @@ permalink: /iawgs/u02/index.html
 * [Opensource CMS](http://www.opensourcecms.com)
 * [How to Install a LAMP Server on Debian 9 Stretch Linux](https://t.co/A7zG7Ak2Y2)
 * [How to Install LAMP Stack on Debian 10 Buster](https://computingforgeeks.com/install-lamp-stack-on-debian-10-buster/)
+* [Vídeo: Como instalar Wordpress en un entorno LAMP](https://www.youtube.com/watch?v=muAKPiPqW6g)
 
 
 ## Prácticas

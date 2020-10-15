@@ -3,7 +3,7 @@ title: "ServidorWeb. Programación de la Unidad"
 permalink: /serviciosgs/u03/programacion.html
 ---
 
-### Martes, 6 de Octubre
+### Martes, 13 de Octubre
 
 * Grupo 1 **(Clase)**
 
@@ -23,7 +23,7 @@ permalink: /serviciosgs/u03/programacion.html
         * [Introducción a Apache2.4  (Parte II) - Clase: 13/10/2020](https://youtu.be/OsDFHLS2bdg)
 
 
-### Jueves, 8 de Octubre
+### Jueves, 15 de Octubre
 
 * Grupo 1 **(Clase)**
 
@@ -38,16 +38,16 @@ permalink: /serviciosgs/u03/programacion.html
     * Por la tarde: ver el vídeo de la clase de hoy.
 
 
-### Viernes, 9 de Octubre
+### Viernes, 16 de Octubre
 
 * Grupo 1 **(Casa)**
 
     * Ver el vídeo [Introducción a HTTP](https://www.youtube.com/watch?v=G8if3rk7L-I).
-    * Realiza el ejercicio (**Hay que entregar**): [Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST](ejercicio1.html).
+    * Realiza el ejercicio (**No hay que entregar**): [Ejercicio 1: Hacer peticiones HTTP: GET, HEAD y POST](ejercicio1.html).
 
 * Grupo 2 **(Clase)**
 
     * Repaso de todos los conceptos estudiados durante la semana.
-    * Realizar el (**No hay que entregar**) [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
+    * Realizar el (**Hay que entregar**) [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
 
 - - -
