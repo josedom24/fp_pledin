@@ -80,3 +80,38 @@ permalink: /seguridadgs/u02/programacion.html
 * Grupo 2 **(Casa)**
 
     * Repaso del trabajo realizado ayer
+
+- - -
+
+### Martes, 20 de Octubre
+
+* Grupo 1 **(Casa)**
+
+    * Ver el vídeo de clase
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+* Grupo 2 **(Clase)**
+
+    * Estudiamos Anillos de confianza y autentificación en  [Introducción a la criptografía 2: Integridad, firmas digitales y autenticación](https://docs.google.com/presentation/d/e/2PACX-1vSifw-oLVril_ABXeukhyAcM4vs4o76VoKCwad8ULL7h7XTuNOypdOt80ZC7sEGywnQVSikOOU3dxjQ/pub?start=false&loop=false&delayms=3000)
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+### Miércoles, 21 de Octubre
+
+* Grupo 1 **(Clase)**
+
+    * Estudiamos Anillos de confianza y autentificación en  [Introducción a la criptografía 2: Integridad, firmas digitales y autenticación](https://docs.google.com/presentation/d/e/2PACX-1vSifw-oLVril_ABXeukhyAcM4vs4o76VoKCwad8ULL7h7XTuNOypdOt80ZC7sEGywnQVSikOOU3dxjQ/pub?start=false&loop=false&delayms=3000)
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+### Jueves, 22 de Octubre
+
+* Grupo 1 **(Casa)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+* Grupo 2 **(Clase)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
