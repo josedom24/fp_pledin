@@ -17,6 +17,7 @@ permalink: /seguridadgs/u02/index.html
 ## Ejercicios
 
 * [Cifrado simétrico con gpg y openssl](gpg.html)
+* [Firma digital con gpg](ejercicio_firma.html)
 
 ## Enlaces interesantes
 
