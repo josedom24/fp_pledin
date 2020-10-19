@@ -28,6 +28,9 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Ejercicio 2: Instalación y configuración básica de Apache](ejercicio2.html)
 * [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html)
 * [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
+* [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+* [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+
 
 ## Vídeos
 
@@ -37,8 +40,6 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Apache2.4: Control acceso (Clase 15/10/2020)](https://www.youtube.com/watch?v=TRoCcxRVhhY)
 * [Apache2.4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=w4kP9XbuuCA)
 * [Apache2.4: Ejercicio 4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=G3QhjLBhjMU)
-* [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
-* [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
 
 <!--
 * [Ejercicio 7: Módulos en apache](ejercicio7.html)
