@@ -155,6 +155,7 @@ Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar s
 
 
 {% capture notice-text %}
+**Ejercicios**
 
  Crea un escenario en Vagrant que tenga un servidor con una red publica, y una privada, un cliente conectada a la red privada. Crea un host virtual `departamentos.iesgn.org`.
 
