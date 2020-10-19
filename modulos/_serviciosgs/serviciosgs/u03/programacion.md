@@ -54,3 +54,40 @@ permalink: /serviciosgs/u03/programacion.html
     * Realizar el (**Hay que entregar**) [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
 
 - - -
+
+### Martes, 20 de Octubre
+
+* Grupo 1 **(Casa)**
+
+    * Seguir trabajando: [Ejercicio 3: VirtualHosting con Apache](ejercicio3.html).
+    * Seguir trabajando: [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
+    * Por la tarde: ver el vídeo de la clase de hoy:
+
+* Grupo 2 **(Clase)**
+
+    * Apache 2.4: Control de acceso, autentificación y autorización
+    * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    
+### Jueves, 22 de Octubre
+
+* Grupo 1 **(Casa)**
+
+    * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+
+* Grupo 2 **(Clase)**
+
+    * Apache 2.4: Configuración de apache mediante archivo .htaccess 
+    * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+    
+### Viernes, 23 de Octubre
+
+* Grupo 1 **(Clase)**
+
+    * Repaso de todos los conceptos estudiados durante la semana.
+    * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)    
+    
+* Grupo 2 **(Casa)**
+
+    * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
