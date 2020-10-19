@@ -5,7 +5,7 @@ permalink: /serviciosgs/u03/ejercicio6.html
 
 Un fichero ``.htaccess`` (hypertext access), también conocido como archivo de configuración distribuida, es un fichero especial, popularizado por el Servidor HTTP Apache que nos permite definir diferentes directivas de configuración para cada directorio (con sus respectivos subdirectorios) sin necesidad de editar el archivo de configuración principal de Apache.
 
-Para permitir el uso de los ficheros .htaccess o restringir las directivas que se pueden aplicar usamos ela directiva [AllowOverride](http://httpd.apache.org/docs/2.4/mod/core.html#allowoverride>), que puede ir acompañada de una o varias opciones: ``All``, ``AuthConfig``, ``FileInfo``, ``Indexes``, ``Limit``, ... Estudia para que sirve cada una de las opciones.
+Para permitir el uso de los ficheros `.htaccess` o restringir las directivas que se pueden aplicar usamos ela directiva [AllowOverride](http://httpd.apache.org/docs/2.4/mod/core.html#allowoverride>), que puede ir acompañada de una o varias opciones: ``All``, ``AuthConfig``, ``FileInfo``, ``Indexes``, ``Limit``, ... Estudia para que sirve cada una de las opciones.
 
 <!--
 {% capture notice-text %}
