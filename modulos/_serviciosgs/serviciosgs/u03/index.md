@@ -44,7 +44,7 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 <!--
 * [Ejercicio 7: Módulos en apache](ejercicio7.html)
 * [Servidor web nginx](nginx.html)
--->
+
 
 ## Prácticas
 
