@@ -12,7 +12,6 @@ En **apache2.2** se utilizan las siguientes directivas: [order](http://httpd.apa
 En **apache2.4** se utilizan las siguientes directivas: [Require](https://httpd.apache.org/docs/2.4/es/mod/mod_authz_core.html#require), [RequireAll](https://httpd.apache.org/docs/2.4/es/mod/mod_authz_core.html#requireall), [RequireAny](https://httpd.apache.org/docs/2.4/es/mod/mod_authz_core.html#requireany) y [RequireNone](https://httpd.apache.org/docs/2.4/es/mod/mod_authz_core.html#requirenone)
 
 1. Comprueba el control de acceso por defecto que tiene el virtual host por defecto (000-default).
-2. Crea un escenario en Vagrant que tenga un servidor con una red publica, y una privada, un cliente conectada a la red privada. Crea un host virtual, que sólo se tenga acceso desde el cliente de la red local, y no se pueda acceder desde la anfitriona por la red pública.
 
 ## Autentificación básica
 
@@ -70,6 +69,7 @@ Cuando desde el cliente intentamos acceder a una URL que esta controlada por el 
 
 En realidad la información que se manda es el nombre de usuario y la contraseña en base 64, que se puede decodificar fácilmente con cualquier [utilidad](http://www.base64decode.org/).
 
+<!--
 {% capture notice-text %}
 **Ejercicios**
 
@@ -80,7 +80,8 @@ En realidad la información que se manda es el nombre de usuario y la contraseñ
 5. Crea un directorio llamado privado3 en el host virtual default, que permita el acceso sólo los usuarios del grupo1.
 6. El directorio privado3 del ejercicio5 haz que sólo sea accesible desde el localhost.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>    
- 
+-->
+
 ## Autentificación tipo digest
 
 La autentificación tipo digest soluciona el problema de la transferencia de contraseñas en claro sin necesidad de usar SSL.  El procedimiento, como veréis, es muy similar al tipo básico pero cambiando algunas de las directivas y usando la utilidad ``htdigest`` en lugar de ``htpassword`` para crear el fichero de contraseñas. El módulo de autenticación necesario suele venir con Apache pero no habilitado por defecto. Para activarlo usamos la utilidad ``a2enmod`` y, a continuación reiniciamos el servidor Apache:
@@ -143,9 +144,22 @@ La información que se manda es *responde* que en este caso esta cifrada usando 
 * El reultado que se manda es el md5 de HA1, un número aleatorio (nonce), el contador de peticiones (nc), el qop y el HA2.
 
 Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar si la información que se ha enviado es válida, con lo que se permitiría el acceso.
- 
+
+<!--
 {% capture notice-text %}
 **Ejercicio:**
 
 1. Crea dos subdirectorios en el host virtual defaul que se llamen ``grupo1`` y ``grupo2``. Crea varios usuarios con la utilidad ``htdigest``, asignando a cada uno un dominio distinto (``domgrupo1`` y ``domgrupo2``). Configura los directorios para que al primero grupo1 sólo puedan acceder los usuarios del dominio domgrupo1, y el directorio grupo2 solo accedan los usuarios del dominio domgrupo2.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+-->
+
+
+{% capture notice-text %}
+
+ Crea un escenario en Vagrant que tenga un servidor con una red publica, y una privada, un cliente conectada a la red privada. Crea un host virtual `departamentos.iesgn.org`.
+
+1. A la URL ``departamentos.iesgn.org/intranet`` sólo se debe tener acceso desde el cliente de la red local, y no se pueda acceder desde la anfitriona por la red pública. A la URL ``departamentos.iesgn.org/internet``, sin embargo, sólo se debe tener acceso desde la anfitriona por la red pública, y no desde la red local.
+2. Autentificación básica. Limita el acceso a la URL ``departamentos.iesgn.org/secreto``. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo se manda la contraseña entre el cliente y el servidor?. Entrega una breve explicación del ejercicio.
+3. Cómo hemos visto la autentificación básica no es segura, modifica la autentificación para que sea del tipo *digest*, y sólo sea accesible a los usuarios pertenecientes al grupo *directivos*. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo funciona esta autentificación?
+4. Vamos a combinar el control de acceso (tarea 6) y la autentificación (tareas 7 y 8), y vamos a configurar el virtual host para que se comporte de la siguiente manera: el acceso a la URL ``departamentos.iesgn.org/secreto`` se hace forma directa desde la intranet, desde la red pública te pide la autentificación. Muestra el resultado al profesor.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
