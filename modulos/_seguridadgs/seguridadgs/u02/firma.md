@@ -30,9 +30,8 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
     * Escribe tu fingerprint en un papel y dárselo a tu compañero, para que puede descargarse tu clave pública.
     * Te debes bajar al menos tres claves públicas de compañeros. Firma estas claves.
     * Tu te debes asegurar que tu clave pública es firmada por al menos tres compañeros de la clase.
-    * Puedes seguir el esquema que se nos presenta en la siguiente página de Debian:  
     * Una vez que firmes una clave se la tendrás que devolver a su dueño, para que otra persona se la firme.
-    * Cuando tengas las tres firmas sube la clave al servidor de claves y rellena tus datos en la tabla [Claves públicas PGP 2019-2020](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_PGP_2019-2020)
+    * Cuando tengas las tres firmas sube la clave al servidor de claves y rellena tus datos en la tabla [Claves públicas PGP 2020-2021](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_PGP_2020-2021)
     * Asegurate que te vuelves a bajar las claves públicas de tus compañeros que tengan las tres firmas.
 
 4. Muestra las firmas que tiene tu clave pública.
