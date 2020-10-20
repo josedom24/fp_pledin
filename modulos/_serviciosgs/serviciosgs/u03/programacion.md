@@ -72,22 +72,28 @@ permalink: /serviciosgs/u03/programacion.html
 
 * Grupo 1 **(Casa)**
 
-    * Por la tarde: ver el vídeo de la clase de hoy:
+    * Ve leyendo información en la presentación de:
+        * Apache 2.4: Control de acceso, autentificación y autorización
+        * Apache 2.4: Configuración de apache mediante archivo .htaccess 
     * Después empieza a trabajar en el [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
 
 * Grupo 2 **(Clase)**
 
     * Apache 2.4: Control de acceso, autentificación y autorización
+    * Apache 2.4: Configuración de apache mediante archivo .htaccess 
     * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)    
     
 ### Viernes, 23 de Octubre
 
 * Grupo 1 **(Clase)**
 
+    * Apache 2.4: Control de acceso, autentificación y autorización
     * Apache 2.4: Configuración de apache mediante archivo .htaccess 
+    * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
     * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)    
     
 * Grupo 2 **(Casa)**
 
-    * Por la tarde: ver el vídeo de la clase de hoy:
-    * Después empieza a trabajar en el [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+    * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
