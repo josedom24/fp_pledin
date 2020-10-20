@@ -9,8 +9,8 @@ permalink: /seguridadgs/u02/firma.html
 En este primer apartado vamos a trabajar con las firmas electrónicas, para ello te pueden ayudar los siguientes enlaces:
 
 * [Intercambiar claves](https://www.gnupg.org/gph/es/manual/x75.html)
+* [Validar otras claves en nuestro anillo de claves públicas](https://www.gnupg.org/gph/es/manual/x354.html)
 * [Firmado de claves (Debian)](https://www.debian.org/events/keysigning.es.html)
-* [Manual de creación y mantenimiento de clave GPG](https://www.infotics.es/articulo/manual-de-creaci%C3%B3n-y-mantenimiento-de-clave-gpg/)
 
 ### GPG
 
