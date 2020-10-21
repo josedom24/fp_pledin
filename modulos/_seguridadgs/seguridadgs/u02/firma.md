@@ -36,7 +36,7 @@ En este primer apartado vamos a trabajar con las firmas electrónicas, para ello
 
 4. Muestra las firmas que tiene tu clave pública.
 5. Comprueba que ya puedes verificar sin "problemas" una firma recibida por una persona en la que confías.
-6. Comprueba que puedes verificar sin "problemas" una firma recibida por una tercera problema en la que confía una persona en la que tu confías.
+6. Comprueba que puedes verificar con confianza una firma de una persona en las que no confías, pero sin embargo si confía otra persona en la que tu tienes confianza total.
         
     {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
@@ -86,7 +86,7 @@ Vamos a estudiar como la criptografía nos ayuda a cifrar las comunicaciones que
 {% capture notice-text %}
 1. Explica los pasos que se producen entre el cliente y el servidor para que el protocolo cifre la información que se transmite? ¿Para qué se utiliza la criptografía simétrica? ¿Y la asimétrica?
 2. Explica los dos métodos principales de autentificación: por contraseña y utilizando un par de claves públicas y privadas.
-3. En el cliente para uqe sirve el contenido que se guarda en el fichero `~/.ssh/know_hosts`?
+3. En el cliente para que sirve el contenido que se guarda en el fichero `~/.ssh/know_hosts`?
 4. ¿Qué significa este mensaje que aparece la primera vez que nos conectamos a un servidor?
 
         $ ssh debian@172.22.200.74
