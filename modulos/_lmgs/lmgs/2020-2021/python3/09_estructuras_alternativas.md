@@ -5,6 +5,8 @@ layout: single3
 
 # Estructura de control: Alternativas
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Soh5VqukYOs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Alternativa simple
 
 Al ejecutarse la instrucción `if` se evalúa la condición lógica. Si la condición lógica es `True` se ejecutan de manera secuencial el bloque de instrucciones . Si la condición es `False` no se ejecuta el bloque de instrucciones. Una vez ejecutado el `if` (opción verdadera o falsa) se continúa la ejecución de forma secuencial por la siguiente instrucción (bloque de instrucción no identado).

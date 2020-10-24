@@ -5,6 +5,8 @@ layout: single3
 
 # Tipo de datos booleano y expresiones lógicas
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nZ5I81gSxGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Tipo booleano
 
 El tipo booleano o lógico se considera en python3 como un subtipo del tipo entero. Se puede representar dos valores: verdadero o false (True, False).
