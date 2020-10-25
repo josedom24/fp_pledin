@@ -50,8 +50,8 @@ iawgs:
         url: /iawgs/u01
       - title: PHP
         url: /iawgs/u02
-#      - title: Python
-#        url: /iawgs/u03
+      - title: Python
+        url: /iawgs/u03
 #      - title: Integración Continúa
 #        url: /iawgs/u04
 #      - title: Java

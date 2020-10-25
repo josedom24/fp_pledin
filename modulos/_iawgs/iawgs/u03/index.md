@@ -22,6 +22,11 @@ permalink: /iawgs/u03/index.html
 
 ## Enlaces
 
+* [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
+* [VIDEO: Entornos de desarrollo virtuales con Python3](https://www.youtube.com/watch?v=h2J6-03MsnQ)
+* [Ejercicio: Desplegando aplicaciones flask](flask.html)
+
+<!--
 * [Crear una página web con Python](https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u04/)
 * [Ficheros de ejemplo](https://github.com/josedom24/python_web)
 * [Lista de framework Python](https://wiki.python.org/moin/WebFrameworks)
@@ -41,7 +46,7 @@ permalink: /iawgs/u03/index.html
 * [Entorno de desarrollo y producción con aplicaciones web python](python2.html)
 
 
-<!--
+
 * [Depliegue de CMS python: Mezzanine](python3.html)
 
 -->
