@@ -75,6 +75,6 @@ Vamos a explicar la configuración:
 Reinicia el servicio web y prueba el funcionamiento. Si te da algún erro 500 puedes ver los errores, en `/var/log/apache2/error.log`.
 
 {% capture notice-text %}
-Realiza la configuración de apache2 para que sirva la aplicación con la que estamos trabajando.
+Realiza la configuración de apache2 para que sirva la aplicación con la que estamos trabajando en un virtualhost `python.iesgn.org`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
