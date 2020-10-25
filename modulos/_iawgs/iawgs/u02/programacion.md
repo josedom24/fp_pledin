@@ -54,3 +54,38 @@ permalink: /iawgs/u02/programacion.html
 * Grupo 2 **(Clase)**
 
     * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
+
+- - - 
+
+### Lunes, 26 de octubre
+
+* Grupo 1 **(Clase)**
+
+    * Vamos a empezar a ver la aplicaciones python: 
+        * [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
+        * [VIDEO: Entornos de desarrollo virtuales con Python3](https://www.youtube.com/watch?v=h2J6-03MsnQ)
+        * [Ejercicio: Desplegando aplicaciones flask](../u03/flask.html)
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
+    * ¿Cómo podemos hacer una migración de una aplicación PHP?
+
+* Grupo 2 **(Casa)**
+
+    * Vamos a empezar a ver la aplicaciones python: 
+        * [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
+        * [VIDEO: Entornos de desarrollo virtuales con Python3](https://www.youtube.com/watch?v=h2J6-03MsnQ)
+        * [Ejercicio: Desplegando aplicaciones flask](../u03/flask.html)
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
+
+### Jueves, 29 de octubre
+
+* Grupo 1 **(Casa)**
+
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
+
+* Grupo 2 **(Clase)**
+
+    * Repasamos el despliegue de las aplicaciones flask.
+    * Práctica: [Instalación local de un CMS PHP](practica_php1.html)
+    * ¿Cómo podemos hacer una migración de una aplicación PHP?
+
+
