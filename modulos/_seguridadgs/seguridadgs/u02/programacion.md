@@ -115,3 +115,37 @@ permalink: /seguridadgs/u02/programacion.html
 * Grupo 2 **(Clase)**
 
     * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+- - -
+
+### Martes, 27 de octubre
+
+* Grupo 1 **(Clase)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+### Miércoles, 28 de Octubre
+
+* Grupo 1 **(Casa)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+
+* Grupo 2 **(Clase)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Introducción a la criptografía 3: Certificados digitales](https://docs.google.com/presentation/d/e/2PACX-1vTGi-1tMnk64rSjc0wIA26ivs-DFhAPXi2mQL5FzHNMggXZdGyes8gjwKOUxkfkRsOhEP_X3vz5xq1h/pub?start=false&loop=false&delayms=3000)
+
+### Jueves, 29 de Octubre
+
+* Grupo 1 **(Clase)**
+
+    * [Introducción a la criptografía 3: Certificados digitales](https://docs.google.com/presentation/d/e/2PACX-1vTGi-1tMnk64rSjc0wIA26ivs-DFhAPXi2mQL5FzHNMggXZdGyes8gjwKOUxkfkRsOhEP_X3vz5xq1h/pub?start=false&loop=false&delayms=3000)
+
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica: Integridad, firmas y autenticación](firma.html)
