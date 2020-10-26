@@ -12,7 +12,7 @@ permalink: /serviciosgs/u04/practica_dns.html
 
 1. En nuestra red local tenemos un **servidor Web** que sirve dos páginas web: `www.iesgn.org`, `departamentos.iesgn.org`
 2. Vamos a instalar en nuestra red local un servidor DNS (lo puedes instalar en el mismo equipo que tiene el servidor web)
-3. Voy a suponer en este documento que el nombre del servidor DNS va a ser ``pandora.iesgn.org``. El nombre del servidor de tu prçacticas será `tunombre.iesgn.org`.
+3. Voy a suponer en este documento que el nombre del servidor DNS va a ser ``pandora.iesgn.org``. El nombre del servidor de tu prácticas será `tunombre.iesgn.org`.
 
 ## Servidor DNSmasq
 
@@ -31,7 +31,7 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 * Vamos a suponer que tenemos un servidor ftp que se llame ``ftp.iesgn.org`` y que está en x.x.x.201 (esto es ficticio)
 * Además queremos nombrar a los clientes.
 * También hay que nombrar a los virtual hosts de apache: ``www.iesgn.org`` y ``departementos.iesgn.org``
-* Se tienen que resolver las direcciones ipv6 de las distintas máuinas (inventante las ficticias).
+* Se tienen que resolver las direcciones ipv6 de las distintas máquinas (invéntate las ficticias).
 * Se tienen que configurar la zona de resolución inversa.
 
 {% capture notice-text %}
@@ -87,7 +87,7 @@ Los nombres que vamos a tener en ese subdominio son los siguientes:
 	* El servidor de correo configurado para ``informatica.iesgn.org``
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-### DNS dínamico
+### DNS dinámico
 
 Instala un servidor DHCP que configure de forma automática a los clientes. Este servidor DHCP debe mandar a los clientes los servidores DNS que deben utilizar.
 
