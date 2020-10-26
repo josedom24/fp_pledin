@@ -23,7 +23,7 @@ Esta tarea consiste en instalar un CMS de tecnología PHP (elige un CMS que no h
 
 ## Tarea 2: Elección de un hosting compartido
 
-* Elige un servicio de hosting compartido con las caracterísitcas necesarias para instalar un CMS PHP (soporte PHP, base de datos,...)
+* Elige un servicio de hosting compartido con las características necesarias para instalar un CMS PHP (soporte PHP, base de datos,...)
 * Date de alta en el servicio.
 
 {% capture notice-text %}
@@ -43,7 +43,7 @@ Indica que servicio de hosting has elegido. Indica las características del host
 En este momento, muestra al profesor la aplicación funcionando. Entrega un documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (2 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 4: Migración de la apliación web
+## Tarea 4: Migración de la aplicación web
 
 * Elige otro servicio de hosting para PHP.
 * Realiza el proceso de migración.
