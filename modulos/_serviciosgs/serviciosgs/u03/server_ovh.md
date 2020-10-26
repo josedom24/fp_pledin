@@ -1,4 +1,7 @@
-# Configuración inicial del servidor OVH
+---
+title: "Configuración inicial del servidor OVH"
+permalink: /serviciosgs/u03/server_ovh.html
+---
 
 1. Comprueba en el panel de control de OVH que tienes los 4 recursos a tu disposición: VPS, DNS, zona DNS y buzón DNS. Si no es así ponte en contacto con José Domingo para solucionar el problema.
 
