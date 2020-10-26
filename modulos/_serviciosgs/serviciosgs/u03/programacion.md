@@ -97,3 +97,46 @@ permalink: /serviciosgs/u03/programacion.html
 
     * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
     * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+
+
+- - -
+
+### Martes, 27 de Octubre
+
+* Grupo 1 **(Clase)**
+
+    * Seguimos trabajando en [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * Seguimos trabajando en [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+
+    
+* Grupo 2 **(Casa)**
+
+    * Seguimos trabajando en [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * Seguimos trabajando en [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+    
+### Jueves, 29 de Octubre
+
+* Grupo 1 **(Clase)**
+
+    * Módulos en apache2. Módulo rewrite.
+    * [Ejercicio 7: Módulos en apache](ejercicio7.html) **No hay que entregarlo**
+    * [Servidor web nginx](nginx.html)
+
+* Grupo 2 **(Casa)**
+
+    * Seguimos trabajando en [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * Seguimos trabajando en [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+    
+### Viernes, 30 de Octubre
+
+* Grupo 1 **(Casa)**
+
+    * Seguimos trabajando en [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
+    * Seguimos trabajando en [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
+
+
+* Grupo 2 **(Clase)**
+
+    * Módulos en apache2. Módulo rewrite.
+    * [Ejercicio 7: Módulos en apache](ejercicio7.html) **No hay que entregarlo**
+    * [Servidor web nginx](nginx.html)

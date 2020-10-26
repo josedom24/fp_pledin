@@ -41,10 +41,11 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Apache2.4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=w4kP9XbuuCA)
 * [Apache2.4: Ejercicio 4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=G3QhjLBhjMU)
 
-<!--
+
 * [Ejercicio 7: Módulos en apache](ejercicio7.html)
 * [Servidor web nginx](nginx.html)
 
+<!--
 
 ## Prácticas
 
