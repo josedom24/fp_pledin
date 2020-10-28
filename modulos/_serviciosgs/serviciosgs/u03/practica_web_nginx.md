@@ -3,13 +3,11 @@ title: "Práctica: Servidor Web Nginx"
 permalink: /serviciosgs/u03/practica_web_nginx.html
 ---
 
-**(11 tareas - 10 puntos)(5 tareas obligatorias - 5 puntos)**
-{: .notice--warning}
-**Muestra al profesor: Tarea 4, Tarea 9**
-{: .notice--warning}
-
 {% capture notice-text %}
-* **Tarea 1 (1 punto)(Obligatorio):** Crea un escenario Vagrant o utiliza una máquina del cloud con una red pública. Instala el servidor web nginx en la máquina. Modifica la página index.html que viene por defecto y accede a ella desde un navegador. Entrega una captura de pantalla accediendo a ella.
+* **Tarea 1 (1 punto)(Obligatorio):** Crea una máquina del cloud con una red pública. Añade la clave pública del profesor a la máquina. Instala el servidor web nginx en la máquina. Modifica la página index.html que viene por defecto y accede a ella desde un navegador. 
+
+* Entrega la ip flotante de la máquina para que el profesor pueda acceder a ella.
+* Entrega una captura de pantalla accediendo a ella.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Virtual Hosting
@@ -25,7 +23,7 @@ Los dos sitios web tendrán las siguientes características:
 * En el segundo sitio vamos a crear una página donde se pondrán noticias por parte de los departamento, el nombre de este sitio será ``departamentos.iesgn.org``, y su directorio base será ``/srv/www/departamentos``. En este sitio sólo tendremos una página inicial ``index.html``, dando la bienvenida a la página de los departamentos del instituto.
 
 {% capture notice-text %}
-* **Tarea 2 (1 punto)(Obligatorio):** Configura la resolución estática en los clientes y muestra el acceso a cada una de las páginas.
+* **Tarea 2 (2 punto)(Obligatorio):** Configura la resolución estática en los clientes y muestra el acceso a cada una de las páginas.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Mapeo de URL
@@ -41,15 +39,8 @@ Cambia la configuración del sitio web ``www.iesgn.org`` para que se comporte de
 ## Autentificación, Autorización, y Control de Acceso
 
 {% capture notice-text %}
-* **Tarea 6 (1 punto)(Obligatorio):** Añade al escenario Vagrant otra máquina conectada por una red interna al servidor. A la URL ``departamentos.iesgn.org/intranet`` sólo se debe tener acceso desde el cliente de la red local, y no se pueda acceder desde la anfitriona por la red pública. A la URL ``departamentos.iesgn.org/internet``, sin embargo, sólo se debe tener acceso desde la anfitriona por la red pública, y no desde la red local.
-* **Tarea 7 (1 punto):** Autentificación básica. Limita el acceso a la URL ``departamentos.iesgn.org/secreto``. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo se manda la contraseña entre el cliente y el servidor?. Entrega una breve explicación del ejercicio.
-* **Tarea 8 (1 punto):** Cómo hemos visto la autentificación básica no es segura, modifica la autentificación para que sea del tipo *digest*, y sólo sea accesible a los usuarios pertenecientes al grupo *directivos*. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo funciona esta autentificación?
-* **Tarea 9 (1 punto):** Vamos a combinar el control de acceso (tarea 6) y la autentificación (tareas 7 y 8), y vamos a configurar el virtual host para que se comporte de la siguiente manera: el acceso a la URL ``departamentos.iesgn.org/secreto`` se hace forma directa desde la intranet, desde la red pública te pide la autentificación. Muestra el resultado al profesor.
+* **Tarea 6 (1 punto)(Obligatorio):** Añade al escenario otra máquina conectada por una red interna al servidor. A la URL ``departamentos.iesgn.org/intranet`` sólo se debe tener acceso desde el cliente de la red local, y no se pueda acceder desde la anfitriona por la red pública. A la URL ``departamentos.iesgn.org/internet``, sin embargo, sólo se debe tener acceso desde la anfitriona por la red pública, y no desde la red local.
+* **Tarea 7 (1 punto):** Autentificación básica. Limita el acceso a la URL ``departamentos.iesgn.org/secreto``. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. 
+* **Tarea 8 (2 punto):** Vamos a combinar el control de acceso (tarea 6) y la autentificación (tarea 7), y vamos a configurar el virtual host para que se comporte de la siguiente manera: el acceso a la URL ``departamentos.iesgn.org/secreto`` se hace forma directa desde la intranet, desde la red pública te pide la autentificación. Muestra el resultado al profesor.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## IPv6
-
-{% capture notice-text %}
-* **Tarea 10 (1 punto)**: Comprueba que el servidor web con la configuración por defecto está escuchando por el puerto 80 en ipv6. Configura la máquina para que tenga una ipv6 global. Activa el virtualhost por defecto y accede a la página principal utilizando la ipv6 global que tiene asignada.
-* **Tarea 11 (1 punto)**: Configura la resolución estática para acceder a los virtualhost utilizando ipv6.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
