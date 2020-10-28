@@ -2,7 +2,6 @@
 title: "Práctica: Servidor Web Nginx"
 permalink: /serviciosgs/u03/practica_web_nginx.html
 ---
-
 {% capture notice-text %}
 * **Tarea 1 (1 punto)(Obligatorio):** Crea una máquina del cloud con una red pública. Añade la clave pública del profesor a la máquina. Instala el servidor web nginx en la máquina. Modifica la página index.html que viene por defecto y accede a ella desde un navegador. 
 
