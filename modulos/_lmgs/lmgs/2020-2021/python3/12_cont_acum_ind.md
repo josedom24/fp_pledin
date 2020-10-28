@@ -5,6 +5,8 @@ layout: single3
 
 # Uso específico de variables: contadores, acumuladores e indicadores
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R0eJ-zNsRf0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Contadores
 
 Un contador es una variable entera que la utilizamos para contar cuando ocurre un suceso. Un contador:

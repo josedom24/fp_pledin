@@ -2,8 +2,9 @@
 permalink: /lmgs/2020-2021/python3/estructura_while.html
 layout: single3
 ---
-
 # Estructuras de control repetitivas: while
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oO_IdSoYfQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 La instrucción `while` ejecuta una secuencia de instrucciones mientras una condición sea verdadera.
 

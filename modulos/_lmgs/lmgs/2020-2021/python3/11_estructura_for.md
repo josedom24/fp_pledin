@@ -5,6 +5,8 @@ layout: single3
 
 # Estructuras de control repetitivas: for
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0wZT7Kluubg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 La estructura `for` nos permite recorrer los elementos de una secuencia (lista, tupla, cadena de caracteres,...). sin embargo en esta unidad vamos a a prender a usar `for` de forma similar a la instrucción `Para` de pseudocódigo, es decir, ejecutar una secuencia de instrucciones un número determinado de veces, desde un valor inicial, hasta un valor final y con un posible incremento. Para ello vamos a usar el tipo de datos `range` que nos permite generar listas de números. Vamos a usar `for` para crear bucles de instrucciones donde sabemos a priori el número de iteraciones que hay que realizar.
 
 ## Ejemplos
