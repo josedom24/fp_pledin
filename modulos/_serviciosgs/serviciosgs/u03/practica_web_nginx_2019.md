@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Servidor Web Nginx"
-permalink: /serviciosgs/u03/practica_web_nginx.html
+permalink: /serviciosgs/u03/practica_web_nginx_2019.html
 ---
 
 **(11 tareas - 10 puntos)(5 tareas obligatorias - 5 puntos)**

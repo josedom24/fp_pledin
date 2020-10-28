@@ -4,9 +4,8 @@ permalink: /serviciosgs/u03/practica_web_nginx.html
 ---
 {% capture notice-text %}
 * **Tarea 1 (1 punto)(Obligatorio):** Crea una máquina del cloud con una red pública. Añade la clave pública del profesor a la máquina. Instala el servidor web nginx en la máquina. Modifica la página index.html que viene por defecto y accede a ella desde un navegador. 
-
-* Entrega la ip flotante de la máquina para que el profesor pueda acceder a ella.
-* Entrega una captura de pantalla accediendo a ella.
+    * Entrega la ip flotante de la máquina para que el profesor pueda acceder a ella.
+    * Entrega una captura de pantalla accediendo a ella.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Virtual Hosting
