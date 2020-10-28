@@ -43,11 +43,10 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Apache2.4: Ejercicio 4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=G3QhjLBhjMU)
 
 
-
-<!--
-
 ## Prácticas
 
-* [Práctica: Servidor Web Apache 2.4](practica_web_apache.html)
 * [Práctica: Servidor Web Nginx](practica_web_nginx.html)
+
+<!--
+* [Práctica: Servidor Web Apache 2.4](practica_web_apache.html)
 -->
