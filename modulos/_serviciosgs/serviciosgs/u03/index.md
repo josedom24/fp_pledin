@@ -30,7 +30,8 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Ejercicio 4: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio4.html)
 * [Ejercicio 5: Control de acceso, autentificación y autorización](ejercicio5.html)
 * [Ejercicio 6: Configuración de apache mediante archivo .htaccess](ejercicio6.html)
-
+* [Ejercicio 7: Módulos en apache](ejercicio7.html)
+* [Servidor web nginx](nginx.html)
 
 ## Vídeos
 
@@ -42,8 +43,6 @@ En este bloque del módulo vamos a estudiar el servidor Web, programa software q
 * [Apache2.4: Ejercicio 4: Mapeo de URL (Clase 15/10/2020)](https://www.youtube.com/watch?v=G3QhjLBhjMU)
 
 
-* [Ejercicio 7: Módulos en apache](ejercicio7.html)
-* [Servidor web nginx](nginx.html)
 
 <!--
 
