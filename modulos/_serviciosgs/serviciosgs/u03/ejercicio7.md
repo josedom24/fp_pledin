@@ -30,9 +30,9 @@ Lo primero es indicar el nombre de la base de datos de lock que se utilizará, m
 Lo que indica la directiva no es ni el nombre de un archivo ni el de una carpeta, si no la parte inicial del nombre de un archivo. El módulo creará un archivo de nombre ``DAVLockDB.orig`` y otro de nombre ``DAVLockDB.xxxxx`` dentro de la carpeta indicada, para lo cual es necesario que el usuario *"Apache"* tenga permisos de escritura en ella.
 
 A continuación creamos una sección directory para el directorio que queremos acceder por WebDav y activar el modo WebDav con la directiva ``dav on``. Además por seguridad se debe autentificar el acceso, por lo que quedaría parecido a esto:
-
-    <Directory /var/www/webdav>
-        DavLockDB /tmp/DavLock
+    
+    DavLockDB /tmp/DavLockDB
+    <Directory /var/www/html/webdav>
         dav on
         Options Indexes FollowSymLinks MultiViews
         AllowOverride None
@@ -47,6 +47,9 @@ Por último prueba un cliente WebDAV en Linux y otro en Windows y comprueba el f
 
 ## Módulo rewrite
 
+Antes de comenzar con el módulo **rewrite** vamos a instalar el módulo que nos permite ejecutar php:
+
+    apt install libapache2-mod-php
 
 El módulo **rewrite** nos va a permitir acceder a una URL e internamente estar accediendo a otra. Ayudado por los ficheros ``.htaccess``, el módulo rewrite nos va a ayudar a formar URL amigables que son más consideradas por los motores de búsquedas y mejor recordadas por los humanos. Por ejemplo estas URL:
 
@@ -83,6 +86,8 @@ Si queremos usar la extensión do en vez de html podríamos usar este ``.htacces
     RewriteEngine On
     RewriteBase /
     RewriteRule ^(.+).do$ $1.html [nc]
+
+La opción `[nc]` es para que no tenga en cuenta mayúsculas o minúsculas.
 
 Esto puede ser penalizado por los motores de búsqueda ya que podemos acceder a la misma página con dos URL distintas, para solucionar esto podemos hacer una redirección:
 
@@ -194,4 +199,54 @@ Realiza un ``.htaccess`` para evitar el hot-linking. Puedes usar esta esta [imag
 **Ejercicio**
 
 Instala wordpress en tu servidor con el módulo rewrite desactivado, comprueba que las URL no son amigables. Activa el módulo y a continuación configura el blog para que tenga URL amigables (Settings->Permalink).
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+
+**Ejercicio URL amigables**
+
+{% capture notice-text %}
+
+**Ejercicio**
+
+En tu servidor crea una carpeta ``php`` donde vamos a tener un fichero ``index.php`` con el siguiente contenido::
+
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Conversor de Monedas</title>
+		</head>
+
+		<body>
+		<form action="index.php" method="get">
+		   	<input type="text" size="30" name="monto" /><br/>
+			<select name="pais">
+				<option name="Dolar">Dolar</option>
+				<option name="Libra">Libra</option>
+				<option name="Yen">Yen</option>
+			</select>
+		    <input type="submit" value="convertir" />
+		   </form>
+		<?php
+			// averiguamos si se ha introducido un dinero
+			if (isset($_GET['monto'])) {
+			  define ("cantidad", $_GET['monto']);
+			} else {
+		 	  define ("cantidad", 0);
+			}
+			if($_GET){
+			// definimos los países
+			$tasacambios = array ("Libra"=>0.86,"Dolar"=>1.34,"Yen"=>103.56);
+			// imprimimos el monto ingresado
+			echo "<b>".cantidad." euros</b><br/> ".$_GET["pais"]." = ".cantidad*$tasacambios[$_GET["pais"]]." <br><br>";
+			// por cada país imprimimos el cambio
+			}
+		   ?>
+
+		</body>
+		</html>
+
+	Prueba la página utilizando parámetros en la URL (parámetros GET), por ejemplo: ``http://nombre_página/php/index.php?monto=100&pais=Libra``
+
+	Configura mediante un fichero ``.htaccess``, la posibilidad de acceder a la URL **http://nombre_página/php/moneda/cantidad**, donde moneda indica el nombre de la moneda a la que queremos convertir (Dolar,Libra,Yen) y cantidad indica los euros que queremos convertir.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
