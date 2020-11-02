@@ -60,7 +60,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (4 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 4: Modificación de nuestra aplicación
+## Tarea 3: Modificación de nuestra aplicación
 
 Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones (entrega una captura de pantalla donde se ven cada una de ellas). Recuerda que primero lo haces en el entrono de desarrollo, y luego tendrás que llevar los cambios a producción:
 
