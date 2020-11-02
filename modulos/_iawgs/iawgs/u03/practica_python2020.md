@@ -85,21 +85,21 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
 
         Para ello cambia la siguiente línea en el fichero `polls/admin.py`:
 	
-	        ```python
-            from .models import Choice, Question
-            ```
+	    ```python
+        from .models import Choice, Question
+        ```
 
         Por esta otra:
 
-            ```python
-	        from .models import Choice, Question, Categoria
-            ```
+        ```python
+	    from .models import Choice, Question, Categoria
+        ```
 
         Y añade al final la siguiente línea:
 
-	        ```python
-            admin.site.register(Categoria)
-            ```
+	    ```python
+        admin.site.register(Categoria)
+        ```
 
     * Despliega el cambio producido al crear la nueva tabla en el entorno de producción.
 
