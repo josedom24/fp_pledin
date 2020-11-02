@@ -21,8 +21,8 @@ serviciosgs:
         url: /serviciosgs/u02
       - title: Servidor Web
         url: /serviciosgs/u03
-   #   - title: Servidor DNS
-   #     url: /serviciosgs/u04
+      - title: Servidor DNS
+        url: /serviciosgs/u04
    #   - title: Servidor FTP
    #     url: /serviciosgs/u05
    #   - title: Gestión de peticiones - Rendimiento
