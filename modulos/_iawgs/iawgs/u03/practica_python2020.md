@@ -77,7 +77,7 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
 
         	def __str__(self):
         		return self.Abr+" - "+self.Nombre 		
-
+        ```
 
     * Crea una nueva migración: `python3 manage.py makemigrations`. 
     * Y realiza la migración: `python3 manage.py migrate`
