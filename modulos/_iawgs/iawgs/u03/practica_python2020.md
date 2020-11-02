@@ -87,16 +87,19 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
 	
 	        ```python
             from .models import Choice, Question
+            ```
 
         Por esta otra:
 
             ```python
 	        from .models import Choice, Question, Categoria
+            ```
 
         Y añade al final la siguiente línea:
 
 	        ```python
             admin.site.register(Categoria)
+            ```
 
     * Despliega el cambio producido al crear la nueva tabla en el entorno de producción.
 
