@@ -30,7 +30,4 @@ permalink: /seguridadgs/u02/index.html
 
 * [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
 * [Práctica: Integridad, firmas y autenticación](firma.html)
-
-<!--
 * [Práctica: Certificados digitales. HTTPS](https.html)
--->
