@@ -1,5 +1,5 @@
 ---
-title: "Servidor DHCP. Programación de la Unidad"
+title: "Servicios. Programación del mes de Octubre"
 permalink: /serviciosgs/programacion1.html
 ---
 
