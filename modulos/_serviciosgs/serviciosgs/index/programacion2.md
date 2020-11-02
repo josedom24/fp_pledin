@@ -8,6 +8,7 @@ permalink: /serviciosgs/programacion2.html
 * Grupo 1 **(Casa)**
 
     * Trabajar en  [Práctica: Servidor Web Nginx](u03/practica_web_nginx.html)
+    * [Presentación del proyecto OVH. Tarea 1: LEMP](https://youtu.be/xyOwMEyR1GU)
 
 * Grupo 2 **(Clase)**
 
