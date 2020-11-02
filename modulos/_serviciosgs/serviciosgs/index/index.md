@@ -21,3 +21,7 @@ El índice de contenidos que vamos a estudiar será:
 * [Proxy, proxy inverso y balanceador de carga](u08)
 -->
 
+### Programación por semanas
+
+* [Programación mes de Octubre](programacion1.html)
+* [Programación mes de Noviembre](programacion2.html)
