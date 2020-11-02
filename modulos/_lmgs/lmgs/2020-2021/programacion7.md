@@ -27,6 +27,7 @@ layout: single3
     * [9. Estrucutra repetitiva: while](https://fp.josedomingo.org/lmgs/2020-2021/python3/estructura_while.html)
     * [10. Estrucutra repetitiva: for](https://fp.josedomingo.org/lmgs/2020-2021/python3/estructura_for.html)
     * [Boletín 3](https://fp.josedomingo.org/lmgs/2020-2021/python3/boletin3.html)
+    * Puedes ver los vídeos donde se resuelven algunos ejercicios del boletín 3.
 
 * Grupo 2 (Casa)
 
