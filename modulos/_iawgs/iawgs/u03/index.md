@@ -25,28 +25,25 @@ permalink: /iawgs/u03/index.html
 * [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
 * [VIDEO: Entornos de desarrollo virtuales con Python3](https://www.youtube.com/watch?v=h2J6-03MsnQ)
 * [Ejercicio: Desplegando aplicaciones flask](flask.html)
+* [Lista de framework Python](https://wiki.python.org/moin/WebFrameworks)
+* [Lista de cms desarrollados en Django](https://djangopackages.org/grids/g/cms/)
+* [Lista de cms desarrollados en Python](https://wiki.python.org/moin/ContentManagementSystems)
+* [WSGI](http://wsgi.readthedocs.io/en/latest/)
+* [Ejecución de script Python con Apache2 + módulo wsgi](script_python.html)
+* [Ejecución de script Python con nginx/apache2 + gunicorn](script_python2.html)
 
 <!--
 * [Crear una página web con Python](https://plataforma.josedomingo.org/pledin/cursos/flask/curso/u04/)
 * [Ficheros de ejemplo](https://github.com/josedom24/python_web)
-* [Lista de framework Python](https://wiki.python.org/moin/WebFrameworks)
-* [Lista de cms desarrollados en Django](https://djangopackages.org/grids/g/cms/)
-* [Lista de cms desarrollados en Python](https://wiki.python.org/moin/ContentManagementSystems)
-* [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
-* [WSGI](http://wsgi.readthedocs.io/en/latest/)
 * [Despliegue de aplicaciones flask](http://flask.pocoo.org/docs/0.12/deploying/)
-* [Despliegue de aplicaciones django](https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/)
-* [Ejecución de script Python con Apache2 + módulo wsgi](script_python.html)
-* [Ejecución de script Python con nginx/apache2 + gunicorn](script_python2.html)
-
+-->
 
 ## Prácticas
 
+* [Práctica: Despliegue de aplicaciones python](practica_python2020)
+
+<!--
 * [Introducción al despliegue de aplicaciones python](python1.html)
 * [Entorno de desarrollo y producción con aplicaciones web python](python2.html)
-
-
-
 * [Depliegue de CMS python: Mezzanine](python3.html)
-
 -->
