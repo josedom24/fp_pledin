@@ -18,3 +18,8 @@ El índice de contenidos que vamos a estudiar será:
 * [Despliegue de aplicaciones web Java](u05)
 * [Despliegue de aplicaciones web con contenedores. Docker](u06)
 -->
+
+### Programación por semanas
+
+* [Programación mes de Octubre](programacion1.html)
+* [Programación mes de Noviembre](programacion2.html)
