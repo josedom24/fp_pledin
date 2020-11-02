@@ -35,7 +35,6 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 
 		(env)$ pip install mysql-connector-python
 
-* Configura un virtualhost en apache2 con la configuración adecuada para que funcione la aplicación. El punto de entrada de nuestro servidor será `django_tutorial/django_tutorial/wsgi.py`.
 * Crea una base de datos y un usuario en mysql.
 * Configura la aplicación para trabajar con mysql, para ello modifica la configuración de la base de datos en el archivo `settings.py`:
 
@@ -51,6 +50,9 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 		}
 
 * Como en la tarea 1, realiza la migración de la base de datos que creará la estructura de datos necesrias. comprueba en mariadb que la base de datos y las tablas se han creado.
+* Crea un usuario administrador: `python3 manage.py createsuperuser`.
+* Configura un virtualhost en apache2 con la configuración adecuada para que funcione la aplicación. El punto de entrada de nuestro servidor será `django_tutorial/django_tutorial/wsgi.py`. Puedes guiarte por el [Ejercicio: Desplegando aplicaciones flask](flask.html), por la documentación de django: [How to use Django with Apache and mod_wsgi](https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/modwsgi/),...
+* Debes asegurarte que el contenido estático se está sirviendo: ¿Se muestra la imagen de fondo de la aplicación? ¿Se ve de forma adecuada la hoja de estilo de la zona de administración?. Para arreglarlo puedes encontrar documentación en [How to use Django with Apache and mod_wsgi](https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/modwsgi/).
 * Desactiva en la configuración (fichero `settings.py`) el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.
 * Muestra la página funcionando.
 
@@ -58,3 +60,47 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (4 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+## Tarea 4: Modificación de nuestra aplicación
+
+Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones (entrega una captura de pantalla donde se ven cada una de ellas). Recuerda que primero lo haces en el entrono de desarrollo, y luego tendrás que llevar los cambios a producción:
+
+1. Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo `django_tutorial/polls/templates/polls/index.html`.
+2. Modifica la imagen de fondo que se ve la aplicación.
+3. Vamos a crear una nueva tabla en la base de datos, para ello sigue los siguientes pasos:
+	
+    * Añade un nuevo modelo al fichero `centro/models.py`:
+
+        ```python
+		class Categoria(models.Model):	
+        	Abr = models.CharField(max_length=4)
+        	Nombre = models.CharField(max_length=50)
+
+        	def __str__(self):
+        		return self.Abr+" - "+self.Nombre 		
+
+
+    * Crea una nueva migración: `python3 manage.py makemigrations`. 
+    * Y realiza la migración: `python3 manage.py migrate`
+    * Añade el nuevo modelo al sitio de administración de django:
+
+        Para ello cambia la siguiente línea en el fichero `polls/admin.py`:
+	
+	        ```python
+            from .models import Choice, Question
+
+        Por esta otra:
+
+            ```python
+	        from .models import Choice, Question, Categoria
+
+        Y añade al final la siguiente línea:
+
+	        ```python
+            admin.site.register(Categoria)
+
+    * Despliega el cambio producido al crear la nueva tabla en el entorno de producción.
+
+{% capture notice-text %}
+Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
+	En este momento, muestra al profesor la aplicación funcionando en el otro hosting. (4 puntos)
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

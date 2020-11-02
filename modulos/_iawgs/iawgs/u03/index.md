@@ -40,7 +40,7 @@ permalink: /iawgs/u03/index.html
 
 ## Prácticas
 
-* [Práctica: Despliegue de aplicaciones python](practica_python2020)
+* [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
 
 <!--
 * [Introducción al despliegue de aplicaciones python](python1.html)
