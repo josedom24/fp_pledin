@@ -65,9 +65,8 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 3. Envía la solicitud de firma a la entidad certificadora (su compañero).
 4. Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.
 5. Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 6. Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.
-
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 <!--
 
 ### Tarea 2: Certificados digital con CAcert
