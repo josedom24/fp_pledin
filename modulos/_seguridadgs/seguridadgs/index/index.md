@@ -17,3 +17,8 @@ El índice de contenidos que vamos a estudiar será:
 * [Redes Privadas Virtuales](u04)
 * [Clusters de alta disponibiilidad](u05)
 -->
+
+### Programación por semanas
+
+* [Programación mes de Octubre](programacion1.html)
+* [Programación mes de Noviembre](programacion2.html)
