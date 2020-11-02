@@ -104,5 +104,5 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
     * Despliega el cambio producido al crear la nueva tabla en el entorno de producción.
 
 {% capture notice-text %}
-Explica los cambios que has realizado en el entrono de desarrollo y cómo lo has desplegado en producción para cada una de las modificaciones (4 puntos).
+Explica los cambios que has realizado en el entorno de desarrollo y cómo lo has desplegado en producción para cada una de las modificaciones (4 puntos).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
