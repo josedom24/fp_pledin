@@ -11,7 +11,7 @@ permalink: /serviciosgs/programacion2.html
 
 * Grupo 2 **(Clase)**
 
-    * Presentación del proyecto OVH
+    * [Presentación del proyecto OVH. Tarea 1: LEMP](https://youtu.be/xyOwMEyR1GU)
     * Trabajar en  [Práctica: Servidor Web Nginx](u03/practica_web_nginx.html)
 
 ### Jueves, 5 de Noviembre
