@@ -1,6 +1,6 @@
 ---
 title: "Seguridad. Programación mes de Noviembre"
-permalink: /seguridadgs/programacion1.html
+permalink: /seguridadgs/programacion2.html
 ---
 
 
