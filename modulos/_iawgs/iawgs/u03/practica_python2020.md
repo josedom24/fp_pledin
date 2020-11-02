@@ -68,7 +68,7 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
 2. Modifica la imagen de fondo que se ve la aplicación.
 3. Vamos a crear una nueva tabla en la base de datos, para ello sigue los siguientes pasos:
 	
-    * Añade un nuevo modelo al fichero `centro/models.py`:
+    * Añade un nuevo modelo al fichero `polls/models.py`:
 
         ```python
 		class Categoria(models.Model):	
