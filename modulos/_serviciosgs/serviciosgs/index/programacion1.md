@@ -1,6 +1,6 @@
 ---
 title: "Servidor DHCP. Programación de la Unidad"
-permalink: /serviciosgs/u02/programacion.html
+permalink: /serviciosgs/programacion1.html
 ---
 
 ### Viernes, 2 de Octubre
