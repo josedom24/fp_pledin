@@ -3,8 +3,6 @@ title: "Criptografía"
 permalink: /seguridadgs/u02/index.html
 ---
 
-* [Programación de la unidad](programacion.html)
-
 ## Teoría
 
 * [Introducción a la criptografía 1: Criptografía simétrica y asimétrica](https://docs.google.com/presentation/d/e/2PACX-1vRBGbFkiTmBJgZe7YAnFhXzzTgHEDgw65-mnCcjv0_xtfRde_bqDylF7cHsQnj7DeQK9IxxYMWCUaPr/pub?start=false&loop=false&delayms=3000)
@@ -32,7 +30,4 @@ permalink: /seguridadgs/u02/index.html
 
 * [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
 * [Práctica: Integridad, firmas y autenticación](firma.html)
-
-<!--
 * [Práctica: Certificados digitales. HTTPS](https.html)
--->

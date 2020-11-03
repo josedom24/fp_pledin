@@ -3,8 +3,6 @@ title: Implantación de aplicaciones web PHP
 permalink: /iawgs/u02/index.html
 ---
 
-* [Programación de la unidad](programacion.html)
-
 ### Objetivos
 
 * Aprender a instalar la pila LAMP en un servidor

@@ -1,6 +1,6 @@
 ---
-title: "Criptografía. Programación de la Unidad"
-permalink: /seguridadgs/u02/programacion.html
+title: "Seguridad. Programación mes de Octubre"
+permalink: /seguridadgs/programacion1.html
 ---
 
 ### Jueves, 1 de Octubre
@@ -8,7 +8,7 @@ permalink: /seguridadgs/u02/programacion.html
 * Grupo 1  y Grupo 2 **(Videoconferencia)**
 
     * De la presentación [Introducción a la criptografía 1: Criptografía simétrica y asimétrica](https://docs.google.com/presentation/d/e/2PACX-1vRBGbFkiTmBJgZe7YAnFhXzzTgHEDgw65-mnCcjv0_xtfRde_bqDylF7cHsQnj7DeQK9IxxYMWCUaPr/pub?start=false&loop=false&delayms=3000) hasta criptografía simétrica.
-    * Se manda el ejercicio:[Cifrado simétrico con gpg y openssl](gpg.html)
+    * Se manda el ejercicio:[Cifrado simétrico con gpg y openssl](u02/gpg.html)
 
 - - -
 
@@ -16,34 +16,34 @@ permalink: /seguridadgs/u02/programacion.html
 
 * Grupo 1 **(Casa)**
 
-    * Puedes seguir trabajando en las Prácticas de la unidad 1, o en el ejercicio [Cifrado simétrico con gpg y openssl](gpg.html).
+    * Puedes seguir trabajando en las Prácticas de la unidad 1, o en el ejercicio [Cifrado simétrico con gpg y openssl](u02/gpg.html).
 
 * Grupo 2 **(Clase)**
 
     * De la presentación [Introducción a la criptografía 1: Criptografía simétrica y asimétrica](https://docs.google.com/presentation/d/e/2PACX-1vRBGbFkiTmBJgZe7YAnFhXzzTgHEDgw65-mnCcjv0_xtfRde_bqDylF7cHsQnj7DeQK9IxxYMWCUaPr/pub?start=false&loop=false&delayms=3000) explicamos **criptografía asimétrica**.
-    * Presentación [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+    * Presentación [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
 
 ### Miércoles, 7 de Octubre
 
 * Grupo 1 **(Clase)**
 
     * De la presentación [Introducción a la criptografía 1: Criptografía simétrica y asimétrica](https://docs.google.com/presentation/d/e/2PACX-1vRBGbFkiTmBJgZe7YAnFhXzzTgHEDgw65-mnCcjv0_xtfRde_bqDylF7cHsQnj7DeQK9IxxYMWCUaPr/pub?start=false&loop=false&delayms=3000) explicamos **criptografía asimétrica**.
-    * Presentación [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
-    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl](gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+    * Presentación [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
+    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl]u02/(gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
 
 * Grupo 2 **(Casa)**
 
-    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl](gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl]u02/(gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
 
 ### Jueves, 8 de Octubre
 
 * Grupo 1 **(Casa)**
 
-    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl](gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl]u02/(gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
 
 * Grupo 2 **(Clase)**
 
-    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl](gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+    * Trabajo: Prácticas de la unidad 1, ejercicio [Cifrado simétrico con gpg y openssl]u02/(gpg.html) o [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
 
 - - -
 
@@ -56,7 +56,7 @@ permalink: /seguridadgs/u02/programacion.html
 
 * Grupo 2 **(Casa)**
 
-    * Seguimos trabajando  con [Práctica: Cifrado asimétrico con gpg y openssl](asimetrico.html)
+    * Seguimos trabajando  con [Práctica: Cifrado asimétrico con gpg y openssl](u02/asimetrico.html)
 
 ### Miércoles, 14 de Octubre
 
@@ -88,33 +88,33 @@ permalink: /seguridadgs/u02/programacion.html
 * Grupo 1 **(Casa)**
 
     * Ver el vídeo de clase
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 * Grupo 2 **(Clase)**
 
     * Estudiamos Anillos de confianza y autentificación en  [Introducción a la criptografía 2: Integridad, firmas digitales y autenticación](https://docs.google.com/presentation/d/e/2PACX-1vSifw-oLVril_ABXeukhyAcM4vs4o76VoKCwad8ULL7h7XTuNOypdOt80ZC7sEGywnQVSikOOU3dxjQ/pub?start=false&loop=false&delayms=3000)
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 ### Miércoles, 21 de Octubre
 
 * Grupo 1 **(Clase)**
 
     * Estudiamos Anillos de confianza y autentificación en  [Introducción a la criptografía 2: Integridad, firmas digitales y autenticación](https://docs.google.com/presentation/d/e/2PACX-1vSifw-oLVril_ABXeukhyAcM4vs4o76VoKCwad8ULL7h7XTuNOypdOt80ZC7sEGywnQVSikOOU3dxjQ/pub?start=false&loop=false&delayms=3000)
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 * Grupo 2 **(Casa)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 ### Jueves, 22 de Octubre
 
 * Grupo 1 **(Casa)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 * Grupo 2 **(Clase)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 - - -
 
@@ -122,21 +122,21 @@ permalink: /seguridadgs/u02/programacion.html
 
 * Grupo 1 **(Clase)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 * Grupo 2 **(Casa)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 ### Miércoles, 28 de Octubre
 
 * Grupo 1 **(Casa)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
 
 * Grupo 2 **(Clase)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)
     * [Introducción a la criptografía 3: Certificados digitales](https://docs.google.com/presentation/d/e/2PACX-1vTGi-1tMnk64rSjc0wIA26ivs-DFhAPXi2mQL5FzHNMggXZdGyes8gjwKOUxkfkRsOhEP_X3vz5xq1h/pub?start=false&loop=false&delayms=3000)
 
 ### Jueves, 29 de Octubre
@@ -148,4 +148,4 @@ permalink: /seguridadgs/u02/programacion.html
 
 * Grupo 2 **(Casa)**
 
-    * [Práctica: Integridad, firmas y autenticación](firma.html)
+    * [Práctica: Integridad, firmas y autenticación](u02/firma.html)

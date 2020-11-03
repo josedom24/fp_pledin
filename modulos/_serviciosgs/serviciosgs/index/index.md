@@ -12,12 +12,16 @@ El índice de contenidos que vamos a estudiar será:
 * [Introducción a los servicios en red](u01)
 * [Servidor DHCP](u02)
 * [Servidor Web](u03)
+* [Servidor DNS](u04)
 
 <!--
-* [Servidor DNS](u04)
 * [Servidor FTP](u05)
 * [Gestión de peticiones y rendimiento en servidores Web](u06)
 * [Servidor de correo electrónico](u07)
 * [Proxy, proxy inverso y balanceador de carga](u08)
 -->
 
+### Programación por semanas
+
+* [Programación mes de Octubre](programacion1.html)
+* [Programación mes de Noviembre](programacion2.html)

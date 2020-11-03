@@ -2,9 +2,6 @@
 title: Servidor Web
 permalink: /serviciosgs/u03/index.html
 ---
-
-* [Programación de la unidad](programacion.html)
-
 En este bloque del módulo vamos a estudiar el servidor Web, programa software que utilizando el protocolo HTTP, es capaz de procesar en el servidor la peticiones HTTP y generar las respuestas adecuadas. En este bloque vamos a estudiar distintos aspectos del servicio web.
 
 * El protocolo HTTP: tipos de peticiones, tipos de respuestas, cabeceras, autentificación, control de acceso, etc.

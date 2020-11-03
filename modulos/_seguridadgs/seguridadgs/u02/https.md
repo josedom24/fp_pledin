@@ -44,10 +44,15 @@ Antes de hacer esta práctica vamos a crear una página web (puedes usar una pá
 
 Esta práctica la vamos a realizar con un compañero. En un primer momento un alumno creará una **Autoridad Certficadora** y firmará un certificado para la página del otro alumno. Posteriormente se volverá a realizar la práctica con los roles cambiados.
 
+Para hacer esta práctica puedes buscar información en internet, algunos enlaces interesantes:
+
+* [How to setup your own CA with OpenSSL](https://gist.github.com/Soarez/9688998)
+* [Crear autoridad certificadora (CA) y certificados autofirmados en Linux](https://blog.guillen.io/2018/09/29/crear-autoridad-certificadora-ca-y-certificados-autofirmados-en-linux/)
+
 El alumno que hace de Autoridad Certificadora deberá entregar una documentación donde explique los siguientes puntos:
 
 {% capture notice-text %}
-1. Crear su autoridad certificadora (generar el certificado digital de la CA).
+1. Crear su autoridad certificadora (generar el certificado digital de la CA). Mostrar el fichero de configuración de la AC.
 2. Debe recibir el fichero CSR (Solicitud de Firmar un Certificado) de su compañero, debe firmarlo y enviar el certificado generado a su compañero.
 3. ¿Qué otra información debes aportar a tu compañero para que éste configure de forma adecuada su servidor web con el certificado generado?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
@@ -60,7 +65,9 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 3. Envía la solicitud de firma a la entidad certificadora (su compañero).
 4. Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.
 5. Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).
+6. Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+<!--
 
 ### Tarea 2: Certificados digital con CAcert
 
@@ -90,3 +97,5 @@ Los pasos que hay que dar para utilizar un certificado X.509 emitido por **CAcer
 {% capture notice-text %}
 Escribe una documentación donde expliques el proceso y muestra al profesor su funcionamiento.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+-->
