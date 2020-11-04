@@ -23,6 +23,14 @@ Los contenidos que vamos a estudiar en este bloque serán:
 * [Enlaces interesantes](enlaces.html)
 * [Presentación servidor DNS: bind9](https://docs.google.com/presentation/d/e/2PACX-1vTMcnRn32srL05Zb-Ah7X6J_avhVl4sXI9qq6CdI0S9T2903Kl_11xA9eiMYrHDubqzS2dFimNQP6V4/pub?start=false&loop=false)
 
+## Vídeos
+
+* [Como funciona las DNS de internet](https://www.youtube.com/watch?v=5FYsIDXFrAc)
+* [Ficheros importantes en la resolución de nombre](https://youtu.be/1kUXabUtUMI)
+* [Conceptos sobre DNS](https://youtu.be/yuKbCgOY0FY)
+* [Ejemplos de consultas DNS](https://youtu.be/NBKr8yerhDU)
+
+
 <!--
 * [Ejercicio 1: Consultas DNS](ejercicio1.html)
 * [Ejercicio 2: DNSmasq como DNS cache/forward en una red local](ejercicio2.html)
