@@ -45,4 +45,6 @@ Los contenidos que vamos a estudiar en este bloque serán:
 
 * [Práctica DNS](practica_dns_2020.html)
 
-<!--* [Práctica: Configuración de servidores GNU/Linux](practica_linux_server.html)
+<!--
+* [Práctica: Configuración de servidores GNU/Linux](practica_linux_server.html)
+-->
