@@ -39,10 +39,9 @@ Los contenidos que vamos a estudiar en este bloque serán:
 * [Ejercicio 5: Configuración de subdominios virtuales con bind9](ejercicio5.html)
 * [Ejercicio 6: Delegación de subdominios con bind9](ejercicio6.html)
 * [Ejercicio 7: Instalación y configuración de un servidor DNS dinámico](ejercicio7.html)
+-->
 
-<!--
 ## Prácticas
 
 * [Práctica DNS](practica_dns_2020.html)
 <!--* [Práctica: Configuración de servidores GNU/Linux](practica_linux_server.html)
--->
