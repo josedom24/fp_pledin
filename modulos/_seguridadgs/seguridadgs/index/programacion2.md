@@ -38,3 +38,35 @@ permalink: /seguridadgs/programacion2.html
     * Presentación práctica: [Práctica: Certificados digitales. HTTPS](u02/https.html)
 
 - - -
+
+### Martes, 17 de Noviembre
+
+* Grupo 1 **(Clase)**
+
+    * [Práctica: Certificados digitales. HTTPS](u02/https.html)
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica: Certificados digitales. HTTPS](u02/https.html)
+
+### Miércoles, 18 de Noviembre
+
+* Grupo 1 **(Casa)**
+
+    * [Práctica: Certificados digitales. HTTPS](u02/https.html)
+
+* Grupo 2 **(Clase)**
+
+    * [Práctica: Certificados digitales. HTTPS](u02/https.html)
+    * [Presentación de tarea 3 al servidor OVH](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/HTTPS)
+
+### Jueves, 19 de Noviembre
+
+* Grupo 1 **(Clase)**
+
+    * [Presentación de tarea 3 al servidor OVH](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/HTTPS)
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica: Certificados digitales. HTTPS](u02/https.html)
+    * [Tarea 3. Servidor OVH. HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/HTTPS)
