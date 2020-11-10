@@ -7,7 +7,7 @@ layout: single3
 
 El objetivo de la validación de los datos de entrada es comprobar y asegurarnos que el dato que estamos leyendo cumple una condición que nos asegura que es válido.
 
-A la lectura de un dato, le vamos a añadir un bucle while que no asegura que el dato va a ser válido. En leguja natural sería algo parecido a esto:
+A la lectura de un dato, le vamos a añadir un bucle while que nos asegura que el dato va a ser válido. En lenguaje natural sería algo parecido a esto:
 
 	Leer Dato
 	Mientras Dato se incorrecto:
