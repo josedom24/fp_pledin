@@ -62,7 +62,7 @@ El alumno que hace de administrador del servidor web, debe entregar una document
 
 {% capture notice-text %}
 1. Crea una clave privada RSA de 4096 bits para identificar el servidor. 
-2. Utiliza la clave anterior para generar un CSR, considerando que deseas acceder al servidor tanto con el FQDN (`tunombre.iesgn.org`) como con el nombre de host (implica el uso de las extensiones `Alt Name`).
+2. Utiliza la clave anterior para generar un CSR, considerando que deseas acceder al servidor con el FQDN (`tunombre.iesgn.org`). <!-- como con el nombre de host (implica el uso de las extensiones `Alt Name`).-->
 3. Envía la solicitud de firma a la entidad certificadora (su compañero).
 4. Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.
 5. Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).
