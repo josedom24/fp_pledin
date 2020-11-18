@@ -3,7 +3,7 @@ permalink: /lmgs/2020-2021/python3/cadenas_caracteres.html
 layout: single3
 ---
 
-<iframe width="560" height="315" src="https://youtu.be/ddWSzn5aKco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ddWSzn5aKco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Tipo de datos cadenas de caracteres
