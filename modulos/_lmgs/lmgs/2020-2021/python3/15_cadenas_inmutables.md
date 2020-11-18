@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/python3/cadenas_inmutables.html
 layout: single3
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pF8CApYvhFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Las cadenas de caracteres son inmutables
 
 Cuando creamos una variable de tipo cadena de caracteres, estamos creando un **objeto** de la **clase** `str`. Una clase especifica lo que podemos guardar en un tipo de datos y las operaciones que pueden realizar, cada vez que creamos una variable de una determinada clase, creamos un objeto, que además de guardar información (en nuestro caso los caracteres de la cadena) puede realizar distintas operaciones que llamamos **métodos**.

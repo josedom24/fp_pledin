@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/python3/metodos_cadenas.html
 layout: single3
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pv3JXaiVB20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Métodos principales de cadenas
 
 Aunque las cadenas de caracteres tiene muchos métodos definidos, vamos a estudiar los más importantes:
