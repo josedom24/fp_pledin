@@ -9,7 +9,7 @@ layout: single3
 
 * Grupo 1 (Casa)
 
-    * Videoconferencia, explicación cadenas de caracteres.
+    * [Videoconferencia](https://eu.bbcollab.com/guest/567b0fec2a1e4d628693ed3fca7a5e0b): explicación cadenas de caracteres.
     * Boletín 4: Ejercicios cadenas de caracteres
     * Podéis empezar a hacer la tarea 5
 
