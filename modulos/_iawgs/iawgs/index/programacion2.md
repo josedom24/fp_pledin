@@ -41,3 +41,29 @@ permalink: /iawgs/programacion2.html
 
     * Ejemplo de desarrollo de aplicación web con django python
     * [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
+
+- - -
+### Lunes, 23 de noviembre
+
+* Grupo 1 **(Clase)**
+
+    * Ejemplo de desarrollo de aplicación web con django python
+    * [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
+
+* Grupo 2 **(Casa)**
+
+    * Ejemplo de desarrollo de aplicación web con django python (Videoconferencia)
+    * [Tarea 2 servidor OVH](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3nmigraci%C3%B3n_de_aplicaciones_web_PHP)
+
+### Jueves, 26 de noviembre
+
+* Grupo 1 **(Casa)**
+
+    * [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
+    * [Tarea 2 servidor OVH](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3nmigraci%C3%B3n_de_aplicaciones_web_PHP)
+
+* Grupo 2 **(Clase)**
+
+    * [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
+    * [Tarea 2 servidor OVH](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3nmigraci%C3%B3n_de_aplicaciones_web_PHP)
+- - - 

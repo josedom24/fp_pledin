@@ -18,6 +18,7 @@ permalink: /seguridadgs/u03/index.html
 * [Pello Xabier Altadill - Manual de iptables](https://dit.gonzalonazareno.org/moodle/pluginfile.php/14821/mod_resource/content/0/IPTABLES.pdf)
 * [Nftables wiki](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page)
 
+<!--
 ## Ejercicios
 
 * [Ejercicio1: Implementación de un cortafuegos personal](ejercicio1.html)
@@ -27,3 +28,4 @@ permalink: /seguridadgs/u03/index.html
 ## Práctica
 
 * [Práctica: Cortafuegos perimetral con DMZ](practica.html)
+-->

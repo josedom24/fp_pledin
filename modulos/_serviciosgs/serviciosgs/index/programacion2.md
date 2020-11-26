@@ -44,3 +44,41 @@ permalink: /serviciosgs/programacion2.html
 
 
 - - -
+### Viernes, 20 de Noviembre
+- - -
+
+* Grupo 1 y grupo 2:
+
+    * Presentación del servidor DNS. (En clase y por videoconferencia)
+
+- - -
+
+### Martes, 3 de Noviembre
+
+* Grupo 1 **(Clase)**
+
+    * Presentación del servidor DNS. Servidores maestros y esclavos
+    
+* Grupo 2 **(Casa)**
+
+    * Presentación del servidor DNS. Servidores maestros y esclavos (Videoconferencia)
+
+### Jueves, 5 de Noviembre
+
+* Grupo 1 **(Clase)**
+
+    * Introducción a la delegación de dominios
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica DNS](practica_dns_2020.html)    
+
+### Viernes, 6 de Noviembre
+
+* Grupo 1 **(Casa)**
+
+    * [Práctica DNS](practica_dns_2020.html)
+
+* Grupo 2 **(Clase)**
+
+    * Introducción a la delegación de dominios
