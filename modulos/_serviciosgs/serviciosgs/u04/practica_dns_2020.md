@@ -29,7 +29,7 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 * Vamos a suponer que tenemos un servidor ftp que se llame ``ftp.iesgn.org`` y que está en x.x.x.201 (esto es ficticio)
 * Además queremos nombrar a los clientes.
 * También hay que nombrar a los virtual hosts de apache: ``www.iesgn.org`` y ``departementos.iesgn.org``
-* Se tienen que resolver las direcciones ipv6 de las distintas máquinas (invéntate las ficticias).
+<!--* Se tienen que resolver las direcciones ipv6 de las distintas máquinas (invéntate las ficticias).-->
 * Se tienen que configurar la zona de resolución inversa.
 
 {% capture notice-text %}
@@ -40,7 +40,7 @@ Desinstala el servidor **dnsmasq** del ejercicio anterior e instala un servidor 
 	* El servidor de correo configurado para ``iesgn.org``
 	* La dirección IP de ``www.josedomingo.org``
 	* Una resolución inversa
-	* La dirección ipv6 de ``pandora.iesgn.org``
+	<!--* La dirección ipv6 de ``pandora.iesgn.org``-->
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Servidor DNS esclavo
