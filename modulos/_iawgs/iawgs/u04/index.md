@@ -13,7 +13,7 @@ permalink: /iawgs/u04/index.html
 
 ## Contenidos
 
-* [Introducción a tomcat8](tomcat8.html)
+* [Introducción a tomcat9](tomcat.html)
 
 ## Enlaces
 
