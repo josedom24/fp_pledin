@@ -99,7 +99,7 @@ El más importante es `/etc/tomcat9/server.xml`, cuyo contenido define cómo est
 
 	    -->
 
-	Y el conector para el protocolo [AJP (Apache JServ Protocol)](https://es.wikipedia.org/wiki/Apache_JServ_Protocol), que es un protocolo binario que permite enviar solicitudes desde un servidor web a un servidor de aplicaciones que se encuentra detrás del servidor web. Por ejemplo en el servidor web apache2 podemos usar el módulo `proxy_ajp` para comunicar apache2 con tomat.
+	Y el conector para el protocolo [AJP (Apache JServ Protocol)](https://es.wikipedia.org/wiki/Apache_JServ_Protocol), que es un protocolo binario que permite enviar solicitudes desde un servidor web a tomcat que se encuentra detrás del servidor web. Por ejemplo en el servidor web apache2 podemos usar el módulo `proxy_ajp` para comunicar apache2 con tomat.
 
 		<!--
     	<Connector protocol="AJP/1.3"
