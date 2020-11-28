@@ -43,6 +43,7 @@ permalink: /iawgs/programacion2.html
     * [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
 
 - - -
+
 ### Lunes, 23 de noviembre
 
 * Grupo 1 **(Clase)**
@@ -66,6 +67,7 @@ permalink: /iawgs/programacion2.html
 
     * [Práctica: Despliegue de aplicaciones python](practica_python2020.html)
     * [Tarea 2 servidor OVH](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3nmigraci%C3%B3n_de_aplicaciones_web_PHP)
+
 - - - 
 
 ### Lunes, 30 de noviembre
@@ -94,5 +96,5 @@ permalink: /iawgs/programacion2.html
 * Grupo 2 **(Casa)**
 
     * [Práctica: Despliegue de CMS java](u04/practica_java.html)
-    
+
 - - - 
