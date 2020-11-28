@@ -1,6 +1,6 @@
 ---
 title: Introducción a Tomcat 8
-permalink: /iawgs/u05/tomcat8.html
+permalink: /iawgs/u04/tomcat8.html
 ---
 
 En el siguiente documento se explicará como implantar un contenedor de servlets Tomcat versión 8 en un sistema Linux Debian Stretch.

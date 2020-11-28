@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio 2: Comprobación de html5 válido y despliegue en surge.sh (test y deploy)"
-permalink: /iawgs/u04/ejercicio2.html
+permalink: /iawgs/u05/ejercicio2.html
 ---
 
 En este ejercicio queremos desplegar una página html5 en el servicio surge.sh, además queremos comprobar si el código html5 es válido. Estas dos operaciones: comprobar si el html5 es válido (test) y el despliegue en surge.sh (deploy) lo vamos a hacer con travis de forma automática (IC y DC).

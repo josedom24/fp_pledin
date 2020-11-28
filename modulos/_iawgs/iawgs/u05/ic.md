@@ -1,6 +1,6 @@
 ---
 title: Introducción a la integración continua
-permalink: /iawgs/u04/ic.html
+permalink: /iawgs/u05/ic.html
 ---
 
 Para realizar la tareas podemos escoger el sistema de integración continúa que queramos: travis, gitlab, github actions, ...

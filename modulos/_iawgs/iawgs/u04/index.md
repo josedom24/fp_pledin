@@ -1,6 +1,6 @@
 ---
 title: Despliegue de aplicaciones web Java
-permalink: /iawgs/u05/index.html
+permalink: /iawgs/u04/index.html
 ---
 
 ## Objetivos

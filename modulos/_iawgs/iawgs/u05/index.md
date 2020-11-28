@@ -1,6 +1,6 @@
 ---
 title: Introducción a la integración continúa y despliegue continuo
-permalink: /iawgs/u04/index.html
+permalink: /iawgs/u05/index.html
 ---
 
 ## Objetivos

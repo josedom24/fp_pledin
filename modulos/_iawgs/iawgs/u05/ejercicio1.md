@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio 1: Corrector ortográfico de documentos markdown (test)"
-permalink: /iawgs/u04/ejercicio1.html
+permalink: /iawgs/u05/ejercicio1.html
 ---
 
 Antes de comenzar date de alta en el servicio web [travis](https://travis-ci.org/) con tu cuenta de github. **Travis** nos permite hacer integración continúa en los proyectos que tenemos guardados en nuestros repositorios de GitHub.
