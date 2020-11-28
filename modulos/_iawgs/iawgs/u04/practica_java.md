@@ -9,7 +9,7 @@ Se evaluará la complejidad de la instalación (por ejemplo, necesidad de tener 
 
 * Pulse (10 puntos)
 * openCMS (5 puntos)
-* jenkins (7 puntos)
+* jenkins (6 puntos)
 * ReportServer (8 puntos)
 * Alfresco (10 puntos)
 * Guacamole (10 puntos)
@@ -20,6 +20,6 @@ Se evaluará la complejidad de la instalación (por ejemplo, necesidad de tener 
 * Escribe una guía de los pasas fundamentales para realizar la instalación.
 * ¿Has necesitado instalar alguna librería?¿Has necesitado instalar un conector de una base de datos?
 * Entrega una captura de pantalla donde se vea la aplicación funcionando.
-* Realiza la configuración necesaria en apache2 y tomcat (utilizando el protocolo AJP) para que la aplicación sea servida por el servidor web.
+* Realiza la configuración necesaria en apache2 y tomcat **(utilizando el protocolo AJP)** para que la aplicación sea servida por el servidor web.
 * Entrega una captura de pantalla donde se vea la aplicación funcionando servida por apache2.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
