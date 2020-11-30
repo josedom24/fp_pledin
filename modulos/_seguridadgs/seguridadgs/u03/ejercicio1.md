@@ -20,8 +20,8 @@ Vamos a utilizar una máquina en openstack, que vamos a crear con la receta heat
 
 Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:
 
-    iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -j ACCEPT
-    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -j ACCEPT
+    iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 --state ESTABLISHED -j ACCEPT
 
 ## Política por defecto
 
@@ -37,8 +37,8 @@ Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni 
 
 ## Peticiones y respuestas protocolo ICMP
 
-    iptables -A INPUT -i eth0 -p icmp -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth0 -p icmp --icmp-type echo-reply -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp --icmp-type echo-request -j ACCEPT
     
 
 Comprobamos su funcionamiento haciendo ping a una IP pública:
@@ -53,8 +53,8 @@ Comprobamos su funcionamiento haciendo ping a una IP pública:
 
 ## Consultas y respuestas DNS
 
-    iptables -A OUTPUT -o eth0 -p udp --dport 53 -j ACCEPT
-    iptables -A INPUT -i eth0 -p udp --sport 53 -j ACCEPT
+    iptables -A INPUT -i eth0 -p udp --sport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p udp --dport 53 -m state --state ESTABLISHED -j ACCEPT
 
 Comprobamos su funcionamiento con una consulta DNS:
 
@@ -62,8 +62,9 @@ Comprobamos su funcionamiento con una consulta DNS:
 
 ## Tráfico http (que la máquina pueda navegar)
 
-    iptables -A OUTPUT -o eth0 -p tcp --dport 80 -j ACCEPT
-    iptables -A INPUT -i eth0 -p tcp --sport 80 -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 80 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 80 --state ESTABLISHED -j ACCEPT
+
 
 Comprobamos que funciona accediendo a un servicio http (! no https)
 
@@ -73,17 +74,16 @@ Comprobamos que funciona accediendo a un servicio http (! no https)
 
 ## Tráfico https
 
-    iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
-    iptables -A INPUT -i eth0 -p tcp --sport 443 -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 443 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 443 --state ESTABLISHED -j ACCEPT
 
 Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). 
 
 ## Permitimos el acceso a nuestro servidor web
 
-    iptables -A OUTPUT -o eth0 -p tcp --sport 80 -j ACCEPT
-    iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
-
-
+    iptables -A INPUT -i eth0 -p tcp --dport 80 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --sport 80 --state ESTABLISHED -j ACCEPT
+    
 
 ## Configuración en un solo paso
 
@@ -101,23 +101,23 @@ Editamos un fichero y añadimos todas las reglas anteriores:
     iptables -A INPUT -i lo -p icmp -j ACCEPT
     iptables -A OUTPUT -o lo -p icmp -j ACCEPT
 
-    iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -j ACCEPT
-    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -j ACCEPT
+    iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 --state ESTABLISHED -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p icmp -j ACCEPT
-    iptables -A INPUT -i eth0 -p icmp -j ACCEPT
+    iptables -A INPUT -i eth0 -p icmp --icmp-type echo-reply -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p icmp --icmp-type echo-request -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p udp --dport 53 -j ACCEPT
-    iptables -A INPUT -i eth0 -p udp --sport 53 -j ACCEPT
+    iptables -A INPUT -i eth0 -p udp --sport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p udp --dport 53 -m state --state ESTABLISHED -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p tcp --dport 80 -j ACCEPT
-    iptables -A INPUT -i eth0 -p tcp --sport 80 -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 80 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 80 --state ESTABLISHED -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p tcp --dport 443 -j ACCEPT
-    iptables -A INPUT -i eth0 -p tcp --sport 443 -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 443 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 443 --state ESTABLISHED -j ACCEPT
 
-    iptables -A OUTPUT -o eth0 -p tcp --sport 80 -j ACCEPT
-    iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --dport 80 --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --sport 80 --state ESTABLISHED -j ACCEPT
 
 {% capture notice-text %}
 ## Ejercicios
