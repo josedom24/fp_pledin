@@ -53,8 +53,8 @@ Comprobamos su funcionamiento haciendo ping a una IP pública:
 
 ## Consultas y respuestas DNS
 
-    iptables -A INPUT -i eth0 -p udp --sport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p udp --dport 53 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
 
 Comprobamos su funcionamiento con una consulta DNS:
 
@@ -62,8 +62,8 @@ Comprobamos su funcionamiento con una consulta DNS:
 
 ## Tráfico http (que la máquina pueda navegar)
 
-    iptables -A INPUT -i eth0 -p tcp --sport 80 --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p tcp --dport 80 --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
 
 
 Comprobamos que funciona accediendo a un servicio http (! no https)
@@ -74,15 +74,15 @@ Comprobamos que funciona accediendo a un servicio http (! no https)
 
 ## Tráfico https
 
-    iptables -A INPUT -i eth0 -p tcp --sport 443 --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p tcp --dport 443 --state ESTABLISHED -j ACCEPT
-
+    iptables -A INPUT -i eth0 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
+ 
 Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). 
 
 ## Permitimos el acceso a nuestro servidor web
 
-    iptables -A INPUT -i eth0 -p tcp --dport 80 --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p tcp --sport 80 --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
     
 
 ## Configuración en un solo paso
@@ -107,17 +107,17 @@ Editamos un fichero y añadimos todas las reglas anteriores:
     iptables -A INPUT -i eth0 -p icmp --icmp-type echo-reply -j ACCEPT
     iptables -A OUTPUT -o eth0 -p icmp --icmp-type echo-request -j ACCEPT
 
-    iptables -A INPUT -i eth0 -p udp --sport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p udp --dport 53 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
 
-    iptables -A INPUT -i eth0 -p tcp --sport 80 --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p tcp --dport 80 --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
 
-    iptables -A INPUT -i eth0 -p tcp --sport 443 --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p tcp --dport 443 --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
 
-    iptables -A INPUT -i eth0 -p tcp --dport 80 --state NEW,ESTABLISHED -j ACCEPT
-    iptables -A OUTPUT -o eth0 -p tcp --sport 80 --state ESTABLISHED -j ACCEPT
+    iptables -A INPUT -i eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -A OUTPUT -o eth0 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
 
 {% capture notice-text %}
 ## Ejercicios
