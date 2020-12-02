@@ -25,3 +25,4 @@ El índice de contenidos que vamos a estudiar será:
 
 * [Programación mes de Octubre](programacion1.html)
 * [Programación mes de Noviembre](programacion2.html)
+* [Programación mes de Diciembre](programacion3.html)

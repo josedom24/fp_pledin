@@ -42,10 +42,10 @@ permalink: /serviciosgs/programacion2.html
     * Trabajar en  [Práctica: Servidor Web Nginx](u03/practica_web_nginx.html)
     * Trabajar primera tarea del proyecto OVH.
 
+- - -
 
-- - -
 ### Viernes, 20 de Noviembre
-- - -
+
 
 * Grupo 1 y grupo 2:
 
@@ -53,7 +53,7 @@ permalink: /serviciosgs/programacion2.html
 
 - - -
 
-### Martes, 3 de Noviembre
+### Martes, 22 de Noviembre
 
 * Grupo 1 **(Clase)**
 
@@ -63,7 +63,7 @@ permalink: /serviciosgs/programacion2.html
 
     * Presentación del servidor DNS. Servidores maestros y esclavos (Videoconferencia)
 
-### Jueves, 5 de Noviembre
+### Jueves, 23 de Noviembre
 
 * Grupo 1 **(Clase)**
 
@@ -73,7 +73,7 @@ permalink: /serviciosgs/programacion2.html
 
     * [Práctica DNS](practica_dns_2020.html)    
 
-### Viernes, 6 de Noviembre
+### Viernes, 24 de Noviembre
 
 * Grupo 1 **(Casa)**
 
@@ -82,3 +82,6 @@ permalink: /serviciosgs/programacion2.html
 * Grupo 2 **(Clase)**
 
     * Introducción a la delegación de dominios
+
+- - -
+
