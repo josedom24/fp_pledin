@@ -36,22 +36,20 @@ Otra forma de ejecutar código python es usar servidores de aplicación wsgi. Te
 
 [Gunicorn](http://gunicorn.org/), también conocido como Green Unicorn (Unicornio Verde), es un servidor WSGI HTTP para Python.
 
-Para instalarlo en Debian 9 Stretch:
+Aunque podemos instalarlo desde repositorios, nosotros vamos a instalarlo en el entorno virtual:
 
-    apt install gunicorn
-
-También lo podemos instalar con `pip` en un entorno virtual.
+    (env)$ pip install gunicorn
 
 **Despliegue de una aplicación django con gunicorn**
 
 Hemos creado una aplicación django en el directorio: `/home/debian/myapp` para desplegarla con gunicorn ejecutamos:
 
-    /home/debian/myapp# gunicorn -w 2 -b :8080 myapp.wsgi:application
-    [2018-01-07 18:55:34 +0000] [14329] [INFO] Starting gunicorn 19.6.0
-    [2018-01-07 18:55:34 +0000] [14329] [INFO] Listening at: http://0.0.0.0:8080 (14329)
-    [2018-01-07 18:55:34 +0000] [14329] [INFO] Using worker: sync
-    [2018-01-07 18:55:34 +0000] [14333] [INFO] Booting worker with pid: 14333
-    [2018-01-07 18:55:34 +0000] [14334] [INFO] Booting worker with pid: 14334
+    /home/debian/myapp# ~/env/bin/gunicorn -w 2 -b :8080 myapp.wsgi:application
+    [2020-01-07 18:55:34 +0000] [14329] [INFO] Starting gunicorn 20.0.4
+    [2020-01-07 18:55:34 +0000] [14329] [INFO] Listening at: http://0.0.0.0:8080 (14329)
+    [2020-01-07 18:55:34 +0000] [14329] [INFO] Using worker: sync
+    [2020-01-07 18:55:34 +0000] [14333] [INFO] Booting worker with pid: 14333
+    [2020-01-07 18:55:34 +0000] [14334] [INFO] Booting worker with pid: 14334
     ...
    
 
@@ -63,18 +61,15 @@ Finalmente podemos configurar apache2 o nginx como proxy inversos para enviar to
 
 ### uwsgi
 
-Para instalarlo en Debian 9 Stretch:
+También lo podemos instalar desde repositorio, pero lo vamos a instalar en el entorno virtual:
 
-    apt install uwsgi
-    apt install uwsgi-plugin-python3
-
-También lo podemos instalar con `pip` en un entorno virtual.  
+    (env)$ pip install uwsgi
 
 **Despliegue de una aplicación django con uwsgi**
 
 Hemos creado una aplicación django en el directorio: `/home/debian/myapp` para desplegarla con uwsgi ejecutamos:
 
-    uwsgi --http :8080 --plugin python35 --chdir /home/debian/myapp --wsgi-file myapp/wsgi.py --process 4 --threads 2 --master 
+    ~/env/bin/uwsgi --http :8080 --plugin python35 --chdir /home/debian/myapp --wsgi-file myapp/wsgi.py --process 4 --threads 2 --master 
 
 Otra alternativa es crear un fichero `.ini` de configuración, `ejemplo.ini` de la siguiente manera:
 
@@ -87,17 +82,14 @@ Otra alternativa es crear un fichero `.ini` de configuración, `ejemplo.ini` de 
 
 Y para ejecutar el servidor, simplemente:
 
-    uwsgi ejemplo.ini
+    ~/env/bin/uwsgi ejemplo.ini
 
 De esta forma puedo tener varios ficheros de configuración del servidor uwsgi para las distintas aplicaciones python que sirva el servidor.
 
-Podemos tener los ficheros de configuración en `/etc/uwsgi/apps-available` y para habiliatar podemos crear un enlace simbólico a estos ficheros en `/etc/uwsgi/apps-enabled`.
-
 En el ejemplo anterior hemos usado la opción `http` para indicar que se va a devolver una respuesta HTTP, podemos usar varias opciones:
 
-* `http`: Se comporta como un servidor http.
-* `http-socket`: Si vamos a utilizar un proxy inverso usando el servidor uwsgi.
-* `socket`: La respuesta ofrecida por el servidor no es HTTP, es usando el protocolo uwsgi.
+* `http`: Se comporta como un servidor http. Por ejemplo en nginx usaremos `proxy_pass` para hacer de proxy inverso.
+* `socket`: La respuesta ofrecida por el servidor no es HTTP, es usando el prootocolo uwsgi. Por ejemplo en nginx usaremos `uwsgi_pass` para hacer de proxy inverso.
 
 Existen muchas más opciones que puedes usar: [http://uwsgi-docs.readthedocs.io/en/latest/Options.html](http://uwsgi-docs.readthedocs.io/en/latest/Options.html).
 
