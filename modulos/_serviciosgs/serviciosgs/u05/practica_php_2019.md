@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Ejecución de script PHP. Rendimiento"
-permalink: /serviciosgs/u06/practica_php.html
+permalink: /serviciosgs/u05/practica_php.html
 ---
 
 (9 tareas - 20 puntos)(8 tareas obligatorias - 15 puntos)

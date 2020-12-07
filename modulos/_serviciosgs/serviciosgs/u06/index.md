@@ -1,6 +1,6 @@
 ---
 title: Servidor FTP
-permalink: /serviciosgs/u05/index.html
+permalink: /serviciosgs/u06/index.html
 ---
 
 FTP (siglas en inglés de File Transfer Protocol, 'Protocolo de Transferencia de Archivos') en informática, es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.

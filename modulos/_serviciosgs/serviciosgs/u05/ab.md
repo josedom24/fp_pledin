@@ -1,6 +1,6 @@
 ---
 title: "El comando ab"
-permalink: /serviciosgs/u06/ab.html
+permalink: /serviciosgs/u05/ab.html
 ---
 
 La utilidad [ab](http://httpd.apache.org/docs/2.4/programs/ab.html) (Apache Benchmark) sirve para hacer pruebas de carga a un servidor apache. Es un programa que forma parte del apaquete ``apache2-utils``.

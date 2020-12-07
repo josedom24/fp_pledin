@@ -1,6 +1,6 @@
 ---
 title: "Introducción a varnish"
-permalink: /serviciosgs/u06/varnish.html
+permalink: /serviciosgs/u05/varnish.html
 ---
 
 ## ¿Qué es Varnish?

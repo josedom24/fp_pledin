@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Ejecución de script Python. Rendimiento"
-permalink: /serviciosgs/u06/practica_python.html
+permalink: /serviciosgs/u05/practica_python.html
 ---
 
 (6 tareas - 15 puntos)(3 tareas obligatorias - 6 puntos)

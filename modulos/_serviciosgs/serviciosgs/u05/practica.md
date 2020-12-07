@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Ejecución de scripts PHP y Python. Rendimiento"
-permalink: /serviciosgs/u06/practica.html
+permalink: /serviciosgs/u05/practica.html
 ---
 
 (4 tareas - 15 puntos)

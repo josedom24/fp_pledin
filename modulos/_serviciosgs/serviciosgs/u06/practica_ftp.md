@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Gestionar un hosting por ftp"
-permalink: /serviciosgs/u05/practica_ftp.html
+permalink: /serviciosgs/u06/practica_ftp.html
 ---
 
 **(11 tareas - 25 puntos)(3 tareas obligatorias - 8 puntos)**

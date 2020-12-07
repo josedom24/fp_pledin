@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Gestión de peticiones"
-permalink: /serviciosgs/u06/ejercicio1.html
+permalink: /serviciosgs/u05/ejercicio1.html
 --- 
 
 ## Módulos de Multiprocesamiento (MPMs) en Apache 2.4

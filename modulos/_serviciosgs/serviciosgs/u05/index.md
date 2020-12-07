@@ -1,6 +1,6 @@
 ---
 title: Gestión de peticiones y rendimiento en servidores Web
-permalink: /serviciosgs/u06/index.html
+permalink: /serviciosgs/u05/index.html
 ---
 
 Los servidores web pueden ser configurado para manejar las peticiones de diferente forma, desde el punto de vista en que son creados y manejados los subprocesos necesarios que atienden a cada cliente conectado a este. En esta unidad vamos a explicar los MPM (Módulos de multiprocesamiento) que nos permiten configurar el servidor Web para gestionar las peticiones que llegan al servidor.

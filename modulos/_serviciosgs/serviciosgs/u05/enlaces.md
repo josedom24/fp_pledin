@@ -1,6 +1,6 @@
 ---
 title: Enlaces interesantes
-permalink: /serviciosgs/u06/enlaces.html
+permalink: /serviciosgs/u05/enlaces.html
 ---
 
 ## Módulos de multiprocesamiento

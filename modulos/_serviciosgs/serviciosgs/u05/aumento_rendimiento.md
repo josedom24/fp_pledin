@@ -1,6 +1,6 @@
 ---
 title: "Aumento de rendimiento en servidores web"
-permalink: /serviciosgs/u06/aumento_rendimiento.html
+permalink: /serviciosgs/u05/aumento_rendimiento.html
 ---
 
 ## Memcached
