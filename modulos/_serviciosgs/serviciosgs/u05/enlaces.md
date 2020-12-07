@@ -1,14 +1,17 @@
 ---
-title: Enlaces interesantes. Servidor FTP
-permalink: /serviciosgs/u05/enlaces.html
+title: Enlaces interesantes
+permalink: /serviciosgs/u06/enlaces.html
 ---
 
-* [Configuración básica de proFTPd en debian](https://servidordebian.org/es/squeeze/internet/ftp/start)
-* [El protocolo FTP](https://es.wikipedia.org/wiki/File_Transfer_Protocol)
-* [FTP problemas de conexion, PORT y PASV](http://cursohacker.es/ftp-problemas-de-conexion-port-y-pasv)
-* [Active FTP vs. Passive FTP, a Definitive Explanation](http://slacksite.com/other/ftp.html)
-* [ProFTPd](http://www.proftpd.org/)
-* [ProFTPd: Manual de instalación y configuración](http://www.redeszone.net/gnu-linux/proftpd/)
-* [net2ftp: Cliente FTP basado en la web](http://www.net2ftp.com/)
-* [Cómo instalar Proftpd con soporte MySQL](https://www.ochobitshacenunbyte.com/2014/10/13/como-instalar-proftpd-con-soporte-mysql/)
-* [Servidor ftp Windows 2008:Vídeo 1](http://www.youtube.com/watch?gl=ES&v=0Hv7jRaqiy0) [Vídeo 2](http://www.youtube.com/watch?gl=ES&v=VyxYL1gK4Xg)
+## Módulos de multiprocesamiento
+
+* [Módulos de multiprocesamiento (MPMs)](http://httpd.apache.org/docs/2.4/mpm.html)
+* [Entendiendo los modos multiproceso de Apache](http://www.maestrosdelweb.com/entendiendo-los-modos-multiproceso-de-apache/)
+* [Diferencias entre apache prefork, event y worker](http://www.vozidea.com/diferencias-entre-apache-prefork-event-worker)
+* [Apache2 us ngninx](https://www.1and1.es/digitalguide/servidores/know-how/apache-vs-nginx-una-comparativa-de-servidores-web/)
+* [How to Configure nginx for Optimized Performance](https://linode.com/docs/web-servers/nginx/configure-nginx-for-optimized-performance/)
+
+
+
+
+

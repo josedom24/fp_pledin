@@ -1,27 +1,23 @@
 ---
-title: Servidor FTP
-permalink: /serviciosgs/u05/index.html
+title: Gestión de peticiones y rendimiento en servidores Web
+permalink: /serviciosgs/u06/index.html
 ---
 
-FTP (siglas en inglés de File Transfer Protocol, 'Protocolo de Transferencia de Archivos') en informática, es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.
+Los servidores web pueden ser configurado para manejar las peticiones de diferente forma, desde el punto de vista en que son creados y manejados los subprocesos necesarios que atienden a cada cliente conectado a este. En esta unidad vamos a explicar los MPM (Módulos de multiprocesamiento) que nos permiten configurar el servidor Web para gestionar las peticiones que llegan al servidor.
 
-Los contenidos que vamos a estudiar del servidor FTP, nos van a posibilitar responder las siguientes preguntas:
+Vamos a estudiar también las distintas configuraciones que podemos realizar para que los servidores web sean capaces de servir páginas realizadas en PHP y Python y vamos a estudiar las diferencias de rendimientos (respuestas por segundos) que podemos obtener utilizando las distintas configuraciones. Por último estudiaremos diferentes aplicaciones que pueden mejorar el rendimiento de nuestro servidor: aceleradores PHP, memcache, varnish, ...
 
-1. ¿Qué significan las siglas FTP? ¿Para qué sirve dicho protocolo? ¿Qué inconveniente tiene su uso?
-2. ¿Qué puertos utiliza el protocolo? ¿Para qué sirve cada uno?
-3. ¿Qué tipos de acceso podemos configurar en un servidor FTP?
-4. ¿Qué modos de conexión existen en el protocolo FTP? ¿En qué consiste cada uno y cuál es la diferencia?
-5. Índica los tipos de transferencia que podemos hacer. ¿Qué tipo utilizarías si vas a transferir un fichero `odt`?
-6. ¿Qué tipo de clientes FTP existen?
-7. Si usas un cliente FTP de línea de comandos, que comando tendrías que ejecutar para conectarte al servidor `ftp.gonzalonazareno.org` y subir un fichero `practica.pdf`.
+Para terminar la unidad vamos a hacer un estudio comparativo sobre el rendimiento entre distintos servidores web.
 
 ## Índice
 
 * [Enlaces interesantes](enlaces.html)
-* [Ejercicio: Instalación de proFTPd y uso de clientes FTP](ejercicio1.html)
+* [Ejercicio: Gestión de peticiones](ejercicio1.html)
+* [El comando ab](ab.html)
+* [Ejecución de script PHP](script_php.html)
+* [Aumento de rendimiento en servidores web](aumento_rendimiento.html)
+* [Ejecución de script Python](script_python.html)
 
-<!--
 ## Prácticas
 
-* [Práctica: Gestionar un hosting por ftp](practica_ftp.html)
-* -->
+* [Práctica: Ejecución de scripts PHP y Python. Rendimiento](practica.html)

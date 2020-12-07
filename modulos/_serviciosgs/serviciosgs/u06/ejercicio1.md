@@ -1,85 +1,53 @@
 ---
-title: "Ejercicio: Gestión de peticiones"
-permalink: /serviciosgs/u06/ejercicio1.html
---- 
+title: "Ejercicio: Instalación de proFTPd y uso de clientes FTP"
+permalink: /serviciosgs/u05/ejercicio1.html
+---
 
-## Módulos de Multiprocesamiento (MPMs) en Apache 2.4
+Instala el servidor proFTPd y comprueba su funcionamiento desde un cliente FTP gráfico: filezilla, y un cliente FTP de texto: ftp.
 
+**Guía de comandos FTP**::
 
-Por defecto apache2 se configura con el MPM event, podemos ver el MPM que estamos utilizando con la siguiente instrucción::
+        Comando y argumentos	Acción que realiza
+        open servidor 		Inicia una conexión con un servidor FTP.
+        close o disconnect 	Finaliza una conexión FTP sin cerrar el programa cliente.
+        bye o quit 		Finaliza una conexión FTP y la sesión de trabajo con el programa cliente.
+        cd directorio 		Cambia el directorio de trabajo en el servidor.
+        delete archivo 		Borra un archivo en el servidor
+        mdelete patrón 		Borra múltiples archivos basado en un patrón que se aplica al nombre.
+        dir 			Muestra el contenido del directorio en el que estamos en el servidor.
+        get archivo 		Obtiene un archivo
+        noop No Operation 	Se le comunica al servidor que el cliente está en modo de no operación, el servidor usualmente responde con un «ZZZ» y refresca el contador de tiempo inactivo del usuario.
+        mget archivos 		Obtiene múltiples archivos
+        hash 			Activa la impresión de caracteres # a medida que se transfieren archivos, a modo de barra de progreso.
+        lcd directorio 		Cambia el directorio de trabajo local.
+        ls 			Muestra el contenido del directorio en el servidor.
+        prompt 			Activa/desactiva la confirmación por parte del usuario de la ejecución de comandos. Por ejemplo al borrar múltiples archivos.
+        put archivo 		Envía un archivo al directorio activo del servidor.
+        mput archivos 		Envía múltiples archivos.
+        pwd 			Muestra el directorio activo en el servidor.
+        rename archivo 		Cambia el nombre a un archivo en el servidor.
+        rmdir directorio 	Elimina un directorio en el servidor si ese directorio está vacío.
+        status 			Muestra el estado actual de la conexión.
+        bin o binary 		Activa el modo de transferencia binario.
+        ascii 			Activa el modo de transferencia en modo texto ASCII.
+        ! 			Permite salir a línea de comandos temporalmente sin cortar la conexión. Para volver, teclear exit en la línea de comandos.
+        ? nombre de comando 	Muestra la información relativa al comando.
+        ? o help 		Muestra una lista de los comandos disponibles.
+        append archivo 		Continua una descarga que se ha cortado previamente.
+        bell 			Activa/desactiva la reproducción de un sonido cuando ha terminado cualquier proceso de transferencia de archivos.
+        glob 			Activa/desactiva la visualización de nombres largos de nuestro PC.
+        literal 		Con esta orden se pueden ejecutar comandos del servidor de forma remota. Para saber los disponibles se utiliza: literal help.
+        mkdir 			Crea el directorio indicado de forma remota.
+        quote 			Hace la misma función que literal.
+        send archivo 		Envía el archivo indicado al directorio activo del servidor.
+        user 			Para cambiar nuestro nombre de usuario y contraseña sin necesidad de salir de la sesión ftp.
 
-	# apachectl -V
-	...
-	Server MPM:     event
-	...
+Modifica la configuración del servidor para que los usuarios sólo puedan entrar en su directorio "Documentos".
 
-Para cambiar de MPM tenemos que desactivar el actual y activar el nuevo módulo::
+{% capture notice-text %}
+Todos los accesos al servidor FTP lo vamos a hacer utilizando su nombre, por ejemplo `ftp.iesgn.org`, por lo tanto debes configurar el servidor BIND9 en el servidor para que todos los clientes conozcan este nombre.
 
-	# a2dismod mpm_event
-	# a2enmod mpm_prefork
-	# service apache2 restart
+Siguiendo las indicación de la documentación suministrada, configura el servidor proFTPd para crear un servidor FTP anónimo de sólo lectura.
 
-	# apachectl -V
-	...
-	Server MPM:     prefork
-	...
-
-### Las directivas de configuración de los distintos MPM
-
-En ``/etc/apache2/mods-availables/mpm_prefork.conf``::
-
-Directivas de control de [prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html>):
-
-    StartServers              5
-    MinSpareServers           5
-    MaxSpareServers          10
-    MaxRequestWorkers       150
-    MaxConnectionsPerChild    0
-
-
-En ``/etc/apache2/mods-availables/mpm_worker.conf``:
-
-Directivas de control de [worker](https://httpd.apache.org/docs/2.4/mod/worker.html>):
-
-    StartServers            2
-    MinSpareThreads         25
-    MaxSpareThreads         75
-    ThreadLimit             64
-    ThreadsPerChild         25
-    MaxRequestWorkers       150
-    MaxConnectionsPerChild  0
-
-En ``/etc/apache2/mods-availables/mpm_event.conf``:
-
-Directivas de control de [event](https://httpd.apache.org/docs/2.4/mod/event.html>):
-
-    StartServers              2
-    MinSpareThreads          25
-    MaxSpareThreads          75
-    ThreadLimit              64
-    ThreadsPerChild          25
-    MaxRequestWorkers       150
-    MaxConnectionsPerChild    0
-
-## Gestión de peticiones en nginx
-
-### Procesos worker
-
-La directiva `worker_processes` nos indica el número de procesos que van a responder peticiones. 
-El valor de `worker_processes`, se suele definir al mismo número de CPUs que tenga el equipo, o como mucho, el doble. Esto se hace así porque, al ser un servidor web asíncrono, cada proceso se puede encargar de muchas peticiones y por lo tanto no tiene sentido tener más procesos que CPUs capaces de ejecutar código.
-
-Para indicar un worker por cada core de la CPU:
-
-    worker_processes auto;
-
-* Comprueba la configuración por defecto de nginx y comprueba cuantos procesos worker se están ejecutando.
-
-**Conexiones por proceso**
-
-La opción `worker_connections` establece el número máximo de conexiones que cada proceso worker puede procesar a la vez. Es recomendable aumentar este valor si nuestra web tiene un elevado tráfico. El valor por defecto es de 768.
-
-El número máximo de clientes que Nginx puede manejar viene determinado por multiplicar el valor indicado en `worker_processes` por el indicado en `worker_connections`.
-
-Además podemos usar `multi_accept` con el fin de que un worker acepte todas las nuevas conexiones al mismo tiempo.
-
-* Comprueba la configuración por defecto de nginx.
+Cuando termines, aunque no sea recomendable, configura el servidor proftpd para hacerlo anónimo y de lectura y escritura.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
