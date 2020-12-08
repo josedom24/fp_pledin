@@ -2,6 +2,7 @@
 permalink: /lmgs/2020-2021/python3/listas.html
 layout: single3
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cUIjTbk0wgg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Tipo de datos secuencia: listas
 

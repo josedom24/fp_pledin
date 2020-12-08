@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/python3/metodos_listas.html
 layout: single3
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gQfQ8XRX0SM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Métodos principales de listas
 
 ## Métodos de inserción: append, extend, insert

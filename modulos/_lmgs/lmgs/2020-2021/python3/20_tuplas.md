@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/python3/tuplas.html
 layout: single3
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xl_lR01wEtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Tipo de datos secuencia: Tuplas
 
 Las tuplas (`tuple`): Sirven para los mismo que las listas (me permiten guardar un conjunto de datos que se pueden repetir y que pueden ser de distintos tipos), pero en este caso es un tipo inmutable.
