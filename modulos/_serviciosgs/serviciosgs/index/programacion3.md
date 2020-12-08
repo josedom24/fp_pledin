@@ -39,12 +39,14 @@ permalink: /serviciosgs/programacion3.html
 
 * Grupo 1 **(Clase)**
 
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
     * Gestión de peticiones y rendimiento en servidores Web
         * Ejercicio: Gestión de peticiones
         * Ejecución de script PHP
 
 * Grupo 2 **(Casa)**
 
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)(Videoconferencia)
     * Gestión de peticiones y rendimiento en servidores Web (Videoconferencia)
         * Ejercicio: Gestión de peticiones
         * Ejecución de script PHP
