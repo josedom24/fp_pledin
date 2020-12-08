@@ -34,3 +34,31 @@ permalink: /serviciosgs/programacion3.html
     * [Práctica DNS](practica_dns_2020.html)    
 
 - - -
+
+### Jueves, 10 de Diciembre
+
+* Grupo 1 **(Clase)**
+
+    * Gestión de peticiones y rendimiento en servidores Web
+        * Ejercicio: Gestión de peticiones
+        * Ejecución de script PHP
+
+* Grupo 2 **(Casa)**
+
+    * Gestión de peticiones y rendimiento en servidores Web (Videoconferencia)
+        * Ejercicio: Gestión de peticiones
+        * Ejecución de script PHP
+    
+
+### Viernes, 11 de Diciembre
+
+* Grupo 1 **(Casa)**
+
+    * Gestión de peticiones y rendimiento en servidores Web (Videoconferencia)
+        * Ejecución de script Python
+
+* Grupo 2 **(Clase)**
+
+    * Gestión de peticiones y rendimiento en servidores Web (Videoconferencia)
+        * Ejecución de script Python
+    
