@@ -38,3 +38,28 @@ permalink: /seguridadgs/programacion3.html
 * Grupo 2 **(Casa)**
 
     * Ejercicio 1 con iptables.
+
+- - - 
+
+### Miércoles, 9 de Diciembre
+
+* Grupo 1 **(Clase)**
+
+    * [Presentación: nftable](https://docs.google.com/presentation/d/e/2PACX-1vRmCJr5FJXf47EaR3JOCVk2drs6mqrYPdckvty7q9TeUTJL8u4S5VHJu_u6KzMV0a2zeVdeXsfz9Xky/pub?start=false&loop=false&delayms=3000) 
+    * Ejercicio 1 con nftables.
+
+* Grupo 2 **(Casa)**
+
+    * [Presentación: nftable](https://docs.google.com/presentation/d/e/2PACX-1vRmCJr5FJXf47EaR3JOCVk2drs6mqrYPdckvty7q9TeUTJL8u4S5VHJu_u6KzMV0a2zeVdeXsfz9Xky/pub?start=false&loop=false&delayms=3000) 
+
+
+
+### Jueves, 3 de Diciembre
+
+* Grupo 1 **(Casa)**
+
+    * Ejercicio 1 con nftables.
+
+* Grupo 2 **(Clase)**
+
+    * Ejercicio 1 con nftables.
