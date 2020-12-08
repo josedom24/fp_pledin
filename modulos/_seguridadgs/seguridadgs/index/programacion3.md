@@ -58,8 +58,10 @@ permalink: /seguridadgs/programacion3.html
 
 * Grupo 1 **(Casa)**
 
+    * Presentación práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) (Videoconferencia)
     * Ejercicio 1 con nftables.
 
 * Grupo 2 **(Clase)**
 
+    * Presentación práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
     * Ejercicio 1 con nftables.
