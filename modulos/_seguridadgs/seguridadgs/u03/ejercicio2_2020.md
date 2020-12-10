@@ -96,9 +96,9 @@ Actualmente estamos permitiendo que desde la LAN se pueda hacer ping al cortafue
 
 ## Permitimos la navegación web desde la LAN
 
-**Mejora: Vamos a limitar el estado de las conexiones.**
-**Mejora: Uso de multiport para indicar los dos puertos**
-**Mejora: Dejas navegar sólo unas horas**
+* **Mejora: Vamos a limitar el estado de las conexiones.**
+* **Mejora: Uso de multiport para indicar los dos puertos**
+* **Mejora: Dejas navegar sólo unas horas**
 
     iptables -A FORWARD -i eth1 -o eth0 -s 192.168.100.0/24 -p tcp -m multiport --dport 80,443 -m state --state NEW,ESTABLISHED -m time \
 --timestart 12:00 --timestop 12:30 -j ACCEPT
@@ -110,8 +110,8 @@ Podemos comprobar que está haciendo resolución DNS y navegación web desde la 
 
 ## Permitimos el acceso a nuestro servidor web de la LAN desde el exterior
 
-**Mejora: Vamos a limitar el estado de las conexiones.**
-**Mejora: Limitamos el número de conexiones al servidor web**
+* **Mejora: Vamos a limitar el estado de las conexiones.**
+* **Mejora: Limitamos el número de conexiones al servidor web**
 
 En un primer momento tenemos que permitir que la consulta pase por el cortafuegos:
 
