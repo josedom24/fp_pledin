@@ -21,9 +21,16 @@ permalink: /seguridadgs/u03/index.html
 
 ## Ejercicios
 
-* Ejercicio1: Implementación de un cortafuegos personal
+* Ejercicio 1: Implementación de un cortafuegos personal
     * [iptables](ejercicio1.html)
     * [nftables](https://www.josedomingo.org/pledin/2019/12/nftables-cortafuegos-personal/)
+
+
+* Ejercicio 2: Implementación de un cortafuegos perimetral
+    * [iptables](ejer2.html)
+    * [Reglas de NAT con nftables](https://www.josedomingo.org/pledin/2020/01/nftables-cortafuegos-perimetral-nat/)
+    * [Implementación de un cortafuegos personal con nftables](https://www.josedomingo.org/pledin/2019/12/nftables-cortafuegos-personal/)
+
 
 <!--
 * [Ejercicio 2: Implementación de un cortafuegos perimetral](ejercicio2.html)
