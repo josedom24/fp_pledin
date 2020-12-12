@@ -5,4 +5,4 @@ post.sh
 __pycache__
 update.sh
 .jekyll-cache
-
+Gemfile.lock
