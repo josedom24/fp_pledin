@@ -15,3 +15,7 @@ permalink: /iawgs/programacion3.html
 
     * Presentación de la tarea: [Instalación de aplicación web python](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3n_de_aplicaci%C3%B3n_web_python) en los servidores de OpenStack.
     * [Práctica: Despliegue de CMS java](u04/practica_java.html)
+
+- - - 
+
+### Martes, 15 de diciembre
