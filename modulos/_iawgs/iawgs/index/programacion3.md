@@ -19,3 +19,7 @@ permalink: /iawgs/programacion3.html
 - - - 
 
 ### Martes, 15 de diciembre
+
+--user-name
+
+goaccess --user-name debian --db-path /home/debian/www/blog_pledin/goaccess --load-from-disk --keep-db-files /var/log/apache2/blog_pledin.log -o /home/debian/www/blog_pledin/html
