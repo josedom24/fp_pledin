@@ -18,8 +18,14 @@ permalink: /iawgs/programacion3.html
 
 - - - 
 
-### Martes, 15 de diciembre
+### Lunes, 14 de diciembre
 
---user-name
+* Grupo 1 **(Clase)**
 
-goaccess --user-name debian --db-path /home/debian/www/blog_pledin/goaccess --load-from-disk --keep-db-files /var/log/apache2/blog_pledin.log -o /home/debian/www/blog_pledin/html
+    * [Práctica: Despliegue de CMS java](u04/practica_java.html)
+    * Presentación de la tarea: [Instalación de aplicación web python](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3n_de_aplicaci%C3%B3n_web_python) en los servidores de OpenStack.
+
+* Grupo 2 **(Casa)**
+
+    * [Práctica: Despliegue de CMS java](u04/practica_java.html)
+    * Presentación de la tarea: [Instalación de aplicación web python](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Instalaci%C3%B3n_de_aplicaci%C3%B3n_web_python) en los servidores de OpenStack.
