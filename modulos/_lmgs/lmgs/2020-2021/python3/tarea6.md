@@ -81,7 +81,9 @@ El programa te muestra el menú, hasta que introduzcamos la opción 0 de salir.
 	0
 	Adiós!!!
 
-5. Vamos a crear un programa que tenga el siguiente menú:
+## Ejercicio 5
+
+Vamos a crear un programa que tenga el siguiente menú:
 
 1. Añadir número a la lista: Me pide un número de la lista y lo añade al final de la lista.
 2. Añadir número de la lista en una posición: Me pide un número y una posición, y si la posición existe en la lista lo añade a ella (la posición se pide a partir de 1).
