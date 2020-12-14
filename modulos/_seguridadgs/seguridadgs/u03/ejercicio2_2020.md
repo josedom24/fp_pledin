@@ -3,8 +3,10 @@ title: "Implementación de un cortafuegos perimetral"
 permalink: /seguridadgs/u03/perimetral_iptables.html
 ---
 
-{% capture notice-text %}
 ## Ejercicios
+
+{% capture notice-text %}
+
 
 1. Permite poder hacer conexiones ssh al exterior desde el la máquina cortafuegos.
 2. Permite hacer consultas DNS desde la máquina cortafuegos sólo al servidor `192.168.202.2`. Comprueba que no puedes hacer un `dig @1.1.1.1`.
