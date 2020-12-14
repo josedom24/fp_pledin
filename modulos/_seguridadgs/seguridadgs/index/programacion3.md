@@ -54,7 +54,7 @@ permalink: /seguridadgs/programacion3.html
 
 
 
-### Jueves, 3 de Diciembre
+### Jueves, 10 de Diciembre
 
 * Grupo 1 **(Casa)**
 
@@ -65,3 +65,45 @@ permalink: /seguridadgs/programacion3.html
 
     * Presentación práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
     * Ejercicio 1 con nftables.
+
+- - -
+
+### Martes, 15 de Diciembre
+
+* Grupo 1 **(Clase)**
+
+    * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
+    * Ejercicio 2: Cortafuegos
+
+* Grupo 2 **(Casa)**
+
+    * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
+    * Ejercicio 2: Cortafuegos
+
+### Miércoles, 16 de Diciembre
+
+* Grupo 1 **(Casa)**
+
+    * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
+    * Ejercicio 2: Cortafuegos
+
+* Grupo 2 **(Clase)**
+
+    * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
+    * Ejercicio 2: Cortafuegos
+
+### Jueves, 17 de Diciembre
+
+* Grupo 1 **(Clase)**
+
+    * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
+    * Ejercicio 2: Cortafuegos
+
+* Grupo 2 **(Casa)**
+
+    * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
+    * Ejercicio 2: Cortafuegos
+
+- - - 
+
+### Martes, 22 de Diciembre
