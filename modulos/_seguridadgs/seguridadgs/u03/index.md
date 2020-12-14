@@ -30,7 +30,7 @@ permalink: /seguridadgs/u03/index.html
     * [iptables](perimetral_iptables.html)
     * [Reglas de NAT con nftables](https://www.josedomingo.org/pledin/2020/01/nftables-cortafuegos-perimetral-nat/)
     * [Implementación de un cortafuegos personal con nftables](https://www.josedomingo.org/pledin/2019/12/nftables-cortafuegos-personal/)
-    * [Ejercicio 2](ejer2.html)
+    * [Ejercicio 2](ejercicio2_cortafuegos.html)
 
 
 <!--

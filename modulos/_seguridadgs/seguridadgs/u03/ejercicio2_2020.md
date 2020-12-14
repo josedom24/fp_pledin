@@ -1,6 +1,6 @@
 ---
 title: "Implementación de un cortafuegos perimetral"
-permalink: /seguridadgs/u03/perimetral_iptables.html
+permalink: /seguridadgs/u03/ejercicio2_cortafuegos.html
 ---
 
 ## Ejercicios
