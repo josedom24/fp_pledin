@@ -13,11 +13,13 @@ Pedir cadenas de caracteres y guardarlas en una lista (el programa pedirá al pr
 
 Crear una lista con 10 número aleatorios (del 1 al 100). A continuación se muestra la lista. El programa seguirá mostrando el siguiente menú:
 
-1- Sumar
-2- Máximo
-3- Media
-4- Salir
+```
+1. Sumar
+2. Máximo
+3. Media
+4. Salir
 Opción:
+```
 
 Al elegir una opción se realiza la operación:
 
