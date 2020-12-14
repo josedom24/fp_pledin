@@ -63,4 +63,37 @@ permalink: /serviciosgs/programacion3.html
 
     * Gestión de peticiones y rendimiento en servidores Web (Videoconferencia)
         * Ejecución de script Python
+
+- - - 
+
+### Martes, 15 de Diciembre
+
+* Grupo 1 **(Casa)**
+
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
     
+* Grupo 2 **(Clase)**
+
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
+
+### Jueves, 17 de Diciembre
+
+* Grupo 1 **(Casa)**
+
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
+
+* Grupo 2 **(Clase)**
+
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
+
+### Viernes, 18 de Diciembre
+
+* Grupo 1 **(Clase)**
+
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
+
+* Grupo 2 **(Casa)**
+
+    * Presentación de la práctica: [Servidores Web, Base de Datos y DNS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Servidores_Web_y_DNS)
+
+- - -
