@@ -21,23 +21,8 @@ Repite el ejercicio 1 con la siguiente estructura de datos: vamos a usar una lis
 
     articulos=[["fregona",12],["cepillo",14],["recogerdor",23]]
 
+
 ## Ejercicio 3
-
-Realizar un programa que guarde en una lista los nombre y edades de los alumnos de una clase. El programa ira pidiendo por teclado el nombre (string) y la edad (int) hasta que se introduzca como nombre un “*”. Las posiciones pares (0,2,4,…) de la lista serán cadenas y las impares son enteros. Cuando terminemos de meter datos hay que mostrar la siguiente información:
-
-* Los nombres de los alumnos con más edad.
-* La media de edad de la clase
-* Te pide por teclado un nombre y te dice la edad que tiene. Si hay varios alumnos con el mismo nombre te *muestra todos.
-* Genera una nueva lista con los nombres y edades de los mayores de edad.
-
-## Ejercicio 4
-
-Repite el ejercicio 4, pero utilizando la siguiente estructura: una lista, en la cual cada elemento es una lista con dos elementos: el nombre y la edad. Por ejemplo:
-
-    [ ["juan",18],["maría",21],["pablo",15] ]
-
-
-## Ejercicio 5
 
 Crear un programa de ordenador para gestionar los resultados de la quiniela de fútbol. Para ello vamos a utilizar dos listas:
 
@@ -46,7 +31,7 @@ Crear un programa de ordenador para gestionar los resultados de la quiniela de f
 
 El programa ira pidiendo los nombres de los equipos de cada partido y el resultado del partido, a continuación se imprimirá la quiniela de esa jornada.
 
-## Ejercicio 6
+## Ejercicio 4
 
 Implementa un sistema completo de validación de usuarios en una máquina con Debian, que tiene las siguientes características:
 
@@ -73,11 +58,11 @@ donde `asdasd` es la contraseña en claro.
 
 Escribe un programa que lea un usuario y una contraseña, y te informe si el usuario es válido o no.
 
-## Ejercicio 7
+## Ejercicio 5
 
 Utilizando el ejercicio anterior, crea una aplicación simple de craqueo de contraseñas utilizando los ficheros que puedes encontrar en el [repositorio](https://github.com/danielmiessler/SecLists/tree/master/Passwords).
 
-## Ejercicio 8
+## Ejercicio 6
 
 Realizar una aplicación que recoja por teclado la cantidad total a pagar y la cantidad que se ha entregado. La aplicación debe calcular el cambio correspondiente con el menor número de monedas y/o billetes posibles.
 
