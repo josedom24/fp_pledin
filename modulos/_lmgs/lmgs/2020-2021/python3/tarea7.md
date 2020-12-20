@@ -24,6 +24,23 @@ Repite el ejercicio 1 con la siguiente estructura de datos: vamos a usar una lis
 
 ## Ejercicio 3
 
+Queremos hacer un programa que trabaje con las notas de los alumnos de una clase:
+
+* El programa pedirá cuantos alumnos tiene la clase.
+* A continuación, pedirá el nombre del alumno, y cuantas notas tiene ese alumno.
+* Se pedirán las notas del alumno introducido (cada alumno puede tener una cantidad de notas distintas). Las notas se validarán para que sea un número del 1 al 10).
+
+Piensa en el estructura de datos donde vas a guardar la información.
+Al finalizar el programa nos mostrará el siguiente menu:
+
+1. Notas medias: Nos muestra una lista de alumnos y su nota media. Si su nota media es aprobado aparecerá la palabra "APROBADO" en la línea del alumno.
+2. Buscar por nombre: Nos pide una cadena y nos muestra todos los alumnos que **comienzan por dicha cadena y la lista de sus notas.
+3. Añadir alumno: No pide el nombre de un alumno, cuántas notas tienes y pide las notas.
+4. Eliminar alumno: Nos pide un nombre y elimina el primer alumno que encuentre con ese nombre.
+5. Salir
+
+## Ejercicio 4
+
 Crear un programa de ordenador para gestionar los resultados de la quiniela de fútbol. Para ello vamos a utilizar dos listas:
 
 * Equipos: Que es una lista cuyos elementos son una lista con el nombre de los equipos que juegan el partido. En la quiniela se indican 15 partidos. Ejemplo: equipos = [["Sevilla","Betis"],["Madrid","Barcelona"],...]
@@ -31,7 +48,7 @@ Crear un programa de ordenador para gestionar los resultados de la quiniela de f
 
 El programa ira pidiendo los nombres de los equipos de cada partido y el resultado del partido, a continuación se imprimirá la quiniela de esa jornada.
 
-## Ejercicio 4
+## Ejercicio 5
 
 Implementa un sistema completo de validación de usuarios en una máquina con Debian, que tiene las siguientes características:
 
@@ -58,11 +75,11 @@ donde `asdasd` es la contraseña en claro.
 
 Escribe un programa que lea un usuario y una contraseña, y te informe si el usuario es válido o no.
 
-## Ejercicio 5
+## Ejercicio 6
 
 Utilizando el ejercicio anterior, crea una aplicación simple de craqueo de contraseñas utilizando los ficheros que puedes encontrar en el [repositorio](https://github.com/danielmiessler/SecLists/tree/master/Passwords).
 
-## Ejercicio 6
+## Ejercicio 7
 
 Realizar una aplicación que recoja por teclado la cantidad total a pagar y la cantidad que se ha entregado. La aplicación debe calcular el cambio correspondiente con el menor número de monedas y/o billetes posibles.
 
