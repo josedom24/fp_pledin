@@ -1,0 +1,17 @@
+Título principal que resume la idea general del escrito
+30 palabras de párrafo de bienvenida con texto lorem ipsum
+Primera idea principal a desarrollar en el escrito.
+30 palabras de párrafo que desarrolla la primera idea principal y que tiene varios subtemas a desarrollar a continuación.
+Primer subtema a desarrollar de la primera idea principal.
+30 palabras de párrafo que desarrolla el primer subtema de la primera idea principal.
+Segundo subtema a desarrollar de la primera idea principal.
+30 palabras de párrafo que desarrolla el segundo subtema de la primera idea principal.
+Segunda idea principal a desarrollar en el escrito.
+30 palabras de párrafo que desarrolla la segunda idea principal y que tiene varios subtemas a desarrollar a continuación.
+Primer subtema a desarrollar de la segunda idea principal.
+30 palabras de párrafo que desarrolla el primer subtema de la segunda idea principal.
+Segundo subtema a desarrollar de la primera idea principal.
+30 palabras de párrafo que desarrolla el segundo subtema de la segunda idea principal.
+Conclusiones 
+Párrafo de 30 palabras con la síntesis de las ideas desarrolladas.
+Párrafo de 20 palabras de despedida.

@@ -91,18 +91,26 @@ Hay multitud, todas le dan cierto estilo al texto que contienen y destacaremos l
 
 ## Ejercicio 1
 
+Queremos crear una página web con la siguiente [información](doc/texto.txt). Tienes que usar las etiquetas de cabeceras para estructurar dicha información siguiendo la estrucutra que puedes ver en este documentos de texto:
+
+![html5](img/solucion-ejercicio-encabezados-html-word.jpg)
+
+[Compruebe la solución](doc/solucion2.txt)
+
+## Ejercicio 2
+
 Descárgate el siguiente [documento html](doc/Berners-Lee-Wikipedia.html.zip), y modifícalo que tenga un formato según la imagen:
 
 ![html5](img/biografia-tim-berners-lee.jpg)
 
-[Compruebe la solución](doc/solucion2.txt)
+[Compruebe la solución](doc/solucion3.txt)
 
 
-## Ejercicio 2
+## Ejercicio 3
 
 Descárgate el siguiente [documento html](doc/Enunciado-Vincton-Cerf.html.zip), y modifícalo que tenga un formato según la imagen:
 
 ![html5](img/solucion-ejercicio-vinton-cerf.jpg)
 
-[Compruebe la solución](doc/solucion3.txt)
+[Compruebe la solución](doc/solucion4.txt)
 

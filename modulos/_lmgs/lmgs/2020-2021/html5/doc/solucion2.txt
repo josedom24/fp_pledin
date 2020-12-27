@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ejercicio html etiquetas de texto básicas</title>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
+	<title>Resolución ejercicio encabezdos html</title>
+	<meta content="author" content="francesc ricart">
 </head>
 <body>
 
-<h1>Biografía de Tim Berners Lee</h1>
+<h1>Título principal que resume la idea general del escrito</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore similique unde dolorem reiciendis recusandae laborum at, placeat, aliquam nobis maxime ducimus, cupiditate dignissimos repudiandae voluptate quasi iusto eos et magni.</p>
 
-<p><strong>Berners-Lee</strong> trabajó en el <strong>CERN</strong> desde junio hasta diciembre de 1980. Durante ese tiempo, propuso un proyecto basado en el <em>hipertexto</em> para facilitar la forma de compartir y la puesta al día de la información entre investigadores. En este periodo también construyó un programa llamado <em><b>ENQUIRE</b></em> que no llegó a ver la luz.</p>
+	<h2>Primera idea principal a desarrollar en el escrito.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, laudantium, ipsa. Magni assumenda sequi consequuntur sint eos delectus aliquam ipsum, consectetur quaerat. Cupiditate, non corrupti necessitatibus accusantium illum eius officiis.</p>
+		<h3>Primer subtema a desarrollar de la primera idea principal.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a obcaecati facilis, sunt similique enim fuga vero expedita cum illum doloremque, possimus sit quisquam iste deleniti iusto hic, ratione! Nisi!</p>
+		<h3>Segundo subtema a desarrollar de la primera idea principal.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iusto dolore ab explicabo. Provident nam aspernatur perspiciatis ad commodi aliquid obcaecati reprehenderit, quos, veniam iure itaque neque dolores vero cupiditate.</p>
+	<h2>Segunda idea principal a desarrollar en el escrito.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique consequatur ab voluptatibus possimus totam temporibus dolores, natus molestias minima praesentium non reiciendis molestiae quaerat, neque ea, sunt commodi saepe velit.</p>
+		<h3>Primer subtema a desarrollar de la segunda idea principal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, minima. Blanditiis dolorem modi fugit, rem animi necessitatibus a aliquid nemo ducimus tenetur dolor soluta sapiente tempore, unde maiores ad.</p>
+		<h3>Segundo subtema a desarrollar de la primera idea principal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus atque, repellendus ipsa similique sit blanditiis officia quos eligendi iure animi debitis, qui nesciunt commodi reprehenderit voluptas vel. Quasi, suscipit, delectus!</p>
 
-<p>Después de dejar el <b>CERN</b>, en 1980, se fue a trabajar a la empresa de <i>John Poole Image Computer Systems Ltd.</i>, pero regresó al CERN otra vez en 1984.</p>
-
-<h2>El nacimiento de la web</h2>
-
-<p>En 1989, el CERN era el nodo de Internet más grande de Europa y Berners-Lee vio la oportunidad de unir Internet y el hipertexto (<strong>HTTP</strong> y <strong>HTML</strong>), de lo que surgiría la <strong>World Wide Web</strong>.</p>
-
-<p>Desarrolló su primera propuesta de la Web el 12 de marzo de 1989,2​ pero no tuvo mucho eco, por lo que en 1990 y con la ayuda de <i>Robert Cailliau</i>, hicieron una revisión que fue aceptada por su gerente, <i>Mike Sendall</i>.</p> 
-
-<blockquote>Usó ideas similares a las que había usado en el sistema <i>Enquire</i>, para crear la <b>World Wide Web</b>, para esto diseñó y construyó el primer navegador (llamado WorldWideWeb y desarrollado con NEXTSTEP) y el primer servidor Web al que llamó httpd (HyperText Transfer Protocol daemon).</blockquote>
-
-<h2>La democratización de la web</h2>
-<p><strong>El primer servidor Web</strong> se encontraba en el CERN y fue puesto en línea el 6 de agosto de 1991. Esto proporcionó una explicación sobre lo que era el World Wide Web, cómo uno podría tener un navegador y cómo establecer un servidor Web. Este fue también el primer directorio Web del mundo, ya que Berners-Lee mantuvo una lista de otros sitios Web aparte del suyo.</p>
-<p>Debido a que tanto <strong>el software del servidor como del cliente fue liberado de forma gratuita</strong> desde el CERN, el corazón de Internet Europeo en esa época, su difusión fue muy rápida. El número de servidores Web pasó de veintiséis en 1992 a doscientos en octubre de 1995 lo que refleja cual fue la velocidad de la difusión de internet.</p>
-
-<h2>El nacimiento del W3C</h2>
-<p>En 1994 entró en el <em>Laboratorio de Ciencias de la Computación e Inteligencia Artificial</em> del <em>Massachusetts Institute of Technology</em>. Se trasladó a EE. UU. y puso en marcha el <b>W3C</b>, que dirige actualmente. </p>
-
-<blockquote>El <strong>W3C</strong> es un organismo internacional de estandarización de tecnologías Web dirigido conjuntamente por el <i>Instituto Tecnológico de Massachusetts</i>, el <i>ERCIM francés</i> y la <i>Universidad de Keiō</i> en Japón. Este organismo decidió que todos sus estándares fuesen libres, es decir, que los pudiese utilizar todo el mundo libremente sin coste alguno, lo que sin lugar a dudas fue una de las grandes razones para que la Web haya llegado a tener la importancia que tiene hoy en día.</blockquote>
-
-<p>En su libro <em>Tejiendo la red</em>, publicado en 1999, Berners-Lee explica por qué <strong>la tecnología web es libre y gratis</strong>. <strong>Se considera al mismo tiempo el inventor y el protector de la web.</strong></p>
-
+	<h2>Conclusiones</h2> 
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates molestiae libero voluptas dicta aut non excepturi, doloribus laborum temporibus, earum nemo nam tempore doloremque? Alias quisquam eius explicabo doloremque expedita.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laborum adipisci, nobis quia expedita tempore voluptate inventore recusandae deleniti perspiciatis.</p>
 </body>
 </html>
