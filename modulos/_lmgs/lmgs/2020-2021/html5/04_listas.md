@@ -83,3 +83,7 @@ Ejemplo:
 Queda renderizado de la siguiente manera:
 
 ![html5](img/lista_definiciones.png)
+
+## Ejercicio 1
+
+https://francescricart.com/listas-html-ordenadas-no-ordenadas/
