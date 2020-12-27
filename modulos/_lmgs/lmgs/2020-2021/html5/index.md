@@ -9,7 +9,7 @@ layout: single3
 * [Introducción a HTML](introduccion.html)
 * [Estructura de etiquetas: anidación,...](etiquetas_basicas.html)
 * [Etiquetas de texto](etiquetas_textos.html)
-* [Listas](listas.html)
+* [Listas](etiquetas_listas.html)
 * Enlaces: absolutos, relativos
 * Imágenes
 * Tablas
