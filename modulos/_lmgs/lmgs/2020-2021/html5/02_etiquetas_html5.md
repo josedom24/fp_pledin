@@ -3,9 +3,9 @@ permalink: /lmgs/2020-2021/html5/etiquetas_basicas.html
 layout: single3
 ---
 
-**HTML** nos permite estructurar la información. El diseño y el formato lo defineremos con las **hojas de estilo**.
-
 ## Etiquetas básicas HTML5
+
+**HTML** nos permite estructurar la información. El diseño y el formato lo defineremos con las **hojas de estilo**.
 
 El stándard de HTML5 se aprobó el 28 de octubre de 2014. Podéis encontrar la [documentación oficial de todas las etiquetas] en la página W3C (El Consorcio World Wide Web (W3C) es una comunidad internacional donde las organizaciones Miembros, personal a tiempo completo y el público en general trabajan conjuntamente para desarrollar estándares Web). 
 
