@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/html5/introduccion.html
 layout: single3
 ---
 
+https://francescricart.com/tutorial-html/
+
 # Introducción a HTML
 
 El HTML es un lenguaje de marcado que constituye uno de los pilares de la web. Fue inventado por Tim Berners Lee en 1990 a partir de otro lenguaje denominado SGML y que servía para dotar de estructura documental a una información.
@@ -11,7 +13,7 @@ El lenguaje de marcado es básicamente un idioma que se caracteriza por etiqueta
 
 Etiquetamos las distintas partes de un documento web para aportar información al usuario, a los motores de búsqueda y a los navegadores.
 
-## Veamos primero el concepto de etiqueta web.
+## Veamos primero el concepto de etiqueta web
 
 Consideraciones previas sobre el HTML:
 
