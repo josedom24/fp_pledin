@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<!-- Falta el símbolo de exclamación-->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- la contrabarra en caso de ponerse va en el cierre de la etiqueta. recordar que los metas no tienen etiqueta de cierre.-->
+        <meta name="description" content="Ejercicio HTML - Corrige los errores">
+        <title>Corrige los errores que encuentres en el documento</title>
+        <!-- El title debe ir dentro del <head>-->
+    </head> 
+    <!-- La apertura del <body> va justo después del cierre del </head>-->
+    <body>
+        
+    <h1>Aprender HTML es muy divertido</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam optio nesciunt atque iure  animi dicta velit </p><!--Recordar cerrar siempre todas las etiquetas. En este caso la etiqueta <p>-->
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam optio nesciunt atque iure  animi dicta velit</p>
+      
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam optio nesciunt atque iure  animi dicta velit</p> <!-- el body siempre cierre el contenido web. Después no debemos añadir contenido.-->
+   
+    </body>
+</html><!-- Falta la barra de cierre de la etiqueta-->

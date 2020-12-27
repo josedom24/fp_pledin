@@ -50,3 +50,4 @@ HTML como lenguaje que es tiene un vocabulario y una sintaxis básica que debemo
 * `<head></head>` Es la cabecera del documento web. La cabecera del documento web contiene informaciones técnicas para los navegadores web y para los motores de búsqueda. Por ejemplo aquí dentro encontraréis la etiqueta `<title>` y los `<meta>`. Sólo debe aparecer un `<head>` en un documento web.
 * `<title></title>` Informa a los motores de búsqueda cual es el contenido de la página web. Sólo se debe indicar una vez por documento web. Es fundamental para el SEO.
 * `<body></body>` Es el cuerpo del documento web. Encierra las etiquetas que van a aportar estructura y contenido a nuestro documento web. También sólo se escribe una única vez por documento web.
+
