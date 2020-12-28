@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/html5/enlaces.html
 layout: single3
 ---
 
+# Enlaces
+
 Los enlaces se establecen con la etiqueta `a` y el atributo `href`, que indica la URL del enlace:
 
 ![html5](img/html-10.png)
@@ -32,6 +34,16 @@ El concepto de ruta es un concepto muy importante ya que se utiliza es muchos te
 * **Absolutas**: Toman como base el directorio raíz de mi equipo. Cuidado, sólo funcionarán en tu mismo equipo.
 
     `<img alt="Logo de OpenWebinars" src="/home/jose/public_html/img/openwebinars-logo.jpg">`
+
+    También pueden ser URL dentro del mismo dominio o en otro nombre de dominio.
+
+La recomendación es el **uso de las rutas relativas**, veamos algunas consideraciones para trabajar con ellas:
+
+* La navegación entre archivos toma como punto de referencia el documento concreto en el que estemos escribiendo en un momento determinado.
+* Si escribimos / indicamos que debemos situarnos justo en el inicio de la raíz del árbol. Esta es una estrategia que no recomiendo porqué suele dar problemas.
+* Si escribimos ../ subimos al nivel inmediatamente superior.
+* Si escribimos `nombrearchivo.html` es porqué este archivo esta directamente en el mismo nivel que el punto de referencia.
+* Si escribimos `nombreCarpeta/archivo.html` es porqué en el mismo nivel que nuestra referencia hay una carpeta. Entramos dentro de esta carpeta y dentro de la carpeta se debe encontrar el `archivo.html`.
 
 ## Ejercicio 1
 
