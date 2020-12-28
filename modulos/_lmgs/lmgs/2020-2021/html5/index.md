@@ -13,7 +13,7 @@ layout: single3
 * [Enlaces: absolutos, relativos](enlaces.html)
 * [Imágenes](imagenes.html)
 * [Tablas](tablas.html)
-* Formularios
-* Validación
+* [Formularios](formularios.html)
 * Capas: Layout
+* Validación
 * Entender como funciona las hojas de estilo
