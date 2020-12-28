@@ -1,5 +1,5 @@
 ---
-permalink: /lmgs/2020-2021/html5/imagnes.html
+permalink: /lmgs/2020-2021/html5/imagenes.html
 layout: single3
 ---
 

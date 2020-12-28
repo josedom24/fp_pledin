@@ -11,8 +11,8 @@ layout: single3
 * [Etiquetas de texto](etiquetas_textos.html)
 * [Listas](etiquetas_listas.html)
 * [Enlaces: absolutos, relativos](enlaces.html)
-* Imágenes
-* Tablas
+* [Imágenes](imagenes.html)
+* [Tablas](tablas.html)
 * Formularios
 * Validación
 * Capas: Layout

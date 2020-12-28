@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio tablas html</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="francesc ricart"/>
+	<style>
+		table{
+			border-collapse:collapse;
+			caption-side: bottom;
+		}
+		caption{
+			font-weight:bold;
+			margin-top:16px;
+		}
+		th,td{padding:5px 10px;}
+		td,th{border:1px solid #1c1c1c;text-align:center;}
+
+	</style>
+</head>
+<body>
+
+    <table>
+	    <caption>Este es el caption de la tabla</caption>
+	    <thead>
+	    	<tr>
+	    		<th>Ciudad</th>
+	    		<th>Aeropuerto</th>
+	    		<th>Playa</th>
+	    		<th>Habitantes</th>
+	    	</tr>
+	    </thead>
+	    <tbody>
+	    	<tr>
+	    		<td>Reus</td>
+	    		<td>Si</td>
+	    		<td>No</td>
+	    		<td>100000</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Tarragona</td>
+	    		<td>No</td>
+	    		<td>Si</td>
+	    		<td>130000</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Madrid</td>
+	    		<td>Si</td>
+	    		<td>No</td>
+	    		<td>3100000</td>
+	    	</tr>
+	    	<tr>
+	    		<td>Barcelona</td>
+	    		<td>Si</td>
+	    		<td>Si</td>
+	    		<td>1600000</td>
+	    	</tr>
+	    </tbody>
+    </table>
+
+</body>
+</html>
