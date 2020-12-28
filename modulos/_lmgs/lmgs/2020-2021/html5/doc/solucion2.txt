@@ -2,8 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Resolución ejercicio encabezdos html</title>
-	<meta content="author" content="francesc ricart">
+	<title>Resolución ejercicio encabezados html</title>
 </head>
 <body>
 

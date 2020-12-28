@@ -2,8 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Ejercicio html para practicar con etiquetas html de texto">
-    <meta name="author" content="Francesc Ricart">
     <title>Biografía de Vinton Cerf</title>
 </head>
 <body>

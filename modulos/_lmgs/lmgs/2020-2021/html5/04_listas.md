@@ -49,9 +49,6 @@ Queda renderizado de la siguiente manera:
 
 ![html5](img/html-05.png)
 
-La etiqueta `<ol>` puede ir acompañada del atributo `type` con alguno de estos valores: `1 | A | a | I | i` para indicar el formato de la lista.
-La etiqueta `<ul>` pueder ir acompañada de las etiquetas: `reversed` para decrementar el contador, y `start` para que la numeración empieza en el entero que indiquemos.
-
 ## Listas de definiciones
 
 Usamos las etiquetas `<dl>, <dt>, <dd>`:
@@ -86,4 +83,8 @@ Queda renderizado de la siguiente manera:
 
 ## Ejercicio 1
 
-https://francescricart.com/listas-html-ordenadas-no-ordenadas/
+Anida correctamente la lista no ordenada que se muestra en la imagen.
+
+![html5](img/ejemplo-listas-anidadas.jpg)
+
+[Compruebe la solución](doc/solucion5.txt)
