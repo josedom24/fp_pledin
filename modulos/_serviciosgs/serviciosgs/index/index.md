@@ -14,11 +14,12 @@ El índice de contenidos que vamos a estudiar será:
 * [Servidor Web](u03)
 * [Servidor DNS](u04)
 * [Gestión de peticiones y rendimiento en servidores Web](u05)
+* [Servidor de correo electrónico](u06)
 
 <!--
 * [Servidor FTP](u05)
 
-* [Servidor de correo electrónico](u07)
+
 * [Proxy, proxy inverso y balanceador de carga](u08)
 -->
 

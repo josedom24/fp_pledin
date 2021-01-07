@@ -8,6 +8,8 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
 ## Indice
 
 * [Enlaces interesantes](enlaces.html)
+
+<!--
 * [Instalación y configuración básica de postfix](postfix1.html)
 * [Gestión de correo desde el servidor](postfix2.html)
 * [Caso 1: Envío local, entre usuarios del mismo servidor](postfix3.html)
@@ -24,3 +26,4 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
 
 * [Práctica servidor de correo en servidores cloud](practica_correo.html)
 * [Práctica servidor de correo en casa](practica_correo_casa.html)
+-->
