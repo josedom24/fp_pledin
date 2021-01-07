@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Servidor de correos en casa"
-permalink: /serviciosgs/u07/practica_correo_casa.html
+permalink: /serviciosgs/u06/practica_correo_casa.html
 ---
 **(9 tareas - 10 puntos)**
 {: .notice--warning}

@@ -1,6 +1,6 @@
 ---
 title: "Caso 4: Envio de correo electrónico usando nuestro servidor de correos"
-permalink: /serviciosgs/u07/postfix8.html
+permalink: /serviciosgs/u06/postfix8.html
 ---
 
 En este caso queremos que poder gestionar el envio y la recepción de corresos desde los ordenadores de neustra red local. Para ello debemos habilitar el envío de correo desde cliente de nuestra red. Para ello añade 192.168.1.0/24 (suponiendo que esta es nuestra red local) en la directiva mynetworks, quedando:

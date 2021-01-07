@@ -1,6 +1,6 @@
 ---
 title: "Caso 2: Envío de correos desde internet a usuarios del servidor"
-permalink: /serviciosgs/u07/postfix4.html
+permalink: /serviciosgs/u06/postfix4.html
 ---
 
 ## Desde el aula

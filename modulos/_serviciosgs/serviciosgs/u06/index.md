@@ -1,27 +1,26 @@
 ---
-title: Servidor FTP
+title: Servidor de correo electrónico
 permalink: /serviciosgs/u06/index.html
 ---
 
-FTP (siglas en inglés de File Transfer Protocol, 'Protocolo de Transferencia de Archivos') en informática, es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.
+En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a instalar el servidor de correo `postfix` y vamos a configurar distintos tipos de clientes para gestionar nuestros correos. Vamos a estudiar los distintos protocolos de red que se utilizan: SMTP, POP e IMAP. Para finalizar vamos a estudiar aspectos un poco más avanzados: soluciones al problema del spam, antispam y antivirus, clientes virtuales en LDAP,...
 
-Los contenidos que vamos a estudiar del servidor FTP, nos van a posibilitar responder las siguientes preguntas:
-
-1. ¿Qué significan las siglas FTP? ¿Para qué sirve dicho protocolo? ¿Qué inconveniente tiene su uso?
-2. ¿Qué puertos utiliza el protocolo? ¿Para qué sirve cada uno?
-3. ¿Qué tipos de acceso podemos configurar en un servidor FTP?
-4. ¿Qué modos de conexión existen en el protocolo FTP? ¿En qué consiste cada uno y cuál es la diferencia?
-5. Índica los tipos de transferencia que podemos hacer. ¿Qué tipo utilizarías si vas a transferir un fichero `odt`?
-6. ¿Qué tipo de clientes FTP existen?
-7. Si usas un cliente FTP de línea de comandos, que comando tendrías que ejecutar para conectarte al servidor `ftp.gonzalonazareno.org` y subir un fichero `practica.pdf`.
-
-## Índice
+## Indice
 
 * [Enlaces interesantes](enlaces.html)
-* [Ejercicio: Instalación de proFTPd y uso de clientes FTP](ejercicio1.html)
+* [Instalación y configuración básica de postfix](postfix1.html)
+* [Gestión de correo desde el servidor](postfix2.html)
+* [Caso 1: Envío local, entre usuarios del mismo servidor](postfix3.html)
+* [Caso 2: Envío de correos desde internet a usuarios del servidor](postfix4.html)
+  * [Alias y redirecciones](postfix5.html)
+* [Caso 3: Envío de correo desde usuarios del servidor a correos de internet](postfix6.html)
+  * [Soluciones al problema del spam](postfix7.html)
+* [Caso 4: Envio de correo electrónico usando nuestro servidor de correos](postfix8.html)
+* [Caso 5: Recepción de correo electrónico usando nuestro servidor de correos](postfix9.html)
+* [Antispam y antivirus en nuestro servidor de correos](postfix10.html)
 
-<!--
-## Prácticas
 
-* [Práctica: Gestionar un hosting por ftp](practica_ftp.html)
-* -->
+## Práctica
+
+* [Práctica servidor de correo en servidores cloud](practica_correo.html)
+* [Práctica servidor de correo en casa](practica_correo_casa.html)

@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Servidor de correos en los servidores cloud"
-permalink: /serviciosgs/u07/practica_correo.html
+permalink: /serviciosgs/u06/practica_correo.html
 ---
 
 **(11 tareas - 25 puntos)(6 tareas obligatorias - 10 puntos)**

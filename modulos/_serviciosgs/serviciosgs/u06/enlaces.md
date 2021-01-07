@@ -1,14 +1,14 @@
 ---
-title: Enlaces interesantes. Servidor FTP
+title: Enlaces interesantes
 permalink: /serviciosgs/u06/enlaces.html
 ---
 
-* [Configuración básica de proFTPd en debian](https://servidordebian.org/es/squeeze/internet/ftp/start)
-* [El protocolo FTP](https://es.wikipedia.org/wiki/File_Transfer_Protocol)
-* [FTP problemas de conexion, PORT y PASV](http://cursohacker.es/ftp-problemas-de-conexion-port-y-pasv)
-* [Active FTP vs. Passive FTP, a Definitive Explanation](http://slacksite.com/other/ftp.html)
-* [ProFTPd](http://www.proftpd.org/)
-* [ProFTPd: Manual de instalación y configuración](http://www.redeszone.net/gnu-linux/proftpd/)
-* [net2ftp: Cliente FTP basado en la web](http://www.net2ftp.com/)
-* [Cómo instalar Proftpd con soporte MySQL](https://www.ochobitshacenunbyte.com/2014/10/13/como-instalar-proftpd-con-soporte-mysql/)
-* [Servidor ftp Windows 2008:Vídeo 1](http://www.youtube.com/watch?gl=ES&v=0Hv7jRaqiy0) [Vídeo 2](http://www.youtube.com/watch?gl=ES&v=VyxYL1gK4Xg)
+* [Cómo funciona el correo electrónico (MTA, MDA, MUA)](http://es.ccm.net/contents/115-como-funciona-el-correo-electronico-mta-mda-mua)
+* [Simple Mail Transfer Protocol](https://es.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
+* [Multipurpose Internet Mail Extensions](https://es.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
+* [Entender una cabecera de correo](https://clouding.io/kb/entender-una-cabecera-de-correo/)
+
+## Postfix
+
+* [Documentación: correo electrónico (Postfix)](doc/correo-e.pdf)
+* [Documentación oficial postfix](http://www.postfix.org/documentation.html)

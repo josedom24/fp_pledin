@@ -1,6 +1,6 @@
 ---
 title: "Caso 1: Envío local, entre usuarios del mismo servidor"
-permalink: /serviciosgs/u07/postfix3.html
+permalink: /serviciosgs/u06/postfix3.html
 ---
 
 Esta situación podemos aprovecharla para el envío de correos entre usuarios de la máquina, disponiendo de correo interno. Con utilidades como ``mail usuario`` podemos enviar mensajes a usuarios del propio sistema.
