@@ -7,7 +7,7 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
 
 ## Indice
 
-* [Enlaces interesantes](enlaces.html)
+* [¿Cómo funciona el correo electrónico?](como_funciona_mail.html)
 
 <!--
 * [Instalación y configuración básica de postfix](postfix1.html)
