@@ -1,6 +1,6 @@
 ---
 title: "Práctica Servidores Cloud: Hosting"
-permalink: /serviciosgs/u06/practica_ftp2.html
+permalink: /serviciosgs/u066/practica_ftp2.html
 ---
 
 Queremos que diferentes usuarios, puedan gestionar una página web en vuestro servidor que esté gestionada por medio de un FTP. También se creará una base de datos para cada usuario.

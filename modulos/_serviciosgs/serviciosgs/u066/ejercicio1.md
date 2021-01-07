@@ -1,6 +1,6 @@
 ---
 title: "Ejercicio: Instalación de proFTPd y uso de clientes FTP"
-permalink: /serviciosgs/u06/ejercicio1.html
+permalink: /serviciosgs/u066/ejercicio1.html
 ---
 
 Instala el servidor proFTPd y comprueba su funcionamiento desde un cliente FTP gráfico: filezilla, y un cliente FTP de texto: ftp.

@@ -1,6 +1,6 @@
 ---
 title: Enlaces interesantes. Servidor FTP
-permalink: /serviciosgs/u06/enlaces.html
+permalink: /serviciosgs/u066/enlaces.html
 ---
 
 * [Configuración básica de proFTPd en debian](https://servidordebian.org/es/squeeze/internet/ftp/start)
