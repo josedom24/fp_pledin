@@ -33,8 +33,10 @@ Configurar un cortafuegos perimetral en la máquina `router-fw` teniendo en cuen
     * El servidor de correos sólo debe ser accesible desde la LAN.
     * En la máquina `LAN` instala un servidor mysql. A este servidor sólo se puede acceder desde la DMZ.
 
+<!--
 * Si crees que necesitas más reglas de las que nos han indicado, describe porque pueden ser necesarias.
 * **MEJORA**: Utiliza nuevas cadenas para clasificar el tráfico.
 * **MEJORA**: Consruye el cortafuego utilizando nftables.
+-->
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
