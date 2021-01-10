@@ -37,11 +37,7 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [gitlab](https://about.gitlab.com/product/continuous-integration/)
 * [github actions](https://github.com/features/actions)
 * [CircleCi](https://circleci.com/)
-* [Semaphore](https://semaphoreapp.com/)
-* [Codeship](https://www.codeship.io/)
-* [Shippable](http://www.shippable.com/)
-* [Go-Ci](http://www.thoughtworks.com/products/go-continuous-delivery)
-* [appveyor](http://www.appveyor.com/)
+* ...
 
 
 ## Enlaces
@@ -57,7 +53,8 @@ Es un cambio de paradigma. Es necesario la aceptación de los miembros del equip
 * [Ejercicio 1: Corrector ortográfico de documentos markdown (test)](ejercicio1.html)
 * [Ejercicio 2: Comprobación de html5 válido y despliegue en surge.sh (test y deploy)](ejercicio2.html)
 
-
+<!--
 ## Prácticas
 
 * [Introducción a la integración continua](ic.html)
+-->

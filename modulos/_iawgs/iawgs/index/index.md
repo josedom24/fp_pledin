@@ -13,10 +13,9 @@ El índice de contenidos que vamos a estudiar será:
 * [Implantación de aplicaciones web PHP](u02)
 * [Implantación de aplicaciones web Python](u03)
 * [Despliegue de aplicaciones web Java](u04)
+* [Introducción a la integración continúa y despliegue continuo](u05)
 
 <!--
-* [Introducción a la integración continúa y despliegue continuo](u04)
-
 * [Despliegue de aplicaciones web con contenedores. Docker](u06)
 -->
 
@@ -25,3 +24,4 @@ El índice de contenidos que vamos a estudiar será:
 * [Programación mes de Octubre](programacion1.html)
 * [Programación mes de Noviembre](programacion2.html)
 * [Programación mes de Diciembre](programacion3.html)
+* [Programación mes de Enero](programacion4.html)
