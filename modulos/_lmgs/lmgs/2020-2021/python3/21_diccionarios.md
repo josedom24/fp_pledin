@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/python3/diccionarios.html
 layout: single3
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TOxDBgofVlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Tipo de datos mapa: diccionario
 
 Los diccionarios son tipos de datos que nos permiten guardar valores, a los que se puede acceder por medio de una clave (una cadena de caracteres o un número). Son tipos de datos mutables y los campos no tienen asignado orden.
