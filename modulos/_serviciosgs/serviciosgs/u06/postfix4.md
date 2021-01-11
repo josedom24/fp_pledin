@@ -9,7 +9,7 @@ Vamos a tener un correo de la forma ``usuario@dominio_de_cada_alumno``, para nue
 
 Tenemos que tener en cuenta los siguientes aspectos:
 
-1. Si queremos recibir correos desde intenet a nuestro servidor, todos nuestros de dominios tinen que apuntar a nuestra ip pública `80.59.1.152`, sin embargo no hay que tocar el DNS de cdmon ya que tenemos un registro genérico que envía a `80.59.1.152` cualquier cosa de .gonzalonazareno.org que no tenga un registro tipo ADDRESS. Prueba a hacer un ``dig loquesea.gonzalonazareno.org``.
+1. Si queremos recibir correos desde internet a nuestro servidor, todos nuestros de dominios tienen que apuntar a nuestra ip pública `80.59.1.152`, sin embargo no hay que tocar el DNS de cdmon ya que tenemos un registro genérico que envía a `80.59.1.152` cualquier cosa de .gonzalonazareno.org que no tenga un registro tipo ADDRESS. Prueba a hacer un ``dig loquesea.gonzalonazareno.org``.
 2. Cuando se recibe un correo en esa dirección pública, lo recibe el servidor de correo que tenemos en `babuino-smtp`. Esto lo hace el cortafuegos de `macaco` (regla DNAT).
 3. Tenemos que configurar el servidor de correos de `babuino-smtp` para que haga relay con los correos cuyo destinos sean nuestros dominios, es decir el correo que vaya a ``josedom.gonzalonazareno.org`` lo tiene que enviar al servidor de correos de ese dominio, para ello:
     * Añadimos en la directiva ``relay_domains``, del servidor de correos de `babuino-smtp`, cada uno de los nombres de dominios a los que queremos reenviar los mensajes.

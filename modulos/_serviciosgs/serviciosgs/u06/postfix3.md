@@ -55,7 +55,7 @@ Pasemos a describir los pasos:
     * Escribe el mensaje en varias líneas
     * DOS SALTOS DE LÍNEAS, y en el segundo escribe “.” para finalizar el mensaje, y el cliente lo envía al servidor
 
-Podemos comprobar el log ``/var/log/mail.log`` para comproar que se ha mandado el mansaje:
+Podemos comprobar el log ``/var/log/mail.log`` para comprobar que se ha mandado el mensaje:
 
 	Feb 6 18:10:05 vostro postfix/smtpd[3660]: DE3232C16A: client=localhost[127.0.0.1]
 	Feb 6 18:11:07 vostro postfix/cleanup[3907]: DE3232C16A: message-id=<20120206171005.DE3232C16A@mail2.josedomingo.org>
