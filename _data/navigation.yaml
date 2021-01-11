@@ -26,7 +26,7 @@ serviciosgs:
       - title: Gestión de peticiones - Rendimiento
         url: /serviciosgs/u05
       - title: Servidor de correo electrónico
-        url: /serviciosgs/u07
+        url: /serviciosgs/u06
    
    #   - title: Servidor FTP
    #     url: /serviciosgs/u05
