@@ -3,7 +3,7 @@ title: "Seguridad. Programación mes de Enero"
 permalink: /seguridadgs/programacion4.html
 ---
 
-### Martes, 12 de Diciembre
+### Martes, 12 de Enero
 
 * Grupo 1 **(Clase)**
 
@@ -17,7 +17,7 @@ permalink: /seguridadgs/programacion4.html
     * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
     
 
-### Miércoles, 13 de Diciembre
+### Miércoles, 13 de Enero
 
 * Grupo 1 **(Casa)**
 
@@ -29,7 +29,7 @@ permalink: /seguridadgs/programacion4.html
     * Práctica: [Cortafuegos en Openstack](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Cortafuegos)(videoconferencia)
     * Práctica: [Configuración HTTPS](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Configuraci%C3%B3n_HTTPS) 
 
-### Jueves, 14 de Diciembre
+### Jueves, 14 de Enero
 
 * Grupo 1 **(Clase)**
 
