@@ -9,6 +9,7 @@ En el caso de la configuración de nuestra red del instituto, sólo puede enviar
 
 	ralayhost = babuino-smtp.gonzalonazareno.org
 
+
 ## Desde tu servidor OVH
 
 ¿Qué necesitamos para que desde nuestro servidor OVH podamos mandar correos al exterior?:
@@ -24,8 +25,6 @@ Para contestar a esta pregunta tenemos que considerar varias cosas:
 
 	![postfix6](img/postfix4.jpg)
 
-* Para solucionar este problema (es decir, para que el servidor de destine confíe en nuetro servidor) tenemos varias soluciones: [Soluciones al problema del spam](postfix7.html).
-
-En nuestro caso cómo mínimo vamos a usar un registro SPF:
+* Para solucionar este problema (es decir, para que el servidor de destine confíe en nuestro servidor) tenemos varias soluciones, que veremos en los siguientes apartados. En nuestro caso cómo mínimo vamos a usar un registro SPF:
 
 * **Sender Policy Framework (SPF)**: Esta técnica consiste en publicar una serie de datos en un registro TXT del servidor DNS que haga que el servidor de correo donde llega el correo confíe en que el correo no es spam. Para más información lee el artículo: [Sender Policy Framework (SPF)](https://github.com/josedom24/serviciosgs_doc/raw/master/correo/doc/SPF.pdf)
