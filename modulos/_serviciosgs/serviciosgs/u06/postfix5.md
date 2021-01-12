@@ -40,6 +40,6 @@ En este caso vamos a utilizar un nombre de dominio: `iesgnXX.es`. Tenemos que te
 		iesgnXX.es.    900    IN    MX    10 tumaquina.iesgnXX.es.		
 
 		;; ADDITIONAL SECTION:
-		tumaquina.ieshnXX.es.    900    IN    A    XX.XX.XX.XX
+		tumaquina.ieshnXX.es.    900    IN    A    XX.XX.XX.XX (tu ip pública)
 
 3. Recuerda que el correo se guardará en el buzón del usuario, que tendrá que leerlo desde el servidor con la utilidad `mail`.
