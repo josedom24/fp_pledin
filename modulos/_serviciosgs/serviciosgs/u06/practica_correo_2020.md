@@ -30,9 +30,11 @@ Configura el `cron` para enviar correo al usuario `root`. Comprueba que están l
 
 * **Tarea 6 (No obligatoria)**: DMARC
 
-* **Tarea 7**: Configura el buzón de los usuarios de tipo `Maildir`. Envía un correo a tu usuario virtual y comprueba que el correo se ha guardado en el buzón `Maildir` del usuario del sistema correspondiente. Recuerda que ese tipo de buzón no se puede leer con la utilidad `mail`, instala el cliente de correo `mutt` y lee el correo.
+* **Tarea 7 (No obligatoria)**: Prueba de envío de correo. En https://www.mail-tester.com/ tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.
 
-* **Tarea 8**: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.
+* **Tarea 8**: Configura el buzón de los usuarios de tipo `Maildir`. Envía un correo a tu usuario virtual y comprueba que el correo se ha guardado en el buzón `Maildir` del usuario del sistema correspondiente. Recuerda que ese tipo de buzón no se puede leer con la utilidad `mail`, instala el cliente de correo `mutt` y lee el correo.
+
+* **Tarea 9**: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.
 Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt para el dominio `mail.iesgnXX.es`. Recuerda que para el ofrecer el cifrado tiene varias soluciones:
 
 * **IMAP con STARTTLS**: STARTTLS transforma una conexión insegura en una segura mediante el uso de SSL/TLS. Por lo tanto usando el mismo puerto 143/tcp tenemos cifrada la comunicación.
@@ -41,17 +43,17 @@ Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt 
 
 Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes leer los correos enviado a tu usuario.
 
-* **Tarea 9 (No obligatoria)**: Instala un webmail (roundcube, horde, rainloop) para gestionar el correo del equipo mediante una interfaz web. Muestra la configuración necesaria y cómo eres capaz de leer los correos que recibe tu usuario.
+* **Tarea 10 (No obligatoria)**: Instala un webmail (roundcube, horde, rainloop) para gestionar el correo del equipo mediante una interfaz web. Muestra la configuración necesaria y cómo eres capaz de leer los correos que recibe tu usuario.
 
-* **Tarea 10**: Configura de manera adecuada postfix para que podamos mandar un correo desde un cliente remoto. La conexión entre cliente y servidor debe estar autentificada con SASL usando dovecor y además debe estar cifrada. Para cifrar esta comunicación puedes usar dos opciones:
+* **Tarea 11**: Configura de manera adecuada postfix para que podamos mandar un correo desde un cliente remoto. La conexión entre cliente y servidor debe estar autentificada con SASL usando dovecor y además debe estar cifrada. Para cifrar esta comunicación puedes usar dos opciones:
 
 * **ESMTP + STARTTLS**: Usando el puerto 567/tcp enviamos de forma segura el correo al servidor.
 * **SMTPS**: Utiliza un puerto no estándar  (465) para SMTPS (Simple Mail Transfer Protocol Secure). No es una extensión de smtp. Es muy parecido a HTTPS.
 
 Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes enviar los correos.
 
-* **Tarea 11 (No obligatoria)**: Configura el cliente webmail para el envío de correo. Realiza una prueba de envío con el webmail.
+* **Tarea 12 (No obligatoria)**: Configura el cliente webmail para el envío de correo. Realiza una prueba de envío con el webmail.
 
-* **Tarea 12 (No obligatoria)**: Antispam
+* **Tarea 13 (No obligatoria)**: Antispam
 
-* **Tarea 13 (No obligatoria)**: Antivirus
+* **Tarea 14 (No obligatoria)**: Antivirus
