@@ -13,8 +13,10 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
   * [Caso 1: Envío local, entre usuarios del mismo servidor](postfix3.html)
   * [Caso 2: Envío de correo desde usuarios del servidor a correos de internet](postfix4.html)
   * [Caso 3: Recibir correos desde internet a usuarios del servidor](postfix5.html)
-    * [Alias y redirecciones](postfix6.html)
+    * [Alias, redirecciones y usuarios virtuales](postfix6.html)
 * [Soluciones al problema del spam](postfix7.html)
+
+<!--
 * Gestión del correo desde un cliente remoto
   * [Caso 4: Recepción de correo electrónico usando nuestro servidor de correos](postfix8.html)
   * [Caso 5: Envio de correo electrónico usando nuestro servidor de correos](postfix9.html)

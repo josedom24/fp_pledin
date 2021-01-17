@@ -3,65 +3,55 @@ title: "Práctica: Servidor de correos"
 permalink: /serviciosgs/u06/practica_correo_2020.html
 ---
 
-## Nivel 1: Envío de correo desde el servidor
-
 Instala y configura de manera adecuada el servidor de correos en tu máquina de OVH, para tu dominio `iesgnXX.es`. El nombre del servidor de correo será `mail.iesgnXX.es` (Este es el nombre que deberá aparecer en el registro MX)
 
 * **Tarea 1**: Documenta una prueba de funcionamiento, donde envíes desde tu servidor local al exterior. Muestra el log donde se vea el envío. Muestra el correo que has recibido.
 * **Tarea 2**: Documenta una prueba de funcionamiento, donde envíes un correo desde el exterior (gmail, hotmail,...) a tu servidor local. Muestra el log donde se vea el envío. Muestra cómo has leído el correo. Muestra los registros que has tenido que crear en el DNS (MX, SPF).
 
+* **Tarea 3**: Usando usuarios virtuales crea un usuario de correo y realiza la correspondencia con un usuario del sistema. Manda un correo a este usuario virtual y comprueba que ha llegado al buzón del usuario de sistema relacionado.
 
+* **Tarea 4 (No obligatoria)**: Uso de alias y redirecciones.
 
+Vamos a comprobar como los procesos del servidor pueden mandar correos para informar sobre su estado. Por ejemplo cada vez que se ejecuta una tarea cron podemos enviar un correo informando del resultado. Normalmente estos correos se mandan al usuario `root` del servidor, para ello:
 
+    $ crontab -e
 
-Instala y configura un servidor dovecot POP e IMAP en tu equipo. Configura adecuadamente un cliente de correo (evolution, outlook, thunderbird, ...) para que reciba el correo a través de POP o IMAP. El cliente debe estar configurado en una máquina cliente. Nombra en tu servidor DNS al servidor smtp, pop e imap.
+E indico donde se envía el correo:
 
-{% capture notice-text %}
-* **Tarea 3 (2 puntos)(Obligatorio)**: Documenta en redmine una prueba de funcionamiento, donde envíes desde tu cliente de correos al exterior. ¿Cómo se llama el servidor para enviar el correo? (Muestra la configuración).
-* **Tarea 4 (2 puntos)(Obligatorio)**: Documenta en redmine una prueba de funcionamiento, donde recibas un correo desde el exterior (gmail, hotmail,...) y lo leas en tu cliente de correo. Utiliza el protocolo POP. ¿Cómo se llama el servidor para enviar el correo? (Muestra la configuración). Muestra una prueba de funcionamiento de cómo funciona el protocolo POP.
-* **Tarea 5 (2 puntos)(Obligatorio)**: Documenta en redmine una prueba de funcionamiento, donde recibas un correo desde el exterior (gmail, hotmail,...) y lo leas  en tu cliente de correo. Utiliza el protocolo IMAP. ¿Cómo se llama el servidor para enviar el correo? (Muestra la configuración). Muestra una prueba de funcionamiento de cómo funciona el protocolo IMAP.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+    MAILTO = root
 
-Instala un webmail (roundcube, horde, ...) para gestionar el correo del equipo mediante una interfaz web. Instala y configura correctamente un sistema de filtrado de virus y spam utilizando amavis, clamav y spamassasin .
+Puedes poner alguna tarea en el cron para ver como se mandan correo.
 
-{% capture notice-text %}
-* **Tarea 6 (3 puntos)**: Muestra al profesor el envío y recepción de correos utilizando el webmail.
-* **Tarea 7 (5 puntos)**: Muestra al profesor el funcionamiento del sistema de filtrado de virus y spam.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+Posteriormente usando alias y redirecciones podemos hacer llegar esos correos a nuestro correo personal.
 
-## Pasos a realizar en casa 
+Configura el `cron` para enviar correo al usuario `root`. Comprueba que están llegando esos correos al `root`. Crea un nuevo alias para que se manden a un usuario sin privilegios. Comprueban que llegan a ese usuario. Por último crea una redirección para enviar esos correo a tu correo personal (gmail,hotmail,...).
 
-* Configura adecuadamente el router de casa para que el puerto 25/tcp de tu equipo sea accesible desde Internet (eso se denomina DNAT o  forwarding)
-* Date de alta en un servidor DNS dinámico como `dyndns.org`, `no-ip.com`, etc. o usa el nombre de dominio propio.
-* Configura el DNS  de tu * Configura el DNS de tu proveedor para que la máquina a la que apunta el registro MX corresponda a tu IP pública. Si vas a utilizar un servicio gratuito como `dyndns.org`, `no-ip.com`, simplemente debes configurarlo para que apunte a tu ip. Instala postfix en tu máquina y comprueba que recibe correo directamente desde un equipo de Internet (hotmail, gmail, etc.)
-* Prueba a enviar desde tu equipo un correo electrónico a `jose@gonzalonazareno.org`, que no lo rechazará aunque venga de una dirección IP dinámica. Prueba a enviar desde tu equipo un correo electrónico a hotmail/gmail. Comprueba si llega bien, si lo mete en SPAM o si rebota los mensajes (mira en `/var/log/mail.log`), ya que no acepta correos de direcciones IP dinámicas.
-* Configura postfix para que envíe el correo electrónico a través de servidor SMTP relay (gmail, mailgun, sendgrid,...). Cuando funcione envía un correo a `josedom24@gmail.com`
+* **Tarea 5 (No obligatoria)**: Configura de manera adecuada DKIM es tu sistema de correos. Comprueba el registro DKIM en la página https://mxtoolbox.com/dkim.aspx. Configura postfix para que firme los correos que envía. Manda un correo y comprueba la verificación de las firmas en ellos.
 
-{% capture notice-text %}
-* **Tarea 8 (2 puntos)**: Envía el correo a `jose@gonzalonazareno.org`
-* **Tarea 9 (3 puntos)**: Responde al correo que yo te voy a mandar desde esa dirección.
-* **Tarea 10 (4 puntos)**: ¿Te rebota el correo enviado al exterior por qué estas usando ip dinámica? Independientemente de la respuesta, muestra el log donde se vea el envío de ese correo y documenta la configuración del relay. Finalmente envía un correo a `josedom24@gmail.com`.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+* **Tarea 6 (No obligatoria)**: DMARC
 
-## Tarea adicional: Configuración de usuarios virtuales con LDAP
+* **Tarea 7**: Configura el buzón de los usuarios de tipo `Maildir`. Envía un correo a tu usuario virtual y comprueba que el correo se ha guardado en el buzón `Maildir` del usuario del sistema correspondiente. Recuerda que ese tipo de buzón no se puede leer con la utilidad `mail`, instala el cliente de correo `mutt` y lee el correo.
 
-Instala un esquema adecuado para usuarios de postfix en LDAP y crea un script que reciba un nombre de usuario y añade un nuevo registro al LDAP:
+* **Tarea 8**: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.
+Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt para el dominio `mail.iesgnXX.es`. Recuerda que para el ofrecer el cifrado tiene varias soluciones:
 
-1. El dn debes ajustarlo a la base a la de tu directorio
-2. Cada entrada incluye un objectClass y atributos adecuados para postfix
-3. El atributo mail es del tipo usuario@dominio
-4. El buzón de cada usuario está en formato Maildir
-5. El atributo userPassword es un hash SSHA del uid del usuario
+* **IMAP con STARTTLS**: STARTTLS transforma una conexión insegura en una segura mediante el uso de SSL/TLS. Por lo tanto usando el mismo puerto 143/tcp tenemos cifrada la comunicación.
+* **IMAPS**: Versión segura del protocolo IMAP que usa el puerto 993/tcp.
+* Ofrecer las dos posibilidad.
 
-{% capture notice-text %}
-* **Tarea 11 (5 puntos)**: Documenta en redmine la configuración realizada. Y realiza una prueba de funcionamiento al profesor.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes leer los correos enviado a tu usuario.
 
-## Tarea adicional: Configuración de seguridad para SMTP, POP e IMAP
+* **Tarea 9 (No obligatoria)**: Instala un webmail (roundcube, horde, rainloop) para gestionar el correo del equipo mediante una interfaz web. Muestra la configuración necesaria y cómo eres capaz de leer los correos que recibe tu usuario.
 
-En el servidor de clase, configura postfix para que las conexiones al servidor SMTP, POP e IMAP sean seguras (SSL). 
+* **Tarea 10**: Configura de manera adecuada postfix para que podamos mandar un correo desde un cliente remoto. La conexión entre cliente y servidor debe estar autentificada con SASL usando dovecor y además debe estar cifrada. Para cifrar esta comunicación puedes usar dos opciones:
 
-{% capture notice-text %}
-* **Tarea 12 (2 puntos)**: Documenta en redmine la configuración realizada para que nuestro servidor SMTP sea seguro. Indica alguna prueba de funcionamiento .
-* **Tarea 13 (3 puntos)**: Documenta en redmine la configuración realizada para que nuestro servidor POP o IMAP sea seguro. Indica alguna prueba de funcionamiento.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+* **ESMTP + STARTTLS**: Usando el puerto 567/tcp enviamos de forma segura el correo al servidor.
+* **SMTPS**: Utiliza un puerto no estándar  (465) para SMTPS (Simple Mail Transfer Protocol Secure). No es una extensión de smtp. Es muy parecido a HTTPS.
+
+Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes enviar los correos.
+
+* **Tarea 11 (No obligatoria)**: Configura el cliente webmail para el envío de correo. Realiza una prueba de envío con el webmail.
+
+* **Tarea 12 (No obligatoria)**: Antispam
+
+* **Tarea 13 (No obligatoria)**: Antivirus
