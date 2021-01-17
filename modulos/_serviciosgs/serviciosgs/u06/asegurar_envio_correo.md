@@ -6,10 +6,11 @@ permalink: /serviciosgs/u06/asegurar_envio_correo.html
 ## IPs estáticas y limpias
 
 La técnica más importante para asegurar el envío de nuestro correo y luchar contra el spam son las listas negras. Podemos configurar nuestro servidor de correo para que consulte en las distintas listas que existen la dirección de ip de origen [How To Block Spam Before It Enters The Server (Postfix)](https://www.howtoforge.com/block_spam_at_mta_level_postfix). Tenemos muchos sitios para ver si nuestra ip está en una lista negra:
-    * [dnsbl.info](https://www.dnsbl.info/dnsbl-database-check.php)
-	* [mxtoolbox ](http://mxtoolbox.com/blacklists.aspx)
-	* [Spamhaus Block List ](http://www.spamhaus.org/sbl/index.lasso)
-	* [Cisco IronPort SenderBase Security Network ](http://www.senderbase.org/)
+
+* [dnsbl.info](https://www.dnsbl.info/dnsbl-database-check.php)
+* [mxtoolbox ](http://mxtoolbox.com/blacklists.aspx)
+* [Spamhaus Block List ](http://www.spamhaus.org/sbl/index.lasso)
+* [Cisco IronPort SenderBase Security Network ](http://www.senderbase.org/)
 
 ## SPF
 
