@@ -3,7 +3,32 @@ title: "Caso 1: Envío local, entre usuarios del mismo servidor"
 permalink: /serviciosgs/u06/postfix3.html
 ---
 
-Esta situación podemos aprovecharla para el envío de correos entre usuarios de la máquina, disponiendo de correo interno. Con utilidades como ``mail usuario`` podemos enviar mensajes a usuarios del propio sistema.
+Esta situación podemos aprovecharla para el envío de correos entre usuarios de la máquina, disponiendo de correo interno. 
+
+## Envío de correos
+
+Para el envío de correo vamos a usar la utilidad `mail` (se encuentra en el paquete `bsd-mailx`). Y para enviar un correo desde el usuario debian al usuario root, simplemente ejecutamos:
+
+debian@maquina:~$ mail root@DOMINIO
+Subject: Hola
+Esto es una prueba
+Cc: 
+
+**Recuerda que para terminar de escribir el cuerpo del mensaje hay que ponerse en una nueva línea e introducir CTRL+D.**
+
+Para leer el usuario root simplemente ejecuta la instrucción `mail`:
+
+root@maquina:~#  mail
+Mail version 8.1.2 01/15/2001.  Type ? for help.
+"/var/mail/root": 1 message 1 unread
+>U  1 debian@DOMINIO  Sat Jan 16 18:22   79/3597  Re: hola
+& 1
+
+Introducimos el númerode correo para leerlo.
+
+Como vemos el buzón del usuario está en `/var/mail/root`. Los correos leídos se guardan en `~/mbox`.
+
+## Hablando directamente con el servidor en SMTP
 
 Vamos a realizar el envío utilizando una conexión ``telnet``, muy interesante tanto para entender los pasos que sigue el protocolo SMTP:
 
@@ -64,8 +89,3 @@ Podemos comprobar el log ``/var/log/mail.log`` para comprobar que se ha mandado 
 	Feb 6 18:11:08 vostro postfix/qmgr[3531]: DE3232C16A: removed
 	Feb 6 18:11:09 vostro postfix/smtpd[3660]: disconnect from localhost[127.0.0.1]
 
-Y podemos leer el mensaje del usuario "usuario" con el programa ``mail``:
-
-	Mail version 8.1.2 01/15/2001. Type ? for help.
-	"/var/mail/usuario": 1 message 1 new
-	>N 1 jose@josedomingo. Mon Feb 6 18:11 15/548 Prueba envio local
