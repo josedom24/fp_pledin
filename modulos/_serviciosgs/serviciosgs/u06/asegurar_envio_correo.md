@@ -103,13 +103,13 @@ Modificamos los siguientes ficheros:
 
 * `/etc/opendkim/SigningTable`
 	
-    *@DOMINIO mail._domainkey.DOMINIO
+        *@DOMINIO mail._domainkey.DOMINIO
 
 * `/etc/opendkim/KeyTable`
 
-	mail._domainkey.DOMINIO DOMINIO:mail:/etc/opendkim/keys/DOMINIO/mail.private
+	    mail._domainkey.DOMINIO DOMINIO:mail:/etc/opendkim/keys/DOMINIO/mail.private
 
-Verificamos que la configuración del registro de DKIM es correcta utilizando alguna herramienta externa como https://mxtoolbox.com/dkim.aspx, que da los resultados de forma fácilmente interpretable:
+Verificamos que la configuración del registro de DKIM es correcta utilizando alguna [herramienta externa](https://mxtoolbox.com/dkim.aspx), que da los resultados de forma fácilmente interpretable:
 
 ![dkim](img/dkim.png)
 
@@ -133,5 +133,5 @@ La configuración de DMARC para el correo saliente es sencilla, consiste en un r
 
     _dmarc.DOMINIO. 3600    IN  TXT "v=DMARC1; p=quarantine;adkim=r;aspf=r; rua=mailto:postmaster@DOMINIO"
 
-Se pueden ver los detalles del formato en: https://mxtoolbox.com/dmarc/details/what-is-a-dmarc-record.
+Se pueden ver los detalles del formato en [What is a DMARC DNS Record?](https://mxtoolbox.com/dmarc/details/what-is-a-dmarc-record).
 
