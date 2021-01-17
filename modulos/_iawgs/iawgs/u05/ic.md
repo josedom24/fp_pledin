@@ -23,7 +23,7 @@ Vamos a trabajar con el repositorio de la aplicación [`django_tutorial`](https:
 Para ejecutar las pruebas unitarias, ejecutamos la instrucción `python3 manage.py test`.
 
 {% capture notice-text %}
-Estudia las distintas pruebas que se han realizado, y modifica **el código de la aplicación (debes modificar el fichero `views.py` o los templates, no debes cambiar el fichero `tests.py`**  para que al menos una de ella no se ejecute de manera exitosa. (1 punto)
+Estudia las distintas pruebas que se han realizado, y modifica **el código de la aplicación (debes modificar el fichero `views.py` o los templates, no debes cambiar el fichero `tests.py`**  para que al menos una de ella no se ejecute de manera exitosa. 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 A continuación vamos a configurar la integración continúa para que cada vez que hagamos un commit se haga la ejecución de test en la herramienta de CI/CD que haya elegido.
