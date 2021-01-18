@@ -15,6 +15,7 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
     * [¿Qué tenemos que hacer para que nuestro correo "llegue a buen puerto"?](asegurar_envio_correo.html)
   * [Caso 3: Recibir correos desde internet a usuarios del servidor](postfix5.html)
     * [Alias y redirecciones](postfix6.html)
+    * Soluciones al problema del spam
     
 
 <!--
