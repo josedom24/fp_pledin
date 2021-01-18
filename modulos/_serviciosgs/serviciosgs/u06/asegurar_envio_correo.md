@@ -20,7 +20,15 @@ En principio cualquier máquina puede enviar mensajes de correo a cualquier dest
 
 Se pueden especificar diversos campos en el registro, pero en este caso, que tenemos un solo equipo con una dirección IPv4, una dirección IPv6 y el nombre de dominio asociado a la IP, podemos poner como registro SPF el siguiente:
 
-    DOMINIO.    600 IN  TXT "v=spf1 a mx ip4:IPv4/32 ip6:IPv6/128 a:DOMINIO. -all"
+    DOMINIO.    600 IN  TXT "v=spf1 a mx ip4:IPv4/32 ip6:IPv6/128 a:nombre_máquina -all"
+
+    Donde podemos poner las IPs de nuestro servidor de correo de diferentes formas:
+
+* a: La IP de un registro a de un nombre del DNS
+* mx: Registro MX del DNS del dominio
+* ptr: Registro PTR del servidor de correo.
+* ip4:  Direcciones IPv4.
+* ip6:  Direcciones IPv6.
 
 Es importante comentar el signo que aparece antes de `all`, ya que podemos indicarle a los otros servidores lo que deben hacer si reciben correo desde otra dirección o máquina diferente a las que aparecen en el registro anterior:
 
