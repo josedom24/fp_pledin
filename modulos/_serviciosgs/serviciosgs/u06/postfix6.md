@@ -1,5 +1,5 @@
 ---
-title: "Alias, redirecciones y usuarios virtuales"
+title: "Alias y redirecciones"
 permalink: /serviciosgs/u06/postfix6.html
 ---
 
@@ -32,9 +32,11 @@ Cada vez que se modifica el fichero ``/etc/aliases`` hay que ejecutar la instruc
 
 Una redirección se utiliza para enviar el correo que llegue a un usuario a una cuenta de correo exterior. Para usuarios reales las redirecciones se definen en el fichero ``~/.forward`` y el formato de este fichero es simplemente un listado de cuentas de correo a las que se quiere redirigir el correo.
 
+
+<!--
 ## Usuarios virtuales
 
-En muchas ocasiones es necesario usar nombres de usuario que no correpondan con los nombres de los usuarios de sistema. Por ejemplo me gustaría usar `josedom24` en vez de `debian`. `josedom24` es un usuario virtual, que lo vamos a relacionar con el usuariode sistema `debian`. Por lo tanto cuando `josedom24` reciba un correo se guardará en el buzón del usuario `debian`. Para conseguir eso hacemos lo siguiente:
+En muchas ocasiones es necesario usar nombres de usuario que no correpondan con los nombres de los usuarios de sistema. Por ejemplo me gustaría usar `josedom24` en vez de `debian`. `josedom24` es un usuario virtual, que lo vamos a relacionar con el usuario de sistema `debian`. Por lo tanto cuando `josedom24` reciba un correo se guardará en el buzón del usuario `debian`. Para conseguir eso hacemos lo siguiente:
 
 Añadimos al fichero de configuración `/etc/postfix/main.cf` las siguientes líneas:
 
@@ -50,3 +52,5 @@ Creamos el fichero base de datos que va a leer postfix, que se llamará `/etc/po
 	postmap /etc/postfix/virtual
 
 Y reiniciamos postfix.
+
+-->

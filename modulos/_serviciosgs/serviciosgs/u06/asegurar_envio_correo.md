@@ -28,27 +28,7 @@ Es importante comentar el signo que aparece antes de `all`, ya que podemos indic
 * `~`: Clasificarlo como spam
 * `?`: Aceptar el mensaje (sería como no usar SPF)
 
-De esta forma el correo que enviemos desde nuestra máquina, pasará los filtros SPF en destino y la mayoría de nuestros correos llegarán a destino con poca probabilidad de que se clasifiquen como spam. Otra configuración diferente es modificar postfix para que haga la verificación de SPF de los correos recibidos, para lo que instalamos el paquete postfix-policyd-spf-python y añadimos la siguiente línea a /etc/postfix/master.cf:
-
-    policyd-spf  unix  -       n       n       -       0       spawn     user=policyd-spf argv=/usr/bin/policyd-spf
-
-Se ejecutará un proceso en un socket UNIX para realizar el análisis de SPF, le decimos a postfix que acepte los correos que se validen con SPF realizando la siguiente modificación en /`etc/postfix/main.cf`:
-	
-    policyd-spf_time_limit = 3600
-    smtpd_recipient_restrictions =
-    ...
-        check_policy_service unix:private/policyd-spf
-
-Probamos a enviar un correo desde otro origen con destino a nuestra máquina y comprobaremos que se realiza la comprobación de spf:
-
-    postfix/smtpd[28324]: connect from X.red-X-X-X.staticip.rima-tde.net[X.X.X.X]
-    policyd-spf[28329]: prepend Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=X.X.X.X; helo=X.gonzalonazareno.org; envelope-from=redmine@gonzalonazareno.org; receiver= 
-    postfix/smtpd[28324]: E6ECD143: client=X.red-X-X-X.staticip.rima-tde.net[X.X.X.X]
-    postfix/cleanup[28330]: E6ECD143: message-id=
-    postfix/smtpd[28324]: disconnect from X.red-X-X-X.staticip.rima-tde.net[X.X.X.X] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
-    postfix/qmgr[28052]: E6ECD143: from=, size=3432, nrcpt=1 (queue active)
-    postfix/local[28331]: E6ECD143: to=, relay=local, delay=1.9, delays=1.8/0.03/0/0, dsn=2.0.0, status=sent (delivered to maildir)
-    postfix/qmgr[28052]: E6ECD143: removed
+De esta forma el correo que enviemos desde nuestra máquina, pasará los filtros SPF en destino y la mayoría de nuestros correos llegarán a destino con poca probabilidad de que se clasifiquen como spam. 
 
 Para más información puedes leer el documento: [Sender Policy Framework (SPF)](https://github.com/josedom24/serviciosgs_doc/raw/master/correo/doc/SPF.pdf)
 
@@ -119,11 +99,6 @@ Ahora queda configurar postfix para que firme los correos que envía, para lo qu
     milter_protocol = 6
     smtpd_milters = local:/opendkim/opendkim.sock
     non_smtpd_milters = $smtpd_milters
-    smtp_tls_security_level = may
-    smtpd_tls_security_level= may
-    smtp_tls_note_starttls_offer = yes
-    smtpd_tls_loglevel = 1
-    smtpd_tls_received_header = yes
 
 ## DMARC
 
