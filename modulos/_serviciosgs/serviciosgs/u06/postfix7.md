@@ -63,7 +63,7 @@ En este apartado vamos a realizar una introducción a la configuración de nuest
 
 Es esquema de funcionamiento es el siguiente::
 
-										[SpamAssassin]
+                                         [SpamAssassin]
 	                                            ^
 	                                            |
 	Email --> [(Port 25) Postfix] --> [(10024) amavisd-new] --> [(10025) Postfix] --> Mailbox
