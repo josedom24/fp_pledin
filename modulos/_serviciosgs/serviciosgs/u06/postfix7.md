@@ -52,3 +52,27 @@ Probamos a enviar un correo desde otro origen con destino a nuestra máquina y c
 Podemos configurar nuestro postfix, para que verifique el registro DKIM y valide la firma que trae el correo.
 
 Este apartado hay que terminarlo.
+
+## Antivirus y antispam
+
+En este apartado vamos a realizar una introducción a la configuración de nuestro servidor de correos postfix para que sea capaz de determinar si los correos que le llegan tienen algún virus o son spam. Para ello vamos a utilizar tres programas:
+
+* [amavisd](https://www.ijs.si/software/amavisd/): Es una interfaz entre el servidor de correos y el antivirus y antispam.
+* [ClamAV](https://www.clamav.net/): Un antivirus.
+* [SpamAssassin](http://spamassassin.apache.org/): Un software para detectar el spam.
+
+Es esquema de funcionamiento es el siguiente::
+
+										[SpamAssassin]
+	                                            ^
+	                                            |
+	Email --> [(Port 25) Postfix] --> [(10024) amavisd-new] --> [(10025) Postfix] --> Mailbox
+	                                            |
+	                                            v
+	                                         [ClamAV]
+Para seguir investigando:
+
+* [howtoforge - Integrating amavisd-new Into Postfix For Spam- And Virus-Scanning](https://www.howtoforge.com/amavisd_postfix_debian_ubuntu_p2)
+* [Correo SPAM](http://spamassassin.apache.org/gtube/gtube.txt)
+* [Como probar la efectividad y eficiencia del programa antivirus instalado](https://norfipc.com/virus/probar-antivirus.html)
+* [Los test de spamassassin](https://spamassassin.apache.org/old/tests_3_3_x.html)

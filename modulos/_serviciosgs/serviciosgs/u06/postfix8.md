@@ -45,6 +45,8 @@ Nosotros vamos a usar el programa `dovecot` como servidor IMAP:
 
     apt-get install dovecot-imapd
 
-Ya podríamos configurar nuestro cliente de correos para recibir correo utilizando el protocolo imap, para ello tendríamos creado un nombre en el servidor DNS, por ejemplo, ``imap.josedom.gonzalonazreno.org``.
+Ya podríamos configurar nuestro cliente de correos para recibir correo utilizando el protocolo imap, para ello tendríamos creado un nombre en el servidor DNS, por ejemplo, ``imap.josedom.gonzalonazareno.org``.
+
+Para cifrar la comunicación, nosotros vamos a usar un certificado firmado por LetsEncypt.
 
 En este caso también puedes instalar un cliente web de correos para leer los correos del servidor. Hay muchas: round cube, horde, rainloop, SquirrelMail, ...
