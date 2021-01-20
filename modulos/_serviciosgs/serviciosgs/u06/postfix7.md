@@ -70,6 +70,7 @@ Es esquema de funcionamiento es el siguiente::
 	                                            |
 	                                            v
 	                                         [ClamAV]
+
 Para seguir investigando:
 
 * [howtoforge - Integrating amavisd-new Into Postfix For Spam- And Virus-Scanning](https://www.howtoforge.com/amavisd_postfix_debian_ubuntu_p2)
