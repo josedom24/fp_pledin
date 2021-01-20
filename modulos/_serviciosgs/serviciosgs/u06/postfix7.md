@@ -66,7 +66,7 @@ Es esquema de funcionamiento es el siguiente::
                                          [SpamAssassin]
 	                                            ^
 	                                            |
-	Email --> [(Port 25) Postfix] --> [(10024) amavisd-new] --> [(10025) Postfix] --> Mailbox
+	Email --> [Postfix] --> [(10024) amavisd-new] --> [(10025) Postfix] --> Mailbox
 	                                            |
 	                                            v
 	                                         [ClamAV]
