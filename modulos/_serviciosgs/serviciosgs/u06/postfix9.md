@@ -1,6 +1,6 @@
 ---
 title: "Caso 4: Envío de correo electrónico usando nuestro servidor de correos"
-permalink: /serviciosgs/u06/postfix8.html
+permalink: /serviciosgs/u06/postfix9.html
 ---
 
 ## Protocolo SMTP
