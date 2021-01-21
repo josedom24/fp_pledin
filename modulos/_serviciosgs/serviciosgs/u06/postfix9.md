@@ -26,4 +26,4 @@ Como comentábamos en el apartado anterior nosotros vamos a usar un certificado 
 Os dejo dos entradas que os pueden ayudar para la configuración de estos dos últimos apartados:
 
 * [ISP Mail Tutorial for Debian 10 (Buster)](https://123qwe.com/tutorial-debian-10/)
-* [How to secure Postfix using Let’s Encrypt] (https://upcloud.com/community/tutorials/secure-postfix-using-lets-encrypt/)
+* [How to secure Postfix using Let’s Encrypt](https://upcloud.com/community/tutorials/secure-postfix-using-lets-encrypt/)

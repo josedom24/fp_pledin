@@ -68,4 +68,4 @@ Configura el `cron` para enviar correo al usuario `root`. Comprueba que están l
 
 ## Comprobación final
 
-* **Tarea 13 (No obligatoria)**: Prueba de envío de correo. En https://www.mail-tester.com/ tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.
+* **Tarea 13 (No obligatoria)**: Prueba de envío de correo. En esta [página](https://www.mail-tester.com/) tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.
