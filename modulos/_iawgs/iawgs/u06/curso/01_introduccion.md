@@ -193,6 +193,8 @@ Para acceder al log del contenedor podemos ejecutar:
 
     $ docker logs my-apache-app
 
+Con la opción `logs -f` seguimos visualizando los logs en tiempo real.
+
 ## Configuración de contenedores con variables de entorno
 
 Más adelante veremos que al crear un contenedor que necesita alguna configuración específica, lo que vamos a hacer es crear variables de entorno en el contenedor, para que el proceso que inicializa el contenedor pueda realizar dicha configuración.
