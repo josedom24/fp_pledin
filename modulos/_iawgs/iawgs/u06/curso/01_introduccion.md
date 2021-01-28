@@ -72,18 +72,90 @@ Si listamos los contenedores que se están ejecutando (`docker ps`):
     $docker ps
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 
-Comprobamos que este contenedor no se está ejecutando. **Un contenedor ejecuta un proceso y cuando termina la ejecución, el contendor se para.**
+Comprobamos que este contenedor no se está ejecutando. **Un contenedor ejecuta un proceso y cuando termina la ejecución, el contenedor se para.**
 
-Para ver los contendores que no se están ejecutando:
+Para ver los contenedores que no se están ejecutando:
 
     $ docker ps -a
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
     372ca4634d53        hello-world         "/hello"            8 minutes ago       Exited (0) 8 minutes ago                       elastic_johnson
 
-Para eliminar el contendor podemos identificarlo con su `id`:
+Para eliminar el contenedor podemos identificarlo con su `id`:
 
     $ docker rm 372ca4634d53
 
  o con su nombre:
 
     $ docker rm elastic_johnson
+
+Otro ejemplo:
+
+    $ docker run ubuntu /bin/echo 'Hello world' 
+    Unable to find image 'ubuntu:latest' locally
+    latest: Pulling from library/ubuntu
+    8387d9ff0016: Pull complete 
+    ...
+    Status: Downloaded newer image for ubuntu:latest
+    Hello world
+
+Con el comando `run` vamos a crear un contenedor donde vamos a ejecutar un comando, en este caso vamos a crear el contenedor a partir de una imagen ubuntu. Como todavía no hemos descargado ninguna imagen del registro docker hub, es necesario que se descargue la  imagen. Si la tenemos ya en nuestro ordenador no será necesario la descarga. 
+
+Comprobamos que el contenedor ha ejecutado el comando que hemos indicado y se parado:
+
+    $ docker ps -a
+    CONTAINER ID        IMAGE               COMMAND                  CREATED                STATUS                      PORTS               NAMES
+    3bbf39d0ec26        ubuntu              "/bin/echo 'Hello wo…"   31 seconds ago      Exited     (0) 29 seconds ago                       wizardly_edison
+
+Con el comando `docker images` podemos visualizar las imágenes que ya tenemos descargadas en nuestro registro local:
+
+    $ docker images
+    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+    ubuntu              latest              f63181f19b2f        7 days ago          72.9MB
+    hello-world         latest              bf756fb1ae65        13 months ago       13.3kB
+
+## Ejecutando un contenedor interactivo
+
+En este caso usamos la opción `-i` para abrir una sesión interactiva, `-t` nos permite crear un pseudo-terminal que nos va a permitir interaccionar con el contenedor, indicamos un nombre del contenedor con la opción `--name`, y la imagen que vamos a utilizar para crearlo, en este caso “ubuntu”,  y por último el comando que vamos a ejecutar, en este caso `/bin/bash`, que lanzará una sesión bash en el contenedor:
+
+    $  docker run -it --name contenedor1 ubuntu /bin/bash 
+    oot@2bfa404bace0:/#
+
+El contenedor se para cuando salimos de él. Para volver a conectarnos a él:
+
+    $ docker start contendor1
+    contendor1
+    $ docker attach contendor1
+    root@2bfa404bace0:/#
+
+Si el contenedor se está ejecutando podemos ejecutar comando en él con el subcomando `exec`:
+
+    $ docker start contendor1
+    contendor1
+    $ docker exec contenedor1 ls -al
+
+## Creando un contenedor demonio
+
+En esta ocasión hemos utilizado la opción `-d` del comando `run`, para la ejecución el comando en el contenedor se haga en segundo plano.
+
+    $ docker run -d --name contenedor2 ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+    7b6c3b1c0d650445b35a1107ac54610b65a03eda7e4b730ae33bf240982bba08
+
+* Comprueba que el contenedor se está ejecutando
+* Comprueba lo que está haciendo el contenedor (`docker logs contenedor2`)
+
+Por último podemos parar el contenedor y borrarlo con las siguientes instrucciones:
+
+    $ docker stop contenedor2
+    $ docker rm contenedor2
+
+## Creando un contenedor con un servidor web
+
+Tenemos muchas imágenes en el registro público **docker hub**, por ejemplo podemos crear un servidor web con apache 2.4:
+
+    $ docker run -d --name my-apache-app -p 8080:80 httpd:2.4
+
+Vemos que el contenedor se está ejecutando, además con la opción `-p` mapeamos un puerto del equipo donde tenemos instalado el docker, con un puerto del contenedor.  Para probarlo accede desde un navegador a la ip del servidor con docker y al puerto 8080.
+
+Para acceder al log del contenedor podemos ejecutar:
+
+    $ docker logs my-apache-app
