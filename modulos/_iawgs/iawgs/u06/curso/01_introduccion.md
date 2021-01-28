@@ -1,6 +1,6 @@
 ---
 title: "Introducción a docker"
-permalink: /iawgs/u06/curso/01_introduccion.html
+permalink: /iawgs/u06/curso/introduccion.html
 ---
 
 ## Introducción a docker
@@ -114,9 +114,10 @@ Con el comando `docker images` podemos visualizar las imágenes que ya tenemos d
     ubuntu              latest              f63181f19b2f        7 days ago          72.9MB
     hello-world         latest              bf756fb1ae65        13 months ago       13.3kB
 
+
 ## Ejecutando un contenedor interactivo
 
-En este caso usamos la opción `-i` para abrir una sesión interactiva, `-t` nos permite crear un pseudo-terminal que nos va a permitir interaccionar con el contenedor, indicamos un nombre del contenedor con la opción `--name`, y la imagen que vamos a utilizar para crearlo, en este caso “ubuntu”,  y por último el comando que vamos a ejecutar, en este caso `/bin/bash`, que lanzará una sesión bash en el contenedor:
+En este caso usamos la opción `-i` para abrir una sesión interactiva, `-t` nos permite crear un pseudo-terminal que nos va a permitir interaccionar con el contenedor, indicamos un nombre del contenedor con la opción `--name`, y la imagen que vamos a utilizar para crearlo, en este caso `ubuntu`,  y por último el comando que vamos a ejecutar, en este caso `/bin/bash`, que lanzará una sesión bash en el contenedor:
 
     $  docker run -it --name contenedor1 ubuntu /bin/bash 
     oot@2bfa404bace0:/#
@@ -134,6 +135,33 @@ Si el contenedor se está ejecutando podemos ejecutar comando en él con el subc
     contendor1
     $ docker exec contenedor1 ls -al
 
+Con la orden `docker restart` reiniciamos el contendor, lo paramos y lo iniciamos.
+
+Para mostrar información de un contenedor ejecutamos:
+
+    $ docker inspect contenedor1 
+    [
+        {
+            "Id": "178871769ac2fcbc1c73ce378066af01436b52a15894685b7321088468a25db7",
+            "Created": "2021-01-28T19:12:21.764255155Z",
+            "Path": "/bin/bash",
+            "Args": [],
+            "State": {
+                "Status": "exited",
+                "Running": false,
+                "Paused": false,
+                ...
+Nos muestra mucha información, está en formato JSON (JavaScript Object Notation) y nos da datos sobre aspectos como:
+
+* El id del contenedor.
+* Los puertos abiertos y sus redirecciones
+* Los bind mounts y volúmenes usados.
+* El tamaño del contenedor
+* La configuración de red del contenedor.
+* El ENTRYPOINT que es lo que se ejecuta al hacer docker run.
+* El valor de las variables de entorno.
+* Y muchas más cosas....
+
 ## Creando un contenedor demonio
 
 En esta ocasión hemos utilizado la opción `-d` del comando `run`, para la ejecución el comando en el contenedor se haga en segundo plano.
@@ -148,6 +176,10 @@ Por último podemos parar el contenedor y borrarlo con las siguientes instruccio
 
     $ docker stop contenedor2
     $ docker rm contenedor2
+
+Hay que tener en cuenta que un contenedor que esta ejecutándose no puede ser eliminado. Tendríamos que para el contenedor y posteriormente borrarlo. Otra opción es borrarlo a la fuerza:
+
+    $ docker rm -f contenedor2
 
 ## Creando un contenedor con un servidor web
 

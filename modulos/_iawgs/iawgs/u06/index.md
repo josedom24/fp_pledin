@@ -14,7 +14,7 @@ permalink: /iawgs/u06/index.html
 
 ## Contenidos
 
-1. [Introducción a docker](curso/01_introduccion.html)
+1. [Introducción a docker](curso/introduccion.html)
 
 <!--
 * [Ciclo de vida de nuestras aplicaciones en docker](https://iesgn.github.io/cloudandrelated/es_docker.html#/)
