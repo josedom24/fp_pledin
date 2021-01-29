@@ -120,7 +120,7 @@ Con el comando `docker images` podemos visualizar las imágenes que ya tenemos d
 En este caso usamos la opción `-i` para abrir una sesión interactiva, `-t` nos permite crear un pseudo-terminal que nos va a permitir interaccionar con el contenedor, indicamos un nombre del contenedor con la opción `--name`, y la imagen que vamos a utilizar para crearlo, en este caso `ubuntu`,  y por último el comando que vamos a ejecutar, en este caso `/bin/bash`, que lanzará una sesión bash en el contenedor:
 
     $  docker run -it --name contenedor1 ubuntu /bin/bash 
-    oot@2bfa404bace0:/#
+    root@2bfa404bace0:/#
 
 El contenedor se para cuando salimos de él. Para volver a conectarnos a él:
 
@@ -137,7 +137,7 @@ Si el contenedor se está ejecutando podemos ejecutar comando en él con el subc
 
 Con la orden `docker restart` reiniciamos el contendor, lo paramos y lo iniciamos.
 
-Para mostrar información de un contenedor ejecutamos:
+Para mostrar información de un contenedor ejecutamos `docker inspect`:
 
     $ docker inspect contenedor1 
     [
@@ -164,7 +164,7 @@ Nos muestra mucha información, está en formato JSON (JavaScript Object Notatio
 
 ## Creando un contenedor demonio
 
-En esta ocasión hemos utilizado la opción `-d` del comando `run`, para la ejecución el comando en el contenedor se haga en segundo plano.
+En esta ocasión hemos utilizado la opción `-d` del comando `run`, para que la ejecución del comando en el contenedor se haga en segundo plano.
 
     $ docker run -d --name contenedor2 ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
     7b6c3b1c0d650445b35a1107ac54610b65a03eda7e4b730ae33bf240982bba08
