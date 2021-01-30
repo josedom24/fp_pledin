@@ -15,7 +15,7 @@ permalink: /iawgs/u06/index.html
 ## Contenidos
 
 1. [Introducción a docker](curso/introduccion.html)
-
+2. [Imágenes docker](curso/imagenes.html)
 
 * [Ciclo de vida de nuestras aplicaciones en docker](https://iesgn.github.io/cloudandrelated/es_docker.html#/)
 * [Ejercicio: Despliegue de páginas estáticas con docker](docker1.html)
@@ -51,3 +51,4 @@ Mis apuntes sobre docker...
 * [Práctica: Implantación de aplicaciones web PHP en docker](docker_php.html)
 * [Práctica: Implantación de aplicaciones web Python en docker](docker_python.html)
 
+P
