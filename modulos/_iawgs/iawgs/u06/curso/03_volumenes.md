@@ -134,7 +134,7 @@ Además podemos comprobar que podemos modificar el contenido del fichero aunque 
 
 ## Ejercicio: Contenedor mariadb con almacenamiento persistente
 
-Si estudiamos la documentación de la [imagen mariadb]() en Docker Hub, nos indica que podemos crear un contenedor con información persistente de maridb, de la siguiente forma:
+Si estudiamos la documentación de la [imagen mariadb](https://hub.docker.com/_/mariadb) en Docker Hub, nos indica que podemos crear un contenedor con información persistente de maridb, de la siguiente forma:
 
     $ docker run --name some-mariadb -v /home/usuario/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb
 
