@@ -3,7 +3,7 @@ title: "Redes en docker"
 permalink: /iawgs/u06/curso/redes.html
 ---
 
-## Introducción las redes en docker
+## Introducción a las redes en docker
 
 Aunque hasta ahora no lo hemos tenido en cuenta, cada vez que creamos un contenedor, esté se conecta a una red virtual y docker hace una configuración del sistema (usando interfaces puente e iptables) para que la máquina tenga una ip interna, tenga acceso al exterior, podamos mapear (DNAT) puertos,...)
 
@@ -139,7 +139,7 @@ Ahora podemos probar como podemos conectar un contenedor a una red. Para conecta
         inet 172.18.0.3/16 brd 172.18.255.255 scope global eth1
     ...
 
-Tanto al crear un conenedor con el flag `--network`, como con la instrucción `docker netwok connect`, podemos usar algunos otros flags:
+Tanto al crear un contenedor con el flag `--network`, como con la instrucción `docker network connect`, podemos usar algunos otros flags:
 
 * `--dns`: para establecer unos servidores DNS predeterminados.
 * `--ip6`: para establecer la dirección de red ipv6
