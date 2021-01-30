@@ -20,9 +20,11 @@ La primera forma para personalizar las imágenes y distribuirlas es partiendo de
 
 En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la tercera se limita a copiar el sistema de ficheros sin tener en cuenta la información de las imágenes de las que deriva el contenedor (capas, imagen de origen, autor etc..) y además si tenemos volúmenes o bind mounts montados los obviará.
 
+![docker](img/build.png)
+
 ### Distribución a partir de un fichero
 
-1. Arranca un contenedor a aprtir de una imagen base
+1. Arranca un contenedor a a partir de una imagen base
 
         $ docker  run -it --name contenedor debian bash
 
@@ -82,6 +84,24 @@ Los tres primeros pasos son iguales, por lo tanto tenemos nuestra imagen ya crea
 
 
 ## Creación de imágenes con fichero Dockerfile
+
+El método anterior tiene dos inconvenientes:
+
+* **No se puede reproducir la imagen**. Si la perdemos tenemos que recordar toda la secuencia de órdenes que habíamos ejecutado desde que arrancamos el contenedor hasta que teníamos una versión definitiva e hicimos `docker commit`.
+* **No podemos cambiar la imagen de base**. Si ha habido alguna actualización, problemas de seguridad, etc. con la imagen de base tenemos que descargar la nueva versión, volver a crear un nuevo contenedor basado en ella y ejecutar de nuevo toda la secuencia de órdenes.
+
+Por lo que el método preferido para la creación de imágenes es el uso de ficheros `Dockerfile` y el comando `docker build`. Los pasos fundamentales serán:
+
+1. Crear el fichero `Dockerfile`.
+2. Construir la imagen usando la definición guardada en el fichero `Dockerfile` y el comando `docker build`.
+3. Autentificarme en Docker Hub usando el comando `docker login`.
+4. Distribuir ese fichero subiendo la nueva imagen a DockerHub mediante `docker push`.
+
+Con este método vamos a tener las siguientes ventajas:
+
+* **Podremos reproducir la imagen fácilmente** ya que en el fichero `Dockerfile` tenemos todas y cada una de las órdenes necesarias para la construcción de la imagen. Si además ese `Dockerfile` está guardado en un sistema de control de versiones como git podremos, no sólo reproducir la imagen si no asociar los cambios en el `Dockerfile` a los cambios en las versiones de las imágenes creadas.
+* Si queremos cambiar la imagen de base esto es extremadamente sencillo con un `Dockerfile`, únicamente tendremos que modificar la primera línea de ese fichero tal y como explicaremos posteriormente.
+
 
 
 ## Creación automática de imágenes en Docker Hub
