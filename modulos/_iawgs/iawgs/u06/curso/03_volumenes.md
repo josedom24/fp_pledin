@@ -170,3 +170,9 @@ Es decir se va a crear un directorio `/home/usuario/datadir` en el host, donde s
     4 rows in set (0.003 sec)
 
 
+Para terminar: ¿Qué debemos guardar de forma persistente en un contenedor?
+
+* Los datos de la aplicación
+* Los logs del servicio
+* La configuración del servicio: En este caso podemos añadirla a la imagen, pero será necesaria la creación de una nueva imagen si cambiamos la configuración. Si la guardamos en un volumen hay que tener en cuanta que ese fichero lo tenemos que tener en el entorno de producción (puede ser bueno, porque las configuraciones de los distintos entornos puede variar).
+
