@@ -7,19 +7,7 @@ permalink: /iawgs/u06/curso/creacion_imagenes.html
 
 Hasta ahora hemos creado contenedores a partir de las imágenes que encontramos en Docker Hub. Estas imágenes las han creado otras personas.
 
-¿Qué tendríamos que hacer para poder implantar una aplicación web desarrollada a medida con docker?
-
-1. Tendríamos que crear una imágen desde la cuál crear un contenedor que sirva nuestra aplicación.
-2. De esa manera sería muy sencillo diferencial los entorno. En el entorno de desarrollo se crean versiones de la aplicación, a partir de estos cambios se crearían nuevas versiones de la imágen docker, que se distribuiría con el uso de un registro público o privado y en el entorno de producción me bajaría la imagen y crearía un contenedor. Ademñas es fácil pensar que ene ste esquema sería muy fácil introducir el proceso en un entorno de integración contínua para automatizar el proceso: creación, pruebas, distribución y despliegue de la imagen.
-
-Más concretamente **el ciclo de vida de una aplicación docker** lo podría resumir en:
-
-* Paso 1:Desarrollo de nuestra aplicación
-* Paso 2: Creación de la imagen Docker
-* Paso 3: Probamos nuestra aplicación en el entorno de desarrollo o prueba
-* Paso 4: Distribuimos nuestra imagen
-* Paso 5:Implantación de la aplicación en el entorno de producción
-* Paso 6: Modificación de la aplicación, volviendo al paso 2.
+Para crea un contenedor que sirva nuestra aplicación, tendremos que crear una imagen personaliza, es lo que llamamos "dockerizar" una aplicación.
 
 ## Creación de una nueva imagen a partir de un contenedor
 
@@ -44,29 +32,29 @@ En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la terc
 
 3. Crear una nueva imagen partiendo de ese contenedor usando `docker commit`. Con esta instrucción se creará una nueva imagen con las capas de la imagen base más la capa propia del contenedor. Al creala no vot a poner etiqueta, por lo que sera `latest`.
 
-    $ docker commit contenedor josedom24/myapache2
-    sha256:017a4489735f91f68366f505e4976c111129699785e1ef609aefb51615f98fc4
+        $ docker commit contenedor josedom24/myapache2
+        sha256:017a4489735f91f68366f505e4976c111129699785e1ef609aefb51615f98fc4
 
-    $ docker images
-    REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
-    josedom24/myapache2       latest              017a4489735f        44 seconds ago      243MB
-    ...
+        $ docker images
+        REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
+        josedom24/myapache2       latest              017a4489735f        44 seconds ago      243MB
+        ...
 4. Guardar esa imagen en un archivo .tar usando el comando `docker save`:
 
-    docker save josedom24/myapache2 > myapache2.tar
+        $ docker save josedom24/myapache2 > myapache2.tar
 
 5. Distribuir el fichero .tar
 
 6. Si me llega un fichero .tar puedo añadir la imagen a mi repositorio local:
 
-    $ docker rmi josedom24/myapache2:latest 
-    Untagged: josedom24/myapache2:latest
-    Deleted: sha256:017a4489735f91f68366f505e4976c111129699785e1ef609aefb51615f98fc4
-    Deleted: sha256:761d2ff599422097fcf3dd1a13f50b9bf924e453efee8617e29ba78602efcf21
+        $ docker rmi josedom24/myapache2:latest 
+        Untagged: josedom24/myapache2:latest
+        Deleted: sha256:017a4489735f91f68366f505e4976c111129699785e1ef609aefb51615f98fc4
+        Deleted: sha256:761d2ff599422097fcf3dd1a13f50b9bf924e453efee8617e29ba78602efcf21
     
-    $ docker load -i myapache2.tar          
-    6a30654d94bc: Loading layer [==================================================>]  132.4MB/132.4MB
-    Loaded image: josedom24/myapache2:latest
+        $ docker load -i myapache2.tar          
+        6a30654d94bc: Loading layer [==================================================>]  132.4MB/132.4MB
+        Loaded image: josedom24/myapache2:latest
 
 
 ### Distribución usando Docker Hub
@@ -98,6 +86,16 @@ Los tres primeros pasos son iguales, por lo tanto tenemos nuestra imagen ya crea
 
 ## Creación automática de imágenes en Docker Hub
 ## Ciclo de vida de nuestras aplicaciones con docker
+
+Más concretamente **el ciclo de vida de una aplicación docker** lo podría resumir en:
+
+* Paso 1:Desarrollo de nuestra aplicación
+* Paso 2: Creación de la imagen Docker
+* Paso 3: Probamos nuestra aplicación en el entorno de desarrollo o prueba
+* Paso 4: Distribuimos nuestra imagen
+* Paso 5:Implantación de la aplicación en el entorno de producción
+* Paso 6: Modificación de la aplicación, volviendo al paso 2.
+
 ## Ejercicio: Despliegue de páginas estáticas con docker
 
 ## Ejercicios
