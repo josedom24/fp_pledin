@@ -64,7 +64,7 @@ Los tres primeros pasos son iguales, por lo tanto tenemos nuestra imagen ya crea
 4. Autentificarme en Docker Hub usando el comando `docker login`.
 
         $ docker login 
-        Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.  com to create one.
+        Login with your Docker ID to push and pull images from Docker Hub...
         Username: usuario
         Password: 
         ...
