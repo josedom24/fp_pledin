@@ -63,20 +63,20 @@ Los tres primeros pasos son iguales, por lo tanto tenemos nuestra imagen ya crea
 
 4. Autentificarme en Docker Hub usando el comando `docker login`.
 
-    $ docker login 
-    Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
-    Username: usuario
-    Password: 
-    ...
-    Login Succeeded
+        $ docker login 
+        Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.  com to create one.
+        Username: usuario
+        Password: 
+        ...
+        Login Succeeded
 
 5. Distribuir ese fichero subiendo la nueva imagen a DockerHub mediante `docker push`.
 
-    $ docker push josedom24/myapache2
-    The push refers to repository [docker.io/josedom24/myapache2]
-    6a30654d94bc: Pushed 
-    4762552ad7d8: Mounted from library/debian 
-    latest: digest: sha256:25b34b8342ac8b79610d3058aa07ec935dcf5d33db7544da9a216050e1d2077a size: 741
+        $ docker push josedom24/myapache2
+        The push refers to repository [docker.io/josedom24/myapache2]
+        6a30654d94bc: Pushed 
+        4762552ad7d8: Mounted from library/debian 
+        latest: digest: sha256:25b34b8342ac8b79610d3058aa07ec935dcf5d33db7544da9a216050e1d2077a size: 741
 
 6. Ya cualquier persona puede bajar la imagen usando `docker pull`.
 
