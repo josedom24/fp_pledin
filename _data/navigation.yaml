@@ -55,10 +55,10 @@ iawgs:
         url: /iawgs/u03
       - title: Java
         url: /iawgs/u04
-#      - title: Integración Continúa
-#        url: /iawgs/u05
-#      - title: Docker
-#        url: /iawgs/u06
+      - title: Integración Continúa
+        url: /iawgs/u05
+      - title: Docker
+        url: /iawgs/u06
   - title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"

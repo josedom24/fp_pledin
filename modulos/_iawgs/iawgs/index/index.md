@@ -14,10 +14,8 @@ El índice de contenidos que vamos a estudiar será:
 * [Implantación de aplicaciones web Python](u03)
 * [Despliegue de aplicaciones web Java](u04)
 * [Introducción a la integración continúa y despliegue continuo](u05)
-
-<!--
 * [Despliegue de aplicaciones web con contenedores. Docker](u06)
--->
+
 
 ### Programación por semanas
 
