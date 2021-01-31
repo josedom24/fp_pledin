@@ -118,3 +118,15 @@ Normalmente las imágenes de sistemas operativos genéricos, no tienen definida 
 Sin embargo las imágenes que nos ofrecen alguna aplicación en concreto y nos ofrecen algún servicio (web, base de datos,...) tienen definido el proceso que tienen que ejecutar al crear el contenedor. Por ejemplo, como ya hemos visto al crear un contenedor de la imagen `httpd:2.4` ese contenedor ejecuta una servidor web sin que nosotros lo hayamos indicado:
 
     $ docker run -d --name my-apache-app -p 8080:80 httpd:2.4
+
+{% capture notice-text %} 
+## Ejercicios
+
+1. Descarga las siguientes imágenes: `ubuntu:18.04`, `httpd`, `tomcat:9.0.39-jdk11`, `jenkins/jenkins:lts`, `php:7.4-apache`.
+2. Muestras las imágenes que tienes descargadas.
+3. Crea un contenedor demonio con la imagen php:7.4-apache.
+4. Comprueba el tamaño del contenedor en el disco duro.
+5. Con la instrucción `docker cp` podemos copiar ficheros a o desde un contenedor. Copia un fichero `info.php` al directorio `/var/www/html` del contenedor.
+6. Vuelve a comprobar el espacio ocupado por el contenedor.
+7. Accede al fichero `info.php` desde un navegador web.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
