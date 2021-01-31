@@ -14,6 +14,8 @@ permalink: /iawgs/u06/index.html
 
 ## Contenidos
 
+* [Presentación: Introducción a docker](https://raw.githubusercontent.com/albertomolina/beamer-focus/main/intro-docker.pdf)
+
 1. [Introducción a docker](curso/introduccion.html)
 2. [Imágenes docker](curso/imagenes.html)
 3. [Almacenamiento en docker](curso/almacenamiento.html)
