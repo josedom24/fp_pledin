@@ -3,10 +3,9 @@ title: "Introducción a docker"
 permalink: /iawgs/u06/curso/introduccion.html
 ---
 
-## Introducción a docker
-
 * [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker.pdf)
 
+## Introducción a docker
 
 Docker es una tecnología de virtualización "ligera" cuyo elemento básico es la utilización de contenedores en vez de máquinas virtuales y cuyo objetivo principal es el despliegue de aplicaciones encapsuladas en dichos contenedores.
 

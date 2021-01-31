@@ -3,6 +3,8 @@ title: "Imágenes docker"
 permalink: /iawgs/u06/curso/imagenes.html
 ---
 
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/imagenes.pdf)
+
 ## Registros de imágenes: Docker Hub
 
 ![docker](img/docker2.png)
@@ -15,18 +17,18 @@ El nombre de una imagen suele estar formado por tres partes:
 
     usuario/nombre:etiqueta
 
-* `usuario`: El nombre del usuario que la ha generado. Si la subimos s Docker Hub debe ser el mismo usuario que tenemos dado de alta en nuestra cuenta. Las **imáges oficiales** en Docker Hub no tienen nombre de usuario.
+* `usuario`: El nombre del usuario que la ha generado. Si la subimos a Docker Hub debe ser el mismo usuario que tenemos dado de alta en nuestra cuenta. Las **imáges oficiales** en Docker Hub no tienen nombre de usuario.
 * `nombre`: Nombre significativo de la imagen.
 * `etiqueta`: Nos permite versionar las imágenes. De esta manera controlamos los cambios que se van produciendo en ella. Si no indicamos etiqueta, por defecto se usa la etiqueta `latest`, por lo que la mayoría de las imágenes tienen una versión con este nombre.
 
 
 ## Gestión de imágenes
 
-Para crear un contenedor es necesario usar una imagen que tengamos descargado en nuestro registro local. Por lo tanto al ejecutar `docker run` se comprueba si tenemos la versión indicada de la imágene y si no es así, se precede a su descarga.
+Para crear un contenedor es necesario usar una imagen que tengamos descargado en nuestro registro local. Por lo tanto al ejecutar `docker run` se comprueba si tenemos la versión indicada de la imagen y si no es así, se precede a su descarga.
 
 Las principales instrucciones para trabajar con imágenes son:
 
-* `docker images`: Muestra las imágnees que tenemos en el registro local.
+* `docker images`: Muestra las imágenes que tenemos en el registro local.
 * `docker pull`: Nos permite descargar la última versión de la imagen indicada.
 * `docker rmi`: Nos permite eliminar imágenes. No podemos eliminar una imágen si tenemos algún contenedor creada a partir de ella.
 * `docker inspect`: nos da información sobre la imágen indicada:
@@ -104,7 +106,7 @@ Por último al solicitar información de la imágen, podemos ver información so
 
 ## Creación de instancias desde imágenes
 
-Si navegas un poco por las distintas imágenes que encuentras en el registro de Docker HUB, te darás cuenta, que existen dos tipos de imágenes según la utilidad que nos ofrecen.
+Si navegas un poco por las distintas imágenes que encuentras en el registro de Docker Hub, te darás cuenta, que existen dos tipos de imágenes según la utilidad que nos ofrecen.
 
 * Ejecutaremos contenedores de distintos sistemas operativos (Ubuntu, CentOs, Debian, Fedora....).
 * Ejecutaremos contenedores que tengan servicios asociados (Apache, MySQL, Tomcat....).
