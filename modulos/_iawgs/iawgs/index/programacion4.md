@@ -51,3 +51,24 @@ permalink: /iawgs/programacion4.html
 * Grupo 2 **(Clase)**
 
     * Práctica: Introducción a la integración continúa
+
+### Lunes, 25 de enero
+
+* Grupo 1 **(Casa)**
+
+    * Presentación Práctica: Introducción a la integración continúa
+
+
+* Grupo 2 **(Clase)**
+
+    * Presentación Práctica: Introducción a la integración continúa (Videoconferencia)
+
+### Jueves, 28 de enero
+
+* Grupo 1 **(Clase)**
+
+    * Práctica: Introducción a la integración continúa
+
+* Grupo 2 **(Casa)**
+
+    * Práctica: Introducción a la integración continúa
