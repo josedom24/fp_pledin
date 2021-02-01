@@ -18,8 +18,7 @@ Para terminar la unidad vamos a hacer un estudio comparativo sobre el rendimient
 * [Aumento de rendimiento en servidores web](aumento_rendimiento.html)
 * [Ejecución de script Python](script_python.html)
 
-<!--
+
 ## Prácticas
 
-* [Práctica: Ejecución de scripts PHP y Python. Rendimiento](practica.html)
--->
+* [Práctica: Ejecución de scripts PHP y Python. Rendimiento](practica_2020.html)
