@@ -110,8 +110,8 @@ seguridadgs:
         url: /seguridadgs/u02
       - title: "Cortafuegos"
         url: /seguridadgs/u03
-#      - title: "VPN"
-#        url: /seguridadgs/u04
+      - title: "VPN"
+        url: /seguridadgs/u04
 #      - title: "Alta disponibilidad"
 #        url: /seguridadgs/u05
 

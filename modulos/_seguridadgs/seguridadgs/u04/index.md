@@ -5,8 +5,8 @@ permalink: /seguridadgs/u04/index.html
 
 ## Teoría
 
-* [Presentación: VPN](doc/VPN.pdf)
-* [Presentación: OpenVPN](doc/OpenVPN.pdf)
+* [Presentación: VPN](https://raw.githubusercontent.com/josedom24/presentaciones/main/sad/vpn.pdf)
+* [Presentación: OpenVPN](https://raw.githubusercontent.com/josedom24/presentaciones/main/sad/openvpn.pdf)
 
 
 ## Enlaces interesantes
@@ -22,6 +22,8 @@ permalink: /seguridadgs/u04/index.html
 * [Configuración de openVPN de acceso remoto con clave estática compartida](ejercicio.html)
 * [Configuración de openVPN basada en SSL/TLS](ejercicio2.html)
 
+<!--
 ## Práctica
 
 * [Práctica: VPN con OpenVPN y certificados x509](practica.html)
+-->
