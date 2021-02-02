@@ -12,4 +12,3 @@ Escribe distintas funciones python que lea el siguiente [fichero json](ej2.json)
 * Para cada uno de las pruebas, muestra su título y sus profesores.
 
 
-* [Solución](ejercicio2.py)
