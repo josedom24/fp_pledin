@@ -3,7 +3,7 @@ title: "Imágenes docker"
 permalink: /iawgs/u06/curso/imagenes.html
 ---
 
-* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/imagenes.pdf)
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/imagenes_docker.pdf)
 
 ## Registros de imágenes: Docker Hub
 

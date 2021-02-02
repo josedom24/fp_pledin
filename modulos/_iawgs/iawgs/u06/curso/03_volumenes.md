@@ -3,9 +3,11 @@ title: "Almacenamiento en docker"
 permalink: /iawgs/u06/curso/almacenamiento.html
 ---
 
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/almacenamiento_docker.pdf)
+
 ## Los contenedores son efímeros
 
-**Los contenedores son efímeros**, es decir, los ficheros, datos y configuraciones que creemos en los contenedores sobreviven a las paradas de los mismos pero, sin embargo, son destruidos si el contenedor es destruido. 
+**Los contenedores son efímeros**, es decir, los ficheros, datos y configuraciones que creamos en los contenedores sobreviven a las paradas de los mismos pero, sin embargo, son destruidos si el contenedor es destruido. 
 
 Veamos un ejemplo:
 
@@ -179,6 +181,7 @@ Es decir se va a crear un directorio `/home/usuario/datadir` en el host, donde s
     +--------------------+
     4 rows in set (0.003 sec)
 
+## ¿Qué información tenemos que guardar?
 
 Para terminar: ¿Qué debemos guardar de forma persistente en un contenedor?
 
