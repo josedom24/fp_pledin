@@ -66,8 +66,8 @@ Algunos comando útiles para trabajar con volúmenes docker:
 
 Veamos como puedo usar los volúmenes y los bind mounts en los contenedores. Para cualquiera de los dos casos lo haremos mediante el uso de dos flags de la orden `docker run`:
 
-* El flag `--volume` o `-v`, lo utilizaremos para establecer bind mounts.
-* El flag `--mount`, nos servirá para establecer bind mounts y para usar volúmenes previamente definidos.
+* El flag `--volume` o `-v`
+* El flag `--mount`
 
 Es importante que tengamos en cuenta dos cosas importantes a la hora de realizar estas operaciones:
 
@@ -91,7 +91,7 @@ Es importante que tengamos en cuenta dos cosas importantes a la hora de realizar
     $ docker rm -f my-apache-app 
     my-apache-app
 
-    $ docker run -d --name my-apache-app --mount type=volume,src=miweb,dst=/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
+    $ docker run -d --name my-apache-app -v miweb:/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
     baa3511ca2227e30d90fa2b4b225e209889be4badff583ce58ac1feaa73d5d77
 
     $ curl http://localhost:8080
@@ -102,6 +102,15 @@ Una aclaración, si hubiéramos ejecutado:
     $ docker run -d --name my-apache-app --mount type=volume,dst=/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
 
 Al no indicar el volumen, se creará un nuevo volumen.
+
+Otra aclaración, si usamos el flag `-v` e indicamos un nombre, se creará un volumen docker nuevo.
+
+    $ docker run -d --name my-apache-app -v wwwroot:/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
+
+    $ docker volume list
+    DRIVER              VOLUME NAME
+    ...
+    local               wwwroot
 
 ### Ejemplo usando bind mount
 
@@ -131,6 +140,7 @@ Además podemos comprobar que podemos modificar el contenido del fichero aunque 
     $ echo "<h1>Adios</h1>" > web/index.html 
     $ curl http://localhost:8080
     <h1>Adios</h1>
+
 
 ## Ejercicio: Contenedor mariadb con almacenamiento persistente
 
@@ -191,12 +201,13 @@ Para terminar: ¿Qué debemos guardar de forma persistente en un contenedor?
     * Crea un directorio en tu host y dentro crea un fichero `index.html`.
     * Crea un contenedor desde la imagen `php:7.4-apache` donde montes en el directorio `/var/www/html` el directorio que has creado por medio de `bind mount`.
     * Accede al contenedor desde el navegador para ver la información ofrecida por el fichero `index.html`.
-    * Modifica el contenido del fichero `index.html` en tu host y comprueba que al refrecar la página ofrecia por el contenedor, el contenido ha cambiado.
+    * Modifica el contenido del fichero `index.html` en tu host y comprueba que al refrescar la página ofrecida por el contenedor, el contenido ha cambiado.
     * Borra el contenedor
     * Crea un nuevo contenedor y monta el mismo directorio como en el ejercicio anterior.
     * Accede al contenedor desde el navegador para ver la información ofrecida por el fichero `index.html`. ¿Se sigue viendo el mismo contenido?
 3. Contenedores con almacenamiento persistente
-    * Crea un contenedor desde la imagen `nextcloud` (usando sqlite) configurando el almacenamiento como nos muestra la documentación de la imagen en Docker Hub. Sube algún fichero.
+    * Crea un contenedor desde la imagen `nextcloud` (usando sqlite) configurando el almacenamiento como nos muestra la documentación de la imagen en Docker Hub (pero utilizando bind mount). Sube algún fichero.
     * Elimina el contenedor.
-    * crea un contenedor nuevo con la misma configuración de volúmenes. Comprueba que la infromación que teníamos (ficheros, usaurio, ...), sigue existiendo.
+    * Crea un contenedor nuevo con la misma configuración de volúmenes. Comprueba que la información que teníamos (ficheros, usuaurio, ...), sigue existiendo.
+    * Comprueba el contenido de directorio que se ha creado en el host.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
