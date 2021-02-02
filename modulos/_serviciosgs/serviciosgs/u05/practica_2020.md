@@ -35,7 +35,8 @@ A partir de esa configuración vamos a intentar aumentar el rendimiento de nuest
 {% capture notice-text %}
 
 * **Tarea 1**: Vamos a configurar una máquina con la configuración ganadora: **nginx + fpm_php (socket unix)**. Para ello ejecuta la receta ansible que encontraras en este [repositorio](https://github.com/josedom24/ansible_nginx_fpm_php).
-* **Tarea 2**: Configura un **proxy inverso - caché Varnish** escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración. Realiza pruebas de rendimiento (quedate con el resultado del parámetro `Requests per second` y comprueba si hemos aumentado el rendimiento. Si hacemos varias peticiones a la misma URL, ¿cuantas peticiones llegan al servidor web? (comprueba el fichero `access.log` para averiguarlo).
+* **Tarea 2**: Realiza algunas prueba de rendimiento con varios valores distintos para el nivel de concurrencia (10,20,50,100) y comprueba que aproximadamente el resultado es 600 peticiones/segundo (parámetro `Requests per second` de `ab`).
+* **Tarea 3**: Configura un **proxy inverso - caché Varnish** escuchando en el puerto 80 y que se comunica con el servidor web por el puerto 8080. Entrega y muestra una comprobación de que varnish está funcionando con la nueva configuración. Realiza pruebas de rendimiento (quedate con el resultado del parámetro `Requests per second` y comprueba si hemos aumentado el rendimiento. Si hacemos varias peticiones a la misma URL, ¿cuantas peticiones llegan al servidor web? (comprueba el fichero `access.log` para averiguarlo).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Ejecución de scripts Python
