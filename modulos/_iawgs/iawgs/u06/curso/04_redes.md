@@ -3,6 +3,8 @@ title: "Redes en docker"
 permalink: /iawgs/u06/curso/redes.html
 ---
 
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/redes_docker.pdf)
+
 ## Introducción a las redes en docker
 
 Aunque hasta ahora no lo hemos tenido en cuenta, cada vez que creamos un contenedor, esté se conecta a una red virtual y docker hace una configuración del sistema (usando interfaces puente e iptables) para que la máquina tenga una ip interna, tenga acceso al exterior, podamos mapear (DNAT) puertos,...)
@@ -19,7 +21,7 @@ Aunque hasta ahora no lo hemos tenido en cuenta, cada vez que creamos un contene
 
 Nota: Hemos usado la opción `--rm` para al finalizar de ejecutar el proceso, el contenedor se elimina.
 
-Observamos que el contenedor tiene una ip en la red `172.17.0.0/16`. además podemos comprobar que se ha creado un `bridge` en el host, al que se conectan los contenedores:
+Observamos que el contenedor tiene una ip en la red `172.17.0.0/16`. Además podemos comprobar que se ha creado un `bridge` en el host, al que se conectan los contenedores:
 
     $ ip a
     ...
@@ -75,7 +77,7 @@ Tenemos que hacer una diferenciación entre dos tipos de redes **bridged**:
 
 Esta red "bridged" por defecto, que es la usada por defecto por los contenedores, se diferencia en varios aspectos de las redes "bridged" que creamos nosotros. Estos aspectos son los siguientes:
 
-* Las redes que nosotros definamos proporcionan **resolución DNS** entre los contenedores cosa que la red por defecto no hace a no ser que usemos opciones que ya se consideran "deprectated" (`--link`).
+* Las redes que nosotros definamos proporcionan **resolución DNS** entre los contenedores, cosa que la red por defecto no hace a no ser que usemos opciones que ya se consideran "deprectated" (`--link`).
 * Puedo **conectar en caliente** a los contenedores redes "bridged" definidas por el usuario. Si uso la red por defecto tengo que parar previamente el contenedor.
 * Me permite gestionar de manera más segura el **aislamiento** de los contenedores, ya que si no indico una red al arrancar un contenedor éste se incluye en la red por defecto donde pueden convivir servicios que no tengan nada que ver.
 * Tengo más **control** sobre la configuración de las redes si las defino yo. Los contenedores de la red por defecto comparten todos la misma configuración de red (MTU, reglas ip tables etc...).
