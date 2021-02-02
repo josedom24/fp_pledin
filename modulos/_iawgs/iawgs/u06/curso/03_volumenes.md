@@ -176,3 +176,27 @@ Para terminar: ¿Qué debemos guardar de forma persistente en un contenedor?
 * Los logs del servicio
 * La configuración del servicio: En este caso podemos añadirla a la imagen, pero será necesaria la creación de una nueva imagen si cambiamos la configuración. Si la guardamos en un volumen hay que tener en cuanta que ese fichero lo tenemos que tener en el entorno de producción (puede ser bueno, porque las configuraciones de los distintos entornos puede variar).
 
+{% capture notice-text %} 
+## Ejercicios
+
+1. Vamos a trabajar con volúmenes docker:
+    * Crea un volumen docker que se llame `miweb`.
+    * Crea un contenedor desde la imagen `php:7.4-apache` donde montes en el directorio `/var/www/html` (que sabemos que es el docuemntroot del servidor que nos ofrece esa imagen) el volumen docker que has creado.
+    * Utiliza el comando `docker cp` para copiar un fichero `info.php` en el directorio `/var/www/html`.
+    * Accede al contenedor desde el navegador para ver la información ofrecida por el fichero `info.php`.
+    * Borra el contenedor
+    * Crea un nuevo contenedor y monta el mismo volumen como en el ejercicio anterior.
+    * Accede al contenedor desde el navegador para ver la información ofrecida por el fichero `info.php`. ¿Seguía existiendo ese fichero?
+2. Vamos a trabajar con bind mount:
+    * Crea un directorio en tu host y dentro crea un fichero `index.html`.
+    * Crea un contenedor desde la imagen `php:7.4-apache` donde montes en el directorio `/var/www/html` el directorio que has creado por medio de `bind mount`.
+    * Accede al contenedor desde el navegador para ver la información ofrecida por el fichero `index.html`.
+    * Modifica el contenido del fichero `index.html` en tu host y comprueba que al refrecar la página ofrecia por el contenedor, el contenido ha cambiado.
+    * Borra el contenedor
+    * Crea un nuevo contenedor y monta el mismo directorio como en el ejercicio anterior.
+    * Accede al contenedor desde el navegador para ver la información ofrecida por el fichero `index.html`. ¿Se sigue viendo el mismo contenido?
+3. Contenedores con almacenamiento persistente
+    * Crea un contenedor desde la imagen `nextcloud` (usando sqlite) configurando el almacenamiento como nos muestra la documentación de la imagen en Docker Hub. Sube algún fichero.
+    * Elimina el contenedor.
+    * crea un contenedor nuevo con la misma configuración de volúmenes. Comprueba que la infromación que teníamos (ficheros, usaurio, ...), sigue existiendo.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
