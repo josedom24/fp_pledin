@@ -24,6 +24,7 @@ permalink: /iawgs/u06/index.html
     * [Creación de una nueva imagen a partir de un contenedor](curso/creacion_imagenes_contenedor.html)
     * [Creación de imágenes con fichero Dockerfile](curso/creacion_imagenes_dockerfile.html)
     * [Creación automática de imágenes en Docker Hub](curso/creacion_imagenes_dockerhub.html)
+    * [Ejemplos de ficheros Dockerfile]()
     * [Ciclo de vida de nuestras aplicaciones con docker](curso/ciclo_vida.html)
 
 

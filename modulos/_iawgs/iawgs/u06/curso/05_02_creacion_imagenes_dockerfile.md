@@ -71,6 +71,8 @@ Tenemos que tener en cuenta que cada instrucción ejecutada crea una imagen inte
 
 Para terminar indicar que la creación de imágenes intermedias generadas por la ejecución de cada instrucción del `Dockerfile`, es un mecanismo de caché, es decir, si en algún momento falla la creación de la imagen, al corregir el `Dockerfile` y volver a construir la imagen, los pasos que habían funcionado anteriormente no se repiten ya que tenemos a nuestra disposición las imágenes intermedias, y el proceso continúa por la instrucción que causó el fallo.
 
+## Ejemplo de  Dockerfile
+
 Vamos a crear un directorio (**nuestro entorno**) donde vamos a crear un Dockerfile y un fichero `index.html`:
 
         cd build
@@ -98,6 +100,8 @@ Una vez terminado, podríamos ver que hemos generado una nueva imagen:
         ...
 
 Y ya podríamos crear un nuevo contenedor o distribuir la imagen usando alguno de los métodos anteriormente estudiados.
+
+Si usamos el parámetro `--no-cache` en `docker build` haríamos la construcción de una imagen sin usar las capas cacheadas por haber realizado anteriormente imágenes con capas similares.
 
 ## Buenas prácticas al crear DockerfilePermalink
 
