@@ -20,7 +20,7 @@ Con este método vamos a tener las siguientes ventajas:
 * **Podremos reproducir la imagen fácilmente** ya que en el fichero `Dockerfile` tenemos todas y cada una de las órdenes necesarias para la construcción de la imagen. Si además ese `Dockerfile` está guardado en un sistema de control de versiones como git podremos, no sólo reproducir la imagen si no asociar los cambios en el `Dockerfile` a los cambios en las versiones de las imágenes creadas.
 * Si queremos cambiar la imagen de base esto es extremadamente sencillo con un `Dockerfile`, únicamente tendremos que modificar la primera línea de ese fichero tal y como explicaremos posteriormente.
 
-### El fichero Dockerfile
+## El fichero Dockerfile
 
 Un fichero `Dockerfile` es un conjunto de instrucciones que serán ejecutadas de forma secuencial para construir una nueva imagen docker. Cada una de estas instrucciones crea una nueva capa en la imagen que estamos creando. 
 
@@ -59,7 +59,7 @@ Podemos crear un contenedor a partir de la imagen generada:
 * `docker run centos:centos7`: Se creará el contenedor con el servidor web escuchando en el puerto 80.
 * `docker run centos:centros7 -p 8080`: Se creará el contenedor con el servidor web escuchando en el puerto 8080.
 
-### Construyendo imágenes con docker build
+## Construyendo imágenes con docker build
 
 El comando `docker build` construye la nueva imagen leyendo las instrucciones del fichero `Dockerfile` y la información de un **entorno**, que para nosotros va a ser un directorio (aunque también podemos guardar información, por ejemplo, en un repositorio git).
 
@@ -99,7 +99,7 @@ Una vez terminado, podríamos ver que hemos generado una nueva imagen:
 
 Y ya podríamos crear un nuevo contenedor o distribuir la imagen usando alguno de los métodos anteriormente estudiados.
 
-### Buenas prácticas al crear DockerfilePermalink
+## Buenas prácticas al crear DockerfilePermalink
 
 * **Los contenedores deber ser "efímeros"**: Cuando decimos "efímeros" queremos decir que la creación, parada, despliegue de los contenedores creados a partir de la imagen que vamos a generar con nuestro Dockerfile debe tener una mínima configuración.
 * **Uso de ficheros `.dockerignore`**: Como hemos indicado anteriormente, todos los ficheros del contexto se envían al *docker engine*, es recomendable usar un directorio vacío donde vamos creando los ficheros que vamos a enviar. Además, para aumentar el rendimiento, y no enviar al daemon ficheros innecesarios podemos hacer uso de un fichero `.dockerignore`, para excluir ficheros y directorios.

@@ -14,7 +14,7 @@ En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la terc
 
 
 
-### Distribución a partir de un fichero
+## Distribución a partir de un fichero
 
 1. Arranca un contenedor a a partir de una imagen base
 
@@ -51,7 +51,7 @@ En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la terc
         Loaded image: josedom24/myapache2:latest
 
 
-### Distribución usando Docker Hub
+## Distribución usando Docker Hub
 
 Los tres primeros pasos son iguales, por lo tanto tenemos nuestra imagen ya creada después de ejecutar `docker commit`, los siguientes pasos serían:
 
