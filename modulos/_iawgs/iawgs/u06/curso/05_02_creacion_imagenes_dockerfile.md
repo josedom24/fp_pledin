@@ -1,9 +1,7 @@
 ---
-title: "Creación de una nueva imagen a partir de un contenedor"
+title: "Creación de imágenes con fichero Dockerfile"
 permalink: /iawgs/u06/curso/creacion_imagenes_dockerfile.html
 ---
-
-## Creación de imágenes con fichero Dockerfile
 
 El método anterior tiene dos inconvenientes:
 
