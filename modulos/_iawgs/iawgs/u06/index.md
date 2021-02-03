@@ -25,6 +25,8 @@ permalink: /iawgs/u06/index.html
     * [Creación de imágenes con fichero Dockerfile](curso/creacion_imagenes_dockerfile.html)
     * [Creación automática de imágenes en Docker Hub](curso/creacion_imagenes_dockerhub.html)
     * [Ciclo de vida de nuestras aplicaciones con docker](curso/ciclo_vida.html)
+
+
 <!--
 * [Ciclo de vida de nuestras aplicaciones en docker](https://iesgn.github.io/cloudandrelated/es_docker.html#/)
 * [Ejercicio: Despliegue de páginas estáticas con docker](docker1.html)
