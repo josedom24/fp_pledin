@@ -20,7 +20,11 @@ permalink: /iawgs/u06/index.html
 2. [Imágenes docker](curso/imagenes.html)
 3. [Almacenamiento en docker](curso/almacenamiento.html)
 4. [Redes en docker](curso/redes.html)
-
+5. [Creación de imágenes en docker](curso/creacion_imagenes.html)
+    * [Creación de una nueva imagen a partir de un contenedor](curso/creacion_imagenes_contenedor.html)
+    * [Creación de imágenes con fichero Dockerfile](curso/creacion_imagenes_dockerfile.html)
+    * [Creación automática de imágenes en Docker Hub](curso/creacion_imagenes_dockerhub.html)
+    * [Ciclo de vida de nuestras aplicaciones con docker](curso/ciclo_vida.html)
 <!--
 * [Ciclo de vida de nuestras aplicaciones en docker](https://iesgn.github.io/cloudandrelated/es_docker.html#/)
 * [Ejercicio: Despliegue de páginas estáticas con docker](docker1.html)
