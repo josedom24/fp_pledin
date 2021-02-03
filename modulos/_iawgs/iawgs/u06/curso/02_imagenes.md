@@ -31,6 +31,7 @@ Las principales instrucciones para trabajar con imágenes son:
 * `docker images`: Muestra las imágenes que tenemos en el registro local.
 * `docker pull`: Nos permite descargar la última versión de la imagen indicada.
 * `docker rmi`: Nos permite eliminar imágenes. No podemos eliminar una imágen si tenemos algún contenedor creada a partir de ella.
+* `docker search`: Busca imágenes en Docker Hub.
 * `docker inspect`: nos da información sobre la imágen indicada:
     * El id y el checksum de la imagen.
     * Los puertos abiertos.
