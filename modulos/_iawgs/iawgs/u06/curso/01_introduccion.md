@@ -161,6 +161,10 @@ Nos muestra mucha información, está en formato JSON (JavaScript Object Notatio
 * El valor de las variables de entorno.
 * Y muchas más cosas....
 
+En realidad, todas las imágenes tienen definidas un proceso que se ejecuta, en concreto la imagen `ubuntu` tiene definida por defecto el proceso `bash`, por lo que podríamos haber ejecutado:
+
+    $  docker run -it --name contenedor1 ubuntu
+
 ## Creando un contenedor demonio
 
 En esta ocasión hemos utilizado la opción `-d` del comando `run`, para que la ejecución del comando en el contenedor se haga en segundo plano.

@@ -112,11 +112,17 @@ Si navegas un poco por las distintas imágenes que encuentras en el registro de 
 * Ejecutaremos contenedores de distintos sistemas operativos (Ubuntu, CentOs, Debian, Fedora....).
 * Ejecutaremos contenedores que tengan servicios asociados (Apache, MySQL, Tomcat....).
 
-Normalmente las imágenes de sistemas operativos genéricos, no tienen definida el proceso que debe ejecutar el contenedor. Por ello cuando creamos un contenedor a partir de ellos indicamos el comando:
+Todas las imágenes tiene definidas un proceso que se ejecuta por defecto, pero en la mayoría de los casos podemos indicar un proceso al crear un contenedor.
+
+Por ejemplo en la imagen ´ubuntu` el proceso pode defecto es `bash`, por lo tanto podemos ejecutar:
+
+    $  docker run -it --name contenedor1 ubuntu 
+
+Pero podemos indicar el comando a ejecutar en la creación del contenedor:
 
     $ docker run ubuntu /bin/echo 'Hello world'
 
-Sin embargo las imágenes que nos ofrecen alguna aplicación en concreto y nos ofrecen algún servicio (web, base de datos,...) tienen definido el proceso que tienen que ejecutar al crear el contenedor. Por ejemplo, como ya hemos visto al crear un contenedor de la imagen `httpd:2.4` ese contenedor ejecuta una servidor web sin que nosotros lo hayamos indicado:
+Otro ejemplo: la imagen `httpd:2.4` ejecuta un servidor web por defecto, por lo tanto al crear el contenedor:
 
     $ docker run -d --name my-apache-app -p 8080:80 httpd:2.4
 
