@@ -114,7 +114,7 @@ Si navegas un poco por las distintas imágenes que encuentras en el registro de 
 
 Todas las imágenes tiene definidas un proceso que se ejecuta por defecto, pero en la mayoría de los casos podemos indicar un proceso al crear un contenedor.
 
-Por ejemplo en la imagen ´ubuntu` el proceso pode defecto es `bash`, por lo tanto podemos ejecutar:
+Por ejemplo en la imagen `ubuntu` el proceso pode defecto es `bash`, por lo tanto podemos ejecutar:
 
     $  docker run -it --name contenedor1 ubuntu 
 
