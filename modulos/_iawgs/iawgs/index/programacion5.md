@@ -1,6 +1,6 @@
 ---
 title: "Implantación de aplicaciones web. Programación mes de Febrero"
-permalink: /iawgs/programacion4.html
+permalink: /iawgs/programacion5.html
 ---
 
 ### Lunes, 1 de febrero
@@ -9,10 +9,27 @@ permalink: /iawgs/programacion4.html
 * Grupo 2 **(Casa)**
 
     * Introducción a  docker
+    * Imágenes en docker
 
 ### Jueves, 4 de febrero
 
 * Grupo 1 **(Casa)**
 * Grupo 2 **(Clase)**
 
-    * Imágenes en docker
+    * Almacenamiento en docker
+
+- - - 
+
+### Lunes, 8 de febrero
+
+* Grupo 1 **(Casa)**
+* Grupo 2 **(Clase)**
+
+    * Redes en docker
+
+### Jueves, 11 de febrero
+
+* Grupo 1 **(Clase)**
+* Grupo 2 **(Casa)**
+
+    * Ejercicios en docker
