@@ -5,7 +5,7 @@ permalink: /seguridadgs/u04/practica.html
 
 ## VPN de acceso remoto con OpenVPN y certificados x509 
 
-Para esta tarea puedes usar el hichero heat del primer ejecicio. En esta tarea vas a realizar el segundo ejercicio del tema:
+Para esta tarea puedes usar el fichero heat del primer ejecicio. En esta tarea vas a realizar el segundo ejercicio del tema:
 
 Configura una conexión VPN de acceso remoto entre dos equipos: 
 
