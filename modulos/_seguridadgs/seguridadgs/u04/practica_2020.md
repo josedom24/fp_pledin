@@ -2,11 +2,9 @@
 title: "VPN con OpenVPN y certificados x509"
 permalink: /seguridadgs/u04/practica.html
 ---
-{% capture warning-text %}
-
-** Tienes que realizar la tarea 1, y, un a elegir entre las demás.**
-
-{% endcapture %}<div class="warning--info">{{ warning-text | markdownify }}</div>
+{% capture notice-text %}
+** Tienes que realizar la tarea 1, y, un a elegir. **
+{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 1: VPN de acceso remoto con OpenVPN y certificados x509 
 
