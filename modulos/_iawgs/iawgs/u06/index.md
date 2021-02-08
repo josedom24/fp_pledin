@@ -20,7 +20,7 @@ permalink: /iawgs/u06/index.html
 2. [Imágenes docker](curso/imagenes.html)
 3. [Almacenamiento en docker](curso/almacenamiento.html)
 4. [Redes en docker](curso/redes.html)
-5. [Creando escenarios multicontenedor con docker-compose](docker_compose.html)
+5. [Creando escenarios multicontenedor con docker-compose](curso/docker_compose.html)
 6. [Creación de imágenes en docker](curso/creacion_imagenes.html)
     * [Creación de una nueva imagen a partir de un contenedor](curso/creacion_imagenes_contenedor.html)
     * [Creación de imágenes con fichero Dockerfile](curso/creacion_imagenes_dockerfile.html)

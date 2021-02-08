@@ -193,7 +193,7 @@ Algunas observaciones:
 ## Ejercicios
 
 1. Ejecuta una instrucción docker para visualizar el contenido del fichero `wp-config.php` y verifica que los parámetros de conexión a la base de datos son los mismo que los indicados en las variables de entorno.
-2. Ejecuta una instrucción docker para comprobar que desde wl `servidor_wp` podemos hacer ping usando el nombre `servidor_mysql`. (Tendrás que instalar el paquete `iputils-ping` en el contenedor).
+2. Ejecuta una instrucción docker para comprobar que desde el `servidor_wp` podemos hacer ping usando el nombre `servidor_mysql`. (Tendrás que instalar el paquete `iputils-ping` en el contenedor).
 3. Visualiza el fichero `/etc/mysql/mariadb.conf.d/50-server.cnf` del contenedor con la base de datos y comprueba cómo está configurado el parámetro `bind-address`.
 4. Instala otro CMS PHP siguiendo la documentación de Docker Hub de la aplicación seleccionada.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
