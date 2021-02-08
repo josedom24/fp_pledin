@@ -4,7 +4,7 @@ permalink: /seguridadgs/u04/practica.html
 ---
 
 
-**Tienes que realizar la tarea 1, y, una a elegir entre la tarea 2,3 o 4.**
+**Tienes que realizar la tarea 1 y, una a elegir entre la tarea 2,3 o 4.**
 {: .notice--warning} 
 
 
