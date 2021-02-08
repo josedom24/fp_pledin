@@ -8,7 +8,7 @@ parameters:
     default: "m1.mini"
   image:
     type: string
-    default: "bf688ff8-549e-4de6-8e96-13b10e85f1fe"
+    default: "51b38ecf-99e1-46a3-a497-9e1cc9c3c2d4"
   red_externa:
     type: string
     description: red para conectarse a internet
