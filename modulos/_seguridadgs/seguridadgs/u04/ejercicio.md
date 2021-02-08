@@ -19,11 +19,13 @@ Supongamos que la siguiente figura representa la red de nuestra organización, e
 * IP Servidor: 172.22.200.76
 * IP VPN punto a punto: 10.10.0.1 - 10.10.0.2
 
+**NOTA: Las IP flotantes cambian en cada escenario.**
+
 ## Configuración
 
 Para este ejemplo, tanto el router que conecta nuestra red local con Internet como el cliente VPN son máquinas Debian, pero la configuración es prácticamente igual con otros SOs.
 
-Tras instalar OpenVPN en ambas máquinas (puede compilarse el código fuente o instalarse el paquete del repositorio), hay que decidir cómo se va a realizar la autenticación de los extremos y el cifrado. La forma más sencilla de configuración es usar una clave compartida (pre-shared key), mientras que el uso de certificados ofrece una solución más robusta. Veamos primero cómo sería la configuración usando la clave compartida. 
+Tras instalar OpenVPN en ambas máquinas, hay que decidir cómo se va a realizar la autenticación de los extremos y el cifrado. La forma más sencilla de configuración es usar una **clave compartida (pre-shared key)**, mientras que el uso de certificados ofrece una solución más robusta. Veamos primero cómo sería la configuración usando la clave compartida. 
 
 ### Generación del secreto compartido
 
@@ -63,10 +65,15 @@ La dirección `172.22.200.76` de la directiva remote es la IP pública del servi
 
 ### Establecimiento de la VPN
 
-Para establecer la VPN hay que arrancar OpenVPN en ambos extremos:
+Para establecer la VPN hay que arrancar OpenVPN en ambos extremos, teemos que configurar openvpn para que lea los ficheros `*.conf` del directorio `/etc/openvpn`, para ello, editamos el fichero `/etc/default/openvpn` y descomentamos la línea:
 
-    $ openvpn --config /etc/openvpn/server.conf    (En el servidor)
-    $ openvpn --config /etc/openvpn/client.conf    (En el cliente)
+    AUTOSTART="all"
+
+A continuación:
+
+    $ systemctl daemon-reload
+    $ systemctl start openvpn 
+
 
 Una vez establecida la VPN, se habrá creado una interfaz virtual de tipo túnel en ambas máquinas, que simulan un enlace PPP:
 
