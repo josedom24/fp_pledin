@@ -2,11 +2,11 @@
 title: "VPN con OpenVPN y certificados x509"
 permalink: /seguridadgs/u04/practica.html
 ---
-{% capture notice-text %}
+
 
 **Tienes que realizar la tarea 1, y, un a elegir.**
+{: .notice--warning} 
 
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 1: VPN de acceso remoto con OpenVPN y certificados x509 
 
@@ -43,7 +43,7 @@ Configura una conexión VPN de acceso remoto entre dos equipos:
 Configura una conexión VPN sitio a sitio entre dos equipos del cloud: 
 
 * Cada equipo estará conectado a dos redes, una de ellas en común 
-* Para la autenticación de los extremos se usarán obligatoriamente certificados digitales, que se generarán utilizando openssl y se almacenarán en el directorio /etc/openvpn, junto con con los parámetros Diffie-Helman y el certificado de la propia Autoridad de Certificación. 
+* Para la autenticación de los extremos se usarán obligatoriamente certificados digitales, que se generarán utilizando openssl y se almacenarán en el directorio `/etc/openvpn`, junto con con los parámetros Diffie-Helman y el certificado de la propia Autoridad de Certificación. 
 * Se utilizarán direcciones de la red 10.99.99.0/24 para las direcciones virtuales de la VPN. 
 * Tras el establecimiento de la VPN, una máquina de cada red detrás de cada servidor VPN debe ser capaz de acceder a una máquina del otro extremo. 
 
