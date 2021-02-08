@@ -18,7 +18,7 @@ TLS utilizando certificados X.509 y la asignación de direcciones dinámica. Eje
     * IP Pública: 80.80.80.2/24
     * Dirección virtual: una de la red 10.0.0.0/24 que le asignará el servidor OpenVPN
 
-Fichero de configuración del servidor: `/etc/openvpn/office.com`:
+Fichero de configuración del servidor: `/etc/openvpn/server.com`:
 
     #Dispositivo de túnel
     dev tun
@@ -58,7 +58,7 @@ En los clientes que quieran conectarse por acceso remoto a la VPN habrá que cop
 digital y la clave privada del usuario, así como el certificado de la CA a su propio directorio
 `/etc/openvpn`.
 
-Configuración del cliente: `/etc/openvpn/user1.conf`:
+Configuración del cliente: `/etc/openvpn/client.conf`:
 
     #Dispositivo de túnel
     dev tun

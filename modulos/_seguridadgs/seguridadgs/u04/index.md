@@ -22,8 +22,7 @@ permalink: /seguridadgs/u04/index.html
 * [Configuración de openVPN de acceso remoto con clave estática compartida](ejercicio.html)
 * [Configuración de openVPN basada en SSL/TLS](ejercicio2.html)
 
-<!--
+
 ## Práctica
 
 * [Práctica: VPN con OpenVPN y certificados x509](practica.html)
--->
