@@ -65,6 +65,11 @@ En el fichero `docker-compose.yml` vamos a definir el escenario. El programa `do
 
 Puedes encontrar todos los parámetros que podemos definir en la [documentación oficial](https://docs.docker.com/compose/compose-file/compose-file-v3/).
 
+Algunos parámetros interesantes:
+
+* `restart: always`: Indicamos la política de reinicio del contenedor si por cualquier condición se para. [Más información](restart: always).
+* `depend on`: Indica la dependencia entre contenedores. No se va a iniciar un contenedor hasta que otro este funcionando. [Más información](https://docs.docker.com/compose/compose-file/compose-file-v3/#depends_on).
+
 Cuando creamos un escenario con `docker-compose` se crea una **nueva red definida por el usuario docker** donde se conectan los contenedores, por lo tanto, se pueden tenemos resolución por dns que resuelve tanto el nombre del contenedor (por ejemplo, `servidor_mysql`) como el alias (por ejemplo, `db`).
 
 Para crear el escenario:
@@ -108,7 +113,7 @@ Los subcomandos más usados son:
 * `docker-compose up -d`: Crear en modo detach los contenedores (servicios) que están descritos en el `docker-compose.yml`. Eso significa que no muestran mensajes de log en el terminal y que se  nos vuelve a mostrar un prompt.
 * `docker-compose stop`: Detiene los contenedores que previamente se han lanzado con `docker-compose up`.
 * `docker-compose run`: Inicia los contenedores descritos en el `docker-compose.yml` que estén parados.
-* `docker-compose rm`: Vorra los contenedores parados del escenario. Con las opción `-f` elimina también los contenedores en ejecución.
+* `docker-compose rm`: Borra los contenedores parados del escenario. Con las opción `-f` elimina también los contenedores en ejecución.
 * `docker-compose pause`: Pausa los contenedores que previamente se han lanzado con `docker-compose up`.
 * `docker-compose unpause`: Reanuda los contenedores que previamente se han pausado.
 * `docker-compose restart`: Reinicia los contenedores. Orden ideal para reiniciar servicios con nuevas configuraciones.
@@ -118,3 +123,17 @@ Los subcomandos más usados son:
 * `docker-compose exec servicio1 /bin/bash`: Ejecuta una orden, en este caso /bin/bash en un contenedor llamado servicio1 que estaba descrito en el `docker-compose.yml`
 * `docker-compose build`: Ejecuta, si está indicado, el proceso de construcción de una imagen que va a ser usado en el `docker-compose.yml`  a partir de los  ficheros `Dockerfile` que se indican.
 * `docker-compose top`: Muestra  los procesos que están ejecutándose en cada uno de los contenedores de los servicios.
+
+{% capture notice-text %} 
+## Ejercicios
+
+1. Instala docker-compose en tu ordenador. Copia el fichero `docker-compose.yml` de la documentación de la imagen oficial de wordpress.
+2. Modifica el `docker-compose.yml` para que use el puerto 8001.
+3. Modifica el `docker-compose.yml`, para que la base de datos se llame db_wordpress.
+4. Modifica el `docker-compose.yml` para usar bind mount en vez de volúmenes.
+5. Levanta el escenario con `docker-compose`.
+6. Muestra los contenedores con `docker-compose`.
+7. Accede a la aplicación y comprueba que funciona.
+8. Comprueba el almacenamiento que has definido y que se ha creado una nueva red de tipo bridge.
+9. Borra el escenario con `docker-compose`.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
