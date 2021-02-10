@@ -3,7 +3,7 @@ title: "Creando escenarios multicontenedor con docker-compose"
 permalink: /iawgs/u06/curso/docker_compose.html
 ---
 
-Como visto ahora en muchas ocasiones necesitamos correr varios contenedores para que nuestra aplicación funcione. En cualquiera de estos casos es necesario tener varios contenedores:
+Como visto hasta ahora en muchas ocasiones necesitamos correr varios contenedores para que nuestra aplicación funcione. En cualquiera de estos casos es necesario tener varios contenedores:
 
 * Necesitamos varios servicios para que la aplicación funciones: Partiendo del principio de que cada contenedor ejecuta un sólo proceso, sii necesitamos que la aplicación use varios servicios (web, base de datos, proxy inverso, ...) cada uno de ellos se implementará en un contenedor.
 * Si tenemos construida nuestra aplicación con microservicios, además cada microservicios se podrá implementar en un contenedor independiente.
