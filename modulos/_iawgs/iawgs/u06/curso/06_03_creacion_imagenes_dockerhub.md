@@ -11,7 +11,7 @@ Nota: Se añadirá una clave pública en github para que Docker Hub pueda accede
 
     ![docker](img/link_account.png)
 
-Pulsamos sobre `Connect` de GitHub, y autorizamos a DockerHub que acceda a nuestros repositorios:
+    Pulsamos sobre `Connect` de GitHub, y autorizamos a DockerHub que acceda a nuestros repositorios:
 
     ![docker](img/link_account2.png)
 
