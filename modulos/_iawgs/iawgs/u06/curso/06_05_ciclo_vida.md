@@ -97,7 +97,7 @@ Comprobamos que está subida al repositorio:
     NAME                     DESCRIPTION...
     josedom24/aplicacionweb:v1
 
-### Paso 5:Implantación de la aplicación
+### Paso 5: Implantación de la aplicación
 
 En el el entorno de producción, bajamos la imagen de Docker Hub y creamos el contenedor:
 
