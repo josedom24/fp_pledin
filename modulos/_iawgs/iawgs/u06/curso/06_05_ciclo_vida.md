@@ -3,6 +3,8 @@ title: "Ciclo de vida de nuestras aplicaciones con docker"
 permalink: /iawgs/u06/curso/ciclo_vida.html
 ---
 
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/ciclo_vida.pdf)
+
 **El ciclo de vida de una aplicación docker** lo podría resumir en:
 
 * Paso 1:Desarrollo de nuestra aplicación
@@ -71,7 +73,7 @@ Creamos un contenedor en nuestro entorno de desarrollo:
 $ docker run --name aplweb -d -p 80:80 josedom24/aplicacionweb:v1
   fbdd73529e2bb2d9ee9c6415031513741688e6d38509572251f5b624ed7dc23f
   
-    $ docker container ls
+    $ docker ps
     CONTAINER ID        IMAGE                        COMMAND                    CREATED             STATUS              PORTS                NAMES
     fbdd73529e2b        josedom24/aplicacionweb:v1   "/usr/sbin/apache2ct…"   6 seconds ago       Up 5 seconds        0.0.0.0:80->80/tcp   aplweb
 
@@ -120,7 +122,7 @@ Al modificar el código de la aplicación tenemos que generar una nueva imagen.
 Podemos probarla en el entorno de desarrollo, eliminando el contenedor anterior:
 
 
-    $ doker container rm -f aplweb
+    $ docker rm -f aplweb
     $ docker run --name aplweb2 -d -p 80:80 josedom24/aplicacionweb:v2
 
 Y probamos la aplicación:
@@ -136,6 +138,6 @@ En producción:
 
     $ docker pull josedom24/aplicacionweb:v2
     ...
-    $ doker container rm -f aplweb_prod
+    $ docker rm -f aplweb_prod
     $ docker run --name aplweb2_prod -d -p 80:80 josedom24/aplicacionweb:v2
   
