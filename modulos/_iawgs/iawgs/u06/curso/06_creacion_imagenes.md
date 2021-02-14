@@ -15,7 +15,11 @@ Para crea un contenedor que sirva nuestra aplicación, tendremos que crear una i
 * [Creación de imágenes con fichero Dockerfile](creacion_imagenes_dockerfile.html)
 * [Creación automática de imágenes en Docker Hub](creacion_imagenes_dockerhub.html)
 
-Una vez que hemos visto cómo crear imágnes docker, podemos estudiar el proceso de puesta en producción de aplicaciones web usandos docker:
+Veamos algunos ejemplos de ficheros `Dockerfile`:
+
+* [Ejemplos de ficheros Dockerfile](ejemplos_dockerfile.html)
+
+Una vez que hemos visto cómo crear imágenes docker, podemos estudiar el proceso de puesta en producción de aplicaciones web usando docker:
 
 * [Ciclo de vida de nuestras aplicaciones con docker](ciclo_vida.html)
 

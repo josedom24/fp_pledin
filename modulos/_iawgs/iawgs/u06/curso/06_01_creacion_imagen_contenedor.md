@@ -3,6 +3,8 @@ title: "Creación de una nueva imagen a partir de un contenedor"
 permalink: /iawgs/u06/curso/creacion_imagenes_contenedor.html
 ---
 
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/imagen_contenedor.pdf)
+
 La primera forma para personalizar las imágenes y distribuirlas es partiendo de un contenedor en ejecución. Para ello vamos a tener varias posibilidades:
 
 
@@ -24,7 +26,7 @@ En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la terc
 
         root@2df2bf1488c5:/# apt update && apt install apache2 -y
 
-3. Crear una nueva imagen partiendo de ese contenedor usando `docker commit`. Con esta instrucción se creará una nueva imagen con las capas de la imagen base más la capa propia del contenedor. Al creala no vot a poner etiqueta, por lo que sera `latest`.
+3. Crear una nueva imagen partiendo de ese contenedor usando `docker commit`. Con esta instrucción se creará una nueva imagen con las capas de la imagen base más la capa propia del contenedor. Al creala no voy a poner etiqueta, por lo que será `latest`.
 
         $ docker commit contenedor josedom24/myapache2
         sha256:017a4489735f91f68366f505e4976c111129699785e1ef609aefb51615f98fc4
