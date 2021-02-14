@@ -3,9 +3,9 @@ title: "Creación automática de imágenes en Docker Hub"
 permalink: /iawgs/u06/curso/creacion_imagenes_dockerhub.html
 ---
 
-La página Docker Hub nos ofrece un sistema de integración continúa para la creación automática de imágenes. Lo que vamos a hacer es conectar nuestro repositorio de DockerHub con un repositorio de GitHub, donde tengamos el contexto para la construcción de la imagén (`Dcokerfile` y ficheros necesarios). Los pasos serán:
+* [Presentación](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/imagenes_dockerhub.pdf)
 
-Nota: Se añadirá una clave pública en github para que Docker Hub pueda acceder a tus repositorios).
+La página Docker Hub nos ofrece un sistema de integración continúa para la creación automática de imágenes. Lo que vamos a hacer es conectar nuestro repositorio de DockerHub con un repositorio de GitHub, donde tengamos el contexto para la construcción de la imagén (`Dcokerfile` y ficheros necesarios). Los pasos serán:
 
 1. Conectamos nuestra cuenta de Docker Hub con nuestra cuenta de GitHub. Para ello en la sección `Account Settings` - `Linked Accounts`:
 
