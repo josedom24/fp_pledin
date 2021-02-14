@@ -9,16 +9,14 @@ permalink: /iawgs/u06/docker_php.html
 * Es necesario tener un contenedor con **mariadb** donde vamos a crear la base de datos y los datos de la aplicación. El script para generar la base de datos y los registros lo encuentras en el repositorio y se llama `schema.sql`. Debes crear un usuario con su contraseña en la base de datos. La base de datos se llama `bookmedik` y se crea al ejecutar el script.
 * Ejecuta el contenedor **mariadb** y carga los datos del script `schema.sql`. Para más [información](https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb).
 * El contenedor **mariadb** debe tener un volumen para guardar la base de datos.
+* El contenedor que creas debe tener un volumen para guardar los logs de apache2.
 * Crea una imagen docker con la aplicación desde una imagen base de debian o ubuntu. Ten en cuenta que el fichero de configuración de la base de datos (`core\controller\Database.php`) lo tienes que configurar utilizando las variables de entorno del contenedor **mariadb**. (**Nota: Para obtener las variables de entorno en PHP usar la función `getenv`. [Para más infomación](http://php.net/manual/es/function.getenv.php)**).
 * La imagen la tienes que crear en tu máquina con el comando `docker build`.
-* Crea un contenedor a partir de la imagen anterior, enlazado con el contenedor **mariadb**, y comprueba que está funcionando (Usuario: **admin**, contraseña: **admin**)
-* El contenedor que creas debe tener un volumen para guardar los logs de apache2.
+*  Crea un script con docker compose que levante el escenario con los dos contenedores.(Usuario: **admin**, contraseña: **admin**).
 
 {% capture notice-text %} 
-* Creación del contenedor **mariadb** y carga de los datos (1 punto).
-* Creación de la imagen docker bookmedik (2 puntos).
-* Creación del contenedor con la aplicación web. (1 punto).
-* Comprueba que si borramos el contenedor **mariadb** y volvemos a crear otro, los datos no se han perdido porque se han guardado en un volumen. (1 punto)
+* Entrega la url del repositorio GitHub donde tengas la construcción (directorio `build` y el despliegue (directorio `deploy`))
+* Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 2: Ejecución de una aplicación web PHP en docker
@@ -29,8 +27,8 @@ permalink: /iawgs/u06/docker_php.html
 
 
 {% capture notice-text %} 
-* Documenta como has creado el Dockerfile para crear la imagen, entrega la URL del repositorio github donde has guardado el contexto para a creación de la imagen (2 puntos).
-* Docuementa el uso de docker compose, entrega el script que has desarrollado. (1 punto)
+* Entrega la url del repositorio GitHub donde tengas la construcción (directorio `build` y el despliegue (directorio `deploy`))
+* Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 3: Ejecución de una aplicación PHP en docker
@@ -44,19 +42,19 @@ A lo mejor te puede ayudar el siguiente enlace: [Dockerise your PHP application 
 
 
 {% capture notice-text %} 
-* Documenta el proceso que has realizado para crear el escenario. Entrega el script de docker compose y realiza alguna prueba de funcionamiento. (3 puntos).
+* Entrega la url del repositorio GitHub donde tengas la construcción (directorio `build` y el despliegue (directorio `deploy`))
+* Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 ## Tarea 4: Ejecución de un CMS en docker
 
-* A partir de una imagen base (que no sea una imagen con el CMS), genera una imagen que despliegue un CMS PHP (que no sea wordpress). El contenedor que se crea a partir de esta imagen se tendrá que enlazar con un contenedor mariadb o postgreSQL.
+* A partir de una imagen base (que no sea una imagen con el CMS), genera una imagen que despliegue un CMS PHP (que no sea wordpress). 
 * Crea los volúmenes necesarios para que la información que se guarda sea persistente.
 
 {% capture notice-text %} 
 * Elige un CMS PHP y crea la imagen que despliega la aplicación. Crea los contenedores necesarios para servir el CMS. Entrega una prueba de funcionamiento.
 * Elimina los contenedores, vuelve a crearlos y demuestra que la información no se ha perdido.
-	(2 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 5: Ejecución de un CMS en docker
@@ -65,5 +63,4 @@ Busca una imagen oficial de un CMS PHP en docker hub (distinto al que has instal
 
 {% capture notice-text %} 
 Explica el proceso que has seguido para realizar la tarea, pon alguna prueba de funcionamiento. ¿Se ha creado algún volumen para que la información sea persistente?
-	(2 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

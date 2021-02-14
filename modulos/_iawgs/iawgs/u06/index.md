@@ -59,9 +59,11 @@ Mis apuntes sobre docker...
 * [cri-io](http://cri-o.io/)
 * [rkt us docker](https://coreos.com/rkt/docs/latest/rkt-vs-other-projects.html#rkt-vs-docker)
 
+-->
+
 ## Prácticas
 
 * [Práctica: Implantación de aplicaciones web PHP en docker](docker_php.html)
+<!--
 * [Práctica: Implantación de aplicaciones web Python en docker](docker_python.html)
-
 -->
