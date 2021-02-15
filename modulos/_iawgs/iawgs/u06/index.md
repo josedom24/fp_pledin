@@ -64,6 +64,7 @@ Mis apuntes sobre docker...
 ## Prácticas
 
 * [Práctica: Implantación de aplicaciones web PHP en docker](docker_php.html)
+
 <!--
 * [Práctica: Implantación de aplicaciones web Python en docker](docker_python.html)
 -->
