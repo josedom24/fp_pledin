@@ -11,14 +11,14 @@ Vamos a usar el fichero [Vagrantfile](doc/squid/Vagrantfile) para crear el escen
 
 {% capture notice-text %}
 * **Tarea 1**: Instala squid en la máquina `squid` y configúralo para que permita conexiones desde la red donde este tu ordenador.
-* **Tarea 2**: Prueba que tu ordenador está navegando a través del proxy (HTTP/HTTPS) configurando el proxy de tres maneras diferentes:
+* **Tarea 2**: Prueba que tu ordenador está navegando a través del proxy (HTTP/HTTPS) configurando el proxy de dos maneras diferentes:
 
     * Directamente indicándolo en el navegador.
     * Configurando el proxy del sistema en el entorno gráfico (tienes que indicar en el navegador que vas a hacer uso del proxy del sistema).
 
 Muestra el contenido del fichero ´/var/log/squid/access.log` para comprobar que está funcionando el proxy.
 
-* **Tarea 3**: Configura squid para que pueda ser utilizado desde el cliente interno. en el cliente interno configura el proxy desde la línea de comandos (con una variable de entorno).
+* **Tarea 3**: Configura squid para que pueda ser utilizado desde el cliente interno. En el cliente interno configura el proxy desde la línea de comandos (con una variable de entorno). Fíjate que no hemos puesto ninguna regla SNAT y podemos navegar (protocolo HTTP), pero no podemos hacer ping o utilizar otro servicio.
 * **Tarea 4**: Con squid podemos filtrar el acceso por url o dominios, realiza las configuraciones necesarias para implementar un filtro que funcione como lista negra (todo el acceso es permitido menos las url o dominios que indiquemos en un fichero.)
 * **Tarea 5**: Realiza las configuraciones necesarias para implementar un filtro que funcione como lista blanca (todo el acceso es denegado menos las url o dominios que indiquemos en un fichero.)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
