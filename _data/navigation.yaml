@@ -27,12 +27,12 @@ serviciosgs:
         url: /serviciosgs/u05
       - title: Servidor de correo electrónico
         url: /serviciosgs/u06
-   
+      - title: Proxy, proxy inverso y balanceador de carga
+        url: /serviciosgs/u08
+  -
    #   - title: Servidor FTP
    #     url: /serviciosgs/u05
-   #   - title: Proxy, proxy inverso y balanceador de carga
-   #     url: /serviciosgs/u08
-  - title: Otros Módulos...
+    title: Otros Módulos...
     children:
       - title: "Lenguaje de Marcas"
         url: /lmgs/
