@@ -10,6 +10,8 @@ permalink: /serviciosgs/u08/index.html
 ## Recursos
 
 * [Proxy-cache Squid](http://www.squid-cache.org/)
+    * [Instalación y configuración básica de squid](https://github.com/josedom24/serviciosgs_doc/blob/master/proxy/ejercicio1.md)
+    * [Gestionando el proxy de Squid](https://github.com/josedom24/serviciosgs_doc/blob/master/proxy/proxy.md)
 * [Tinyproxy](https://tinyproxy.github.io/)
 * [Apache y nginx como proxy inversos](apache_nginx.html)
 * [apache2:Reverse Proxy Guide](http://httpd.apache.org/docs/2.4/howto/reverse_proxy.html)
