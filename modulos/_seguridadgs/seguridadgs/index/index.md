@@ -13,11 +13,8 @@ El índice de contenidos que vamos a estudiar será:
 * [Criptografía](u02)
 * [Cortafuegos](u03)
 * [Redes Privadas Virtuales](u04)
-
-<!--
-
 * [Clusters de alta disponibiilidad](u05)
--->
+
 
 ### Programación por semanas
 

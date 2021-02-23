@@ -112,8 +112,8 @@ seguridadgs:
         url: /seguridadgs/u03
       - title: "VPN"
         url: /seguridadgs/u04
-#      - title: "Alta disponibilidad"
-#        url: /seguridadgs/u05
+      - title: "Alta disponibilidad"
+        url: /seguridadgs/u05
 
   - title: Otros Módulos...
     children:
