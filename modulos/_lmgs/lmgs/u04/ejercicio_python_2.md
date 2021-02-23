@@ -34,4 +34,3 @@ Utilizando el fichero [users.xml](xml/users.xml.zip), realiza diferentes funcion
 
 6. Mostrar la lista de usuarios ordenada por el último acceso (Elemento `lastaccess`)
 
-* [Solución](ejercicio2_xpath.py)
