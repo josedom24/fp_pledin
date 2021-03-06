@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/html5/etiquetas_textos.html
 layout: single3
 ---
 
+# Etiquetas de texto
+
 ## Encabezados
 
 Los **encabezados** se representan mediante las etiquetas `h1, h2, ..., h6`. Hay por tanto 6 niveles de encabezamiento. La etiqueta `h1` representa un encabezado más general: Capítulo, Tema... Mientras que `h6` es el encabezado más profundo. Los encabezados son **etiquetas de bloques**.
