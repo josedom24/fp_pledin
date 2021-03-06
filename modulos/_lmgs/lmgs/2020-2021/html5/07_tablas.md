@@ -91,7 +91,7 @@ Dado el siguiente documento html se desea conseguir el resultado de la imagen ad
 </head>
 <body>
 
-<!-- puedes copiar y pegar todo el código en sublime o brackets para resolver el ejercicio -->
+<!-- Pon aquí las etiquetas html necesarias para resolver el ejercicio -->
 
 </body>
 </html>

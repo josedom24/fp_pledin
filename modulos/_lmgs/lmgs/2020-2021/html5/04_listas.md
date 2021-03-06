@@ -3,6 +3,8 @@ permalink: /lmgs/2020-2021/html5/etiquetas_listas.html
 layout: single3
 ---
 
+# Listas
+
 ## Listas ordenadas y no ordenadas
 
 Las **listas** nos permiten colocar texto en líneas separadas. Pueden ser listas ordenadas o no ordenadas. Para las primeras usamos las etiquetas:
