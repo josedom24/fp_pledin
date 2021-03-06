@@ -12,7 +12,7 @@ El procesamiento de la información en el servidor necesita que nuestra página 
 
 ## Estructura del formulario
 
-Todos los elementos que nos vamos a encontrar en un formulario están dentro de la etiquete `<form>`. Esta etiqueta puede tener varios atributos de entre los que destacamos:
+Todos los elementos que nos vamos a encontrar en un formulario están dentro de la etiquete **<form>**. Esta etiqueta puede tener varios atributos de entre los que destacamos:
 
 * **method** que indica cómo se va a pasar la información al destino. Puede ser por GET (se ve la información en la barra del navegador) y por POST ( no se ve y es la opción por defecto).
 * **action** que indica el destino de nuestros datos. Normalmente será una URL que indica el programa que va a procesar dicha información. 
