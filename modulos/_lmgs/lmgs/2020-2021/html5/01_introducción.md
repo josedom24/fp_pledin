@@ -30,7 +30,7 @@ Las etiquetas generalmente tienen una instrucción de apertura y una instrucció
 
 Existen también etiquetas que no tienen instrucción de cierre. En este caso se recomienda indicar una contrabarra `/>`. 
 
-HTML5 incorpora etiquetas semánticas que además de aportar información para los navegadores también aportan informaciones para los motores de búsqueda.
+**HTML5** incorpora etiquetas semánticas que además de aportar información para los navegadores también aportan informaciones para los motores de búsqueda.
 
 Consideraciones importantes:
 
