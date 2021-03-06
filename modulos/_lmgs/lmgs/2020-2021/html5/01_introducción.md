@@ -39,6 +39,20 @@ Consideraciones importantes:
 
 ## Estructura HTML básica de un documento web
 
+```html
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8" />
+            <title>Hola Mundo!</title>
+        </head>
+        <body>
+            <h1>Hola Mundo!</h1>
+        </body>
+    </html>
+```
+Por ejemplo:
+
 ![html5](img/estructura-documento-web-1.jpg)
 
 HTML como lenguaje que es tiene un vocabulario y una sintaxis básica que debemos conocer. En el caso de la imagen adjunta:
