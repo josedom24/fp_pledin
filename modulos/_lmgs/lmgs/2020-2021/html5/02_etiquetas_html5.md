@@ -3,7 +3,7 @@ permalink: /lmgs/2020-2021/html5/etiquetas_basicas.html
 layout: single3
 ---
 
-## Etiquetas básicas HTML5
+# Etiquetas básicas HTML5
 
 **HTML** nos permite estructurar la información. El diseño y el formato lo defineremos con las **hojas de estilo**.
 
