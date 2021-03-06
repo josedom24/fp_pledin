@@ -21,7 +21,7 @@ A continuación vamos a ver algunos de los elementos más frecuentes y a describ
 
 ### Labels e Input
 
-Normalmente para la recogida de información los formularios usando etiquetas **<input>**. Pero, para poder saber qué campos estamos rellenando una buena práctica (se puede de otras maneras menos elegantes) es poner una etiqueta **<label>** (etiqueta) delante de cada input para dar nombre y asociar ambas.
+Normalmente para la recogida de información los formularios usando etiquetas **input**. Pero, para poder saber qué campos estamos rellenando una buena práctica (se puede de otras maneras menos elegantes) es poner una etiqueta **label** (etiqueta) delante de cada input para dar nombre y asociar ambas.
 
 Un ejemplo sería:
 
