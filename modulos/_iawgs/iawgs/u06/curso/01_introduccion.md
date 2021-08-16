@@ -11,7 +11,7 @@ Docker es una tecnología de virtualización "ligera" cuyo elemento básico es l
 
 Docker está formado por varios componentes:
 
-* **Docker Engine**: Es un demonio que corre sobre cualquier distribución de Linux y que expone una API externa para la gestión de imágenes y contenedores. Con ella podemos crear imágnenes, subirlas y bajarla de un registro de docker y ejecutar y gestionar contenedores.
+* **Docker Engine**: Es un demonio que corre sobre cualquier distribución de Linux y que expone una API externa para la gestión de imágenes y contenedores. Con ella podemos crear imágenes, subirlas y bajarla de un registro de docker y ejecutar y gestionar contenedores.
 * **Docker Client**: Es el cliente de línea de comandos (CLI) que nos permite gestionar el Docker Engine. El cliente docker se puede configurar para trabajar con con un Docker Engine local o remoto, permitiendo gestionar tanto nuestro entorno de desarrollo local, como nuestro entorno de producción.
 * **Docker Registry**: La finalidad de este componente es almacenar las imágenes generadas por el Docker Engine. Puede estar instalada en un servidor independiente y es un componente fundamental, ya que nos permite distribuir nuestras aplicaciones. Es un proyecto open source que puede ser instalado gratuitamente en cualquier servidor, pero, como hemos comentado, el proyecto nos ofrece **Docker Hub**.
 
@@ -32,7 +32,7 @@ volvemos acceder con el usuario al sistema, y comprobamos que ya podemos usar el
 
 ## El "Hola Mundo" de docker
 
-Vamos a comprobar que todo funciona creando nuestro primer contendor desde la imagen `hello-world`:
+Vamos a comprobar que todo funciona creando nuestro primer contenedor desde la imagen `hello-world`:
 
     $ docker run hello-world
     Unable to find image 'hello-world:latest' locally
