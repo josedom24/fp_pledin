@@ -1,6 +1,6 @@
 ---
 title: "VPN con OpenVPN y certificados x509"
-permalink: /seguridadgs/u04/practica.html
+permalink: /seguridadgs/u04/practica_2020.html
 ---
 
 

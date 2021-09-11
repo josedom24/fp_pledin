@@ -1,6 +1,5 @@
 ---
 title: "Servicios de Red e Internet"
-permalink: /serviciosgs/index.html
 ---
 
 El módulo profesional de **Servicios de Red e Internet** se imparte durante el segundo curso del [Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos en Red (ASIR)](http://www.aapri.es/curriculo/fp/asir).
@@ -24,9 +23,3 @@ El índice de contenidos que vamos a estudiar será:
 
 -->
 
-### Programación por semanas
-
-* [Programación mes de Octubre](programacion1.html)
-* [Programación mes de Noviembre](programacion2.html)
-* [Programación mes de Diciembre](programacion3.html)
-* [Programación mes de Enero](programacion4.html)
