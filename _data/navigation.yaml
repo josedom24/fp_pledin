@@ -10,6 +10,13 @@ main:
   - title: "Presentación"
     url: https://www.josedomingo.org/pledin/about/
 
+sri2122:
+  - title: Servicios de Red e Internet (2021-2022)
+    children:
+      - title: "Inicio"
+        url: /serviciosgs/
+      - title: Introducción a los servicios en red
+
 serviciosgs:
   - title: Servicios de Red e Internet
     children:
