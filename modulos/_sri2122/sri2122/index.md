@@ -1,5 +1,5 @@
 ---
-title: "Servicios de Red e Internet"
+title: "Servicios de Red e Internet (2021-2022)"
 ---
 
 El módulo profesional de **Servicios de Red e Internet** se imparte durante el segundo curso del [Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos en Red (ASIR)](http://www.aapri.es/curriculo/fp/asir).

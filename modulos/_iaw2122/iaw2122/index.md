@@ -1,5 +1,5 @@
 ---
-title: "Implantación de aplicaciones web"
+title: "Implantación de aplicaciones web (2021-2022)"
 ---
 
 El módulo profesional de **Implantación de aplicaciones web** se imparte durante el segundo curso del [Ciclo Formativo de Grado Superior de Administración de Sistemas Informáticos en Red (ASIR)](http://www.aapri.es/curriculo/fp/asir).

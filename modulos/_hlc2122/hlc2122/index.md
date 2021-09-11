@@ -1,5 +1,5 @@
 ---
-title: "Implantación de aplicaciones web"
+title: "HLC: Cloud Computing (2021-2022)"
 ---
 
 Curso de Introducción al Cloud Computing utilizando las horas de libre configuración (HLC) correspondiente al segundo curso del Ciclo Formativo Superior de Administración de Sistemas Informáticos en Red (CFGS ASIR) que se imparte en el IES Gonzalo Nazareno de Dos Hermanas (Sevilla).
