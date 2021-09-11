@@ -14,8 +14,26 @@ sri2122:
   - title: Servicios de Red e Internet (2021-2022)
     children:
       - title: "Inicio"
-        url: /serviciosgs/
+        url: /sri2122/
       - title: Introducción a los servicios en red
+        url: /sri2122/u01
+
+iaw2122:
+  - title: Implantación de aplicaciones web (2021-2022)
+    children:
+      - title: "Inicio"
+        url: /iaw2122/
+      - title: Introducción
+        url: /iaw2122/u01
+
+hlc2122:
+  - title: "HLC: Cloud Computing (2021-2022)"
+    children:
+      - title: "Inicio"
+        url: /hlc2122/
+      - title: Introducción
+        url: /hlc2122/u01
+
 
 serviciosgs:
   - title: Servicios de Red e Internet

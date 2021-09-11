@@ -12,7 +12,7 @@ classes: wide
 
 * [Servicios de red e internet](sri2122)
 * [Implantación de aplicaciones web](iawgs2122)
-* [Seguridad y alta disponibilidad](sad2122)
+* [HLC: Cloud Computing](hlc2222)
 
 
 ---
