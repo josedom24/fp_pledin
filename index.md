@@ -17,4 +17,4 @@ classes: wide
 
 ---
 
-* [Cursos anteriores](anteriores)
+* [Cursos anteriores](anteriores.html)
