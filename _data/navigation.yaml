@@ -31,7 +31,7 @@ hlc2122:
     children:
       - title: "Inicio"
         url: /hlc2122/
-      - title: Introducción
+      - title: "Virtualización. KVM y libvirt"
         url: /hlc2122/u01
 
 

@@ -8,5 +8,5 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 
 El índice de contenidos que vamos a estudiar será:
 
-* [Introducción](u01)
+* [Virtualización. KVM y libvirt](u01)
 
