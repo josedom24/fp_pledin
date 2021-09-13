@@ -15,7 +15,7 @@ sri2122:
     children:
       - title: "Inicio"
         url: /sri2122/
-      - title: Introducción a los servicios en red
+      - title: "Ansible: Programando infraestructura en la nube"
         url: /sri2122/u01
 
 iaw2122:
