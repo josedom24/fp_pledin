@@ -33,8 +33,9 @@ Para estudiar las diferencias entre páginas web dinámicas y estáticas, puedes
 * Realiza el ejercicio [Pagínas web estáticas y dinámicas](ejercicio_estatica_dinamica.html).	
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-<!--
 
+
+<!--
 ### Sesión 4: Presentación de la práctica
 
 * [Práctica: Implantación y despliegue de una aplicación web estática](estatica.html)
@@ -42,5 +43,4 @@ Para estudiar las diferencias entre páginas web dinámicas y estáticas, puedes
 ### Sesión 5: Trabajo Práctica 1
 
 ### Sesión 6: Trabajo Práctica 1
-
-->
+-->
