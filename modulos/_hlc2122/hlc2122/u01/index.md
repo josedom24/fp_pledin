@@ -9,7 +9,6 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
     * [Virtualization Deployment and Administration Guide (RedHat) - Cápitulo 17](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/virtualization_deployment_and_administration_guide/index#chap-Virtual_Networking)
 3. KVM
     * [Introducción a libvirt+qemu/kvm](introduccion.html)
-    * [Vídeo: Libvirt. Configuración inicial](https://www.youtube.com/watch?v=g9TxR-vH7vA)
     * [virsh](virsh.hml)
         * [Vídeo: Configuración inicial](https://youtu.be/g9TxR-vH7vA)
         * [Vídeo: Definición y creación de redes con virsh](https://youtu.be/HKq1Z7ZgFRA)
