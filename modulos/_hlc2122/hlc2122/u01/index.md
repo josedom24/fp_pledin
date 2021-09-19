@@ -15,3 +15,7 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
         * [Vídeo: Definición del pool por defecto con virsh](https://youtu.be/0Tp2uzGU-8I)
         * [Vídeo: Manejo de volúmenes](https://youtu.be/w91tHGYfBtQ)
         * [Vídeo: Creación de dominios](https://youtu.be/Ugz7TN6gUO0)
+
+## Enlaces de interes
+
+* [Virtualización en GNU/Linux con KVM](https://manuais.iessanclemente.net/index.php/Virtualizaci%C3%B3n_en_GNU/Linux_con_KVM)
