@@ -10,12 +10,16 @@ title: "Ansible: Programando infraestructura en la nube"
 ## Vídeos
 
 * [Taller de Ansible (I) - Programando infraestructura en la nube](https://www.youtube.com/watch?v=cMVT1LpgvCA)
-* [Taller de Ansible (II) - Presentación de ansble](https://www.youtube.com/watch?v=bxB-lqrEbpA)
+* [Taller de Ansible (II) - Presentación de ansible](https://www.youtube.com/watch?v=bxB-lqrEbpA)
 * [Taller de Ansible (III) - Ejemplos](https://www.youtube.com/watch?v=arp50zPL3Tk)
 
 ## Ejemplos
 
-* [Repositorio de Ejemplos de playboooks de ansible](https://github.com/josedom24/ansible_ejemplos)
+* [Repositorio de Ejemplos de playbooks de ansible](https://github.com/josedom24/ansible_ejemplos)
+
+## Ejercicios
+
+* [Ejercicio 1: Playbook sencillo](ejercicio1.html)
 
 
 ## Recurso útiles
