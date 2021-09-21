@@ -46,7 +46,7 @@ Para estudiar las diferencias entre páginas web dinámicas y estáticas, puedes
 * [Diferencias y beneficios entre páginas estáticas y dinámicas](http://nilclass.com/courses/what-is-a-static-website/#1)
 
 {% capture notice-text %}
-* Realiza el ejercicio [Pagínas web estáticas y dinámicas](ejercicio_estatica_dinamica.html).	
+* Puedes repasar realizando: [Pagínas web estáticas y dinámicas](ejercicio_estatica_dinamica.html).	
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
