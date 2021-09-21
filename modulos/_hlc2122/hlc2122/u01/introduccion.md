@@ -1,5 +1,6 @@
+---
 title: Introducción a libvirt+qemu/kvm
-
+---
 
 Libvirt proporciona una API genérica, un demonio y un conjunto de
 herramientas de gestión para diferentes sistemas de virtualización,
