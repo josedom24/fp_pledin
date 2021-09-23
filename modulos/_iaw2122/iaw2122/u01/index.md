@@ -34,6 +34,11 @@ En este ejercicio tienes que hacer un pull request sobre el siguiente repositori
 
 Realiza el pull request (con un mensaje de commit significativo) y espera a que sea aceptado por mí. Al finalizar el ejercicio debes sincronizar tu repositorio para que tengas todos los ficheros de todos tus compañeros.
 
+Entrega
+
+* Los pasos fundamentales (con instrucciones) para realizar el pull request.
+* Al finalizar el ejercicio (cuando todos los alumnos hayan mandado el PR) debes actualizar tu repositorio remoto y enviarme la URL para que yo lo pueda comprobar.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Páginas web dinámicas us páginas web estáticas
