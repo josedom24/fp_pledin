@@ -9,7 +9,8 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * Introducción a los servicios en red
-* [Ansible: Programando infraestructura en la nube](u01)
+* [Vagrant y Ansible: Programando infraestructura en la nube](u01)
+
 
 
 <!--

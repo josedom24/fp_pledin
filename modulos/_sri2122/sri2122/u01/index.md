@@ -1,11 +1,12 @@
 ---
-title: "Ansible: Programando infraestructura en la nube"
+title: "Vagrant y Ansible: Programando infraestructura en la nube"
 ---
 
-## Presentaciones
+## Contenido
 
 * [Programando infraestructura en la nube](https://iesgn.github.io/presentacion-ual17/#/)
 * [Presentación de ansible](https://raw.githubusercontent.com/albertomolina/beamer-focus/main/ansible.pdf)
+* [Introducción a Vagrant](vagrant.html)
 
 ## Vídeos
 
