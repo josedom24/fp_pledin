@@ -15,6 +15,8 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
         * [Vídeo: Definición del pool por defecto con virsh](https://youtu.be/0Tp2uzGU-8I)
         * [Vídeo: Manejo de volúmenes](https://youtu.be/w91tHGYfBtQ)
         * [Vídeo: Creación de dominios](https://youtu.be/Ugz7TN6gUO0)
+    * [Herramientas útiles de libvirt: virt-install, virt-clone, virt-viewer](tools.html)
+    
 
 ## Enlaces de interes
 
