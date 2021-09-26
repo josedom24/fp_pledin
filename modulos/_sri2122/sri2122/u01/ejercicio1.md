@@ -13,4 +13,4 @@ title: "Ejercicio 1: Playbook sencillo"
     * Clona el repositorio: `https://github.com/josedom24/ansible_ejemplos.git`en el home del usuario que hemos creado en el primer punto.
 
 Para cada uno de estas tareas tienes que usar un módulo especifico de ansible.
-Entrega ela url del repositorio donde has guardado el playbook y también la salida de la ejecución del playbook.
+Entrega la url del repositorio donde has guardado el playbook y también la salida de la ejecución del playbook.
