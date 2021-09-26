@@ -25,7 +25,7 @@ Y posteriormente activamos el plugin:
 root@maquina:~$ vagrant plugin install vagrant-libvirt
 ```
 
-## Instalación de un "box" debian/bullseye
+## Instalación de un "box" debian/bullseye64
 
 Nos descargamos desde el repositorio oficial el box de Debian bullseye de 64 bits, esto lo hacemos un usuario sin privilegios:
 
@@ -53,8 +53,6 @@ usuario@maquina:~$ vagrant box list
 2. Modificamos el fichero Vagrantfile y los dejamos de la siguiente manera:
 
     ```ruby
-    # -*- mode: ruby -*-
-    # vi: set ft=ruby :
     Vagrant.configure("2") do |config|
       config.vm.box = "debian/bullseye64"
       config.vm.hostname="prueba"
@@ -95,7 +93,7 @@ usuario@maquina:~$ vagrant box list
 
 2. La instrucción `vagrant ssh` accede a la máquina con el usuario `vagrant` y con una clave privada, la clave pública relacionada se ha guardado en el sistema de archivo de la máquina. **¿Dónde se encuentra la clave privada que se utiliza para acceder a esta máquina?**.
 
-3. Se ha creado un volumen en el pool `default`:
+3. Se han creado dos volúmenes en el pool `default`:
 
     ```bash
     usuario@maquina:~/vagrant$ virsh -c qemu:///system vol-list default
@@ -103,92 +101,85 @@ usuario@maquina:~$ vagrant box list
     ---------------------------------------------------------------------------------------------------
     ...   
     ej1_default.img                                                      /home/jose/vm/ej1_default.img
-```
+    debian-VAGRANTSLASH-bullseye64_vagrant_box_image_11.20210829.1.img   /home/jose/vm/debian-VAGRANTSLASH-bullseye64_vagrant_box_image_11.20210829.1.img
+  ```
 
+Si comprobamos la definición de la máquina creada veremos lo siguiente:
 
+  ```bash
+  usuario@maquina:~/vagrant$ virsh -c qemu:///system dumpxml ej1_default
+  ...
+  <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2'/>
+      <source file='/home/jose/vm/ej1_default.img' index='1'/>
+      <backingStore type='file' index='2'>
+        <format type='qcow2'/>
+        <source file='/home/jose/vm/debian-VAGRANTSLASH-bullseye64_vagrant_box_image_11.20210829.1.img'/>
+        <backingStore/>
+      </backingStore>
+      <target dev='vda' bus='virtio'/>
+      <alias name='virtio-disk0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/>
+    </disk>
+  ...
+  ```
+
+Estamos usando aprovisionamiento ligero ("thin provisioning") que permite utilizar la misma imagen base para varias máquinas virtuales y crear rápidamente nuevas máquinas virtuales sin tener que instalar desde cero. Es decir:
+
+* La primera vez que se crea una máquina con un box determina, se clona este box y se crea una imagen que servira de base para todas las máquinas creada con el mismo box.
+* Para cada máquina se se crea n nuevo fichero de imagen, que "comparte" una imagen base (sólo lectura) y que realmente registra sólo las modificaciones que vaya teniendo a medida que va cambiando.
+* Con esta técnica se ahorra mucho espacio en disco. Por cada vm no se clona un nuevo volumen.
+* Cuando eliminamos la máquina con `vagrant destroy` se elimina la imagen de la máquina, pero no la imagen base.
 
 
 
 {% capture notice-text %}
-## Ejercicios
+## Realiza las siguientes comprobaciones
 
-1. Entra en virtualbox y comprueba las características de la máquina que se ha creado.
+1. Usando virsh comprueba las características (RAM y CPU) que tiene la máquina creada.
 2. ¿Qué usuario tiene creado por defecto el sistema?¿Cómo se ejecutan instrucciones de superusuario?
-3. ¿Cuantas tarjetas de red tiene?¿Para qué sirve la eth0?
-4. Investiga el funcionamiento de la instrucción ``vagrant ssh``. ¿Por que interfaz se conecta? ¿Qué certificado se utiliza para acceder?
+3. Comprueba que se ha cambiado el nombre de la máquina (fichero `/etc/hostname`) y la resolución estática del sistema (fichero `/etc/hosts`).
+4. Busca el directorio donde se ha guardado la clave privada que se utiliza para acceder a la máquina con `vagrant ssh`. Accede a la máquina usando `ssh`.
+5. Comprueba que se ha instalado un servidor NFS y que el directorio donde se encuentre el `Vagrantfile` es accesible desde la máquina desde el directorio `/vagrant`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-### Práctica 4: Creación de varias máquinas virtuales
+## Práctica 4: Creación de varias máquinas virtuales
 
-En esta ocasión vamos a crear otro directorio y dentro un fichero Vagrantfile con el siguiente contenido:
+En esta ocasión vamos a crear otro directorio y dentro un fichero `Vagrantfile` con el siguiente contenido:
 
-```ruby
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
+  ```ruby
+  Vagrant.configure("2") do |config|
 
-Vagrant.configure("2") do |config|
-
-  config.vm.define :nodo1 do |nodo1|
-    nodo1.vm.box = "debian/buster64"
-    nodo1.vm.hostname = "nodo1"
-    nodo1.vm.network :private_network, ip: "10.1.1.101"
-  end
-  config.vm.define :nodo2 do |nodo2|
-    nodo2.vm.box = "debian/buster64"
-    nodo2.vm.hostname = "nodo2"
-    nodo2.vm.network :public_network,:bridge=>"eth0"
-    nodo2.vm.network :private_network, ip: "10.1.1.102"
-  end
-end
-```
-
-Cuando iniciemos el escenario veremos que hemos creado dos máquinas virtuales: nodo1 y nodo2. 
-nodo1 tendrá una red interna con ip 10.1.1.101, y nodo2 tendrá una interfaz de red "modo puente" y una interfaz de red del tipo red interna con ip 10.1.1.102.
-
-Si accedemos por ssh a nodo1 podremos hacer ping a nodo2.
-
-
-### Práctica 5: Añadir un dico duro adicional y modificar la RAM a una máquina virtual
-
-Por últimos vamos a crear un nuevo Vagranfile en un nuevo directorio con este contenido:
-
-```ruby
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
-Vagrant.configure("2") do |config|
-
-  config.vm.define :nodo1 do |nodo1|
-    nodo1.vm.box = "debian/buster64"
-    nodo1.vm.hostname = "nodo1"
-    nodo1.vm.network :private_network, ip: "10.1.1.101"
-    nodo1.vm.provider :virtualbox do |v|
-                    v.customize ["modifyvm", :id, "--memory", 768]
-            end
-
-  end
-
-  disco = '.vagrant/midisco.vdi'
-  config.vm.define :nodo2 do |nodo2|
-    nodo2.vm.box = "debian/buster64"
-    nodo2.vm.hostname = "nodo2"
-    nodo2.vm.network :public_network,:bridge=>"eth0"
-    nodo2.vm.network :private_network, ip: "10.1.1.102"
-    nodo2.vm.provider :virtualbox do |v|
-                    v.customize ["createhd", "--filename", disco, "--size", 1024]
-                    v.customize ["storageattach", :id, "--storagectl", "SATA Controller",
-                     "--port", 1, "--device", 0, "--type", "hdd",
-                     "--medium", disco]
-                    end
+    config.vm.define :nodo1 do |nodo1|
+      nodo1.vm.box = "debian/bullseye64"
+      nodo1.vm.hostname = "nodo1"
     end
-end
-```
+    config.vm.define :nodo2 do |nodo2|
+      nodo2.vm.box = "generic/ubuntu2010"
+      nodo2.vm.hostname = "nodo2"
+    end
+  end
+  ```
 
-Como podemos ver al `nodo1` le hemos modificado el tamaño de la memoria RAM y en el `nodo2` hemos añadido un disco duro de 1GB. Para que estos cambios tengan efecto debes ejecutar la instrucción:
+Cuando iniciemos el escenario veremos que hemos creado dos máquinas virtuales: nodo1 y nodo2. Cada una de ella con un sistema operativo. Las dos máquinas estarán conectada a la misma red. Para acceder a las máquinas usaremos el nombre de la máquina: `vagrant ssh nodo1`.
 
-```bash
-usuario@maquina:~/vagrant$ vagrant reload
-```
+## Modificar las características de la máquina creada
+
+Veamos cómo podemos cambiar la configuración (RAM y CPU) de la máquina creada en un `Vagrantfile`:
+
+  ```ruby
+    Vagrant.configure("2") do |config|
+      config.vm.box = "debian/bullseye64"
+      config.vm.hostname="prueba"
+      config.vm.synced_folder ".", "/vagrant", disabled: true
+      config.vm.provider :libvirt do |libvirt|
+        libvirt.memory = 1024
+        libvirt.cpus = 2
+      end
+    end
+    ```
+
+Si no vamos a usar la característica de compartir ficheros entre el host y la máquina virtual podemos deshabilitar el directorio de sincronización (synced_folder).
 
 Para terminar, indicar que tenemos más parámetros de configuración que nos permiten configurar otros aspectos de la máquina virtual. Puedes encontrar más información en la [documentación oficial de vagrant](https://www.vagrantup.com/docs/)
 
