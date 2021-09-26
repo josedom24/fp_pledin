@@ -2,7 +2,9 @@
 title: "Configuraciones de red en sistemas virtuales: NAT, bridge y router"
 ---
 
-## Redes privadas basadas en NAT
+## Tipos de Redes
+
+### Redes privadas basadas en NAT
 
 ![nat](img/nat.png)
 
@@ -27,7 +29,7 @@ La configuración dhcp es optativa, podemos crear un red NAT que no tenga config
 
 Existen la redes de tipo [router](https://wiki.libvirt.org/page/VirtualNetworking#Routed_mode) cuya funcionalidad es la misma que las redes NAT, dan acceso a las máquinas virtuales al exterior, pero en ese caso no se utiliza el mecanismo de NAT, sino que se usan rutas de encaminamiento en el host.
 
-## Redes privadas aisladas (isolated)
+### Redes privadas aisladas (isolated)
 
 ![isolated](img/isolated.png)
 
@@ -56,7 +58,7 @@ Si no indicamos la ip con al que se conecta el host y la configuración del serv
 </network>
 ```
 
-## Redes públicas conectadas a un bridge externo
+### Redes públicas conectadas a un bridge externo
 
 En este caso necesitamos crear un switch/bridge virtual al que conectaremos la máquina física y las máquinas virtuales. En este caso las máquinas virtuales estarán en la misma red red que el host y estaran conectadas directamente al router de esta red, tomando la configuración dhcp (si la hubiera) del mismo modo que la toma el host.
 
@@ -70,7 +72,7 @@ Para [crear un switch virtual](https://wiki.debian.org/BridgeNetworkConnections)
 </network>
 ```
 
-## Redes públicas usando una conexión macvtap
+### Redes públicas usando una conexión macvtap
 
 En este caso vamos a usar una conexión macvtap, que nos permite conectarnos a la red física directamente a través de una interfaz física del host (sin usar un dispositivo bridge). Al igual que con la red anterior, las máquinas virtuales estarán conectados directamente a la red física, por lo que sus direcciones IP estarán todas en la subred de la red física. Existe una una limitación en la implementación de macvtap: estas conexiones no permiten la comunicación directa entre el host y los invitados.
 
@@ -87,3 +89,28 @@ La definición de este tipo de red sería la siguiente:
 
 En este caso el interfaz físico usado en el host es `eth0`.
 
+## Configuración de red en las máquina virtuales
+
+Al crear una máquina virtual con `virt-install`podemos indicar la conexión a una o varias redes:
+
+```
+virt-install --network network=default --network network=default2 ...
+```
+
+Si la máquina virtual está ejecutándose tenemos dos opciones:
+
+1. Editar la configuración con `virsh edit`, añadir una sección `interface` y reiniciar la máquina.
+
+    ```xml
+    <interface type="network">
+        <source network="default"/>
+    </interface>
+    ```
+
+2. Usar `virsh attach-interface`:
+
+    Si tenemos una máquina virtual llamada `ejemplo1` conectada a la red `default` y queremos añadir una interfaz a la red `aislada`, ejecutamos:
+
+    ```bash
+    virsh -c qemu:///system attach-interface ejemplo network aislada
+    ```
