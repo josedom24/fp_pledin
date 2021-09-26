@@ -34,7 +34,7 @@ de Debian 10, sería el siguiente:
 virt-install --connect qemu:///system \
 --cdrom ~/ISOS/debian-10.6.0-amd64-netinst.iso \
 --disk size=10 \
---network bridge=virbr0 \
+--network network=default \
 --name dominio2 \
 --memory 1024 \
 --vcpus 1
@@ -208,6 +208,8 @@ virsh -c qemu:///system dumpxml dominio2
   </devices>
 </domain>
 ```
+
+Puedes consultar el siguiente [manual](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install).
 
 ## virt-clone
 
