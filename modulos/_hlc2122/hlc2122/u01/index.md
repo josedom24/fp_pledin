@@ -3,7 +3,7 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
 ---
 
 1. [Tipos de virtualización. Características principales y comparativa de productos](doc/virtualizacion.pdf)
-2. Configuraciones de red en sistemas virtuales: NAT, bridge y router
+2. [Configuraciones de red en sistemas virtuales: NAT, bridge y router](network.html)
     * [Networking wiki libvirt](https://wiki.libvirt.org/page/Networking)
     * [libvirt Networking Handbook](https://jamielinux.com/docs/libvirt-networking-handbook/index.html)
     * [Virtualization Deployment and Administration Guide (RedHat) - Cápitulo 17](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/virtualization_deployment_and_administration_guide/index#chap-Virtual_Networking)
