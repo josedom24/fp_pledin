@@ -168,24 +168,18 @@ Cuando iniciemos el escenario veremos que hemos creado dos máquinas virtuales: 
 Veamos cómo podemos cambiar la configuración (RAM y CPU) de la máquina creada en un `Vagrantfile`:
 
   ```ruby
-    Vagrant.configure("2") do |config|
-      config.vm.box = "debian/bullseye64"
-      config.vm.hostname="prueba"
-      config.vm.synced_folder ".", "/vagrant", disabled: true
-      config.vm.provider :libvirt do |libvirt|
-        libvirt.memory = 1024
-        libvirt.cpus = 2
-      end
+  Vagrant.configure("2") do |config|
+    config.vm.box = "debian/bullseye64"
+    config.vm.hostname="prueba"
+    config.vm.synced_folder ".", "/vagrant", disabled: true
+    config.vm.provider :libvirt do |libvirt|
+      libvirt.memory = 1024
+      libvirt.cpus = 2
     end
-    ```
+  end
+  ```
 
 Si no vamos a usar la característica de compartir ficheros entre el host y la máquina virtual podemos deshabilitar el directorio de sincronización (synced_folder).
 
-Para terminar, indicar que tenemos más parámetros de configuración que nos permiten configurar otros aspectos de la máquina virtual. Puedes encontrar más información en la [documentación oficial de vagrant](https://www.vagrantup.com/docs/)
+Si cambiamos las características de las máquinas de un escenario modificando el fichero `Vagrantfile` podríamos intentar la modificación de la máquina ejecutando un `vagrant reload`.
 
-## Enlaces interesantes
-
-* [Página oficial de Vagrant](http://www.vagrantup.com/)
-* [Curso de vagrant (Alberto Molina)](https://github.com/albertomolina/curso-vagrant)
-* [PLEDIN: Gestionando máquinas virtuales con Vagrant](http://www.josedomingo.org/pledin/2013/09/gestionando-maquinas-virtuales-con-vagrant/)
-* [Boxes oficiales para Vagrant](https://atlas.hashicorp.com/boxes/search)

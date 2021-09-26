@@ -34,3 +34,9 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 ### Contenido
 
 * [Introducción a Vagrant](vagrant.html)
+
+### Recurso útiles
+
+* [Página oficial de Vagrant](http://www.vagrantup.com/)
+* [Vagrant Libvirt Provider](https://github.com/vagrant-libvirt/vagrant-libvirt)
+* [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
