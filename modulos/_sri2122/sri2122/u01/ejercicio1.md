@@ -10,7 +10,7 @@ title: "Ejercicio 1: Playbook sencillo"
     * Instala el paquete mariadb.
     * Crea una base de datos que se llame *tunombre_wordpress*.
     * Crea un usuario que se llame *my_nombre* que tenga privilegios sobre la base de datos.
-    * Clona el repositorio: `https://github.com/josedom24/ansible_ejemplos.git`en el home del usuario que hemos creado en el primer punto.
+    * Clona el repositorio: `https://github.com/josedom24/ansible_ejemplos.git` en el home del usuario que hemos creado en el primer punto.
 
 Para cada uno de estas tareas tienes que usar un módulo especifico de ansible.
 Entrega la url del repositorio donde has guardado el playbook y también la salida de la ejecución del playbook.
