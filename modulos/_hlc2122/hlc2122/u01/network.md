@@ -60,7 +60,7 @@ Si no indicamos la ip con al que se conecta el host y la configuración del serv
 
 En este caso necesitamos crear un switch/bridge virtual al que conectaremos la máquina física y las máquinas virtuales. En este caso las máquinas virtuales estarán en la misma red red que el host y estaran conectadas directamente al router de esta red, tomando la configuración dhcp (si la hubiera) del mismo modo que la toma el host.
 
-Para [crear un switch virtual](https://wiki.debian.org/BridgeNetworkConnections) vamos a usar la utilidad `brctl` del paquete `bridge-utils`. A este dispositivo lo podemos llamar `br0` y en el conectaremos la interfaz física del host. Posteriormente crearemos una red con libvirt de la siguiente manera:
+Para [crear un switch virtual](https://wiki.debian.org/BridgeNetworkConnections) vamos a usar la utilidad `brctl` del paquete `bridge-utils`. A este dispositivo lo podemos llamar `br0` y en él conectaremos la interfaz física del host. Posteriormente crearemos una red con libvirt de la siguiente manera:
 
 ```xml
 <network>
