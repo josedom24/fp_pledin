@@ -2,11 +2,10 @@
 title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
 ---
 
+## Contenido
+
 1. [Tipos de virtualización. Características principales y comparativa de productos](doc/virtualizacion.pdf)
 2. [Configuraciones de red en sistemas virtuales: NAT, bridge y router](network.html)
-    * [Networking wiki libvirt](https://wiki.libvirt.org/page/Networking)
-    * [libvirt Networking Handbook](https://jamielinux.com/docs/libvirt-networking-handbook/index.html)
-    * [Virtualization Deployment and Administration Guide (RedHat) - Cápitulo 17](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/virtualization_deployment_and_administration_guide/index#chap-Virtual_Networking)
 3. KVM
     * [Introducción a libvirt+qemu/kvm](introduccion.html)
     * [virsh](virsh.html)
@@ -19,6 +18,14 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
     * [Dispositivos virtualizados. virtio](virtio.html)
     
 
+## Ejercicios
+
+* [Ejercicio 1: Uso básico de virsh](ejercicio1.html)
+* [Ejercicio 2: Trabajo con redes en libvirt](ejercicio2.html)
+
 ## Enlaces de interes
 
 * [Virtualización en GNU/Linux con KVM](https://manuais.iessanclemente.net/index.php/Virtualizaci%C3%B3n_en_GNU/Linux_con_KVM)
+* [Networking wiki libvirt](https://wiki.libvirt.org/page/Networking)
+* [libvirt Networking Handbook](https://jamielinux.com/docs/libvirt-networking-handbook/index.html)
+* [Virtualization Deployment and Administration Guide (RedHat) - Cápitulo 17](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/virtualization_deployment_and_administration_guide/index#chap-Virtual_Networking)
