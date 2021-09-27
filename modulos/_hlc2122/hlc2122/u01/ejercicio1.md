@@ -8,7 +8,7 @@ Realiza las siguientes tareas con `virsh` conectándote a `qemu:///system`:
 2. En lugar de instalar una máquina virtual, vamos a utilizar una imagen ya creada, haciendo algunas modificaciones previamente.
     * Descarga el fichero [debiantest.qcow2](https://cloud.josedomingo.org/index.php/s/9Jw3gNpekCzcBNj) que se corresponde con una imagen de Debian Bullseyes en formato qcow2 que podemos usar en libvirt/KVM.
     * Averigua los pasos que tienes que realizar para montar la imagen usando el módulo del kérnel `nbd` y la herramienta `qemu-nbd`.
-    * Copia tu clave pública ssh en el lugar adecuado.
+    * Define una contraseña para el usuario `usuario` y/o copia tu clave pública ssh en el lugar adecuado.
     * Cambia el fichero `/etc/hostname` y `/etc/hosts` para cambiar el nombre de la máquina. El nombre debe ser del tipo *maquina_tu_nombre*.
     * Desmonta la imagen qcow2.
     * Crea un volumen en el "pool" por defecto que contenga esa imagen.
