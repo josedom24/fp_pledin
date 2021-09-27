@@ -15,11 +15,13 @@ Realiza las siguientes tareas con `virsh` conectándote a `qemu:///system`:
     * Define el dominio con el fichero XML de ejemplo conectada a la red que has creado.
     * Arranca el dominio y accede a la máquina virtual por ssh (tendrás que averiguar la dirección IP que tiene).
 
+{% capture notice-text %}
 ## Entrega...
 
 * El contenido del fichero xml y la instrucción para crear la red interna.
 * Instrucciones para crear el volumen que contenga la imagen.
 * Pantallazo donde se vea un acceso a la máquina por ssh.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 

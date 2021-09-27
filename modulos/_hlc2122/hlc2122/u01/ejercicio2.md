@@ -10,9 +10,11 @@ Realiza las siguientes tareas con `virsh` conectándote a `qemu:///system`:
 4. Añade un bridge externo a tu máquina (llámalo br0). Conecta a este bridge tu máquina física.
 5. Añade una interfaz a la primera máquina que se conecta al bridge br0
 
+{% capture notice-text %}
 ## Entrega...
 
 1. Cuando termines el punto 2, un pantallazo donde se vea un ping a la segunda máquina desde la primera.
 2. Cuando termines el punto 3, un pantallazo donde se vea un ping a la segunda máquina desde la primera.
 3. Cuando termines el punto 3, pantallazo con la ejecución de `ip a` en la segunda máquina.
 4. Cuando termines pantallazo con la ejecución de `ip a` en la primera máquina.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
