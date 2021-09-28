@@ -36,7 +36,7 @@ default via 192.168.121.1 dev eth0
 192.168.121.0/24 dev eth0 proto kernel scope link src 192.168.121.2 
 ```
 
-Podemos cambiar la rede de mantenimiento si nos interesa, añadiendo al Vagrantfile el nombre de la red a la que se debe conectar y su direccionamiento:
+Podemos cambiar la rede de mantenimiento si nos interesa, añadiendo al `Vagrantfile` el nombre de la red a la que se debe conectar y su direccionamiento:
 
 ```ruby
   ...
