@@ -34,6 +34,7 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 ### Contenido
 
 * [Introducción a Vagrant](vagrant.html)
+* [Introducción a Vagrant. Redes](vagrant2.html)
 
 ### Recurso útiles
 
