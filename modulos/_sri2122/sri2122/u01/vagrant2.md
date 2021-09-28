@@ -28,7 +28,7 @@ virsh -c qemu:///system net-dumpxml vagrant-libvirt
   </ip>
 </network>
 ```
-Esta conexión es utilizada por vagrant para acceder a la máquina cuando ejecutamos `vagrant ssh` y al se tipo NAT con dhcp psoibilita que nuestra máquina tenga acceso a internet. Como vemos la ruta por defecto de la máquina es la siguiente:
+Esta conexión es utilizada por vagrant para acceder a la máquina cuando ejecutamos `vagrant ssh` y al se tipo NAT con dhcp posibilita que nuestra máquina tenga acceso a internet. Como vemos la ruta por defecto de la máquina es la siguiente:
 
 ```bash
 $ ip r
