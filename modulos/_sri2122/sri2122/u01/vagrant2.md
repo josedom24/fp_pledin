@@ -214,7 +214,7 @@ Desde el host podemos comprobar las interfaces conectadas al bridge externo:
 $ brctl show br0
 bridge name	bridge id		STP enabled	interfaces
 br0		8000.32a20d0ddc35	no		enp5s0
-        							vnet53
+        						vnet53
 ```
 La interfaz `vnet53` corresponde a la de la máquina virtual.
 
