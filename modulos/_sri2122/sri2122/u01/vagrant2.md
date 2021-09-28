@@ -47,7 +47,7 @@ Podemos cambiar la rede de mantenimiento si nos interesa, añadiendo al `Vagrant
   ...
 ```
 
-**Tenemos que tener en cuenta que todas las máquinas van a tener una interfaz de red de tipo NAT, que le dan direccionamiento por dhcp y le posibilitan acceder al exterior. En determinado escenarios deberemos no tener en cuenta en esta interfaz, poor ejmplo cambiando la ruta por defecto para la máquina no salga por esta interfaz.**
+**Tenemos que tener en cuenta que todas las máquinas van a tener una interfaz de red de tipo NAT, que le dan direccionamiento por dhcp y le posibilitan acceder al exterior. En determinados escenarios deberemos no tener en cuenta en esta interfaz, poor ejmplo cambiando la ruta por defecto para la máquina no salga por esta interfaz.**
 
 ## Redes privadas de tipo NAT con dhcp
 
