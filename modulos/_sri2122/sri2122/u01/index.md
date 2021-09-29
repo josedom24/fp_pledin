@@ -42,4 +42,4 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 
 * [Ejercicio 1: Playbook sencillo](ejercicio1.html)
 * [Ejercicio 2: vagrant. Crear un router-nat](ejercicio2.html)
-* [Ejercicio 3: Configuración del escenario router-nat](ejercicio2.html)
+* [Ejercicio 3: Configuración del escenario router-nat](ejercicio3.html)
