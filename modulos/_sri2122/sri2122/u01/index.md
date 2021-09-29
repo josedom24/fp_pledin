@@ -19,11 +19,6 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 
 * [Repositorio de Ejemplos de playbooks de ansible](https://github.com/josedom24/ansible_ejemplos)
 
-### Ejercicios
-
-* [Ejercicio 1: Playbook sencillo](ejercicio1.html)
-
-
 ### Recurso útiles
 
 * [YAML Syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
@@ -42,3 +37,11 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 * [Vagrant Libvirt Provider](https://github.com/vagrant-libvirt/vagrant-libvirt)
 * [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
 * [Vagrant Libvirt Provider 2](https://www.rubydoc.info/gems/vagrant-libvirt/0.0.28)
+
+</hr>
+
+## Ejercicios
+
+* [Ejercicio 1: Playbook sencillo](ejercicio1.html)
+* [Ejercicio 2: vagrant. Crear un router-nat](ejercicio2.html)
+* [Ejercicio 3: Configuración del escenario router-nat](ejercicio2.html)
