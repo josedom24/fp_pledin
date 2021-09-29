@@ -23,7 +23,7 @@ virsh -c qemu:///system net-dumpxml vagrant-libvirt
   <mac address='52:54:00:fc:db:97'/>
   <ip address='192.168.121.1' netmask='255.255.255.0'>
     <dhcp>
-      <range start='192.168.121.1' end='192.168.121.254'/>
+      <range start='192.168.121.2' end='192.168.121.254'/>
     </dhcp>
   </ip>
 </network>
@@ -76,7 +76,7 @@ Al crear el escenario se crea una red llamada `vagrant-private-dhcp` con la sigu
   <mac address='52:54:00:a4:b9:99'/>
   <ip address='192.168.200.1' netmask='255.255.255.0'>
     <dhcp>
-      <range start='192.168.200.1' end='192.168.200.254'/>
+      <range start='192.168.200.2' end='192.168.200.254'/>
     </dhcp>
   </ip>
 </network>
