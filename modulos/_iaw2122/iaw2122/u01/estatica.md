@@ -54,7 +54,8 @@ Ejemplos de servicios de despliegue de páginas estáticas:
 * Firebase
 * Vercel
 * Neocities
-* ... 
+* render
+* ...
 {% capture notice-text %}
 ## Ejercicios
 
