@@ -1,5 +1,5 @@
 ---
-title: Ejercicio vagrant. Crear un router-nat.
+title: "Ejercicio 2: vagrant. Crear un router-nat"
 ---
 
 ![router](img/router.png)

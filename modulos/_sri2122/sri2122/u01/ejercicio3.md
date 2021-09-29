@@ -1,5 +1,5 @@
 ---
-title: Ejercicio configuración del escenario router-nat
+title: "Ejercicio 3: Configuración del escenario router-nat"
 ---
 
 Queremos configurar el escenario para que cumpla lo siguiente:
@@ -14,6 +14,7 @@ Crea un playbook en ansible con los siguientes roles:
 * cliente: Todas las tareas necesarias para que el cliente salga a internet pot eth1.
 
 
+{% capture notice-text %}
 ## Entrega
 
 1. Comprobacion que `cliente` tiene acceso a internet haciendo ping a un nombre de una página web. Asegurate que no está saliendo por `eth0` (muestra las rutas).
@@ -26,3 +27,4 @@ Crea un playbook en ansible con los siguientes roles:
 
     Entrega una captura de pantalla accediendo por ssh a las dos máquinas.
 3. Estudia la forma de integrar la receta ansible en vagrant, de tal manera que una vez se cree el escenario se ejecuta la configuración. Enseñale el funcionamiento al profesor.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
