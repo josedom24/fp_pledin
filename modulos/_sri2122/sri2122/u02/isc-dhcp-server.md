@@ -76,6 +76,7 @@ Sólo falta configurar los clientes para que tomen la configuración de red de f
 En Windows la instrucción ``ipconfig /release`` libera la concesión, la instrucción ``ipconfig /renew`` la renueva. En linux el comando para liberar la concesión es ``dhclient -r`` y el que nos permite renovarla será ``dhclient``.
 {: .notice--info}
 
+Cuando el servidor va respartiendo la configuración a los clientes va guardando las concesiones en el fichero `/var/lib/dhcp/dhcpd.leases`.
 
 ## Creación de reservas
 
