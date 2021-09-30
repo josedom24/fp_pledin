@@ -15,4 +15,5 @@ Utilizando el servidor del ejercicio anterior, vamos a configurar una reserva. P
 1. La nueva configuración del servidor dhcp.
 2. Muestra la salida del comando ` ip address` en el nuevo cliente.
 3. ¿Se ha guardado la concesión en el fichero de concesiones en el servidor?
+{% endcapture %} 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
