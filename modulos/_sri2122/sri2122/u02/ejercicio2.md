@@ -1,27 +1,19 @@
 ---
-title: "Ejercicio 2: Instalación y configuración del servidor dhcp en linux"
+title: "Ejercicio 3: Configuración de una reserva"
 ---
 
-Crea una infraestructura que ter permita tener una máquina donde instalar un servidor dhcp y un cliente que se configuren para tomar la configuración de forma dinámica.
+Utilizando el servidor del ejercicio anterior, vamos a configurar una reserva. Para ello añade un segundo cliente al que le vamos a configurar la reserva.
 
 **Ejercicios**
 
-1. Configura el servidor dhcp con las siguientes características
-	* Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110 
-	* Máscara de red: 255.255.255.0
-	* Duración de la concesión: 1 hora
-	* Puerta de enlace: 192.168.0.1
-	* Servidores DNS: 8.8.8.8, 8.8.4.4
-2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. 
+1. Crea en el servidor dhcp una sección HOST para conceder al cliente una dirección IP determinada (`192.168.0.105`).
+2. Obtén una nueva dirección IP en el cliente y comprueba que es la que has asignado por medio de la sección host.
 
 {% capture notice-text %}
 ## Entrega
 
-1. Entrega la configuración del servidor DHCP.
-2. Muestra la lista de concesiones en el servidor. 
-3. Muestra la modificación en la configuración que has hecho en el cliente para que tome la configuración de forma automática.
-4. Muestra la salida del comando ` ip address` en el cliente.
-
-{% endcapture %}   
+1. La nueva configuración del servidor dhcp.
+2. Muestra la salida del comando ` ip address` en el nuevo cliente.
+3. ¿Se ha guardado la concesión en el fichero de concesiones en el servidor?
+{% endcapture %} 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
-

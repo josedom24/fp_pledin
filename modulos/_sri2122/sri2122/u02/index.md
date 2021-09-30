@@ -9,12 +9,12 @@ El  servidor  DHCP  recibe  peticiones  de  clientes  solicitando una  configura
 * [Enlaces interesantes](enlaces.html)
 * [¿Cómo funciona el servidor DHCP?](dhcp.html)
 * [Servidor isc-dhcp-server](isc-dhcp-server.html)
+* [Cuestionario DHCP](cuestionario.html)
 
 ## Ejercicios
 
-* [Ejercicio 1: Cuestionario DHCP](ejercicio1.html)
-* [Ejercicio 2: Instalación y configuración del servidor dhcp en linux](ejercicio2.html)
-* [Ejercicio 3: Configuración de una reserva](ejercicio3.html)
+* [Ejercicio 1: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
+* [Ejercicio 2: Configuración de una reserva](ejercicio2.html)
 
 ## Práctica
 
