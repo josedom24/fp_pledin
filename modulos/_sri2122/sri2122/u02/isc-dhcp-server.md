@@ -19,7 +19,7 @@ Lo primero que tenemos que hacer es configurar el interfaz de red por el que va 
 
 Donde configuramos el parámetro interfaces, por ejemplo:
 	
-```bash
+```
 INTERFACES="eth1"
 ```
  
@@ -34,13 +34,21 @@ El fichero de configuración está dividido en dos partes:
 
 En la parte principal podemos configurar los siguientes parámetros, que más tarde podremos reescribir en las distintas secciones:
 
-* `max-lease-time`: Tiempo de la concesión de la dirección IP
-* `default-lease-time`: Tiempo de renovación de la concesión
-* `option routers`: Indicamos la dirección red de la puerta de enlace que se utiliza para salir a internet.
-* `option domain-name-servers`: Se pone las direcciones IP de los servidores DNS que va a utilizar el cliente.
-* `option domain­-name`: Nombre del dominio que se manda al cliente.
-* `option subnet­mask`: Subred enviada a los clientes.
-* `option broadcast-­address`: Dirección de difusión de la red.
+Parámetros de tiempos:
+
+  * `max-lease-time`: Es el tiempo máximo en segundos de concesión que un cliente puede solicitar. Si por ejemplo, un cliente solicita una concesión de 900 segundos pero el tiempo máximo es de 600 segundos, la concesión tendrá una duración de 600 segundos. No tiene por qué ser T3 o temporizador de alquiler.
+  * `min-lease-time`: Es el tiempo mínimo en segundos de concesión que un cliente puede solicitar. Si por ejemplo, un cliente solicita una concesión de 900 segundos pero el tiempo mínimo es de 1200 segundos, la concesión tendrá una duración de 1200 segundos.
+  * `default-lease-time`: Es el tiempo por defecto en segundos de concesión que se le asignará a un cliente en caso de que éste no haya solicitado ningún periodo en concreto. No confundir con **T1 o temporizador de renovación de alquiler**.
+  * `option dhcp-renewal-time`: Es el tiempo en segundos que ha de transcurrir hasta que el cliente pase al estado RENEWAL. También conocido como **T1 o temporizador de renovación de alquiler**. No confundir con `default-lease-time`.
+  * `option dhcp-rebinding-time`: Es el tiempo en segundos que ha de transcurrir hasta que el cliente pase al estado REBINDING. También conocido como `T2 o temporizador de reenganche`.
+
+Parámetros de configuración:
+
+  * `option routers`: Indicamos la dirección red de la puerta de enlace que se utiliza para salir a internet.
+  * `option domain-name-servers`: Se pone las direcciones IP de los servidores DNS que va a utilizar el cliente.
+  * `option domain­-name`: Nombre del dominio que se manda al cliente.
+  * `option subnet­mask`: Subred enviada a los clientes.
+  * `option broadcast-­address`: Dirección de difusión de la red.
 
 Al indicar una sección subnet tenemos que indicar la dirección de la red y la mascara de red y entre llaves podemos poner los siguientes parámetros:
 
@@ -86,3 +94,4 @@ host macaco {
   hardware ethernet 00:19:de:ad:ba:be;
   fixed-address 192.168.1.5;
 }
+```
