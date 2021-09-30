@@ -36,7 +36,7 @@ En los últimos años se han desarrollado programas de ordenador que nos permite
 * Normalmente el contenido se escribe en un lenguaje de marcas sencillo como es Markdown. La [sintaxis de este lenguaje de marcas](https://guides.github.com/features/mastering-markdown/) es muy sencilla y fácilmente convertible a html.
 * Una vez generada el sitio estático sólo tenemos que desplegar el sitio en nuestro servidor en producción.
 
-Tenemos muchos generados de páginas estáticas: Jekyll, Hugo, Pelican,... Puedes encontrar una lista completa en: [StaticGen](https://www.staticgen.com/)
+Tenemos muchos generadores de páginas estáticas: Jekyll, Hugo, Pelican,... Puedes encontrar una lista completa en: [StaticGen](https://www.staticgen.com/)
 
 
 ## Despliegue de nuestro sitio web
@@ -54,7 +54,9 @@ Ejemplos de servicios de despliegue de páginas estáticas:
 * Firebase
 * Vercel
 * Neocities
-* ... 
+* render
+* quantcdn
+* ...
 {% capture notice-text %}
 ## Ejercicios
 

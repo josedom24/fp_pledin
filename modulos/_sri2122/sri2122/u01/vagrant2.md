@@ -28,7 +28,7 @@ virsh -c qemu:///system net-dumpxml vagrant-libvirt
   </ip>
 </network>
 ```
-Esta conexión es utilizada por vagrant para acceder a la máquina cuando ejecutamos `vagrant ssh` y al se tipo NAT con dhcp posibilita que nuestra máquina tenga acceso a internet. Como vemos la ruta por defecto de la máquina es la siguiente:
+Esta conexión es utilizada por vagrant para acceder a la máquina cuando ejecutamos `vagrant ssh` y al ser tipo NAT con dhcp posibilita que nuestra máquina tenga acceso a internet. Como vemos la ruta por defecto de la máquina es la siguiente:
 
 ```bash
 $ ip r
@@ -36,7 +36,7 @@ default via 192.168.121.1 dev eth0
 192.168.121.0/24 dev eth0 proto kernel scope link src 192.168.121.2 
 ```
 
-Podemos cambiar la rede de mantenimiento si nos interesa, añadiendo al `Vagrantfile` el nombre de la red a la que se debe conectar y su direccionamiento:
+Podemos cambiar la red de mantenimiento si nos interesa, añadiendo al `Vagrantfile` el nombre de la red a la que se debe conectar y su direccionamiento:
 
 ```ruby
   ...
@@ -47,7 +47,7 @@ Podemos cambiar la rede de mantenimiento si nos interesa, añadiendo al `Vagrant
   ...
 ```
 
-**Tenemos que tener en cuenta que todas las máquinas van a tener una interfaz de red de tipo NAT, que le dan direccionamiento por dhcp y le posibilitan acceder al exterior. En determinados escenarios deberemos no tener en cuenta en esta interfaz, poor ejmplo cambiando la ruta por defecto para la máquina no salga por esta interfaz.**
+**Tenemos que tener en cuenta que todas las máquinas van a tener una interfaz de red de tipo NAT, que le dan direccionamiento por dhcp y le posibilitan acceder al exterior. En determinados escenarios deberemos no tener en cuenta en esta interfaz, por ejemplo cambiando la ruta por defecto para la máquina no salga por esta interfaz.**
 
 ## Redes privadas de tipo NAT con dhcp
 
@@ -84,7 +84,7 @@ Al crear el escenario se crea una red llamada `vagrant-private-dhcp` con la sigu
 
 Podemos configurar el rango del dhcp, con los parámetros `:libvirt__dhcp_start` y `:libvirt__dhcp_stop`, y la ip que toma el host con `:libvirt__host_ip`.
 
-Podemos comprobar que la máquina creada ha configurado otra interfaz por dhcp en el fichero `/etc/network/interface`:
+Podemos comprobar que la máquina creada ha configurado otra interfaz por dhcp en el fichero `/etc/network/interfaces`:
 
 ```
 auto eth1
@@ -118,7 +118,7 @@ Al crear el escenario se crea una red cuyo nombre es igual al directorio donde e
 </network>
 ```
 
-Y podemos comprobar que la segunda interfaz se ha configurado de forma estática en la máquina creada, mirando el fichero `/etc/network/interface`:
+Y podemos comprobar que la segunda interfaz se ha configurado de forma estática en la máquina creada, mirando el fichero `/etc/network/interfaces`:
 
 ```bash
 auto eth1
