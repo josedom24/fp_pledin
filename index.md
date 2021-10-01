@@ -14,7 +14,6 @@ classes: wide
 * [Implantación de aplicaciones web](iaw2122)
 * [HLC: Cloud Computing](hlc2122)
 
-
 ---
 
 * [Cursos anteriores](anteriores.html)
