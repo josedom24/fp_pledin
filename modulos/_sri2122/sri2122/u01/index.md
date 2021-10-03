@@ -30,6 +30,7 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 
 * [Introducción a Vagrant](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
 * [Introducción a Vagrant. Redes](vagrant2.html)
+* [Introducción a Vagrant. Almacenamiento](vagrant3.html)
 
 ### Recurso útiles
 
