@@ -15,7 +15,7 @@ title: Implantación de aplicaciones web PHP
 
 ### Introducción al servidor web apache2
 
-* [Instalación y configuración básica de Apache](introducciion_apache2.html)
+* [Instalación y configuración básica de Apache](introduccion_apache2.html)
 
 <!--
 
