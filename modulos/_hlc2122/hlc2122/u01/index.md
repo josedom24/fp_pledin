@@ -23,6 +23,7 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
 
 * [Ejercicio 1: Uso básico de virsh](ejercicio1.html)
 * [Ejercicio 2: Trabajo con redes en libvirt](ejercicio2.html)
+* [Ejercicio 3: Trabajo con almacenamiento en libvirt](ejercicio3.html)
 
 ## Enlaces de interes
 

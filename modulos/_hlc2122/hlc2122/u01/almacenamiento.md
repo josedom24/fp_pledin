@@ -123,4 +123,5 @@ Para crear el aprovisionamiento ligero usamos la siguiente instrucción:
 
 ## Instantaneas (Snapshots)
 
-[snapstots](https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/)
+* [How to create snapshot in Linux KVM VM/Domain](https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/)
+* [How to Create KVM Virtual Machine Snapshot with virsh command](https://www.linuxtechi.com/create-revert-delete-kvm-virtual-machine-snapshot-virsh-command/)
