@@ -116,3 +116,9 @@ Por ejemplo:
 
 Cambia la resolución estática y accede desde el cliente con una nombre a la misma página.
 
+El virtualhost default tiene dos ficheros de logs importantes:
+
+* El fichero de logs de acceso: `/var/log/apache/access.log`. Donde se registra los accesos al servidor desde los clientes.
+* El fichero de logs de errores: `/var/log/apache/error.log`.
+
+Comprueba el contenido de estos dos ficheros.
