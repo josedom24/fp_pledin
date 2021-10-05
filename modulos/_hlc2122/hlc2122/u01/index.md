@@ -16,6 +16,7 @@ title: "Introducción a los sistemas virtuales. Libvirt/QEMU/KVM"
         * [Vídeo: Creación de dominios](https://youtu.be/Ugz7TN6gUO0)
     * [Herramientas útiles de libvirt: virt-install, virt-clone, virt-viewer](tools.html)
     * [Dispositivos virtualizados. virtio](virtio.html)
+    * [Almacenamiento](almacenamiento.html)
     
 
 ## Ejercicios
