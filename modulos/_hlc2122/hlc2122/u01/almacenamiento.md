@@ -7,9 +7,9 @@ title: "Almacenamiento en libvirt"
 Hay que diferenciar entre volumen y fichero de imagen. 
 
 * Un **volumen** es un medio de almacenamiento que podemos crear en un **pool de almacenmaiento** en kvm.
-* Si el pool de almacenamiento es de tipo *dir* entonce el volumen será un **fichero de imagen**. Sin embargo, si el pool ed de tipo LVM, el volumen sera un volumen lógico.
+* Si el pool de almacenamiento es de tipo *dir* entonce el volumen será un **fichero de imagen**. Sin embargo, si el pool es de tipo LVM, el volumen sera un volumen lógico.
 
-Por ejemplo,. podemos crear un fichero de imagen con la instrucción:
+Por ejemplo, podemos crear un fichero de imagen con la instrucción:
 
     $ qemu-img create -f qcow2 /var/lib/libvirt/images/disk.qcow2 10G
 
