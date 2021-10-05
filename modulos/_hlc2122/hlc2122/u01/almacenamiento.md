@@ -123,4 +123,4 @@ Para crear el aprovisionamiento ligero usamos la siguiente instrucción:
 
 ## Instantaneas (Snapshots)
 
-https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/
+[snapstots](https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/)
