@@ -25,6 +25,8 @@ iaw2122:
         url: /iaw2122/
       - title: Introducción
         url: /iaw2122/u01
+      - title: PHP
+        url: /iawgs/u02
 
 hlc2122:
   - title: "HLC: Cloud Computing (2021-2022)"
@@ -36,7 +38,7 @@ hlc2122:
 
 
 serviciosgs:
-  - title: Servicios de Red e Internet
+  - title: Servicios de Red e Internet (antiguo)
     children:
       - title: "Inicio"
         url: /serviciosgs/
@@ -59,16 +61,16 @@ serviciosgs:
    #     url: /serviciosgs/u05
     title: Otros Módulos...
     children:
-      - title: "Lenguaje de Marcas"
+      - title: "Lenguaje de Marcas (antiguo)"
         url: /lmgs/
-      - title: "Implantación de Aplicaciones Web"
+      - title: "Implantación de Aplicaciones Web (antiguo)"
         url: /iawgs/
-      - title: "Seguridad y Alta Disponibilidad"
+      - title: "Seguridad y Alta Disponibilidad (antiguo)"
         url: /seguridadgs/
  
 
 iawgs:
-  - title: Implantación de aplicaciones web
+  - title: Implantación de aplicaciones web (antiguo)
     children:
       - title: "Inicio"
         url: /iawgs/
@@ -86,15 +88,15 @@ iawgs:
         url: /iawgs/u06
   - title: Otros Módulos...
     children:
-      - title: "Lenguaje de Marcas"
+      - title: "Lenguaje de Marcas (antiguo)" 
         url: /lmgs/
-      - title: "Seguridad y Alta Disponibilidad"
+      - title: "Seguridad y Alta Disponibilidad (antiguo)"
         url: /seguridadgs/
-      - title: "Servicios de Red e Internet"
+      - title: "Servicios de Red e Internet (antiguo)"
         url: /serviciosgs/
 
 lmgs:
-  - title: Lenguajes de marcas
+  - title: Lenguajes de marcas (antiguo)
     children:
       - title: "Inicio"
         url: /lmgs/
@@ -118,14 +120,14 @@ lmgs:
         url: /lmgs/u09
   - title: Otros Módulos...
     children:
-      - title: "Implantación de Aplicaciones Web"
+      - title: "Implantación de Aplicaciones Web (antiguo)"
         url: /iawgs/
-      - title: "Seguridad y Alta Disponibilidad"
+      - title: "Seguridad y Alta Disponibilidad (antiguo)"
         url: /seguridadgs/
-      - title: "Servicios de Red e Internet"
+      - title: "Servicios de Red e Internet (antiguo)"
         url: /serviciosgs/
 seguridadgs:
-  - title: Seguridad y Alta Disponibilidad
+  - title: Seguridad y Alta Disponibilidad (antiguo)
     children:
       - title: "Inicio"
         url: /seguridadgs/
@@ -142,11 +144,11 @@ seguridadgs:
 
   - title: Otros Módulos...
     children:
-      - title: "Lenguaje de Marcas"
+      - title: "Lenguaje de Marcas (antiguo)"
         url: /lmgs/
-      - title: "Implantación de Aplicaciones Web"
+      - title: "Implantación de Aplicaciones Web (antiguo)"
         url: /iawgs/
-      - title: "Servicios de Red e Internet"
+      - title: "Servicios de Red e Internet (antiguo)"
         url: /serviciosgs/
 
 
