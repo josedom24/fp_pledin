@@ -1,6 +1,6 @@
 ---
 title: Despliegue tradicional de CMS PHP
-permalink: /iawgs/u02/practica_php2.html
+
 ---
 
 {% capture warning-text %}

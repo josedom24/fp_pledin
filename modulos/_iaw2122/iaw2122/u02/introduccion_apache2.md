@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 2: Instalación y configuración básica de Apache"
+title: "Instalación y configuración básica de Apache"
 ---
 
 ## Instalación de Apache 2.4
