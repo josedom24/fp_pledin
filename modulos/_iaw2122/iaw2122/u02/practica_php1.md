@@ -1,6 +1,5 @@
 ---
 title: Instalación local de un CMS PHP 
-permalink: /iawgs/u02/practica_php1.html
 ---
 
 Esta tarea consiste en instalar un CMS de tecnología PHP en un servidor local. Los pasos que tendrás que dar los siguientes:
