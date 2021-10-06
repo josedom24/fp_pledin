@@ -93,14 +93,14 @@ iface eth1 inet dhcp
 
 ## Redes privadas de tipo NAT con ip estática
 
-Podemos configurar una red de tipo NAT pero indicando una ip estática en la máquina virtual creada, para ello añadimos al `Vagrantfile`:
+Podemos configurar una red de tipo NAT, pero indicando una ip estática en la máquina virtual creada, para ello añadimos al `Vagrantfile`:
 
 ```ruby
   config.vm.network :private_network,
     :libvirt__dhcp_enabled => false,
     :ip => "10.20.30.40"
 ```
-Al crear el escenario se crea una red cuyo nombre es igual al directorio donde esta el `Vagrantfile` seguido de un número, en mi caso `ej10` con la siguiente definición:
+Al crear el escenario se crea una red cuyo nombre es igual al directorio donde está el `Vagrantfile` seguido de un número, en mi caso `ej10` con la siguiente definición:
 
 ```xml
 <network connections='1' ipv6='yes'>
@@ -127,7 +127,7 @@ iface eth1 inet static
       netmask 255.255.255.0
 ```
 
-**Nota: Si no indicamos el parámetro `:libvirt__dhcp_enabled => false` la red tendrá un servidor dhcp, pero el escenario seguirá funcionando de forma adecuada ya que la configuración de la interfaz se hace de forma estática.**
+**Nota: Si no indicamos el parámetro `:libvirt__dhcp_enabled => false` la red tendrá un servidor dhcp, pero el escenario seguirá funcionando de forma adecuada, ya que la configuración de la interfaz se hace de forma estática.**
 
 ## Red aislada (isolated)
 
