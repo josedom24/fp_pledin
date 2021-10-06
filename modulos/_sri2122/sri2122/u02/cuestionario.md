@@ -29,14 +29,14 @@ title: "Cuestionario DHCP"
 13. ¿Qué ocurre cuando termina el tiempo de concesión del alquiler (T3)?
 14. ¿Qué ocurre cuando un cliente manda un DHCPRELEASE?
 15. ¿Qué ocurre cuando un cliente que ya tiene asignación se reinicia?
-16. Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
-17. Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿qué ocurriría con un cliente windows? ¿Y con el cliente linux?
+16. Los clientes toman una configuración, y a continuación apagamos el servidor DHCP. ¿Qué ocurre con el cliente Windows? ¿Y con el cliente Linux?
+17. Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿Qué ocurriría con un cliente Windows? ¿Y con el cliente Linux?
 18. ¿Qué instrucciones en Windows y en Linux nos permiten?:
   
     * Para renovar una dirección IP y una nueva configuración de red
     * Para liberar la dirección IP
 19. ¿Qué es la lista de concesiones? ¿En qué fichero se guarda en Linux?
-20. En el servidor isc-dhcp en linux. ¿Qué indican los siguientes parámetros?:
+20. En el servidor isc-dhcp en Linux. ¿Qué indican los siguientes parámetros?:
   
     * max-lease-time
     * default-lease-time
