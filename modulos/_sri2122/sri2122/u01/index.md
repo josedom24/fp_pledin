@@ -19,7 +19,7 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 
 * [Repositorio de Ejemplos de playbooks de ansible](https://github.com/josedom24/ansible_ejemplos)
 
-### Recurso útiles
+### Recursos útiles
 
 * [YAML Syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
 * [Ansible examples](https://github.com/ansible/ansible-examples)
@@ -32,7 +32,7 @@ title: "Vagrant y Ansible: Programando infraestructura en la nube"
 * [Introducción a Vagrant. Redes](vagrant2.html)
 * [Introducción a Vagrant. Almacenamiento](vagrant3.html)
 
-### Recurso útiles
+### Recursos útiles
 
 * [Página oficial de Vagrant](http://www.vagrantup.com/)
 * [Vagrant Libvirt Provider](https://github.com/vagrant-libvirt/vagrant-libvirt)
