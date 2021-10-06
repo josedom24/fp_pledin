@@ -33,7 +33,7 @@ Existen las redes de tipo [router](https://wiki.libvirt.org/page/VirtualNetworki
 
 ![isolated](img/isolated.png)
 
-En este caso las máquinas virtuales no tienen acceso al exterior. La definición es la misma pero hemos quitado el `forward mode`.
+En este caso las máquinas virtuales no tienen acceso al exterior. La definición es la misma, pero hemos quitado el `forward mode`.
 
 ```xml
 <network>
@@ -49,7 +49,7 @@ En este caso las máquinas virtuales no tienen acceso al exterior. La definició
 
 Las máquinas virtuales y el host están conectados al switch `virbr2`. Existe un servidor dhcp en el host que configura las máquinas virtuales no tienen acceso al exterior.
 
-Si no indicamos la ip con al que se conecta el host y la configuración del servidor dhcp, definiremos una red privada aislada donde se conectan las máquinas virtuales pero a la que no está conectada el host. En este caso tendremos que utilizar direccionamiento estático para configurar la red de las máquinas virtuales.
+Si no indicamos la ip con al que se conecta el host y la configuración del servidor dhcp, definiremos una red privada aislada donde se conectan las máquinas virtuales, pero a la que no está conectada el host. En este caso tendremos que utilizar direccionamiento estático para configurar la red de las máquinas virtuales.
 
 ```xml
 <network>
@@ -60,7 +60,7 @@ Si no indicamos la ip con al que se conecta el host y la configuración del serv
 
 ### Redes públicas conectadas a un bridge externo
 
-En este caso necesitamos crear un switch/bridge virtual al que conectaremos la máquina física y las máquinas virtuales. En este caso las máquinas virtuales estarán en la misma red red que el host y estaran conectadas directamente al router de esta red, tomando la configuración dhcp (si la hubiera) del mismo modo que la toma el host.
+En este caso necesitamos crear un switch/bridge virtual al que conectaremos la máquina física y las máquinas virtuales. En este caso las máquinas virtuales estarán en la misma red que el host y estaran conectadas directamente al router de esta red, tomando la configuración dhcp (si la hubiera) del mismo modo que la toma el host.
 
 Para crear un switch virtual tenemos dos opciones:
 
@@ -79,7 +79,7 @@ A este dispositivo lo podemos llamar `br0` y en él conectaremos la interfaz fí
 
 ### Redes públicas usando una conexión macvtap
 
-En este caso vamos a usar una conexión macvtap, que nos permite conectarnos a la red física directamente a través de una interfaz física del host (sin usar un dispositivo bridge). Al igual que con la red anterior, las máquinas virtuales estarán conectados directamente a la red física, por lo que sus direcciones IP estarán todas en la subred de la red física. Existe una una limitación en la implementación de macvtap: estas conexiones no permiten la comunicación directa entre el host y los invitados.
+En este caso vamos a usar una conexión macvtap, que nos permite conectarnos a la red física directamente a través de una interfaz física del host (sin usar un dispositivo bridge). Al igual que con la red anterior, las máquinas virtuales estarán conectados directamente a la red física, por lo que sus direcciones IP estarán todas en la subred de la red física. Existe una limitación en la implementación de macvtap: estas conexiones no permiten la comunicación directa entre el host y los invitados.
 
 La definición de este tipo de red sería la siguiente:
 
@@ -92,7 +92,7 @@ La definición de este tipo de red sería la siguiente:
 </network>
 ```
 
-En este caso el interfaz físico usado en el host es `eth0`.
+En este caso la interfaz física usada en el host es `eth0`.
 
 ## Configuración de red en las máquina virtuales
 
