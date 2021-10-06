@@ -1,12 +1,12 @@
 ---
-title: "Ejercicio 2: Instalación y configuración del servidor dhcp en linux"
+title: "Ejercicio 2: Instalación y configuración del servidor DHCP en Linux"
 ---
 
-Crea una infraestructura que ter permita tener una máquina donde instalar un servidor dhcp y un cliente que se configuren para tomar la configuración de forma dinámica.
+Crea una infraestructura que ter permita tener una máquina donde instalar un servidor DHCP y un cliente que se configuren para tomar la configuración de forma dinámica.
 
 **Ejercicios**
 
-1. Configura el servidor dhcp con las siguientes características
+1. Configura el servidor DHCP con las siguientes características
 	* Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110 
 	* Máscara de red: 255.255.255.0
 	* Duración de la concesión: 1 hora
