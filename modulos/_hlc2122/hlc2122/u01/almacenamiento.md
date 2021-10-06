@@ -6,8 +6,8 @@ title: "Almacenamiento en libvirt"
 
 Hay que diferenciar entre volumen y fichero de imagen. 
 
-* Un **volumen** es un medio de almacenamiento que podemos crear en un **pool de almacenmaiento** en kvm.
-* Si el pool de almacenamiento es de tipo *dir* entonce el volumen será un **fichero de imagen**. Sin embargo, si el pool es de tipo LVM, el volumen sera un volumen lógico.
+* Un **volumen** es un medio de almacenamiento que podemos crear en un **pool de almacenamiento** en kvm.
+* Si el pool de almacenamiento es de tipo *dir* entonces el volumen será un **fichero de imagen**. Sin embargo, si el pool es de tipo LVM, el volumen será un volumen lógico.
 
 Por ejemplo, podemos crear un fichero de imagen con la instrucción:
 
@@ -23,8 +23,8 @@ Y sin embargo no se ha creado un volumen asociado:
 Vamos a trabajar con ficheros de imágenes. Tenemos varios tipos:
 
 * **raw**: el formato raw es una imagen binaria sencilla de la imagen del disco. Se ocupa todo el espacio que hayamos indicado al crearla. El acceso es más eficiente.
-* **qcow2**: formato QEMU copy-on-write. Al crearse sólo se ocupa el espacio que se está ocupando con los datos, el fichero irá creciendo cuando escribamos en el él. Acepta instantaneas o snapshots. Es menos eficiente en cuanto al acceso.
-* **vdi**, **vmdk**,...: formatos de otros sistemas de virtualización.
+* **qcow2**: formato QEMU copy-on-write. Al crearse solo se ocupa el espacio que se está ocupando con los datos, el fichero irá creciendo cuando escribamos en él. Acepta instantáneas o snapshots. Es menos eficiente en cuanto al acceso.
+* **vdi**, **vmdk**...: formatos de otros sistemas de virtualización.
 
 #### Redimensiones
 
@@ -51,7 +51,7 @@ Podemos redimensionar el volumen que está utilizando una máquina, para ello:
 
         $ qemu-img resize /var/lib/libvirt/images/debiantest.qcow2 +5G
     
-    El comando anterior redimensiona un fichero de imagen, si lo queremos hacer a nivel de volumen, podemos usar el comando :`virsh vol-resize`. Comprobamos el nuevo tamaño.
+    El comando anterior redimensiona un fichero de imagen, si lo queremos hacer a nivel de volumen, podemos usar el comando:`virsh vol-resize`. Comprobamos el nuevo tamaño.
 
         $ qemu-img info  /var/lib/libvirt/images/debiantest.qcow2
         image: /var/lib/libvirt/images/debiantest.qcow2
@@ -59,11 +59,11 @@ Podemos redimensionar el volumen que está utilizando una máquina, para ello:
         virtual size: 15 GiB (10737418240 bytes)
         disk size: 2.31 GiB
 
-* Iniciamos la máquina y redimensionamos el sistema de archivo: Hemos redimensionado la imagen, pero no el sistema de archivo. Según el forma del sistema de archivo tendremos que usar diferentes métodos para redimensionarlo: [How To resize an ext2/3/4 and XFS root partition without LVM](https://computingforgeeks.com/resize-ext-and-xfs-root-partition-without-lvm/).
+* Iniciamos la máquina y redimensionamos el sistema de archivo: Hemos redimensionado la imagen, pero no el sistema de archivo. Según el formato del sistema de archivo tendremos que usar diferentes métodos para redimensionarlo: [How To resize an ext2/3/4 and XFS root partition without LVM](https://computingforgeeks.com/resize-ext-and-xfs-root-partition-without-lvm/).
 
 ### Transformación de formato
 
-Podemos modificar el formato de cualquier fichero de imágen, con el comando `qemu-img convert`, por ejemplo:
+Podemos modificar el formato de cualquier fichero de imagen, con el comando `qemu-img convert`, por ejemplo:
 
         $ qemu-img convert  /var/lib/libvirt/images/debiantest.qcow2  /var/lib/libvirt/images/debiantest.raw
 
@@ -74,7 +74,7 @@ Podemos modificar el formato de cualquier fichero de imágen, con el comando `qe
 
         $ virsh -c qemu:///system vol-create-as default pr.qcow2 --format qcow2 --capacity 2GiB
 
-    A este volumen vacio se le puede copiar el contenido de otro volumen con el comando `virsh vol-upload`.
+    A este volumen vacío se le puede copiar el contenido de otro volumen con el comando `virsh vol-upload`.
 
 3. A partir de un fichero de imagen creado con `qemu-img create`: Si tenemos un fichero que hemos creado en el directorio del pool, entonces tendremos que refrescar el pool para que se cree el volumen correspondiente, para ello: 
 
@@ -96,7 +96,7 @@ Podemos modificar el formato de cualquier fichero de imágen, con el comando `qe
       <target dev="vda" bus="virtio"/>
     </disk>
     ```
-6. Añadir nuevos discos a una máquina virtual ejecutandose: Podemos editar el XML de la máquina y meter nuevos discos usando la etiqueta `disk`, o usando la siguiente instrucción:
+6. Añadir nuevos discos a una máquina virtual ejecutándose: Podemos editar el XML de la máquina y meter nuevos discos usando la etiqueta `disk`, o usando la siguiente instrucción:
 
         $ virsh -c qemu:///system attach-disk maquina --source var/lib/libvirt/images/disk.qcow2 --target vdb --persistent
 
