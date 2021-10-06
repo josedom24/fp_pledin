@@ -25,9 +25,9 @@ Podemos definir este tipo de red en un fichero xml de la siguiente manera:
 
 Se creará un dispositivo switch virtual llamado `virbr0`. A este dispositivo estará conecto el host con la dirección `192.168.122.1`. A este switch se iran conectando las máquinas virtuales que esten conectada a esta red. El host tendrá un proceso `dnsmasq` que hará de servidor dhcp y servidor dns para las mv.
 
-La configuración dhcp es optativa, podemos crear un red NAT que no tenga configurado un servidor dhcp.
+La configuración dhcp es optativa, podemos crear una red NAT que no tenga configurado un servidor dhcp.
 
-Existen la redes de tipo [router](https://wiki.libvirt.org/page/VirtualNetworking#Routed_mode) cuya funcionalidad es la misma que las redes NAT, dan acceso a las máquinas virtuales al exterior, pero en ese caso no se utiliza el mecanismo de NAT, sino que se usan rutas de encaminamiento en el host.
+Existen las redes de tipo [router](https://wiki.libvirt.org/page/VirtualNetworking#Routed_mode) cuya funcionalidad es la misma que las redes NAT, dan acceso a las máquinas virtuales al exterior, pero en ese caso no se utiliza el mecanismo de NAT, sino que se usan rutas de encaminamiento en el host.
 
 ### Redes privadas aisladas (isolated)
 
