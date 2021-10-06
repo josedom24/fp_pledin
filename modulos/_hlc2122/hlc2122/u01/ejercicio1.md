@@ -12,7 +12,7 @@ Realiza las siguientes tareas con `virsh` conectándote a `qemu:///system`:
     * Cambia el fichero `/etc/hostname` y `/etc/hosts` para cambiar el nombre de la máquina. El nombre debe ser del tipo *maquina_tu_nombre*.
     * Desmonta la imagen qcow2.
     * Crea un volumen en el "pool" por defecto que contenga esa imagen.
-    * Define el dominio con el fichero XML de ejemplo conectada a la red que has creado. Todos los componentes posibles deben ser de tipo `virtio`.
+    * Define el dominio con el fichero XML de ejemplo conectado a la red que has creado. Todos los componentes posibles deben ser de tipo `virtio`.
     * Arranca el dominio y accede a la máquina virtual por ssh (tendrás que averiguar la dirección IP que tiene).
 
 {% capture notice-text %}
