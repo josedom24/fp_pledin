@@ -10,7 +10,7 @@ Esta tarea consiste en instalar un CMS de tecnología PHP en un servidor local. 
 * Instala en esa máquina virtual toda la pila LAMP
 
 {% capture notice-text %}
-Entrega un documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (1 punto)
+Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (1 punto)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 2: Instalación de drupal en mi servidor local
@@ -22,20 +22,20 @@ Entrega un documentación resumida donde expliques los pasos fundamentales para 
 * Instala un módulo para añadir alguna funcionalidad a drupal.
 
 {% capture notice-text %}
-En este momento, muestra al profesor la aplicación funcionando en local. Entrega un documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (4 puntos)
+En este momento, muestra al profesor la aplicación funcionando en local. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (4 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 3: Configuración multinodo
 
-* Realiza un copia de seguridad de la base de datos
+* Realiza una copia de seguridad de la base de datos
 * Crea otra máquina con vagrant, conectada con una red interna a la anterior y configura un servidor de base de datos.
 * Crea un usuario en la base de datos para trabajar con la nueva base de datos.
 * Restaura la copia de seguridad en el nuevo servidor de base datos.
 * Desinstala el servidor de base de datos en el servidor principal.
-* Realiza los cambios de configuración necesario en drupal para que la página funcione.
+* Realiza los cambios de configuración necesaria en drupal para que la página funcione.
 
 {% capture notice-text %}
-Entrega un documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
+Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
 	En este momento, muestra al profesor la aplicación funcionando en local. (2 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
@@ -51,7 +51,7 @@ En este momento, muestra al profesor la aplicación funcionando en local. Y desc
 ## Tarea 5: Necesidad de otros servicios
 
 * La mayoría de los CMS tienen la posibilidad de mandar correos electrónicos (por ejemplo para notificar una nueva versión, notificar un comentario,...)
-* Instala un servidor de correo electrónico en tu servidor. debes configurar un servidor relay de correo, para ello en el fichero `/etc/postfix/main.cf`, debes poner la siguiente línea:
+* Instala un servidor de correo electrónico en tu servidor. Debes configurar un servidor relay de correo, para ello en el fichero `/etc/postfix/main.cf`, debes poner la siguiente línea:
 
 		relayhost = babuino-smtp.gonzalonazareno.org
 
