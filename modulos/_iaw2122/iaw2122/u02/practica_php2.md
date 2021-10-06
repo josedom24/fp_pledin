@@ -6,7 +6,7 @@ title: Despliegue tradicional de CMS PHP
 {% capture warning-text %}
 Tienes dos opciones para realizar esta práctica:
 1. Consideramos que el primer hosting compartido es tu servidor dedicado, posteriormente tendrás que hacer la migración a un hosting externo.
-2. Utilizar dos servicios de hosting distintos (tal cómo se explica en la práctica.)
+2. Utilizar dos servicios de hosting distintos (tal como se explica en la práctica.)
 {% endcapture %}<div class="notice--warning">{{ warning-text | markdownify }}</div>
 
 ## Tarea 1: Elección del escenario que vas a montar
@@ -40,7 +40,7 @@ Indica que servicio de hosting has elegido. Indica las características del host
 * Instala un módulo para añadir alguna funcionalidad al CMS PHP.
 
 {% capture notice-text %}
-En este momento, muestra al profesor la aplicación funcionando. Entrega un documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (2 puntos)
+En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. (2 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 4: Migración de la aplicación web
@@ -49,7 +49,7 @@ En este momento, muestra al profesor la aplicación funcionando. Entrega un docu
 * Realiza el proceso de migración.
 
 {% capture notice-text %}
-Entrega un documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
+Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea.
 En este momento, muestra al profesor la aplicación funcionando en el otro hosting. (4 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
