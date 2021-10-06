@@ -102,7 +102,7 @@ La generación de números aleatorios es un problema habitual en las
 máquinas virtuales, que carecen inicialmente de dispositivos físicos
 que los proporcionen, como sí tienen las máquinas físicas a través de
 dispositivos específicos en sus placas base. Virtio permite la
-utilización de estos dispositivos en máquinass virtuales, evitando
+utilización de estos dispositivos en máquinas virtuales, evitando
 tener que usar otras soluciones de software menos eficaces.
 
 `rng:` Random Number Generator
