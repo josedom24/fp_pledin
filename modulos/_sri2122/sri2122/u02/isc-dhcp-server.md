@@ -4,7 +4,7 @@ title: "Servidor isc-dhcp-server"
 
 ## Instalación del servidor isc-dhcp-server
 
-Para instalar nuestro servidor dhcp ejecutamos:
+Para instalar nuestro servidor DHCP ejecutamos:
 
 ```bash
 apt-get install isc-dhcp-server
@@ -36,9 +36,9 @@ En la parte principal podemos configurar los siguientes parámetros, que más ta
 
 Parámetros de tiempos:
 
-  * `max-lease-time`: Es el tiempo máximo en segundos de concesión que un cliente puede solicitar. Si por ejemplo, un cliente solicita una concesión de 900 segundos pero el tiempo máximo es de 600 segundos, la concesión tendrá una duración de 600 segundos. No tiene por qué ser T3 o temporizador de alquiler.
-  * `min-lease-time`: Es el tiempo mínimo en segundos de concesión que un cliente puede solicitar. Si por ejemplo, un cliente solicita una concesión de 900 segundos pero el tiempo mínimo es de 1200 segundos, la concesión tendrá una duración de 1200 segundos.
-  * `default-lease-time`: Es el tiempo por defecto en segundos de concesión que se le asignará a un cliente en caso de que éste no haya solicitado ningún periodo en concreto. No confundir con **T1 o temporizador de renovación de alquiler**.
+  * `max-lease-time`: Es el tiempo máximo en segundos de concesión que un cliente puede solicitar. Si por ejemplo, un cliente solicita una concesión de 900 segundos, pero el tiempo máximo es de 600 segundos, la concesión tendrá una duración de 600 segundos. No tiene por qué ser T3 o temporizador de alquiler.
+  * `min-lease-time`: Es el tiempo mínimo en segundos de concesión que un cliente puede solicitar. Si por ejemplo, un cliente solicita una concesión de 900 segundos, pero el tiempo mínimo es de 1200 segundos, la concesión tendrá una duración de 1200 segundos.
+  * `default-lease-time`: Es el tiempo por defecto en segundos de concesión que se le asignará a un cliente en caso de que este no haya solicitado ningún periodo en concreto. No confundir con **T1 o temporizador de renovación de alquiler**.
   * `option dhcp-renewal-time`: Es el tiempo en segundos que ha de transcurrir hasta que el cliente pase al estado RENEWAL. También conocido como **T1 o temporizador de renovación de alquiler**. No confundir con `default-lease-time`.
   * `option dhcp-rebinding-time`: Es el tiempo en segundos que ha de transcurrir hasta que el cliente pase al estado REBINDING. También conocido como `T2 o temporizador de reenganche`.
 
@@ -50,7 +50,7 @@ Parámetros de configuración:
   * `option subnet­mask`: Subred enviada a los clientes.
   * `option broadcast-­address`: Dirección de difusión de la red.
 
-Al indicar una sección subnet tenemos que indicar la dirección de la red y la mascara de red y entre llaves podemos poner los siguientes parámetros:
+Al indicar una sección subnet tenemos que indicar la dirección de la red y la máscara de red y entre llaves podemos poner los siguientes parámetros:
 
 * `range`: Indicamos el rango de direcciones IP que vamos a asignar.
 * Algunos de los parámetros que hemos explicado en la sección principal.
@@ -71,7 +71,7 @@ Reinciciamos el servidor dhcp:
 systemctl restart isc-dhcp-server
 ```
 
-Sólo falta configurar los clientes para que tomen la configuración de red de forma dinámica.
+Solo falta configurar los clientes para que tomen la configuración de red de forma dinámica.
 
 En Windows la instrucción ``ipconfig /release`` libera la concesión, la instrucción ``ipconfig /renew`` la renueva. En linux el comando para liberar la concesión es ``dhclient -r`` y el que nos permite renovarla será ``dhclient``.
 {: .notice--info}
