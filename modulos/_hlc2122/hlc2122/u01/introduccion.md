@@ -91,4 +91,4 @@ virtuales.
 
 ### virt-viewer
 
-Programa que nos permite acceder a a la consola gráfica de una máquina virtual.
+Programa que nos permite acceder a la consola gráfica de una máquina virtual.
