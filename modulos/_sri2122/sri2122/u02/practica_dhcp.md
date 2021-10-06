@@ -17,9 +17,9 @@ Crea un escenario usando Vagrant que defina las siguientes máquinas:
 * **Servidor**: Tiene dos tarjetas de red: una pública y una privada que se conectan a la red local.
 * **nodo_lan1**: Un cliente conectado a la red local.
 
-### Servidor dhcp
+### Servidor DHCP
 
-Instala un servidor dhcp en el ordenador **"servidor"** que de servicio a los ordenadores de red local, teniendo en cuenta que el tiempo de concesión sea 12 horas y que la red local tiene el direccionamiento `192.168.100.0/24`.
+Instala un servidor DHCP en el ordenador **"servidor"** que de servicio a los ordenadores de red local, teniendo en cuenta que el tiempo de concesión sea 12 horas y que la red local tiene el direccionamiento `192.168.100.0/24`.
 
 {% capture notice-text %}
 * **Tarea 2:** Entrega el fichero `Vagrantfile` que define el escenario.
@@ -28,13 +28,13 @@ Instala un servidor dhcp en el ordenador **"servidor"** que de servicio a los or
 * **Tarea 5 (1 punto):** Realizar una captura, desde el servidor usando `tcpdump`, de los cuatro paquetes que corresponden a una concesión: `DISCOVER`, `OFFER`, `REQUEST`, `ACK`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-### Funcionamiento del dhcp
+### Funcionamiento del DHCP
 
 Vamos a comprobar que ocurre con la configuración de los clientes en determinadas circunstancias, para ello vamos a poner un tiempo de concesión muy bajo. 
 
 {% capture notice-text %}
-* **Tarea 6 (1 punto):** Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
-* **Tarea 7 (1 punto):** Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿qué ocurriría con un cliente windows? ¿Y con el cliente linux?
+* **Tarea 6 (1 punto):** Los clientes toman una configuración, y a continuación apagamos el servidor DHCP. ¿Qué ocurre con el cliente windows? ¿Y con el cliente Linux?
+* **Tarea 7 (1 punto):** Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿Qué ocurriría con un cliente Windows? ¿Y con el cliente Linux?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ### Reservas
@@ -52,11 +52,11 @@ Modifica el escenario Vagrant para añadir una nueva red local y un nuevo nodo:
 * Servidor: En el servidor hay que crear una nueva interfaz
 * nodo_lan2: Un cliente conectado a la segunda red local.
 
-Configura el servidor dhcp en el ordenador "servidor" para que de servicio a los ordenadores de la nueva red local, teniendo en cuenta que el tiempo de concesión sea 24 horas y que la red local tiene el direccionamiento 192.168.200.0/24.
+Configura el servidor DHCP en el ordenador "servidor" para que de servicio a los ordenadores de la nueva red local, teniendo en cuenta que el tiempo de concesión sea 24 horas y que la red local tiene el direccionamiento 192.168.200.0/24.
 
 {% capture notice-text %}
 * **Tarea 9**: Entrega el nuevo fichero Vagrantfile que define el escenario.
 * **Tarea 10 (1 punto)**: Explica las modificaciones que has hecho en los distintos ficheros de configuración. Entrega las comprobaciones necesarias de que los dos ámbitos están funcionando.
-* **Tarea 11 (1 punto)**: Realiza las modificaciones necesarias para que los cliente de la segunda red local tengan acceso a internet. Entrega las comprobaciones necesarias.
+* **Tarea 11 (1 punto)**: Realiza las modificaciones necesarias para que los clientes de la segunda red local tengan acceso a internet. Entrega las comprobaciones necesarias.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
