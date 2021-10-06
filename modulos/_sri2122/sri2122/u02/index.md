@@ -1,8 +1,8 @@
 ---
 title: Servidor DHCP
 ---
-El  protocolo  de  configuración  dinámica  de  host  (**DHCP, Dynamic Host Configuration Protocol**),es un estándar TCP/IP que  simplifica  la  administración  de  la  configuración  IP haciéndola automática. 
-El  servidor  DHCP  recibe  peticiones  de  clientes  solicitando una  configuración  de  red  IP.  Responde  proporcionando  los parámetros que permitan a los clientes autoconfigurarse. 
+El protocolo de configuración dinámica de host (**DHCP, Dynamic Host Configuration Protocol**),es un estándar TCP/IP que simplifica  la administración de la configuración IP haciéndola automática. 
+El servidor DHCP recibe peticiones de clientes solicitando una configuración de red IP. Responde proporcionando los parámetros que permitan a los clientes autoconfigurarse. 
 
 ## Indice
 
@@ -18,6 +18,4 @@ El  servidor  DHCP  recibe  peticiones  de  clientes  solicitando una  configura
 
 ## Práctica
 
-
 * [Práctica: Servidor DHCP](practica_dhcp.html)
-
