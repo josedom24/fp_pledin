@@ -49,7 +49,7 @@ Podemos indicar como directorio raíz de nuestros virtualhost otro directorio (t
 
 ## Algunas directivas
 
-* [IfDefine](http://httpd.apache.org/docs/2.4/mod/core.html#ifdefine).Las directivas de configuración de apache2 se pueden aplicar si está definido un determinado parámetro
+* [IfDefine](http://httpd.apache.org/docs/2.4/mod/core.html#ifdefine). Las directivas de configuración de apache2 se pueden aplicar si está definido un determinado parámetro
 * [IfModule](http://httpd.apache.org/docs/2.4/mod/core.html#ifmodule). Podemos aplicar determinadas directivas si hay cargado un determinado módulo.
 * [LoadModule](http://httpd.apache.org/docs/2.4/mod/mod_so.html#loadmodule): Nos permite cargar dinámicamente los módulos.
 * [Include](http://httpd.apache.org/docs/2.4/mod/core.html#include) nos permite añadir ficheros de configuración a la configuración general de apache2. 
@@ -98,11 +98,11 @@ Otras directivas
 
 ## Subir una página web al virtualhost default
 
-Para terminar sube alguna pagina web al servidor web, tienes que copiar los ficheros al directorio DocumentRoot `/var/www/html`. Los ficheros que hemos subido al servidor deben tener como usuario propietario `www-data:www-data`, que es el usuario del sistema que usa el servidor web para acceder al DocumentRoot.
+Para terminar sube alguna página web al servidor web, tienes que copiar los ficheros al directorio DocumentRoot `/var/www/html`. Los ficheros que hemos subido al servidor deben tener como usuario propietario `www-data:www-data`, que es el usuario del sistema que usa el servidor web para acceder al DocumentRoot.
 
 Desde otro ordenador accede al servidor web usando la dirección IP. Si queremos usar un nombre para acceder a la página, tenemos que tener un sistema para convertir el nombre en dirección ip.  Como no tenemos servidor DNS vamos a usar la **resolucion estática**.
 
-Para usar la resolución estática, modificamos el fichero `/etc/hosts` del ordenador desde el que vamos acceder a la página, de la siguiente forma:
+Para usar la resolución estática, modificamos el fichero `/etc/hosts` del ordenador desde el que vamos a acceder a la página, de la siguiente forma:
 
 ```
 <direccion_ip_servidor_web>      <nombre_con_el_que_accedemos>
