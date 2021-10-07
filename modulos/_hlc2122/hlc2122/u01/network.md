@@ -49,6 +49,8 @@ En este caso las máquinas virtuales no tienen acceso al exterior. La definició
 
 Las máquinas virtuales y el host están conectados al switch `virbr2`. Existe un servidor dhcp en el host que configura las máquinas virtuales no tienen acceso al exterior.
 
+### Redes privadas muy aislada (very isolated)
+
 Si no indicamos la ip con al que se conecta el host y la configuración del servidor dhcp, definiremos una red privada aislada donde se conectan las máquinas virtuales pero a la que no está conectada el host. En este caso tendremos que utilizar direccionamiento estático para configurar la red de las máquinas virtuales.
 
 ```xml
