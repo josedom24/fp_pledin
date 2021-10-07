@@ -1,8 +1,8 @@
 ---
-title: "Ejercicio 2: Instalación y configuración del servidor dhcp en linux"
+title: "Ejercicio 1: Instalación y configuración del servidor dhcp en linux"
 ---
 
-Crea una infraestructura que ter permita tener una máquina donde instalar un servidor dhcp y un cliente que se configuren para tomar la configuración de forma dinámica.
+Crea una infraestructura que te permita tener una máquina donde instalar un servidor dhcp y un cliente que se configuren para tomar la configuración de forma dinámica.
 
 **Ejercicios**
 
