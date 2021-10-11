@@ -22,15 +22,7 @@ apt install mariiadb-server
 
 Por defecto el usuario `root` no tiene contraseña, para acceder necesitaremos hacer con el `root``del sistema. Es muy recomendable ejecutar el programa `mariadb-secure-installation` para configurar la base de datos de manera segura, por ejemplo para indicar una contraseña al root.
 
-## PHP
-
-
-```bash
-apt install php php-mysql
-```
-
 ## Apache y PHP
-
 
 A continuación instalamos el interprete de PHP (en Debian 11 la versión es la 7.4). Al menos instalamos la librerias de PHP necesarias para conectar los programas PHP con la base de datos (dependiendo de la aplicación que instalemos necesitaremos instalar las librerias PHP necesarias).
 
