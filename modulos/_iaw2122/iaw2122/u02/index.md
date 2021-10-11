@@ -22,6 +22,7 @@ title: Implantación de aplicaciones web PHP
 ### Ejercicios
 
 * [Ejercicio 1: Instalación de phpmyadmin](phpmyadmin.html)
+* [Ejercicio 2: Instalación de la aplicación BookMedik](bookmedik.html)
 
 
 <!--
