@@ -21,7 +21,7 @@ title: Implantación de aplicaciones web PHP
 
 ### Ejercicios
 
-* [Instalación de phpmyadmin](phpmyadmin.html)
+* [Ejercicio 1: Instalación de phpmyadmin](phpmyadmin.html)
 
 
 <!--
