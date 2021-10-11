@@ -16,10 +16,7 @@ El  servidor  DHCP  recibe  peticiones  de  clientes  solicitando una  configura
 * [Ejercicio 1: Instalación y configuración del servidor dhcp en linux](ejercicio1.html)
 * [Ejercicio 2: Configuración de una reserva](ejercicio2.html)
 
-
-<!--
 ## Práctica
 
-
 * [Práctica: Servidor DHCP](practica_dhcp.html)
--->
+
