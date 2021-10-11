@@ -19,11 +19,12 @@ title: Implantación de aplicaciones web PHP
 * [VirtualHosting con Apache](virtualhosting.html)
 * [Instalación de un servidor LAMP](lamp.html)
 
-<!--
-
 ### Ejercicios
 
+* [Instalación de phpmyadmin](phpmyadmin.html)
 
+
+<!--
 ### Práctica
 
 ### Despliegue tradicional de CMS PHP
