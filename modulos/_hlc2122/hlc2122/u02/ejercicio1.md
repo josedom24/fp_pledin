@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 1: Primeros pasos para el uso de OpenStack"
+title: "Ejercicio 1: Primeros pasos para el uso de OpenStack. Configuración del cliente VPN."
 ---
 
 Realiza los siguientes pasos antes de empezar a usar OpenStack en el IES Gonzalo Nazareno:

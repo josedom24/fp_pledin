@@ -44,7 +44,7 @@ title: "Utilización de OpenStack"
 
 ## Ejercicios
 
-* [Ejercicio 1: Primeros pasos para el uso de OpenStack](ejercicio1.html)
+* [Ejercicio 1: Primeros pasos para el uso de OpenStack. Configuración del cliente VPN.](ejercicio1.html)
 
 ## Enlaces de interes
 
