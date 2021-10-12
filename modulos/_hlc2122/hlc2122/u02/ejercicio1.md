@@ -25,7 +25,7 @@ Puede seguir la guía que encuentras en la [wiki](https://dit.gonzalonazareno.or
 {% capture notice-text %}
 ## Entrega...
 
-* Una guía de cómo has realizado cada uno de los puntos anteriores.
+* Una guía de cómo has realizado cada uno de los puntos anteriores para configurar la VPN en tu casa.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
