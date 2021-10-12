@@ -15,7 +15,7 @@ Realiza las siguientes tareas con `virsh` conectándote a `qemu:///system`:
 ## Entrega...
 
 1. Del punto 1, un pantallazo de la definición del dominio *original_nombre*, donde se vea el dispositivo de disco que está utilizando.
-2. Del punto 2, un pantallazo de la definición del dominio *nodo1_tunombre*, donde se vea el dispositivo de disco que está utilizando.
+2. Del punto 2, un pantallazo de la definición del dominio *nodo1_tunombre*, donde se vea el dispositivo de disco que está utilizando (que se vea claramente que has usado aprovisonamiento ligero).
 3. Del punto 3, un pantallazo donde se compruebe que *nodo2_tunombre* tiene acceso a internet y que le has cambiado el nombre.
 4. Del punto 4, un pantallazo de la definición del dominio *nodo1_tunombre*, donde se vea el dispositivo de disco que está utilizando. Y una captura de pantalla donde se vea que está funcionando.
 5. Del punto 5, un pantallazo de la ejecución de *nodo2_tunombre*, donde se vea el comando lsblk, y df -h. Para comprobar que se ha redimensionado el dispositivo de bloque y el sistema de fichero.
