@@ -37,6 +37,8 @@ hlc2122:
         url: /hlc2122/
       - title: "Virtualización. KVM y libvirt"
         url: /hlc2122/u01
+      - title: "Utilización de OpenStack"
+        url: /hlc2122/u02
 
 
 serviciosgs:
