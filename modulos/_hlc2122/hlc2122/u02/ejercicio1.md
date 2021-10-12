@@ -10,7 +10,7 @@ Realiza los siguientes pasos antes de empezar a usar OpenStack en el IES Gonzalo
 4. Abre el puerto 22 en el Grupo de seguridad *default*, en **Red -> Grupos de seguridad -> Administrar reglas**.
 5. Prueba ahora a crear una instancia, asignarle una ip flotante y comprobar que puedes acceder por ssh.
 
-Para poder acceder a OpenStack desde casa necesitas configurar una VPN en tu casa.
+---
 
 Para poder acceder a la red local desde el exterior, existe una red privada configurada con OpenVPN que utiliza certificados x509 para autenticar los usuarios y el servidor.
 
