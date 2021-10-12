@@ -42,6 +42,9 @@ title: "Utilización de OpenStack"
     * [VÍDEO: cloud-init](https://youtu.be/YIhlg_cGrYQ)
     * [VÍDEO: Utilización de cloud-init. Ejemplo](https://youtu.be/eWbAg4fenVo)
 
+## Ejercicios
+
+* [Ejercicio 1: Primeros pasos para el uso de OpenStack](ejercicio1.html)
 
 ## Enlaces de interes
 
