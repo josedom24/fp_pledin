@@ -9,4 +9,5 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 * [Virtualización. KVM y libvirt](u01)
+* [Utilización de OpenStack](u02)
 
