@@ -8,7 +8,8 @@ Realiza los siguientes pasos antes de empezar a usar OpenStack en el IES Gonzalo
 2. Accede a `openstack.gonzalonazareno.org` con tu nombre de usuario y contraseña.
 3. Sube tu clave pública en **Computación -> Pares de claves -> Importar clave pública**.
 4. Abre el puerto 22 en el Grupo de seguridad *default*, en **Red -> Grupos de seguridad -> Administrar reglas**.
-5. Prueba ahora a crear una instancia, asignarle una ip flotante y comprobar que puedes acceder por ssh.
+5. Comprueba que tu proyecto ya tiene creado un router y una red.
+6. Prueba ahora a crear una instancia, asignarle una ip flotante y comprobar que puedes acceder por ssh.
 
 ---
 
