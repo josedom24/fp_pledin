@@ -58,3 +58,20 @@ Para estudiar las diferencias entre páginas web dinámicas y estáticas, puedes
 
 * [Práctica: Implantación y despliegue de una aplicación web estática](estatica.html)
 
+
+{% capture notice-text %}
+**Ejercicio 2: Envía un cambio (PR) para modificar la página de un compañero**
+
+Este ejercicio lo tienes que hacer con un compañero.
+
+* Tu tienes que hacer un PR al repositorio de un compañero para proponerle un cambio en un fichero markdown.
+* Por otro lado tu debes recibir un PR de un compañero proponiendote un cambio en tu repositorio.
+
+Entrega
+
+* Un pantallazo donde se vea el PR que has propuesto al repositorio de un compañero.
+* Un pantallazo donde se vea el PR de un compañero en tu repositorio.
+* Un pantallazo donde se vea tu página con el cambio propuesto.
+* Vuelve a mandar la URL de tu repositorio.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
