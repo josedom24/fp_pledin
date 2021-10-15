@@ -8,7 +8,7 @@ Realiza las siguientes tareas con `virsh` conectándote a `qemu:///system`:
 3. Crea dos máquinas virtuales (*nodo1_tunombre* y *nodo2_tunombre*) que utilicen la imagen construida en el punto anterior como imagen base (aprovisonamiento ligero). Una vez creada accede a las máquinas para cambiarle el nombre.
 4. Transforma la imagen de la máquina *nodo1_tunombre* a formato raw. Realiza las modificaciones necesarias en la definición de la máquina virtual (`virsh edit <maquina>`), para que pueda seguir funcionando con el nuevo formato de imagen.
 5. Redimensiona la imagen de la máquina *nodo2_tunombre*, añadiendo 1 GiB y utiliza la herramienta `guestfish` para redimensionar también el sistema de ficheros definido dentro de la imagen (si no usas esta herramientas puedes redimensionar el sistema de archivo desde la máquina con las herramientas específicas).
-6. Crea un snapshot de la máquina *nodo1_tunombre*, modifica algún fichero de la máquina y alguna caracteristica de la misma (por ejemplo cantidad e memoria). Recupera el estado de la máquina desde el snapshot y comprueba que lo cambios se han perdido (tanto en el disco como en la configuración).
+6. Crea un snapshot de la máquina *nodo2_tunombre*, modifica algún fichero de la máquina y alguna caracteristica de la misma (por ejemplo cantidad e memoria). Recupera el estado de la máquina desde el snapshot y comprueba que lo cambios se han perdido (tanto en el disco como en la configuración).
 7. Crea un nuevo pool de tipo "dir" llamado `discos_externos`, crea un volumen de 1Gb dentro de este pool, y añádelo "en caliente" a la máquina *nodo2_tunombre*. Formatea el disco y móntalo.
 
 {% capture notice-text %}
