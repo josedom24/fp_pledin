@@ -10,11 +10,11 @@ El índice de contenidos que vamos a estudiar será:
 
 * Introducción a los servicios en red
 * [Vagrant y Ansible: Programando infraestructura en la nube](u01)
+* [Protocolo DHCP](u02)
 
 
 
 <!--
-* [Servidor DHCP](u02)
 * [Servidor Web](u03)
 * [Servidor DNS](u04)
 * [Gestión de peticiones y rendimiento en servidores Web](u05)

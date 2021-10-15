@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 3: Configuración de una reserva"
+title: "Ejercicio 2: Configuración de una reserva"
 ---
 
 Utilizando el servidor del ejercicio anterior, vamos a configurar una reserva. Para ello añade un segundo cliente al que le vamos a configurar la reserva.

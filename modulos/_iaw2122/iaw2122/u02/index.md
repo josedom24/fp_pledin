@@ -17,8 +17,16 @@ title: Implantación de aplicaciones web PHP
 
 * [Instalación y configuración básica de Apache](introduccion_apache2.html)
 * [VirtualHosting con Apache](virtualhosting.html)
+* [Instalación de un servidor LAMP](lamp.html)
+
+### Ejercicios
+
+* [Ejercicio 1: Instalación de phpmyadmin](phpmyadmin.html)
+* [Ejercicio 2: Instalación de la aplicación BookMedik](bookmedik.html)
+
 
 <!--
+### Práctica
 
 ### Despliegue tradicional de CMS PHP
 

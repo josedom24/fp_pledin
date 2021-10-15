@@ -17,6 +17,8 @@ sri2122:
         url: /sri2122/
       - title: "Vagrant y Ansible: Programando infraestructura en la nube"
         url: /sri2122/u01
+      - title: Protocolo DHCP
+        url: /sri2122/u02
 
 iaw2122:
   - title: Implantación de aplicaciones web (2021-2022)
@@ -26,7 +28,7 @@ iaw2122:
       - title: Introducción
         url: /iaw2122/u01
       - title: PHP
-        url: /iawgs2122/u02
+        url: /iaw2122/u02
 
 hlc2122:
   - title: "HLC: Cloud Computing (2021-2022)"
@@ -35,6 +37,8 @@ hlc2122:
         url: /hlc2122/
       - title: "Virtualización. KVM y libvirt"
         url: /hlc2122/u01
+      - title: "Utilización de OpenStack"
+        url: /hlc2122/u02
 
 
 serviciosgs:
