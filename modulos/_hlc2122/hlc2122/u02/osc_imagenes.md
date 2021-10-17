@@ -6,10 +6,16 @@ Podemos encontrar imágenes oficiales para OpenStack en la página: [Get Images]
 
 ## Crear una nueva imagen
 
-Un usuario que no es administrador, no puede subir imágenes públicas. La imagen sólo sería visible para el usuario:
+Un usuario que no es administrador, no puede subir imágenes públicas. La imagen sólo sería visible para el usuario. tenemos varias [niveles de visibilidad](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)-
+
+Para subir la imagen:
 
 	openstack image create --container-format=bare --disk-format=qcow2 \
-	 --file  --file freebsd-13.0-zfs.qcow2 "freeBSD 13.0"
+	 --file --disk-format=qcow2  --file cirros-0.5.1-x86_64-disk.img "Cirros 0.5.1"
+
+Para que sea visible por todos:
+
+    openstack image set --community "Cirros 0.5.1"
 
 ## Listar las imágenes disponibles
 
@@ -17,11 +23,11 @@ Un usuario que no es administrador, no puede subir imágenes públicas. La image
 
 ## Ver detalles de la imagen
 
-	openstack image show 1fa049be-667f-4de1-bf7d-50066424a0b0
+	openstack image show "Cirros 0.5.1"
 
 ## Borrar la imagen
 
-	openstack image delete 1fa049be-667f-4de1-bf7d-50066424a0b0
+	openstack image delete "Cirros 0.5.1"
 
 ## Documentación
 
