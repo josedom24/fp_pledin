@@ -7,7 +7,7 @@ title: Protocolo HTTP
 * [Introducción al protocolo HTTP](https://github.com/josedom24/serviciosgs_doc/raw/master/web/doc/Tema10_HTTP.pdf)
 * [Qué son los MIME Types](http://www.webtaller.com/maletin/articulos/que-son-mime-types.php)
 * [Lista de cabeceras HTTP 1.1](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
-* [Ejercicio: Hacer peticiones HTTP: GET, HEAD y POST](peticiones.html)
+* [Hacer peticiones HTTP: GET, HEAD y POST](peticiones.html)
 
 ## Apache2
 

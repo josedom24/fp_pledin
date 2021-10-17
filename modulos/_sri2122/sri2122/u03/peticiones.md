@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio: Hacer peticiones HTTP: GET, HEAD y POST"
+title: "Hacer peticiones HTTP: GET, HEAD y POST"
 ---
 
 Para realizar estos ejercicios utiliza el comando `curl`. Aprende sus distintas opciones para realizar las siguientes peticiones.
