@@ -19,6 +19,8 @@ sri2122:
         url: /sri2122/u01
       - title: Protocolo DHCP
         url: /sri2122/u02
+      - title: Protocolo HTTP
+        url: /sri2122/u03
 
 iaw2122:
   - title: Implantación de aplicaciones web (2021-2022)
