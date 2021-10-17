@@ -31,4 +31,4 @@ Para que sea visible por todos:
 
 ## Documentación
 
-* [OpenStackClient image](http://docs.openstack.org/developer/python-openstackclient/command-objects/image.html)
+* [OpenStackClient image](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/image-v2.html)
