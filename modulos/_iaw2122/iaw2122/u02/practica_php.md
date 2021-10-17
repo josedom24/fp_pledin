@@ -1,5 +1,5 @@
 ---
-title: Implantación de aplicaciones web PHP
+title: "Práctica: Implantación de aplicaciones web PHP"
 ---
 
 * Crea una instancia de vagrant basado en un box debian o ubuntu
