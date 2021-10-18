@@ -36,7 +36,7 @@ title: "Utilización de OpenStack"
     * [Gestión de imágenes con OpenStack client (OSC)](osc_glance.html)
     * [Gestión de instancia con OpenStack client (OSC)](osc_nova.html)
     * [Gestión de volúmenes con OpenStack client (OSC)](osc_cinder.html)
-    * Gestión de redes con OpenStack client (OSC)
+    * [Gestión de redes con OpenStack client (OSC)](osc_neutron.html)
 4. Metadatos y cloud-init
     * [VÍDEO: OpenStack. Uso del servicio de metadatos](https://youtu.be/8xLF28rKNI0)
     * [VÍDEO: cloud-init](https://youtu.be/YIhlg_cGrYQ)
