@@ -21,7 +21,8 @@ Crea una infraestructura que te permita tener una máquina donde instalar un ser
 2. Muestra la lista de concesiones en el servidor. 
 3. Muestra la modificación en la configuración que has hecho en el cliente para que tome la configuración de forma automática.
 4. Muestra la salida del comando ` ip address` en el cliente.
-5. Muestra una comprobación de que el cliente tiene resolución DNS.
+5. Nuestro servidor DHCP ha cambiado la ruta por defecto del cliente, así que ahora es necesario que actúe como router NAT.  
+Tras hacerlo, ya puedes mostrar una comprobación de resolución DNS en el cliente.
 
 {% endcapture %}   
 <div class="notice--info">{{ notice-text | markdownify }}</div>
