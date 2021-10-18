@@ -33,8 +33,8 @@ title: "Utilización de OpenStack"
 3. Uso básico de Openstack desde la línea de comandos
     * [VÍDEO: openstackclient. Instalación y uso básico](https://youtu.be/qjvWtvgo8FU)
     * [VÍDEO: Deshabilitar seguridad de un puerto](https://youtu.be/jqfILWzHrS0)
-    * [Gestión de imágenes con OpenStack client (OSC)](osc_imagenes.html)
-    * Gestión de instancia con OpenStack client (OSC)
+    * [Gestión de imágenes con OpenStack client (OSC)](osc_glance.html)
+    * [Gestión de instancia con OpenStack client (OSC)](osc_nova.html)
     * Gestión de volúmenes con OpenStack client (OSC)
     * Gestión de redes con OpenStack client (OSC)
 4. Metadatos y cloud-init
