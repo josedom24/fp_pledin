@@ -17,13 +17,12 @@ title: "Utilización de OpenStack"
         * [Operaciones sobre la instancia](http://iesgn.github.io/emergya/curso/u3/operaciones)
         * [Instantaneas de instancias](http://iesgn.github.io/emergya/curso/u3/instantaneas)
         * [Redimensión y reconstrucción de instancias](http://iesgn.github.io/emergya/curso/u3/redimension)
-        * [VÍDEO: Crear una instancia desde volumen](https://youtu.be/4rgZM06BSrI)
     * **Cinder**
         * [Conceptos previos de volúmenes](http://iesgn.github.io/emergya/curso/u4/conceptos_previos)
         * [Creación de volúmenes, asociación a instancias](http://iesgn.github.io/emergya/curso/u4/volumen)
         * [Operaciones sobre volúmenes](http://iesgn.github.io/emergya/curso/u4/operaciones)
         * [Creación de instancia ejecutadas sobre volúmenes](http://iesgn.github.io/emergya/curso/u4/instancias_volumen)
-        * [Copias de seguridad de volúmenes](http://iesgn.github.io/emergya/curso/u4/backup)
+        * [VÍDEO: Crear una instancia desde volumen](https://youtu.be/4rgZM06BSrI)
     * **Neutron**
         * [Introducción a la virtualización de redes](http://iesgn.github.io/emergya/curso/u5/intro)
         * [Conceptos previos de neutron](http://iesgn.github.io/emergya/curso/u5/conceptos_previos)
