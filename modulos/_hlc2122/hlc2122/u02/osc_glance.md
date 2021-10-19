@@ -11,7 +11,7 @@ Un usuario que no es administrador, no puede subir imágenes públicas. La image
 Para subir la imagen:
 
 	openstack image create --container-format=bare --disk-format=qcow2 \
-	 --file --disk-format=qcow2  --file cirros-0.5.1-x86_64-disk.img "Cirros 0.5.1"
+	 --disk-format=qcow2  --file cirros-0.5.1-x86_64-disk.img "Cirros 0.5.1"
 
 Para que sea visible por todos:
 
