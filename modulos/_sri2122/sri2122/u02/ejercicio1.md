@@ -14,6 +14,8 @@ Crea una infraestructura que te permita tener una máquina donde instalar un ser
 	* Servidores DNS: 8.8.8.8, 8.8.4.4
 2. Configura los clientes para obtener direccionamiento dinámico. Comprueba las configuraciones de red que han tomado los clientes. 
 
+3. El servidor debe hacer router-nat para que el cliente tenga acceso a internet.
+
 {% capture notice-text %}
 ## Entrega
 
