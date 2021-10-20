@@ -68,19 +68,6 @@ Cuando desde el cliente intentamos acceder a una URL que esta controlada por el 
 
 En realidad la información que se manda es el nombre de usuario y la contraseña en base 64, que se puede decodificar fácilmente con cualquier [utilidad](http://www.base64decode.org/).
 
-<!--
-{% capture notice-text %}
-**Ejercicios**
-
-1. Crea cuatro  usuarios de apache: pepe, maria, juan, ana.
-2. Crea dos grupos de usuarios: grupo1 (pepe,maria), grupo2 (juan,ana).
-3. Crea un directorio llamado privado1 en el host virtual default, que permita el acceso a todos los usuarios.
-4. Crea un directorio llamado privado2 en el host virtual default, que permita el acceso sólo a juan y a ana.
-5. Crea un directorio llamado privado3 en el host virtual default, que permita el acceso sólo los usuarios del grupo1.
-6. El directorio privado3 del ejercicio5 haz que sólo sea accesible desde el localhost.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>    
--->
-
 ## Autentificación tipo digest
 
 La autentificación tipo digest soluciona el problema de la transferencia de contraseñas en claro sin necesidad de usar SSL.  El procedimiento, como veréis, es muy similar al tipo básico pero cambiando algunas de las directivas y usando la utilidad ``htdigest`` en lugar de ``htpassword`` para crear el fichero de contraseñas. El módulo de autenticación necesario suele venir con Apache pero no habilitado por defecto. Para activarlo usamos la utilidad ``a2enmod`` y, a continuación reiniciamos el servidor Apache:
@@ -144,22 +131,24 @@ La información que se manda es *responde* que en este caso esta cifrada usando 
 
 Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar si la información que se ha enviado es válida, con lo que se permitiría el acceso.
 
-<!--
-{% capture notice-text %}
-**Ejercicio:**
 
-1. Crea dos subdirectorios en el host virtual defaul que se llamen ``grupo1`` y ``grupo2``. Crea varios usuarios con la utilidad ``htdigest``, asignando a cada uno un dominio distinto (``domgrupo1`` y ``domgrupo2``). Configura los directorios para que al primero grupo1 sólo puedan acceder los usuarios del dominio domgrupo1, y el directorio grupo2 solo accedan los usuarios del dominio domgrupo2.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
--->
-
-
-{% capture notice-text %}
-**Ejercicios**
+## Ejercicios
 
  Crea un escenario en Vagrant o reutiliza uno de los que tienes en ejercicios anteriores, que tenga un servidor con una red publica (NAT o pública), y una privada (aislada o muy aislada) y un cliente conectada a la red privada. Crea un host virtual `departamentos.iesgn.org`.
 
 1. A la URL ``departamentos.iesgn.org/intranet`` sólo se debe tener acceso desde el cliente de la red local, y no se pueda acceder desde la anfitriona por la red pública. A la URL ``departamentos.iesgn.org/internet``, sin embargo, sólo se debe tener acceso desde la anfitriona por la red pública, y no desde la red local.
-2. Autentificación básica. Limita el acceso a la URL ``departamentos.iesgn.org/secreto``. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo se manda la contraseña entre el cliente y el servidor?. Entrega una breve explicación del ejercicio.
+2. Autentificación básica. Limita el acceso a la URL ``departamentos.iesgn.org/secreto``. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo se manda la contraseña entre el cliente y el servidor?. 
 3. Cómo hemos visto la autentificación básica no es segura, modifica la autentificación para que sea del tipo *digest*, y sólo sea accesible a los usuarios pertenecientes al grupo *directivos*. Comprueba las cabeceras de los mensajes HTTP que se intercambian entre el servidor y el cliente. ¿Cómo funciona esta autentificación?
 4. Vamos a combinar el control de acceso (ejercicio 1) y la autentificación (Ejercicios 2 y 3), y vamos a configurar el virtual host para que se comporte de la siguiente manera: el acceso a la URL ``departamentos.iesgn.org/secreto`` se hace forma directa desde la intranet, desde la red pública te pide la autentificación. Muestra el resultado al profesor.
+
+
+{% capture notice-text %}
+**Entrega**
+1. Dos pantallazos accediendo a `departamentos.iesgn.org/intranet` desde el anfitrión.
+2. Dos pantallazos accediendo a `departamentos.iesgn.org/internet` desde el cliente de la red privada.
+3. Pantallazo donde se vea la autentificación básica. 
+4. Pantallazo con las cabeceras donde se vea la autentificación básica y se vea la contraseña en clara.
+5. Pantallazo donde se vea la autentificación digest.. 
+6. Pantallazo con las cabeceras donde se vea la autentificación digest.
+7. Pantallazos donde se comprueba el funcionamiento del ejercicio 4.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

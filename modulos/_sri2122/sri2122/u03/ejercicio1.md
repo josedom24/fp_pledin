@@ -19,7 +19,7 @@ title: "Ejercicio 1: Mapear URL a ubicaciones de un sistema de ficheros"
 5. Con la directiva ``ErrorDocument`` se puede crear [Respuesta de error personalizadas](http://httpd.apache.org/docs/2.4/custom-error.html). Todo esto se puede llevar a cabo en el fichero ``/etc/apache2/conf-available/localized-error-pages.conf``. 
 
 
-**Ejercicios**
+## Ejercicios
 
 Crea un nuevo host virtual que es accedido con el nombre ``www.mapeo.com``, cuyo ``DocumentRoot``  sea /srv/mapeo. 
 
