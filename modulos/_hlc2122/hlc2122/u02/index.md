@@ -37,6 +37,7 @@ title: "Utilización de OpenStack"
     * [Gestión de volúmenes con OpenStack client (OSC)](osc_cinder.html)
     * [Gestión de redes con OpenStack client (OSC)](osc_neutron.html)
 4. Metadatos y cloud-init
+    * [cloud-init](https://raw.githubusercontent.com/albertomolina/beamer-focus/main/cloud-init.pdf)
     * [VÍDEO: OpenStack. Uso del servicio de metadatos](https://youtu.be/8xLF28rKNI0)
     * [VÍDEO: cloud-init](https://youtu.be/YIhlg_cGrYQ)
     * [VÍDEO: Utilización de cloud-init. Ejemplo](https://youtu.be/eWbAg4fenVo)
