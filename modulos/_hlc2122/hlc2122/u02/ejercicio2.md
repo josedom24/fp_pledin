@@ -18,7 +18,7 @@ Configura la instancia `router` para que haga router-nat y podamos tener conexi�
 
 Openstack nos ofrece los grupos de seguridad que es un cortafuego que permite controlar el tráfico saliente y entrante en cada nodo de una instancia, además este cortafuego  aplica reglas **anti-spoofing** a todos los puertos para garantizar que el tráfico inesperado o no deseado no pueda originarse o pasar a través de un puerto. Esto incluye reglas que prohíben que las instancias actúen como servidores DHCP, actúen como enrutadores u obtengan tráfico de una dirección IP que no sea su IP fija. Para solucionar esta limitación, nosotros vamos a desactivar las reglas de seguridad en las instancias, para ello:
 
-* En cada instancia edita los grupos de seguridad y quale el grupo de seguridad default. en este momento la instancia no admite ningún tráfico.
+* En cada instancia edita los grupos de seguridad y quita el grupo de seguridad default. en este momento la instancia no admite ningún tráfico.
 * Para cada interface (puerto) de las instancias implicadas (en nuestro caso 3 puertos) tenemos que deshabilitar la seguridad del puerto. en este momento ya no tenemos cortafuegos en las instancias.
 
 {% capture notice-text %}
