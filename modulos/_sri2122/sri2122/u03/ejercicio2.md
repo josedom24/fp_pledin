@@ -153,7 +153,7 @@ Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar s
 7. Pantallazos donde se comprueba el funcionamiento del ejercicio 4.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-% capture notice-text %}
+{% capture notice-text %}
 **Entrega**
 
 1. Una captura de pantalla a tu topología de red con el escenario montado.
