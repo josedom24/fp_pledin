@@ -12,7 +12,7 @@ Con las siguientes características:
 * Crea una instancia a partir de una imagen, llamada `router` conecta a tu red y a la red "red_interna" en la dirección 192.168.0.1. Esta máquina será la puerta de enlace del la otra máquina.
 * Crea otra instancia a partir de un volumen, que se llame `cliente` y que tenga la ip 192.168.0.100, evidentemente conectada a la red_interna.
 
-Configura una IP flotante a la instancia `router`. ¿Puedes asociar una IP flotante a la máquina `cliente`? ¿Por qué?. ¿Cómo accederas a la segunda máquina?. ¿La máquina `cliente` tiene internet?
+Configura una IP flotante a la instancia `router`. ¿Puedes asociar una IP flotante a la máquina `cliente`? ¿Por qué?. ¿Cómo accederás a la segunda máquina?. ¿La máquina `cliente` tiene internet?
 
 Configura la instancia `router` para que haga router-nat y podamos tener conexión al exterior en la máquina `cliente`.
 
@@ -21,3 +21,10 @@ Openstack nos ofrece los grupos de seguridad que es un cortafuego que permite co
 * En cada instancia edita los grupos de seguridad y quale el grupo de seguridad default. en este momento la instancia no admite ningún tráfico.
 * Para cada interface (puerto) de las instancias implicadas (en nuestro caso 3 puertos) tenemos que deshabilitar la seguridad del puerto. en este momento ya no tenemos cortafuegos en las instancias.
 
+{% capture notice-text %}
+**Entrega**
+
+1. Una captura de pantalla a tu topología de red con el escenario montado.
+2. Capturas de pantalla donde se vea que las instancia no tienen grupo de seguridad y que los en los puertos se han deshabilitado la seguridad.
+3. Una prueba de funcionamiento que el cliente tiene resolución dns y conexión al exterior.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
