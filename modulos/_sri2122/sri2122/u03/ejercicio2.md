@@ -152,3 +152,11 @@ Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar s
 6. Pantallazo con las cabeceras donde se vea la autentificación digest.
 7. Pantallazos donde se comprueba el funcionamiento del ejercicio 4.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+% capture notice-text %}
+**Entrega**
+
+1. Una captura de pantalla a tu topología de red con el escenario montado.
+2. Capturas de pantalla donde se vea que las instancia no tienen grupo de seguridad y que los en los puertos se han deshabilitado la seguridad.
+3. Una prueba de funcionamiento que el cliente tiene resolución dns y conexión al exterior.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
