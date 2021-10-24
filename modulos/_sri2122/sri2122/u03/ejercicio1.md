@@ -38,3 +38,4 @@ Crea un nuevo host virtual que es accedido con el nombre ``www.mapeo.com``, cuyo
 4. Entrega dos capturas de pantalla donde se vea la nueva página de error personalizada para 
 objeto no encontrado y no permitido.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
