@@ -33,7 +33,7 @@ Crea un nuevo host virtual que es accedido con el nombre ``www.mapeo.com``, cuyo
 **Entrega**
 
 1. Cuando termines el ejercicio entrega la configuración completa del fichero de configuración del virtualhost?
-2. Utilizando la opción de "Desarrollador web" del navegado, entrega un pantallazo donde se vea que cuando a ccedemos a `www.mapeo.com` se produce un redireccionamiento a `principal`.
+2. Utilizando la opción de "Desarrollador web" del navegador, entrega un pantallazo donde se vea que cuando a accedemos a `www.mapeo.com` se produce un redireccionamiento a `principal`.
 3. Entrega una captura de pantalla accediendo a `www.mapeo.com/principal/documentos`.
 4. Entrega dos capturas de pantalla donde se vea la nueva página de error personalizada para 
 objeto no encontrado y no permitido.

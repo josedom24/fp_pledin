@@ -16,6 +16,7 @@ title: Protocolo HTTP
 * [Ejercicio 1: Mapear URL a ubicaciones de un sistema de ficheros](ejercicio1.html)
 * [Ejercicio 2: Control de acceso, autentificación y autorización](ejercicio2.html)
 * [Ejercicio 3: Configuración de apache mediante archivo .htaccess](ejercicio3.html)
+* [Ejercicio 4: Módulos en apache](ejerciicio4.html)
 
 ## Nginx
 
