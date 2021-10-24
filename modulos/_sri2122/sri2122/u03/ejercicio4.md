@@ -129,14 +129,9 @@ De esta forma accederíamos por medio de la URL:
 
     http://localhost/buscar?id=hola
 
-{% capture notice-text %}
-**Ejercicio:** 
+¿y si queremos buscar de la siguiente manera: `http://localhost/buscar/hola.html`?
 
-Siguiendo las técnicas anteriormente vistas, realiza una reescritura de URL para que pudiéramos realizar búsquedas con URL de la siguiente manera:
-
-    http://localhost/buscar/hola.html
-
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+    RewriteRule ^buscar/([a-z]+).html$ busqueda/buscar.php?id=$1
 
 **Ejemplo 5: Uso del RewriteCond**
 
@@ -188,21 +183,6 @@ También podemos controlar la reescritura de URL según la hora y la fecha, para
     ```
 
 En el anterior ejemplo el primer ``RewriteCond`` permite la solicitud directa pero no desde otras páginas (referrer vacío). La siguiente línea indica que si el navegador ha enviado una cabecera ``Referrer`` y esta no contiene la palabra "dominio.com" se ejecutará el ``RewriteRule``. La ultima instrucción ``RewriteCond`` indica que si en la url solicitada se encuentra el nombre de la imagen "hotlink" no se realizará el ``RewriteRule``; esto se pone porque la imagen hotlink.png va a ser la que vamos a usar en ``RewriteRule`` y si no ponemos este ``RewriteCond`` también sería redirigida la solicitud a esta imagen. La última instrucción del ejemplo es el ``RewriteRule`` que indica que cualquier solicitud a una imagen desde otro referrer será reescrita en el servidor hacia la imagen hotlink.png y esta será la imagen que se vea en la web que te esté intentando robar la imagen.
-
-{% capture notice-text %}
-**Ejercicio:** 
-
-Realiza un ``.htaccess`` para evitar el hot-linking. Puedes usar esta esta [imagen](https://raw.githubusercontent.com/josedom24/serviciosgs_doc/master/web/doc/hotlink.gif) para realizar el ejercicio.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
-**Ejemplo 6: URL amigables con WordPress**
-
-
-En wordpress podemos activar el uso de URL amigables (Settings->Permalink). Para que funcione tendremos que tener el modulo rewrite activo. Comprueba las reglas de reescrituras en el fichero `.htaccess`.
-
-
-**Ejercicio URL amigables**
-
 
 ### Ejercicio
 
