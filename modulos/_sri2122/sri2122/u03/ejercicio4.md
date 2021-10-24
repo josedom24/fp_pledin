@@ -188,41 +188,42 @@ En el anterior ejemplo el primer ``RewriteCond`` permite la solicitud directa pe
 
 En tu servidor crea una carpeta ``php`` donde vamos a tener un fichero ``index.php`` con el siguiente contenido::
 
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-		<html xmlns="http://www.w3.org/1999/xhtml">
-		<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Conversor de Monedas</title>
-		</head>
+```html
 
-		<body>
-		<form action="index.php" method="get">
-		   	<input type="text" size="30" name="monto" /><br/>
-			<select name="pais">
-				<option name="Dolar">Dolar</option>
-				<option name="Libra">Libra</option>
-				<option name="Yen">Yen</option>
-			</select>
-		    <input type="submit" value="convertir" />
-		   </form>
-		<?php
-			// averiguamos si se ha introducido un dinero
-			if (isset($_GET['monto'])) {
-			  define ("cantidad", $_GET['monto']);
-			} else {
-		 	  define ("cantidad", 0);
-			}
-			if($_GET){
-			// definimos los países
-			$tasacambios = array ("Libra"=>0.86,"Dolar"=>1.34,"Yen"=>103.56);
-			// imprimimos el monto ingresado
-			echo "<b>".cantidad." euros</b><br/> ".$_GET["pais"]." = ".cantidad*$tasacambios[$_GET["pais"]]." <br><br>";
-			// por cada país imprimimos el cambio
-			}
-		   ?>
-
-		</body>
-		</html>
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Conversor de Monedas</title>    
+    <meta charset="UTF-8">
+  </head>  
+  <body>    
+	<form action="index.php" method="get">
+	   	<input type="text" size="30" name="monto" /><br/>
+		<select name="pais">
+			<option name="Dolar">Dolar</option>
+			<option name="Libra">Libra</option>
+			<option name="Yen">Yen</option>
+		</select>
+	    <input type="submit" value="convertir" />
+	   </form>
+	<?php
+		// averiguamos si se ha introducido un dinero
+		if (isset($_GET['monto'])) {
+		  define ("cantidad", $_GET['monto']);
+		} else {
+	 	  define ("cantidad", 0);
+		}
+		if($_GET){
+		// definimos los países
+		$tasacambios = array ("Libra"=>0.86,"Dolar"=>1.34,"Yen"=>103.56);
+		// imprimimos el monto ingresado
+		echo "<b>".cantidad." euros</b><br/> ".$_GET["pais"]." = ".cantidad*$tasacambios[$_GET["pais"]]." <br><br>";
+		// por cada país imprimimos el cambio
+		}
+	   ?>
+	</body>
+	</html>
+```
 
 Prueba la página utilizando parámetros en la URL (parámetros GET), por ejemplo: ``http://nombre_página/php/index.php?monto=100&pais=Libra``
 
