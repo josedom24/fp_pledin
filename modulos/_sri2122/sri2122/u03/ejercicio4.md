@@ -117,7 +117,7 @@ Crea un ``.htaccess`` con el siguiente contenido:
 
 **Ejemplo 4: Acortar URL**
 
-Supongamos que dentro de nuestro *DocumentRoot* tenemos una carpeta búsqueda con un fichero ``buscar.php`` ([descargar](https://raw.githubusercontent.com/josedom24/serviciosgs_doc/master/web/doc/buscar.txt)). Este fichero me permite obtener la página de búsqueda de google con el parámetro dado, de esta forma:
+Supongamos que dentro de nuestro *DocumentRoot* tenemos una carpeta `busqueda` con un fichero ``buscar.php`` ([descargar](https://raw.githubusercontent.com/josedom24/serviciosgs_doc/master/web/doc/buscar.txt)). Este fichero me permite obtener la página de búsqueda de google con el parámetro dado, de esta forma:
 
     http://localhost/busqueda/buscar.php?id=hola
 
