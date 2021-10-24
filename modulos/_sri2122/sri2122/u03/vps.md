@@ -19,7 +19,7 @@ La máquina que alquiléis debe tener al menos estas características:
 
 Además vamos a contratar un nombre de dominio. Hay mucho provedores para alquilar un nombre de dominio: puedes hacer una simple [búsqueda](https://duckduckgo.com/?q=dominios&va=b&t=hc&ia=places).  Los dominios se alquilan normalmente por un año. También puedes mirar algunos nombres de dominio que se ofrecen de forma gratuita como los [tk](http://www.dot.tk/es/index.html).
 
-Una vez que tengas ela máquina debes configurarla de la siguiente manera:
+Una vez que tengas la máquina debes configurarla de la siguiente manera:
 
 * Nombra la máquina: Tu máquina tendrá un nombre en tu dominio, por ejemplo: `sauron.mordor.com`. Configura de forma adecuada el FQDN de tu máquina, que podrás obtener ejecutando `hostname -f`.
 * Para evitar ataques configura una contraseña robusta para un usuario sin privilegio, configura el servidor ssh para que no se pueda acceder con root.
