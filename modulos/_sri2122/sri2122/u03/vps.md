@@ -2,7 +2,7 @@
 title: "Ejercicio 5: Contratación y configuración de un VPS"
 ---
 
-Para la realización de distintas prácticas que haremos en distintos módulos, vamos a contratar un VPS (Virtual Personal Server). Los VPS suelen ser instancias de algún cloud (sobre todo de OpenStack) que algunos proveedores de internet la comercializan. Tenemos muchas opciones:
+Para la realización de distintas prácticas que haremos en distintos módulos, vamos a contratar un VPS (Virtual Personal Server). Los VPS suelen ser instancias de algún cloud (sobre todo de OpenStack) que algunos proveedores de internet comercializan. Tenemos muchas opciones:
 
 * [IONOS VPS](https://www.ionos.es/servidores/vps#packs)
 * [OVH cloud](https://www.ovhcloud.com/es-es/vps/)
