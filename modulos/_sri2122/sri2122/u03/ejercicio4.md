@@ -217,8 +217,7 @@ En tu servidor crea una carpeta ``php`` donde vamos a tener un fichero ``index.p
 		// definimos los países
 		$tasacambios = array ("Libra"=>0.86,"Dolar"=>1.34,"Yen"=>103.56);
 		// imprimimos el monto ingresado
-		echo "<b>".cantidad." euros</b><br/> ".$_GET["pais"]." = ".cantidad*$tasacambios[$_GET["pais"]]." <br><br>";
-		// por cada país imprimimos el cambio
+		echo "<b>".cantidad." euros</b><br/> ".$_GET["pais"]." = ".cantidad*$tasacambios[$_GET["pais"]];
 		}
 	   ?>
 	</body>
