@@ -34,3 +34,7 @@ title: Implantación de aplicaciones web PHP
 ## Práctica
 
 * [Práctica: Implantación de aplicaciones web PHP](practica_php.html)
+
+## Ejecución de PHP con fpm-php
+
+* [Ejecución de PHP con fpm-php](fpm.html)
