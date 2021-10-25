@@ -95,4 +95,4 @@ O de esta otra forma:
 
 Por lo que ya podemos hacer la redirección de forma correcta:
 
-![proxy](img/proxy4.png)
+![proxy](img/proxy5.png)
