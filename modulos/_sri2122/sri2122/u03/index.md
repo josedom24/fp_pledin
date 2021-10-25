@@ -25,3 +25,9 @@ Antes de hacer la práctica de nginx, vamos a hecer el siguiente ejercicio:
 * [Ejercicio 5: Contratación y configuración de un VPS](vps.html)
 
 ## Proxy
+
+* [Presentación proxy, proxy inverso y balanceador de carga](https://slides.com/josedomingomunoz/squid-4)
+
+En este tema nos vamos a parar en el estudio de los proxys inversos:
+
+* [Apache2 como proxy inverso](apache_proxy.html)
