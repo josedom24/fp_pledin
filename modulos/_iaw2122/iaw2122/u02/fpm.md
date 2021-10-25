@@ -44,7 +44,7 @@ Por último reiniciamos el servicio:
 
 ### Configuración de Apache2 con php-fpm
 
-Necesito activar los siguientes módulos:
+Apache2 va a funcionar como proxy inverso para la peticiones de los recursos php. Cuando solicitamos un fichero php, apache2 le pasará la petición a php-fpm para que interprete php y luego devuelva la respuesta al servidor web. Necesito activar los siguientes módulos:
 
 	a2enmod proxy_fcgi setenvif
 
