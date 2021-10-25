@@ -16,7 +16,7 @@ Realiza los siguientes pasos:
         Alias /phpmyadmin /usr/share/phpmyadmin
 
     La directiva [Alias](http://httpd.apache.org/docs/trunk/es/mod/mod_alias.html) nos permite crear una ruta `phpmyadmin` que nos muestra los ficheros que hay en un directorio que está fuera del documenteRoot, en este caso `/usr/share/phpmyadmin`, es decir, la aplicación está realmente en ese directorio.
-5. Quita la configuración de acceso a `phpmyadmin` y comprueba que ya no puedes acceder. A continuación crea un virtualhost, al que hay que acceder con el nombre *basededatos.tunombre.org*, y que nos muestre la aplicación. **Nota: En la configuración del virtualhost copia las 3 directivas `directory` que se encuentran en el fichero `/etc/apache2/conf-available/myphpadmin.conf`.
+5. Quita la configuración de acceso a `phpmyadmin` y comprueba que ya no puedes acceder. A continuación crea un virtualhost, al que hay que acceder con el nombre *basededatos.tunombre.org*, y que nos muestre la aplicación. **Nota: En la configuración del virtualhost copia las 3 directivas `directory` que se encuentran en el fichero `/etc/apache2/conf-available/myphpadmin.conf`.**
 6. Accede a `phpmyadmin` y comprueba que puede acceder con el usuario que creaste en el punto 1 y que puede gestionar su base de datos.
 
 {% capture notice-text %}
