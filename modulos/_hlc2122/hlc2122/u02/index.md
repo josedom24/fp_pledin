@@ -46,6 +46,7 @@ title: "Utilización de OpenStack"
 
 * [Ejercicio 1: Primeros pasos para el uso de OpenStack. Configuración del cliente VPN.](ejercicio1.html)
 * [Ejercicio 2: Infraestructura de red router-nat desde horizon](ejercicio2.html)
+* Ejercicio 3: Infraestructura de red router-nat desde OSC]
 
 ## Enlaces de interes
 
