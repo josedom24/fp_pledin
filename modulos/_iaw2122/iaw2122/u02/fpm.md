@@ -8,7 +8,7 @@ Para instalarlo en Debian 11:
 
 	apt install php7.4-fpm php7.4
 
-### Configuración
+## Configuración
 
 Con esto hemos instalado php 7.4 y php-fpm. Veamos primeros algunos ficheros de configuración de php:
 
@@ -42,14 +42,14 @@ Por último reiniciamos el servicio:
 	systemctl restart php7.4-fpm
 
 
-### Configuración de Apache2 con php-fpm
+## Configuración de Apache2 con php-fpm
 
 Apache2 va a funcionar como proxy inverso para la peticiones de los recursos php. Cuando solicitamos un fichero php, apache2 le pasará la petición a php-fpm para que interprete php y luego devuelva la respuesta al servidor web. Necesito activar los siguientes módulos:
 
 	a2enmod proxy_fcgi setenvif
 
 
-#### Activarlo para cada virtualhost
+### Activarlo para cada virtualhost
 
 Podemos hacerlo de dos maneras:
 
@@ -75,7 +75,7 @@ Otra forma de hacerlo es la siguiente:
    	    	SetHandler "proxy:unix:/run/php/php7.4-fpm.sock|fcgi://127.0.0.1/"
 		</FilesMatch>
 
-#### Activarlo para todos los virtualhost
+### Activarlo para todos los virtualhost
 
 Tenemos a nuestra disposición un fichero de configuración `php7.4-fpm` en el directorio `/etc/apache2/conf-available`. Por defecto funciona cuando php-fpm está escuchando en un socket UNIX, si escucha por un socket TCP, hay que cambiar la línea:
 

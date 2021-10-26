@@ -20,7 +20,7 @@ title: Protocolo HTTP
 
 ## Nginx
 
-Antes de hacer la práctica de nginx, vamos a hecer el siguiente ejercicio:
+Antes de hacer la práctica de nginx, vamos a hacer el siguiente ejercicio:
 
 * [Ejercicio 5: Contratación y configuración de un VPS](vps.html)
 
@@ -31,3 +31,4 @@ Antes de hacer la práctica de nginx, vamos a hecer el siguiente ejercicio:
 En este tema nos vamos a parar en el estudio de los proxys inversos:
 
 * [Apache2 como proxy inverso](apache_proxy.html)
+* [Ejercicio 6: Apache2 como proxy inverso](ejercicio6.html)
