@@ -23,7 +23,7 @@ Por lo tanto, para empezar, vamos activar los módulos que necesitamos:
 
 Tenemos a nuestra disposición un servidor interno (no accesible desde el cliente) en la dirección privada, con el nombre de `interno.example.org`. Tenemos un servidor que va a funcionar de proxy, llamado `proxy.example.org` con dos interfaces de red: una pública conectada a la red donde se encuentra el cliente, y otra interna conectada a la red donde se encuentra el servidor interno.
 
-Puedes bajar este [fichero](doc/ejemploproxy/vagrant.zip) para crear la infraestructura con vagrant.
+Puedes bajar este [fichero](doc/vagrant.zip) para crear la infraestructura con vagrant.
 
 ### Sirviendo una página estática
 
