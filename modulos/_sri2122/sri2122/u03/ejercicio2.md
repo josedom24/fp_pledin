@@ -144,11 +144,11 @@ Una vez que lo recibe el servidor, puede hacer la misma operación y comprobar s
 
 {% capture notice-text %}
 **Entrega**
-1. Dos pantallazos accediendo a `departamentos.iesgn.org/intranet` desde el anfitrión.
-2. Dos pantallazos accediendo a `departamentos.iesgn.org/internet` desde el cliente de la red privada.
+1. Dos pantallazos accediendo a `departamentos.iesgn.org/intranet` desde el anfitrión y desde el cliente.
+2. Dos pantallazos accediendo a `departamentos.iesgn.org/internet` desde el cliente de la red privada y desde el anfitrión.
 3. Pantallazo donde se vea la autentificación básica. 
-4. Pantallazo con las cabeceras donde se vea la autentificación básica y se vea la contraseña en clara.
-5. Pantallazo donde se vea la autentificación digest.. 
+4. Pantallazo con las cabeceras donde se vea la autentificación básica y se vea la contraseña en claro. Lo mejor es utilizar wireshark.
+5. Pantallazo donde se vea la autentificación digest.
 6. Pantallazo con las cabeceras donde se vea la autentificación digest.
-7. Pantallazos donde se comprueba el funcionamiento del ejercicio 4.
+7. Pantallazos donde se comprueba el funcionamiento del ejercicio 4. Y entrega de la configuración que has realizado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
