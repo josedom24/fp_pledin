@@ -1,5 +1,5 @@
 ---
-title: "Ejecución de PHP con fpm-php"
+title: "Ejecución de PHP con PHP-FPM"
 ---
 
 FPM (FastCGI Process Manager) es una implementación alternativa al PHP FastCGI. FPM es un servidor de aplicaciones PHP que se encarga de interpretar código PHP. Aunque normalmente se utiliza junto a un servidor web (Apache2 o ngnix) vamos a hacer en primer lugar una instalación del proceso y vamos a estudiar algunos parámetros de configuración y estudiar su funcionamiento.
@@ -42,7 +42,7 @@ Por último reiniciamos el servicio:
 	systemctl restart php7.4-fpm
 
 
-## Configuración de Apache2 con php-fpm
+## Configuración de Apache2 con PHP-FPM
 
 Apache2 va a funcionar como proxy inverso para la peticiones de los recursos php. Cuando solicitamos un fichero php, apache2 le pasará la petición a php-fpm para que interprete php y luego devuelva la respuesta al servidor web. Necesito activar los siguientes módulos:
 

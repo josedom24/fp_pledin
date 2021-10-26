@@ -18,5 +18,5 @@ Para realizar la instalación sigue los siguientes pasos:
 * Entrega una captura de la configuración del virtualhost.
 * Entrega el contenido del fichero `Database.php`.
 * Entrega una captura con el acceso a `bookmedik`, después del login.
-* Indica el fichero que hass modificado (con el path completo) para modificar el límite de memoria. Muestra un pantallazo de la salida del fichero `info.php` donde se vea el cambio.
+* Indica el fichero que has modificado (con el path completo) para modificar el límite de memoria. Muestra un pantallazo de la salida del fichero `info.php` donde se vea el cambio.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
