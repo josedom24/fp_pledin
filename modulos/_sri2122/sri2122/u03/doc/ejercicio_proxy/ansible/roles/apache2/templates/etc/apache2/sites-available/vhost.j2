@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+	ServerName {{item.datos.nameserver}}
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot {{item.datos.documentroot}}
+	ErrorLog ${APACHE_LOG_DIR}/{{item.datos.errorlog}}.log
+	CustomLog ${APACHE_LOG_DIR}/{{item.datos.accesslog}}.log combined
+
+</VirtualHost>

@@ -1,0 +1,11 @@
+- hosts: all
+  become: true
+  roles:
+   - role: commons
+
+- hosts: grupo_sw
+  become: true
+  roles:
+   - role: apache2
+  
+

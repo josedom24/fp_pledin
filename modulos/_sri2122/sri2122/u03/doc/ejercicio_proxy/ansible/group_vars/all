@@ -1,0 +1,18 @@
+# apache2
+virtualhosts:
+  - name: vhost1
+    datos:
+      nameserver: interno.example1.org
+      documentroot: /var/www/example1
+      errorlog: error_example1
+      accesslog: access_example1
+  - name: vhost2
+    datos:
+      nameserver: interno.example2.org
+      documentroot: /var/www/example2
+      errorlog: error_example2
+      accesslog: access_example2
+
+mods_enabled:
+  - rewrite
+

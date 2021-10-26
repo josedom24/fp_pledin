@@ -1,0 +1,56 @@
+- name: Install apache2
+  apt:
+    pkg: apache2
+  
+- name: Enable Apache mods.
+  community.general.apache2_module:
+    state: present
+    name: "{{item}}"
+  with_items: 
+    - "{{ mods_enabled }}"
+  notify: restart apache2
+
+- name: Configuración de virtualhost
+  template: 
+    src: etc/apache2/sites-available/vhost.j2
+    dest: /etc/apache2/sites-available/{{item["name"]}}.conf
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - "{{virtualhosts}}"
+
+- name: Create documentroot if it does not exist
+  ansible.builtin.file:
+    path: /{{item["datos"]["documentroot"]}}
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: '0755'
+  with_items:
+    - "{{virtualhosts}}"
+
+
+- name: Add vhost symlink in sites-enabled.
+  file:
+    src: /etc/apache2/sites-available/{{item["name"]}}.conf
+    dest: /etc/apache2/sites-enabled/{{item["name"]}}.conf
+    state: link
+    mode: 0755
+  with_items:
+    - "{{virtualhosts}}"
+  notify: restart apache2
+  
+
+- name: Copy index.html
+  copy:
+    src: index_{{item["name"]}}.html
+    dest: /{{item["datos"]["documentroot"]}}/index.html
+    owner: www-data
+    group: www-data
+    mode: 0644
+  with_items:
+    - "{{virtualhosts}}"
+
+ 
+

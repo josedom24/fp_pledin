@@ -1,0 +1,9 @@
+all:
+  children:
+    grupo_sw:
+      hosts:
+        servidor_web: 
+          ansible_ssh_host: 192.168.121.198
+          ansible_ssh_user: vagrant 
+          ansible_ssh_private_key_file: ../.vagrant/machines/servidorweb/libvirt/private_key
+    
