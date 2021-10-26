@@ -1,6 +1,5 @@
 ---
 title: "Ejercicio 1: Consultas DNS"
-permalink: /serviciosgs/u04/ejercicio1.html
 ---
  
 

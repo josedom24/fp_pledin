@@ -1,6 +1,5 @@
 ---
 title: "Ejercicio 2: DNSmasq como DNS cache/forward en una red local"
-permalink: /serviciosgs/u04/ejercicio2.html
 ---
 
 ## Escenario

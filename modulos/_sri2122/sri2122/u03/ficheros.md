@@ -1,6 +1,5 @@
 ---
 title: Ficheros importantes en la resolución de nombres
-permalink: /serviciosgs/u04/ficheros.html
 ---
 ## /etc/nsswitch.conf
 
