@@ -1,41 +1,58 @@
 ---
-title: "Ejercicio 1: Mapear URL a ubicaciones de un sistema de ficheros"
+title: "Ejercicio 1: Consultas DNS"
+permalink: /serviciosgs/u04/ejercicio1.html
 ---
-1. [Alias](http://httpd.apache.org/docs/2.4/mod/mod_alias.html#alias): Un alias me permite servir ficheros que no se encuentran en el `DocumentRoot`.
+ 
 
-2. [Options](http://httpd.apache.org/docs/2.4/mod/core.html#options): Determina para que sirven las siguientes opciones de funcionamiento:
+## dig
 
-	* All
-	* FollowSymLinks
-	* Indexes
-	* MultiViews
-	* SymLinksOwnerMatch
-	* ExecCGI
+dig es una herramienta que permite hacer consultas a un servidor DNS desde la línea de comandos, es el sustituto de los programas nslookup y host. La sintaxis es:
 
-	Determina como funciona si delante de las opciones pongo el signo + o -.
+    dig [-t tipo de registro] [@servidor DNS] Consulta DNS
 
-3. La directiva [Redirect](http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect) nos permite crear redirecciones temporaless o permanentes.
+El tipo de registro por defecto es ADDRESS y el servidor DNS por defecto el definido en ``/etc/resolv.conf``.
 
-5. Con la directiva ``ErrorDocument`` se puede crear [Respuesta de error personalizadas](http://httpd.apache.org/docs/2.4/custom-error.html). Todo esto se puede llevar a cabo en el fichero ``/etc/apache2/conf-available/localized-error-pages.conf``. 
+Nota: si no funciona el comando dig, instala el paquete `dnsutils` que lo incluye.
 
 
-## Ejercicios
+## nslookup
 
-Crea un nuevo host virtual que es accedido con el nombre ``www.mapeo.com``, cuyo ``DocumentRoot``  sea /srv/mapeo. 
+[Como realizar consultas DNS con el nslookup de Windows](http://systemadmin.es/2010/09/como-realizar-consultas-dns-con-el-nslookup-de-windows).
 
-1. Cuando se entre a la dirección ``www.mapeo.com`` se redireccionará automáticamente a ``www.mapeo.com/principal``, donde se mostrará el mensaje de bienvenida. 
-2. En el directorio **principal** no se permite ver la lista de los ficheros, no se permite que se siga los enlaces simbólicos y no se permite negociación de contenido. Muestra al profesor el funcionamiento. ¿Qué configuración tienes que poner?
-3. Si accedes a la página ``www.mapeo.com/principal/documentos`` se visualizarán los documentos que hay en `/home/usuario/doc`. Por lo tanto se permitirá el listado de fichero y el seguimiento de enlaces simbólicos siempre que el propietario del enlace y del fichero al que apunta sean el mismo usuario. 
-4. En todo el host virtual se debe redefinir los mensajes de error de objeto no encontrado y no permitido. Para el ello se crearan dos ficheros html dentro del directorio error. Entrega las modificaciones necesarias en la configuración y una comprobación del buen funcionamiento.
+Utilizando el comando dig/nslookup realiza las siguientes consultas al servidor DNS:
 
+1. Preguntas a registros del tipo A: Obtén la dirección ip de los siguientes dominios:
 
-{% capture notice-text %}
-**Entrega**
+        www.gonzalonazareno.org 
+        www.eltiempo.es
+        www.us.es
+        es.wikipedia.org
+        www.ubuntu.com
 
-1. Cuando termines el ejercicio entrega la configuración completa del fichero de configuración del virtualhost?
-2. Utilizando la opción de "Desarrollador web" del navegador, entrega un pantallazo donde se vea que cuando a accedemos a `www.mapeo.com` se produce un redireccionamiento a `principal`.
-3. Entrega una captura de pantalla accediendo a `www.mapeo.com/principal/documentos`.
-4. Entrega dos capturas de pantalla donde se vea la nueva página de error personalizada para 
-objeto no encontrado y no permitido.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+2. Preguntas a registros tipo NS: Obtén la dirección y los servidor DNS que corresponden a los siguientes dominios:
 
+        dominio raíz
+        com
+        org
+        es
+        us.es
+        wikipedia.org
+        ubuntu.com
+
+3. Preguntas a registros MX: Obtén el nombre y la dirección del ordenador al que se mandan los correos que se envían a los siguientes dominios:
+
+        gonzalonazareno.org
+        us.es
+        wikipedia.org
+        ubuntu.com
+
+4. ¿Qué tipo de registro es el que resuelve las siguientes direcciones?:
+         
+        www.josedomingo.org
+        informatica.gonzalonazareno.org
+
+    Indica el nombre canónico de las máquinas a las que corresponden.
+
+5. Comprueba la dirección ip y el servidor DNS asociado a ``dit.gonzalonazareno.org``, desde dentro de la intranet del ciclo formativo y desde fuera. ¿Cuáles son las diferencias? ¿A qué crees que es debido?
+
+6. Pregunta sobre resolución inversa: En clase, ¿a qué nombre corresponde la dirección ip ``172.22.0.1``?
