@@ -9,6 +9,7 @@ Para la realización de distintas prácticas que haremos en distintos módulos, 
 * [clouding.io](https://clouding.io/)
 * [arsys](https://www.arsys.es/servidores/vps)
 * [Digital Ocean](https://www.digitalocean.com/pricing/)
+* [Piensa Solutions](https://www.piensasolutions.com/vps)
 * ...
 
 La máquina que alquiléis debe tener al menos estas características:
