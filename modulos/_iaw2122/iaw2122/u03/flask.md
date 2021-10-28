@@ -53,23 +53,20 @@ Veamos:
 
 Yo he utilizado el virtualhost por defecto, si usamos otro virtualhost esta configuración ira en el fichero correspondiente:
 
-    #ServerName www.example.org
-    DocumentRoot /home/debian/flask_temperaturas
-    WSGIDaemonProcess flask_temp user=www-data group=www-data processes=1 threads=5 python-path=/home/debian/flask_temperaturas:/home/debian/venv/flask/lib/python3.9/site-packages
-    WSGIScriptAlias / /home/debian/flask_temperaturas/wsgi.py
-
-    <Directory /home/debian/flask_temperaturas>
-            WSGIProcessGroup flask_temp
-            WSGIApplicationGroup %{GLOBAL}
+    WSGIDaemonProcess flask_temp python-path=/home/vagrant/flask_temperaturas:/home/vagrant/venv/flask/lib/python3.9/site-packages
+    WSGIProcessGroup flask_temp
+    WSGIScriptAlias / /home/vagrant/flask_temperaturas/wsgi.py process-group=flask_temp
+    <Directory /home/vagrant/flask_temperaturas>
             Require all granted
     </Directory>
+
 
 Vamos a explicar la configuración:
 
 * El `DocumentRoot`se indica el directorio donde está la aplicación. Realmente el servidor web siempre va a llamar al fichero WSGI `wsgi.py`, pero el DocumentRoot es necesario por si hay contenido estático.
-* La directiva `WSGIDaemonProcess`: Se define un grupo de procesos que se van a encargar de ejecutar la aplicación (servidor de aplicaciones). A estos procesos se le ponen un nombre (`flask_temp`), se indican el usuario y el grupo que van a utilizar (en este caso el mismo que el del servidor web), se indica el número de procesos (`process`) e hilos (`threads`) que va a tener cada proceso, y finalmente se indica los directorios donde se encuentran la aplicación y los paquetes necesarios (`python-path`), como puedes observar se pone el directorio donde esta la aplicación y el directorio donde se encuentran los paquetes en el entorno virtual, separados por dos puntos.
-* La directiva `WSGIScriptAlias` nos permite indicar que programa se va a ejecutar (el fichero WSGI: `/home/debian/flask_temperaturas/wsgi.py`) cuando se haga una petición a la url `/`.
-* La sección `Directory` nos permite asignar el proceso creado anteriormente (`WSGIProcessGroup flask_temp`) al directorio donde tenemos la aplicación.
+* La directiva `WSGIDaemonProcess`: Se define un grupo de procesos que se van a encargar de ejecutar la aplicación (servidor de aplicaciones). A estos procesos se le ponen un nombre (`flask_temp`) y se indica los directorios donde se encuentran la aplicación y los paquetes necesarios (`python-path`), como puedes observar se pone el directorio donde esta la aplicación y el directorio donde se encuentran los paquetes en el entorno virtual, separados por dos puntos.
+* `WSGIProcessGroup`: Nos permite agrupar procesos. Se pone el misimo nombre que hemos definido en la directiva anterior.
+* La directiva `WSGIScriptAlias` nos permite indicar que programa se va a ejecutar (el fichero WSGI: `/home/debian/flask_temperaturas/wsgi.py`) cuando se haga una petición a la url `/` y que proceso lo va a ejecutar.
 
 Reinicia el servicio web y prueba el funcionamiento. Si te da algún erro 500 puedes ver los errores, en `/var/log/apache2/error.log`.
 
