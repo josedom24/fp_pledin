@@ -85,8 +85,8 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 
 |Apache                                     |Nginx                           
 |-------------------------------------------|-----------------------------------
-|`<VirtualHost *:80>`<br/>                  |  server { 
-|ServerName yoursite.com<br/>	      	    |   listen 80;<br/>
+|`<VirtualHost *:80>`                       |  server { <br/> listen 80;
+|ServerName yoursite.com	        	    |   
 |DocumentRoot /path/to/root <br/>           |
 |AllowOverride All  <br/>                   |
 |DirectoryIndex index.php<br/>              |
