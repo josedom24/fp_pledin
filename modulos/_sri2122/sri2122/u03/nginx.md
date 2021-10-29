@@ -1,6 +1,5 @@
 ---
 title: "Introducción al servidor web nginx"
-
 ---
 
 ## Instalación de nginx
