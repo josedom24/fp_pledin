@@ -91,7 +91,7 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 |`DirectoryIndex index.php`                  |`index index.php;`
 |`ErrorLog /path/to/log`                      |`error_log /path/to/log error;`
 |`CustomLog /path/to/log combined`            |`access_log /path/to/log main;`
-|`Alias /url/ "/path/to/files"<br/><Directory "/path/to/files">`|`location /url/ {`<br/>`     alias /path/to/files;`
+|`Alias /url/ "/path/to/files"`<br/>`<Directory "/path/to/files">`|`location /url/ {`<br/>`     alias /path/to/files;`
 |`Options Indexes`                            |`autoindex on`
 |`Require all granted`                        |`allow all`
 |`allow 127.0.0.1`                            |`allow 127.0.0.1;`
