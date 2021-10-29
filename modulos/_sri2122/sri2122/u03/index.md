@@ -23,6 +23,7 @@ title: Protocolo HTTP
 Antes de hacer la práctica de nginx, vamos a hacer el siguiente ejercicio:
 
 * [Ejercicio 5: Contratación y configuración de un VPS](vps.html)
+* [Introducción al servidor web nginx](nginx.html)
 
 ## Proxy
 
