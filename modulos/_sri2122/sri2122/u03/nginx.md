@@ -83,10 +83,10 @@ Si traducimos la misma configuración en un servidor nginx:
 
 Podríamos resumir las correspondencias en el siguiente cuadro:
 
-|Apache                                     |
-|-------------------------------------------|
-|`<VirtualHost *:80>`<br/>                  |   
-|ServerName yoursite.com<br/>	      	    |
+|Apache                                     |Nginx                           
+|-------------------------------------------|-----------------------------------
+|`<VirtualHost *:80>`<br/>                  |  server { 
+|ServerName yoursite.com<br/>	      	    |   listen 80;<br/>
 |DocumentRoot /path/to/root <br/>           |
 |AllowOverride All  <br/>                   |
 |DirectoryIndex index.php<br/>              |
@@ -102,10 +102,9 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 |proxy_pass_reverse / http://localhost:8080 |
 
 
-Nginx                           
---------------------------------
-server {
-     listen 80;
+
+
+     
    server_name www.yoursite.com;
 root /path/to/root;
 (No Available Alternative)
