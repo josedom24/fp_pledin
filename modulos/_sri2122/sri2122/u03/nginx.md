@@ -87,16 +87,16 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 |`<VirtualHost *:80>`                       | `server {` <br/>`       listen 80;`
 |`ServerName yoursite.com`	        	    | `server_name www.yoursite.com;`  
 |`DocumentRoot /path/to/root`               |`root /path/to/root;`
-|`AllowOverride All`                        |(No Available Alternative)
+|`AllowOverride All`                        |No podemos usar .htaccess
 |`DirectoryIndex index.php`                  |`index index.php;`
 |`ErrorLog /path/to/log`                      |`error_log /path/to/log error;`
 |`CustomLog /path/to/log combined`            |`access_log /path/to/log main;`
-|`Alias /url/ "/path/to/files"`<br/>`<Directory "/path/to/files">`|`location /url/ {`<br/>`     alias /path/to/files;`
+|`Alias /url/ "/path/to/files"`<br/>`<Directory "/path/to/files">`|`location /url/ {`<br/>`     alias /path/to/files;`<br/>`{`
 |`Options Indexes`                            |`autoindex on`
 |`Require all granted`                        |`allow all`
 |`allow 127.0.0.1`                            |`allow 127.0.0.1;`
 |`deny all`                                   |`deny all;`
-|`proxy_pass / http://localhost:8080` <br/>`proxy_pass_reverse / http://localhost:8080 `|`location / {`<br/>`    proxy_pass http://localhost:8080;`<br/>`    proxy_set_header X-Forwarded-Host $host:$server_port;`<br/>`    proxy_set_header X-Forwarded-Server $host;`<br/>`    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;`<br/>}`
+|`proxy_pass / http://localhost:8080` <br/>`proxy_pass_reverse / http://localhost:8080 `|`location / {`<br/>`    proxy_pass http://localhost:8080;`<br/>`    proxy_set_header X-Forwarded-Host $host:$server_port;`<br/>`    proxy_set_header X-Forwarded-Server $host;`<br/>`    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;`<br/>`}`
 
 
 
