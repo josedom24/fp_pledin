@@ -85,37 +85,19 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 
 |Apache                                     |Nginx                           
 |-------------------------------------------|-----------------------------------
-|`<VirtualHost *:80>`                       |  server { <br/> listen 80;
-|ServerName yoursite.com	        	    |   
-|DocumentRoot /path/to/root <br/>           |
-|AllowOverride All  <br/>                   |
-|DirectoryIndex index.php<br/>              |
-|ErrorLog /path/to/log        <br/>         |
-|CustomLog /path/to/log combined <br/>      |
-|Alias /url/ "/path/to/files"               |
-|<Directory "/path/to/files">  <br/>        |
-|Options Indexes      <br/>                 |
-|Require all granted  <br/>                 |
-|allow 127.0.0.1        <br/>               |
-|deny all               <br/>               |
-|proxy_pass / http://localhost:8080         |
-|proxy_pass_reverse / http://localhost:8080 |
+|`<VirtualHost *:80>`                       | `server { <br/>       listen 80;`
+|`ServerName yoursite.com`	        	    | `server_name www.yoursite.com;`  
+|`DocumentRoot /path/to/root`               |`root /path/to/root;`
+|`AllowOverride All`                        |(No Available Alternative)
+|`DirectoryIndex index.php`                  |`index index.php;`
+|`ErrorLog /path/to/log`                      |`error_log /path/to/log error;`
+|`CustomLog /path/to/log combined`            |`access_log /path/to/log main;`
+|`Alias /url/ "/path/to/files"<br/><Directory "/path/to/files">`|`location /url/ {<br/>     alias /path/to/files;`
+|`Options Indexes`                            |`autoindex on`
+|`Require all granted`                        |`allow all`
+|`allow 127.0.0.1`                            |`allow 127.0.0.1;`
+|`deny all`                                   |`deny all;`
+|`proxy_pass / http://localhost:8080 <br/>proxy_pass_reverse / http://localhost:8080 `|`location / {<br/>    proxy_pass http://localhost:8080;<br/>    proxy_set_header X-Forwarded-Host $host:$server_port;<br/>    proxy_set_header X-Forwarded-Server $host;<br/>    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;<br/>}`
 
 
 
-
-     
-   server_name www.yoursite.com;
-root /path/to/root;
-(No Available Alternative)
-index index.php;
-error_log /path/to/log error;
-access_log /path/to/log main;
-location /url/ {
-      alias /path/to/files;
-autoindex on
-allow all
-allow 127.0.0.1;
-deny all;
-|proxy_pass / http://localhost:8080 
-|
