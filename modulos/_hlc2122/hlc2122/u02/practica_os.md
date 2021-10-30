@@ -42,5 +42,6 @@ Pasos a realizar:
 8. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario `profesor`.
 9. Realiza una actualización completa de todos los servidores.
 10. Nombrar de forma adecuada: FQDN todas las máquinas. Hacerlo con el `cloud-init` y un fichero `cloud-config.yaml`.
-10. Hasta que no esté configurado el servidor DNS, incluye resolución estática en las cuatro instancias tanto usando nombre completo como hostname.
+11. Hasta que no esté configurado el servidor DNS, incluye resolución estática en las cuatro instancias tanto usando nombre completo como hostname.
     
+La creación y configuración (conexión a las redes, quitarle la seguridad, ...) de la máquina 1 la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
