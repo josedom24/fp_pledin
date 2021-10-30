@@ -44,4 +44,4 @@ Pasos a realizar:
 10. Nombrar de forma adecuada: FQDN todas las máquinas. Hacerlo con el `cloud-init` y un fichero `cloud-config.yaml`.
 11. Hasta que no esté configurado el servidor DNS, incluye resolución estática en las cuatro instancias tanto usando nombre completo como hostname.
     
-La creación y configuración (conexión a las redes, quitarle la seguridad, ...) de la máquina 1 la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
+La creación y configuración (conexión a las redes, creación de volumen, quitarle la seguridad, ...) de la máquina 1 la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
