@@ -34,6 +34,3 @@ En este tema nos vamos a parar en el estudio de los proxys inversos:
 * [Apache2 como proxy inverso](apache_proxy.html)
 * [Ejercicio 6: Apache2 como proxy inverso](ejercicio6.html)
 
-## Servidor web y ansible
-
-* [Ejercicio 7: Playbook de ansible para la instalación y configuración de apache2](ejercicio7.html)
