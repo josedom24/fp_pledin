@@ -6,6 +6,7 @@ title: Protocolo DNS
 * [Ficheros importantes en la resolución de nombres](ficheros.html)
     * [Ejercicio 1: Consultas DNS](ejercicio1.html)
 
+<!--
 ## Dnsmasq
 
 * [Configurando un servidor DNS con dnsmasq](https://www.josedomingo.org/pledin/2020/12/servidor-dns-dnsmasq/)
@@ -31,3 +32,4 @@ title: Protocolo DNS
 * [Conceptos sobre DNS](https://youtu.be/yuKbCgOY0FY)
 * [Ejemplos de consultas DNS](https://youtu.be/NBKr8yerhDU)
 
+-->
