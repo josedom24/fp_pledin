@@ -1,5 +1,5 @@
 ---
-title: "Desplegando aplicaciones flask con uwsgi"
+title: "Ejercicio 3: Desplegando aplicaciones flask con apache2 + uwsgi"
 ---
 
 ## uwsgi
@@ -73,4 +73,10 @@ systemctl daemon-reload
 
 ## Proxy inversos para uwsgi
 
-LÑa configuración será similar a la estudiada en gunicorn.
+La configuración será similar a la estudiada en gunicorn.
+
+{% capture notice-text %}
+
+* Configura la aplicación [guestbook](https://github.com/josedom24/guestbook) para que sea servida con apache2 + mod_wsgi. Explica los pasos más importante y entrega una prueba de funcionamiento.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

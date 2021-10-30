@@ -1,5 +1,5 @@
 ---
-title: "Desplegando aplicaciones flask con apache2 + mod_wsgi"
+title: "Ejercicio 1: Desplegando aplicaciones flask con apache2 + mod_wsgi"
 ---
 
 ## Despliegue en el entorno de desarrollo
@@ -8,24 +8,9 @@ Vamos a trabajar con la aplicación flask_temperaturas que puedes encontrar en e
 
 Clona el repositorio en tu equipo, mira las versiones de los paquetes necesarios para que la aplicación funcione en el fichero `requirements.txt` y responde las siguientes preguntas:
 
-{% capture notice-text %}
-1. ¿Podríamos instalar estos paquetes con `apt`?
-2. ¿Sería buena idea instalar como root estos paquetes en el sistema con `pip`?
-3. ¿Cómo sería la mejor manera de instalar estos paquetes?
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
 ### Trabajamos con entornos virtuales
 
 Crea un entorno virtual con el módulo `venv` e instala en él los paquetes necesarios para que el programa funcione. Una vez instalado, ejecuta la aplicación con el servidor de desarrollo y comprueba que funciona.
-
-## Despliegue en el entrono de producción
-
-¿Cómo podemos hacer que un servidor web como apache2 sea capaz de servir una aplicación escrita en python? Para ello se utiliza un protocolo que nos permite comunicar al servidor web con la aplicación web: **WSGI (Web Server Gateway Interface)**.
-
-Es decir, el protocolo WSGI define las reglas para que el servidor web se comunique con la aplicación web. Cuando al servidor llega una petición que tenemos que mandar a la aplicación web python tenemos al menos dos cosas que tener en cuenta:
-
-* Tenemos un fichero de entrada, es decir la petición siempre se debe enviar un único fichero., Este fichero se llama fichero WSGI.
-* La aplicación web python con la que se comunica el servidor web utilizando el protocolo WSGI se debe llama `application`. Por lo tanto el fichero WSGI entre otras cosas debe nombrar a la aplicación de esta manera.
 
 ### Configuración de apache2 para servir una aplicación web flask
 
@@ -71,6 +56,8 @@ Vamos a explicar la configuración:
 Reinicia el servicio web y prueba el funcionamiento. Si te da algún erro 500 puedes ver los errores, en `/var/log/apache2/error.log`.
 
 {% capture notice-text %}
-Realiza la configuración de apache2 para que sirva la aplicación con la que estamos trabajando en un virtualhost `python.iesgn.org`.
+
+* Configura la aplicación [guestbook](https://github.com/josedom24/guestbook) para que sea servida con apache2 + mod_wsgi. Explica los pasos más importante y entrega una prueba de funcionamiento.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 

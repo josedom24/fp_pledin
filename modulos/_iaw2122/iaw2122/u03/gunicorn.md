@@ -1,5 +1,5 @@
 ---
-title: "Desplegando aplicaciones flask con gunicorn"
+title: "Ejercicio 2: Desplegando aplicaciones flask con apache2 + gunicorn"
 ---
 
 ## Servidores wsgi
@@ -94,3 +94,9 @@ location / {
     proxy_set_header X-Forwarded-Server $host;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 }
+
+{% capture notice-text %}
+
+* Configura la aplicación [guestbook](https://github.com/josedom24/guestbook) para que sea servida con apache2 + mod_wsgi. Explica los pasos más importante y entrega una prueba de funcionamiento.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
