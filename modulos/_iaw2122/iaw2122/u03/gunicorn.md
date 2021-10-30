@@ -94,6 +94,7 @@ location / {
     proxy_set_header X-Forwarded-Server $host;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 }
+```
 
 {% capture notice-text %}
 
