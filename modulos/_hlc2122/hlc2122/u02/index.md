@@ -41,7 +41,7 @@ title: "Utilización de OpenStack"
     * [VÍDEO: OpenStack. Uso del servicio de metadatos](https://youtu.be/8xLF28rKNI0)
     * [VÍDEO: cloud-init](https://youtu.be/YIhlg_cGrYQ)
     * [VÍDEO: Utilización de cloud-init. Ejemplo](https://youtu.be/eWbAg4fenVo)
-    * [Ejemplo de cloud-config.yml](clod-config.yml)
+    * [Ejemplo de cloud-config.yml](cloud-config.yml)
 
 ## Ejercicios
 
