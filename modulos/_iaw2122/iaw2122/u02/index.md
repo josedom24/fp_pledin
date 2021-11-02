@@ -40,10 +40,8 @@ title: Implantación de aplicaciones web PHP
 * [Ejecución de PHP con PHP-FPM](fpm.html)
 * [Ejercicio 3: Ejecución de PHP con PHP-FPM](ejercicio-fpm.html)
 
-<!--
-
 ## Migración de aplicaciones PHP a nuestro VPS
 
 * [Práctica 2: Instalación/migración de aplicaciones web PHP eb tu VPS](practica_php2.html)
--->
+
 

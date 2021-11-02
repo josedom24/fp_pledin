@@ -34,6 +34,8 @@ iaw2122:
         url: /iaw2122/u01
       - title: PHP
         url: /iaw2122/u02
+      - title: Python
+        url: /iaw2122/u03
 
 hlc2122:
   - title: "HLC: Cloud Computing (2021-2022)"

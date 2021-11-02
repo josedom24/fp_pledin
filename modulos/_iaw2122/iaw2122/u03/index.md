@@ -20,11 +20,13 @@ title: Implantación de aplicaciones web Python
 
 * [Introducción al protocolo WSGI](wsgi.html)
 * [Ejercicio 1: Desplegando aplicaciones flask con apache2 + mod_wsgi](modwsgi.html)
+
+<!--
 * [Ejercicio 2: Desplegando aplicaciones flask con apache2 + gunicorn](gunicorn.html)
 * [Ejercicio 3: Desplegando aplicaciones flask con apache2 + uwsgi](uwsgi.html)
 
 
-<!--
+
 
 * Introducción a django
 
