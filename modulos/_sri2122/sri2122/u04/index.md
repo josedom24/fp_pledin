@@ -4,7 +4,7 @@ title: Protocolo DNS
 
 * [¿Cómo funciona el DNS?](http://blog.smaldone.com.ar/2006/12/05/como-funciona-el-dns/)
 * [Ficheros importantes en la resolución de nombres](ficheros.html)
-    * [Ejercicio 1: Consultas DNS](ejercicio1.html)
+    * [Ejemplos Consultas DNS](consultas_dns.html)
 
 <!--
 ## Dnsmasq

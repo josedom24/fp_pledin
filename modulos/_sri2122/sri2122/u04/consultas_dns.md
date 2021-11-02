@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 1: Consultas DNS"
+title: "Ejemplo: Consultas DNS"
 ---
  
 
