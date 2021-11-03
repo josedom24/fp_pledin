@@ -15,7 +15,7 @@ title: "Práctica : Instalación de un servidor LEMP en nuestra VPS"
 
 ## Mapeo de URL (2 puntos)
 
-6. Cuando se acceda a `www.tudominio.algo` se nos redigirá a la página `www.tudominio.algo/principal`. En el directorio principal no se permite ver la lista de los ficheros, no se permite que se siga los enlaces simbólicos y no se permite negociación de contenido. 
+6. Cuando se acceda a `www.tudominio.algo` se nos redigirá a la página `www.tudominio.algo/principal`. En el directorio principal no se permite ver la lista de los ficheros, no se permite que se siga los enlaces simbólicos. 
 7. En la página `www.tudominio.algo/principal` se debe mostrar una página web estática (utiliza alguna plantilla para que tenga hoja de estilo o la página estática que has generado en IAW). En esta página debe aparecer tu nombre, y una lista de enlaces a las aplicaciones que vamos a ir desplegando posteriormente.
 8. Si accedes a la página `www.tudominio.algo/principal/documentos` se visualizarán los documentos que hay en `/srv/doc`. Por lo tanto se permitirá el listado de fichero y el seguimiento de enlaces simbólicos.
 9. En todo el host virtual se debe redefinir los mensajes de error de objeto no encontrado y no permitido. Para el ello se crearan dos ficheros html dentro del directorio `error`.
