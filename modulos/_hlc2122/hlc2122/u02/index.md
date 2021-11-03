@@ -49,6 +49,9 @@ title: "Utilización de OpenStack"
 * [Ejercicio 2: Infraestructura de red router-nat desde horizon](ejercicio2.html)
 * [Ejercicio 3: Infraestructura de red router-nat desde OSC](ejercicio3.html)
 
+## Práctica
+* [Práctica: Instalación y configuración inicial de los servidores OpenStack](practica_os.html)
+
 ## Enlaces de interes
 
 * [OpenStack](https://www.openstack.org/)

@@ -3,7 +3,7 @@ title: Instalación y configuración inicial de los servidores OpenStack
 ---
 En esta tarea se va a crear el escenario de trabajo que se va a usar durante todo el curso, que va a constar inicialmente de 4 instancias con nombres relacionados .......
 
-Imágen
+![práctica](img/escenario2.png)
 
 Pasos a realizar:
 
