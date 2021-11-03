@@ -16,21 +16,21 @@ Pasos a realizar:
     * Direccionamiento: 10.0.2.0/24
     * DHCP y DNS (192.168.202.2)
 3. Creación de las instancias
-    * Máquina 1
+    * Máquina 1 (zeus)
         * Debian 11 sobre volumen de 10GB con sabor m1.mini
         * Accesible directamente a través de la red externa y con una IP flotante
-        * Conectada a la red interna y a la red DMZ, de la que será la puerta de enlace
-    * Máquina 2
+        * Conectada a la red interna y a la red DMZ, de la que será la puerta de enlace (10.0.1.1, y 10.0.2.1)
+    * Máquina 2 (ares)
         * Ubuntu 20.04 sobre volumen de 10GB con sabor m1.mini
         * Conectada a la red interna
         * Dirección: 10.0.1.101
         * Accesible indirectamente a través de dulcinea
-    * Máquina 3:
+    * Máquina 3 (apolo)
         * Debian 11 sobre volumen de 10GB con sabor m1.mini
         * Conectada a la red interna
         * Dirección: 10.0.1.102
         * Accesible indirectamente a través de dulcinea
-    * Máquina 4:
+    * Máquina 4 (hera)
         * Rocky 8 sobre volumen de 10GB con sabor m1.mini
         * Conectada a la red DMZ
         * Dirección: 10.0.2.200
