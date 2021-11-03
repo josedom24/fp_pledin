@@ -41,7 +41,17 @@ Pasos a realizar:
 7. Creación del usuario `profesor` en todas las instancias. Usuario que puede utilizar `sudo` sin contraseña.
 8. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario `profesor`.
 9. Realiza una actualización completa de todos los servidores.
-10. Nombrar de forma adecuada: FQDN todas las máquinas. Hacerlo con el `cloud-init` y un fichero `cloud-config.yaml`.
-11. Hasta que no esté configurado el servidor DNS, incluye resolución estática en las cuatro instancias tanto usando nombre completo como hostname.
+10. El dominio utilizado sera del tipo `tunombre.gonzalonazareno.org`.
+11. Nombrar de forma adecuada: FQDN todas las máquinas. Hacerlo con el `cloud-init` y un fichero `cloud-config.yaml`. Puedes configurar en este fichero algunos puntos anteriores (el 5, el 7, el 8, el 9,...)
+12. Hasta que no esté configurado el servidor DNS, incluye resolución estática en las cuatro instancias tanto usando nombre completo como hostname.
     
 La creación y configuración (conexión a las redes, creación de volumen, quitarle la seguridad, ...) de la máquina 1 la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
+
+{% capture notice-text %}
+## Entrega...
+
+* Las instrucciones para crear y configurar la máquina 1.
+* Los ficheros `cloud-config.yaml` utilizados en la creación de las máquinas.
+* La IP flotantes de zeus.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
