@@ -20,6 +20,7 @@ Instala un servidor dns **bind9**.  Las características del servidor DNS que qu
 * Se tienen que configurar la zona de resolución inversa.
 
 {% capture notice-text %}
+* Configuración del cliente, para comprobar que consulta al servidor DNS que hemos configurado.
 * Entrega las zonas que has definido.
 * Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:
 	* Dirección de ``pandora.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
