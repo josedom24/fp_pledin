@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 7: Instalación y configuración de un servidor DNS dinámico"
+title: "Ejercicio 4: Instalación y configuración de un servidor DNS dinámico"
 ---
 
 ### DNS dinámico

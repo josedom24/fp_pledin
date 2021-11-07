@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 4: Instalación y configuración de un servidor DNS esclavo"
+title: "Ejercicio 2: Instalación y configuración de un servidor DNS esclavo"
 ---
 
 El servidor DNS actual funciona como **DNS maestro**. Vamos a instalar un nuevo servidor DNS que va a estar configurado como **DNS esclavo** del anterior, donde se van a ir copiando periódicamente las zonas del DNS maestro. Suponemos que el nombre del servidor DNS esclavo se va llamar ``tusapellidos.iesgn.org``.
