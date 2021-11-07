@@ -247,8 +247,7 @@ Esto creara un fichero de migración en el directorio `polls/migrations`. Una mi
 Como hemos visto anteriormente nuestro proyecto tiene una aplicación de administración y una aplicación de autentificación para guardar los usuarios. Para acceder a la zona de administración antes hay que crear al usuario administrador de la aplicación, para ello:
 
 ```bash
-(django)$
-python3 manage.py createsuperuser
+(django)$ python3 manage.py createsuperuser
 ```
 
 Podemos comporbar que efectivamente se ha creado un usario en la tabla correspondiente:
