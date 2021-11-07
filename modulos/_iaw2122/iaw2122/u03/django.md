@@ -119,3 +119,5 @@ Las rutas virtuales que vamos a usar para acceder a las distintas funciones de l
 Después lo estudiaremos con más detenimiento, pero las funciones que se realizan en cada una de las rutas forman parte del **controlador** de la aplicación que están implementadas en el fichero `polls/views.py`.
 
 ## Las vistas de la aplicación 
+
+Las vistas en djando se implementan usando plantillas (`templates`). django tiene un motor de plantillas propio. Podemos encontrar las vistas de la plicación `polls` en el directorio `polls\templatees\polls`.
