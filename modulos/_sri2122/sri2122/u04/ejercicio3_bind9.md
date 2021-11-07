@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 5: Delegación de subdominios con bind9"
+title: "Ejercicio 3: Delegación de subdominios con bind9"
 ---
 
 Tenemos un servidor DNS que gestiona la zona correspondiente al nombre de dominio ``iesgn.org``, en esta ocasión queremos delegar el subdominio ``informatica.iesgn.org`` para que lo gestione otro servidor DNS. Por lo tanto tenemos un escenario con dos servidores DNS:
