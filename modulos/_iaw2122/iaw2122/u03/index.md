@@ -16,16 +16,14 @@ title: Implantación de aplicaciones web Python
 * [Entornos de desarrollo virtuales con Python 3](https://openwebinars.net/blog/entornos-de-desarrollo-virtuales-con-python3/)
 * [VIDEO: Entornos de desarrollo virtuales con Python3](https://www.youtube.com/watch?v=h2J6-03MsnQ)
 
-## Despliegue de aplicaciones Web
+## Despliegue de aplicaciones Web Python
 
 * [Introducción al protocolo WSGI](wsgi.html)
 * [Ejercicio 1: Desplegando aplicaciones flask con apache2 + mod_wsgi](modwsgi.html)
-
-<!--
 * [Ejercicio 2: Desplegando aplicaciones flask con apache2 + gunicorn](gunicorn.html)
 * [Ejercicio 3: Desplegando aplicaciones flask con apache2 + uwsgi](uwsgi.html)
 
-
+<!--
 
 
 * Introducción a django
