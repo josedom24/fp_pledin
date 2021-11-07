@@ -88,7 +88,7 @@ polls/
 
 Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/3.2/intro/tutorial01/) que tiene 7 apartados os da una visión general del desarrolla de una aplicación en django.
 
-En el siguiente apartado seguiremos estudiando las aplicaciones django pero utilizando la aplicación desarrolla en el tutorial, que podeis encontrar en: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
+En el siguiente apartado seguiremos estudiando las aplicaciones django pero utilizando la aplicación desarrollada en el tutorial, que podeis encontrar en: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
 
 ## La configuración del proyecto
 
