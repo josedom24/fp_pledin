@@ -139,7 +139,7 @@ class Choice(models.Model):
 Como vemos creamos dos clases: 
 
 * `Question` que va a representar la tabla donde guardamos las preguntas de las encuestas. Una `Question` va a tener dos atributos el texto (`question_text`) y la fecha de publicación (`pub_date`). Además se creará un atributo autoincremental que será la clave primaria.
-* `Choice`: represent alas posibles respuestas de una encuesta. Tiene los siguientes atributos: `question` que es una clave ajena para relacionarlo con la tabla anterior, `choice_text`: texto de la respuesta y `votes`: votos de dicha respuesta. También se crea una clave única para esta tabla.
+* `Choice`: representa las posibles respuestas de una encuesta. Tiene los siguientes atributos: `question` que es una clave ajena para relacionarlo con la tabla anterior, `choice_text`: texto de la respuesta y `votes`: votos de dicha respuesta. También se crea una clave única para esta tabla.
 
 Cada **clase** representa una **tabla** y la definición de sus **atributos**. 
 
