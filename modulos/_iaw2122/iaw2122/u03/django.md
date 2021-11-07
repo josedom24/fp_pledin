@@ -258,6 +258,10 @@ sqlite> select * from auth_user;
 1|pbkdf2_sha256$260000$U6iFl8rdYciSxgBRwSlDIT$Mp1pIcSQTurHNW82F3gQ7UgH8G2+goJE0V5EeASg2xE=||1|admin||admin@admin.es|1|1|2021-11-07 18:03:45.427069|
 ```
 
+Para acceder a la zona de administración, arrancamos el servidor web de desarrollo, accedemos a la ruta `/admin` y podemos comprobar que tenemos creado una pregunta:
+
+![admin](img/admin.png)
+
 ## Las rutas y el controlador de la aplicación
 
 Las rutas virtuales que vamos a usar para acceder a las distintas funciones de la aplicación se definen a nivel de proyecto y a nivel de aplicación:
