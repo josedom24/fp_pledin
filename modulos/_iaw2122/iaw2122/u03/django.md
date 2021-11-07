@@ -101,7 +101,162 @@ Veamos el ficheros `settings.py` que encontramos dentro del directorio `django_t
 
 ## El modelo de la aplicación
 
+El modelo nos permite diseñar las tablas y las relaciones con la que vamos a trabajar en nuestra aplicación. El modelo de django nos independiza del motos de base de datos, es decir, vamos a trabajar con clases y objetos que representan los datos y nos da igual que los datos se guarden en cualquier tipo de base de datos.
+
+El modelo de la aplicación `polls` se define en el fichero `polls/models.py`:
+
+```python
+import datetime
+
+from django.db import models
+from django.utils import timezone
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('date published')
+
+    def __str__(self):
+        return self.question_text
+
+    def was_published_recently(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
+    was_published_recently.admin_order_field = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published recently?'
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.choice_text
+```
+
+Como vemos creamos dos clases: 
+
+* `Question` que va a representar la tabla donde guardamos las preguntas de las encuestas. Una `Question` va a tener dos atributos el texto (`question_text`) y la fecha de publicación (`pub_date`). Además se creará un atributo autoincremental que será la clave primaria.
+* `Choice`: represent alas posibles respuestas de una encuesta. Tiene los siguientes atributos: `question` que es una clave ajena para relacionarlo con la tabla anterior, `choice_text`: texto de la respuesta y `votes`: votos de dicha respuesta. También se crea una clave única para esta tabla.
+
+Cada **clase** representa una **tabla** y la definición de sus **atributos**. 
+
+**¿Qué relación tiene el modelo con la base de datos que hemos configurado en el fichero `settings.py`?**
+El programa va a trabajar para gestionar los datos con estas dos clases, pero cada vez que se haga una operación en los datos se traducirá internamente a SQL para que se guarde en la base de datos configurada. 
+
+### Creación de las tablas
+
+Lo primero que vamos a hacer es crear las tablas definidas en el modelo de la aplicación en la base de datos configurada, para ello ejecutamos:
+
+```bash
+(django)$ python3 manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, polls, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying polls.0001_initial... OK
+  Applying sessions.0001_initial... OK
+```
+
+Podemos comprobar que cada una de las aplicaciones que forman el proyecto han creado sus tablas:
+
+```bash
+$ sqlite3 db.sqlite3 
+...
+sqlite> .tables
+auth_group                  django_admin_log          
+auth_group_permissions      django_content_type       
+auth_permission             django_migrations         
+auth_user                   django_session            
+auth_user_groups            polls_choice              
+auth_user_user_permissions  polls_question            
+```
+
+### Jugando con el modelo
+
+Vamos a poner un ejemplo de como podemos crear una encuesta utilizando las clases, para ello vamos a acceder a una shell de django:
+
+```bash
+(django)$ python3 manage.py shell
+...
+>>> from polls.models import Choice, Question
+>>> Question.objects.all()
+<QuerySet []>
+>>> from django.utils import timezone
+>>> q = Question(question_text="What's new?", pub_date=timezone.now())
+>>> q.save()
+>>> q.id
+1
+>>> q.question_text
+"What's new?"
+>>> q.pub_date
+datetime.datetime(2021, 11, 7, 17, 45, 36, 939817, tzinfo=<UTC>)
+>>> q.question_text = "What's up?"
+>>> q.save()
+>>> Question.objects.all()
+<QuerySet [<Question: What's up?>]>
+```
+
+* El primer `q.save()` ha hecho un *insert* sobre la tabla *Question*.
+* El segundo `q.save()` ha hecho un *update* sobre la tabla *Question*.
+* La instrucción `Question.objects.all()` ha ejecutado un `select * from Question`.
+
+Pero lo importante: **Es que da igual la base de datos que tengamos configurada: una sqlite, mariadb, posgresSQL, oracle, ...**.
+
+Podemos comprobar que se ha añadido un registro en la tabla Question:
+
+```bash
+sqlite> select * from polls_question;
+1|What's up?|2021-11-07 17:45:36.939817
+```
+
+### Modificación del modelo
+
+Si modificamos el modelo, es porque estamos cambiando la estructura de la base de datos. Para que siga funcionando bien la aplicación tendremos que crear una migración:
+
+```bash
+(django)$ python3 manage.py makemigrations
+```
+
+Esto creara un fichero de migración en el directorio `polls/migrations`. Una migración es un script que al ejecutarlo se cambia la estructura de la base de datos según el cambio del modelo. Para ejecutar la migración:
+
+```bash
+(django)$ python3 manage.py migrate
+```
+
 ## La aplicación de administración de la aplicación
+
+Como hemos visto anteriormente nuestro proyecto tiene una aplicación de administración y una aplicación de autentificación para guardar los usuarios. Para acceder a la zona de administración antes hay que crear al usuario administrador de la aplicación, para ello:
+
+```bash
+(django)$
+python3 manage.py createsuperuser
+```
+
+Podemos comporbar que efectivamente se ha creado un usario en la tabla correspondiente:
+
+```bash
+sqlite> select * from auth_user;
+1|pbkdf2_sha256$260000$U6iFl8rdYciSxgBRwSlDIT$Mp1pIcSQTurHNW82F3gQ7UgH8G2+goJE0V5EeASg2xE=||1|admin||admin@admin.es|1|1|2021-11-07 18:03:45.427069|
+```
 
 ## Las rutas y el controlador de la aplicación
 
@@ -120,4 +275,4 @@ Después lo estudiaremos con más detenimiento, pero las funciones que se realiz
 
 ## Las vistas de la aplicación 
 
-Las vistas en djando se implementan usando plantillas (`templates`). django tiene un motor de plantillas propio. Podemos encontrar las vistas de la plicación `polls` en el directorio `polls\templatees\polls`.
+Las vistas en djando se implementan usando plantillas (`templates`). django tiene un motor de plantillas propio. Podemos encontrar las vistas de la aplicación `polls` en el directorio `polls\templatees\polls`.
