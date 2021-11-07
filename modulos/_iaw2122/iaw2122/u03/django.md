@@ -283,4 +283,4 @@ Las vistas en djando se implementan usando plantillas (`templates`). django tien
 
 Por ejemplo al entrar a la ruta principal de la aplicación `polls` se nos muestra la siguiente página web:
 
-![polls](iimg/polls.png)
+![polls](img/polls.png)
