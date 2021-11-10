@@ -13,13 +13,13 @@ Pasos a realizar:
     * DHCP y DNS (192.168.202.2)
 2. Creación de la red DMZ:
     * Nombre: "red DMZ de <nombre de usuario>"
-    * Direccionamiento: 10.0.2.0/24
+    * Direccionamiento: 172.16.0.0/16
     * DHCP y DNS (192.168.202.2)
 3. Creación de las instancias
     * Máquina 1 (zeus)
         * Debian 11 sobre volumen de 10GB con un sabor de tipo mini.
         * Accesible directamente a través de la red externa y con una IP flotante
-        * Conectada a la red interna y a la red DMZ, de la que será la puerta de enlace (10.0.1.1, y 10.0.2.1)
+        * Conectada a la red interna y a la red DMZ, de la que será la puerta de enlace (10.0.1.1, y 172.16.0.1)
     * Máquina 2 (ares)
         * Ubuntu 20.04 sobre volumen de 10GB con un sabor de tipo mini.
         * Conectada a la red interna
@@ -33,7 +33,7 @@ Pasos a realizar:
     * Máquina 4 (hera)
         * Rocky 8 sobre volumen de 10GB con un sabor de tipo mini.
         * Conectada a la red DMZ
-        * Dirección: 10.0.2.200
+        * Dirección: 172.16.0.200
         * Accesible indirectamente a través de zeus
 4. Deshabilita la seguridad en todos los puertos de las instancias.
 5. Configuración de NAT en zeus.
