@@ -23,11 +23,11 @@ title: Implantación de aplicaciones web Python
 * [Ejercicio 2: Desplegando aplicaciones flask con apache2 + gunicorn](gunicorn.html)
 * [Ejercicio 3: Desplegando aplicaciones flask con apache2 + uwsgi](uwsgi.html)
 
+## django
+
+* [Introducción a django](django.html)
+
 <!--
-
-
-* Introducción a django
-
 ## CMS en Python
 
 * [Lista de framework Python](https://wiki.python.org/moin/WebFrameworks)
