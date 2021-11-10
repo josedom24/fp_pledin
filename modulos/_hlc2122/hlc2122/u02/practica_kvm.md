@@ -3,6 +3,8 @@ title: Instalación y configuración inicial de los servidores KVM/Libivirt
 ---
 En esta tarea se va a crear el escenario de trabajo que se va a usar durante todo el curso, que va a constar inicialmente de 4 instancias con nombres relacionados con los dioses griegos.
 
+![práctica](img/escenario3.png)
+
 Pasos a realizar:
 
 1. Creación de la red interna (very-isolated):
