@@ -51,6 +51,8 @@ title: "Utilización de OpenStack"
 
 ## Práctica
 * [Práctica: Instalación y configuración inicial de los servidores OpenStack](practica_os.html)
+* [Práctica: Instalación y configuración inicial de los servidores KVM/Libvirt](practica_kvm.html)
+
 
 ## Enlaces de interes
 
