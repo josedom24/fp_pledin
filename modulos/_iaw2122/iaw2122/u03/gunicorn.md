@@ -96,6 +96,8 @@ location / {
 
 {% capture notice-text %}
 
-* Configura la aplicación [guestbook](https://github.com/josedom24/guestbook) para que sea servida con apache2 + mod_wsgi. Explica los pasos más importante y entrega una prueba de funcionamiento.
+* Configura la aplicación [guestbook](https://github.com/josedom24/guestbook) para que sea servida gunicorn y apache2 como proxy inverso. 
+
+* Explica los pasos más importante y entrega una prueba de funcionamiento.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
