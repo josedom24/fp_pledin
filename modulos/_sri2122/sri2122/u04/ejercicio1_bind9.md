@@ -23,7 +23,7 @@ Instala un servidor dns **bind9**.  Las características del servidor DNS que qu
 * Configuración del cliente, para comprobar que consulta al servidor DNS que hemos configurado.
 * Entrega las zonas que has definido.
 * Realiza las consultas dig/nslookup desde los clientes preguntando por los siguientes:
-	* Dirección de ``pandora.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
+	* Dirección de ``tunombre.iesgn.org``, ``www.iesgn.org``, ``ftp.iesgn.org``
 	* El servidor DNS con autoridad sobre la zona del dominio ``iesgn.org``
 	* El servidor de correo configurado para ``iesgn.org``
 	* La dirección IP de ``www.josedomingo.org``
