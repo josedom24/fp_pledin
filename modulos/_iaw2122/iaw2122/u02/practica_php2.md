@@ -9,8 +9,7 @@ Realizar la migración de la primera aplicación que tienes instalada en la prá
 1. La aplicación se tendrá que migrar a un nuevo virtualhost al que se accederá con el nombre `portal.tudominio.algo`.
 2. Vamos a nombrar el servicio de base de datos que tenemos en producción. Como es un servicio interno no la vamos a nombrar en la zona DNS, la vamos a nombrar usando resolución estática. El nombre del servicio de base de datos se debe llamar: `bd.tudominio.algo`.
 3. Realiza la migración de la aplicación.
-4. Asegurate que las URL limpias de drupal siguen funcionando en nginx.
-5. La aplicación debe estar disponible en la URL: `portal.tudominio.algo` (Sin ningún directorio).
+4. La aplicación debe estar disponible en la URL: `portal.tudominio.algo` (Sin ningún directorio).
 
 
 ## Tarea 2
