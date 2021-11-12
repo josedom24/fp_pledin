@@ -15,10 +15,10 @@ title: Protocolo DNS
 * [Servidores DNS esclavos (1ª parte)](http://www.josedomingo.org/pledin/2011/11/configuracion-de-un-servidor-dns-esclavo/)
 * [Servidores DNS esclavos (2ª parte)](http://www.josedomingo.org/pledin/2013/11/configurar_servidor_dns_esclavo_2/)
     * [Ejercicio 2: Instalación y configuración de un servidor DNS esclavo](ejercicio2_bind9.html)
+* [Configurar subdominios en bind9](http://www.josedomingo.org/pledin/2013/11/configurar-subdominios-en-bind9)
+    * [Ejercicio 3: Delegación de subdominios con bind9]º(ejercicio3_bind9.html)
 
 <!--
-* [Configurar subdominios en bind9](http://www.josedomingo.org/pledin/2013/11/configurar-subdominios-en-bind9)
-    * [Ejercicio 3: Delegación de subdominios con bind9](ejercicio3_bind9.html)
 * [DNS dinámico (Desde lo alto del cerro)](http://albertomolina.wordpress.com/2008/11/14/dns-dinamico/)
     * [Ejercicio 4: Instalación y configuración de un servidor DNS dinámico](ejercicio4_bind9.html)
 * [Vistas en bind9](https://www.josedomingo.org/pledin/2017/12/vistas-views-en-el-servidor-dns-bind9/)
