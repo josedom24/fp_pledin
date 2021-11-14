@@ -66,7 +66,7 @@ Si queremos que el servidor escuche en todas las direcciones y en un puerto dete
 
 ## Creando una aplicación
 
-Hasta ahora tenemos un proyecto django, pero no tiene ninguna funcionalidad. En un proyecto django podemos ir añadiendo distintas aplicaciones que  donde vamos implementando las distintas funcionalidades del programa. Siguiendo el tutorial de django, vamos a crear la aplicación polls (encuestas), para ello:
+Hasta ahora tenemos un proyecto django, pero no tiene ninguna funcionalidad. En un proyecto django podemos ir añadiendo distintas aplicaciones donde vamos implementando las distintas funcionalidades del programa. Siguiendo el tutorial de django, vamos a crear la aplicación polls (encuestas), para ello:
 
 ```bash
 (django)$ python3 startapp polls
@@ -86,7 +86,7 @@ polls/
     views.py
 ```
 
-Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/3.2/intro/tutorial01/) que tiene 7 apartados os da una visión general del desarrolla de una aplicación en django.
+Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/3.2/intro/tutorial01/) que os da una visión general del desarrollo de aplicaciones web en django.
 
 En el siguiente apartado seguiremos estudiando las aplicaciones django pero utilizando la aplicación desarrollada en el tutorial, que podeis encontrar en: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
 
@@ -250,7 +250,7 @@ Como hemos visto anteriormente nuestro proyecto tiene una aplicación de adminis
 (django)$ python3 manage.py createsuperuser
 ```
 
-Podemos comporbar que efectivamente se ha creado un usario en la tabla correspondiente:
+Podemos comprobar que efectivamente se ha creado un usuario en la tabla correspondiente:
 
 ```bash
 sqlite> select * from auth_user;
