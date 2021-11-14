@@ -29,13 +29,15 @@ En `ares` (Ubuntu) vamos a instalar un servidor de base de datos mariadb (`bd.tu
 {% capture notice-text %}
 ## Entrega
 
-1. Entrega el resultado de las siguientes consultas desde un cliente interno a nuestra red y otro externo:
+1. Entrega la configuración DNS de cada máquina.
+2. Entrega la definición de las vistas y de las zonas.
+3. Entrega el resultado de las siguientes consultas desde un cliente interno a nuestra red y otro externo:
     * El servidor DNS con autoridad sobre la zona del dominio `tu_nombre.gonzalonazareno.org`.
     * La dirección IP de `seuz`.
     * Una resolución de www.
     * Una resolución de bd.
     * Un resolución inversa de IP fija en cada una de las redes. (Esta consulta sólo funcionará desde una máquina interna).
 
-2. Entrega una captura de pantalla accediendo a `www.tunombre.gonzalonazareno.org/info.php` donde se vea la salida del fichero `info.php`.
-3. Entrega una prueba de funcionamiento donde se vea como se realiza una conexión a la base de datos desde `hera`.
+4. Entrega una captura de pantalla accediendo a `www.tunombre.gonzalonazareno.org/info.php` donde se vea la salida del fichero `info.php`.
+5. Entrega una prueba de funcionamiento donde se vea como se realiza una conexión a la base de datos desde `hera`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
