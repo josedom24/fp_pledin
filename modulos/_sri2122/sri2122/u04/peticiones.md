@@ -19,7 +19,7 @@ Para realizar estos ejercicios utiliza el comando `curl`. Aprende sus distintas 
 	Comprueba con el plugin del navegador cuantas peticiones se realizan al acceder a estas páginas. 
 	
 
-3. Envío de información al servidor, comprueba como se manda información al servidor mediante el método GET en la URL. ¿Qué pasa si envíamos otro identificador, por ejemplo el 4?:
+3. Envío de información al servidor, comprueba como se manda información al servidor mediante el método GET en la URL. ¿Qué pasa si enviamos otro identificador, por ejemplo el 4?:
 
 		https://dit.gonzalonazareno.org/moodle/course/view.php?id=25
 
