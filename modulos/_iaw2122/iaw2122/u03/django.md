@@ -283,3 +283,11 @@ Las vistas en djando se implementan usando plantillas (`templates`). django tien
 Por ejemplo al entrar a la ruta principal de la aplicación `polls` se nos muestra la siguiente página web:
 
 ![polls](img/polls.png)
+
+## Desplegando una aplicación django
+
+Hemos visto distintas formas de desplegar aplicaciones flask en los ejercicios de esta unidad. El despliegue de una aplicación django se hace de forma similar, teniendo en cuenta los siguientes aspectos:
+
+* El fichero wsgi, que será el punto de acceso a la plicación se encuentra en `django_tutorial/django_tutorial/wsgi.py`.
+* Django no sirve el contenido estático, por lo que tendremos que configurar el servidor web para que lo haga. Tendremos que usar `alias` para que el contenedio estático se accesible. Por ejemplo, ¿dónde se encuentra la hoja de estilo de la zona de adminitración de nuetra aplicación?
+* Tienes una guia de despliegue de aplicaiones django en: [How to deploy with WSGI](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/).
