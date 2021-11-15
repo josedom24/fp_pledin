@@ -18,7 +18,7 @@ Aunque podemos instalarlo desde repositorios, nosotros vamos a instalarlo en el 
 
 Tenemos nuestra aplicación en: `/home/debian/flask_temperaturas` para desplegarla con gunicorn ejecutamos:
 
-    (flask) /home/debian/flask_temperaturas# gunicorn -w 2 -b :8080 wsgi:application
+    (flask) /home/debian/flask_temperaturas# gunicorn -w 2 -b :8080 wsgi
     [2021-10-28 12:13:03 +0000] [4706] [INFO] Starting gunicorn 20.1.0
     [2021-10-28 12:13:03 +0000] [4706] [INFO] Listening at: http://0.0.0.0:8081 (4706)
     [2021-10-28 12:13:03 +0000] [4706] [INFO] Using worker: sync
