@@ -28,6 +28,9 @@ title: Protocolo DNS
 * [Conceptos sobre DNS](https://youtu.be/yuKbCgOY0FY)
 * [Ejemplos de consultas DNS](https://youtu.be/NBKr8yerhDU)
 
+## Práctica
+
+* [Práctica: Servidores Web, Base de Datos y DNS en nuestros escenario de trabajo](practica.html)
 <!--
 ## Dnsmasq
 
