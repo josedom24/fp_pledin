@@ -31,6 +31,7 @@ title: Protocolo DNS
 ## Práctica
 
 * [Práctica: Servidores Web, Base de Datos y DNS en nuestros escenario de trabajo](practica.html)
+
 <!--
 ## Dnsmasq
 
