@@ -47,7 +47,7 @@ User=www-data
 Group=www-data
 Restart=always
 
-ExecStart=/home/debian/venv/flask/bin/gunicorn -w 2 -b :8080 wsgi:application
+ExecStart=/home/debian/venv/flask/bin/gunicorn -w 2 -b :8080 wsgi
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s TERM $MAINPID
 
