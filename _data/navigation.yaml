@@ -46,6 +46,8 @@ hlc2122:
         url: /hlc2122/u01
       - title: "Utilización de OpenStack"
         url: /hlc2122/u02
+      - title: "Almacenamiento"
+        url: /hlc2122/u03
 
 
 serviciosgs:
