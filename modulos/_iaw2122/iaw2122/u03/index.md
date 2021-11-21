@@ -34,6 +34,6 @@ title: Implantación de aplicaciones web Python
 ## Prácticas
 
 * [Práctica: Despliegue de aplicaciones python](practica.html)
-* [Práctica: Instalación de un CMS python](practica2.hml)
+* [Práctica: Instalación de un CMS python](practica2.html)
 
 
