@@ -1,4 +1,6 @@
-# Test para comprobar el funcionamiento del escenario OpenStack/KVM
+---
+title: Test para comprobar el funcionamiento del escenario OpenStack/KVM
+---
 
 1. Acceder a zeus con el usuario `profesor` y acceder a otra máquina usando su nombre.
 2. Comprobar que esa máquina tiene internet.
