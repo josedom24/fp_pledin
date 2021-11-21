@@ -27,15 +27,13 @@ title: Implantación de aplicaciones web Python
 
 * [Introducción a django](django.html)
 
+## CMS en Python
+
+* [Lista de cms desarrollados en Django](https://djangopackages.org/grids/g/cms/)
+
 ## Prácticas
 
 * [Práctica: Despliegue de aplicaciones python](practica.html)
+* [Práctica: Instalación de un CMS python](practica2.hml)
 
-<!--
-## CMS en Python
 
-* [Lista de framework Python](https://wiki.python.org/moin/WebFrameworks)
-* [Lista de cms desarrollados en Django](https://djangopackages.org/grids/g/cms/)
-* [Lista de cms desarrollados en Python](https://wiki.python.org/moin/ContentManagementSystems)
-
--->
