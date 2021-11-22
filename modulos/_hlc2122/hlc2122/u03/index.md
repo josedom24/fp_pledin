@@ -22,7 +22,8 @@ title: "Almacenamiento"
 1. SAN
     1. [Características](https://github.com/albertomolina/beamer-focus/raw/main/san.pdf)
     1. [iSCSI](https://github.com/albertomolina/beamer-focus/raw/main/iscsi.pdf)
-        * [iSCSI__cheatsheet.md](https://gist.github.com/albertomolina/6c621aee3f80c5e7baf3c111df670cf0)
+		* [iSCSI Naming Conventions](https://docs.vmware.com/en/VMware-vSphere/5.5/com.vmware.vsphere.storage.doc/GUID-686D92B6-A2B2-4944-8718-F1B74F6A2C53.html)
+        * [Introducción a iSCSI](iscsi.html)
 	1. Ceph RBD
 1. Sistemas de ficheros en clúster
     1. Características
