@@ -9,6 +9,7 @@ title: "Almacenamiento"
 	1. [Sistemas de ficheros. Funcionalidades avanzadas](https://github.com/albertomolina/beamer-focus/raw/main/sist-ficheros-2.pdf)
 	1. [ZFS](https://github.com/albertomolina/beamer-focus/raw/main/zfs.pdf)
 	1. [Btrfs](https://github.com/albertomolina/beamer-focus/raw/main/btrfs.pdf)
+	1. [VÍDEO: Demo. Copy on Write en XFS](https://youtu.be/sfcbHu5_in4)
 1. LVM
 1. RAID
     1. [Introducción](https://github.com/albertomolina/beamer-focus/raw/main/raid.pdf)
@@ -35,3 +36,7 @@ title: "Almacenamiento"
 		1. Windows DFS
 		1. Lustre
 1. Almacenamiento de objetos en la nube
+
+## Prácticas
+
+* [Práctica 1: Sistemas de ficheros "avanzados" ZFS/Btrfs](practica1.html)
