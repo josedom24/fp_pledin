@@ -16,7 +16,7 @@ En este tema vamos a configurar nuestros servidores apache2 y nginx para que sir
 * [Configuración de HTTPS en nginx](http://nginx.org/en/docs/http/configuring_https_servers.htmlhttp://nginx.org/en/docs/http/configuring_https_servers.html)
 * [Let's Encrypt](https://letsencrypt.org/es/)
 * [¿Que es Let’s Encrypt y como configurarlo?](https://adrianalonsodev.medium.com/que-es-lets-encrypt-y-como-configurarlo-dae155f62a57)
-* ¿Cómo funciona Let's Encrypt?](https://letsencrypt.org/es/how-it-works/)
+* [¿Cómo funciona Let's Encrypt?](https://letsencrypt.org/es/how-it-works/)
 
 ## Práctica
 

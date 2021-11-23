@@ -19,3 +19,6 @@ Vamos a configurar el protocolo HTTPS para el acceso a nuestras aplicaciones, pa
 7. Modifica la configuración del cliente de Nextcloud para comprobar que sigue en funcionamiento con HTTPS.
 
 Documenta de la forma más precisa posible cada uno de los pasos que has dado, y entrega pruebas de funcionamiento para comprobar el proceso que has realizado.
+
+Comprobar que el navegador tiene el certificado de Let's Encrypt.
+Posibilidad de hacer un certificado wildcard.
