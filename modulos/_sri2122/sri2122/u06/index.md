@@ -10,3 +10,11 @@ Los servidores web pueden ser configurado para manejar las peticiones de diferen
 * [Haciendo pruebas de rendimiento con ab](ab.html)
 * [Comparativa de servidores web sirviendo páginas estáticas](estatica.html)
 * [Comparativa de servidores web sirviendo páginas dinámicas](dinamica.html)
+
+¿Podemos aumentar el rendimiento de los servidores que ejecutan PHP? Vamos a ver tres posibilidades:
+
+## Balanceo de carga con HAProxy
+
+## memcached
+
+## Varnish
