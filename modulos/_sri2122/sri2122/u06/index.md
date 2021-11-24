@@ -9,4 +9,4 @@ Los servidores web pueden ser configurado para manejar las peticiones de diferen
 * [Gestión de peticiones en los servidores web](peticiones.html)
 * [Haciendo pruebas de rendimiento con ab](ab.html)
 * [Comparativa de servidores web sirviendo páginas estáticas](estatica.html)
-* [Comparativa de servidores web sirviendo páginas dinámicas](dinamicas.html)
+* [Comparativa de servidores web sirviendo páginas dinámicas](dinamica.html)
