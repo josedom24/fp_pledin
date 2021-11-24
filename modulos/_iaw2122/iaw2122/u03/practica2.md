@@ -4,9 +4,9 @@ title: "Práctica: Instalación de un CMS python"
 
 En esta tarea vamos a desplegar un CMS python. Tienes que realizar la instalación de un CMS python basado en django (puedes encontrar varios en el siguiente [enlace](https://djangopackages.org/grids/g/cms/). Según la dificultad de la instalación tendrás más o menos notas:
 
-* Fácil (un 7): Wagtail CMS, CodeRed CMS
+* Fácil (un 7): Django CMS, Wagtail CMS, CodeRed CMS
 * Medio (un 8,5): Mezzanine (Es fácil pero la instalación da un error que tendrás que solucionar).
-* Difícil (un 10): Django CMS, FeinCMS, Django-Fiber
+* Difícil (un 10): FeinCMS, Django-Fiber
 
 1. Instala el CMS en el entorno de desarrollo. Debes utilizar un entorno virtual.
 2. Personaliza la página (cambia el nombre al blog y pon tu nombre) y añade contenido (algún artículo).
