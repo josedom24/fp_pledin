@@ -9,7 +9,7 @@ En este tema vamos a configurar nuestros servidores apache2 y nginx para que sir
 
 * [Introducción a HTTPS](introduccion.html)
 * [HTTPS con Let's Encrypt](https://docs.google.com/presentation/d/e/2PACX-1vRFUYiggwcEAXQx5OApPYCAnqCQ7o1xc7JCaMJFAlNMtNe5eNhmD8EtE6b0uKgCl3px474WD6lZNDfz/pub?start=false&loop=false&delayms=3000)
-* [Configuración de HTTPS en Apache2](apache2_https.hmtl)
+* [Configuración de HTTPS en Apache2](apache2_https.html)
 
 ## Enlaces de interes
 
