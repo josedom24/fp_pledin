@@ -20,7 +20,7 @@ En este tema vamos a configurar nuestros servidores apache2 y nginx para que sir
 
 ## Práctica
 
-* Práctica: Configuración de HTTPS en el VPS
+* [Práctica: Configuración de HTTPS en el VPS](practica_https.html)
 
 
 
