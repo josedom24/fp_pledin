@@ -20,3 +20,5 @@ backend servidores_web_bakend
 ab -t 10 -c 100 -h http://www.example.org/wordpress/
 
 hatop -s /run/haproxy/admin.sock
+
+http://cbonte.github.io/haproxy-dconv/1.6/configuration.html#4
