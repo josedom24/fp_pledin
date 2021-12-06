@@ -21,6 +21,8 @@ Podríamos configurar o nginx o apache2 para balanceaar la carga, pero vamos a u
 
 Al balancear la carga entre más de un servidor aumentaremos el rendimiento.
 
+* [Introducción a HAProxy](haproxy.html)
+
 ## memcached
 
 [Memcached](http://memcached.org) es un sistema distribuido de propósito general y que es muy usado en la actualidad por múltiples sitios web. Memcached es empleado para el almacenamiento en caché de datos u objetos en la memoria RAM, reduciendo así las necesidades de acceso a un origen de datos externo (como una base de datos o una API).
@@ -30,7 +32,7 @@ Al balancear la carga entre más de un servidor aumentaremos el rendimiento.
 
 ## Varnish
 
-Podráimos configurar nginx o apache2 como proxy inverso con cache, pero vamos a usar una herramienta especicalidad que funciona como proxy inverso cache, como es [Varnish](https://varnish-cache.org/).
+Podríamos configurar nginx o apache2 como proxy inverso con cache, pero vamos a usar una herramienta especicalidad que funciona como proxy inverso cache, como es [Varnish](https://varnish-cache.org/).
 
 Varnish es un acelerador HTTP que funciona como un proxy inverso. Se sitúa por delante del servidor web, cacheando la respuesta de dicho servidor web en memoria. La próxima vez que un visitante visite la misma URL, la página será servida desde Varnish en lugar de desde el servidor web, ahorrando recursos en el backend y permitiendo más conexiones simultáneas.
 
