@@ -20,8 +20,8 @@ title: Despliegue de aplicaciones web Java
 * [Conector mysql](https://www.mysql.com/products/connector/)
 * [Conector PostgreSQL](https://jdbc.postgresql.org/)
 
-<!--
+
 ## Prácticas
 
 * [Práctica: Despliegue de CMS java](practica_java.html)
--->
+
