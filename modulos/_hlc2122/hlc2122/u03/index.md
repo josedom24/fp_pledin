@@ -24,12 +24,13 @@ title: "Almacenamiento"
     1. [iSCSI](https://github.com/albertomolina/beamer-focus/raw/main/iscsi.pdf)
 		* [iSCSI Naming Conventions](https://docs.vmware.com/en/VMware-vSphere/5.5/com.vmware.vsphere.storage.doc/GUID-686D92B6-A2B2-4944-8718-F1B74F6A2C53.html)
         * [Introducción a iSCSI](iscsi.html)
+		* [VÍDEO: Demo iSCSI](https://youtu.be/Vrwl0rza8aM)
 	1. Ceph RBD
 1. Sistemas de ficheros en clúster
     1. Características
 	1. Sistemas de dispositivos de bloques compartidos
-	    1. DRBD
-	    1. OCFS2
+	    1. [DRBD](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/drbd.pdf)
+	    1. [OCFS2](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/ocfs2.pdf)
 		1. GFS2
 	1. Sistemas de ficheros distribuidos
 	    1. GlusterFS
