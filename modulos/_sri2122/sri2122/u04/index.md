@@ -5,6 +5,7 @@ title: Protocolo DNS
 * [¿Cómo funciona el DNS?](http://blog.smaldone.com.ar/2006/12/05/como-funciona-el-dns/)
 * [Ficheros importantes en la resolución de nombres](ficheros.html)
     * [Ejemplos Consultas DNS](consultas_dns.html)
+* [Conceptos sobre DNS](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dns.pdf)
 
 ## bind9
 
