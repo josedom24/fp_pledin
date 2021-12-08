@@ -31,9 +31,9 @@ Puedes buscar más aplicaciones en:
 
 {% capture notice-text %}
 * Indica la aplicación escogida y su funcionalidad.
-* Escribe una guía de los pasas fundamentales para realizar la instalación.
+* Escribe una guía de los pasos fundamentales para realizar la instalación.
 * ¿Has necesitado instalar alguna librería?¿Has necesitado instalar un conector de una base de datos?
 * Entrega una captura de pantalla donde se vea la aplicación funcionando desde tomcat.
-* Realiza la configuración necesaria en apache2 y tomcat para que la aplicación sea servida por el servidor web.
-* Muestra al profesor la aplicación funcionando servida por apache2.
+* Realiza la configuración necesaria en apache2/nginx y tomcat para que la aplicación sea servida por el servidor web.
+* Muestra al profesor la aplicación funcionando servida por apache2/nginx.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
