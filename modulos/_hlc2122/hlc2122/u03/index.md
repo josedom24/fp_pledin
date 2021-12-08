@@ -43,3 +43,4 @@ title: "Almacenamiento"
 
 * [Práctica 1: Sistemas de ficheros "avanzados" ZFS/Btrfs](practica1.html)
 * [Práctica 2: Trabajar con iSCSI](practica2.html)
+* [Práctica 3: DRBD y OCFS2](practica3.html)
