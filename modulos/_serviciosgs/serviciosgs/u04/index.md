@@ -21,7 +21,7 @@ Los contenidos que vamos a estudiar en este bloque serán:
 ## Indice
 
 * [Enlaces interesantes](enlaces.html)
-* [Presentación servidor DNS: bind9](https://docs.google.com/presentation/d/e/2PACX-1vTMcnRn32srL05Zb-Ah7X6J_avhVl4sXI9qq6CdI0S9T2903Kl_11xA9eiMYrHDubqzS2dFimNQP6V4/pub?start=false&loop=false)
+* [Presentación servidor DNS: bind9](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/bind9.pdf)
 * [Vistas en bind9](https://www.josedomingo.org/pledin/2017/12/vistas-views-en-el-servidor-dns-bind9/)
 
 ## Vídeos
