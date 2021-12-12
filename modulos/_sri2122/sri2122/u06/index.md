@@ -23,6 +23,7 @@ Al balancear la carga entre más de un servidor aumentaremos el rendimiento.
 
 * [Presentación: Introducción a HAProxy](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/haproxy.pdf)
 * [Ejemplo: Introducción a HAProxy](haproxy.html)
+* [Vídeo: Introducción a HAProxy](https://youtu.be/eRgWCUcvzoA)
 
 ## memcached
 
