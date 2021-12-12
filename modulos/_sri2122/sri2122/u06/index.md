@@ -21,7 +21,8 @@ Podríamos configurar o nginx o apache2 para balanceaar la carga, pero vamos a u
 
 Al balancear la carga entre más de un servidor aumentaremos el rendimiento.
 
-* [Introducción a HAProxy](haproxy.html)
+* [Presentación: Introducción a HAProxy](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/haproxy.pdf)
+* [Ejemplo: Introducción a HAProxy](haproxy.html)
 
 ## memcached
 
@@ -41,4 +42,4 @@ Varnish es un acelerador HTTP que funciona como un proxy inverso. Se sitúa por 
 
 ## Práctica
 
-* Práctica: Aumento de rendimiento en servidores web
+* [Práctica: Aumento de rendimiento en servidores web](practica.html)
