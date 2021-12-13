@@ -23,8 +23,10 @@ sri2122:
         url: /sri2122/u03
       - title: Protocolo DNS
         url: /sri2122/u04
-      - title: Protocolo HTTP (II)
+      - title: Protocolo HTTPS
         url: /sri2122/u05
+      - title: Protocolo HTTP (II)
+        url: /sri2122/u06
       
 
 iaw2122:
