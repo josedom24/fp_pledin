@@ -23,7 +23,7 @@ Para realizar este ejercicio puedes basarte en el artículo [Optimizar WordPress
 2. Configura en wordpress un plugin que le permita trabajar con memcached.
 3. Realiza el calculo de rendimiento. Para ello haz varias pruebas y quedate con la media de peticiones/segundo:
 
-	ab -t 10 -c 100 -h http://www.example.org/wordpress/
+		ab -t 10 -c 100 -h http://www.example.org/wordpress/
 
 	¿Se ha aumentado el rendimiento de forma significativa?
 
