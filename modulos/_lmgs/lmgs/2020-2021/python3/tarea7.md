@@ -59,16 +59,15 @@ Ayuda:
 
 Supongamos que tenemos en nuestro sistema el usuario `prueba` con contraseña `asdasd`, una línea correspondiente a este usuario en el fichero `/etc/shadow` sería:
 
-	prueba:$6$/nNkCgcv$r.FooJSMDwP2gd4MAsoRTTLoOVpsIF2EyxW59ryWW7bpKUxulWX9CpEWknaDBzHWYJ2q9gqxEyfQl93u7okPa.:15059:0:99999:7::::
+	prueba:$y$j9T$bU9gdaTeFdFmE.H6YFABA/$a6tYG9jDZRNbkVaLW48AGbPw9ryIuHsG7PnaiWQmZb5:18977:0:99999:7:::
 
-* La sal de una contraseña cifrada se indica en linux por los 20 primeros caracteres del hash de la contraseña, en el caso anterior la sal sería **$6$aiozD6dU.MJeURsH$**.
+* La sal de una contraseña cifrada (en debian 11) se indica en linux por los **30** primeros caracteres del hash de la contraseña, en el caso anterior la sal sería **`$y$j9T$bU9gdaTeFdFmE.H6YFABA/$`**.
 * La función `crypt` del módulo `crypt` permite formar los hashes con sal utilizados por linux, de la siguiente manera:
 
     ```python
     >>> from crypt import crypt
-	>>> crypt("asdasd","$6$aiozD6dU.MJeURsH$")
-	'$6$aiozD6dU.MJeURsH$g.syV5NgBk7VqWiekTbhwZsfJwDNuujx76P.bUBUMoKpTVVCXAQ84JlQVdd85fPyIO5fYiJjd2DJObWNu.o/R0'
-
+	>>> crypt("asdasd","$y$j9T$bU9gdaTeFdFmE.H6YFABA/$")
+	'$y$j9T$bU9gdaTeFdFmE.H6YFABA/$a6tYG9jDZRNbkVaLW48AGbPw9ryIuHsG7PnaiWQmZb5'
     ```
 
 donde `asdasd` es la contraseña en claro.
