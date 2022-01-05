@@ -11,4 +11,4 @@ El índice de contenidos que vamos a estudiar será:
 * [Virtualización. KVM y libvirt](u01)
 * [Utilización de OpenStack](u02)
 * [Almacenamiento](u03)
-
+* [Contenedores LXC](u04)

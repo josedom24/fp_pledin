@@ -54,6 +54,9 @@ hlc2122:
         url: /hlc2122/u02
       - title: "Almacenamiento"
         url: /hlc2122/u03
+      - title: "Contenedores LXC"
+        url: /hlc2122/u04
+
 
 
 serviciosgs:
