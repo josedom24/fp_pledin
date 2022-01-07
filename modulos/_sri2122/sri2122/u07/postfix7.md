@@ -1,6 +1,5 @@
 ---
 title: "Soluciones al problema del spam"
-permalink: /serviciosgs/u06/postfix7.html
 ---
 
 ## SMTPd restrintions

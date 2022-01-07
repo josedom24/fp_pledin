@@ -1,6 +1,5 @@
 ---
 title: ¿Qué tenemos que hacer para que nuestro correo "llegue a buen puerto"?
-permalink: /serviciosgs/u06/asegurar_envio_correo.html
 ---
 
 ## IPs estáticas y limpias

@@ -1,6 +1,5 @@
 ---
 title: Instalación y configuración básica de postfix
-permalink: /serviciosgs/u06/postfix1.html
 ---
 
 ## Instalación de postfix

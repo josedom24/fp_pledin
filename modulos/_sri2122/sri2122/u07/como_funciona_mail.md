@@ -1,6 +1,5 @@
 ---
 title: ¿Cómo funciona el correo eléctronico?
-permalink: /serviciosgs/u06/como_funciona_mail.html
 ---
 
 ## Direcciones de correo electrónico

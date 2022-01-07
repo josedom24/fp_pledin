@@ -1,6 +1,5 @@
 ---
 title: "Caso 3: Recibir correos desde internet a usuarios del servidor"
-permalink: /serviciosgs/u06/postfix5.html
 ---
 
 ## Desde el aula

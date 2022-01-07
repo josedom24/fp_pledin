@@ -1,6 +1,5 @@
 ---
 title: Enlaces interesantes
-permalink: /serviciosgs/u06/enlaces.html
 ---
 
 * [Cómo funciona el correo electrónico (MTA, MDA, MUA)](http://es.ccm.net/contents/115-como-funciona-el-correo-electronico-mta-mda-mua)

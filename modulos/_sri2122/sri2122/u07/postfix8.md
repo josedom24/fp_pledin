@@ -1,6 +1,5 @@
 ---
 title: "Caso 4: Recepción de correo electrónico usando nuestro servidor de correos"
-permalink: /serviciosgs/u06/postfix8.html
 ---
 
 ## Protocolos para recibir el correo

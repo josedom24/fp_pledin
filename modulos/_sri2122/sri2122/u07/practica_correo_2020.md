@@ -1,6 +1,5 @@
 ---
 title: "Práctica: Servidor de correos"
-permalink: /serviciosgs/u06/practica_correo_2020.html
 ---
 
 Instala y configura de manera adecuada el servidor de correos en tu máquina de OVH, para tu dominio `iesgnXX.es`. El nombre del servidor de correo será `mail.iesgnXX.es` (Este es el nombre que deberá aparecer en el registro MX)

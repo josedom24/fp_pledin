@@ -1,6 +1,5 @@
 ---
 title: "Alias y redirecciones"
-permalink: /serviciosgs/u06/postfix6.html
 ---
 
 ## Alias
