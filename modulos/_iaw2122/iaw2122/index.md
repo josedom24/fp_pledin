@@ -12,7 +12,7 @@ El índice de contenidos que vamos a estudiar será:
 * [Implantación de aplicaciones web PHP](u02)
 * [Implantación de aplicaciones web Python](u03)
 * [Despliegue de aplicaciones web Java](u04)
-
+* [Implementación de aplicaciones web con contenedores Docker](u05)
 
 <!--
 * [Introducción a la integración continúa y despliegue continuo](u05)
