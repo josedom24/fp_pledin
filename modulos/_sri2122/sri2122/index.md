@@ -15,15 +15,5 @@ El índice de contenidos que vamos a estudiar será:
 * [Protocolo DNS](u04)
 * [Protocolo HTTPS](u05)
 * [Protocolo HTTP (2ª Parte)](u06)
-
-<!--
-* [Servidor de correo electrónico](u06)
-
-
-
-
-
-
-
--->
+* [Servidor de correo electrónico](u07)
 
