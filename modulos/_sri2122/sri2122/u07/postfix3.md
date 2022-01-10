@@ -67,21 +67,21 @@ Pasemos a describir los pasos:
 ## Fases en el envío de un mensaje de correo
 
 * **Fase de autenticación** (puede haber otra si la sesión es cifrada). El cliente lanza los comandos siguientes para indicar qué usuario envía el correo, y a quién va dirigido. En nuestro ejemplo el cliente no llega a autenticarse al no estar configurado el servidor de correo para ello, tan sólo se intercambian estos mensajes.
-    * EHLO o HELO “cadena presentándose el cliente ante el servidor”
-    * MAIL FROM: “dirección de correo del remitente”
-    * RCPT TO: “dirección de correo del destinatario”
+    * **EHLO o HELO**: cadena presentándose el cliente ante el servidor.
+    * **MAIL FROM**: dirección de correo del remitente.
+    * **RCPT TO**: dirección de correo del destinatario.
 * **Fase de envío del mensaje**. El cliente lanza la orden DATA y el servidor responde indicando “354 End data with <CR><LF>.<CR><LF>”, lo que quiere decir que cuando el cliente finalice el mensaje y desee enviarlo debe escribir un punto y dar un retorno de carro, es decir, una vez a la tecla intro. El cliente lanza las cadenas
-    * From: “dirección del remitente” + SALTO DE LÍNEA (ie intro)
-    * To: “dirección del destinatario” + SALTO DE LÍNEA (ie intro)
-    * Cc: “dirección del destinatario” para tener una copia + SALTO DE LÍNEA (ie intro)
-    * Bcc: “dirección del destinatario” para tener una copia ciega
-    * Date: “fecha” + SALTO DE LÍNEA (ie intro)
-    * Subject: “asunto” + SALTO DE LÍNEA (ie intro)
-    * MIME-Versión: “valor de la versión de MIME usada” + SALTO DE LÍNEA (ie intro)
-    * Otras cabeceras + SALTO DE LÍNEA (ie intro)
-    * DOS SALTOS DE LÍNEAS
-    * Escribe el mensaje en varias líneas
-    * DOS SALTOS DE LÍNEAS, y en el segundo escribe “.” para finalizar el mensaje, y el cliente lo envía al servidor
+    * **From**: dirección del remitente + SALTO DE LÍNEA.
+    * **To**: dirección del destinatario + SALTO DE LÍNEA.
+    * **Cc**: dirección del destinatario para tener una copia + SALTO DE LÍNEA.
+    * **Bcc**: dirección del destinatario para tener una copia ciega.
+    * **Date**: fecha + SALTO DE LÍNEA.
+    * **Subject**: asunto + SALTO DE LÍNEA.
+    * **MIME-Versión**: valor de la versión de MIME usada + SALTO DE LÍNEA.
+    * Otras cabeceras + SALTO DE LÍNEA.
+    * DOS SALTOS DE LÍNEAS.
+    * Escribe el mensaje en varias líneas.
+    * DOS SALTOS DE LÍNEAS, y en el segundo escribe "." para finalizar el mensaje, y el cliente lo envía al servidor.
 
 Podemos comprobar el log ``/var/log/mail.log`` para comprobar que se ha mandado el mensaje:
 
