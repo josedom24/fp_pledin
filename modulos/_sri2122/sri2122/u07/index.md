@@ -8,7 +8,7 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
 
 * [¿Cómo funciona el correo electrónico?](como_funciona_mail.html)
 * [Instalación y configuración básica de postfix](postfix1.html)
-* [Gestión del correo desde el servidor](postfix2.html)
+* Gestión del correo desde el servidor
   * [Caso 1: Envío local, entre usuarios del mismo servidor](postfix3.html)
   * [Caso 2: Envío de correo desde usuarios del servidor a correos de internet](postfix4.html)
     * [¿Qué tenemos que hacer para que nuestro correo "llegue a buen puerto"?](asegurar_envio_correo.html)

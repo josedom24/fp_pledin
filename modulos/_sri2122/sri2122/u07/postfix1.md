@@ -8,7 +8,7 @@ title: Instalación y configuración básica de postfix
 
 
 * Tipo de servidor: Internet Site (vamos a recibir y enviar correo directamente)
-* Mailname: DOMINIO
+* Mailname: **DOMINIO**
 
 ## Directivas de configuración
 

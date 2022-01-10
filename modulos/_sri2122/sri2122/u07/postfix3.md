@@ -6,24 +6,28 @@ Esta situación podemos aprovecharla para el envío de correos entre usuarios de
 
 ## Envío de correos
 
-Para el envío de correo vamos a usar la utilidad `mail` (se encuentra en el paquete `bsd-mailx`). Y para enviar un correo desde el usuario debian al usuario root, simplemente ejecutamos:
+Para el envío de correo vamos a usar la utilidad `mail` (se encuentra en el paquete `bsd-mailx`). Y para enviar un correo desde el usuario `debian` al usuario `root`, simplemente ejecutamos:
 
+```
 debian@maquina:~$ mail root@DOMINIO
 Subject: Hola
 Esto es una prueba
 Cc: 
+```
 
 **Recuerda que para terminar de escribir el cuerpo del mensaje hay que ponerse en una nueva línea e introducir CTRL+D.**
 
 Para leer el usuario root simplemente ejecuta la instrucción `mail`:
 
+```
 root@maquina:~#  mail
 Mail version 8.1.2 01/15/2001.  Type ? for help.
 "/var/mail/root": 1 message 1 unread
 >U  1 debian@DOMINIO  Sat Jan 16 18:22   79/3597  Re: hola
 & 1
+```
 
-Introducimos el númerode correo para leerlo.
+Introducimos el número de correo para leerlo.
 
 Como vemos el buzón del usuario está en `/var/mail/root`. Los correos leídos se guardan en `~/mbox`.
 
