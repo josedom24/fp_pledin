@@ -18,25 +18,25 @@ Tenemos que tener en cuenta los siguientes aspectos:
     * Para que `babuino-smtp` conozca la IP de nuestro servidor de correo tendremos que crear un registro MX en nuestro servidor DNS  para realizar la resolución.
 4. Con la configuración que tenemos en el servidor de correo de nuestra máquina debe ser suficiente para recibir el correo. Recuerda mandar un mensaje a un usuario que exista en el servidor.
 
-##  Desde tu servidor OVH
+##  Desde tu VPS
 
-En este caso vamos a utilizar un nombre de dominio: `iesgnXX.es`. Tenemos que tener en cuenta los siguientes aspectos:
+En este caso vamos vais a utilizar vuestro nombre de dominio. Tenemos que tener en cuenta los siguientes aspectos:
 
 1. Configura el servidor postfix en tu servidor, teniendo en cuenta que en el fichero ``/etc/mailname`` este tu nombre de dominio.
 2. Configura tu DNS para que el registro MX apunte a un nombre de ordenador que está definido como un registro A a tu dirección IP pública. Ejemplo:
 
-		# dig mx iesgnXX.es
-		; <<>> DiG 9.7.3 <<>> -t mx iesgnXX.es
+		# dig mx tudominio.org
+		; <<>> DiG 9.7.3 <<>> -t mx tudominio.org
 		;; global options: +cmd
 		;; Got answer:
 		;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9147
 		;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 3, ADDITIONAL: 4		
 
 		;; QUESTION SECTION:
-		;iesgnXX.es.        IN    MX		
+		;tudominio.org.        IN    MX		
 
 		;; ANSWER SECTION:
-		iesgnXX.es.    900    IN    MX    10 tumaquina.iesgnXX.es.		
+		tudominio.org.    900    IN    MX    10 tumaquina.tudominio.org.		
 
 		;; ADDITIONAL SECTION:
 		tumaquina.ieshnXX.es.    900    IN    A    XX.XX.XX.XX (tu ip pública)

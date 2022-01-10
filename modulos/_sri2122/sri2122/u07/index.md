@@ -20,6 +20,10 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
   * [Caso 5: Envío de correo electrónico usando nuestro servidor de correos](postfix9.html)
 
 
+## Ejercicio
+
+* [Servidor de correo en los servidores de clase](ejercicio_correo_clase.html)
+
 <!--
 ## Práctica
 
