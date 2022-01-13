@@ -13,3 +13,4 @@ title: "Contenedores. LXC"
 
 ## Prácticas
 
+* [Práctica: Contenedores LXC](practica_lxc.html)
