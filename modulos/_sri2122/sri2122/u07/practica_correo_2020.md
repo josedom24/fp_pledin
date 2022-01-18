@@ -11,7 +11,7 @@ Instala y configura de manera adecuada el servidor de correos en tu máquina de 
 
 ## Uso de alias y redirecciones
 
-* **Tarea 3 (No obligatoria)**: Uso de alias y redirecciones.
+* **Tarea 3**: Uso de alias y redirecciones.
 
 Vamos a comprobar como los procesos del servidor pueden mandar correos para informar sobre su estado. Por ejemplo cada vez que se ejecuta una tarea cron podemos enviar un correo informando del resultado. Normalmente estos correos se mandan al usuario `root` del servidor, para ello:
 
@@ -67,4 +67,4 @@ Configura el `cron` para enviar correo al usuario `root`. Comprueba que están l
 
 ## Comprobación final
 
-* **Tarea 13 (No obligatoria)**: Prueba de envío de correo. En esta [página](https://www.mail-tester.com/) tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.
+* **Tarea 13**: Prueba de envío de correo. En esta [página](https://www.mail-tester.com/) tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.
