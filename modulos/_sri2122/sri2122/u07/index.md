@@ -24,7 +24,6 @@ En esta unidad vamos a introducir el servidor de correo electrónico. Vamos a in
 
 * [Servidor de correo en los servidores de clase](ejercicio_correo_clase.html)
 
-<!--
 ## Práctica
 
 * [Práctica servidor de correo](practica_correo_2020.html)
