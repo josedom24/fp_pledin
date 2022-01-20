@@ -9,9 +9,9 @@ En el caso de la configuración de nuestra red del instituto, sólo puede enviar
 	ralayhost = babuino-smtp.gonzalonazareno.org
 
 
-## Desde tu servidor OVH
+## Desde tu servidor VPS
 
-¿Qué necesitamos para que desde nuestro servidor OVH podamos mandar correos al exterior?:
+¿Qué necesitamos para que desde nuestro VPS podamos mandar correos al exterior?:
 
 * Con la configuración básica del servidor, seríamos capaces de enviar el correo (no necesitamos un relay).
 * Quizás no sea necesario para el envío de correos, pero estaría muy bien que ya tengamos configurado en nuestro DNS el registro MX apuntando a nuestra máquina.
@@ -21,4 +21,4 @@ En el caso de la configuración de nuestra red del instituto, sólo puede enviar
 
 	![postfix6](img/postfix4.jpg)
 
-En el siguiente apartado profundizaremos en los mecanismos necesarios para asegurar el anvío de nuestro correos.
+En el siguiente apartado profundizaremos en los mecanismos necesarios para asegurar el envío de nuestro correos.
