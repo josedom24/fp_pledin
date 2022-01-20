@@ -21,9 +21,10 @@ Servicios que debemos instalar en los contenedores (si quieres lo puedes hacer c
 * El contenedor `servidor_web` tiene un servidor web (apache2 o nginx). El servidor web sirve los ficheros del directorio `/var/www/pagina`. En este directorio se monta el directorio `/opt/pagina` del host y es donde tendrá los ficheros de la página web.
 * El contenedor `router` debe hacer DNAT para que podamos acceder a la página web alojada en el contenedor `servidor_web`.
 
-## Ejercicio 2
 
-Explica los pasos necesarios para configurar Vagrant para que utilice LXC como proveedor y una vez configurado el sistema crea un `Vagrantfile` que construya un escenario similar al del ejercicio anterior. No hace falta configurarlo.
+~~## Ejercicio 2~~
+
+~~Explica los pasos necesarios para configurar Vagrant para que utilice LXC como proveedor y una vez configurado el sistema crea un `Vagrantfile` que construya un escenario similar al del ejercicio anterior. No hace falta configurarlo.~~
 
 {% capture notice-text %}
 Describe los pasos principales para realizar cada uno de los ejercicios, centrándonos en los aspectos relacionados con LXC y mostrando pruebas de funcionamiento donde se vean cada uno de los aspectos que se piden.
