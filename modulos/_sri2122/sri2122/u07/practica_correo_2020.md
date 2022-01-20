@@ -2,9 +2,11 @@
 title: "Práctica: Servidor de correos"
 ---
 
-Instala y configura de manera adecuada el servidor de correos en tu máquina de OVH, para tu dominio `iesgnXX.es`. El nombre del servidor de correo será `mail.iesgnXX.es` (Este es el nombre que deberá aparecer en el registro MX)
+Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será `mail.tudominio.es` (Este es el nombre que deberá aparecer en el registro MX).
 
 ## Gestión de correos desde el servidor
+
+El envío y recepción se hará desde el servidor usando la herramienta `mail`.
 
 * **Tarea 1**: Documenta una prueba de funcionamiento, donde envíes desde tu servidor local al exterior. Muestra el log donde se vea el envío. Muestra el correo que has recibido. Muestra el registro SPF.
 * **Tarea 2**: Documenta una prueba de funcionamiento, donde envíes un correo desde el exterior (gmail, hotmail,...) a tu servidor local. Muestra el log donde se vea el envío. Muestra cómo has leído el correo. Muestra el registro MX de tu dominio.
