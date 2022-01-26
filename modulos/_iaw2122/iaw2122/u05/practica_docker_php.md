@@ -21,7 +21,7 @@ Tenemos que tener en cuenta los siguientes aspectos:
 * La imagen debe crear las variables de entorno necesarias con datos de conexión por defecto.
 * Al crear un contenedor a partir de estas imágenes se ejecutará un script bash que realizará las siguientes tareas:
     * Modifique el fichero `core\controller\Database.php` para que lea las variables de entorno. Para obtener las variables de entorno en PHP usar la función `getenv`. [Para más información](http://php.net/manual/es/function.getenv.php).
-    * Inicialice la base de datos con el fichero `squema.sql`.
+    * Inicialice la base de datos con el fichero `schema.sql`.
     * Ejecute el servidor web.
 * El contenedor que creas debe tener un volumen para guardar los logs del servidor web.
 * La imagen la tienes que crear en tu entorno de desarrollo con el comando `docker build`.
