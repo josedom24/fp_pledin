@@ -60,11 +60,12 @@ Tenemos que tener en cuenta los siguientes aspectos:
 * Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 4: Ejecución de una aplicación PHP en docker con nginx
+## Tarea 4: Ejecución de una aplicación PHP en docker con nginx (OPTATIVA)
 
 * Vamos a crear una imagen que se llame `usuario/bookmedik:v3`.
 * En este caso queremos usar un contenedor que utilice nginx para servir la aplicación PHP. Puedes crear la imagen desde una imagen base debian o ubuntu o desde la imagen oficial de nginx.
 * Vamos a crear otro contenedor que sirva php-fpm.
+* Para que funcione de forma adecuada el php-fpm tiene que tener acceso al directorio donde se encuentra la aplicación.
 * Y finalmente nuestro contenedor con la aplicación.
 * Crea un script con docker compose que levante el escenario con los tres contenedores.
 
