@@ -12,4 +12,4 @@ El índice de contenidos que vamos a estudiar será:
 * [Utilización de OpenStack](u02)
 * [Almacenamiento](u03)
 * [Contenedores LXC](u04)
-* [Kubernetes](u04)
+* [Kubernetes](u05)
