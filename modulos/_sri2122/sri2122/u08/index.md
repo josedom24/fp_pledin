@@ -17,6 +17,15 @@ title: "Clusters de alta disponibilidad"
 
 * [Repositorio de Escenarios de HA con pacemaker y corosync](https://github.com/josedom24/escenarios-HA)
 
+### Escenarios
+
+* [Balanceo por DNS](https://github.com/josedom24/escenarios-HA/blob/master/01-Balanceo-DNS)
+* [Balanceo por DNS con nombre virtuales](https://github.com/josedom24/escenarios-HA/blob/master/02-Balanceo-DNS-Nombres-Virtuales)
+* [HA con pacemaker y corosync. IP Failover](https://github.com/josedom24/escenarios-HA/blob/master/03-HA-IPFailover)
+* [HA con pacemaker y corosync. IP Failover + Apache2](https://github.com/josedom24/escenarios-HA/blob/master/04-HA-IPFailover-Apache2)
+* [HA con pacemaker y corosync. IP Failover + Apache2 + DRBD](https://github.com/josedom24/escenarios-HA/blob/master/05-HA-IPFailover-Apache2+DRBD)
+
+
 ## Práctica
 
 
