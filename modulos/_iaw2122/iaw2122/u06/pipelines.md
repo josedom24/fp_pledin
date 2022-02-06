@@ -47,11 +47,7 @@ pipeline {
 
 ![pipe](img/pipe2.png)
 
-Le damos a **Guardar** y ya podemos **Construir ahora** para ejecutar el pipeline.
-
-![pipe](img/pipe3.png)
-
-Construimos nuestro primer **Build**:
+Le damos a **Guardar** y ya podemos **Construir ahora** para ejecutar el pipeline y construir un **Build**:
 
 ![pipe](img/pipe4.png)
 
