@@ -25,7 +25,7 @@ title: Introducción a la integración continúa y despliegue continuo
 
 * [VÍDEO: ¿Qué es Jenkins?](https://www.youtube.com/watch?v=RET4vHRMDek)
 * [Instalación de Jenkins en docker](instalacion_docker.html)
-* [Introducción a los Pipelines de Jenkins]()
+* [Introducción a los Pipelines de Jenkins](pipelines.html)
 * [Instalación de Jenkins con apt]()
 * [Instalación de docker como runner de Jenkins]()
     * [Ejercicio 1: Corrector ortográfico de documentos markdown (test)](ejercicio1.html)
