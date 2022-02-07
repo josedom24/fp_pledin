@@ -27,8 +27,8 @@ title: Introducción a la integración continúa y despliegue continuo
 * [Instalación de Jenkins en docker](instalacion_docker.html)
 * [Introducción a los Pipelines de Jenkins](pipelines.html)
 * [Instalación de docker como runner de Jenkins](runner_docker.html)
-    * [Ejercicio 1: Corrector ortográfico de documentos markdown (test)](ejercicio1.html)
-    * [Ejercicio 2: Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](ejercicio2.html)
+    * [Ejemplo 3: Corrector ortográfico de documentos markdown (test)](ejercicio3.html)
+    * [Ejemplo 4: Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](ejercicio4.html)
 * [VÍDEO: Qué es TDD - Test-driven development](https://www.youtube.com/watch?v=q6z3jFZl8oI)
     * [Ejercicio 3: Integración continúa de aplicación django (Test + Deploy)]()
 

@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Tareas para dessplegar, construir, ...'
+                echo 'Tareas para desplegar, construir, ...'
             }
         }
     }

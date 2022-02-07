@@ -60,6 +60,6 @@ pipeline {
 }
 ```
 
-Al ejecutar el pipeline podemos observar como se ha descargado la imagen, ha creado un contenedor, ha ejecuta la instrucción indicada y finalmente borra el contenedor.
+Al ejecutar el pipeline podemos observar como se ha descargado la imagen, ha creado un contenedor, ha ejecutado la instrucción indicada y finalmente borra el contenedor.
 
 ![docker](img/docker3.png)
