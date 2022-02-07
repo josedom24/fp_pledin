@@ -20,7 +20,5 @@ title: Docker
 ## Prácticas
 
 * [Práctica: Implantación de aplicaciones web PHP en docker](practica_docker_php.html)
+* [Práctica: Implantación de aplicaciones web Python en docker](practica_docker_python.html)
 
-<!--
-* [Práctica: Implantación de aplicaciones web Python en docker](docker_python.html)
--->

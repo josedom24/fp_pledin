@@ -45,13 +45,13 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 
 * Como en la tarea 1, realiza la migración de la base de datos que creará la estructura de datos necesarias. Comprueba que se han creado la base de datos y las tablas.
 * Crea un usuario administrador.
-* Elige un servidor de aplicaciones python y configura nginx como proyx inverso para servir la aplicación.
+* Elige un servidor de aplicaciones python y configura nginx como proxy inverso para servir la aplicación.
 * Debes asegurarte que el contenido estático se está sirviendo: ¿Se muestra la imagen de fondo de la aplicación? ¿Se ve de forma adecuada la hoja de estilo de la zona de administración?. 
 * Desactiva en la configuración el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.
 * Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.
 
 {% capture notice-text %}
-En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea y pantallazos donde sevea que todo está funcionando. (4 puntos)
+En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea y pantallazos donde se vea que todo está funcionando. (4 puntos)
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 3: Modificación de nuestra aplicación
