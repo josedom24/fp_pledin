@@ -13,5 +13,5 @@ Tienes que tener en cuenta los siguientes aspectos:
 {% capture notice-text %}
 1. Crea una imagen docker para poder desplegar un contenedor con la aplicación. La imagen la puedes hacer desde una imagen base o desde la imagen oficial de python.
 2. Crea un *docker-compose* para desplegar los contenedores necesarios. Configura los volúmenes que creas necesaria para que la aplicación sea persistente.
-3. Una vez probada en el entorno de desarrollo, despliega la aplicación en tu VPS usando el *docker-compose* y configurando el nginx como prozy inveso para acceder por nombre a la aplicación.
+3. Una vez probada en el entorno de desarrollo, despliega la aplicación en tu VPS usando el *docker-compose* y configurando el nginx como proxy inveso para acceder por nombre a la aplicación.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
