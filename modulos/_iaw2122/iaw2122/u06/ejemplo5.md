@@ -30,9 +30,7 @@ Por ejemplo, hay dos tests definidos en la función `test_no_questions` y en la 
 
 ```
 ...
-{% else %}
     <p>No hay encuestas disponibles.</p>
-{% endif %}
 ...
 ```
 
