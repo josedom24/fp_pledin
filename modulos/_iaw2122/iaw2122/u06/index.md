@@ -30,15 +30,19 @@ title: Introducción a la integración continúa y despliegue continuo
     * [Ejemplo 3: Corrector ortográfico de documentos markdown (test)](ejemplo3.html)
     * [Ejemplo 4: Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](ejemplo4.html)
 * [VÍDEO: Qué es TDD - Test-driven development](https://www.youtube.com/watch?v=q6z3jFZl8oI)
-    * [Ejercicio 3: Integración continúa de aplicación django (Test + Deploy)]()
+    * [Ejemplo 5: Integración continúa de aplicación django (Test + Deploy)](ejemplo5.html)
+* [Creación, testeo y publicación de imágenes docker desde Jenkins](gendocker.html)
 
 ### Para seguir aprendiendo
 
-* [Aprende Git de manera sencilla: Git Flow](https://desarrollowp.com/blog/tutoriales/aprende-git-de-manera-sencilla-git-flow/)
+* [Aprende Git de manera sencilla: Git Flow](https://desarrollowp.com/blog/tutoriales/
+aprende-git-de-manera-sencilla-git-flow/)
+
+<!--
 * [GitOps en Kubernetes](https://prezi.com/p/-mnn3zrb7f2v/gitops-kubernetes-con-fluxcd/)
 
 ## Práctica
-
+-->
 
 
 
