@@ -25,7 +25,7 @@ Repositorio: [Escenarios de HA con pacemaker y corosync](https://github.com/jose
 
 ## Galera MariaDB: Cluster de HA
 
-* [Introducción a los cluster de HA con Galera MariaDB](galera.html)
+* [Introducción a los cluster de HA con Galera MariaDB](https://www.josedomingo.org/pledin/2022/02/galera-mariadb/)
 
 ## Práctica
 
