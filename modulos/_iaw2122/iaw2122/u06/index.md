@@ -39,7 +39,13 @@ title: Introducción a la integración continúa y despliegue continuo
 * [Aprende Git de manera sencilla: Git Flow](https://desarrollowp.com/blog/tutoriales/
 aprende-git-de-manera-sencilla-git-flow/)
 
+## Práctica
+
+* [Práctica: IC/DC con Jenkins](practica.html)
+
 <!--
+
+
 * [GitOps en Kubernetes](https://prezi.com/p/-mnn3zrb7f2v/gitops-kubernetes-con-fluxcd/)
 
 ## Práctica

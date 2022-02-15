@@ -45,6 +45,8 @@ iaw2122:
         url: /iaw2122/u04
       - title: Docker
         url: /iaw2122/u05
+      - title: IC/DC
+        url: /iaw2122/u06
 
 hlc2122:
   - title: "HLC: Cloud Computing (2021-2022)"
