@@ -34,7 +34,7 @@ Una vez que el cluster este configurado como activo-activo y WordPress esté fun
 {% capture notice-text %}
 ## Entrega
 
-1. Una vez coonfigurado el cluster activo-activo: la salida del comando `pcs status`.
+1. Una vez configurado el cluster activo-activo: la salida del comando `pcs status`.
 2. Pantallazo donde se ve el wordpress instalado con un post creado.
 3. Demuestra al profesor el balanceo de carga que has desarrollado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
