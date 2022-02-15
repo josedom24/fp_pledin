@@ -29,4 +29,4 @@ Repositorio: [Escenarios de HA con pacemaker y corosync](https://github.com/jose
 
 ## Práctica
 
-
+* [Práctica: Cluster de Alta Disponibilidad](practica.html)
