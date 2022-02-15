@@ -30,7 +30,7 @@ Una vez que el cluster este configurado como activo-activo y WordPress esté fun
 
 * Balanceo por DNS: Podríamos quitar el recurso VirtualIP y hacer un balanceo de carga por DNS como vimos en el escenario 1 (**1 punto**) o el escenario 2 (**2 puntos**).
 * Añadir un balanceador de carga HAProxy (que balancee la carga entre los dos servidores web) (**2 puntos**). 
-* Podrías instalar un HAProxy en los dos nodos y crear un recurso del cluster para que los controle. Para ello habría que crear un recurso con pacemaker para controlar los balanceadores de carga (no esta instalado por defecto, el recurso se llama `ocf.pacemaker.happroxy` y lo puedes encontrar en este [repositorio](https://github.com/thisismitch/cluster-agents/)), y se podría configurar como activo-pasivo o activo-activo (**3 puntos**).
+* Podrías instalar un HAProxy en los dos nodos y crear un recurso del cluster para que los controle. Para ello habría que crear un recurso con pacemaker para controlar los balanceadores de carga (no esta instalado por defecto, el recurso se llama `ocf.pacemaker.happroxy` y lo puedes encontrar en este [repositorio](https://github.com/thisismitch/cluster-agents/). Este [hilo](https://www.reddit.com/r/linuxadmin/comments/6pzbhe/pacemaker_and_haproxy/) te puede ayudar.), y se podría configurar como activo-pasivo o activo-activo (**3 puntos**).
 
 {% capture notice-text %}
 ## Entrega
