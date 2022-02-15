@@ -16,8 +16,9 @@ El objetivo de este práctica es la instalación de una aplicación php (WordPre
 
 1. Una vez pasada la receta. La salida del comando `pcs status`.
 2. Antes de instalar wordpress: una captura de pantalla donde se ve accediendo a `index.php` (se accede a nodo1). Apaga el nodo1 y vuelve a entregar un pantallazo a `index.php`. Muestra que accede a nodo2.
-3. Pantallazo donde se ve el wordpress instalado con un post creado.
-4. Demuestra al profesor que apagando un nodo el WordPress sigue funcionando.
+3. Antes de instalar WordPress una demostración de que el cluster de Galera MariaDB tiene dos nodos.
+4. Pantallazo donde se ve el wordpress instalado con un post creado.
+5. Demuestra al profesor que apagando un nodo el WordPress sigue funcionando.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Cluster de HA activo-activo
@@ -29,7 +30,7 @@ Una vez que el cluster este configurado como activo-activo y WordPress esté fun
 
 * Balanceo por DNS: Podríamos quitar el recurso VirtualIP y hacer un balanceo de carga por DNS como vimos en el escenario 1 (**1 punto**) o el escenario 2 (**2 puntos**).
 * Añadir un balanceador de carga HAProxy (que balancee la carga entre los dos servidores web) (**2 puntos**). 
-* Podrías instalar un HAProxy en los dos nodos y crear un recurso del cluster para que los controle. Para ello habría que crear un recurso con pacemaker para controlar los balanceadores de carga, y se podría configurar como activo-pasivo o activo-activo (**3 puntos**).
+* Podrías instalar un HAProxy en los dos nodos y crear un recurso del cluster para que los controle. Para ello habría que crear un recurso con pacemaker para controlar los balanceadores de carga (no esta instalado por defecto, el recurso se llama `ocf.pacemaker.happroxy` y lo puedes encontrar en este [repositorio](https://github.com/thisismitch/cluster-agents/)), y se podría configurar como activo-pasivo o activo-activo (**3 puntos**).
 
 {% capture notice-text %}
 ## Entrega
