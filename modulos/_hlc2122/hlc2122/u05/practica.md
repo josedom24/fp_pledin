@@ -2,7 +2,7 @@
 title: "Práctica: Kubernetes"
 ---
 
-En IAW has creado dos imágenes de dos aplicaciones: guestbook (php) y polls (python django). Elige una de ellas y despliégala en kuberenetes. Para ello vamos a hacer dos ejercicios:
+En IAW has creado dos imágenes de dos aplicaciones: bookmedik (php) y polls (python django). Elige una de ellas y despliégala en kuberenetes. Para ello vamos a hacer dos ejercicios:
 
 ## Ejercicio1: Despliegue en minikube
 
