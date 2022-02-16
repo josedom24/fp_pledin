@@ -23,7 +23,7 @@ El objetivo de este práctica es la instalación de una aplicación php (WordPre
 
 ## Cluster de HA activo-activo
 
-Siguiendo las instrucciones que encuentras en el escenario 6: [06-HA-IPFailover-Apache2+DRBD+GFS2](https://github.com/josedom24/escenarios-HA/tree/master/06-HA-IPFailover-Apache2+DRBD+GFS2) para convertir el cluster en activo-activo.
+Siguiendo las instrucciones que encuentras en el escenario 6: [06-HA-IPFailover-Apache2+DRBD+GFS2](https://github.com/josedom24/escenarios-HA/tree/master/06-HA-IPFailover-Apache2+DRBD+GFS2) convierte el cluster en activo-activo. **Es necesario instalar el [fencing](https://github.com/josedom24/escenarios-HA/blob/master/06-HA-IPFailover-Apache2%2BDRBD%2BGFS2/fencing.md) para que el cluster funcione de manera adecuada.**
 *Nota: Tienes que tener en cuenta que se va a formatear de nuevo el drbd, por lo que se va a perder el wordpress. Si quieres puedes guardarlo en otro directorio, para luego recuperarlo.*
 
 Una vez que el cluster este configurado como activo-activo y WordPress esté funcionado, configura un método de balanceo de carga:
