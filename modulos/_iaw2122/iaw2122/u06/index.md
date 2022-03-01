@@ -41,7 +41,7 @@ aprende-git-de-manera-sencilla-git-flow/)
 * [Vídeo: OpenWebinars: ¿Qué es GIT FLOW?](https://www.youtube.com/watch?v=LUaJ2989qpI)
 * [Vídeo: OpenWebinars: Tipos de Ramas](https://www.youtube.com/watch?v=PYSKIjjgU_0)
 * [Vídeo: Que es Git Flow](https://www.youtube.com/watch?v=G_iTZtnlf_U)
-* [Vídeo: El MEJOR #GIT FLOW. Pros y contras de cada uno 🔥 | Flujos de trabajo con Git 7/7](https://www.youtube.com/watch?v=M_3VeKPFi5U)
+* [Vídeo: El MEJOR #GIT FLOW. Pros y contras de cada uno 🔥 - Flujos de trabajo con Git 7/7](https://www.youtube.com/watch?v=M_3VeKPFi5U)
 
 ## Práctica
 
