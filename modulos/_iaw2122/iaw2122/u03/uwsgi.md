@@ -6,7 +6,7 @@ title: "Ejercicio 3: Desplegando aplicaciones flask con apache2 + uwsgi"
 
 [uwsgi](https://uwsgi-docs.readthedocs.io/en/latest/) es otro servidor WSGI HTTP para Python.
 
-También lo podemos instalar desde repositorio, pero lo vamos a instalar en el entorno virtual:
+Debemos tener instalado el paquete "python3-dev" que es una dependencia necesaria. Luego podemos instalar el paquete “uwsgi” desde los repositorios, pero lo vamos a instalar en el entorno virtual:
 
     (flask)$ pip install uwsgi
 
@@ -29,7 +29,7 @@ Y para ejecutar el servidor, simplemente:
 
     (flask)$ uwsgi ejemplo.ini
 
-De esta forma puedo tener varios ficheros de configuración del servidor uwsgi para las distintas aplicaciones python que sirva el servidor.
+De esta forma puedo tener varios ficheros de configuración del servidor uwsgi para las distintas aplicaciones python que sirve el servidor.
 
 ## Creación de una unidad systemd
 
@@ -61,8 +61,8 @@ PrivateTmp=true
 Activamos la unidad de systemd, y la iniciamos:
 
 ```
-systemctl enable gunicorn-temperaturas.service
-systemctl start gunicorn-temperaturas.service
+systemctl enable uwsgi-temperaturas.service
+systemctl start uwsgi-temperaturas.service
 ```
 
 Si cambias el contenido de la unidad tendrás que hacer la recarga:
@@ -79,7 +79,7 @@ La configuración será similar a la estudiada en gunicorn.
 
 * Configura la aplicación [guestbook](https://github.com/josedom24/guestbook) para que sea servida uwsgi y apache2 como proxy inverso. 
 
-* Explica los pasos más importante y entrega una prueba de funcionamiento.
+* Explica los pasos más importantes y entrega una prueba de funcionamiento.
 
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
