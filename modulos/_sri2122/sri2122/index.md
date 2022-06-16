@@ -7,7 +7,7 @@ El módulo profesional de **Servicios de Red e Internet** se imparte durante el 
 De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional de Servicios en red se imparte durante el segundo curso y tiene asignadas un total de 126 horas, a razón de 6 horas semanales durante 21 semanas.
 
 <details id=1>
-El índice de contenidos que vamos a estudiar será:
+<summary><p>El índice de contenidos que vamos a estudiar será:</p></summary>
 
 * Introducción a los servicios en red
 * [Vagrant y Ansible: Programando infraestructura en la nube](u01)
@@ -18,4 +18,5 @@ El índice de contenidos que vamos a estudiar será:
 * [Protocolo HTTP (2ª Parte)](u06)
 * [Servidor de correo electrónico](u07)
 * [Cluster de alta disponibilidad](u08)
+
 </details>
