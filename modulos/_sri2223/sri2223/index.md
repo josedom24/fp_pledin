@@ -4,15 +4,19 @@ title: "Servicios de Red e Internet (2022-2023)"
 
 ## 1º Evaluación (11 semanas)
 
-* **Infraestructura como código (12 h)**
-	* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/iac.pdf)
-	* [Taller 1: Ansible - Playbook sencillo](1_iac/t1.md)
-	* [Taller 2: Ansible - Playbook con roles](1_iac/t2.md)
-	* [Taller 3: Vagrant - Creación de una máquina virtual](1_iac/t3.md)
-	* [Taller 4: Vagrant - Creación de escenarios](1_iac/t4.md)
-	* [Práctica 1: Creación y configuración de un escenario router-nat](1_iac/p1.md) 
-	* Prueba final
-* **Protocolo DHCP (12 h)**
+### Infraestructura como código (12 h)
+	
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/iac.pdf)
+* [Taller 1: Ansible - Playbook sencillo](1_iac/t1.md)
+* [Taller 2: Ansible - Playbook con roles](1_iac/t2.md)
+* [Taller 3: Vagrant - Creación de una máquina virtual](1_iac/t3.md)
+* [Taller 4: Vagrant - Creación de escenarios](1_iac/t4.md)
+* [Práctica 1: Creación y configuración de un escenario router-nat](1_iac/p1.md) 
+* Prueba final
+
+
+### Protocolo DHCP (12 h)
+
 	* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)	
 	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/t1.md)
 	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/t2.md)
