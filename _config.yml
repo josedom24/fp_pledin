@@ -200,7 +200,7 @@ defaults:
       path: ""
       type: sri2223
     values:
-      layout: single2
+      layout: single
       classes: wide
       read_time: false
       author_profile: false
