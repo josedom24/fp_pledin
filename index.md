@@ -3,8 +3,7 @@ layout: single
 author_profile: true
 classes: wide
 ---
-# Módulos de Formación Profesional
-# Curso 2021-2022
+# Módulos de Formación Profesional (Curso 2022-2023)
 
 ## Ciclo de Grado Superior de Administración de sistemas Informáticos (ASIR)
 
