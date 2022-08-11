@@ -90,6 +90,9 @@ collections:
   hlc2122:
     output: true
     permalink: /:path
+  sri2223:
+    output: true
+    permalink: /:path
 
 collections_dir: modulos
 
