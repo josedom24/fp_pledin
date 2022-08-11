@@ -1,7 +1,7 @@
 ---
 title: "Servicios de Red e Internet (2022-2023)"
 ---
-
+<!--
 ## 1º Evaluación (11 semanas)
 
 ### Infraestructura como código (12 h)
@@ -65,3 +65,4 @@ title: "Servicios de Red e Internet (2022-2023)"
 	* Taller 3: HA con pacemaker y corosync. IP Failover + Apache2
 	* Taller 4: HA con pacemaker y corosync. IP Failover + Apache2 + DRBD
 	* Práctica 1: HA con pacemaker y corosync. IP Failover + Apache2 + RDBD + GFS2 (Activo-Activo) 
+-->
