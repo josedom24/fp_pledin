@@ -64,18 +64,18 @@ author:
   location: "Utrera, Sevilla,ES" # null (default), "absolute or relative url to link to author home"
 
 collections:
-  serviciosgs:
-    output: true
-    permalink: /:path
-  iawgs:
-    output: true
-    permalink: /:path
+#  serviciosgs:
+#    output: true
+#    permalink: /:path
+ #  iawgs:
+ #    output: true
+ #    permalink: /:path
   lmgs:
     output: true
     permalink: /:path
-  seguridadgm:
-    output: true
-    permalink: /:path
+  #seguridadgm:
+  #  output: true
+  #  permalink: /:path
   seguridadgs:
     output: true
     permalink: /:path
