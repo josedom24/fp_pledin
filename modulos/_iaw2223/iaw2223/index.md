@@ -11,11 +11,5 @@ title: "Implantación de aplicaciones web (2022-2023)"
 * [Taller 4: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/t4.html)
 * [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/p1.html)
 
-## Implantación de aplicaciones web PHP
-## Implantación de aplicaciones web Python 
-## Despliegue de aplicaciones web Java 
-## Implantación de aplicaciones web en contenedores Docker
-## Introducción a la Integración Continúa y el Desplegue Continuo (IC/DC)
-
 
 
