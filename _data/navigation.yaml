@@ -17,7 +17,7 @@ iaw2223:
       - title: "Inicio"
         url: /iaw2223/
       - title: Introducción
-        url: https://fp.josedomingo.org/iaw2223/#introducci%C3%B3n-a-la-implantaci%C3%B3n-de-aplicaciones-web
+        url: /iaw2223/#introducci%C3%B3n-a-la-implantaci%C3%B3n-de-aplicaciones-web
   - title: Módulos
     children:
       - title: "Servicios de Red e Internet"
@@ -46,6 +46,9 @@ sri2223:
     children:
       - title: "Inicio"
         url: /sri2223/
+      - title: Infraestructura como código
+        url: /sri2223/#infraestructura-como-c%C3%B3digo
+
   - title: Módulos
     children:
       - title: "Servicios de Red e Internet"
