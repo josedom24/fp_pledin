@@ -79,17 +79,17 @@ collections:
   seguridadgs:
     output: true
     permalink: /:path
-  sri2122:
-    output: true
-    permalink: /:path
-
-  iaw2122:
-    output: true
-    permalink: /:path
-
-  hlc2122:
-    output: true
-    permalink: /:path
+#  sri2122:
+#    output: true
+#    permalink: /:path
+#
+#  iaw2122:
+#    output: true
+#    permalink: /:path
+#
+#  hlc2122:
+#    output: true
+#    permalink: /:path
   sri2223:
     output: true
     permalink: /:path
@@ -166,44 +166,44 @@ defaults:
       comments: false
       sidebar:
         nav: "seguridadgs"
-  - scope:
-      path: ""
-      type: sri2122
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "sri2122"
-  
-  - scope:
-      path: ""
-      type: iaw2122
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "iaw2122"
-  
-  - scope:
-      path: ""
-      type: hlc2122
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "hlc2122"
+#  - scope:
+#      path: ""
+#      type: sri2122
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "sri2122"
+#  
+#  - scope:
+#      path: ""
+#      type: iaw2122
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "iaw2122"
+#  
+#  - scope:
+#      path: ""
+#      type: hlc2122
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "hlc2122"
 
   - scope:
       path: ""
