@@ -56,7 +56,7 @@ hlc2223:
       - title: "Servicios de Red e Internet"
         url: /sri2223/
       - title: "Implantación de Aplicaciones Web"
-        url: /sri2223/
+        url: /iaw223/
       - title: "HLC: Cloud Computing"
         url: /hlc2223/
 
@@ -70,7 +70,7 @@ sri2223:
       - title: "Servicios de Red e Internet"
         url: /sri2223/
       - title: "Implantación de Aplicaciones Web"
-        url: /sri2223/
+        url: /iaw2223/
       - title: "HLC: Cloud Computing"
         url: /hlc2223/
 
