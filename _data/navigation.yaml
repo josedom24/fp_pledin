@@ -30,6 +30,23 @@ sri2122:
       - title: Correo electrónico
         url: /sri2122/u07
 
+iaw2223:
+  - title: Implantación de aplicaciones web (2022-2023)
+    children:
+      - title: "Inicio"
+        url: /iaw2223/
+      - title: Introducción
+        url: /iaw2223/#introducci%C3%B3n-a-la-implantaci%C3%B3n-de-aplicaciones-web
+    title: Módulos
+    children:
+      - title: "Servicios de Red e Internet"
+        url: /sri2223/
+      - title: "Implantación de Aplicaciones Web"
+        url: /iawgs2223/
+      - title: "HLC: Cloud Computing"
+        url: /hlc2223/
+
+
 iaw2122:
   - title: Implantación de aplicaciones web (2021-2022)
     children:
@@ -66,64 +83,64 @@ hlc2122:
 
 
 
-serviciosgs:
-  - title: Servicios de Red e Internet (antiguo)
-    children:
-      - title: "Inicio"
-        url: /serviciosgs/
-      - title: Introducción a los servicios en red
-        url: /serviciosgs/u01
-      - title: Servidor DHCP
-        url: /serviciosgs/u02
-      - title: Servidor Web
-        url: /serviciosgs/u03
-      - title: Servidor DNS
-        url: /serviciosgs/u04
-      - title: Gestión de peticiones - Rendimiento
-        url: /serviciosgs/u05
-      - title: Servidor de correo electrónico
-        url: /serviciosgs/u06
-      - title: Proxy, proxy inverso y balanceador de carga
-        url: /serviciosgs/u08
-  -
-   #   - title: Servidor FTP
-   #     url: /serviciosgs/u05
-    title: Otros Módulos...
-    children:
-      - title: "Lenguaje de Marcas (antiguo)"
-        url: /lmgs/
-      - title: "Implantación de Aplicaciones Web (antiguo)"
-        url: /iawgs/
-      - title: "Seguridad y Alta Disponibilidad (antiguo)"
-        url: /seguridadgs/
+#serviciosgs:
+#  - title: Servicios de Red e Internet (antiguo)
+#    children:
+#º      - title: "Inicio"
+#        url: /serviciosgs/
+#      - title: Introducción a los servicios en red
+#        url: /serviciosgs/u01
+#      - title: Servidor DHCP
+#        url: /serviciosgs/u02
+#      - title: Servidor Web
+#        url: /serviciosgs/u03
+#      - title: Servidor DNS
+#        url: /serviciosgs/u04
+#      - title: Gestión de peticiones - Rendimiento
+#        url: /serviciosgs/u05
+#      - title: Servidor de correo electrónico
+#        url: /serviciosgs/u06
+#      - title: Proxy, proxy inverso y balanceador de carga
+#        url: /serviciosgs/u08
+#  -
+#   #   - title: Servidor FTP
+#   #     url: /serviciosgs/u05
+#    title: Otros Módulos...
+#    children:
+#      - title: "Lenguaje de Marcas (antiguo)"
+#        url: /lmgs/
+#      - title: "Implantación de Aplicaciones Web (antiguo)"
+#        url: /iawgs/
+#      - title: "Seguridad y Alta Disponibilidad (antiguo)"
+#        url: /seguridadgs/
  
-
-iawgs:
-  - title: Implantación de aplicaciones web (antiguo)
-    children:
-      - title: "Inicio"
-        url: /iawgs/
-      - title: Introducción
-        url: /iawgs/u01
-      - title: PHP
-        url: /iawgs/u02
-      - title: Python
-        url: /iawgs/u03
-      - title: Java
-        url: /iawgs/u04
-      - title: Integración Continúa
-        url: /iawgs/u05
-      - title: Docker
-        url: /iawgs/u06
-  - title: Otros Módulos...
-    children:
-      - title: "Lenguaje de Marcas (antiguo)" 
-        url: /lmgs/
-      - title: "Seguridad y Alta Disponibilidad (antiguo)"
-        url: /seguridadgs/
-      - title: "Servicios de Red e Internet (antiguo)"
-        url: /serviciosgs/
-
+#
+#iawgs:
+# - title: Implantación de aplicaciones web (antiguo)
+#    children:
+#      - title: "Inicio"
+#        url: /iawgs/
+#      - title: Introducción
+#        url: /iawgs/u01
+#      - title: PHP
+#        url: /iawgs/u02
+#      - title: Python
+#        url: /iawgs/u03
+#      - title: Java
+#        url: /iawgs/u04
+#      - title: Integración Continúa
+#        url: /iawgs/u05
+#      - title: Docker
+#        url: /iawgs/u06
+#  - title: Otros Módulos...
+#    children:
+#      - title: "Lenguaje de Marcas (antiguo)" 
+#        url: /lmgs/
+#      - title: "Seguridad y Alta Disponibilidad (antiguo)"
+#        url: /seguridadgs/
+#      - title: "Servicios de Red e Internet (antiguo)"
+#        url: /serviciosgs/
+#
 lmgs:
   - title: Lenguajes de marcas (antiguo)
     children:
@@ -171,21 +188,21 @@ seguridadgs:
       - title: "Alta disponibilidad"
         url: /seguridadgs/u05
 
-  - title: Otros Módulos...
-    children:
-      - title: "Lenguaje de Marcas (antiguo)"
-        url: /lmgs/
-      - title: "Implantación de Aplicaciones Web (antiguo)"
-        url: /iawgs/
-      - title: "Servicios de Red e Internet (antiguo)"
-        url: /serviciosgs/
+#  - title: Otros Módulos...
+#    children:
+#      - title: "Lenguaje de Marcas (antiguo)"
+#        url: /lmgs/
+#      - title: "Implantación de Aplicaciones Web (antiguo)"
+#        url: /iawgs/
+#      - title: "Servicios de Red e Internet (antiguo)"
+#        url: /serviciosgs/
 
 
 
-seguridadgm:
-  - title: Seguridad Informática
-    children:
-      - title: "Inicio"
+#seguridadgm:
+#  - title: Seguridad Informática
+#    children:
+#      - title: "Inicio"
  #       url: /seguridadgm/
  # - title: Seguridad Física
  #   children:
