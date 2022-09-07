@@ -2,8 +2,6 @@
 title: "Implantación de aplicaciones web (2022-2023)"
 ---
 
-## 1º Evaluación (11 semanas)
-
 ### Introducción a la implantación de aplicaciones web
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion.pdf)
