@@ -10,25 +10,6 @@ main:
   - title: "Presentación"
     url: https://www.josedomingo.org/pledin/about/
 
-sri2122:
-  - title: Servicios de Red e Internet (2021-2022)
-    children:
-      - title: "Inicio"
-        url: /sri2122/
-      - title: "Vagrant y Ansible: Programando infraestructura en la nube"
-        url: /sri2122/u01
-      - title: Protocolo DHCP
-        url: /sri2122/u02
-      - title: Protocolo HTTP
-        url: /sri2122/u03
-      - title: Protocolo DNS
-        url: /sri2122/u04
-      - title: Protocolo HTTPS
-        url: /sri2122/u05
-      - title: Protocolo HTTP (II)
-        url: /sri2122/u06
-      - title: Correo electrónico
-        url: /sri2122/u07
 
 iaw2223:
   - title: Implantación de aplicaciones web (2022-2023)
@@ -74,47 +55,67 @@ sri2223:
       - title: "HLC: Cloud Computing"
         url: /hlc2223/
 
+#sri2122:
+#  - title: Servicios de Red e Internet (2021-2022)
+#    children:
+#      - title: "Inicio"
+#        url: /sri2122/
+#      - title: "Vagrant y Ansible: Programando infraestructura en la nube"
+#        url: /sri2122/u01
+#      - title: Protocolo DHCP
+#        url: /sri2122/u02
+#      - title: Protocolo HTTP
+#        url: /sri2122/u03
+#      - title: Protocolo DNS
+#        url: /sri2122/u04
+#      - title: Protocolo HTTPS
+#        url: /sri2122/u05
+#      - title: Protocolo HTTP (II)
+#        url: /sri2122/u06
+#      - title: Correo electrónico
+#        url: /sri2122/u07
+#
 
-iaw2122:
-  - title: Implantación de aplicaciones web (2021-2022)
-    children:
-      - title: "Inicio"
-        url: /iaw2122/
-      - title: Introducción
-        url: /iaw2122/u01
-      - title: PHP
-        url: /iaw2122/u02
-      - title: Python
-        url: /iaw2122/u03
-      - title: Java
-        url: /iaw2122/u04
-      - title: Docker
-        url: /iaw2122/u05
-      - title: IC/DC
-        url: /iaw2122/u06
-
-hlc2122:
-  - title: "HLC: Cloud Computing (2021-2022)"
-    children:
-      - title: "Inicio"
-        url: /hlc2122/
-      - title: "Virtualización. KVM y libvirt"
-        url: /hlc2122/u01
-      - title: "Utilización de OpenStack"
-        url: /hlc2122/u02
-      - title: "Almacenamiento"
-        url: /hlc2122/u03
-      - title: "Contenedores LXC"
-        url: /hlc2122/u04
-      - title: "Kubernetes"
-        url: /hlc2122/u05
-
-
-
+#iaw2122:
+#  - title: Implantación de aplicaciones web (2021-2022)
+#    children:
+#      - title: "Inicio"
+#        url: /iaw2122/
+#      - title: Introducción
+#        url: /iaw2122/u01
+#      - title: PHP
+#        url: /iaw2122/u02
+#      - title: Python
+#        url: /iaw2122/u03
+#      - title: Java
+#        url: /iaw2122/u04
+#      - title: Docker
+#        url: /iaw2122/u05
+#      - title: IC/DC
+#        url: /iaw2122/u06
+#
+#hlc2122:
+#  - title: "HLC: Cloud Computing (2021-2022)"
+#    children:
+#      - title: "Inicio"
+#        url: /hlc2122/
+#      - title: "Virtualización. KVM y libvirt"
+#        url: /hlc2122/u01
+#      - title: "Utilización de OpenStack"
+#        url: /hlc2122/u02
+#      - title: "Almacenamiento"
+#        url: /hlc2122/u03
+#      - title: "Contenedores LXC"
+#        url: /hlc2122/u04
+#      - title: "Kubernetes"
+#        url: /hlc2122/u05
+#
+#
+#
 #serviciosgs:
 #  - title: Servicios de Red e Internet (antiguo)
 #    children:
-#º      - title: "Inicio"
+#      - title: "Inicio"
 #        url: /serviciosgs/
 #      - title: Introducción a los servicios en red
 #        url: /serviciosgs/u01
@@ -192,14 +193,14 @@ lmgs:
         url: /lmgs/u08
       - title: Servicios Web
         url: /lmgs/u09
-  - title: Otros Módulos...
-    children:
-      - title: "Implantación de Aplicaciones Web (antiguo)"
-        url: /iawgs/
-      - title: "Seguridad y Alta Disponibilidad (antiguo)"
-        url: /seguridadgs/
-      - title: "Servicios de Red e Internet (antiguo)"
-        url: /serviciosgs/
+#  - title: Otros Módulos...
+#    children:
+#      - title: "Implantación de Aplicaciones Web (antiguo)"
+#        url: /iawgs/
+#      - title: "Seguridad y Alta Disponibilidad (antiguo)"
+#        url: /seguridadgs/
+#      - title: "Servicios de Red e Internet (antiguo)"
+#        url: /serviciosgs/
 seguridadgs:
   - title: Seguridad y Alta Disponibilidad (antiguo)
     children:
