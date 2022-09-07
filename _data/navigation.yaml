@@ -37,12 +37,12 @@ iaw2223:
         url: /iaw2223/
       - title: Introducción
         url: /iaw2223/#introducci%C3%B3n-a-la-implantaci%C3%B3n-de-aplicaciones-web
-    title: Módulos
+  - title: Módulos
     children:
       - title: "Servicios de Red e Internet"
         url: /sri2223/
       - title: "Implantación de Aplicaciones Web"
-        url: /iawgs2223/
+        url: /iaw2223/
       - title: "HLC: Cloud Computing"
         url: /hlc2223/
 
