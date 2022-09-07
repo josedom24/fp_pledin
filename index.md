@@ -10,8 +10,8 @@ classes: wide
 ### 2º ASIR
 
 * [Servicios de red e internet](sri2223)
-* [Implantación de aplicaciones web]()
-* [HLC: Cloud Computing]()
+* [Implantación de aplicaciones web](iaw2223)
+* [HLC: Cloud Computing](hlc2223)
 
 ---
 
