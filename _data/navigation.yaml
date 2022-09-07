@@ -74,19 +74,6 @@ sri2223:
       - title: "HLC: Cloud Computing"
         url: /hlc2223/
 
-iaw2223:
-  - title: Implantación de aplicaciones web (2022-2023)
-    children:
-      - title: "Inicio"
-        url: /iaw2223/
-  - title: Módulos
-    children:
-      - title: "Servicios de Red e Internet"
-        url: /sri2223/
-      - title: "Implantación de Aplicaciones Web"
-        url: /iaw2223/
-      - title: "HLC: Cloud Computing"
-        url: /hlc2223/
 
 iaw2122:
   - title: Implantación de aplicaciones web (2021-2022)
