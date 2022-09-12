@@ -2,7 +2,7 @@
 title: "HLC: Cloud Computing (2022-2023)"
 ---
 
-<div calss="notice--warning">
+<div class="notice--warning">
 ## Virtualización en Linux
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/virtualizacion.pdf)
