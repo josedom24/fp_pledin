@@ -33,7 +33,7 @@ hlc2223:
       - title: "Inicio"
         url: /hlc2223/
        - title: "Virtualización en Linux"
-         url: /hlc2223/#virtualización-en-linux
+         url: /hlc2223/#virtualizaci%C3%B3n-en-linux
   - title: Módulos
     children:
       - title: "Servicios de Red e Internet"
