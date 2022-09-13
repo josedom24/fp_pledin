@@ -11,3 +11,4 @@ title: "HLC: Cloud Computing (2022-2023)"
 	* [Taller 3: Creación de máquinas virtuales con virt-manager]()
 	* [Taller 4: Gestión del almacenamiento en QEMU/KVM + libvirt]()
 	* [Taller 5: Clonación e instantáneas de maquinas virtuales]()
+	* [Taller 6: Gestión de redes en QEMU/KVM + libvirt]()
