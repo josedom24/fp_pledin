@@ -215,6 +215,7 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      show_date: false
       sidebar:
         nav: "sri2223"
 
