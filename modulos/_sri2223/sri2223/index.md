@@ -9,6 +9,7 @@ title: "Servicios de Red e Internet (2022-2023)"
 	* Taller 2: Ansible - Playbook con roles
 	* Taller 3: Vagrant - Creación de una máquina virtual
 	* Taller 4: Vagrant - Creación de escenarios
+	* Taller 5: Vagrant + Ansible
 
 <!--
 
