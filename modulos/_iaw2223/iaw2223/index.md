@@ -16,5 +16,10 @@ title: "Implantación de aplicaciones web (2022-2023)"
 ## Implantación de aplicaciones web PHP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
-
+	* Taller 1: Instalación de un servidor LAMP
+	* Taller 2: VirtualHosting con Apache
+	* Taller 4: Instalación de la aplicación BookMedik
+	* Taller 5: Ejecución de PHP con PHP-FPM
+	* Taller 6: Instalación de un servidor LEMP
+	* Taller 7: Contratación y configuración de un VPS
 -->
