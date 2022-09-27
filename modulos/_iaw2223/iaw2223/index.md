@@ -19,7 +19,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* Taller 1: Instalación de un servidor LAMP
 	* Taller 2: VirtualHosting con Apache
 	* Taller 3: Instalación de la aplicación BookMedik
-	* Taller 4: Ejecución de PHP con PHP-FPM
+	* Taller 4: Configuración Apache2 + fpm+php
 	* Taller 5: Instalación de un servidor LEMP
 	* Taller 6: Contratación y configuración de un VPS
 -->
