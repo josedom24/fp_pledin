@@ -13,3 +13,11 @@ title: "HLC: Cloud Computing (2022-2023)"
 	* Taller 5: Clonación e instantáneas de maquinas virtuales
 	* [Taller 6: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/t6.html)
 
+<!--
+
+## Cloud Coumputing IaaS. OpenStack 
+
+* Taoría
+	* Taller 1: Instalación del certificado del Gonzalo Nazareno y configuración del cliente VPN 
+
+-->
