@@ -77,9 +77,9 @@ collections:
 #   output: true
 #   permalink: /:path
 
-  seguridadgs:
-    output: true
-    permalink: /:path
+#  seguridadgs:
+#    output: true
+#    permalink: /:path
 
 #  sri2122:
 #    output: true
@@ -157,18 +157,18 @@ defaults:
 #      comments: false
 #      sidebar:
 #        nav: "seguridadgm"
-  - scope:
-      path: ""
-      type: seguridadgs
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "seguridadgs"
+#  - scope:
+#      path: ""
+#      type: seguridadgs
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "seguridadgs"
 #  - scope:
 #      path: ""
 #      type: sri2122
