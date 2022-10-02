@@ -10,10 +10,4 @@ title: "Servicios de Red e Internet (2022-2023)"
 	* [Taller 3: Vagrant - Creación de una máquina virtual](1_iac/t3.html)
 	* [Taller 4: Vagrant - Creación de escenarios](1_iac/t4.html)
 	* [Taller 5: Vagrant + Ansible](1_iac/t5.html)
-
-<!--
-
-* Práctica: Creación y configuración de un escenario router-nat
-
-
--->
+* [Práctica: Creación y configuración de un escenario router-nat](1_iac/practica.html)
