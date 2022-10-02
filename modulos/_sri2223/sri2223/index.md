@@ -11,3 +11,10 @@ title: "Servicios de Red e Internet (2022-2023)"
 	* [Taller 4: Vagrant - Creación de escenarios](1_iac/t4.html)
 	* [Taller 5: Vagrant + Ansible](1_iac/t5.html)
 * [Práctica: Creación y configuración de un escenario router-nat](1_iac/practica.html)
+
+## Protocolo DHCP
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)
+	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/t1.html)
+	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/t2.html)
+* Práctica: Configuración de un servidor DHCP
