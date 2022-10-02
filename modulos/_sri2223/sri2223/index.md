@@ -28,5 +28,16 @@ title: "Servicios de Red e Internet (2022-2023)"
 	* [Taller 2: VirtualHosting con apache2](3_http/t2.html)
 	* Taller 3: Configuración del servidor web apache2
 	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
+* Práctica: Instalación de un servidor LEMP en nuestra VPS
 
+## Protocolo DNS
+
+* Teoría
+	* Taller 1: Ficheros importantes en la resolución de nombres 
+	* [Taller 2: Consultas DNS con dig](4_dns/t1.html)
+	* [Taller 3: Instalación y configuración del servidor bind9 en nuestra red local](4_dns/t2.html)
+	* [Taller 4: Instalación y configuración de un servidor DNS esclavo](4_dns/t3.html)
+	* [Taller 5: Delegación de subdominios con bind9](4_dns/t4.html)
+	* Taller 6: Servidor DNS dinámico (OPTATIVO???)
+* Práctica: DNS en nuestro escenario de trabajo
 -->
