@@ -12,6 +12,7 @@ title: "HLC: Cloud Computing (2022-2023)"
 	* [Taller 4: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/t4.html)
 	* Taller 5: Clonación e instantáneas de maquinas virtuales
 	* [Taller 6: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/t6.html)
+	* Taller 7: Trabajando con contenedores LXC
 
 <!--
 
