@@ -2,7 +2,22 @@
 title: "Implantación de aplicaciones web (2022-2023)"
 ---
 
-## Introducción a la implantación de aplicaciones web
+## Unidad 2: Implantación de aplicaciones web PHP
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
+	* [Taller 1: Instalación de un servidor LAMP](2_php/t1.html)
+
+<!--
+
+	* Taller 2: VirtualHosting con Apache
+	* Taller 3: Instalación de la aplicación BookMedik
+	* Taller 4: Configuración Apache2 + fpm+php
+	* Taller 5: Instalación de un servidor LEMP
+	* Taller 6: Contratación y configuración de un VPS
+* Práctica: Instalación/migración de aplicaciones web PHP
+-->
+
+## Unidad 1: Introducción a la implantación de aplicaciones web
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion.pdf)
 	* [Taller 1: Introducción a git y GitHub](1_introduccion/t1.html)
@@ -11,16 +26,3 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* [Taller 4: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/t4.html)
 * [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/practica.html)
 
-<!--
-
-## Implantación de aplicaciones web PHP
-
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
-	* Taller 1: Instalación de un servidor LAMP
-	* Taller 2: VirtualHosting con Apache
-	* Taller 3: Instalación de la aplicación BookMedik
-	* Taller 4: Configuración Apache2 + fpm+php
-	* Taller 5: Instalación de un servidor LEMP
-	* Taller 6: Contratación y configuración de un VPS
-* Práctica: Instalación/migración de aplicaciones web PHP
--->
