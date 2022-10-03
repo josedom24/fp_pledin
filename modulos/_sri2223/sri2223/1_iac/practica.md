@@ -21,7 +21,7 @@ Queremos configurar el escenario con ansible, para que cumpla lo siguiente:
 * La máquina `cliente` debe tener acceso a internet. Para ello debe salir por `eth1` y la máquina `router` debe estar configurada para enrutar las peticiones de las máquinas conectadas a la red privada. Del mismo modo, `eth0` sólo se utiliza para acceder con `vagrant ssh`. Debes pensar qué configuración debe tener la máquina cliente: puerta de enlace, configuración dns,...
 * La máquina `cliente` tendrá un servidor web instalado, la máquina `router` hará DNAT para que podamos acceder a la página usando su IP pública.
 
-La receta ansible debe tener al menos 3 roles:
+La receta ansible debe tener al menos 4 roles:
 
 * `common`: Estas tareas se deben ejecutar en **todos** los nodos: actualizar los paquetes y añadir tu clave pública a la máquinas para poder acceder a ellas con ssh. ¿Existe algún módulo de ansible que te permita copiar claves públicas?.
 * `router`: Todas las tareas necesarias para configurar `router` cómo router-nat y que salga a internet por `eth1`. Las configuraciones deben ser permanentes. ¿Existe algún módulo de ansible que te permita ejecutar `sysctl`?.
