@@ -12,8 +12,8 @@ Queremos automatizar la creación de la siguiente infraestructura usando Vagrant
 
 Es escenario tiene dos máquinas:
 
-* `router`, que está conectada a una red pública y a una red privada (muy aislada).
-* `cliente`: Esta máquina está conectada a la misma red privada que la máquina anterior.
+* `router`: que está conectada a una red pública y a una red privada (muy aislada).
+* `cliente`: esta máquina está conectada a la misma red privada que la máquina anterior.
 * La máquina `router` debe salir por la red pública. **Esta máquina no va a utilizar eth0 para acceder al exterior**.
 
 Queremos configurar el escenario con ansible, para que cumpla lo siguiente:
