@@ -52,6 +52,8 @@ sri2223:
         url: /sri2223/
       - title: Infraestructura como código
         url: /sri2223/#infraestructura-como-c%C3%B3digo
+      - title: DHCP
+        url: /sri2223/#unidad-2-protocolo-dhcp
 
   - title: Módulos
     children:
