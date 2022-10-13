@@ -14,7 +14,7 @@ Para evitar los problemas que nos puede causar vagrant a la hora de trabajar con
 
 1. Que montéis el mismo escenario pero en kvm/libvirt, en relación a las redes:
 	* No tendríamos la interfaz conectada a la red de mantenimiento de vagrant.
-	* Conectaríamos las máquinas a una red aislada sin dhcp (con IP estática) que utilizaríamos para configurar las máquinas por ansible. Además no tendríamos el problema que tenemos en vagrant, ya que las direcciones ip no cambiarían.
+	* Conectaríamos las máquinas a una red aislada sin dhcp (con IP estática) que utilizaríamos para configurar las máquinas por ansible. Esto soluciona el problema de que las direcciones IP cambien en vagrant y tengamos que cambiar el inventario cada vez que creemos el escenario.
 2. Ejecutamos el playbook de la práctica anterior y comprobamos que las máquinas tienen el funcionamiento esperado.
 
 A partir de esta configuración podríamos seguir con esta práctica.
