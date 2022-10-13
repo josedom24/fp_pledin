@@ -7,6 +7,7 @@ title: "Servicios de Red e Internet (2022-2023)"
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)
 	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/t1.html)
 	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/t2.html)
+* [Práctica: Configuración de un servidor DHCP](2_dhcp/practica.html)
 
 ## Unidad 1: Infraestructura como código
 	
@@ -23,7 +24,7 @@ title: "Servicios de Red e Internet (2022-2023)"
 
 <!--
 
-* Práctica: Configuración de un servidor DHCP
+
 
 ## Protocolo HTTP
 

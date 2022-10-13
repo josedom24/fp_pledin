@@ -18,7 +18,7 @@ Para evitar los problemas que nos puede causar vagrant a la hora de trabajar con
 2. Ejecutamos el playbook de la práctica anterior y comprobamos que las máquinas tienen el funcionamiento esperado.
 
 A partir de esta configuración podríamos seguir con esta práctica.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 Queremos instalar un servidor DHCP en la máquina `router` para que configure de forma automática las máquinas que se conectan en la red interna. Tenemos que tener en cuenta lo siguiente:
 
