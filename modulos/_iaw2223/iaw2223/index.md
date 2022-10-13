@@ -11,7 +11,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 
 <!--
 
-	* Taller 4: Configuración Apache2 + fpm+php
+	* Taller 4: Configuración Apache2 + fpm + php
 	* Taller 5: Instalación de un servidor LEMP
 	* Taller 6: Contratación y configuración de un VPS
 * Práctica: Instalación/migración de aplicaciones web PHP
