@@ -2,7 +2,7 @@
 title: "Práctica: Protocolo DHCP"
 ---
 
-![router](img/router.png)
+![router](../1_iac/img/router.png)
 
 ## Descripción
 
