@@ -24,10 +24,9 @@ Queremos instalar un servidor DHCP en la máquina `router` para que configure de
 
 1. La máquina `cliente` de la práctica anterior, que tiene instalado el servidor web, debe tener la misma IP que la que le asígnate estáticamente, por lo tanto haremos una reserva para que tenga la misma IP.
 2. Al añadir una nueva máquina a la red local (recuerda que no se le instalará el servidor web) se configurará de forma dinámica.
-3. Realiza los cambios oportunos en el fichero `Vagrantfile` para añadir una nueva máquina al escenario conectada a la red interna.
-4. Crea un nuevo rol en el playbook de ansible llamado `dhcp` que configure el servidor DHCP de forma correcta. Quizás sea necesario modificar el comportamiento de algún rol de la práctica anterior.
-5. Todos los parámetros que reparta el servidor DHCP, así como cualquier otro dato, por ejemplo la dirección MAC del `cliente` se guardarán en variables.
-
+3. Crea un nuevo rol en el playbook de ansible llamado `dhcp` que configure el servidor DHCP de forma correcta. Quizás sea necesario modificar el comportamiento de algún rol de la práctica anterior.
+4. Todos los parámetros que reparta el servidor DHCP, así como cualquier otro dato, por ejemplo la dirección MAC del `cliente` se guardarán en variables.
+5. Añade una nueva máquina al escenario conectada a la red interna muy aislada. Vuelve a ejecutar el playbook y comprueba que todo funciona de forma correcta.
 {% capture notice-text %}
 ## Entrega
 
