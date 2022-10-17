@@ -41,7 +41,7 @@ Escribe un shell script que ejecutado por un usuario con acceso a `qemu:///syste
 17. Comprueba que el servicio mariaDB funciona accediendo a través del bridge exterior.
 18. Apaga **maquina1** y aumenta la RAM de **maquina2** a 2 GiB.
 
-Se valorara la limpieza del código, los comentarios, la utilización adecuada de variables, si se hacen comprobaciones antes de realizar una acción,...
+Se valorara la limpieza del código, los comentarios, la utilización adecuada de variables, portabilidad (es decir, que no dependa de directorios concretos y se pueda ejecutar en cualquier equipo), si se hacen comprobaciones antes de realizar una acción,...
 
 Alternativamente se puede entregar la tarea sin hacer el script, describiendo paso a paso la secuencia de comandos a ejecutar. En este caso la nota de la tarea será inferior.
 
