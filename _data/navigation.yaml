@@ -22,12 +22,10 @@ iaw2223:
         url: /iaw2223/#unidad-2-implantaci%C3%B3n-de-aplicaciones-web-php
   - title: Módulos
     children:
-      - title: "Servicios de Red e Internet"
+      - title: "Servicios de Red e Internet + HLC"
         url: /sri2223/
       - title: "Implantación de Aplicaciones Web"
         url: /iaw2223/
-      - title: "HLC: Cloud Computing"
-        url: /hlc2223/
 
 #hlc2223:
 #  - title: "HLC: Cloud Computing (2022-2023)"
