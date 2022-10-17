@@ -59,7 +59,7 @@ sri2223:
 
   - title: Módulos
     children:
-      - title: "Servicios de Red e Internet"
+      - title: "Servicios de Red e Internet + HLC"
         url: /sri2223/
       - title: "Implantación de Aplicaciones Web"
         url: /iaw2223/
