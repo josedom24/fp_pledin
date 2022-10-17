@@ -17,14 +17,14 @@ Cuando accedamos a la ruta `image` se estarán sirviendo los ficheros que se enc
 
 * **Opciones de directorio**: Todos los directorios servidos por el servidor web tienen definida una serie de opciones. Para ello usamos la directiva [Options](http://httpd.apache.org/docs/2.4/mod/core.html#options). Veamos las opciones que tiene el directorio `/var/www` defindio en el fichero `/etc/apache2/apache2.conf` (recuerda que la directiva `Directory` afecta al directorio indicado y a todos sus subdirectorios):
 
-```
-<Directory /var/www/>
-	Options Indexes FollowSymLinks
-	AllowOverride None
-	Require all granted
-</Directory>
-```
-
+	```
+	<Directory /var/www/>
+		Options Indexes FollowSymLinks
+		AllowOverride None
+		Require all granted
+	</Directory>
+	```
+	
 	* `Indexes`: Si no existe un fichero con un nombre por defecto (`index.html`, `index.php`,...) muestra la lista de ficheros y directorios que hay en el *DocumentRoot*.
 	* `FollowSymLinks`: El servidor web servirá el contenido de un fichero o directorio apuntado por un enlace simbólico que este en el *DocuemntRoot*.
 
