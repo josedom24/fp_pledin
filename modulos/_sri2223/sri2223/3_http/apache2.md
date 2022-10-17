@@ -28,7 +28,7 @@ Cuando accedamos a la ruta `image` se estarán sirviendo los ficheros que se enc
 	* `Indexes`: Si no existe un fichero con un nombre por defecto (`index.html`, `index.php`,...) muestra la lista de ficheros y directorios que hay en el *DocumentRoot*.
 	* `FollowSymLinks`: El servidor web servirá el contenido de un fichero o directorio apuntado por un enlace simbólico que este en el *DocuemntRoot*.
 
-	Existen más opciones que no vamos a estudiar en este curso. Si defindo una sección `Directory` para un subdirectorio podremos quitar opciones usando el signo `-` y añadirle usando el símbolo `+`.
+	Existen más opciones que no vamos a estudiar en este curso. Si defino una sección `Directory` para un subdirectorio podremos quitar opciones usando el signo `-` y añadirle usando el símbolo `+`.
 
 * **Redirecciones**: La directiva [Redirect](http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect) nos permite crear redirecciones temporales o permanentes. La directiva `redirect` es usada para pedir al cliente que haga otra petición a una URL diferente. Normalmente la usamos cuando el recurso al que queremos acceder **ha cambiado de localización**.
 
