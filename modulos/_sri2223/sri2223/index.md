@@ -1,5 +1,5 @@
 ---
-title: "Servicios de Red e Internet (2022-2023)"
+title: "Servicios de Red e Internet + HLC (2022-2023)"
 ---
 
 ## Unidad 2: Protocolo DHCP
