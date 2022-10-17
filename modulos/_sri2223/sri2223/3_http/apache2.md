@@ -175,8 +175,10 @@ Para permitir el uso de los ficheros `.htaccess` o restringir las directivas que
 
 Los módulos añaden nuevas funcionalidades a nuestro servidor web apache2. Hasy muchos módulos que están habilitados desde que instalamos el servidor, y otros que están instalados pero no habilitados. También podemos instalar nuevos módulos que no están instalados (`apt search libapache2-mod`).
 
-Los módulos disponibles y sus configuraciones se encuentran en el directorio `/etc/apache2/mods-available`. Si un módulo está habilitado existira uno o varios enlaces simbólicos en el directorio `/etc/apache2/mods-enabled` a los ficheros del directorio anterior. Para habilitar un módulo podemos usar `a2enmod` y para deshabilitarlo podemos usar `a2dismod`.
+Los módulos disponibles y sus configuraciones se encuentran en el directorio `/etc/apache2/mods-available`. Si un módulo está habilitado existirá uno o varios enlaces simbólicos en el directorio `/etc/apache2/mods-enabled` a los ficheros del directorio anterior. Para habilitar un módulo podemos usar `a2enmod` y para deshabilitarlo podemos usar `a2dismod`.
 
 
 
+## Configuración adicional
 
+Es posible tener ficheros de configuración adicional del servidor apache2 en el directorio `/etc/apache2/conf-available`. si la configuración está activa existirá un enlace simbólico en el directorio `/etc/apache2/conf-enabled` a los ficheros del directorio anterior. Para activar una configuración podemos usar el comando `a2enconf` y para desactivarlo, el comando `a2disconf`.
