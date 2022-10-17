@@ -29,27 +29,29 @@ iaw2223:
       - title: "HLC: Cloud Computing"
         url: /hlc2223/
 
-hlc2223:
-  - title: "HLC: Cloud Computing (2022-2023)"
+#hlc2223:
+#  - title: "HLC: Cloud Computing (2022-2023)"
+#    children:
+#      - title: "Inicio"
+#        url: /hlc2223/
+#      - title: "Virtualización en Linux"
+#        url: /hlc2223/#virtualizaci%C3%B3n-en-linux
+#  - title: Módulos
+#    children:
+#      - title: "Servicios de Red e Internet"
+#        url: /sri2223/
+#      - title: "Implantación de Aplicaciones Web"
+#        url: /iaw2223/
+#      - title: "HLC: Cloud Computing"
+#        url: /hlc2223/
+#
+sri2223:
+  - title: Servicios de Red e Internet + HLC (2022-2023)
     children:
       - title: "Inicio"
-        url: /hlc2223/
+        url: /sri2223/
       - title: "Virtualización en Linux"
         url: /hlc2223/#virtualizaci%C3%B3n-en-linux
-  - title: Módulos
-    children:
-      - title: "Servicios de Red e Internet"
-        url: /sri2223/
-      - title: "Implantación de Aplicaciones Web"
-        url: /iaw2223/
-      - title: "HLC: Cloud Computing"
-        url: /hlc2223/
-
-sri2223:
-  - title: Servicios de Red e Internet (2022-2023)
-    children:
-      - title: "Inicio"
-        url: /sri2223/
       - title: Infraestructura como código
         url: /sri2223/#infraestructura-como-c%C3%B3digo
       - title: DHCP
