@@ -234,15 +234,16 @@ defaults:
       sidebar:
         nav: "iaw2223"
 
-  - scope:
-      path: ""
-      type: hlc2223
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "sri2223"
+#  - scope:
+#      path: ""
+#      type: hlc2223
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "hlc2223"
+#
