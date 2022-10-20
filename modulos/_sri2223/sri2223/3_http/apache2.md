@@ -51,7 +51,12 @@ title: "Configuración básica de Apache2"
 	```
 	RedirectMatch "(.*)\.gif$" "http://www.pagina2.org/$1.jpg"
 	```
+	Por ejemplo, para al entrar en una página se redireccione a un subdirectorio:
 
+	```
+	RedirectMatch ^/$ https://openstack.gonzalonazareno.org/horizon/
+	```
+	
 ## Control de acceso, autentificación y autorización
 
 ### Control de acceso
