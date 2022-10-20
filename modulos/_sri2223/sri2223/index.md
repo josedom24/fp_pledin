@@ -46,7 +46,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* Taller 2: Configuración del servidor web apache2
 	* Taller 3: Instalación de phpmyadmin
 	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
-* Práctica: Instalación de un servidor LEMP en nuestra VPS
+* Práctica: Instalación de un servidor LEMP con ansible
 
 ## Protocolo DNS
 
