@@ -32,7 +32,7 @@ Escribe un shell script que ejecutado por un usuario con acceso a `qemu:///syste
 9. Instala LXC y crea un linux container llamado `container1`.
 10. Añade una nueva interfaz a la máquina virtual para conectarla a la red pública (al punte `br0`).
 11. Muestra la nueva IP que ha recibido.
-12. Apaga **maquina1** y aumenta la RAM de **maquina2** a 2 GiB. y vuelve a iniciar la máquina.
+12. Apaga **maquina1** y auméntale la RAM a 2 GiB y vuelve a iniciar la máquina.
 13. Crea un snapshot de la máquina virtual.
 
 
