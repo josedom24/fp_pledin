@@ -52,7 +52,12 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 * Teoría
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
-	* Taller 1: Instalación del certificado del Gonzalo Nazareno y configuración del cliente VPN 
+	* Taller 1: Configuración del cliente VPN 
+	* Taller 2: Acceso y configuración inicial de OpenStack
+	* Taller 3: Gestión de instancias en OpenStack
+	* Taller 4: Almacenamiento en OpenStack
+	* Taller 5: Redes en Openstack
+* Práctica
 
 
 ## Protocolo DNS
