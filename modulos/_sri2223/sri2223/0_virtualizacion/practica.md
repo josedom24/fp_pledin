@@ -17,7 +17,7 @@ Vamos a crear una imagen base que utilizaremos para la creación de la máquina 
 
 Cuando hayas finalizado puedes borrar la máquina creada. Lo que nos interesa es la imagen `bullseye-base.qcow2` que has creado.
 
-### Script de migración
+### Script de creación de MV
 
 Escribe un shell script que ejecutado por un usuario con acceso a `qemu:///system` realice los siguientes pasos:
 
