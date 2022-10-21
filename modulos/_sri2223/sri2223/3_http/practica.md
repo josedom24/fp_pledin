@@ -2,8 +2,6 @@
 title: "Práctica: Instalación de nginx con PHP"
 ---
 
-![router](../1_iac/img/router.png)
-
 ## Recursos para realizar este taller
 
 * [Introducción al servidor web nginx](nginx.html)
