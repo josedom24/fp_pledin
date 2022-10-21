@@ -27,7 +27,9 @@ Crea un escenario con vagrant o kvm con las siguiente características:
 
 ## Tarea 3: Migración a tu VPS
 
+* Configura en tu VPS un servidor LEMP.
 * Realiza la migración de tus aplicaciones web a tu VPS. La primera aplicación debe ser accesible desde la URL `www.tudominio.algo/portal`, y el NextCloud con la URL `www.tudominio.algo/cloud`. ¿Cuántos virtual hosts tendrás que configurar en el servidor web de tu VPS?
+* Al acceder a `www.tudominio.algo` se debe hacer una redirección a `www.tudominio.algo/portal`.
 *  Instala en un ordenador el cliente de NextCloud y realiza la configuración adecuada para acceder a "tu nube".
 
 

@@ -13,9 +13,16 @@ title: "Implantación de aplicaciones web (2022-2023)"
 
 
 <!--
-
-	* Taller 6: Contratación y configuración de un VPS
+	* Taller 6: Instalación de WordPress
+	* Taller 7: Contratación y configuración de un VPS
 * Práctica: Instalación/migración de aplicaciones web PHP
+
+# Seguridad de aplicaciones web con HTTPS
+
+* Teoría
+	* Taller 1: Configuración de HTTPS en apache2
+* Práctica: Configuración de HTTPS en la VPS
+
 -->
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
