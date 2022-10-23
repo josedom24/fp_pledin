@@ -50,7 +50,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 ## Cloud Coumputing IaaS. OpenStack 
 
-* Teoría
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
 	* Taller 1: Configuración del cliente VPN 
 	* Taller 2: Primeros pasos con OpenStack
