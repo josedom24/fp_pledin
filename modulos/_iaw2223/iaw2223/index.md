@@ -10,12 +10,12 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* [Taller 3: Instalación de la aplicación BookMedik](2_php/t3.html)
 	* [Taller 4: Configuración Apache2 + fpm + php](2_php/t4.html)
 	* [Taller 5: Instalación de un servidor LEMP](2_php/t5.html)
-
+	* [Taller 6: Instalación de WordPress](2_php/t6.html)
+	* [Taller 7: Contratación y configuración de un VPS](2_php/t7.html)
 
 <!--
-	* Taller 6: Instalación de WordPress
-	* Taller 7: Contratación y configuración de un VPS
 * Práctica: Instalación/migración de aplicaciones web PHP
+
 
 # Seguridad de aplicaciones web con HTTPS
 
