@@ -54,6 +54,8 @@ sri2223:
         url: /sri2223/#unidad-1-infraestructura-como-c%C3%B3digo
       - title: DHCP
         url: /sri2223/#unidad-2-protocolo-dhcp
+      - title: HTTP
+        url: /sri2223/#unidad-3-protocolo-http
 
   - title: Módulos
     children:
