@@ -24,7 +24,7 @@ Escribe un shell script que ejecutado por un usuario con acceso a `qemu:///syste
 
 1. Crea una imagen nueva, que utilice `bullseye-base.qcow2` como imagen base y tenga 5 GiB de tamaño máximo. Esta imagen se denominará `maquina1.qcow2`.
 2. Crea una red interna de nombre **intra** con salida al exterior mediante NAT que utilice el direccionamiento `10.10.20.0/24`.
-3. Crea una máquina virtual (**maquina1**) conectada a la red **intra**, con 1 GiB de RAM, que utilice como disco raíz `maquina1.qcow2` y que se inicie automáticamente. Arranca la máquina.
+3. Crea una máquina virtual (**maquina1**) conectada a la red **intra**, con 1 GiB de RAM, que utilice como disco raíz `maquina1.qcow2` y que se inicie automáticamente. Arranca la máquina. Modifica el fichero `/etc/hostname` con **maquina1**.
 4. Crea un volumen adicional de 1 GiB de tamaño en formato RAW ubicado en el pool por defecto
 5. Una vez iniciada la MV **maquina1**, conecta el volumen a la máquina, crea un sistema de ficheros XFS en el volumen y móntalo en el directorio `/var/www/html`. Ten cuidado con los propietarios y grupos que pongas, para que funcione adecuadamente el siguiente punto.
 6. Instala en **maquina1** el servidor web apache2. Copia un fichero `index.html` a la máquina virtual. 
