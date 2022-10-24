@@ -6,7 +6,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/http.pdf)
 	* [Taller 1: Peticiones HTTP](3_http/t1.html)
-
+	* [Taller 2: Configuración del servidor web Apache2](3_http/t2.html)
 
 ## Unidad 2: Protocolo DHCP
 
@@ -45,7 +45,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 
 
-	* [Taller 2: Configuración del servidor web Apache2](3_http/t2.html)
+
 	* [Taller 3: Instalación de phpmyadmin](3_http/t3.html)
 	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
 * [Práctica: Instalación de nginx con PHP](3_http/practica.html)
