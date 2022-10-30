@@ -12,11 +12,9 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* [Taller 5: Instalación de un servidor LEMP](2_php/t5.html)
 	* [Taller 6: Instalación de WordPress](2_php/t6.html)
 	* [Taller 7: Contratación y configuración de un VPS](2_php/t7.html)
+* [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
 <!--
-* Práctica: Instalación/migración de aplicaciones web PHP
-
-
 # Seguridad de aplicaciones web con HTTPS
 
 * Teoría
