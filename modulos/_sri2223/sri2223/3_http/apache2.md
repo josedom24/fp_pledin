@@ -26,7 +26,7 @@ title: "Configuración básica de Apache2"
 	```
 	
 	* `Indexes`: Si no existe un fichero con un nombre por defecto (`index.html`, `index.php`,...) muestra la lista de ficheros y directorios que hay en el *DocumentRoot*.
-	* `FollowSymLinks`: El servidor web servirá el contenido de un fichero o directorio apuntado por un enlace simbólico que este en el *DocuemntRoot*.
+	* `FollowSymLinks`: El servidor web servirá el contenido de un fichero o directorio apuntado por un enlace simbólico que este en el *DocumentRoot*.
 
 	Existen más opciones que no vamos a estudiar en este curso. Si defino una sección `Directory` para un subdirectorio podremos quitar opciones usando el signo `-` y añadirle usando el símbolo `+`.
 
