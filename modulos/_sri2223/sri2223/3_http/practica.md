@@ -8,7 +8,7 @@ title: "Práctica: Instalación de nginx con PHP"
 
 ## Descripción
 
-1. realiza la configuración básica de nginx que ejecute scripts PHP creando una receta ansible. Utilizando como base la receta ansible que utilizaste para el [taller 4](files/ejercicio_proxy/ejercicio_proxy.zip), modifícala para añadir las siguientes funcionalidades:
+1. Realiza la configuración básica de nginx que ejecute scripts PHP creando una receta ansible. Utilizando como base la receta ansible que utilizaste para el [taller 4](files/ejercicio_proxy.zip), modifícala para añadir las siguientes funcionalidades:
 
 	* Instalación de los servicios (cada servicio se instalará y configurará en un rol diferenciado).
 	* Además de copiar un `index.html` en el *DocumentRoot*, copiará también un fichero `info.php` que muestre la información de la configuración de PHP.

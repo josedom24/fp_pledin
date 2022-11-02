@@ -35,7 +35,7 @@ Ejemplo de configuración básdica de un sitio virtual en apache2:
 
         Alias /prueba/ /var/www/html/prueba
 	    <Directory /var/www/html/prueba>
-	        Options Indexes FollowSymLinks MultiViews
+	        Options Indexes FollowSymLinks
 	        AllowOverride None
 	        Require all granted
 	    </Directory>
