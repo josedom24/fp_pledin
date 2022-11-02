@@ -58,8 +58,8 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* Taller 2: Primeros pasos con OpenStack
 	* Taller 3: Gestión de instancias en OpenStack
 	* Taller 4: Gestión del almacenamiento en OpenStack
-	* Taller 5: Gestión de redes en Openstack
-* Práctica
+	* Taller 5: Gestión de redes en OpenStack
+* Práctica: Escenario en OpenStack
 
 
 ## Protocolo DNS
