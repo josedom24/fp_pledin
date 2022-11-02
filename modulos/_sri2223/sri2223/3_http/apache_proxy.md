@@ -2,7 +2,7 @@
 title: "Apache2 como proxy inverso"
 ---
 
-Un proxy inverso es un tipo de servidor proxy que recupera recursos en nombre de un cliente desde uno o más servidores. Por lo tanto el cliente hace la petición al puerto 80 del proxy, y éste es el que hace la petición al servidor web que normalmente está en una red interna no accesible desde el cliente.
+Un proxy inverso es un tipo de servidor proxy que recupera recursos en nombre de un cliente desde uno o más servidores. Por lo tanto el cliente hace la petición al puerto 80 del proxy (o al puerto 443 si usamos https), y éste es el que hace la petición al servidor web que normalmente está en una red interna no accesible desde el cliente.
 
 ![proxy](img/proxy2.png)
 
@@ -16,17 +16,14 @@ Apache2.4 puede funcionar como proxy inverso usando el módulo `proxy` junto a o
   * proxy_ajp: Para trabajar con el protocolo AJP para Tomcat.
   * &#8230;
 
-Por lo tanto, para empezar, vamos activar los módulos que necesitamos:
-
-    # a2enmod proxy proxy_http
-
 ## Ejemplo de utilización de proxy inverso
 
-Tenemos a nuestra disposición un servidor interno (no accesible desde el cliente) en la dirección privada, con el nombre de `interno.example.org`. Tenemos un servidor que va a funcionar de proxy, llamado `proxy.example.org` con dos interfaces de red: una pública conectada a la red donde se encuentra el cliente, y otra interna conectada a la red donde se encuentra el servidor interno.
+Vamos a utilizar este [fichero](files/vagrantproxy.zip) para crear la infraestructura con vagrant. Se va carear un servidor interno (no accesible desde el cliente) con una dirección privada, con el nombre de `interno.example.org`.  Tenemos un servidor que va a funcionar de proxy, llamado `proxy.example.org` con dos interfaces de red: una pública conectada a la red donde se encuentra el cliente (será la red de mantenimiento), y otra interna conectada a la red donde se encuentra el servidor interno.
 
-Puedes bajar este [fichero](doc/apacheproxy/vagrant.zip) para crear la infraestructura con vagrant.
+Vagrant ha configurado los siguiente:
 
-### Sirviendo una página estática
+* En el servidor `porxy` ha instalado apache2, ha configurado el router-nat y ha escrito en la resolución estática el nombre del servidor interno.
+* En el servidor web interno se ha instalado apache2, se ha cambiado la ruta por defecto para salir por el proxy, se ha copia una página web, se ha configurado una redirección con un fichero `.htaccess` y por último se ha cambiado la configuración de apache2 para permitir ficheros `.htaccess`.
 
 En nuestro servidor interno hemos creado un virtual host para servir una página estática, `index.html`, con este contenido:
 
@@ -48,7 +45,18 @@ En nuestro servidor interno hemos creado un virtual host para servir una página
             <a href="/carpeta/index.html">Enlace tipo 2</a><br/>
             <a href="carpeta/index.html">Enlace tipo 3</a>
     </body>
+
+**Debemos que recordar que desde el nuestro cliente no tenemos acceso al servidor web interno. Np vamos a usar la IP de la red de mantenimeinto para acceder**.
+
+Por lo tanto necesitamos un proxy inverso:
+
+## Configuración del proxy inverso
+
+En el servidor `proxy` vamos a activar la funcionalidad de proxy inverso. Por lo tanto, para empezar, vamos activar los módulos que necesitamos:
+
+    # a2enmod proxy proxy_http
     
+Creamos un viirtualhost para servir el contenido ofrecido con el nombre del host `proxy.example.org`.
 
 Vamos a utilizar la directiva [`ProxyPass`](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html#proxypass) en el fichero de configuración del virtual host, de la siguiente forma:
 
