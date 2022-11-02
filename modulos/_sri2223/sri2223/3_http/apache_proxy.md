@@ -116,7 +116,7 @@ Por lo que ya podemos hacer la redirección de forma correcta:
 
 ## Proxy inverso usando rutas
 
-Si tuviéramos varios servidores web internos o varioas páginas o aplicaciones web a las que tuviéramos que acceder a través del proxy, tendríamos dos opciones:
+Si tuviéramos varios servidores web internos o varias páginas o aplicaciones web a las que tuviéramos que acceder a través del proxy, tendríamos dos opciones:
 
 1. Usar un VirtualHost para cada una de las aplicaciones web y configurarlos como hemos explicado anteriormente.
 2. Tener un sólo VirtualHost y configurar distintas rutas para acceder a cada una de las aplicaciones.
