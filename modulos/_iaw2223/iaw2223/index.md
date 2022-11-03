@@ -21,6 +21,15 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* Taller 1: Configuración de HTTPS en apache2
 * Práctica: Configuración de HTTPS en la VPS
 
+# Python
+
+* Teoria (Introducción al protocolo WSGI)
+	* Ejericio 1: Entornos virtuales python
+	* Taller 1: Desplegando aplicaciones flask con apache2 + mod_wsgi
+	* Taller 2: Desplegando aplicaciones flask con apache2 + uwsgi
+	* Ejercicio 2: Introducción a django
+* Práctica: Instalación/migración de aplicaciones web Python
+
 -->
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
