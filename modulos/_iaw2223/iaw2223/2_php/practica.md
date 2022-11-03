@@ -16,7 +16,7 @@ Crea un escenario con vagrant o kvm con las siguiente características:
 
 * Selecciona un CMS escrito en PHP para desplegarlo en nuestra infraestructura. No se puede elegir ni WordPress (que lo hemos visto en un vídeo, ni NextCloud que lo instalaremos a continuación).
 * Configura en la máquina `servidor_web_tunombre` un servidor web apache2 que ejecute PHP, con un VirtualHost, para que el CMS sea accesible desde la dirección: `www.nombrealumno.org`.
-* Configura en la máquina `servidor_web_tunombre` una base de datos.  Crea un usuario con privilegios sobre la base de datos donde se van a guardar los datos del CMS.
+* Configura en la máquina `servidor_bd_tunombre` una base de datos.  Crea un usuario con privilegios sobre la base de datos donde se van a guardar los datos del CMS. Configura la base de datos para que permita conexión desde la otra máquina.
 * Descarga el CMS seleccionado y realiza la instalación.
 * Realiza una configuración mínima de la aplicación (Cambia la plantilla, crea algún contenido, ...)
 * Instala un módulo para añadir alguna funcionalidad al CMS.
