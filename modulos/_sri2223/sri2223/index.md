@@ -50,7 +50,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 <!--
 
 
-## Cloud Coumputing IaaS. OpenStack 
+## Cloud Cumputing IaaS. OpenStack 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
@@ -70,4 +70,13 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Taller 3: Instalación y configuración de un servidor DNS esclavo](4_dns/t3.html)
 	* [Taller 4: Delegación de subdominios con bind9](4_dns/t4.html)
 * Práctica: DNS en nuestro escenario de trabajo
+
+# Correo
+
+# Kubernetes
+
+# Almacenamiento
+
+# Cluster de alta disponibilidad
+
 -->

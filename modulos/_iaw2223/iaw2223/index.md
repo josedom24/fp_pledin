@@ -30,6 +30,10 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* Ejercicio 2: Introducción a django
 * Práctica: Instalación/migración de aplicaciones web Python
 
+# Docker
+
+# IC
+
 -->
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
