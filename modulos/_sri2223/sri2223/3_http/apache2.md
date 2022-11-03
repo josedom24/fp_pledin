@@ -26,7 +26,7 @@ title: "Configuración básica de Apache2"
 	```
 	
 	* `Indexes`: Si no existe un fichero con un nombre por defecto (`index.html`, `index.php`,...) muestra la lista de ficheros y directorios que hay en el *DocumentRoot*.
-	* `FollowSymLinks`: El servidor web servirá el contenido de un fichero o directorio apuntado por un enlace simbólico que este en el *DocuemntRoot*.
+	* `FollowSymLinks`: El servidor web servirá el contenido de un fichero o directorio apuntado por un enlace simbólico que este en el *DocumentRoot*.
 
 	Existen más opciones que no vamos a estudiar en este curso. Si defino una sección `Directory` para un subdirectorio podremos quitar opciones usando el signo `-` y añadirle usando el símbolo `+`.
 
@@ -178,7 +178,7 @@ Para permitir el uso de los ficheros `.htaccess` o restringir las directivas que
 
 ## Módulos en apache2
 
-Los módulos añaden nuevas funcionalidades a nuestro servidor web apache2. Hasy muchos módulos que están habilitados desde que instalamos el servidor, y otros que están instalados pero no habilitados. También podemos instalar nuevos módulos que no están instalados (`apt search libapache2-mod`).
+Los módulos añaden nuevas funcionalidades a nuestro servidor web apache2. Hay muchos módulos que están habilitados desde que instalamos el servidor, y otros que están instalados pero no habilitados. También podemos instalar nuevos módulos que no están instalados (`apt search libapache2-mod`).
 
 Los módulos disponibles y sus configuraciones se encuentran en el directorio `/etc/apache2/mods-available`. Si un módulo está habilitado existirá uno o varios enlaces simbólicos en el directorio `/etc/apache2/mods-enabled` a los ficheros del directorio anterior. Para habilitar un módulo podemos usar `a2enmod` y para deshabilitarlo podemos usar `a2dismod`.
 

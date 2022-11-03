@@ -7,6 +7,12 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/http.pdf)
 	* [Taller 1: Peticiones HTTP](3_http/t1.html)
 	* [Taller 2: Configuración del servidor web Apache2](3_http/t2.html)
+	* [Taller 3: Instalación de phpmyadmin](3_http/t3.html)
+	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
+
+<!--
+* [Práctica: Instalación de nginx con PHP](3_http/practica.html)
+-->
 
 ## Unidad 2: Protocolo DHCP
 
@@ -44,12 +50,6 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 <!--
 
 
-
-
-	* [Taller 3: Instalación de phpmyadmin](3_http/t3.html)
-	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
-* [Práctica: Instalación de nginx con PHP](3_http/practica.html)
-
 ## Cloud Coumputing IaaS. OpenStack 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
@@ -58,8 +58,8 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* Taller 2: Primeros pasos con OpenStack
 	* Taller 3: Gestión de instancias en OpenStack
 	* Taller 4: Gestión del almacenamiento en OpenStack
-	* Taller 5: Gestión de redes en Openstack
-* Práctica
+	* Taller 5: Gestión de redes en OpenStack
+* Práctica: Escenario en OpenStack
 
 
 ## Protocolo DNS
