@@ -35,7 +35,7 @@ Realiza los siguientes pasos:
 	 Este fichero actualizará la paquetería de la instancia, configurará el FQDN de la instancia, creará un nuevo usuario y cambiará la contraseña del usuario `root`.
 
 4. Siguiendo el apartado [Gestión de instancia con OpenStack client (OSC)](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo3/osc_nova.md), visualiza con el OSC los flavors disponibles, imágenes disponibles, claves disponibles, reglas de cortafuegos,...
-5. Crea una nueva instancia usando el comando que encontrarán en la sección [Configuración de instancias con cloud-init](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo1/osc.md).
+5. Crea una nueva instancia usando el comando que encontrarás en la sección [Configuración de instancias con cloud-init](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo1/osc.md).
 6. Añade una IP flotante a la instancia para ello puedes usar los comandos que encuentras en [Gestión de instancia con OpenStack client (OSC)](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo3/osc_nova.md).
 7. Accede por ssh (recuerda usar el usuario que has creado con cloud-init) a la instancia.
 
