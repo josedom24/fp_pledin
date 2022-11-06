@@ -52,11 +52,11 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
-	* Taller 1: Configuración del cliente VPN 
-	* Taller 2: Primeros pasos con OpenStack
-	* Taller 3: Gestión de instancias en OpenStack
-	* Taller 4: Gestión del almacenamiento en OpenStack
-	* Taller 5: Gestión de redes en OpenStack
+	* [Ejercicio 1: Creación de instancias desde Horizon](4_iaas/ejercicio1.html)
+	* [Ejercicio 2: Creación de instancias desde OSC](4_iaas/ejercicio2.html)
+	* [Ejercicio 3: Gestión de almacenamiento]((4_iaas/ejercicio3.html))
+	* [Taller 1: Configuración del cliente VPN](4_iaas/t1.html)
+	* [Taller 2: Gestión de redes en OpenStack](4_iaas/t2.html)
 * Práctica: Escenario en OpenStack
 
 

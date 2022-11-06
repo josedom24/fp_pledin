@@ -1,5 +1,5 @@
 ---
-title: "Creación de instancia desde Horizon"
+title: "Creación de instancias desde Horizon"
 ---
 
 Realiza los siguientes pasos:
