@@ -9,10 +9,8 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Taller 2: Configuración del servidor web Apache2](3_http/t2.html)
 	* [Taller 3: Instalación de phpmyadmin](3_http/t3.html)
 	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
-
-<!--
 * [Práctica: Instalación de nginx con PHP](3_http/practica.html)
--->
+
 
 ## Unidad 2: Protocolo DHCP
 
