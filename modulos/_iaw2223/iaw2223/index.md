@@ -2,6 +2,13 @@
 title: "Implantación de aplicaciones web (2022-2023)"
 ---
 
+## Unidad 3: Seguridad de aplicaciones web con HTTPS
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/https.pdf)
+	* [Configuración de HTTPS en Apache2](apache2_https.md)
+* Práctica: Configuración de HTTPS en la VPS
+
+
 ## Unidad 2: Implantación de aplicaciones web PHP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
@@ -14,12 +21,10 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* [Taller 7: Contratación y configuración de un VPS](2_php/t7.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
-<!--
-# Seguridad de aplicaciones web con HTTPS
 
-* Teoría
-	* Taller 1: Configuración de HTTPS en apache2
-* Práctica: Configuración de HTTPS en la VPS
+
+
+<!--
 
 # Python
 
