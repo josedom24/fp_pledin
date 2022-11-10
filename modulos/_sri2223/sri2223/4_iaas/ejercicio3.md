@@ -20,10 +20,10 @@ Vamos a realizar la primera opción que encontrarán en la sección [Creación d
 Siguiendo la sección [Gestión de volúmenes con OpenStack client (OSC)](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo4/osc_cinder.md) y usando OSC:
 
 1. Crea un volumen de 2Gb.
-2. Creamos un volumen arrancable de 8 GiB que contenga la imagen.
-3. Crea una instancia a partir de dicho volumen. Esta instancia las puede configurar con cloud-init.
+2. Creamos un volumen arrancable de 8 GiB que contenga una imagen.
+3. Crea una instancia a partir de dicho volumen. Esta instancia la puede configurar con cloud-init.
 4. Añade el primer volumen de 2 Gb a la instancia.
 5. Accede a la instancia y comprueba que tiene el disco añadido. Instálale apache2.
-6. Crea una instantánea del disco de la instancia.
+6. Crea una instantánea del disco de la instancia. Se creará una una imagen privada en tu proyecto.
 7. Busca información y crea una nueva instancia a partir de la instantánea. ¿Tiene instalado apache2?
 
