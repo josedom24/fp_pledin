@@ -4,6 +4,8 @@ title: "Práctica: Escenario en OpenStack"
 
 En esta tarea se va a crear el escenario de trabajo que se va a usar durante todo el curso, que va a constar inicialmente de 4 máquinas: 2 instancias en OpenStack y dos contenedores LXC que se ejecutarán en una de las instancias.
 
+La creación y configuración (conexión a las redes, creación de volumen, quitarle la seguridad, ...) de la máquina 1 la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
+
 ## Escenario
 
 ![os](img/os.drawio.png)
@@ -53,6 +55,12 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 	* Cambia la contraseña al usuario `root`.
 {% capture notice-text %}
 ## Entrega
+
+1. Las instrucciones para crear y configurar la **máquina1**.
+2. La Ip flotante de la **máquina1**.
+3. Prueba de funcionamiento de qué los FQDN están bien configurados.
+4. Prueba de funcionamiento de que se pueden acceder a todas las máquinas por ssh.
+5. Prueba de funcionamiento de que las máquinas tienen acceso a internet.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
