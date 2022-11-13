@@ -10,7 +10,7 @@ En esta tarea se va a crear el escenario de trabajo que se va a usar durante tod
 
 ## Instalación de las instancias de OpenStack
 
-1. Crea una red interna que se llame **Red DMZ de <tu_usuario>**, con las siguientes características:
+1. Crea una red interna que se llame **Red DMZ de tu_usuario**, con las siguientes características:
 	* Direccionamiento: 172.16.0.0/16
 	* Con DHCP y DNS (`192.128.202.2`).
 	* La puerta de enlace de los dispositivos conectados a esta red será el `172.16.0.1`.
