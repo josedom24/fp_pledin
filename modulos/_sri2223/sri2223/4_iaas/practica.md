@@ -18,7 +18,7 @@ En esta tarea se va a crear el escenario de trabajo que se va a usar durante tod
 	* Deben actualizar los paquetes de la distribución de la instancia.
 	* El dominio utilizado será del tipo `tunombre.gonzalonazareno.org`. Por lo tanto en la configuración con `cloud-init` habrá que indicar el hostname y el FQDN.
 	* Se crearán dos usuarios: 
-		* Un usuario sin privilegios. Se puede llamar como quieras y accederás a las máquinas usando tu clave ssh privada.
+		* Un usuario sin privilegios. Se puede llamar como quieras (pero el nombre será el mismo en todas las máquinas) y accederás a las máquinas usando tu clave ssh privada.
 		* Un usuario `profesor`, que puede utilizar `sudo` sin contraseña. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario `profesor`.
 	* Cambia la contraseña al usuario `root`.
 3. Creación de la **máquina1**:
