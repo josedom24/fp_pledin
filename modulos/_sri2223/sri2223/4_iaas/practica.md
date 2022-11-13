@@ -44,7 +44,7 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 5. Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (*Unidad máxima de transferencia*) a 1450 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: `lxc.net.0.mtu = 1450`.
 6. Confiigura los contenedores para que se auto inicien al reiniciar la instancia. 
 7. Los contenedores tendrán características parecidas a las instancias anteriormente:
-	* Deben actualizar los paquetes de la distribución instalada.
+	* Debes actualizar los paquetes de la distribución instalada.
 	* El dominio utilizado será del tipo `tunombre.gonzalonazareno.org`. Por lo tanto configura de manera adecuda el hostname y el FQDN.
 	* Para acceder a los contenedores vamos a usar ssh.
 	* Crea dos usuarios: 
