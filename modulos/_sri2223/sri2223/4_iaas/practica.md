@@ -27,7 +27,7 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 	* Crea una instancia sobre un volumen de 40Gb, usando una imagen de **Debian 11 Bullseye**. Elige el sabor `vol.normal`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Está instancia estará conectada a tu red interna. Asigna a la instancia una IP flotante.
 4. Configuración de la **máquina1**:
-	* Conecta la instancia a tu **Red DMZ**, usando un puerto, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red.
+	* Conecta la instancia a tu **Red DMZ**, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red.
 	* Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.
 	* Configura de forma permanente la regla SNAT para que las máquinas de la **Red DMZ** tengan acceso a internet.
 5. Creación de la **máquina2**:
