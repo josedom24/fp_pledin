@@ -25,7 +25,7 @@ En esta tarea se va a crear el escenario de trabajo que se va a usar durante tod
 	* Crea una instancia sobre un volumen de 40Gb, usando una imagen de Debian 11. Elige el sabor `vol.normal`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Está instancia estará conectada a tu red interna. Asigna a la instancia una IP flotante.
 4. Configuración de la **máquina1**:
-	* Conecta la instancia a tu **Red DMZ**, usando un puerto asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red.
+	* Conecta la instancia a tu **Red DMZ**, usando un puerto, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red.
 	* Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.
 	* Configura de forma permanente la regla SNAT para que las máquinas de la **Red DMZ** tengan acceso a internet.
 5. Creación de la **máquina2**:
@@ -41,8 +41,9 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 2. Instala LXC y crea dos contenedores con la distribución Ubuntu 20.04. Estos contenedores serán la **máquina3** y la **máquina4**.
 3. Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.
 4. Conecta los contenedores al bridge `br-intra` y configúralo de forma estática con las siguientes direcciones: **máquina3** la `192.168.0.2` y **máquina4** la `192.168.0.3`.
-5. Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (*Unidad máxima de transferencia*) a 1450 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: `lxc.net.0.mtu = 1450`. 
-6. Los contenedores tendrán características parecidas a las instancias anteriormente:
+5. Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (*Unidad máxima de transferencia*) a 1450 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: `lxc.net.0.mtu = 1450`.
+6. Confiigura los contenedores para que se auto inicien al reiniciar la instancia. 
+7. Los contenedores tendrán características parecidas a las instancias anteriormente:
 	* Deben actualizar los paquetes de la distribución instalada.
 	* El dominio utilizado será del tipo `tunombre.gonzalonazareno.org`. Por lo tanto configura de manera adecuda el hostname y el FQDN.
 	* Para acceder a los contenedores vamos a usar ssh.
