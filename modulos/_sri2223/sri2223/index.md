@@ -11,7 +11,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Ejercicio 3: Gestión de almacenamiento](4_iaas/ejercicio3.html)
 	* [Taller 1: Configuración del cliente VPN](4_iaas/t1.html)
 	* [Taller 2: Gestión de redes en OpenStack](4_iaas/t2.html)
-* Práctica: Escenario en OpenStack
+* [Práctica: Escenario en OpenStack](4_iaas/practica.html)
 
 ## Unidad 3: Protocolo HTTP
 
