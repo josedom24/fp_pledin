@@ -5,7 +5,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 ## Unidad 4: Implantación de aplicaciones web Python
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/python.pdf)
-
+	* Ejericio 1: Ejecución de aplicaciones python flask
 
 ## Unidad 3: Seguridad de aplicaciones web con HTTPS
 
@@ -38,7 +38,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 
 <!--
 
-	* Ejericio 1: Entornos virtuales python
+
 	* Taller 1: Desplegando aplicaciones flask con apache2 + mod_wsgi
 	* Taller 2: Desplegando aplicaciones flask con apache2 + uwsgi
 	* Ejercicio 2: Introducción a django
