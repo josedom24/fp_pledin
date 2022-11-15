@@ -6,9 +6,9 @@ title: "Ejericio 1: Ejecución de aplicaciones python flask"
 2. Clona el repositorio de la aplicación [guestbook](https://github.com/josedom24/guestbook).
 3. `guestbook` es una aplicación escrita en python flask. Es una aplicación donde podemos dejar guardadas mensajes en un "libro de visita". Los mensajes se van a guardar en una base de daros no relacional llamada redis. redis es una base de datos clave-valor y necesitamos instalarla:
 
-```
-apt install redis
-```
+	```
+	apt install redis
+	```
 
 	Pra más información sobre redis puedes ller este interesante artículo: [Redis, base de datos no relacional](https://www.josedomingo.org/pledin/2015/02/redis-base-de-datos-no-relacional/).
 
