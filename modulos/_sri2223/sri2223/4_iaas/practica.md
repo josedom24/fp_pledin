@@ -33,7 +33,7 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 		* Un usuario `profesor`, que puede utilizar `sudo` sin contraseña. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario `profesor`.
 	* Cambia la contraseña al usuario `root`.
 3. Creación de la **máquina1 (alfa)**:
-	* Crea una instancia sobre un volumen de 40Gb, usando una imagen de **Debian 11 Bullseye**. Elige el sabor `vol.medium`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
+	* Crea una instancia sobre un volumen de 30Gb, usando una imagen de **Debian 11 Bullseye**. Elige el sabor `vol.medium`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Está instancia estará conectada a tu red interna. Asigna a la instancia una IP flotante.
 4. Configuración de la **máquina1 (alfa)**:
 	* Conecta la instancia a tu **Red DMZ**, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red.
@@ -41,7 +41,7 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 	* Configura de forma permanente la regla SNAT para que las máquinas de la **Red DMZ** tengan acceso a internet.
 5. Creación de la **máquina2 (bravo)**:
 	* Está instancia se conectará a la **red DMZ**. Usando un puerto asigna a esta máquina la dirección `172.16.0.200`.
-	* Crea una instancia sobre un vollumen de 40Gb, usando una imagen de **Rocky Linux 9**. Elige el sabor `vol.normal`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
+	* Crea una instancia sobre un vollumen de 30Gb, usando una imagen de **Rocky Linux 9**. Elige el sabor `vol.normal`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Deshabilita la seguridad de los puertos en la interfaz de red para que funcione de manera adecuada el NAT.
 	* Comprueba que tiene acceso a internet. **Si no tiene acceso a internet, no se han actualizado los paquetes con cloud-init, hazlo posteriormente.**.
 
