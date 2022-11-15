@@ -17,7 +17,7 @@ title: "Ejericio 1: Ejecución de aplicaciones python flask"
 
 ![guestbook](img/guestbook.png)
 
-Si te interesa puedes ver en el código del programa cómo conectamos a redis en la dirección `127.0.0.1` en el puerto `6379`. Los mensajes se guardan en una vlace que es una lista que se llama `lista`. Puedes acceder a la base de datos y ver el contenido de esa clave:
+Si te interesa, puedes ver en el código del programa cómo conectamos a redis en la dirección `127.0.0.1` en el puerto `6379`. Los mensajes se guardan en una clave que es una lista que se llama `lista`. Puedes acceder a la base de datos y ver el contenido de esa clave:
 
 ```
 $ redis-cli 
