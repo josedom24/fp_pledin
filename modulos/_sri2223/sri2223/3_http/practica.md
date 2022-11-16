@@ -17,8 +17,8 @@ title: "Práctica: Instalación de nginx con PHP"
 
 2. Configura sobre una máquina virtual, usando la receta de ansible, un servidor nginx + PHP con dos virtualhost:
 
-	* `www.pagina1.org`, cuyo *DocumetRoot* estará en `/srv/www/pagina1`.
-	* `www.pagina2.org`, cuyo *DocumetRoot* estará en `/srv/www/pagina2`.
+	* `www.pagina1.org`, cuyo *DocumentRoot* estará en `/srv/www/pagina1`.
+	* `www.pagina2.org`, cuyo *DocumentRoot* estará en `/srv/www/pagina2`.
 
 	Una vez que la receta haya configurado el servidor web con los dos Virtualhost, configura manualmente las siguientes características:
 
