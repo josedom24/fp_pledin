@@ -2,6 +2,11 @@
 title: "Servicios de Red e Internet + HLC (2022-2023)"
 ---
 
+## Unidad 5: Protocolo DNS
+
+* [Toría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dns.pdf)
+
+
 ## Unidad 4: Cloud Computing IaaS. OpenStack 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
@@ -62,13 +67,10 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 
 
-## Protocolo DNS
-
-* Teoría
-	* [Taller 1: Consultas DNS con dig](4_dns/t1.html)
-	* [Taller 2: Instalación y configuración del servidor bind9 en nuestra red local](4_dns/t2.html)
-	* [Taller 3: Instalación y configuración de un servidor DNS esclavo](4_dns/t3.html)
-	* [Taller 4: Delegación de subdominios con bind9](4_dns/t4.html)
+	* [Ejercicio 1: Consultas DNS con dig](4_dns/ejercicio1.html)
+	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](4_dns/t1.html)
+	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](4_dns/t2.html)
+	* [Taller 3: Delegación de subdominios con bind9](4_dns/t3.html)
 * Práctica: DNS en nuestro escenario de trabajo
 
 # Correo
