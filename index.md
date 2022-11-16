@@ -11,8 +11,6 @@ classes: wide
 
 * [Servicios de red e internet + HLC](sri2223)
 * [Implantación de aplicaciones web](iaw2223)
-
-
 ---
 
 * [Cursos anteriores](anteriores.html)
