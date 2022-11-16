@@ -20,6 +20,9 @@ iaw2223:
         url: /iaw2223/#unidad-1-introducci%C3%B3n-a-la-implantaci%C3%B3n-de-aplicaciones-web
       - title: PHP
         url: /iaw2223/#unidad-2-implantaci%C3%B3n-de-aplicaciones-web-php
+      - title: HTTPS
+        url: /iaw2223/#unidad-3-seguridad-de-aplicaciones-web-con-https
+
   - title: Módulos
     children:
       - title: "Servicios de Red e Internet + HLC"
@@ -56,6 +59,10 @@ sri2223:
         url: /sri2223/#unidad-2-protocolo-dhcp
       - title: HTTP
         url: /sri2223/#unidad-3-protocolo-http
+      - title: IaaS
+        url: /sri2223/#unidad-4-cloud-computing-iaas-openstack
+      - title: DNS
+        url: /sri2223/#unidad-5-protocolo-dns
 
   - title: Módulos
     children:
