@@ -5,6 +5,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 ## Unidad 5: Protocolo DNS
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dns.pdf)
+* [Servidor DNS bind9](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/bind9.pdf)
 	* [Ejercicio 1: Consultas DNS con dig](5_dns/ejercicio1.html)
 
 ## Unidad 4: Cloud Computing IaaS. OpenStack 
