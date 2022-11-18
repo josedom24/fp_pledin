@@ -18,7 +18,7 @@ email: josedom24@josedomingo.org
 description: >- # this means to ignore newlines until "baseurl:"
   Plataforma Educativa Informática. Página personal de José Domingo Muñoz
 url: "https://fp.josedomingo.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: pledin_jd
+#twitter_username: pledin_jd
 github_username:  josedom24
 paginate: 0
 
@@ -49,8 +49,8 @@ name: "José Domingo Muñoz"
 search: true
 repository: "josedom24/fp_pledin"
 
-twitter:
-  username: "pledin_jd"
+#twitter:
+#  username: "pledin_jd"
 
 author:
   name   : "José Domingo Muñoz"
@@ -59,8 +59,8 @@ author:
   email  : "josedom24@josedomingo.org"
   uri    : "https://www.josedomingo.org"
   github : "josedom24"
-  gitlab : "josedom24"
-  twitter : "pledin_jd"
+#  gitlab : "josedom24"
+#  twitter : "pledin_jd"
   location: "Utrera, Sevilla,ES" # null (default), "absolute or relative url to link to author home"
 
 collections:
