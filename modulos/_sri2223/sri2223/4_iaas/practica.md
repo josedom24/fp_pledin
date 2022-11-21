@@ -23,7 +23,7 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 
 1. Crea una red interna que se llame **Red DMZ de tu_usuario**, con las siguientes características:
 	* Direccionamiento: 172.16.0.0/16
-	* Con DHCP y DNS (`192.128.202.2`).
+	* Con DHCP y DNS (`192.168.202.2`).
 	* La puerta de enlace de los dispositivos conectados a esta red será el `172.16.0.1`.
 2. Las dos instancias que vamos a crear se van a configurar con `cloud-init` de la siguiente manera:
 	* Deben actualizar los paquetes de la distribución de la instancia.
