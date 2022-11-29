@@ -19,7 +19,7 @@ $ python3 -m venv django
 $ source django/bin/activate
 (django)$ pip install django
 (django)$ python -m django --version
-3.2.9
+4.1.3
 ```
 
 ## Creando un proyecto django
@@ -69,7 +69,7 @@ Si queremos que el servidor escuche en todas las direcciones y en un puerto dete
 Hasta ahora tenemos un proyecto django, pero no tiene ninguna funcionalidad. En un proyecto django podemos ir añadiendo distintas aplicaciones donde vamos implementando las distintas funcionalidades del programa. Siguiendo el tutorial de django, vamos a crear la aplicación polls (encuestas), para ello:
 
 ```bash
-(django)$ python3 startapp polls
+(django)$ python3 manage.py startapp polls
 ```
 
 Esto creará un directorio `polls` en el proyecto con los siguientes ficheros:
@@ -86,9 +86,9 @@ polls/
     views.py
 ```
 
-Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/3.2/intro/tutorial01/) que os da una visión general del desarrollo de aplicaciones web en django.
+Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/4.1/intro/tutorial01/) que os da una visión general del desarrollo de aplicaciones web en django.
 
-En el siguiente apartado seguiremos estudiando las aplicaciones django pero utilizando la aplicación desarrollada en el tutorial, que podeis encontrar en: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
+En el siguiente apartado seguiremos estudiando las aplicaciones django pero utilizando la aplicación desarrollada en el tutorial, que podéis encontrar en: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
 
 ## La configuración del proyecto
 
@@ -290,4 +290,4 @@ Hemos visto distintas formas de desplegar aplicaciones flask en los ejercicios d
 
 * El fichero wsgi, que será el punto de acceso a la plicación se encuentra en `django_tutorial/django_tutorial/wsgi.py`.
 * Cuando usamos apache2 + mod_wsgi, Django no sirve el contenido estático, por lo que tendremos que configurar el servidor web para que lo haga. Tendremos que usar `alias` para que el contenedio estático se accesible. Por ejemplo, ¿dónde se encuentra la hoja de estilo de la zona de adminitración de nuetra aplicación?
-* Tienes una guia de despliegue de aplicaiones django en: [How to deploy with WSGI](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/).
+* Tienes una guia de despliegue de aplicaiones django en: [How to deploy with WSGI](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/).
