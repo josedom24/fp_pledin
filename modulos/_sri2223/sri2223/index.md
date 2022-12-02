@@ -10,6 +10,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Ejercicio 2: DNSmasq como DNS cache/forward en una red local](5_dns/ejercicio2.html)
 	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](5_dns/t1.html)
 	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](5_dns/t2.html)
+	* [Taller 3: Delegación de subdominios con bind9](5_dns/t3.html)
 
 ## Unidad 4: Cloud Computing IaaS. OpenStack 
 
@@ -73,7 +74,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 
 
-	* [Taller 3: Delegación de subdominios con bind9](5_dns/t3.html)
+
 * Práctica: DNS en nuestro escenario de trabajo
 
 # Correo
