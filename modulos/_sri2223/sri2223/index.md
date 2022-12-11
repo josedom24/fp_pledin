@@ -11,6 +11,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](5_dns/t1.html)
 	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](5_dns/t2.html)
 	* [Taller 3: Delegación de subdominios con bind9](5_dns/t3.html)
+* [Práctica: Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack](5_dns/practica.html)
 
 ## Unidad 4: Cloud Computing IaaS. OpenStack 
 
@@ -31,7 +32,6 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Taller 3: Instalación de phpmyadmin](3_http/t3.html)
 	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
 * [Práctica: Instalación de nginx con PHP](3_http/practica.html)
-
 
 ## Unidad 2: Protocolo DHCP
 
@@ -63,20 +63,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
     * [Taller 7: Trabajando con contenedores LXC](0_virtualizacion/t7.html)
 * [Práctica: Virtualización en Linux](0_virtualizacion/practica.html)
 
-
-
-
 <!--
-
-
-
-
-
-
-
-
-* Práctica: DNS en nuestro escenario de trabajo
-
 # Correo
 
 # Kubernetes
