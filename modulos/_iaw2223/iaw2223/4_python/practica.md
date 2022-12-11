@@ -20,7 +20,7 @@ Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la apl
 * Ejecuta el servidor web de desarrollo y entra en la zona de administración (`\admin`) para comprobar que los datos se han añadido correctamente.
 * Crea dos preguntas, con posibles respuestas.
 * Comprueba en el navegador que la aplicación está funcionando, accede a la url `\polls`.
-* Configura el servidor web apache2 con el módulo wsgi para servir la página web. Si utilizas como entorno de desarrollo, la máquina `bravo` se acceder con el nombre `poython.tunombre.gonzalonazareno.org`. Si tu entorno de desarrollo es una máquina de openstack, elige el nombre con el accede pero entrega la dirección IP de la máquina.
+* Configura el servidor web apache2 con el módulo wsgi para servir la página web. Si utilizas como entorno de desarrollo, la máquina `bravo` se acceder con el nombre `poython.tunombre.gonzalonazareno.org`. Si tu entorno de desarrollo es una máquina de openstack, elige el nombre con el que acceder y entrega la dirección IP de la máquina.
 {% capture notice-text %}
 En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. Y pantallazos que demuestren que la aplicación está funcionando. (3 puntos si eliges como entorno de desarrollo a `bravo` y 1 punto si eliges como entorno de desarrollo una máquina de openstack).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
