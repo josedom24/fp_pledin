@@ -9,6 +9,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* [Taller 1: Desplegando aplicaciones flask con apache2 + mod_wsgi](4_python/t1.html)
 	* [Taller 2: Desplegando aplicaciones flask con apache2/nginx + uwsgi](4_python/t2.html)
 	* [Ejercicio 2: Introducción a django](4_python/ejercicio2.html)
+* [Práctica: Instalación/migración de aplicaciones web Python](4_python/practica.html)
 
 ## Unidad 3: Seguridad de aplicaciones web con HTTPS
 
@@ -40,12 +41,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 
 
 <!--
-
-
-
-
-
-* Práctica: Instalación/migración de aplicaciones web Python
+# Java
 
 # Docker
 
