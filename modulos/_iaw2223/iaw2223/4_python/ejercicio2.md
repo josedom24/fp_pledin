@@ -278,7 +278,7 @@ Después lo estudiaremos con más detenimiento, pero las funciones que se realiz
 
 ## Las vistas de la aplicación 
 
-Las vistas en djando se implementan usando plantillas (`templates`). django tiene un motor de plantillas propio. Podemos encontrar las vistas de la aplicación `polls` en el directorio `polls\templatees\polls`.
+Las vistas en djando se implementan usando plantillas (`templates`). django tiene un motor de plantillas propio. Podemos encontrar las vistas de la aplicación `polls` en el directorio `polls\templates\polls`.
 
 Por ejemplo al entrar a la ruta principal de la aplicación `polls` se nos muestra la siguiente página web:
 
