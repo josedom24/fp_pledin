@@ -43,7 +43,19 @@ title: "Implantación de aplicaciones web (2022-2023)"
 <!--
 # Java
 
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/java.pdf)
+* [Introducción a Java](5_java/tomcat.html)
+* [Práctica: Despliegue de aplicaciones Java](5_java/practica.html)
+
 # Docker
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
+* [Curso Docker](https://github.com/josedom24/curso_docker_ies)
+	* Ejercicio 1: Primeros pasos con docker
+	* Taller 1: Almacenamiento en Docker
+	* Taller 2: Redes en Docker
+	* Taller 3: Escenarios multicontenedor en Docker
+	* Taller 4: Creación de imágenes
 
 # IC
 
