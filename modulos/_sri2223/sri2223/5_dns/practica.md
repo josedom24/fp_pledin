@@ -24,6 +24,7 @@ Hay que tener en cuenta los siguientes aspectos:
 ## Servidor Web
 
 En `bravo` vamos a instalar un servidor web apache. Configura el servidor para que sea capaz de ejecutar código php. Investiga las reglas DNAT de cortafuegos que tienes que configurar en `alfa` para, cuando accedemos a la IP flotante/pública se acceda al servidor web.
+La página web será accesible con el nombre `www.tu_nombre.gonzalonazareno.org`.
 
 ## Servidor de base de datos
 
