@@ -53,6 +53,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 * Configura el servidor de aplicaciones uwsgi, creando una unidad de systemd como hicimos en el taller2) y configura nginx como proxy inverso para servir la aplicación.
 * Debes asegurarte que el contenido estático se está sirviendo: ¿Se muestra la imagen de fondo de la aplicación? ¿Se ve de forma adecuada la hoja de estilo de la zona de administración?. 
 * Desactiva en la configuración el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.
+* La página web debe ser accesible usando https, en la URL: `https://python.tudominio.algo`.
 * Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.
 
 {% capture notice-text %}
