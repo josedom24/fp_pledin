@@ -41,14 +41,14 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 	* Configura de forma permanente la regla SNAT para que las máquinas de la **Red DMZ** tengan acceso a internet.
 5. Creación de la **máquina2 (bravo)**:
 	* Está instancia se conectará a la **red DMZ**. Usando un puerto asigna a esta máquina la dirección `172.16.0.200`.
-	* Crea una instancia sobre un vollumen de 30Gb, usando una imagen de **Rocky Linux 9**. Elige el sabor `vol.normal`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
+	* Crea una instancia sobre un volumen de 30Gb, usando una imagen de **Rocky Linux 9**. Elige el sabor `vol.normal`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Deshabilita la seguridad de los puertos en la interfaz de red para que funcione de manera adecuada el NAT.
 	* Comprueba que tiene acceso a internet. **Si no tiene acceso a internet, no se han actualizado los paquetes con cloud-init, hazlo posteriormente.**.
 
 ## Instalación de los contenedores
 
 En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
-1. Crea en **máquina1 (alfa)** un linux bridge llamado `br-intra` y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (alfa)** conectada a este switch virtual y será la puerta de enlace de los contenedores.
+1. Crea en **máquina1 (alfa)** un linux bridge llamado `br-intra` (no lo hagas von `virsh` ya que se configura una reglas de cortafuego muy estrictas) y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (alfa)** conectada a este switch virtual y será la puerta de enlace de los contenedores.
 2. Instala LXC y crea dos contenedores con la distribución **Ubuntu 20.04**. Estos contenedores serán la **máquina3 (charlie)** y la **máquina4 (delta)**.
 3. Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.
 4. Conecta los contenedores al bridge `br-intra` y configúralo de forma estática con las siguientes direcciones: **máquina3 (charlie)** la `192.168.0.2` y **máquina4 (delta)** la `192.168.0.3`.
