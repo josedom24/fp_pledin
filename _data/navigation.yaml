@@ -68,6 +68,8 @@ sri2223:
         url: /sri2223/#unidad-4-cloud-computing-iaas-openstack
       - title: DNS
         url: /sri2223/#unidad-5-protocolo-dns
+      - title: Correo
+        url: /sri2223/#unidad-6-servidor-de-corro-electr%C3%B3nico
 
   - title: Módulos
     children:
