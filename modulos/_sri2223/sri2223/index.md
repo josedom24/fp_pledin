@@ -4,7 +4,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 ## Unidad 6: Servidor de correo electrónico
 
-* [Teoría]()
+* [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/correo.pdf)
 * [Curso Correo Electrónico](https://github.com/josedom24/curso_correo_electronico_ies)
 	* Taller 1: Servidor de correo en los servidores de clase
 * Práctica: Instalación y configuración de un servidor de correos en el VPS
