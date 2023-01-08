@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIOO**)
+title: "Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)"
 ---
 
 En esta tarea vamos a profundizar en los Pods multicontenedor. Como
