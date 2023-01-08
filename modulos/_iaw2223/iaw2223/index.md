@@ -53,10 +53,10 @@ title: "Implantación de aplicaciones web (2022-2023)"
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
 * [Curso Docker](https://github.com/josedom24/curso_docker_ies)
-	* Ejercicio 1: Primeros pasos con docker
-	* Taller 1: Almacenamiento en Docker
-	* Taller 2: Redes en Docker
-	* Taller 3: Escenarios multicontenedor en Docker
+	* Ejercicio 1: Introducción a los contenedores Docker
+	* Ejercicio 2: Imágenes Docker
+	* Ejercicio 3: Almacenamiento y redes en Docker
+	* Ejercicio 4: Escenarios multicontenedor en Docker
 	* Taller 4: Creación de imágenes
 
 # IC
