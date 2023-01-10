@@ -6,7 +6,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/correo.pdf)
 * [Curso Correo Electrónico](https://github.com/josedom24/curso_correo_electronico_ies)
-	* Taller 1: Servidor de correo en los servidores de clase
+	* [Taller 1: Servidor de correo en los servidores de clase](6_correo/t1.html)
 * Práctica: Instalación y configuración de un servidor de correos en el VPS
 
 ## Unidad 5: Protocolo DNS
