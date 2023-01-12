@@ -71,11 +71,14 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 * [Práctica: Virtualización en Linux](0_virtualizacion/practica.html)
 
 <!--
-# Correo
-
-# Kubernetes
 
 # Almacenamiento
+
+* [Teoria]
+
+
+
+# Kubernetes
 
 # Cluster de alta disponibilidad
 
