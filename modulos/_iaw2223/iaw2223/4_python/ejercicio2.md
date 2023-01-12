@@ -2,7 +2,7 @@
 title: Introducción a django
 ---
 
-[Django](https://www.djangoproject.com/) es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador (MVC). 
+[Django](https://www.djangoproject.com/) es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador (MVC).
 
 El modelo MVC es un patrón de diseño software que separa los datos de la aplicación, la lógica del programa y la representación de la información:
 
@@ -136,15 +136,15 @@ class Choice(models.Model):
         return self.choice_text
 ```
 
-Como vemos creamos dos clases: 
+Como vemos creamos dos clases:
 
 * `Question` que va a representar la tabla donde guardamos las preguntas de las encuestas. Una `Question` va a tener dos atributos el texto (`question_text`) y la fecha de publicación (`pub_date`). Además se creará un atributo autoincremental que será la clave primaria.
 * `Choice`: representa las posibles respuestas de una encuesta. Tiene los siguientes atributos: `question` que es una clave ajena para relacionarlo con la tabla anterior, `choice_text`: texto de la respuesta y `votes`: votos de dicha respuesta. También se crea una clave única para esta tabla.
 
-Cada **clase** representa una **tabla** y la definición de sus **atributos**. 
+Cada **clase** representa una **tabla** y la definición de sus **atributos**.
 
 **¿Qué relación tiene el modelo con la base de datos que hemos configurado en el fichero `settings.py`?**
-El programa va a trabajar para gestionar los datos con estas dos clases, pero cada vez que se haga una operación en los datos se traducirá internamente a SQL para que se guarde en la base de datos configurada. 
+El programa va a trabajar para gestionar los datos con estas dos clases, pero cada vez que se haga una operación en los datos se traducirá internamente a SQL para que se guarde en la base de datos configurada.
 
 ### Creación de las tablas
 
@@ -179,15 +179,15 @@ Running migrations:
 Podemos comprobar que cada una de las aplicaciones que forman el proyecto han creado sus tablas:
 
 ```bash
-$ sqlite3 db.sqlite3 
+$ sqlite3 db.sqlite3
 ...
 sqlite> .tables
-auth_group                  django_admin_log          
-auth_group_permissions      django_content_type       
-auth_permission             django_migrations         
-auth_user                   django_session            
-auth_user_groups            polls_choice              
-auth_user_user_permissions  polls_question            
+auth_group                  django_admin_log
+auth_group_permissions      django_content_type
+auth_permission             django_migrations
+auth_user                   django_session
+auth_user_groups            polls_choice
+auth_user_user_permissions  polls_question
 ```
 
 ### Jugando con el modelo
@@ -265,7 +265,7 @@ Para acceder a la zona de administración, arrancamos el servidor web de desarro
 
 Las rutas virtuales que vamos a usar para acceder a las distintas funciones de la aplicación se definen a nivel de proyecto y a nivel de aplicación:
 
-* A nivel de proyecto estudiamos el fichero `django_tutorial/urls.py`: 
+* A nivel de proyecto estudiamos el fichero `django_tutorial/urls.py`:
     * Donde se ha definido que cuando se acceda a la ruta `polls/` se utilizaran las rutas definidas en la aplicación `polls`.
     * Y cuando se acceda a la ruta `admin/` se utilizarán las rutas definidas en la aplicación `admin` (panel de administración).
 * A nivel de aplicación, vemos el fichero `polls/urls.py` y comprobamos que se han definido 4 rutas:
@@ -276,7 +276,7 @@ Las rutas virtuales que vamos a usar para acceder a las distintas funciones de l
 
 Después lo estudiaremos con más detenimiento, pero las funciones que se realizan en cada una de las rutas forman parte del **controlador** de la aplicación que están implementadas en el fichero `polls/views.py`.
 
-## Las vistas de la aplicación 
+## Las vistas de la aplicación
 
 Las vistas en djando se implementan usando plantillas (`templates`). django tiene un motor de plantillas propio. Podemos encontrar las vistas de la aplicación `polls` en el directorio `polls\templates\polls`.
 
