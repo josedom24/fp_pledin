@@ -2,7 +2,7 @@
 title: "Ejericio 2: Imágenes Docker"
 ---
 
-1. Descarga las siguientes imágenes: `ubuntu:18.04`, `httpd`, `tomcat:9.0.39-jdk11`, `jenkins/jenkins:lts`, `php:7.4-apache`.
+1. Descarga las siguientes imágenes: `ubuntu:20.04`, `tomcat:9.0.70-jdk11`, `jenkins/jenkins:lts`, `php:7.4-apache`.
 2. Muestras las imágenes que tienes descargadas.
 3. Crea un contenedor demonio con la imagen `php:7.4-apache`.
 4. Comprueba el tamaño del contenedor en el disco duro.
