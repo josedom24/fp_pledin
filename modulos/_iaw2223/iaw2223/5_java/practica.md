@@ -13,7 +13,7 @@ Aunque Java se utiliza normalmente para desarrollar aplicaciones a medida, tenem
 
 En esta tarea vamos a hacer un despliegue sencillo de una aplicación Java: **OpenCMS**. Siguiendo la [documentación](https://documentation.opencms.org/central/) realiza la implantación en el tomcat que instalaste en el taller1. Tienes que tener en cuenta lo siguiente:
 
-* Tienes que descargar el fichero war para realizar el despliegue.
+* Tienes que descargar el fichero war para realizar el despliegue [Enlace](https://cloud.josedomingo.org/index.php/s/cwMj6NAZ4fNMoRA).
 * Necesitas una base de datos MariaDB para que el CMS funcione.
 
 Cuando este desplegado, accede a la aplicación y realiza alguna modificación para que aparezca tu nombre en la página principal.
@@ -23,7 +23,7 @@ Cuando este desplegado, accede a la aplicación y realiza alguna modificación p
 Cuando trabajamos con tomcat no se accedemos directamente al servidor de aplicaciones, se instala un proxy inverso que nos permita el acceso a las aplicaciones. Instala un proxy inverso para acceder a las aplicaciones con las siguientes urls:
 
 * A la aplicación **rock-paper-scissors** se accede con la url `java.tunombre.org/game`.
-* A la aplicación **OpenCMS** se accede con la url `java.tunombre.org/portal`.
+* A la aplicación **OpenCMS** se accede con la url `java.tunombre.org`.
 
 
 {% capture notice-text %}
@@ -31,5 +31,5 @@ Cuando trabajamos con tomcat no se accedemos directamente al servidor de aplicac
 1. Entrega una captura de la aplicación de administración `Tomcat-Manager` donde se compruebe que las aplicaciones están desplegadas.
 2. Configuración del proxy inverso para acceder a las aplicaciones cómo nos indica la práctica.
 3. Acceso desde un navegar web a la aplicación **rock-paper-scissors** con la url `java.tunombre.org/game`.
-4. Acceso desde un navegar web a la aplicación **OpenCMS** con la url `java.tunombre.org/portal`.
+4. Acceso desde un navegar web a la aplicación **OpenCMS** con la url `java.tunombre.org`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
