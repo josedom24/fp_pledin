@@ -17,9 +17,9 @@ title: "HLC: Cloud Computing (2022-2023)"
 
 <!--
 
-## Cloud Coumputing IaaS. OpenStack 
+## Cloud Coumputing IaaS. OpenStack
 
-* Taoría
-	* Taller 1: Instalación del certificado del Gonzalo Nazareno y configuración del cliente VPN 
+* Teoría
+	* Taller 1: Instalación del certificado del Gonzalo Nazareno y configuración del cliente VPN
 
 -->
