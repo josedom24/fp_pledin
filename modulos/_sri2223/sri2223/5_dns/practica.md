@@ -4,7 +4,7 @@ title: Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack
 
 ## Servidor DNS
 
-Vamos a instalar un servidor dns en **charlie** que nos permita gestionar la resolución directa e inversa de nuestros nombres. Cada alumno va a poseer un servidor dns con autoridad sobre un subdominio de nuestro dominio principal `gonzalonazareno.org`, que se llamará `tu_nombre.gonzalonazareno.org`. 
+Vamos a instalar un servidor dns en **charlie** que nos permita gestionar la resolución directa e inversa de nuestros nombres. Cada alumno va a poseer un servidor dns con autoridad sobre un subdominio de nuestro dominio principal `gonzalonazareno.org`, que se llamará `tu_nombre.gonzalonazareno.org`.
 
 Hay que tener en cuenta los siguientes aspectos:
 
@@ -28,7 +28,7 @@ La página web será accesible con el nombre `www.tu_nombre.gonzalonazareno.org`
 
 ## Servidor de base de datos
 
-En `delta` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este seervidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
+En `delta` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este servidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
 
 {% capture notice-text %}
 ## Entrega
