@@ -53,7 +53,7 @@ Tenemos una máquina debian con 5 discos duros de 1Gb. Para empezar realiza los 
 	
 ## Compresión
 
-Por defecto,btrfs no usa ningún método de compresión ya que tenemos que indicarle cual usar (se indica durante el montaje). Así pues probemos con diferentes método de compresión: zlib, lzo, ...
+Por defecto, btrfs no usa ningún método de compresión ya que tenemos que indicarle cual usar (se indica durante el montaje). Así pues probemos con diferentes método de compresión: zlib, lzo, ...
 
 Hagamos una prueba con el método de compresión zlib:
 
