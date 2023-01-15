@@ -53,7 +53,7 @@ Tenemos una máquina debian con 5 discos duros de 1Gb. Para empezar realiza los 
 	
 ## Compresión
 
-Por defecto,btrfs no usa ningún método de compresión ya que tenemos que indicarle cual usar (se indica durante el montaje). Así pues probemos con diferentes método de compresión: zlib, lzo, ... 
+Por defecto,btrfs no usa ningún método de compresión ya que tenemos que indicarle cual usar (se indica durante el montaje). Así pues probemos con diferentes método de compresión: zlib, lzo, ...
 
 Hagamos una prueba con el método de compresión zlib:
 
@@ -74,7 +74,7 @@ Hagamos una prueba con el método de compresión zlib:
 	-rw-r--r--  1 root root 3.0G Jan 15 19:25 prueba
 	```
 
-3. Veamos cuanto ocupa dicho fichero según btrfs, ejecutando `btrfs fi usage /mnt`y nos fijamos en el campo `Used` (**La actualización de este campo no es inmediata, hay que esperar un tiempo para que se actulice**):
+3. Veamos cuanto ocupa dicho fichero según btrfs, ejecutando `btrfs fi usage /mnt` y nos fijamos en el campo `Used` (**La actualización de este campo no es inmediata, hay que esperar un tiempo para que se actualice**):
 
 	```
 	...
@@ -85,13 +85,13 @@ Hagamos una prueba con el método de compresión zlib:
 
 ## Copy on Write (COW) 
 
-La técnica "copy on write" sirve para que al copiar un fichero, este realmente no se copia, sino que se crean punteros que apuntan al fichero original. Solo cuando se producen cambios sobre ese fichero, se crea realmente la copia. 
+La técnica "copy on write" sirve para que al copiar un fichero, este realmente no se copia, sino que se crean punteros que apuntan al fichero original. Solo cuando se producen cambios sobre ese fichero, se crea realmente la copia.
 
 1. Para probar esto, vamos a crear un fichero y comprobar el tamaño que ocupa en el disco (hemos borrado el fichero `prueba` del apartado anterior y hemos vuelto a montar el sistema de ficheros sin compresión):
 
 	```
 	umount /mnt
-	mount  /dev/vdb /mnt
+	mount /dev/vdb /mnt
 	cd /mnt
 	
 	dd if=/dev/zero of=/mnt/prueba bs=2048 count=200k
@@ -147,7 +147,7 @@ apt install duperemove
 3. Ahora usaremos el paquete que hemos descargado antes para hacer la deduplicación:
 
 	```
-	duperemove -d  --lookup-extents=no /mnt
+	duperemove -d --lookup-extents=no /mnt
 	```
 
 	Como vemos ha encontrado dos ficheros iguales y podemos comprobar que aunque tenemos dos ficheros (aproximadamente 780 Mb), en realizada ocupa sólo lo que ocupa uno de los ficheros:
@@ -159,7 +159,7 @@ apt install duperemove
 	...
 	```
 
-	Como vemos, ha funcionado, volviendo a ocupar el mismo espacio, ya que ambos ficheros eran idénticos. 
+	Como vemos, ha funcionado, volviendo a ocupar el mismo espacio, ya que ambos ficheros eran idénticos.
 
 ## Redimensión 
 
@@ -294,5 +294,3 @@ btrfs balance start -dconvert=raid1 -mconvert=raid1 /mnt
 ```
 
 Si volvemos a ver la información del sistema de ficheros, vemos que nos indica que es un RAID 1, para ello volvemos a ejecutar `btrfs fi usage /mnt` y ejecutando `df -h` vemos que `mnt` ocupa 2,5 Gb.
-
-	
