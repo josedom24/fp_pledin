@@ -4,7 +4,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 ## Unidad 7: Almacenamiento
 
-* [Teoria](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/almacenamiento.pdf)
+* [Teoria](https://github.com/josedom24/presentaciones/raw/main/servicios/almacenamiento.pdf)
 * [Introducción al sistema de ficheros btrfs](7_almacenamiento/btrfs.html)
 * [Introducción a iSCSI](7_almacenamiento/iscsi.html)
 * [Introducción a DRBD](7_almacenamiento/drbd.html)
