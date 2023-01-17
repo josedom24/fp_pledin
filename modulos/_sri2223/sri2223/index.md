@@ -2,6 +2,18 @@
 title: "Servicios de Red e Internet + HLC (2022-2023)"
 ---
 
+## Unidad 7: Almacenamiento
+
+* [Teoria](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/almacenamiento.pdf)
+* [Introducción al sistema de ficheros btrfs](btrfs.html)
+* [Introducción a iSCSI](7_almacenamiento/iscsi.html)
+* [Introducción a DRBD](7_almacenamiento/drbd.html)
+* [Taller de GlusterFS](https://github.com/josedom24/taller_glusterfs)
+	* Taller 1: Gestión de pool de almacenamiento lógico en KVM/libvirt
+	* Taller 2: Introducción a iSCSI
+	* Taller 3: Creación de un cluster DRBD. OCFS2/GFS2
+
+
 ## Unidad 6: Servidor de correo electrónico
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/correo.pdf)
@@ -72,16 +84,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 
 <!--
 
-# Almacenamiento
-
-* [Teoria](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/almacenamiento.pdf)
-* [Introducción a iSCSI](7_almacenamiento/iscsi.html)
-* [Introducción a DRBD](7_almacenamiento/drbd.html)
-* [Taller de GlusterFS](https://github.com/josedom24/taller_glusterfs)
-	* Ejercicio 1: Sistemas de ficheros avanzados Btrfs
-	* Taller 1: Gestión de pool de almacenamiento lógico en KVM/libvirt
-	* Taller 2: Introducción a iSCSI
-	* Taller 3: Creación de un cluster DRBD. OCFS2/GFS2
+	
 
 # Kubernetes
 

@@ -72,6 +72,9 @@ sri2223:
         url: /sri2223/#unidad-5-protocolo-dns
       - title: Correo
         url: /sri2223/#unidad-6-servidor-de-correo-electr%C3%B3nico
+      - title: Almacenamiento
+        url: /sri2223/#unidad-7-Almacenamiento
+
 
   - title: Módulos
     children:
