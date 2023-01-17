@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 1: Sistemas de ficheros avanzados Btrfs"
+title: "Introducción al sistema de ficheros btrfs"
 ---
 
 Para hacer este ejercicio puedes usar este fichero [`Vagranfile`](files/btrfs/Vagrantfile).
