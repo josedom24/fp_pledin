@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+    config.vm.define :servidor do |servidor|
+      servidor.vm.box = "debian/bullseye64"
+      servidor.vm.hostname = "servidor"
+      servidor.vm.synced_folder ".", "/vagrant", disabled: true
+      servidor.vm.provider :libvirt do |libvirt|
+          libvirt.storage :file, :size => '1G'
+          libvirt.storage :file, :size => '2G'
+          libvirt.storage :file, :size => '3G'
+      end
+    end
+    config.vm.define :cliente do |cliente|
+      cliente.vm.box = "debian/bullseye64"
+      cliente.vm.hostname = "cliente"
+      cliente.vm.synced_folder ".", "/vagrant", disabled: true
+      cliente.vm.provider :libvirt do |libvirt|
+      end
+
+   end
+  end
+
+  

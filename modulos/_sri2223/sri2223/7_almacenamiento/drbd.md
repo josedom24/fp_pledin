@@ -1,6 +1,8 @@
 ---
-title: Introducción a DRBD
+title: Introducción a DRBD y OCFS2
 ---
+
+## DRBD
 
 **DRBD** (*Distributed Replicated Block Device*) es un sistema de almacenamiento replicado distribuido para la plataforma Linux.
 
@@ -145,3 +147,78 @@ $ mount /dev/drbd1 /mnt
 ```
 
 Para que esto funcione de forma adecuada tenemos que usar un **Sistema de Ficheros en Clúster o Distribuidos** (por ejemplo OCFS2, GlusterFS,...)
+
+## OCFS2
+
+**OCFS** (Oracle Cluster File System) es un sistema de archivos distribuido de alto rendimiento desarrollado por Oracle Corporation. Es un sistema de archivos nativo de clúster que permite a varios nodos del clúster acceder y modificar los mismos archivos al mismo tiempo.
+
+Vamos a usar dos servicios:
+* **o2cb**: Encargado de gestionar el clúster.
+* **ocfs2**: Encargado de gestionar el sistema de fichero distribuido.
+
+Para la instalación, ejecutamos en los dos nodos:
+
+```
+apt install ocfs2-tools
+```
+
+En primer lugar tenemos que crear un clúster ocfs2 indicando los nodos que van
+a formar parte de él. Ejecutamos lo siguiente en **uno de los nodos** e indicamos el nombre del clúster que vamos a crear:
+
+```
+o2cb add-cluster micluster
+```
+
+Ahora tenemos que añadir los nodos del clúster, desde uno de los nodos ejecutamos:
+
+```
+o2cb add-node micluster nodo1 --ip 10.1.1.101
+o2cb add-node micluster nodo2 --ip 10.1.1.102
+```
+
+Podemos ver el estado del clúster ejecutando:
+
+```
+o2cb list-cluster micluster   
+
+node:
+	number = 0
+	name = nodo1
+	ip_address = 10.1.1.101
+	ip_port = 7777
+	cluster = micluster
+
+node:
+	number = 1
+	name = nodo2
+	ip_address = 10.1.1.102
+	ip_port = 7777
+	cluster = micluster
+
+cluster:
+	node_count = 2
+	heartbeat_mode = local
+	name = micluster
+```
+A continuación, copiamos el contenido del fichero `/etc/ocfs2/cluster.conf` (que prácticamente es la salida del comando anterior) en la otra máquina.
+
+En una de las máquinas editamos el fichero `/etc/default/o2cb` y modificamos los siguientes parámetros:
+
+```
+# O2CB_ENABLED: 'true' means to load the driver on boot.
+O2CB_ENABLED=true
+
+# O2CB_BOOTCLUSTER: If not empty, the name of a cluster to start.
+O2CB_BOOTCLUSTER=micluster  # Cambiamos el valor de este parámetro por el nombre de nuestro cluster.
+```
+
+
+Ahora tenemos que formatear el dispositivo drbd, de nuevo en un solo nodo:
+
+```
+mkfs.ocfs2 --cluster-stack=o2cb --cluster-name=micluster /dev/drbd1
+```
+
+
+
+
