@@ -8,7 +8,7 @@ En estas práctica vamos a desplegar un [CMS python](https://wiki.python.org/moi
 
 ## Tarea 1: Instalación de Mezzanine en el entorno de desarrollo
 
-Instala localmente (usando un entrono virtual) el CMS Mezzazine. Realiza una modificación en la página web. Guarda los ficheros generados durante la instalación en un repositorio github.
+Instala localmente (usando un entorno virtual) el CMS Mezzanine. Realiza una modificación en la página web. Guarda los ficheros generados durante la instalación en un repositorio github.
 
 {% capture notice-text %}
 Entrega una breve documentación de los pasos para realizar la instalación. Entrega una captura de pantalla donde se vea el acceso al servidor web de desarrollo (2 punto)
