@@ -280,10 +280,11 @@ btrfs subvolume set-default 274 /mnt
 
 Ahora, si desmontamos el sistema de ficheros y lo volvemos a montar, debería haberse montado el snapshot en `/mnt`:
 
+```
 ls -l /mnt
 total 3145728
 -rw-r--r-- 1 root root 3221225472 Dec  5 14:47 prueba.txt
-
+```
 	
 ## RAID
 
