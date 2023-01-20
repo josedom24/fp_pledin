@@ -11,6 +11,7 @@ Tenemos una máquina debian con 5 discos duros de 1Gb. Para empezar realiza los 
 	```
 	apt install btrfs-progs
 	```
+
 2. Formatea con btrfs todos los discos:
 
 	```
@@ -21,7 +22,8 @@ Tenemos una máquina debian con 5 discos duros de 1Gb. Para empezar realiza los 
 	mkfs.btrfs /dev/vdf
 	```
 
-3. Comprueba que el formato ha sido correcto ejecutando `btrfs -f`.
+3. Comprueba que el formato ha sido correcto ejecutando `btrfs fi show`.
+
 4. Una vez que los hemos formateado, podemos empezar a trabajar con ellos. Para empezar, vamos a montar el primer disco en el directorio `/mnt`:
 
 	```
