@@ -19,7 +19,7 @@ Clona el repositorio en tu equipo, mira las versiones de los paquetes necesarios
 
 Crea un entorno virtual con el módulo `venv` e instala en él los paquetes necesarios para que el programa funcione. Una vez instalado, ejecuta la aplicación con el servidor de desarrollo y comprueba que funciona.
 
-## Despliegue en el entrono de producción
+## Despliegue en el entorno de producción
 
 ¿Cómo podemos hacer que un servidor web como apache2 sea capaz de servir una aplicación escrita en python? Para ello se utiliza un protocolo que nos permite comunicar al servidor web con la aplicación web: **WSGI (Web Server Gateway Interface)**.
 
