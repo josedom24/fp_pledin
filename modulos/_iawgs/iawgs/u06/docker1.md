@@ -54,12 +54,12 @@ Creamos nuestra imagen, desde el directorio donde tenemos el `Dockerfile`, ejecu
 3. Crea un fichero `Dockerfile` y genera una imagen para que nuestra página web sea servida por el servidor web nginx (utiliza la imagen base oficial).
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Creación de un contenedor en el entrono de desarrollo
+## Creación de un contenedor en el entorno de desarrollo
 
 Vamos a crear un contenedor en nuestro entorno de desarrollo para ver si está funcionando de manera correcta.
 
 {% capture notice-text %}
-1. Prueba si funcionan las imágenes generadas en el apartado anterior creando un contenedor en tu entrono de desarrollo.
+1. Prueba si funcionan las imágenes generadas en el apartado anterior creando un contenedor en tu entorno de desarrollo.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Distribución de nuestra imagen (Docker Hub)
@@ -93,7 +93,7 @@ Podemos generar nuestras imágenes automáticamente desde Docker Hub,
 
 Sigue este [enlace](https://docs.docker.com/docker-hub/builds/) para más información.
 
-## Despliegue de la aplicación (página estática) en nuestro entrono de producción
+## Despliegue de la aplicación (página estática) en nuestro entorno de producción
 
 En el el entorno de producción, bajamos la imagen de Docker Hub y creamos el contenedor:
 
