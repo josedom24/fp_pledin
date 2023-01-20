@@ -49,7 +49,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 		    }
 		}
 
-* Crea una copia de seguridad de la base de datos. Ten en cuenta que en el entorno de desarrolla vas a tener una base de datos sqlite, y en el entorno de producción una mariadb, por lo tanto es recomendable para hacer la copia de seguridad y recuperarla con los comandos: `python manage.py dumpdata` y `python manage.py loaddata`, para [más información](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata).
+* Crea una copia de seguridad de la base de datos. Ten en cuenta que en el entorno de desarrollo vas a tener una base de datos sqlite, y en el entorno de producción una mariadb, por lo tanto es recomendable para hacer la copia de seguridad y recuperarla con los comandos: `python manage.py dumpdata` y `python manage.py loaddata`, para [más información](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata).
 * Configura el servidor de aplicaciones uwsgi, creando una unidad de systemd como hicimos en el taller 2 y configura nginx como proxy inverso para servir la aplicación.
 * Debes asegurarte que el contenido estático se está sirviendo: ¿Se muestra la imagen de fondo de la aplicación? ¿Se ve de forma adecuada la hoja de estilo de la zona de administración?
 * Desactiva en la configuración el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.
@@ -62,7 +62,7 @@ En este momento, muestra al profesor la aplicación funcionando. Entrega una doc
 
 ## Tarea 3: Modificación de nuestra aplicación
 
-Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entrono de desarrollo, y luego tendrás que llevar los cambios a producción:
+Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entorno de desarrollo, y luego tendrás que llevar los cambios a producción:
 
 1. Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo `django_tutorial/polls/templates/polls/index.html`.
 2. Modifica la imagen de fondo que se ve la aplicación.

@@ -56,7 +56,7 @@ En este momento, muestra al profesor la aplicación funcionando. Entrega una doc
 
 ## Tarea 3: Modificación de nuestra aplicación
 
-Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entrono de desarrollo, y luego tendrás que llevar los cambios a producción:
+Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entorno de desarrollo, y luego tendrás que llevar los cambios a producción:
 
 1. Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo `django_tutorial/polls/templates/polls/index.html`.
 2. Modifica la imagen de fondo que se ve la aplicación.

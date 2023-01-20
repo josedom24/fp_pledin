@@ -37,7 +37,7 @@ Por lo tanto en el contexto también tenemos que crear el fichero `script.sh` qu
     sed -i "s/#ServerName www.example.com/ServerName ${APACHE_SERVER_NAME}/g" /etc/apache2/sites-available/000-default.conf
     apache2ctl -D FOREGROUND
 
-Es decir, reemplaza de forma adecuada la configuración de apache2 con el valor de la variable de entrono y ejecuta apache2.
+Es decir, reemplaza de forma adecuada la configuración de apache2 con el valor de la variable de entorno y ejecuta apache2.
 
 ## Prueba de funcionamiento
 
@@ -83,7 +83,7 @@ Y ahora comprobamos la configuración que hemos cambiado:
 La mayoría de las imágenes que encontramos en Docker Hub se pueden configurar en el momento de crear el contenedor por medio de variables de entorno. 
 
 {% capture notice-text %}
-1. Accede a la documentación de la imagen de mariadb en Docker Hub y comprueba las variables de entrono que podemos cambiar para configurar el contenedor.
+1. Accede a la documentación de la imagen de mariadb en Docker Hub y comprueba las variables de entorno que podemos cambiar para configurar el contenedor.
 2. Crea un contenedor desde la imagen de mariadb, que tenga un usuario que se llame `usuario`, una contraseña que sea `asdasd` y una base de datos que sea `mibasededatos`.
 3. Accede al puerto 3306 del contenedor y comprueba que efectivamente se ha creado de forma adecuada. Para ello ejecuta:
 
