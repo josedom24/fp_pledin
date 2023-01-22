@@ -1,5 +1,5 @@
 ---
-title: "Ejericio 3: Almacenamiento y redes en Docker"
+title: "Ejercicio 3: Almacenamiento y redes en Docker"
 ---
 
 ## Almacenamiento
