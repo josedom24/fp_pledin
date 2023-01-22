@@ -225,7 +225,7 @@ Y recargamos sysctl:
 sysctl -p
 ```
 
-Antes de formatear el disco, tenemos que registrar el clúster en ambos nodos y comprobar que está **online**:
+Antes de formatear el disco, tenemos que registrar el clúster (activar el clúster) en ambos nodos y comprobar que está **online**:
 
 ```
 o2cb register-cluster micluster
