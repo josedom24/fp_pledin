@@ -10,8 +10,8 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 * [Introducción a DRBD](7_almacenamiento/drbd.html)
 * [Introducción a GlusterFS](https://github.com/josedom24/taller_glusterfs)
 	* [Taller 1: Gestión de pool de almacenamiento lógico en KVM/libvirt](7_almacenamiento/t1.html)
-	* Taller 2: Introducción a iSCSI
-	* Taller 3: Creación de un cluster DRBD + OCFS2
+	* [Taller 2: Introducción a iSCSI](7_almacenamiento/t2.html)
+	* [Taller 3: Creación de un cluster DRBD + OCFS2](7_almacenamiento/t3.html)
 
 
 ## Unidad 6: Servidor de correo electrónico
