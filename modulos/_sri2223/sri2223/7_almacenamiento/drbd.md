@@ -212,13 +212,64 @@ O2CB_ENABLED=true
 O2CB_BOOTCLUSTER=micluster  # Cambiamos el valor de este parámetro por el nombre de nuestro cluster.
 ```
 
+Para que o2cb funcione adecuadamente, añadimos los siguientes parámetros al fichero `/etc/sysctl.conf`:
+
+```
+kernel.panic = 30
+kernel.panic_on_oops = 1
+```
+
+Y recargamos sysctl:
+
+```
+sysctl -p
+```
+
+Antes de formatear el disco, tenemos que registrar el clúster en ambos nodos y comprobar que está **online**:
+
+```
+o2cb register-cluster micluster
+o2cb cluster-status micluster
+```
 
 Ahora tenemos que formatear el dispositivo drbd, de nuevo en un solo nodo:
 
 ```
 mkfs.ocfs2 --cluster-stack=o2cb --cluster-name=micluster /dev/drbd1
 ```
+Y podemos comprobar que se ha formateado de forma adecuada en los dos nodos ejecutando:
 
+```
+o2info --volinfo /dev/drbd1
+```
 
+Ya tendríamos listo nuestro cluster, solo nos quedaría montarlo en ambas máquinas:
 
+```
+mount /dev/drbd1 /mnt
+```
 
+Podríamos probar que podemos escribir de forma simultánea, ejecutando la siguiente instrucción en cada nodo:
+
+	En el nodo1:
+
+	```
+	for ((;;)) do date >> /mnt/fecha_nodo1.txt;sleep 1; done
+	```
+
+	En el nodo 2:
+	```
+	for ((;;)) do date >> /mnt/fecha_nodo2.txt;sleep 1; done
+	```
+
+	Puedes acceder a uno de los nodos desde otra terminal y comprobar los ficheros que se están escribiendo en el directorio `/mnt`:
+
+	```
+	root@nodo1:/mnt# ls -al
+	total 16
+	drwxr-xr-x  3 root root 3896 Jan 22 13:06 .
+	drwxr-xr-x 19 root root 4096 Jan 22 12:53 ..
+	-rw-r--r--  1 root root 1740 Jan 22 13:08 fecha_nodo1.txt
+	-rw-r--r--  1 root root 1885 Jan 22 13:08 fecha_nodo2.txt
+	```
+	
