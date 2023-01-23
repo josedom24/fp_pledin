@@ -1,5 +1,5 @@
 ---
-title: "Ejericio 2: Imágenes Docker"
+title: "Ejercicio 2: Imágenes Docker"
 ---
 
 1. Descarga las siguientes imágenes: `ubuntu:20.04`, `tomcat:9.0.70-jdk11`, `jenkins/jenkins:lts`, `php:7.4-apache`.
