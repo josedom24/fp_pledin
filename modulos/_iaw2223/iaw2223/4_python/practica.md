@@ -7,7 +7,7 @@ title: Despliegue de aplicaciones python
 Vamos a desplegar la aplicación del tutorial de django. 
 Como entorno de desarrollo tienes dos opciones:
 
-1. Que tu entorno de desarrollo se la máquina `bravo` de tu entorno de desarrollo. Opción que dará más puntos.
+1. Que tu entorno de desarrollo se la máquina `bravo` de tu infraestructura de OpenStack. Opción que dará más puntos.
 2. Que tu entorno de desarrollo sea una máquina de openstack con el sistema operativo que quieras. Opción que dará menos puntos.
 
 Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:
