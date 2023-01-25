@@ -9,4 +9,3 @@ Para comprobar que el ejercicio es correcto comprueba la salida de las siguiente
 * La salida de `minikube status`.
 * La salida de `kubectl get nodes -o wide`.
 
-
