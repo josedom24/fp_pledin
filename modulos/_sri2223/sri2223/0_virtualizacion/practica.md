@@ -10,7 +10,7 @@ Vamos a crear una máquina virtual por medio de un script.
 
 Vamos a crear una imagen base que utilizaremos para la creación de la máquina que utilizaremos en la práctica. Para ello:
 
-1. Crea con `virt-install` una imagen de Debian Bullseye con formato qcow2 y un tamaño máximo de 3GiB. Esta imagen se denominará `bullseye-base.qcow2`. El sistema de ficheros del sistema instalado en esta imagen será XFS. La imagen debe estará configurada para poder usar hasta dos interfaces de red por dhcp. El usuario `debian` con contraseña `debian` puede utilizar `sudo` sin contraseña.
+1. Crea con `virt-install` una imagen de Debian Bullseye con formato qcow2 y un tamaño máximo de 3GiB. Esta imagen se denominará `bullseye-base.qcow2`. El sistema de ficheros del sistema instalado en esta imagen será XFS. La imagen estará configurada para poder usar hasta dos interfaces de red por dhcp. El usuario `debian` con contraseña `debian` puede utilizar `sudo` sin contraseña.
 2. Crea un par de claves ssh en formato ecdsa y sin frase de paso y agrega la clave pública al usuario `debian`.
 3. Utiliza la herramienta `virt-sparsify` para reducir al máximo el tamaño de la imagen.
 4. Sube la imagen base a alguna ubicación pública desde la que se pueda descargar.
