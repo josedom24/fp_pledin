@@ -2,6 +2,13 @@
 title: "Servicios de Red e Internet + HLC (2022-2023)"
 ---
 
+## Unidad 8: Kubernetes
+
+* [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
+* [Curso Kuberenetes](https://github.com/josedom24/curso_kubernetes_ies)
+	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
+
+
 ## Unidad 7: Almacenamiento
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/almacenamiento.pdf)
