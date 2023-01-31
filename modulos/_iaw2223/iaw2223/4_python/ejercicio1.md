@@ -1,5 +1,5 @@
 ---
-title: "Ejericio 1: Ejecución de aplicaciones python flask"
+title: "Ejercicio 1: Ejecución de aplicaciones python flask"
 ---
 
 1. Crea una máquina en OpenStack con la que vamos a trabajar los ejercicios y talleres de esta unidad.
