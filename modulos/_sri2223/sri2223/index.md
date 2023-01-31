@@ -9,6 +9,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
 	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
 	* [Taller 1: Trabajando con Pods](8_k8s/t1.html)
+	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
 
 ## Unidad 7: Almacenamiento
 
@@ -91,20 +92,6 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 * [Práctica: Virtualización en Linux](0_virtualizacion/practica.html)
 
 <!--
-
-	
-
-# Kubernetes
-
-* [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kuberenetes.pdf)
-* [Curso Kuberenetes](https://github.com/josedom24/curso_kubernetes_ies)
-	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
-	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
-	* [Taller 1: Trabajando con Pods](8_k8s/t1.html)
-	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
-	
-
-
 # Cluster de alta disponibilidad
 
 -->
