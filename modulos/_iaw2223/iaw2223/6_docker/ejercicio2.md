@@ -6,7 +6,7 @@ title: "Ejercicio 2: Imágenes Docker"
 2. Muestras las imágenes que tienes descargadas.
 3. Crea un contenedor demonio con la imagen `php:7.4-apache`.
 4. Comprueba el tamaño del contenedor en el disco duro.
-5. Con la instrucción `docker cp` podemos copiar ficheros a o desde un contenedor. Puedes encontrar información es esta [página](https://docs.docker.com/engine/reference/commandline/cp/). 
+5. Con la instrucción `docker cp` podemos copiar ficheros a o desde un contenedor. Puedes encontrar información en esta [página](https://docs.docker.com/engine/reference/commandline/cp/).
     Crea un fichero en tu ordenador, con el siguiente contenido:
 
     ```php
