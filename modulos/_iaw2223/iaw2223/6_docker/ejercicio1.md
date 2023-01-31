@@ -1,5 +1,5 @@
 ---
-title: "Ejericio 1: Primeros pasos con Docker"
+title: "Ejercicio 1: Primeros pasos con Docker"
 ---
 
 1. Instala docker en una máquina y configúralo para que se pueda usar con un usuario sin privilegios.
