@@ -2,7 +2,7 @@
 title: "Práctica: Servidor de correos"
 ---
 
-Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será `mail.tudominio.es` (Este es el nombre que deberá aparecer en el registro MX).
+Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será `mail.tudominio.es` (este es el nombre que deberá aparecer en el registro MX).
 
 ## Gestión de correos desde el servidor
 
@@ -47,7 +47,7 @@ Configura el `cron` para enviar correo al usuario `root`. Comprueba que están l
 
 * **Tarea 9**: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.
 
-    Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt para el dominio `mail.iesgnXX.es`. Recuerda que para el ofrecer el cifrado tiene varias soluciones:
+    Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt para tu dominio `mail.tudominio.es`. Recuerda que para el ofrecer el cifrado tiene varias soluciones:
 
     * **IMAP con STARTTLS**: STARTTLS transforma una conexión insegura en una segura mediante el uso de SSL/TLS. Por lo tanto usando el mismo puerto 143/tcp tenemos cifrada la comunicación.
     * **IMAPS**: Versión segura del protocolo IMAP que usa el puerto 993/tcp.
