@@ -12,6 +12,8 @@ title: "Implantación de aplicaciones web (2022-2023)"
 	* [Taller 1: Almacenamiento y redes en Docker](6_docker/t1.html)
 	* [Taller 2: Escenarios multicontenedor en Docker](6_docker/t2.html)
 	* [Taller 3: Creación de imágenes Docker](6_docker/t3.html)
+* [Práctica 1: Implantación de aplicaciones web PHP en docker](6_docker/practica1.html)
+* [Práctica 2: Implantación de aplicaciones web Python en docker](6_docker/practica2.html)
 
 ## Unidad 5: Implantación de aplicaciones web Java
 
