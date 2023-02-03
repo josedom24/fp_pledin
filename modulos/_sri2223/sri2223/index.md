@@ -10,6 +10,7 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
 	* [Taller 1: Trabajando con Pods](8_k8s/t1.html)
 	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
+	* [Taller 3: Trabajando con Deployments](8_k8s/t3.html)
 
 ## Unidad 7: Almacenamiento
 
