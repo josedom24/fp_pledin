@@ -1,5 +1,5 @@
 ---
-title: "Ejercicio 3: Creando un cluster de MySQL
+title: "Ejercicio 3: Creando un cluster de MySQL"
 ---
 
 Siguiendo el [Ejemplo2: Despliegue de un cluster de MySQL](https://github.com/josedom24/curso_kubernetes_ies/blob/main/modulo9/ejemplo2.md) de esta unidad, crea un clúster de MySQL con un primario y un secundario y realiza algunas pruebas para comprobar su funcionamiento.
