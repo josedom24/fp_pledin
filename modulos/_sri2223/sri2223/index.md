@@ -97,6 +97,18 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 * [Práctica: Virtualización en Linux](0_virtualizacion/practica.html)
 
 <!--
-# Cluster de alta disponibilidad
+# Clúster de alta disponibilidad
 
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/clusterHA.pdf)
+* [Escenarios de HA con pacemaker y corosync](https://github.com/josedom24/escenarios-HA)
+    * [Escenario 1: Balanceo de carga por DNS](https://github.com/josedom24/escenarios-HA/tree/master/01-Balanceo-DNS)
+    * [Escenario 2: Balanceo de carga por DNS con nombre virtuales](https://github.com/josedom24/escenarios-HA/tree/master/02-Balanceo-DNS-Delegado)
+    * [Escenario 3: Balanceo de carga con HAProxy](https://github.com/josedom24/escenarios-HA/tree/master/03-Balanceo-HAProxy)
+    * [Escenario 4: HA con pacemaker y corosync. IP Failover](https://github.com/josedom24/escenarios-HA/tree/master/04-HA-IPFailover)
+    * [Escenario 5: HA con pacemaker y corosync. IP Failover + Apache2](https://github.com/josedom24/escenarios-HA/tree/master/05-HA-IPFailover-Apache2)
+    * [Escenario 6: HA con pacemaker y corosync. IP Failover + Apache2 + DRBD](https://github.com/josedom24/escenarios-HA/tree/master/06-HA-IPFailover-Apache2%2BDRBD)
+    * [Escenario 7: HA con pacemaker y corosync. IP Failover + Apache2 + RDBD + GFS2 (Activo-Activo)](https://github.com/josedom24/escenarios-HA/tree/master/07-HA-IPFailover-Apache2%2BDRBD%2BGFS2)
+
+* [Introducción a los cluster de HA con Galera MariaDB](https://www.josedomingo.org/pledin/2022/02/galera-mariadb/)
+* [Práctica: Cluster de Alta Disponibilidad](9_clusterha/practica.html)
 -->
