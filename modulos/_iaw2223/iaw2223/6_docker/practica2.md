@@ -2,7 +2,7 @@
 title: "Práctica: Implantación de aplicaciones web Python en docker"
 ---
 
-Queremos desplegar en docker la aplicación escrita en python django: **tutorial de django **, que desplegamos en la tarea Despliegue de aplicaciones python.
+Queremos desplegar en docker la aplicación escrita en python django: **tutorial de django**, que desplegamos en la tarea Despliegue de aplicaciones python.
 
 Tienes que tener en cuenta los siguientes aspectos:
 
