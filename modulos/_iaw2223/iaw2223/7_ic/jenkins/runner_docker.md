@@ -2,7 +2,7 @@
 title: Instalación de docker como runner de Jenkins
 ---
 
-Hasta ahora hemos estado trabajando con una instalación de jenkins sobre docker y hemos comprado que las tareas que se realizan se hacen sobre el mismo nodo.
+Hasta ahora hemos estado trabajando con una instalación de jenkins sobre docker y hemos comprobado que las tareas que se realizan se hacen sobre el mismo nodo.
 
 En este apartado vamos a configurar jenkins para que use contenedores docker como runner, es decir cuando ejecutemos un pipeline se creará un contenedor docker donde se realizarán las tareas. Esto tiene muchas ventajas, ya que no necesito instalar en la máquina de jenkins las herramientas que necesito para ejecutar las tareas, y además podemos usar cualquier imagen docker para que ejecute dichas tareas.
 
