@@ -4,7 +4,7 @@ title: Introducción a los Pipelines de Jenkins
 
 En Jenkins se pueden realizar distintos tipos de tareas automatizadas. Pero nosotros vamos a usar los Pipelines.
 
-Un **Pipeline** es una secuencia de tareas automatizadas que definen el ciclo de vida de la aplicación de nuestro flujo de integración/entrega/despliegue continuo. Podemos decir que un **Pipeline** Un pipeline es un conjunto de instrucciones del proceso que siga una aplicación desde el repositorio de control de versiones hasta que llega a los usuarios.
+Un **Pipeline** es una secuencia de tareas automatizadas que definen el ciclo de vida de la aplicación de nuestro flujo de integración/entrega/despliegue continuo. Podemos decir que un **Pipeline** es un conjunto de instrucciones del proceso que siga una aplicación desde el repositorio de control de versiones hasta que llega a los usuarios.
 
 ![pipelines](img/pipelines.png)
 
