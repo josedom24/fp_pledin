@@ -63,3 +63,13 @@ pipeline {
 Al ejecutar el pipeline podemos observar como se ha descargado la imagen, ha creado un contenedor, ha ejecutado la instrucción indicada y finalmente borra el contenedor.
 
 ![docker](img/docker3.png)
+
+---
+
+## Índice
+
+* [Instalación de Jenkins en docker](instalacion_docker.html)
+* [Introducción a los Pipelines de Jenkins](pipelines.html)
+* Instalación de docker como runner de Jenkins
+* [Creación, testeo y publicación de imágenes docker desde Jenkins](gendocker.html)
+* [Ejecución de un pipeline en varios runner](runner.html)

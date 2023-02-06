@@ -82,3 +82,13 @@ Algunas cosas a tener en cuenta:
 1. Al clonar el repositorio hemos indicado la rama.
 2. `agent any`: Este pipeline se ejecuta en el nodo principal.
 3. `USUARIO = 'USER_DOCKERHUB'`, las credenciales del tipo username/pasword se leen de esta forma.
+
+---
+
+## Índice
+
+* [Instalación de Jenkins en docker](instalacion_docker.html)
+* [Introducción a los Pipelines de Jenkins](pipelines.html)
+* [Instalación de docker como runner de Jenkins](runner_docker.html)
+* Creación, testeo y publicación de imágenes docker desde Jenkins
+* [Ejecución de un pipeline en varios runner](runner.html)
