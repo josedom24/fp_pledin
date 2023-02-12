@@ -5,7 +5,7 @@ title: "Implantación de aplicaciones web (2022-2023)"
 ## Unidad 7: Introducción a la integración continúa y despliegue continuo 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/ic.pdf)
-* [Introducción a Jenkins](jenkins)
+* [Introducción a Jenkins](7_ic/jenkins)
 	* Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)
 	* Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)
 	* Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)
