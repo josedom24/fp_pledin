@@ -2,6 +2,16 @@
 title: "Implantación de aplicaciones web (2022-2023)"
 ---
 
+## Unidad 7: Introducción a la integración continúa y despliegue continuo 
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/ic.pdf)
+* [Introducción a Jenkins](jenkins)
+	* Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)
+	* Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)
+	* Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)
+    * Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)
+	* Taller 3: Integración continua de aplicación django con Jenkins (Test)
+
 ## Unidad 6: Docker
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
@@ -59,15 +69,4 @@ title: "Implantación de aplicaciones web (2022-2023)"
 * [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/practica.html)
 
 
-
-<!--
-
-
-* [Práctica: Implantación de aplicaciones web PHP en docker](6_docker/practica_docker_php.html)
-* [Práctica: Implantación de aplicaciones web Python en docker](6_docker/practica_docker_python.html)
-
-
-# IC
-
--->
 
