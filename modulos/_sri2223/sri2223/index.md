@@ -2,6 +2,11 @@
 title: "Servicios de Red e Internet + HLC (2022-2023)"
 ---
 
+## Unidad 9: Clúster de alta disponibilidad
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/clusterHA.pdf)
+
+
 ## Unidad 8: Kubernetes
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
@@ -97,9 +102,6 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
 * [Práctica: Virtualización en Linux](0_virtualizacion/practica.html)
 
 <!--
-# Clúster de alta disponibilidad
-
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/clusterHA.pdf)
 * [Escenarios de HA con pacemaker y corosync](https://github.com/josedom24/escenarios-HA)
     * [Escenario 1: Balanceo de carga por DNS](https://github.com/josedom24/escenarios-HA/tree/master/01-Balanceo-DNS)
     * [Escenario 2: Balanceo de carga por DNS con nombre virtuales](https://github.com/josedom24/escenarios-HA/tree/master/02-Balanceo-DNS-Delegado)
