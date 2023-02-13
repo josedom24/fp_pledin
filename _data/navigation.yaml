@@ -78,6 +78,8 @@ sri2223:
         url: /sri2223/#unidad-7-almacenamiento
       - title: Kubernetes
         url: /sri2223/#unidad-8-kubernetes
+      -title: Alta Disponibilidad
+        url: /sri2223/#unidad-9-cl%C3%BAster-de-alta-disponibilidad
 
 
   - title: Módulos
