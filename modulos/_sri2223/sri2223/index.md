@@ -13,6 +13,8 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
     * [Escenario 5: HA con pacemaker y corosync. IP Failover + Apache2](https://github.com/josedom24/escenarios-HA/tree/master/05-HA-IPFailover-Apache2)
     * [Escenario 6: HA con pacemaker y corosync. IP Failover + Apache2 + DRBD](https://github.com/josedom24/escenarios-HA/tree/master/06-HA-IPFailover-Apache2%2BDRBD)
     * [Escenario 7: HA con pacemaker y corosync. IP Failover + Apache2 + RDBD + GFS2 (Activo-Activo)](https://github.com/josedom24/escenarios-HA/tree/master/07-HA-IPFailover-Apache2%2BDRBD%2BGFS2)
+* [Introducción a los cluster de HA con Galera MariaDB](https://www.josedomingo.org/pledin/2022/02/galera-mariadb/)
+* [Práctica: Clúster de Alta Disponibilidad](9_clusterha/practica.html)
 
 
 ## Unidad 8: Kubernetes
@@ -110,8 +112,3 @@ title: "Servicios de Red e Internet + HLC (2022-2023)"
     * [Taller 7: Trabajando con contenedores LXC](0_virtualizacion/t7.html)
 * [Práctica: Virtualización en Linux](0_virtualizacion/practica.html)
 
-<!--
-
-* [Introducción a los cluster de HA con Galera MariaDB](https://www.josedomingo.org/pledin/2022/02/galera-mariadb/)
-* [Práctica: Cluster de Alta Disponibilidad](9_clusterha/practica.html)
--->
