@@ -36,7 +36,8 @@ Una vez que el clúster este configurado como activo-activo y WordPress esté fu
 ## Entrega
 
 1. Una vez configurado el clúster activo-activo: la salida del comando `pcs status`.
-2. Pantallazo donde se vea el wordpress instalado con un post creado.
-3. Demuestra al profesor el balanceo de carga que has desarrollado.
+2. Una prueba de funcionamiento donde se compruebe que el stonith_se ha configurado de forma correcta.
+3. Pantallazo donde se vea el wordpress instalado con un post creado.
+4. Demuestra al profesor el balanceo de carga que has desarrollado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
