@@ -8,9 +8,9 @@ title: "Implantación de aplicaciones web (2022-2023)"
 * [Introducción a Jenkins](7_ic/jenkins)
 	* [Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)](7_ic/ejercicio1.html)
 	* [Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](7_ic/ejercicio2.html)
-	* Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)
-    * Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)
-	* Taller 3: Integración continua de aplicación django con Jenkins (Test)
+	* [Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)](7_ic/t1.html)
+	* [Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)](7_ic/t2.html)
+	* [Taller 3: Integración continua de aplicación django con Jenkins (Test)](7_ic/t3.html)
 
 ## Unidad 6: Docker
 
