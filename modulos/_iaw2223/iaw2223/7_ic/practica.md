@@ -34,7 +34,7 @@ Otras consideraciones:
 1. Una captura de pantalla donde se vea la salida de un build que se ha ejecutado de manera correcta.
 2. Una captura de pantalla de tu cuenta de Docker Hub donde se vea la imagen subida de último build.
 3. Introduce un fallo en el `Dockerfile` y muestra la salida del build donde se produce el error.
-4. Entrega la URL para ver el `Jenkinsfile`.
+4. Entrega la URL del repositorio para ver el `Jenkinsfile`.
 5. Pantallazo con el correo que has recibido de la ejecución del pipeline.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
