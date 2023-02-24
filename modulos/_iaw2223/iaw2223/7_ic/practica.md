@@ -20,7 +20,7 @@ Modifica el pipeline para que después de hacer el test sobre la aplicación, ge
 
 Por lo tanto tienes que estudiar el apartado [Ejecución de un pipeline en varios runner](jenkins/runner.html) para ejecutar el pipeline en dos runner:
 
-* En el contenedor docker a partir de la imagen `python:3` los pasos del taller 1.
+* En el contenedor docker a partir de la imagen `python:3` los pasos del taller 3.
 * En la máquina de Jenkins los pasos de este ejercicio.
 
 Otras consideraciones:
