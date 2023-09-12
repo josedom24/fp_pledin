@@ -14,7 +14,7 @@ main:
 
 
 iaw:
-  - title: Implantación de aplicaciones web (2022-2023)
+  - title: Implantación de aplicaciones web (2023-2024)
     children:
       - title: "Inicio"
         url: /iaw/
@@ -42,7 +42,7 @@ iaw:
         url: /iaw/
 
 #hlc2223:
-#  - title: "HLC: Cloud Computing (2022-2023)"
+#  - title: "HLC: Cloud Computing (2023-2024)"
 #    children:
 #      - title: "Inicio"
 #        url: /hlc2223/
@@ -58,7 +58,7 @@ iaw:
 #        url: /hlc2223/
 #
 sri:
-  - title: Servicios de Red e Internet + HLC (2022-2023)
+  - title: Servicios de Red e Internet + HLC (2023-2024)
     children:
       - title: "Inicio"
         url: /sri/
