@@ -33,6 +33,14 @@ iaw:
 #      - title: IC/DC
 #        url: /iaw/#unidad-7-introducci%C3%B3n-a-la-integraci%C3%B3n-contin%C3%BAa-y-despliegue-continuo
       
+
+  - title: Módulos
+    children:
+      - title: "Servicios de Red e Internet + HLC"
+        url: /sri/
+      - title: "Implantación de Aplicaciones Web"
+        url: /iaw/
+
 #hlc2223:
 #  - title: "HLC: Cloud Computing (2022-2023)"
 #    children:
