@@ -94,15 +94,15 @@ collections:
 #    output: true
 #    permalink: /:path
 
-  sri2223:
+  sri:
     output: true
     permalink: /:path
 
-  iaw2223:
+  iaw:
     output: true
     permalink: /:path
 
-  hlc2223:
+  hlc:
     output: true
     permalink: /:path
 
@@ -210,7 +210,7 @@ defaults:
 #        nav: "hlc2122"
   - scope:
       path: ""
-      type: sri2223
+      type: sri
     values:
       layout: single2
       classes: wide
@@ -219,11 +219,11 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "sri2223"
+        nav: "sri"
 
   - scope:
       path: ""
-      type: iaw2223
+      type: iaw
     values:
       layout: single2
       classes: wide
@@ -232,7 +232,7 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "iaw2223"
+        nav: "iaw"
 
 #  - scope:
 #      path: ""
