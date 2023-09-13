@@ -108,13 +108,13 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 * [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
 
 <!--
-	* [Taller 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/t1.html)
-    * [Taller 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/t2.html)
-    * [Taller 3: Creación de máquinas virtuales con virt-manager](1_virtualizacion/t3.html)
-    * [Taller 4: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/t4.html)
-    * [Taller 5: Clonación e instantáneas de maquinas virtuales](1_virtualizacion/t5.html)
-    * [Taller 6: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/t6.html)
-    * [Taller 7: Trabajando con contenedores LXC](1_virtualizacion/t7.html)
+	* [Ejercicio 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/ejercicio1.html)
+    * [Ejercicio 2: Creación de máquinas virtuales con virt-manager](1_virtualizacion/ejercicio2.html)
+	* [Taller 1: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/t2.html)
+    * [Taller 2: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/t4.html)
+    * [Taller 3: Clonación e instantáneas de maquinas virtuales](1_virtualizacion/t5.html)
+    * [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/t6.html)
+    * [Taller 5: Trabajando con contenedores LXC](1_virtualizacion/t7.html)
 * [Práctica: Virtualización en Linux](1_virtualizacion/practica.html)
 
 -->
