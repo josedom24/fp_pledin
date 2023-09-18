@@ -111,6 +111,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Ejercicio 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/ejercicio1.html)
     * [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
 	* [Ejercicio 3: Creación de máquinas virtuales con virt-manager](1_virtualizacion/ejercicio3.html)
+
 <!--	
     * [Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/taller1.html)
     * [Taller 2: Clonación e instantáneas de maquinas virtuales](1_virtualizacion/taller2.html)
