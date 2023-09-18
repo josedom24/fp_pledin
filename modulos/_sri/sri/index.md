@@ -106,8 +106,6 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/virtualizacion.pdf)
 * [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
-
-
 	* [Ejercicio 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/ejercicio1.html)
     * [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
 	* [Ejercicio 3: Creación de máquinas virtuales con virt-manager](1_virtualizacion/ejercicio3.html)
