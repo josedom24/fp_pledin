@@ -1,76 +1,90 @@
 ---
-title: "Taller 1: Introducción a git y GitHub"
+title: "Taller 3: Git. Trabajando con ramas y uniones"
 ---
 
 ## ¿Qué vas a aprender en este taller?
 
-* Recordar el uso de git para realizar el control de versiones de los proyectos.
-* Configurar una cuenta en GitHub, servicio que nos ofrece repositorios remotos.
-* Recordar el ciclo de vida de la gestión de nuestros repositorios: creación, clonación, sincronización, ... y nuestros ficheros:  creación, modificación, borrado.
+* Aprenderás el concepto de rama.
+* La gestión y el ciclo de vida (creación, modificación, borrado, ...) de ramas.
+* Aprenderás el concepto de unión (merge) que nos posibilita la fusión de ramas.
+* A solucionar los posibles conflictos que pueden aparecer en el momento del merge.
 
 ## ¿Qué tienes que hacer?
 
-1. Crea una cuenta en GitHub (**Si no la tienes!!!**). La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública RSA a GitHub, para ello:
-	* Copia el contenido de tu fichero `~/.ssh/id_rsa.pub`, para ello: añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
-	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública siguiendo las instrucciones del artículo [Trabajando con claves ssh](https://www.josedomingo.org/pledin/2023/01/claves-ssh/).
+Trabaja con el repositorio de los talleres anteriores.
 
-2. Crea en GitHub un repositorio con el nombre **prueba_tu_nombre** (inicializa el repositorio con un fichero README) y la descripción **Repositorio de prueba 2ASIR**.
+1. Una rama representa una línea independiente de desarrollo, es como crear un nuevo área de trabajo que tendrá su historial propio de commits.
+2. Para  listar las ramas locales ejecuta:
 
-3. Instala git en tu ordenador (**si no lo tienes instalado!!!**).
+		$ git branch
+		* main
 
-		apt-get install git
+	La rama en la que estás trabajando actualmente se señala con un asterisco *. La rama **main** (en proyectos antiguos se llama **master**) es la rama con la que se comienza en cualquier proyecto, y es la que se utiliza como rama principal donde se encuentra el proyecto en su estado final. 
 
-4. Configuración de git. Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico (**Asegúrate que los datos son correctos y que has puesto tu nombre completo**). Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
+3. Crea una nueva rama con la instrucción:
 
-		git config --global user.name "John Doe"
-		git config --global user.email johndoe@example.com
+		$ git branch [rama]
+	 	
+4. Vuelve a lista las ramas, comprueba que todavía estás en la rama `main`, para pasar a la nueva rama utiliza el comando:
 
-	De nuevo, sólo necesitas hacer esto una vez si especificas la opción `--global`, ya que Git siempre usará esta información para todo lo que hagas en ese sistema.
+		$ git checkout [rama]
+		
+	* Comprueba que en la nueva rama tienes los mismos ficheros que en la rama principal.
+	* Todos los cambios que realices en los ficheros en esta rama no se verán en la rama principal.
+	* Truco: con el comando `git checkout -b [rama]` se crea una nueva rama y te posicionas en ella.
+	* Con el comando `git branch -v` se ve el último commit de cada rama. Comprueba que coinciden el último commit en las dos ramas.
+	* Truco: Puedes usar una extensión de tu shell (bash, zsh,...) para que te muestre en el prompt la rama en la que estás trabajando.
+5. Comprueba a modificar algún fichero y crea un nuevo fichero en esta rama. Realiza el commit y comprueba que estos cambios no se han reflejado en los ficheros de la rama principal. Ejecuta `git branch -v` para ver el último commit de cada rama.
+6. Las ramas no se crean automáticamente en GitHub, hay que realizar un `push` para crearlas en remoto. **Nota: `origin` es el nombre del repositorio remoto.** Por lo tanto ejecutamos: 
 
-5. Clonar el repositorio remoto. Copia la url SSH del repositorio (**no copies la URL https**) y vamos a clonar el repositorio en nuestro ordenador.
+		$ git push origin [rama]
+		
+7. Es bastante frecuente crear una rama, hacer los cambios que sean necesarios, unirla a una rama principal y después eliminar la rama que se había creado.  Para eliminar una rama ejecutamos (**No elimines la rama en este ejercicio**): 
 
-		git clone git@github.com:xxxxxxx/xxxxxxx.git
+		$ git branch -d [rama]
 
-	Comprueba que dentro del repositorio que hemos creado se encuentra el fichero README.md, en este fichero podemos poner la descripción del proyecto.
+8. Una vez que has trabajado en una rama, lo normal es querer incorporar los cambios a la rama principal. Para **unir** una rama a la principal, ejecutamos:
 
-6. Vamos a crear un nuevo fichero, lo vamos a añadir a nuestro repositorio local y luego lo vamos a sincronizar con nuestro repositorio remoto de GitHub. Cada vez que hagamos una modificación en un fichero lo podemos señalar creando un commit. Los mensajes de los commits son fundamentales para explicar la evolución de un proyecto. Un commit debe ser un conjunto pequeño de cambios de los ficheros del proyecto con una cierta coherencia.
+		$ git checkout main
+		$ git merge [rama]
 
-		echo "Esto es una prueba">ejemplo.txt
-		git add ejemplo.txt
-		git commit -m "He creado el fichero ejemplo.txt"
-		git push
+	Cuando sólo se han **añadido o eliminado** archivos en una rama, es fácil unirla a la principal. El resultado simplemente será la suma o resta de esos archivos en la principal. Cuando se hacen **modificaciones** en archivos, incluyendo cambios en los nombres de los archivos, git detecta esos cambios y los adapta automáticamente, pero a veces surgen **conflictos**.
 
-7. Si modificas un fichero en tu repositorio local, no tienes que volver a añadirlo a tu repositorio (`git add`). Pero tienes que usar la opción -a al hacer el commit.
+	Realiza la fusión de la nueva rama a la principal. ¿Se han producido conflictos?
 
-		git commit -am "He modificado el fichero ejemplo.txt"
-		git push
+9. Los conflictos aparecen cuando se ha modificado la misma parte del código en dos ramas diferentes. Veamos un ejemplo:
 
-8. Si quieres cambiar el nombre de un fichero o directorio de tu repositorio:
+	* Crea un fichero `prueba.txt` en la rama principal. Recuerda hacer un commit.
+	* Crea una nueva rama y accede a ella. 
+	* Modifica el fichero en la nueva rama. Recuerda hacer un commit.
+	* Vuelve a la rama principal. Y modifica de nuevo el fichero antes de realizar el merge.
+	* Realiza la unión y aparece el conflicto:
 
-		git mv ejemplo.txt ejemplo2.txt
-		git commit -am "He cambiado el nombre del fichero"
-		git push
+			$ git merge nuevo 
+			Auto-fusionando prueba.txt
+			CONFLICTO (contenido): Conflicto de fusión en prueba.txt
+			Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
 
-9. Si quieres borrar un fichero de tu repositorio:
+	* Si miramos el fichero:
 
-		git rm ejemplo2.txt
-		git commit -am "He borrado el fichero ejemplo2"
-		git push
+			$ cat prueba.txt 
 
-10. Puedes clonar tu repositorio de GitHub en varios ordenadores (por ejemplo, si quieres trabajar en tu casa y en el instituto), por lo tanto antes de trabajar en un repositorio local tienes que sincronizar los posibles cambios que se hayan producido en el repositorio remoto, para ello:
+			<<<<<<< HEAD
+			Hola cómo estás
+			=======
+			hola que tal
+			>>>>>>> nuevo
 
-		git pull
-
-11. Para comprobar el estado de mi repositorio local:
-
-		git status
-
+	Tenemos el contenido que estaba en la rama principal (**HEAD**) y lo que estaba en la rama **nuevo**. Será el usuario el que tendrá que dejar el contenido del fichero como quiera.
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. Una captura de pantalla donde se vea que has creado el repositorio.
-2. El contenido del fichero `.git/config` para que se vea que has clonado el repositorio con la URL ssh.
-3. La salida de la instrucción `git log` para ver los commits que has realizado (debe aparecer como autor tu nombre completo).
-4. Buscar información para crear un nuevo repositorio llamado **prueba2_tu_nombre**. En esta ocasión, crea primero el repositorio local (usando `git init`) y luego busca información para sincronizarlo y crear el repositorio remoto en GitHub. Comenta los pasos que has realizado y manda alguna prueba de funcionamiento.
+1. Crea una rama que se llame `primera` en tu local, y ejecuta la instrucción necesaria para comprobar que se ha creado.
+2. Crea un nuevo fichero en esta rama y fusiónalo con la principal. ¿Se ha producido conflicto? Razona la respuesta.
+3. Borra la rama `primera`.
+4. Crea una rama que se llame `segunda`, y modifica un fichero en ella para producir un conflicto al unirlo a la rama principal. Entrega el contenido del fichero donde se ha producido el conflicto.
+5. Soluciona el conflicto que has creado en el punto anterior y sincroniza la rama `segunda` en el remoto. Entrega una captura de pantalla donde se vea que se ha creado la rama en el repositorio de GitHub.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+
