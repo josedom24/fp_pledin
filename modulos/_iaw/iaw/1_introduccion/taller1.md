@@ -12,7 +12,7 @@ title: "Taller 1: Introducción a git y GitHub"
 
 1. Crea una cuenta en GitHub (**Si no la tienes!!!**). La forma de acceder a los repositorios remotos de GitHub va a ser por SSH, por lo tanto debes copiar tu clave pública RSA a GitHub, para ello:
 	* Copia el contenido de tu fichero `~/.ssh/id_rsa.pub`, para ello: añade una nueva clave SSH en el apartado "SSH keys" de tu perfil en GitHub y pega el contenido de tu clave pública.
-	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública: [http://librosweb.es/pro_git/capitulo_4/generando_tu_clave_publica_ssh.html](http://librosweb.es/pro_git/capitulo_4/generando_tu_clave_publica_ssh.html).
+	* Si no tienes ese fichero, puedes generar una nueva clave ssh pública siguiendo las instrucciones del artículo [Trabajando con claves ssh](https://www.josedomingo.org/pledin/2023/01/claves-ssh/).
 
 2. Crea en GitHub un repositorio con el nombre **prueba_tu_nombre** (inicializa el repositorio con un fichero README) y la descripción **Repositorio de prueba 2ASIR**.
 
