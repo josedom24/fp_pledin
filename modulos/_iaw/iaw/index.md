@@ -67,7 +67,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 
-* [Teoria: Introducción a Git y GitHub]https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/git.pdf)
+* [Teoria: Introducción a Git y GitHub](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/git.pdf)
 	* [Ejercicio 1: Introducción a git y GitHub](1_introduccion/ejercicio1.html)
 	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
 
