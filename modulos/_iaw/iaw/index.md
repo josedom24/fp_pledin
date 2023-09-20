@@ -67,13 +67,15 @@ title: "Implantación de aplicaciones web (2023-2024)"
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion.pdf)
+* [Teoria: Introducción a Git y GitHub]https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/git.pdf)
 	* [Ejercicio 1: Introducción a git y GitHub](1_introduccion/ejercicio1.html)
+	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
 
 <!--
-	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
 	* [Taller 1: Git. Trabajando con ramas y uniones](1_introduccion/taller1.html)
 	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion.pdf)
 * [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/practica.html)
 
 -->
