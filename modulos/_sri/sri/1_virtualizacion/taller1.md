@@ -28,6 +28,6 @@ title: "Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt"
 6. ¿Qué características tienen los ficheros de imágenes **qcow2**? Lista los volúmenes del pool de almacenamiento `discos` visualizando la capacidad del disco y el tamaño que ocupa realmente en disco.
     * **Entrega**: Responde la pregunta. Los comandos y las salidas que nos permiten comprobar el aprovisionamiento ligero.
 7. Añade a la máquina linux con la que estás trabajando el **disco1** utilizando `virsh` y el **disco2** utilizando `virt-manager`. Formatea los disco y móntalos de forma persistente.
-    * **Entrega**: Instrucción para añadir el disco1, captura de pantalla de `virt-amangar` donde se ve que has añadido el disco2. La salida del comando `df -h`. La modificación realizada para montarlos de forma persistente.
+    * **Entrega**: Instrucción para añadir el **disco1**, captura de pantalla de `virt-manager` donde se ve que has añadido el **disco2**. La salida del comando `df -h`. La modificación realizada para montarlos de forma persistente.
 8. Redimensiona el **disco1** a 2 Gb usando `virsh`, redimensiona el **disco2** a 3Gb usando `qemu-img`. Finalmente redimensiona el sistema de ficheros de cada uno de los discos.
     * **Entrega**: Las instrucciones que has ejecutado para redimensionar los discos y los sistemas de archivos.
