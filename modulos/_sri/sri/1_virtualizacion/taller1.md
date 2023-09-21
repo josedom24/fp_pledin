@@ -41,3 +41,4 @@ title: "Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt"
 6. Después de redimensionar los discos, de nuevo la salida del comando `df -h` donde se compruebe que se ha cambiado el tamaño de los mismos.  
 
 
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
