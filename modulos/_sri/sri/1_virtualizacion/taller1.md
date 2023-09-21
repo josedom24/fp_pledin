@@ -1,5 +1,5 @@
 ---
-title: "Taller 4: Gestión del almacenamiento en QEMU/KVM + libvirt"
+title: "Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt"
 ---
 
 ## ¿Qué vas a aprender en este taller?

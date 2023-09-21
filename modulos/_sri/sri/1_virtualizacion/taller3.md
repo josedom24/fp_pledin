@@ -1,5 +1,5 @@
 ---
-title: "Taller 6: Gestión de redes en QEMU/KVM + libvirt"
+title: "Taller 3: Gestión de redes en QEMU/KVM + libvirt"
 ---
 
 ## ¿Qué vas a aprender en este taller?

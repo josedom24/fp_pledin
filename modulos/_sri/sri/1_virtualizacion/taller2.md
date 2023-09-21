@@ -1,5 +1,5 @@
 ---
-title: "Taller 5: Clonación e instantáneas de máquinas virtuales"
+title: "Taller 2: Clonación e instantáneas de máquinas virtuales"
 ---
 
 ## ¿Qué vas a aprender en este taller?
