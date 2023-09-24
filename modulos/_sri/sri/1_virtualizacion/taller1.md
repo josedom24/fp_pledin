@@ -19,7 +19,7 @@ title: "Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt"
 1. Muestra los pool de almacenamientos con `virsh` que tienes definido. ¿De qué tipo son?. ¿Qué se guarda en cada uno de ellos?. Muéstralos también con `virt-manager`.
     * **Entrega**: El comando `virsh` y su salida que nos permite ver los pool de almacenamiento. La captura de pantalla de `virt-manager` donde se ven los pools de almacenamiento. Responde las preguntas.
 2. Con `virsh` crea un nuevo pool de almacenamiento de tipo **dir**, que se llame **discos** y que los ficheros se guarden en el directorio `/srv/discos`. Inicia el nuevo pool de almacenamiento. Comprueba que se ha creado el nuevo pool.
-    * **Entrega**: El comando `virsh` y la salida que nos muestra información del pool que has creado. El comando `virsh` que crea el directorio aasociado al nuevo pool.
+    * **Entrega**: El comando `virsh` y la salida que nos muestra información del pool que has creado. El comando `virsh` que crea el directorio asociado al nuevo pool.
 3. Muestra con `virsh` los volúmenes (imágenes de discos) que tienes creado en el pool de almacenamiento `default`. Comprueba con `virt-manager` los volúmenes que tienes creados.
     * **Entrega**: El comando `virsh` y su salida que nos permite ver los volúmenes que tienes creado en el pool `default`. Una captura de pantalla para ver los volúmenes desde `virt-manager`.
 4. Con `virsh` crea un nuevo volumen en el pool de almacenamiento `discos` que se llame **disco1.qcow2** y de tamaño 1Gb.
