@@ -31,3 +31,7 @@ title: "Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt"
     * **Entrega**: Instrucción para añadir el **disco1**, captura de pantalla de `virt-manager` donde se ve que has añadido el **disco2**. La salida del comando `df -h`. La modificación realizada para montarlos de forma persistente.
 8. Redimensiona el **disco1** a 2 Gb usando `virsh`, redimensiona el **disco2** a 3Gb usando `qemu-img`. Finalmente redimensiona el sistema de ficheros de cada uno de los discos.
     * **Entrega**: Las instrucciones que has ejecutado para redimensionar los discos y los sistemas de archivos.
+9. Crea un nuevo volumen **nuevo_disco.img** de tipo raw y tamaño 10Gb en el pool **discos**. Lista los volúmenes del pool de almacenamiento `discos` visualizando la capacidad del disco y el tamaño que ocupa realmente en disco. ¿Cuánto espacio ocupa realmente el volumen **nuevo_disco.img**.
+    * **Entrega**: La instrucción y la salida de la instrucción que has ejecutado para crear el fichero raw. La instrucción y la salida que nos permite ver cuánto espacio ocupa el volumen que hemos creado.
+10. Realiza la instalación de una MV con `virt-install` que use el volumen anterior que has creado como disco de la máquina.
+    * **Entrega**: La instrucción que has usado para comenzar la instalación. Una vez la instalación haya terminado, la configuración XML de la máquina donde se comprueba que volumen está usando como disco principal.
