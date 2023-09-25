@@ -1,5 +1,5 @@
 ---
-title: "Taller 4: Trabajando con contenedores LXC"
+title: "Taller 5: Trabajando con contenedores LXC"
 ---
 
 ## ¿Qué vas a aprender en este taller?
