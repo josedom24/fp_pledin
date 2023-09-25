@@ -1,26 +1,28 @@
 ---
-title: "Taller 2: Clonación e instantáneas de máquinas virtuales"
+title: "Taller 2: Gestión de pool de almacenamiento lógico en KVM/libvirt"
 ---
 
 ## ¿Qué vas a aprender en este taller?
 
-* A clonar máquinas virtuales.
-* A crear plantillas para crear a partir de ellas clonaciones completas o enlazadas.
-* Trabajar con instantáneas de máquinas virtuales.
-
-## Recursos para realizar este taller
-
-* Capítulo 6 del [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
+* A gestionar pool de almacenamiento lógicos en KVM/libvirt.
+* A gestionar volúmenes lógicos para crear discos para las máquinas virtuales.
+* A montar los volúmenes lógicos para acceder a los ficheros de los discos.
 
 ## ¿Qué tienes que hacer?
 
-1. Utiliza la herramienta `virt-clone` para clonar tu máquina linux. Llámala **máquina-clonada**. Realiza los cambios necesarios en la nueva máquina para que no se llame igual que la original.
-    * **Entrega**: La instrucción `virt-clone` que has usado para clonar la máquina. ¿Qué cambios has hecho en la nueva máquina para que no sea igual a la original?
-2. Crea una plantilla a partir de la máquina que acabamos de crear en el punto anterior. Llámala **plantilla-linux**. Recuerda que no debería poder inicializar la máquina que hemos creado la plantilla al poner el disco en sólo lectura.
-    * **Entrega**: Explica los pasos que has realizado y las instrucciones que has ejecutado para crear la plantilla. Pon una captura donde se vea que nos da un error al intentar iniciarla. 
-3. Realiza una clonación completa usando `virt-manager` de la plantilla que has creado. La nueva máquina la llamará **clone-full**. Accede a esta nueva máquina por ssh.
-    * **Entrega**: Captura de pantalla donde se vea la dirección IP que ha tomado. Otra captura donde se vea el acceso por SSH.
-4. Ahora vamos a realizar una clonación enlazada. Para ello, crea un disco que tenga como imagen base (**backing store**) la imagen de la plantilla (lo puedes hacer con cualquier herramienta). Una vez creado el nuevo disco, realiza la clonación enlazada, la nueva máquina se llamará **clone-link** (lo puedes hacer con cualquier herramienta).
-    * **Entrega**: Explica los pasos que has realizado y las instrucciones que has ejecutado para realizar la clonación enlazada. El comando y la salida que nos da información del volumen de la nueva máquina donde se demuestra que se ha creado desde una imagen base (**Backing Store**). La instrucción y la salida del comando que nos permite ver lo que ocupa el disco creado. ¿Por qué ocupa tan poco espacio?
-5. Crea un directorio en cualquiera de las máquinas y realiza una instantánea de la máquina virtual. Borra el directorio y vuelve al estado anterior de la máquina recuperando la instantánea que hemos creado (lo puedes hacer con cualquier herramienta).
-    * **Entrega**: Capturas de pantalla para demostrar el ejercicio. El comando y la salida para mostrar las listas de snapshots desde la línea de comandos.
+Para realizar este taller tenemos dos opciones:
+
+1. Usar el KVM/libvirt que tenemos en nuestra máquina física, pero **necesitamos tener un grupo de volúmenes con espacio libre**.
+2. Usar **Virtualización Anidada**: Con esta característica se permite la ejecución de instrucciones KVM dentro de máquinas virtuales KVM, lo cual nos posibilita la ejecución de máquinas virtuales dentro de máquinas virtuales. De esta manera,podemos crear un laboratorio de prueba de QEMU/KVM ejecutándolos en una máquina virtual. En este caso crearíamos una máquina virtual, en ella tendríamos que tener un grupo de volúmenes con espacio libre. En esa máquina instalaríamos KVM/libvirt y realizaríamos el taller.
+
+1. Crea con `virsh` un nuevo pool de almacenamiento de tipo lógico. Para ello, lo más fácil, es tener un grupo de volúmenes con espacio libre. 
+    * **Entrega**: Instrucción para crear el pool de almacenamiento.
+2. Crea un volumen en ese pool de almacenamiento. Comprueba que se ha creado un volumen lógico nuevo en el grupo de volúmenes.
+    * **Entrega**: Instrucción para crear el volumen. Instrucción y salida donde se vea el volumen creado.
+3. Usa `virt-install` para crear una máquina virtual cuyo disco corresponda al volumen que has creado anteriormente.
+    * **Entrega**: Instrucción para realizar la instalación. 
+4. Una vez que la máquina este funcionando, crea un nuevo volumen en el pool de tipo **lógico** y añádelo a la máquina.
+    * **Entrega**: La configuración XML de la máquina donde se ve el almacenamiento de la misma (se deben ver los dos discos).
+5. Apaga la máquina, y siguiendo el artículo [Acceder a una imagen de disco KVM ubicada en un volumen lógico](https://albertomolina.wordpress.com/2009/12/14/acceder-a-una-imagen-de-disco-kvm-ubicada-en-un-volumen-logico/) monta la partición del disco de la máquina en tu anfitrión para acceder al sistema de archivos.
+    * **Entrega**: Las instrucciones ejecutadas para montar la partición del disco, y la lista de ficheros del sistema de archivos.
+

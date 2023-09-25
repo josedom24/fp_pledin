@@ -1,37 +1,53 @@
 ---
-title: "Taller 4: Trabajando con contenedores LXC"
+title: "Taller 3: Gestión de redes en QEMU/KVM + libvirt"
 ---
 
 ## ¿Qué vas a aprender en este taller?
 
-* Conocer el concepto de contenedores. Y la diferencia entre contenedores de sistemas y de aplicaciones.
-* Crear y gestionar contenedores LXC.
-* Configurar los contenedores LXC.
-* Gestionar las redes a las que se conectan los contenedores.
-* Añadir almacenamiento a los contenedores LXC.
-* Tener una aproximación a la herramienta LXD.
+* Conocer los distintos tipos de redes virtuales que podemos definir con QEMU/libvirt.
+* Gestionar switch virtuales con Linux Bridge
+* Gestionar los distintos tipos de redes con `virsh` y `virt-manager`.
+* Configurar un bridge externo para conectar las máquinas virtuales a una red pública.
+* Gestionar las interfaces de red en las máquinas virtuales.
 
 ## Recursos para realizar este taller
 
-* Capítulo 8 del [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
+* Capítulo 7 del [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
 
 ## ¿Qué tienes que hacer?
 
-1. Instala LXC.
-2. Crea un contenedor LXC con la última distribución de Ubuntu. Lista los contenedores. Inicia el contenedor y comprueba la dirección IP que ha tomado. ¿Tiene conectividad al exterior?. Sal del contenedor y ejecuta un `apt update` en el contenedor sin estar conectado a él.
-3. Modifica la configuración del contenedor, y limita el uso de memoria a 512M y que use una sola CPU.
-4. Comprueba que se ha creado un bridge llamado `lxcbr0` donde está conectado el contenedor. Cambia la configuración del contenedor para desconectar de este bridge y conectarlo a la red `red-nat` que creaste en el taller anterior. Toma de nuevo direccionamiento y comprueba de nuevo la dirección IP, y que sigue teniendo conectividad al exterior.
-5. Añade una nueva interfaz de red al contenedor y conéctala a la red `red-externa` que creaste en el taller anterior. Toma direccionamiento en esta nueva interfaz y comprueba que esta en el direccionamiento del instituto.
-6. Crea en el host el directorio `/opt/web`, crea el fichero `index.html` y monta este directorio en el directorio `/srv/www` del contenedor.
-7. (Optativo)(**Te recomiendo que lo hagas en una máquina virtual limpia**). Instala LXD y crea un contenedor y una máquina virtual.
+1. Crea distintos tipos de redes con `virsh`:
+	* Una red privada de tipo NAT
+		* Nombre: **red-nat**
+		* Nombre del bridge: virbr1
+		* Direccionamiento: `192.168.125.0/24`
+		* Dirección del host (puerta de enlace): `192.168.125.1`
+		* Rango DHCP: `192.168.125.2  - 192.168.125.100`
+	* Una red privada aislada
+		* Nombre: **red-aislada**
+		* Nombre del bridge: virbr2
+		* Direccionamiento: `192.168.126.0/24`
+		* Dirección del host (puerta de enlace): `192.168.126.1`
+		* Rango DHCP: `192.168.126.2  - 192.168.126.100`
+	* Una red privada muy aislada
+		* Nombre: **red-muy-aislada**
+		* Nombre del bridge: virbr3
+
+	Activa las redes y configúralas para que se inicien de forma automática.
+
+2. Vamos a trabajar con dos máquinas virtuales (las puedes clonar a partir de la plantilla del taller anterior). Las máquinas las vamos a llamar **cliente1** y **cliente2**. 
+	* Desconecta la máquina `cliente1` de la red `default` y conéctala a la red `red-nat`. Obtén de nuevo una dirección y comprueba la dirección IP que ha tomado, que tiene acceso a internet y que la dirección del host (puerta de enlace) corresponde a la `192.168.125.1`.
+	* Desconecta la máquina `cliente2` del la red `default`. Conecta las máquinas `cliente1` y `cliente2` a la red `red-aislada`. Comprueba que las máquinas han cogido una dirección IP en la red `192.168.126.0/24`, comprueba que pueden hacer ping entre ellas, y hacer ping al host (`192.168.126.1`). Comprueba que la máquina `cliente1` tiene conexión al exterior (por estar conectada a la red NAT `red-nat`), pero sin embargo el `cliente2` no tiene conexión al exterior.
+	* Desconecta todas las interfaces de las dos máquinas. Conéctalas a la red `red-muy-aislada`. Configura de forma estática sus direcciones y comprueba que pueden hacer ping entre ellas, sin embargo no pueden hacer ping ni al host, ni al exterior.
+3. Crea un puente externo, llamado **br0** como se explica en el apartado [Creación de un Puente Externo con Linux Bridge](https://github.com/josedom24/curso_virtualizacion_linux/blob/main/modulo7/bridge.md). Crea una red de tipo Puente que nos permita conectar las máquinas a este bridge, llámala **red-externa**. Conecta el `cliente1` a esta red y obtén direccionamiento, comprueba que se configura con una IP del direccionamiento de nuestra red local `172.22.0.0/16` (ha obtenido la dirección del servidor DHCP de nuestro instituto). Comprueba que podemos acceder a esta máquina desde cualquier máquina conectada a la misma red.
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. La salida del comando para listar el contenedor creado. Un pantallzo donde se vea la IP que ha tomado. La instrucción que permite ejecutar el comando `apt update` sin estar conectado a él.
-2. Pantallazos para demostrar que has limitado el uso de memoria y CPU en el contenedor.
-3. Después de conectar el contenedor a la red `red-nat`, comprobación de la IP que ha tomado y de que tiene conectividad al exterior.
-4. Después de conectar el contenedor a la red `red-externa`, comprobación de la nueva IP que ha tomado.
-5. Indica la configuración que has hecho para montar el directorio `/opt/web`. Lista el directorio `/srv/www` del contenedor para comprobar que se ha montado de forma correcta.
-6. (Optativo). Lista el contenedor y la máquina virtual creadas con LXD.
+1. Una vez que se han creado la redes del ejercicio 1, la salida del comando `virsh` donde se listan las redes. Una captura de pantalla de `virt-manager` donde se ven las redes creadas.
+2. Cuando el `cliente1` esté conectado a la red `red-nat`, capturas de pantalla donde se vea el direccionamiento, la puerta de enlace y la prueba de funcionamiento de que tiene conectividad al exterior.
+3. Cuando las máquinas `cliente1` y `cliente2` estén conectadas a la red `red-aislada`, capturas de pantalla donde se vean las direcciones que han tomado, que se pueden hacer ping, que pueden hacer ping al host, pero que el `cliente2` no puede hacer ping al exterior.
+4.  Cuando las máquinas `cliente1` y `cliente2` estén conectadas a la red `red-muy-aislada`, capturas de pantalla donde se vean las direcciones que han tomado, que se pueden hacer ping y que no pueden hacer ping al exterior.
+5. Cuando el `cliente1` esté conectado a la red `red-externa`, capturas de pantalla donde se vean la dirección que ha tomado y la comprobación de que hay conexión a la máquina virtual desde el exterior.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
