@@ -38,12 +38,11 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 ## 3. Instalación del servidor DHCP 
 
 1. Instala un servidor DHCP en el contenedor **servidorDHCP** con las siguientes características:
-
-* Rango de direcciones: `192.168.200.10` - `192.168.200.200`.
-* Máscara de red: `255.255.255.0`
-* Duración de la concesión: 30 minutos
-* Puerta de enlace: `192.168.200.1`
-* Servidor DNS: `172.22.0.1`
+	* Rango de direcciones: `192.168.200.10` - `192.168.200.200`.
+	* Máscara de red: `255.255.255.0`
+	* Duración de la concesión: 30 minutos
+	* Puerta de enlace: `192.168.200.1`
+	* Servidor DNS: `172.22.0.1`
 
 ## 4. Creación de las máquinas clientes
 
