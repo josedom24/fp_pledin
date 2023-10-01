@@ -83,14 +83,9 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
 * [Práctica: Instalación de nginx con PHP](3_http/practica.html)
 
-## Unidad 2: Protocolo DHCP
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)
-	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/t1.html)
-	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/t2.html)
-* [Práctica: Configuración de un servidor DHCP](2_dhcp/practica.html)
 
-## Unidad 1: Infraestructura como código
+## Unidad 3: Infraestructura como código
 	
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/iac.pdf)
 	* [Taller 1: Ansible - Playbook sencillo](1_iac/t1.html)
@@ -100,6 +95,13 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 5: Vagrant + Ansible](1_iac/t5.html)
 * [Práctica: Creación y configuración de un escenario router-nat](1_iac/practica.html)
 
+
+## Unidad 2: Protocolo DHCP
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)
+	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/t1.html)
+	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/t2.html)
+* [Práctica: Configuración de un servidor DHCP](2_dhcp/practica.html)
 -->
 
 ## Unidad 1: Virtualización en Linux (HLC)
