@@ -27,6 +27,7 @@ Vamos a crear una plantilla que utilizaremos para la creación de las máquinas 
 
 ## 2. Creación del escenario
 
+/center
 ![Práctica](img/practica.png)
 
 Todas las operaciones las tiene que hacer desde la línea de comandos:
