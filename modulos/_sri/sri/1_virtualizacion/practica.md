@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Virtualización en Linux y servidor DHCP"
+title: "Práctica: Virtualización en Linux y servidor DHCP (Parte 1)"
 ---
 
 ## Descripción
@@ -16,6 +16,14 @@ Vamos a crear una plantilla que utilizaremos para la creación de las máquinas 
 	* En el usuario `debian` copia tu clave pública y la mia para que podamos acceder sin introducir la contraseña por ssh.
 2. Convierte la máquina virtual en una plantilla llamada **plantilla-cliente**. ¿Cuánto ocupa el volumen de la plantilla en disco?
 3. Utiliza la herramienta `virt-sparsify` para reducir el tamaño ocupado en disco del volumen. ¿Cuánto ocupa ahora el volumen de la plantilla en disco?
+
+{% capture notice-text %}
+## Entrega
+
+1. Explica los pasos que has ejecutado para crear la plantilla **plantilla-cliente**.
+2. Captura de pantalla donde se demuestre que la plantilla no se puede ejecutar.
+3. ¿Qué ocupa el volumen de la plantilla en disco antes de ejecutar `virt-sparsify`? Una vez ejecutado, ¿cuánto ocupa el volumen en disco?
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## 2. Creación del escenario
 
