@@ -14,7 +14,7 @@ Vamos a crear una plantilla que utilizaremos para la creación de las máquinas 
 	* La máquina debe tener un usuario `debian` con contraseña `debian` que puede utilizar `sudo` sin contraseña.
 	* Instala el servidor ssh en la máquina.
 	* En el usuario `debian` copia tu clave pública y la mia para que podamos acceder sin introducir la contraseña por ssh.
-2. Convierte la máquina virtual en una plantilla llamada **plantilla-cliente**. ¿Cuánto ocupa el volumen de la plantilla en disco?
+2. Convierte la máquina virtual en una plantilla llamada **plantilla-cliente**. El hostname de la máquina debe ser **plantilla-cliente-tunombre**. ¿Cuánto ocupa el volumen de la plantilla en disco?
 3. Utiliza la herramienta `virt-sparsify` para reducir el tamaño ocupado en disco del volumen. ¿Cuánto ocupa ahora el volumen de la plantilla en disco?
 
 {% capture notice-text %}
@@ -35,7 +35,7 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 2. Crea con `virt-install` la máquina **router** con Debian 12: 
 	* Está conectada a la red pública (al bridge `br0`) y la **red_intra**.
 	* Esta máquina utiliza un disco en formato **raw** de 10 Gb.
-	* El hostname de esta máquina debe ser `router`.
+	* El hostname de esta máquina debe ser `router-tunombre`.
 	* Se debe poder acceder a ella por ssh con el usuario root sin que te pida contraseña (configura tu clave pública y la mia).
 	* Debes configurar la segunda interfaz de red con direccionamiento estático para que tenga la dirección `192.168.200.1`.
 3. Crea dos contenedores LXC conectados a la red **red_intra**. 
@@ -63,6 +63,7 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 1. Crea una nueva máquina virtual llamada **cliente1** a partir de la plantilla **plantilla-cliente** que tenga un volumen de 5G. Tienes que tener en cuenta los siguientes aspectos:
 	* Antes de crear la máquina virtual redimensiona su sistema de fichero para que ocupe el espacio completo del disco.
 	* La máquina se conecta a la red **red_intra**.
+	* La máquina debe tener el hostname **cliente1-tunombre**.
 2. Accede a **cliente1**, realiza una configuración estática de la red y comprueba si tiene acceso al exterior.
 
 {% capture notice-text %}
