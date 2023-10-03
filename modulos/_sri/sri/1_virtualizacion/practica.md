@@ -38,9 +38,11 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 	* El hostname de esta máquina debe ser `router-tunombre`.
 	* Se debe poder acceder a ella por ssh con el usuario root sin que te pida contraseña (configura tu clave pública y la mia).
 	* Debes configurar la segunda interfaz de red con direccionamiento estático para que tenga la dirección `192.168.200.1`.
+	* Está máquina se debe iniciar cada vez que arrancamos el host.
 3. Crea dos contenedores LXC conectados a la red **red_intra**. 
 	* **servidorDHCP**: Es un contador creado a partir de la plantilla **Debian Bookworm**. Configura su red de forma estática. Su dirección IP debe ser la `192.168.200.2`.
 	* **servidorWeb**: Es un contador creado a partir de la plantilla **Ubuntu 22.04 Jammy**. Configura su red de forma estática. Su dirección IP debe ser la `192.168.200.3`.
+	* Los contenedores se deben iniciar de forma automática y se les debe limitar la memoria a 512Mb.
 4. Configura la máquina **router** para que haga SNAT y permita que los contenedores tengan acceso al exterior. Instala en los contenedores el servidor ssh y configúralo para que podamos entrar con clave privada (configura tu clave pública y la mia) por ssh con el usuario `root`.
 
 {% capture notice-text %}
@@ -48,13 +50,15 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 
 1. Fichero xml con la definición de la red **red_intra**, la instrucción de creación y la que permite el inicio automático.
 2. Comprobación que el volumen de la máquina **router** tiene el formato raw.
-3. Salida del comando `ip a` en **router**.
-4. Acceso por ssh sin que te pida la contraseña.
-5. Lista los contenedores creados para que se visualice su dirección IP.
-6. Salida de la instrucción `iptables` que muestra la regla de SNAT que has configurado.
-7. Comprobación que los contenedores tienen acceso al exterior.
-8. Desde el host, utiliza `ssh -A`, para acceder al **router** y posteriormente a los contenedores.
-9. Busca información sobre la configuración de ssh para definir distintos accesos. Configura el fichero `~/.ssh/config` en tu equipo para que puedas acceder directamente al **cliente1**.
+3. El comando `virsh` que muestra información de la máquina **router** para comprobar que se inicia de forma automática.
+4. Salida del comando `ip a` en **router**.
+5. Acceso por ssh sin que te pida la contraseña.
+6. Lista los contenedores creados para que se visualice su dirección IP y se vea que se inician de forma automática.
+7. Prueba de funcionamiento de que se ha limitado la memoria de los contenedores de forma adecuada.
+8. Salida de la instrucción `iptables` que muestra la regla de SNAT que has configurado.
+9. Comprobación que los contenedores tienen acceso al exterior.
+10. Desde el host, utiliza `ssh -A`, para acceder al **router** y posteriormente a los contenedores.
+11. Busca información sobre la configuración de ssh para definir distintos accesos. Configura el fichero `~/.ssh/config` en tu equipo para que puedas acceder directamente al **cliente1**.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
