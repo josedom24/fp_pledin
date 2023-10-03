@@ -58,8 +58,7 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 8. Salida de la instrucción `iptables` que muestra la regla de SNAT que has configurado.
 9. Comprobación que los contenedores tienen acceso al exterior.
 10. Desde el host, utiliza `ssh -A`, para acceder al **router** y posteriormente a los contenedores.
-11. Busca información sobre la configuración de ssh para definir distintos accesos. Configura el fichero `~/.ssh/config` en tu equipo para que puedas acceder directamente al **cliente1**.
-
+11. Busca información sobre la configuración de ssh para definir distintos accesos. Configura el fichero `~/.ssh/config` en tu equipo para que puedas acceder desde el host directamente a los contenedores.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## 3. Creación de las máquinas clientes
