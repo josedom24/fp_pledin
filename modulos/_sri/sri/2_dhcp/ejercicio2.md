@@ -33,4 +33,4 @@ title: "Ejercicio 2: Funcionamiento del servidor DHCP"
 
 	¿Se guarda la reserva en la lista de concesiones?
 
-{% capture notice-text %}
+
