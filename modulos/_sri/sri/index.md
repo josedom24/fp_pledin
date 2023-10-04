@@ -99,8 +99,8 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 ## Unidad 2: Protocolo DHCP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)
-	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/t1.html)
-	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/t2.html)
+	* [Ejercicio 1: Instalación y configuración del servidor DHCP](2_dhcp/ejercicio1.html)
+	* [Ejercicio 2: Funcionamiento del servidor DHCP](2_dhcp/ejercicio2.html)
 * [Práctica: Configuración de un servidor DHCP](2_dhcp/practica.html)
 -->
 

@@ -1,8 +1,8 @@
 ---
-title: "Taller 2: Funcionamiento del servidor DHCP"
+title: "Ejercicio 2: Funcionamiento del servidor DHCP"
 ---
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * Creación de una reserva
 * Identificar los paquetes que se transmiten entre el cliente y el servidor en la negociación DHCP.
@@ -34,10 +34,3 @@ title: "Taller 2: Funcionamiento del servidor DHCP"
 	¿Se guarda la reserva en la lista de concesiones?
 
 {% capture notice-text %}
-## ¿Qué tienes que entregar?
-
-1. Una vez que el cliente Windows se haya configurado, capturas de pantalla donde se vea en el cliente: su dirección IP, su puerta de enlace y su servidor DNS.
-2. Captura de pantalla donde se vean los 4 paquetes que se transmite en la negociación de la concesión.
-3. Explica, con pruebas de funcionamiento, el motivo del comportamiento que se indica en los puntos 4 y 5.
-4. Capturas de pantalla donde se vea el funcionamiento de la reserva. ¿Se guarda la reserva en la lista de concesiones?
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
