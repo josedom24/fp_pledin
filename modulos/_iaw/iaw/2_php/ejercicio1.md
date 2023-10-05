@@ -1,14 +1,14 @@
 ---
-title: "Taller 1:Instalación de un servidor LAMP"
+title: "Ejercicio 1:Instalación de un servidor LAMP"
 ---
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * A instalar un servidor LAMP que nos permita el despliegue de aplicaciones PHP.
 
 ## ¿Qué tienes que hacer?
 
-Realiza esta tarea en una máquina virtual. Puedes usar kvm o proxmox.
+Realiza esta tarea en una máquina virtual.
 
 El acrónimo *LAMP* se refiere a un entorno configurado en un servidor que nos posibilita servir aplicaciones web escritas en PHP.
 
@@ -19,7 +19,7 @@ El entorno que vamos a configurar se consigue mediante la unión de las siguient
 * **M**ySQL, **M**ariaDB, el gestor de bases de datos;
 * **P**HP el lenguajes de programación.
 
-Ahora vamos a instalar los paquetes necesarios para tener un entorno LAMP en su sistema operativo GNU/Linux Debian 11.
+Ahora vamos a instalar los paquetes necesarios para tener un entorno LAMP en su sistema operativo GNU/Linux Debian 12.
 
 1. Realiza la instalación del servidor de base de datos:
 
@@ -35,7 +35,7 @@ Ahora vamos a instalar los paquetes necesarios para tener un entorno LAMP en su 
 		GRANT ALL PRIVILEGES ON newdb.* to 'username'@'localhost';
 		FLUSH PRIVILEGES;
 		quit
-2. Instalación de Apache y PHP. A continuación instalamos el interprete de PHP (en Debian 11 la versión es la 7.4). Al menos instalamos la librerías de PHP necesarias para conectar los programas PHP con la base de datos (dependiendo de la aplicación que instalemos necesitaremos instalar las librerías PHP necesarias).
+2. Instalación de Apache y PHP. A continuación instalamos el interprete de PHP (en Debian 12 la versión es la 8.2). Al menos instalamos la librerías de PHP necesarias para conectar los programas PHP con la base de datos (dependiendo de la aplicación que instalemos necesitaremos instalar las librerías PHP necesarias).
 
 	También instalamos el servidor web. Además vamos a instalar el módulo que permite que apache2 interprete PHP (es decir, apache2 hará el papel de servidor web y de servidor de aplicaciones).
 
@@ -43,7 +43,7 @@ Ahora vamos a instalar los paquetes necesarios para tener un entorno LAMP en su 
 
 	* `apache2`: Servidor web apache2.
 	* `libapache2-mod-php`: Módulo de apache2 que le permite ejecutar el código PHP. Es decir, apache2 será servidor web y servidor de aplicaciones PHP.
-	* `php`: Es un metqpaquete que apunta al paquete de Debian 11, en este caso apunta al paquete `php7.4`.
+	* `php`: Es un metqpaquete que apunta al paquete de Debian 12, en este caso apunta al paquete `php8.2`.
 	* `php-mysql`: Librería PHP que posibilita el acceso a la base de datos.
 
 3. Para comprobar si el servidor LAMP está funcionando, puedes crear un fichero `info.php` en el DocumentRoot (el directorio `/var/www/html`) con el siguiente contenido:
@@ -71,11 +71,3 @@ Ahora vamos a instalar los paquetes necesarios para tener un entorno LAMP en su 
 * También podemos ver los logs del servicio ejecutando: `journalctl -u apache2`.
 
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
-
-1. Una captura de pantalla donde se vea la configuración de la resolución estática.
-2. Crea una base de datos y un usuario en la base de datos y entrega una comprobación de que se puede acceder a la base de datos con ese usuario y puede acceder a la base de datos creada.
-3. Una captura de pantalla accediendo desde un navegador al fichero `info.php` usando el nombre que has configurando en la resolución estática.
-
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

@@ -1,13 +1,13 @@
 ---
-title: "Taller 2: VirtualHosting con Apache"
+title: "Ejercicio 2: VirtualHosting con Apache"
 ---
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * Crear distintos *Host Virtuales* en apache2 que nos permiten tener sitios web diferenciados.
 * Acceder a cada *Host Virtual* con un determinado nombre de dominio.
 
-## Recursos para realizar este taller
+## Recursos para realizar este ejercicio
 
 ### Introducción al VirtualHosting
 
@@ -29,7 +29,7 @@ Cuyo contenido podemos ver:
 
 Donde encontramos los siguientes parámetros:
 
-* [ServerName](https://httpd.apache.org/docs/2.4/mod/core.html#servername): El nombre con el que vamos a cceder al sitio virtual. En el sitio virtual por defecto (como sólo tenemos uno) está comentado, podemos acceder por nombre o por dirección IP.
+* [ServerName](https://httpd.apache.org/docs/2.4/mod/core.html#servername): El nombre con el que vamos a acceder al sitio virtual. En el sitio virtual por defecto (como sólo tenemos uno) está comentado, podemos acceder por nombre o por dirección IP.
 * [ServerAdmin](https://httpd.apache.org/docs/2.4/mod/core.html#serveradmin): Dirección de correo del administrador responsable del servidor.
 * [DocumentRoot](https://httpd.apache.org/docs/2.4/mod/core.html#documentroot): Directorio donde guardamos los ficheros que se van a servir.
 * [ErrorLog](https://httpd.apache.org/docs/2.4/mod/core.html#errorlog): Fichero de errores del host virtual.
@@ -86,12 +86,4 @@ Para conseguir estos dos sitios virtuales debes seguir los siguientes pasos:
 
 
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
 
-1. Lista los ficheros que se encuentran en el directorio `/etc/apache2/sites-enabled`.
-2. Muestra cómo has configurado la resolución estática.
-3. Capturas de pantallas accediendo a los sitios web.
-4. Repite el ejercicio cambiando los directorios de trabajo a `/srv/www`. ¿Qué modificación debes hacer en el fichero `/etc/apache2/apache2.conf`?
-
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
