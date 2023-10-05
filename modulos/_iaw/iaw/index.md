@@ -53,13 +53,13 @@ title: "Implantación de aplicaciones web (2023-2024)"
 ## Unidad 2: Implantación de aplicaciones web PHP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
-	* [Taller 1: Instalación de un servidor LAMP](2_php/t1.html)
-	* [Taller 2: VirtualHosting con Apache](2_php/t2.html)
-	* [Taller 3: Instalación de la aplicación BookMedik](2_php/t3.html)
-	* [Taller 4: Configuración Apache2 + fpm + php](2_php/t4.html)
-	* [Taller 5: Instalación de un servidor LEMP](2_php/t5.html)
-	* [Taller 6: Instalación de WordPress](2_php/t6.html)
-	* [Taller 7: Contratación y configuración de un VPS](2_php/t7.html)
+	* [Ejercicio 1: Instalación de un servidor LAMP](2_php/ejercicio1.html)
+	* [Ejercicio 2: VirtualHosting con Apache](2_php/ejercicio2.html)
+	* [Taller 1: Instalación de la aplicación BookMedik](2_php/taller1.html)
+	* [Taller 2: Configuración Apache2 + fpm + php](2_php/taller2.html)
+	* [Taller 3: Instalación de un servidor LEMP](2_php/t5.html)
+	* [Taller 4: Instalación de WordPress](2_php/t6.html)
+	* [Taller 5: Contratación y configuración de un VPS](2_php/t7.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
 -->
