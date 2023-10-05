@@ -12,3 +12,4 @@ title: "HLC. SMR. (2023-2024)"
 6. Acceso remoto usando guacamole
 7. Gestión de discos en máquinas virtuales en Proxmox
 8. Trabajando con redes en Proxmox
+9. Contenedores en Proxmox
