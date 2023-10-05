@@ -1,5 +1,5 @@
 ---
-title: "Taller 7: Contratación y configuración de un VPS"
+title: "Taller 4: Contratación y configuración de un VPS"
 ---
 
 ## ¿Qué vas a aprender en este taller?
