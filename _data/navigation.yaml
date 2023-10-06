@@ -63,11 +63,11 @@ sri:
       - title: "Inicio"
         url: /sri/
       - title: "Virtualización en Linux"
-        url: /sri/#unidad-0-virtualizaci%C3%B3n-en-linux-hlc
+        url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux-hlc
 #      - title: Infraestructura como código
 #        url: /sri/#unidad-1-infraestructura-como-c%C3%B3digo
-#      - title: DHCP
-#        url: /sri/#unidad-2-protocolo-dhcp
+      - title: DHCP
+        url: /sri/#unidad-2-protocolo-dhcp
 #      - title: HTTP
 #        url: /sri/#unidad-3-protocolo-http
 #      - title: IaaS
