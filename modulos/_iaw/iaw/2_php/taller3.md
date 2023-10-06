@@ -41,7 +41,7 @@ Descomentando la opción que nos interese: si php-fpm está en un socket Unix o 
 5. Accede a la URL de instalación.
 6. Configura de forma adecuada: las credenciales para acceder a la base de datos, los módulos PHP que te hagan falta, la configuración de WordPress,...
 7. Accede a la zona de administración de WordPress y escribe una entrada en el blog.
-8. Intenta configurar WordPress para usar URL amigables. Recuerda que nginx no lee la configuración de apache2 en los ficheros `.htaccess`.
+8. Intenta configurar WordPress para usar URL amigables (**Ajustes->Enlaces permanentes). Configura nginx de forma adecuada para que permita las URL amigables. Recuerda que nginx no lee la configuración de apache2 en los ficheros `.htaccess`.
 
 Te puede servir la configuración que encuentras en la página [WordPress de nginx](https://www.nginx.com/resources/wiki/start/topics/recipes/wordpress/).
 
