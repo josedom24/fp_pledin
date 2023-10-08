@@ -43,7 +43,7 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 	* **servidorDHCP**: Es un contador creado a partir de la plantilla **Debian Bookworm**. Configura su red de forma estática. Su dirección IP debe ser la `192.168.200.2`.
 	* **servidorWeb**: Es un contador creado a partir de la plantilla **Ubuntu 22.04 Jammy**. Configura su red de forma estática. Su dirección IP debe ser la `192.168.200.3`.
 	* Los contenedores se deben iniciar de forma automática y se les debe limitar la memoria a 512Mb.
-4. Configura la máquina **router** para que haga SNAT y permita que los contenedores tengan acceso al exterior. Instala en los contenedores el servidor ssh y configúralo para que podamos entrar con clave privada (configura tu clave pública y la mia) por ssh con el usuario `root`.
+4. Configura la máquina **router** para que haga SNAT y permita que los contenedores tengan acceso al exterior (**La configuración debe ser persistente.**). Instala en los contenedores el servidor ssh y configúralo para que podamos entrar con clave privada (configura tu clave pública y la mia) por ssh con el usuario `root`.
 
 {% capture notice-text %}
 ## Entrega
