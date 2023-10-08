@@ -1,8 +1,8 @@
 ---
-title: "Ejercicio 1: Instalación y configuración del servidor DHCP"
+title: "Taller 1: Instalación y configuración del servidor DHCP"
 ---
 
-## ¿Qué vas a aprender en este ejercicio?
+## ¿Qué vas a aprender en este taller?
 
 * Instalación del servidor isc-dhcp-server.
 * configuración básica del servicio isc-dhcp-server.
@@ -90,3 +90,11 @@ INTERFACES="eth1"
 
 8. Cuando el servidor va repartiendo la configuración a los clientes va guardando las concesiones en el fichero `/var/lib/dhcp/dhcpd.leases`.
 
+{% capture notice-text %}
+## ¿Qué tienes que entregar?
+
+1. Configuración del cliente para que configure la red de forma dinámica.
+2. Una vez que el cliente se haya configurado, capturas de pantalla donde se vea en el cliente: su dirección IP, su puerta de enlace y su servidor DNS.
+3. La concesión que se ha hecho en el servidor. Estará en el fichero donde se guarda la lista de concesiones.
+4. Una comprobación del que el cliente puede hacer resolución a un nombre de internet.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
