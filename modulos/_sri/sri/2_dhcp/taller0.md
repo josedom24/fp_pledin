@@ -22,7 +22,7 @@ Necesitamos dos cosas: disponer de un certificado x509 para nuestro equipo firma
 Seguimos los siguientes pasos:
 
 1. Creación de una solicitud de firma de certificado (Certificate Signing Request o CSR).
-	* Creamos una clave privada RSA de 4096 bits (como `root``):
+	* Creamos una clave privada RSA de 4096 bits (como `root`):
 		```	
 		openssl genrsa 4096 > /etc/ssl/private/[nombredemimaquina].key
 		```
