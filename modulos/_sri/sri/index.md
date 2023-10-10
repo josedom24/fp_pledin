@@ -105,7 +105,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 0: Configuración del cliente VPN](2_dhcp/taller0.html)
 	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/taller1.html)
 	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/taller2.html)
-* [Práctica: Configuración de un servidor DHCP](2_dhcp/practica.html)
+* [Práctica: Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica.html)
 
 ## Unidad 1: Virtualización en Linux (HLC)
 
