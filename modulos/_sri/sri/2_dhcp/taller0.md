@@ -19,6 +19,8 @@ Desde el cliente OpenVPN (en casa) nos conectaremos (puerto 1194/tcp) a `sputnik
 
 Necesitamos dos cosas: disponer de un certificado x509 para nuestro equipo firmado por la **CA Gonzalo Nazareno** y configurar el cliente OpenVPN para que se conecte a **sputnik**.
 
+
+
 Seguimos los siguientes pasos:
 
 1. Creación de una solicitud de firma de certificado (Certificate Signing Request o CSR).
@@ -55,6 +57,8 @@ Seguimos los siguientes pasos:
 		```
 		apt install openvpn
 		```
+	* Te puedes bajar el certificado de la CA Gonzalo nazareno en este [enlace](https://dit.gonzalonazareno.org/gestiona/info/documentacion/ca).
+	
 	* Creamos el siguiente fichero con extensión `.conf` (exigencia de OpenVPN) en el directorio `/etc/openvpn`:
 		```
 		dev tun
