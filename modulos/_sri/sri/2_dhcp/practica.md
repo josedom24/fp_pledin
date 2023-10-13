@@ -100,7 +100,7 @@ En este último punto vamos a modificar nuestra infraestructura para que el serv
 	* Duración de la concesión: 1 hora
 	* Puerta de enlace: `172.16.0.1`
 	* Servidor DNS: `172.22.0.1`
-6. Para comprobar que funciona el nuevo ámbito, utiliza el script para crear el **otro_cliente** con un volumen de 6G y conectada a la **red_intra2**.
+6. Para comprobar que funciona el nuevo ámbito, utiliza el script para crear una máquina llamada **otro_cliente** con un volumen de 6G y conectada a la **red_intra2**.
 
 {% capture notice-text %}
 ## Entrega
