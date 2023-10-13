@@ -65,7 +65,7 @@ Escribe un script llamado `crear_cliente.sh` que va a automatizar la tarea de cr
 
 Por lo tanto el script recibe los siguientes argumentos en la línea de comandos:
 
-* **Nombre**: nombre de la nueva máquina.
+* **Nombre**: nombre de la nueva máquina y hostname.
 * **Tamaño del volumen**: Tamaño del volumen que tendrá la nueva máquina.
 * **Nombre de la red** a la que habrá que conectar la máquina.
 
