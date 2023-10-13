@@ -95,7 +95,7 @@ En este último punto vamos a modificar nuestra infraestructura para que el serv
 3. Conecta el contenedor **servidorDHCP** a esta red, y configura la nueva interfaz con la dirección `172.16.0.2\16`.
 4. Configura la máquina **router** para que haga SNAT y permita que que las máquinas conectadas a esta red tengan acceso al exterior.
 5. Configura el nuevo ámbito en el servidor dhcp con las siguientes características.
-	* Rango de direcciones: `172.16.0.3` - `172.22.255.254`.
+	* Rango de direcciones: `172.16.0.3` - `172.16.255.254`.
 	* Máscara de red: `255.255.0.0`
 	* Duración de la concesión: 1 hora
 	* Puerta de enlace: `172.16.0.1`
