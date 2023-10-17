@@ -22,12 +22,12 @@ title: "Taller 2: Funcionamiento del servidor DHCP"
 	* `fixed-address`: La dirección IP que le vamos a asignar. 
 	* Podemos usar también las opciones ya explicadas en la sección principal.
 
-	Realiza una reserva para el cliente Windows, para que tenga la IP `192.168.200.200`. La configuración quedaría:
+	Realiza una reserva para el cliente Windows, para que tenga la IP `192.168.0.200`. La configuración quedaría:
 
 	```
 	host cliente-windows {
 	  hardware ethernet xx:xx:xx:xx:xx:xx;
-	  fixed-address 192.168.200.200;
+	  fixed-address 192.168.0.200;
 	}
 	```
 
