@@ -28,7 +28,7 @@ title: "Taller 1: Ansible - Playbook sencillo"
 	* En este ejemplo hemos creado un grupo `servidores`, donde hemos definido nuestra máquina.
 	* A la máquina la hemos llamado `nodo1` (**cambia el nombre y pon el de tu máquina**), además **debes rellenar la siguiente información del nodo**:
 		* `ansible_ssh_host`: Dirección IP del equipo que queremos configurar.
-		* `ansible_ssh_user`: Usuario sin privilegios con el que vamos  acceder por ssh (lo hemos creado en ele equipo en el punto 2).
+		* `ansible_ssh_user`: Usuario sin privilegios con el que vamos  acceder por ssh (lo hemos creado en el equipo en el punto 2).
 		* `ansible_ssh_private_key_file`: Fichero con la clave privada que vamos a usar para el acceso.
 
 5. El **fichero de configuración** lo encontramos en el fichero `ansible.cfg`, donde **tienes que poner el nombre del fichero de inventario en el parámetro `inventory`**. El parámetro `host_key_checking = False` impide que se haga la comprobación del equipo cada vez que se hace la conexión ssh.
