@@ -82,7 +82,7 @@ Para comprobar que funciona:
 ## Entrega
 
 1. La url del repositorio GitHub donde se encuentra el script.
-2. Una comprobación de que el tamaño del disco de la máquina creada es el adecuado.
+2. Una comprobación de que el tamaño del disco (y de su sistema de fichero) de la máquina creada es el adecuado.
 3. Una vez creado el **cliente2**, pruebas de funcionamiento del direccionamiento que ha tomado y de que tiene acceso al exterior.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
