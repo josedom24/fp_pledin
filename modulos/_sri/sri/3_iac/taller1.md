@@ -17,7 +17,7 @@ title: "Taller 1: Ansible - Playbook sencillo"
 
 2. Crea una máquina virtual que vamos a configurar con ansible. Esta máquina debe tener las siguientes características:
 
-	* Debe tener creado un usuario sin privilegios con el que podamos acceder a la máquina usando claves rsa. 
+	* Debe tener creado un usuario sin privilegios con el que podamos acceder a la máquina usando claves ssh. 
 	* Debe tener instalado `sudo` y el usuario que estamos usando para acceder debe estar configurado para poder usar `sudo` sin que le pida la contraseña.
 
 3. Haz un fork del repositorio [ansible_ejemplos](https://github.com/josedom24/ansible_ejemplos) y realiza una clonación en el ordenador donde has instalado ansible. Vamos a trabajar en el directorio **Taller1**.

@@ -88,7 +88,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 ## Unidad 3: Infraestructura como código
 	
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/iac.pdf)
-	* [Taller 1: Ansible - Playbook sencillo](3_iac/t1.html)
+	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
 
 <!--
 	* [Taller 2: Ansible - Playbook con roles](3_iac/t2.html)
