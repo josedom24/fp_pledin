@@ -35,9 +35,9 @@ title: "Taller 1: Ansible - Playbook sencillo"
 
 6. Vamos a comprobar si tenemos conectividad con el nodo. Para ello vamos a usar el módulo `ping` de ansible. Ejecuta alguna de estas instrucciones:
 
-	* `ansible all -m ping`: Comprueba la conectividad con **todos** los equipos del inventario.
-	* `ansible servidores -m ping`: Comprueba la conectividad con  los equipos del **grupo servidores**.
-	* `ansible nodo1 -m ping`: Comprueba la conectividad con el equipo **nodo1** (Cambia el nombre con el que has configurado en el fichero).
+	* `ansible -m ping all`: Comprueba la conectividad con **todos** los equipos del inventario.
+	* `ansible -m ping servidores`: Comprueba la conectividad con  los equipos del **grupo servidores**.
+	* `ansible -m ping nodo1`: Comprueba la conectividad con el equipo **nodo1** (Cambia el nombre con el que has configurado en el fichero).
 	
 	Debe salir el mensaje "pong" en verde.
 
