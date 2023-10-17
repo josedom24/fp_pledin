@@ -84,11 +84,13 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 * [Práctica: Instalación de nginx con PHP](3_http/practica.html)
 
 
-
+-->
 ## Unidad 3: Infraestructura como código
 	
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/iac.pdf)
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/t1.html)
+
+<!--
 	* [Taller 2: Ansible - Playbook con roles](3_iac/t2.html)
 	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/t3.html)
 	* [Taller 4: Vagrant - Creación de escenarios](3_iac/t4.html)
