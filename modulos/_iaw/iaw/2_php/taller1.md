@@ -36,7 +36,7 @@ Para realizar la instalación sigue los siguientes pasos:
 1. Crea una base datos. Utilizando el esquema de tablas que encuentras en el fichero `biblioteca.sql` para crear las tablas. Crea un usuario que tenga privilegios sobre dicha base de datos.
 2. Crea un virtualhost con el que accederás con el nombre `biblioteca.tunombre.org`. Copia en el *DocumentRoot* los ficheros de la aplicación (podrías clonar el repositorio en el *DocumentRoot*). Como el nombre del directorio es muy grande puedes cambiar su nombre, por ejemplo le puedes poner `biblio`.
 3. Vamos a configurar el acceso a la base de datos desde la aplicación, para ello cambia el fichero `Config/Config.php` indicando la URL con la que vas a acceder a la aplicación, el usuario de acceso (el que has creado en el punto 1), su contraseña, la base de datos que has creado y la dirección donde se encuentra la base de datos, que en este caso es `localhost`.
-4. El módulo **rewrite** de apache2 nos va a permitir acceder a una URL e internamente estar accediendo a otra. En est aplicación lo tenemos que activar para ello, ejecutas `a2enmod rewritte` y reinicia el servidor.
+4. El módulo **rewrite** de apache2 nos va a permitir acceder a una URL e internamente estar accediendo a otra. En esta aplicación lo tenemos que activar para ello, ejecutamos `a2enmod rewritte` y reinicia el servidor.
 5. La configuración del módulo rewrite está realizada en el fichero de configuración apache2 `.htaccess`. Tenemos que permitir al servidor web leer este fichero, para ello modifica la directiva `AllowOverride` con el valor `All` en el fichero `/etc/apache2/apache2.conf` en la configuración del directorio `/var/www`, quedaría de la siguiente forma:
 	```
 	...
