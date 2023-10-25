@@ -91,6 +91,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
 	* [Taller 2: Ansible - Playbook con roles](3_iac/taller2.html)
 	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/taller3.html)
+* [Teoría: Presentación - Configuración de redes en KVM y en Vagrant](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/redes_kvm_vagrant.pdf)
 	* [Taller 4: Vagrant - Creación de escenarios](3_iac/taller4.html)
 
 <!-->
