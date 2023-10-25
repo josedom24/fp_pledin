@@ -91,10 +91,9 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
 	* [Taller 2: Ansible - Playbook con roles](3_iac/taller2.html)
 	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/taller3.html)
+	* [Taller 4: Vagrant - Creación de escenarios](3_iac/taller4.html)
 
-<!--
-
-	* [Taller 4: Vagrant - Creación de escenarios](3_iac/t4.html)
+<!-->
 	* [Taller 5: Vagrant + Ansible](3_iac/t5.html)
 * [Práctica: Creación y configuración de un escenario router-nat](3_iac/practica.html)
 
