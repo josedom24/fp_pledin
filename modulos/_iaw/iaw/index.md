@@ -63,7 +63,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	* [Ejercicio 1: Instalación de un servidor LAMP](2_php/ejercicio1.html)
 	* [Ejercicio 2: VirtualHosting con Apache](2_php/ejercicio2.html)
 	* [Taller 1: Instalación de la aplicación Biblioteca](2_php/taller1.html)
-	* [Taller 2: Configuración Apache2 + fpm + php](2_php/taller2.html)
+	* [Taller 2: Configuración Apache2 + fpm-php](2_php/taller2.html)
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 

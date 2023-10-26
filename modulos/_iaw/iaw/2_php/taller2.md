@@ -1,5 +1,5 @@
 ---
-title: "Taller 2: Configuración Apache2 + fpm+php"
+title: "Taller 2: Configuración Apache2 + fpm-php"
 ---
 
 ## ¿Qué vas a aprender en este taller?
