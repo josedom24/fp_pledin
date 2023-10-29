@@ -19,7 +19,7 @@ Los contenidos necesarios para la realización de este taller y para profundizar
 
 ## ¿Qué tienes que hacer?
 
-1. Utilizando el escenario que puedes obtener en el directorio **Taller4** del repositorio [ansible_ejemplos](https://github.com/josedom24/ansible_ejemplos), crea el escenario con vagrant.
+1. Utilizando el escenario que puedes obtener en el directorio **Taller4** del repositorio [taller_ansible_vagrant](https://github.com/josedom24/taller_ansible_vagrant), crea el escenario con vagrant.
 2. El `nodo2` utiliza otro box. Comprueba que se ha descargado antes de crear las máquinas.
 3. Accede a cada una de las máquinas.
 4. Comprueba la configuración de red de `eth0`. ¿Cuál es la dirección IP?, ¿y la puerta de enlace?, y ¿el DNS?. ¿Para qué se utiliza la interfaz de red `eth0`?.
