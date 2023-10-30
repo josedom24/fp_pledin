@@ -30,7 +30,7 @@ Podríamos usar la IP de eth0, o cualquier otra IP accesible de otra interfaz de
 
 ## ¿Qué tienes que hacer?
 
-1. Utilizando el escenario que puedes obtener en el directorio **Taller5** del repositorio [ansible_ejemplos](https://github.com/josedom24/ansible_ejemplos), crea el escenario con vagrant.
+1. Utilizando el escenario que puedes obtener en el directorio **Taller5** del repositorio [taller_ansible_vagrant](https://github.com/josedom24/taller_ansible_vagrant), crea el escenario con vagrant.
 
 2. Tenemos una sola máquina, accede a ella y averigua la IP que ha tomado la interfaz de red.
 
