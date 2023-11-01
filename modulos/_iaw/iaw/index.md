@@ -66,7 +66,6 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	* [Taller 4: Contratación y configuración de un VPS](2_php/taller4.html)
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/https.pdf)
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
-* [Práctica: Configuración de HTTPS en la VPS](3_https/practica.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
 -->
