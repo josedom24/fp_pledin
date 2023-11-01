@@ -19,7 +19,7 @@ Por ejemplo podemos crear un nuevo Virtual Host haciendo una copiar del sitio vi
 	cd /etc/nginx/sites-availables/
 	cp default pagina1
 
-Ahora en el fichero `pagina1` configuro el nuevo sitio virtual, teneidno en cuenta los siguientes parámetros:
+Ahora en el fichero `pagina1` configuro el nuevo sitio virtual, teniendo en cuenta los siguientes parámetros:
 
 * `server_name`: El nombre con el que vamos a acceder al sitio virtual. 
 * `root`: Directorio donde guardamos los ficheros que se van a servir.
@@ -34,7 +34,7 @@ Para activar un nuevo sitio tenemos que crear el enlace directo en el directorio
 
 ## .htaccess en nginx
 
-El fichero `.htaccess` en apache2 permite introducir configuración de apache2 en el DocuemntRoot del sitio virtual, de esta manera un usuario final puede hacer configuraciones de apache2 sin intervención del administrador. Controlamos la utilización de estos ficheros con la directiva `AllowOverride`.
+El fichero `.htaccess` en apache2 permite introducir configuración de apache2 en el DocumentRoot del sitio virtual, de esta manera un usuario final puede hacer configuraciones de apache2 sin intervención del administrador. Controlamos la utilización de estos ficheros con la directiva `AllowOverride`.
 
 **En nginx no podemos hacer uso de los ficheros `.htaccess` de apache2.**
 
