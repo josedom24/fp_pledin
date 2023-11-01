@@ -10,27 +10,8 @@ title: "Taller 3: Instalación de WordPress en un servidor LEMP"
 
 ## Recursos para realizar este taller
 
-### Configuración de Nginx con php-fpm
-
-Para ejecutar en un virtualhost nginx el proxy inverso para fpm_php:
-
-En el virtualhost descomentamos las siguientes líneas:
-
-	location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-
-        # With php-fpm (or other unix sockets):
-        #fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
-        # With php-cgi (or other tcp sockets):
-        #fastcgi_pass 127.0.0.1:9000;
-    }
-
-Descomentando la opción que nos interese: si php-fpm está en un socket Unix o en un socket TCP.
-
-### Instalación de WordPress en LAMP
-
 * [Vídeo: Como instalar Wordpress en un entorno LAMP](https://www.youtube.com/watch?v=muAKPiPqW6g)
-
+* [Teoría: Introducción al servidor web nginx](nginx.html)
 
 ## ¿Qué tienes que hacer?
 
