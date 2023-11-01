@@ -31,7 +31,7 @@ Instala HAproxy en `balanceador` y configuralo de la siguiente manera:
         timeout client  50000ms
         timeout server  50000ms        
     listen granja_cda 
-        bind 172.22.x.x:80 #aquí pon la dirección ip del balanceador
+        bind 192.168.121.x:80 #aquí pon la dirección ip del balanceador
         mode http
         stats enable
         stats auth  cda:cda
@@ -49,13 +49,13 @@ Define (en la sección `listen`) un "proxy inverso" de nombre `granja_cda` que:
 
 Más detalles en [Opciones de configuración HAPproxy 1.8](https://cbonte.github.io/haproxy-dconv/1.8/configuration.html).
 
-Inicia HAproxy en balanceador: Antes de hacerlo es necesario habilitar en ``/etc/default/haproxy`` el arranque de HAproxy desde los scripts de inicio, estableciendo la variable ``ENABLED=1``
 
-Por último, desde la máquina cliente abrir en un navegador web la URL `http://172.22.x.x` y recargar varias veces para comprobar como cambia el servidor real que responde las peticiones.
+
+Por último, desde la máquina cliente abrir en un navegador web la URL `http://192.168.121.x` y recargar varias veces para comprobar como cambia el servidor real que responde las peticiones.
 
 {% capture notice-text %}
 * **Tarea 1**: Entrega capturas de pantalla que el balanceador está funcionando.
-* **Tarea 2**: Entrega una captura de pantalla donde se vea la página web de estadísticas de haproxy (abrir en un navegador web la URL `http://172.22.x.x/haproxy?stats`, pedirá un usuario y un password, ambos `cda`).
+* **Tarea 2**: Entrega una captura de pantalla donde se vea la página web de estadísticas de haproxy (abrir en un navegador web la URL `http://192.168.121.x/haproxy?stats`, pedirá un usuario y un password, ambos `cda`).
 * **Tarea 3**: Desde uno de los servidores (apache1 ó apache2), verificar los logs del servidor Apache. En todos los casos debería figurar como única dirección IP cliente la IP interna de la máquina balanceador `10.10.10.1`. ¿Por qué?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
@@ -103,7 +103,7 @@ Contenido a incluir: (añadidos marcados con ``<- aquí``)::
          timeout server  50000ms            
 
      listen granja_cda 
-         bind 172.22.x.x:80 #aquí pon la dirección ip del balanceador
+         bind 192.168.121.X:80 #aquí pon la dirección ip del balanceador
          mode http
          stats enable
          stats auth  cda:cda
@@ -119,10 +119,10 @@ El parámetro cookie especifica el nombre de la cookie que se usa como identific
 
 Reiniciamos el balanceador y realizamos las siguientes acciones:
 
-* desde el navegador web acceder varias veces a la URL `http://172.22.x.x/sesion.php`(comprobar el incremento del contador [variable de sesión])
+* desde el navegador web acceder varias veces a la URL `http://192.168.121.x/sesion.php`(comprobar el incremento del contador [variable de sesión])
 * acceder la misma URL desde el navegador en modo texto lynx (o desde una pestaña de "incógnito" del Navegador para forzar la creación de una nueva sesión)::
 
-        cliente:~# lynx -accept-all-cookies http://172.22.x.x/sesion.php
+        cliente:~# lynx -accept-all-cookies http://192.168.121.x/sesion.php
 
 {% capture notice-text %}
 * **Tarea 4**:Verificar la estructura y valores de las cookies PHPSESSID intercambiadas. En la primera respuesta HTTP (inicio de sesión), se establece su valor con un parámetro HTTP SetCookie en la cabecera de la respuesta. Las sucesivas peticiones del cliente incluyen el valor de esa cookie (parámetro HTTP Cookie en la cabecera de las peticiones)
