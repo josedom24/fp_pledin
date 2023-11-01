@@ -17,8 +17,8 @@ title: "Taller 3: Instalación de WordPress en un servidor LEMP"
 
 1. Este taller lo vamos a hacer en una máquina virtual con un servidor LEMP instalado.
 2. Crea una base de datos y un usuario con todos los privilegios para esa base de datos.
-3. Configura un virtualhost donde vamos a realizar la instalación.
-4. Descarga en el DocumentRoot la última versión de WordPress.
+3. Configura un virtualhost donde vamos a realizar la instalación, al que se accederá con el nombre `wordpress.tunombre.algo`.
+4. Descarga en el **DocumentRoot** la última versión de WordPress.
 5. Accede a la URL de instalación.
 6. Configura de forma adecuada: las credenciales para acceder a la base de datos, los módulos PHP que te hagan falta, la configuración de WordPress,...
 7. Accede a la zona de administración de WordPress y escribe una entrada en el blog.
