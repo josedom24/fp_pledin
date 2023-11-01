@@ -1,5 +1,5 @@
 ---
-title: "Taller 4: apache2 como proxy inverso"
+title: "Taller 3: apache2 como proxy inverso"
 ---
 
 ## ¿Qué vas a aprender en este taller?

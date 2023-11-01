@@ -74,14 +74,14 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 2: Gestión de redes en OpenStack](4_iaas/t2.html)
 * [Práctica: Escenario en OpenStack](4_iaas/practica.html)
 
-## Unidad 3: Protocolo HTTP
+## Unidad 4: Protocolo HTTP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/http.pdf)
-	* [Taller 1: Peticiones HTTP](3_http/t1.html)
-	* [Taller 2: Configuración del servidor web Apache2](3_http/t2.html)
-	* [Taller 3: Instalación de phpmyadmin](3_http/t3.html)
-	* [Taller 4: apache2 como proxy inverso](3_http/t4.html)
-* [Práctica: Instalación de nginx con PHP](3_http/practica.html)
+	* [Ejercicio 1: Peticiones HTTP](4_http/ejercicio1.html)
+	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
+	* [Taller 3: Instalación de phpmyadmin](4_http/t3.html)
+	* [Taller 4: apache2 como proxy inverso](4_http/t4.html)
+* [Práctica: Instalación de nginx con PHP](4_http/practica.html)
 
 
 -->

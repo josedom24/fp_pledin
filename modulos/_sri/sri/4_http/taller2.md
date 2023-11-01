@@ -1,5 +1,5 @@
 ---
-title: "Taller 3: Instalación de phpmyadmin"
+title: "Taller 2: Instalación de phpmyadmin"
 ---
 
 ## ¿Qué vas a aprender en este taller?
@@ -9,7 +9,7 @@ title: "Taller 3: Instalación de phpmyadmin"
 
 ## ¿Qué tienes que hacer?
 
-En primer lugar, configura en tu servidor web un servicio LAMP para instalar una aplicación PHP y tener disponible un gestor de base de datos (**Puedes usar cuelquir máquina donde tengas ya instalado el servidor LAMP**).
+En primer lugar, configura en tu servidor web un servicio LAMP para instalar una aplicación PHP y tener disponible un gestor de base de datos (**Puedes usar cualquier máquina donde tengas ya instalado el servidor LAMP**).
 [phpmyadmin](https://www.phpmyadmin.net/) es una aplicación web escrita en PHP que nos posibilita la gestión de una base de datos mysql/mariadb. Normalmente vamos a instalar las aplicaciones web descargando directamente el código de la aplicación al servidor, pero en este ejercicio vamos a instalar la aplicación desde los repositorios de Debian.
 
 Realiza los siguientes pasos:

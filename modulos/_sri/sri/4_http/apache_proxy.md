@@ -22,7 +22,7 @@ Vamos a utilizar este [fichero](files/vagrantproxy.zip) para crear la infraestru
 
 Vagrant ha configurado los siguiente:
 
-* En el servidor `porxy` ha instalado apache2, ha configurado el router-nat y ha escrito en la resolución estática el nombre del servidor interno.
+* En el servidor `proxy` ha instalado apache2, ha configurado el router-nat y ha escrito en la resolución estática el nombre del servidor interno.
 * En el servidor web interno se ha instalado apache2, se ha cambiado la ruta por defecto para salir por el proxy, se ha copia una página web, se ha configurado una redirección con un fichero `.htaccess` y por último se ha cambiado la configuración de apache2 para permitir ficheros `.htaccess`.
 
 En nuestro servidor interno hemos creado un virtual host para servir una página estática, `index.html`, con este contenido:

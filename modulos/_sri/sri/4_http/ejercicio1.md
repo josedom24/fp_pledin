@@ -1,8 +1,8 @@
 ---
-title: "Taller 1: Peticiones HTTP"
+title: "Ejercicio 1: Peticiones HTTP"
 ---
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
 * Repasar los conceptos aprendidos en el estudio del protocolo HTTP. 
 * Realizar peticiones HTTP con curl
@@ -28,9 +28,3 @@ Ejercicios que tienes que realizar:
 5. Usando el método GET manda tu nombre a la página `http://www2.gonzalonazareno.org/josedom/resultado.php`.
 6. Usando el método POST (que envía el contenido en el cuerpo) manda tu nombre a la misma página.
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
-
-1. Prueba de funcionamiento de cada uno de los ejercicios.
-2. Respuesta de las preguntas de los ejercicios.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

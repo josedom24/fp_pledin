@@ -1,5 +1,5 @@
 ---
-title: "Taller 2: Configuración de un servidor Apache2"
+title: "Taller 1: Configuración de un servidor Apache2"
 ---
 
 ## ¿Qué vas a aprender en este taller?
