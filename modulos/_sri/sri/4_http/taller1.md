@@ -16,7 +16,7 @@ title: "Taller 1: Configuración de un servidor Apache2"
 
 Los contenidos necesarios para la realización de este taller y para profundizar en la configuración de Apache2, lo puedes encontrar en el siguiente apartado:
 
-* [Configuración básica de Apache2](apache2.html)
+* [Teoría: Configuración básica de Apache2](apache2.html)
 
 ## ¿Qué tienes que hacer?
 
