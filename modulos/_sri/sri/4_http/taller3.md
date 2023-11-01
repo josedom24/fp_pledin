@@ -13,7 +13,7 @@ title: "Taller 3: apache2 como proxy inverso"
 
 Los contenidos necesarios para la realización de este taller y para profundizar en la configuración de Apache2 como proxy inverso, lo puedes encontrar en el siguiente apartado:
 
-* [Apache2 como proxy inverso](apache_proxy.html)
+* [Teoría: Apache2 como proxy inverso](apache_proxy.html)
 
 ## ¿Qué tienes que hacer?
 
