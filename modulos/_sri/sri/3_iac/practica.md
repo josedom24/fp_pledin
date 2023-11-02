@@ -1,30 +1,43 @@
 ---
-title: "Práctica: Creación y configuración de un escenario router-nat"
+title: "Práctica: Creación y configuración de un servidor LAMP"
 ---
 
+![escenario](img/practica.png)
 
+## 1ª Tarea: Vagrant
 
-![router](img/router.png)
+Queremos automatizar la creación de un servidor LAMP usando Vagrant, el esquema que queremos desarrollar, que vemos en la imagen, tiene las siguientes características:
 
-## Descripción
+Es escenario tiene tres máquinas:
 
-Queremos automatizar la creación de la siguiente infraestructura usando Vagrant, el esquema que queremos desarrollar, que vemos en la imagen, tiene las siguientes características:
+* `router`: que está conectada a una red pública (**br0**) y a una red privada (muy aislada). La máquina `router` debe salir por la red pública. **Esta máquina no va a utilizar eth0 para acceder al exterior**.
+* `web`: En este servidor se instalará un servidor web. Esta máquina está conectada a la misma red privada que la máquina anterior. Y esta conectada por otra red muy aislada a la máquina `bd`.
+* `bd`: En este servidor se instalará un gestor de bases de datos. Está conectada a la máquina `web` por la segunda red privada muy aislada.
 
-Es escenario tiene dos máquinas:
+## 2ª Tarea: Ansible
 
-* `router`: que está conectada a una red pública y a una red privada (muy aislada).
-* `cliente`: esta máquina está conectada a la misma red privada que la máquina anterior.
-* La máquina `router` debe salir por la red pública. **Esta máquina no va a utilizar eth0 para acceder al exterior**.
+Vamos a usar la interfaz eth0 de las máquinas que están conectadas a la **red de mantenimiento** para conectarnos con ansible y configurar las máquinas. Cuando termine el ejercicio, no usaremos `vagrant ssh` para conectarnos por ssh a las máquinas (está conexión utiliza eth0), usaremos las otras interfaces para realizar las conexiones ssh.
 
 Queremos configurar el escenario con ansible, para que cumpla lo siguiente:
 
-* La máquina `cliente` debe tener acceso a internet. Para ello debe salir por `eth1` y la máquina `router` debe estar configurada para enrutar las peticiones de las máquinas conectadas a la red privada. Del mismo modo, `eth0` sólo se utiliza para acceder con `vagrant ssh`. Debes pensar qué configuración debe tener la máquina cliente: puerta de enlace, configuración dns,...
-* La máquina `cliente` tendrá un servidor web instalado, la máquina `router` hará DNAT para que podamos acceder a la página usando su IP pública.
+* Las máquinas conectadas a la red privada muy aislada a la que está conectada el `router` deben tener acceso a internet. Para ello, la máquina `router` debe estar configurada para enrutar las peticiones de las máquinas conectadas a la red privada. 
+* La máquina `web` tendrá un servidor web apache2 instalado. La máquina `router` hará DNAT para que podamos acceder a la página usando su IP pública.
+* La máquina `bd` tendrá un servidor de base de datos mariadb.
 
-La receta ansible debe tener al menos 4 roles:
+La receta ansible debe tener al menos 5 roles:
 
-* `common`: Estas tareas se deben ejecutar en **todos** los nodos: actualizar los paquetes y añadir tu clave pública a la máquinas para poder acceder a ellas con ssh. ¿Existe algún módulo de ansible que te permita copiar claves públicas?.
-* `router`: Todas las tareas necesarias para configurar `router` cómo router-nat y que salga a internet por `eth1`. Las configuraciones deben ser permanentes. ¿Existe algún módulo de ansible que te permita ejecutar `sysctl`?.
+### commons
+
+Estas tareas se deben ejecutar en **todos** los nodos: actualizar los paquetes y añadir tu clave pública a la máquinas para poder acceder a ellas con ssh. ¿Existe algún módulo de ansible que te permita copiar claves públicas?.
+
+### router
+
+Todas las tareas necesarias para configurar `router`: está máquina tiene que hacer snat, y salir a internet por eth1 (la red pública). Las configuraciones deben ser permanentes. ¿Existe algún módulo de ansible que te permita ejecutar `sysctl`?.
+
+### redinterna
+
+Todas las tareas que hay ejecutar en las máquinas conectadas al `router` por la red privada muy aislada.
+--------------------
 * `cliente`: Todas las tareas necesarias para que **las máquinas conectadas a la red privada** salgan a internet por `eth1`.
 * `web`: Las tareas necesarias para instalar y configurar un servidor web con una página estática en la máquina `cliente`.
 
