@@ -58,7 +58,7 @@ Crea un escenario con vagrant o kvm con las siguientes características:
 3. Capturas de pantalla donde se demuestre que esta funcionando el cliente de NextCloud.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 4: Configuración de HTTPS en el VPS"
+## Tarea 4: Configuración de HTTPS en el VPS
 
 Vamos a configurar el protocolo HTTPS para el acceso a nuestras aplicaciones, para ello tienes que tener en cuenta los siguiente.
 
