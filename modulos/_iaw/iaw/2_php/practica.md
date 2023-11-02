@@ -45,8 +45,7 @@ Crea un escenario con vagrant o kvm con las siguientes características:
 
 * Configura en tu VPS un servidor LEMP.
 * Configura registros DNS en tu servidor DNS de tipo **CNAME** para que el nombre `www` y `cloud` apunten al nombre de vuestro servidor.
-* Realiza la migración de tus aplicaciones web a tu VPS. La primera aplicación debe ser accesible desde la URL `www.tudominio.algo/portal`, y el NextCloud con la URL `cloud.tudominio.algo`.
-* Al acceder a `www.tudominio.algo` se debe hacer una redirección a `www.tudominio.algo/portal`.
+* Realiza la migración de tus aplicaciones web a tu VPS. La primera aplicación debe ser accesible desde la URL `www.tudominio.algo`, y el NextCloud con la URL `cloud.tudominio.algo`.
 *  Instala en un ordenador el cliente de NextCloud y realiza la configuración adecuada para acceder a "tu nube".
 
 
