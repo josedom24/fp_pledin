@@ -23,6 +23,7 @@ Queremos configurar el escenario con ansible, para que cumpla lo siguiente:
 * Las máquinas conectadas a la red privada muy aislada **red_intra** a la que está conectada el `router` deben tener acceso a internet. Para ello, la máquina `router` debe estar configurada para enrutar las peticiones de las máquinas conectadas a la red **red_intra**. 
 * La máquina `web` tendrá un servidor web apache2 instalado. La máquina `router` hará DNAT para que podamos acceder a la página usando su IP pública.
 * La máquina `bd` tendrá un servidor de base de datos mariadb.
+* Todos los datos necesarios para ejecutar el playbook (interfaces de red, direcciones ip, nombre de usuarios, nombre de bas e de datos,...) deben estar guardados en variables.
 
 La receta ansible debe tener al menos 5 roles:
 
@@ -57,6 +58,7 @@ Las tareas necesarias para instalar y configurar un servidor de base de datos ma
 5. Entrega una captura de pantalla donde se vea un acceso a la página web alojada en la máquina `web`.
 6. Entrega la instrucción y una prueba de funcionamiento para realizar una conexión desde la máquina `web` a la base de datos creada.
 7. Añade un nueva máquina llamada `cliente` conectada a la **red_intra**, configura el inventario de `ansible` y vuelve a pasar la receta para que esta máquina tenga acceso a internet.
+8. (Optativa) Crea un rol llamado `wordpress` que realice todos los pasos necesarios para intalar WordPress en el servidor web.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
