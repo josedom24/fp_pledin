@@ -37,7 +37,7 @@ Todas las tareas necesarias para configurar `router`: está máquina tiene que h
 
 ### redinterna
 
-Todas las tareas que hay ejecutar en las máquinas conectadas al `router` por la red privada muy aislada **red_intra**.
+Todas las tareas que hay ejecutar en las máquinas conectadas al `router` por la red privada muy aislada **red_intra**. En concreto, debéis cambiar la ruta por defecto.
 
 ### web 
 
@@ -45,7 +45,7 @@ Las tareas necesarias para instalar y configurar un servidor web con una página
 
 ### mariadb
 
-Las tareas necesarias para instalar y configurar un servidor de base de datos mariadb en la máquina `bd`. Se creará una base de datos y un usuario con permisos para acceder a ella. ELos datos necesarios estarán guardados en variables en el playbook de ansible.
+Las tareas necesarias para instalar y configurar un servidor de base de datos mariadb en la máquina `bd`. Se creará una base de datos y un usuario con permisos para acceder a ella. Los datos necesarios estarán guardados en variables en el playbook de ansible.
 
 
 {% capture notice-text %}
