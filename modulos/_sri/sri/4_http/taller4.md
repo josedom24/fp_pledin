@@ -47,7 +47,7 @@ Define (en la sección `listen`) un "proxy inverso" de nombre `granja_cda` que:
 * que repartirá las peticiones entre dos servidores reales (de nombres uno y dos) en el puerto 80 de las direcciones `10.10.10.11` y `10.10.10.22`
 * adicionalmente, habilita la consola Web de estadísticas, accesible con las credenciales `cda:cda`
 
-Más detalles en [Opciones de configuración HAPproxy 1.8](https://cbonte.github.io/haproxy-dconv/1.8/configuration.html).
+Más detalles en [Opciones de configuración HAPproxy 2.6](https://docs.haproxy.org/2.6/configuration.html).
 
 
 
