@@ -5,7 +5,7 @@ title: "Creación de instancias desde OSC"
 Realiza los siguientes pasos:
 
 1. Instala el cliente de línea de comando de OpenStack cómo se muestra en [Instalación y uso básico de OpenStack client (OSC)](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo1/osc.md).
-2. Descarga de Horizon tu fichero de credenciales, cargálo y ejecuta la instrucción `openstack server list` para visualizar tus instancias.
+2. Descarga de Horizon tu fichero de credenciales, cárgalo y ejecuta la instrucción `openstack server list` para visualizar tus instancias.
 3. Vamos a crear una instancia y la vamos a configurar con [**cloud-init**](https://github.com/josedom24/curso_openstack_ies/blob/main/modulo3/cloudinit.md), para ello crea un fichero `cloud-config.yaml` con el siguiente contenido:
 
 	```yaml
