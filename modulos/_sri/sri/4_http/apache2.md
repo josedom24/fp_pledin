@@ -15,7 +15,7 @@ title: "Configuración básica de Apache2"
 	
 	Cuando accedamos a la ruta `image` se estarán sirviendo los ficheros que se encuentran en `/ftp/pub/image`. como este directorio no tiene los permisos de apache2 definidos tenemos que definirlos con una directiva `Directory`. 
 	
-* **Opciones de directorio**: Todos los directorios servidos por el servidor web tienen definida una serie de opciones. Para ello usamos la directiva [Options](http://httpd.apache.org/docs/2.4/mod/core.html#options). Veamos las opciones que tiene el directorio `/var/www` defindio en el fichero `/etc/apache2/apache2.conf` (recuerda que la directiva `Directory` afecta al directorio indicado y a todos sus subdirectorios):
+* **Opciones de directorio**: Todos los directorios servidos por el servidor web tienen definida una serie de opciones. Para ello usamos la directiva [Options](http://httpd.apache.org/docs/2.4/mod/core.html#options). Veamos las opciones que tiene el directorio `/var/www` definido en el fichero `/etc/apache2/apache2.conf` (recuerda que la directiva `Directory` afecta al directorio indicado y a todos sus subdirectorios):
 
 	```
 	<Directory /var/www/>

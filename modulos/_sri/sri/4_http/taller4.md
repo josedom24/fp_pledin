@@ -9,11 +9,11 @@ En esta práctica vamos a hacer uso de vagrant para crear este escenario:
 
 ![haproxy](img/haproxy.jpg)
 
-Para ello descarga este [fichero](doc/haproxy/vagrant.zip), descomprímelo en un directorio y crea el escenario vagrant.
+ Vamos a usar los ficheros del directorio `taller_balanceador_de_carga` del repositorio [taller_http](https://github.com/josedom24/taller_http). Crea el escenario vagrant.
 
 ### Configurar y evaluar balanceo de carga con dos servidores Apache
 
-Instala HAproxy en `balanceador` y configuralo de la siguiente manera:
+Instala HAproxy en `balanceador` y configúralo de la siguiente manera:
 
     balanceador:~# cd /etc/haproxy
     balanceador:/etc/haproxy/# nano haproxy.cfg        

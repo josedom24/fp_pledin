@@ -18,7 +18,7 @@ Apache2.4 puede funcionar como proxy inverso usando el módulo `proxy` junto a o
 
 ## Ejemplo de utilización de proxy inverso
 
-Vamos a utilizar este [fichero](files/vagrantproxy.zip) para crear la infraestructura con vagrant. Se va carear un servidor interno (no accesible desde el cliente) con una dirección privada, con el nombre de `interno.example.org`.  Tenemos un servidor que va a funcionar de proxy, llamado `proxy.example.org` con dos interfaces de red: una pública conectada a la red donde se encuentra el cliente (será la red de mantenimiento), y otra interna conectada a la red donde se encuentra el servidor interno.
+ Vamos a usar los ficheros del directorio `apache2_proxy_inverso` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear la infraestructura con vagrant. Se va a crear un servidor interno (no accesible desde el cliente) con una dirección privada, con el nombre de `interno.example.org`.  Tenemos un servidor que va a funcionar de proxy, llamado `proxy.example.org` con dos interfaces de red: una pública conectada a la red donde se encuentra el cliente (será la red de mantenimiento), y otra interna conectada a la red donde se encuentra el servidor interno.
 
 Vagrant ha configurado los siguiente:
 
