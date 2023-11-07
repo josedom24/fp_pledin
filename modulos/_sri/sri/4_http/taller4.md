@@ -36,16 +36,16 @@ Instala HAproxy en `balanceador` y configúralo de la siguiente manera:
         stats enable
         stats auth  cda:cda
         balance roundrobin
-        server uno 10.10.10.11:80 maxconn 128
-        server dos 10.10.10.22:80 maxconn 128
+        server apache1 10.10.10.11:80 maxconn 128 check
+        server apache2 10.10.10.22:80 maxconn 128 check
 
 Define (en la sección `listen`) un "proxy inverso" de nombre `granja_cda` que:
 
-* trabajará en modo `http` (la otra alternativa es el modo tcp, pero no analiza las peticiones/respuestas HTTP, sólo retransmite paquetes TCP)
-* atendiendo peticiones en el puerto 80 del balanceador
-* con balanceo `round-robin`
-* que repartirá las peticiones entre dos servidores reales (de nombres uno y dos) en el puerto 80 de las direcciones `10.10.10.11` y `10.10.10.22`
-* adicionalmente, habilita la consola Web de estadísticas, accesible con las credenciales `cda:cda`
+* Trabaja en modo `http` (la otra alternativa es el modo tcp, pero no analiza las peticiones/respuestas HTTP, sólo retransmite paquetes TCP).
+* Atiende peticiones en el puerto 80 del balanceador.
+* El algoritmo de balanceo es `round-robin`,
+* Reparte las peticiones entre dos servidores reales (de nombres `apache1` y `apache2`) en el puerto 80 de las direcciones `10.10.10.11` y `10.10.10.22`, además con `check` se comprobará si el nodo está disponible.
+* Adicionalmente, habilita la consola Web de estadísticas, accesible con las credenciales `cda:cda`
 
 Más detalles en [Opciones de configuración HAPproxy 2.6](https://docs.haproxy.org/2.6/configuration.html).
 
@@ -109,18 +109,18 @@ Contenido a incluir: (añadidos marcados con ``<- aquí``)::
          stats auth  cda:cda
          balance roundrobin
          cookie PHPSESSID prefix                               # <- aquí
-         server uno 10.10.10.11:80 cookie EL_UNO maxconn 128   # <- aquí
-         server dos 10.10.10.22:80 cookie EL_DOS maxconn 128   # <- aquí
+         server apache1 10.10.10.11:80 cookie DE_APACHE1 maxconn 128 check   # <- aquí
+         server apache2 10.10.10.22:80 cookie DE_APACHE2 maxconn 128 check   # <- aquí
 
-El parámetro cookie especifica el nombre de la cookie que se usa como identificador único de la sesión del cliente (en el caso de aplicaciones web PHP se suele utilizar por defecto el nombre PHPSESSID). Para cada “servidor real” se especifica una etiqueta identificativa exclusiva mediante el parámetro cookie. Con esa información HAproxy reescribirá las cabeceras HTTP de peticiones y respuestas para seguir la pista de las sesiones establecidas en cada “servidor real” usando el nombre de cookie especificado (PHPSESSID):
+El parámetro `cookie` especifica el nombre de la cookie que se usa como identificador único de la sesión del cliente (en el caso de aplicaciones web PHP se suele utilizar por defecto el nombre `PHPSESSID`). Para cada “servidor real” se especifica una etiqueta identificativa exclusiva mediante el parámetro cookie. Con esa información HAproxy reescribirá las cabeceras HTTP de peticiones y respuestas para seguir la pista de las sesiones establecidas en cada "servidor real" usando el nombre de cookie especificado (`PHPSESSID`):
 
-* conexión cliente -> balanceador HAproxy : cookie original + etiqueta de servidor
-* conexión balanceador HAproxy -> servidor : cookie original
+* Conexión cliente -> balanceador HAproxy : cookie original + etiqueta de servidor
+* Conexión balanceador HAproxy -> servidor : cookie original
 
 Reiniciamos el balanceador y realizamos las siguientes acciones:
 
-* desde el navegador web acceder varias veces a la URL `http://192.168.121.x/sesion.php`(comprobar el incremento del contador [variable de sesión])
-* acceder la misma URL desde el navegador en modo texto lynx (o desde una pestaña de "incógnito" del Navegador para forzar la creación de una nueva sesión)::
+* Desde el navegador web acceder varias veces a la URL `http://192.168.121.x/sesion.php`(comprobar el incremento del contador [variable de sesión])
+* Acceder la misma URL desde el navegador en modo texto lynx (o desde una pestaña de "incógnito" del Navegador para forzar la creación de una nueva sesión)::
 
         cliente:~# lynx -accept-all-cookies http://192.168.121.x/sesion.php
 
