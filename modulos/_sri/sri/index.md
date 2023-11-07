@@ -73,11 +73,14 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 1: Configuración del cliente VPN](4_iaas/t1.html)
 	* [Taller 2: Gestión de redes en OpenStack](4_iaas/t2.html)
 * [Práctica: Escenario en OpenStack](4_iaas/practica.html)
+-->
 
 ## Unidad 4: Protocolo HTTP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/http.pdf)
 	* [Ejercicio 1: Peticiones HTTP](4_http/ejercicio1.html)
+
+<!--
 * [Teoría: Configuración básica de Apache2](4_http/apache2.html)
 	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
 	* [Taller 2: Instalación de phpmyadmin](4_http/taller2.html)
