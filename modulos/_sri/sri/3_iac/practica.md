@@ -50,6 +50,8 @@ Las tareas necesarias para instalar y configurar un servidor web con una página
 * Activar el módulo **rewrite**. ¿Existe algún módulo de ansible que nos permita hacerlo?
 * Si es necesario (handler) reiniciar el servicio.
 
+Además desde la máquina `web`vamos a acceder a la máquina `bd` por la **red_datos**, para ello vamos a usar a nombre a esta última máquina como `bd-tunombre.dominio.algo`. Por lo tanto añade a la resolución estática de la máquina `web` la resolución correspondiente.
+
 ### mariadb
 
 Las tareas necesarias para instalar y configurar un servidor de base de datos mariadb en la máquina `bd`. Se creará una base de datos y un usuario con permisos para acceder a ella. Los datos necesarios estarán guardados en variables en el playbook de ansible.
@@ -64,7 +66,7 @@ Recuerda reiniciar el servicio si es necesario (handler) al cambiar la configura
 3. Entrega capturas de pantalla donde se vean las puertas de enlaces de los dos equipos.
 4. Entrega capturas de pantalla donde se vean las máquinas haciendo ping al exterior.
 5. Entrega una captura de pantalla donde se vea un acceso a la página web alojada en la máquina `web` accediendo a `practica-tunombre.dominio.algo`. Entrega la línea de tu resolución estática en tu cliente para que funcione.
-6. Entrega la instrucción y una prueba de funcionamiento para realizar una conexión desde la máquina `web` a la base de datos creada.
+6. Entrega la instrucción y una prueba de funcionamiento para realizar una conexión desde la máquina `web` a la base de datos creada, usando el nombre `bd-tunombre.dominio.algo`.
 7. Añade un nueva máquina llamada `cliente` conectada a la **red_intra**, configura el inventario de `ansible` y vuelve a pasar la receta para que esta máquina tenga acceso a internet.
 8. (Optativa) Crea un rol llamado `wordpress` que realice todos los pasos necesarios para intalar WordPress en el servidor web.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
