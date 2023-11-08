@@ -41,12 +41,20 @@ Todas las tareas que hay ejecutar en las máquinas conectadas al `router` por la
 
 ### web 
 
-Las tareas necesarias para instalar y configurar un servidor web con una página estática en la máquina `web`.
+Las tareas necesarias para instalar y configurar un servidor web con una página estática en la máquina `web`. Se debe crear un VirtualHost que se acceda con el nombre `practica-tunombre.dominio.algo`, para ello se deben hacer las siguientes tareas:
+
+* Configurar el nuevo VirtualHost (utilizar un **template**). Todos los datos del nuevo VirtualHost deben estar guardados en variables.
+* Activar el VirtualHost. ¿Existe algún módulo de ansible que nos permita hacerlo?
+* Crear el DocumentRoot.
+* Copiar una página estática al DocumentRoot.
+* Activar el módulo **rewrite**. ¿Existe algún módulo de ansible que nos permita hacerlo?
+* Si es necesario (handler) reiniciar el servicio.
 
 ### mariadb
 
 Las tareas necesarias para instalar y configurar un servidor de base de datos mariadb en la máquina `bd`. Se creará una base de datos y un usuario con permisos para acceder a ella. Los datos necesarios estarán guardados en variables en el playbook de ansible.
 
+Recuerda reiniciar el servicio si es necesario (handler) al cambiar la configuración del servicio.
 
 {% capture notice-text %}
 ## Entrega
@@ -55,7 +63,7 @@ Las tareas necesarias para instalar y configurar un servidor de base de datos ma
 2. Entrega una captura de pantalla accediendo por ssh a las dos máquinas (**sin utilizar `vagrant ssh`, es decir sin hacer conexiones a `eth0`**). Usa la opción `-A`  de ssh para acceder a `www` o a `db`.
 3. Entrega capturas de pantalla donde se vean las puertas de enlaces de los dos equipos.
 4. Entrega capturas de pantalla donde se vean las máquinas haciendo ping al exterior.
-5. Entrega una captura de pantalla donde se vea un acceso a la página web alojada en la máquina `web`.
+5. Entrega una captura de pantalla donde se vea un acceso a la página web alojada en la máquina `web` accediendo a `practica-tunombre.dominio.algo`. Entrega la línea de tu resolución estática en tu cliente para que funcione.
 6. Entrega la instrucción y una prueba de funcionamiento para realizar una conexión desde la máquina `web` a la base de datos creada.
 7. Añade un nueva máquina llamada `cliente` conectada a la **red_intra**, configura el inventario de `ansible` y vuelve a pasar la receta para que esta máquina tenga acceso a internet.
 8. (Optativa) Crea un rol llamado `wordpress` que realice todos los pasos necesarios para intalar WordPress en el servidor web.
