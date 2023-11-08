@@ -61,7 +61,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Teoría: Introducción al servidor web nginx](2_php/nginx.html)
 	* [Taller 3: Instalación de WordPress en un servidor LEMP](2_php/taller3.html)
 	* [Taller 4: Contratación y configuración de un VPS](2_php/taller4.html)
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/https.pdf)
+* [Teoría: Introducción a HTTPS con Let’s Encrypt](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/https.pdf)
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
