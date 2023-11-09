@@ -10,7 +10,7 @@ title: "Ejercicio 1: Ejecución de aplicaciones python flask"
 	apt install redis
 	```
 
-	Pra más información sobre redis puedes ller este interesante artículo: [Redis, base de datos no relacional](https://www.josedomingo.org/pledin/2015/02/redis-base-de-datos-no-relacional/).
+	Pra más información sobre redis puedes leer este interesante artículo: [Redis, base de datos no relacional](https://www.josedomingo.org/pledin/2015/02/redis-base-de-datos-no-relacional/).
 
 4. Crea un entorno virtual donde vamos a instalar las librerías necesarias para que funcione nuestra aplicación (fichero `requirements.txt`).
 5. Ejecuta el servidor web de desarrollo ejecutando la siguientes instrucción: `python3 app.py`. Recuerda abrir el puerto 5000 en el grupo de seguridad y accede desde el navegador a la URL `http://172.22.X.X:5000`.
