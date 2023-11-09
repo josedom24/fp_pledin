@@ -46,6 +46,11 @@ title: "Implantación de aplicaciones web (2023-2024)"
 
 -->
 
+## Unidad 3: Implantación de aplicaciones web Python
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/python.pdf)
+	* [Ejercicio 1: Ejecución de aplicaciones python flask](3_python/ejercicio1.html)
+
 ## Unidad 2: Implantación de aplicaciones web PHP
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
