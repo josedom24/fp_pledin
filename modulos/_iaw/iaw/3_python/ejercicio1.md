@@ -4,7 +4,7 @@ title: "Ejercicio 1: Ejecución de aplicaciones python flask"
 
 1. Crea una máquina en OpenStack con la que vamos a trabajar los ejercicios y talleres de esta unidad.
 2. Clona el repositorio de la aplicación [guestbook](https://github.com/josedom24/guestbook).
-3. `guestbook` es una aplicación escrita en python flask. Es una aplicación donde podemos dejar guardadas mensajes en un "libro de visita". Los mensajes se van a guardar en una base de daros no relacional llamada redis. redis es una base de datos clave-valor y necesitamos instalarla:
+3. `guestbook` es una aplicación escrita en python flask. Es una aplicación donde podemos dejar guardadas mensajes en un "libro de visita". Los mensajes se van a guardar en una base de datos no relacional llamada redis. redis es una base de datos clave-valor y necesitamos instalarla:
 
 	```
 	apt install redis
