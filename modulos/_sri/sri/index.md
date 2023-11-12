@@ -79,10 +79,10 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/http.pdf)
 	* [Ejercicio 1: Peticiones HTTP](4_http/ejercicio1.html)
-
-<!--
 * [Teoría: Configuración básica de Apache2](4_http/apache2.html)
 	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
+
+<!--
 	* [Taller 2: Instalación de phpmyadmin](4_http/taller2.html)
 * [Teoría: Apache2 como proxy inverso](4_http/apache_proxy.html)
 	* [Taller 3: apache2 como proxy inverso](4_http/taller3.html)
