@@ -31,8 +31,8 @@ Realiza los siguientes pasos:
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. Una captura donde se vea la base de datos que has creado en el punto 1.
+1. Una captura de phpmyadmin donde se vea la base de datos que has creado en el punto 1.
 2. ¿Cómo has quitado la configuración de acceso a `phpmyadmin` en el punto 5?
 3. Entrega una captura de la configuración del virtualhost.
-4. Entrega una captura con el acceso a `phpmyadmin` con el usuario que creaste en el punto 1.   
+4. Entrega una captura con el acceso a `phpmyadmin` usando el nombre *basededatos.tunombre.org*, con el usuario que creaste en el punto 1.   
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
