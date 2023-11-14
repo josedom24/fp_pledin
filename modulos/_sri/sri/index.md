@@ -82,6 +82,8 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 * [Teoría: Configuración básica de Apache2](4_http/apache2.html)
 	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
 	* [Taller 2: Instalación de phpmyadmin](4_http/taller2.html)
+
+
 <!--
 
 * [Teoría: Apache2 como proxy inverso](4_http/apache_proxy.html)
