@@ -1,12 +1,12 @@
 ---
-title: "Apache2 como proxy inverso"
+title: "Introducción a proxy inverso"
 ---
 
 Un proxy inverso es un tipo de servidor proxy que recupera recursos en nombre de un cliente desde uno o más servidores. Por lo tanto el cliente hace la petición al puerto 80 del proxy (o al puerto 443 si usamos https), y éste es el que hace la petición al servidor web que normalmente está en una red interna no accesible desde el cliente.
 
 ![proxy](img/proxy2.png)
 
-## Apache como proxy inverso
+## Apache2 como proxy inverso
 
 Apache2.4 puede funcionar como proxy inverso usando el módulo `proxy` junto a otros módulos, por ejemplo:
 
@@ -15,7 +15,7 @@ Apache2.4 puede funcionar como proxy inverso usando el módulo `proxy` junto a o
   * `proxy_html`: Permite reescribir los enlaces HTML en el espacio de direcciones de un proxy.
   * ...
 
-## Ejemplo de utilización de proxy inverso
+### Ejemplo de utilización de proxy inverso
 
  Vamos a usar los ficheros del directorio `apache2_proxy_inverso` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear la infraestructura con vagrant. Se va a crear un servidor interno (no accesible desde el cliente) con una dirección privada, con el nombre de `interno.example.org`.  Tenemos un servidor que va a funcionar de proxy, llamado `proxy.example.org` con dos interfaces de red: una pública conectada a la red donde se encuentra el cliente (será la red de mantenimiento), y otra interna conectada a la red donde se encuentra el servidor interno.
 
@@ -49,7 +49,7 @@ En nuestro servidor interno hemos creado un virtual host para servir una página
 
 Por lo tanto necesitamos un proxy inverso:
 
-## Configuración del proxy inverso
+### Configuración del proxy inverso
 
 En el servidor `proxy` vamos a activar la funcionalidad de proxy inverso. Por lo tanto, para empezar, vamos activar los módulos que necesitamos:
 
@@ -113,7 +113,7 @@ Por lo que ya podemos hacer la redirección de forma correcta:
 ![proxy](img/proxy5.png)
 
 
-## Proxy inverso usando rutas
+### Proxy inverso usando rutas
 
 Si tuviéramos varios servidores web internos o varias páginas o aplicaciones web a las que tuviéramos que acceder a través del proxy, tendríamos dos opciones:
 
@@ -142,4 +142,15 @@ Veamos ahora los errores que se han presentado:
 2. El enlace de tipo 1 no funciona por la misma razón que vimos anteriormente, pero ahora tampoco funciona el enlace de tipo 2, porque de forma similar a la imagen que no se ve, hace referencia a la raíz del DocumentRoot, y en este caso, como ya hemos dicho, estamos accediendo usando la ruta `/web/`.
 
 Terminamos diciendo que al crear las páginas HTML hay que evitar rutas absolutas donde aparezcan direcciones IP, y también referencias a la raíz del sitio web.
+
+## nginx como proxy inverso
+
+Para que nginx funcione como proxy inverso en nuestro ejemplo anterior, hay que poner está configuración:
+
+```
+location / {
+    proxy_pass http://interno.example.org/;
+    include proxy_params;
+}
+```
 
