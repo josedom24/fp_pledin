@@ -1,5 +1,5 @@
 ---
-title: "Taller 4: apache2 como balanceador de carga"
+title: "Taller 4: haproxy como balanceador de carga"
 ---
 
 ## Balanceador de carga

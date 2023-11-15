@@ -87,8 +87,8 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 <!--
 
 * [Teoría: Introducción a proxy inverso](4_http/proxy_inverso.html)
-	* [Taller 3: apache2 como proxy inverso](4_http/taller3.html)
-	* [Taller 4: apache2 como balanceador de carga](4_http/taller4.html)
+	* [Taller 3: Introducción a proxy inverso](4_http/taller3.html)
+	* [Taller 4: haproxy como balanceador de carga](4_http/taller4.html)
 * [Práctica: Instalación de nginx con PHP](4_http/practica.html)
 
 

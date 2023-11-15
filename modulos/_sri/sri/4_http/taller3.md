@@ -1,19 +1,13 @@
 ---
-title: "Taller 3: apache2 como proxy inverso"
+title: "Taller 3: Introducción a proxy inverso"
 ---
 
 ## ¿Qué vas a aprender en este taller?
 
 * Vamos a prender el concepto de proxy inverso.
 * Vamos a montar un escenario usando Vagrant y Ansible.
-* Vamos a configurar Apache2 como proxy inverso.
+* Vamos a configurar Apache2 y nginx como proxy inverso.
 * Vamos a configurar el proxy inverso para que sea capaz de resolver las redirecciones.
-
-## Recursos para realizar este taller
-
-Los contenidos necesarios para la realización de este taller y para profundizar en la configuración de Apache2 como proxy inverso, lo puedes encontrar en el siguiente apartado:
-
-* [Teoría: Apache2 como proxy inverso](apache_proxy.html)
 
 ## ¿Qué tienes que hacer?
 
@@ -22,63 +16,22 @@ Los contenidos necesarios para la realización de este taller y para profundizar
 	* Una máquina `proxy` conectada al exterior y a una red interna.
     * Una máquina `servidorweb` conectada a la red interna.
 
-    En la máquina `servidorweb` tenemos instalado un apache2 con dos VirtualHosts (`interno.example1.org` y `interno.example2.org`). Suponemos que no podemos acceder a ella por la red de mantenimiento. **Crea el escenario vagrant para configurar la máquina `servidorweb`.**
-2. Instala un servidor web apache2 en la máquina `proxy`. Vamos a configurar el proxy para acceder a las páginas del `servidorweb`: A la primera página con la URL `www.app1.org` y a la segunda página con la URL `www.app2.org`.
-3. Activamos los módulos necesarios:
-
-		a2enmod proxy proxy_http
-
-	Reinicia el servidor web.
-4. Como se usan dos nombres distintos vamos a usar dos VirtualHosts. Veamos el VirtualHost `www.app1.org`, crea el fichero de configuración de esta forma:
-
-		<VirtualHost *:80>
-		    ServerName www.app1.org
-		    ProxyPass  / "http://interno.example1.org/" 
-			...
-
-	Fíjate que no hace falta la directiva `DocumentRoot`. Otra forma de poner la misma configuración sería:
-
-		<VirtualHost *:80>
-			ServerName www.app1.org
-			<Location "/"">
-		    	ProxyPass "http://interno.example1.org/"
-			</Location>
-			...
-
-	Activa el VirtualHost. Crea el VirtualHost `www.app2.org`
-
-5. Configura la resolución estática de un cliente para acceder a la máquina `proxy` usando los nombres `www.app1.org` y `www.app2.org`. Y accede a las páginas web.
-
-6. Al acceder a `http://www.app1.org/directorio` se debe realizar una redirección al directorio `nuevodirectorio`. Podemos comprobar que no funciona de manera adecuada, ya que la URL cambia a `http://interno.example1.org/nuevodirectorio`. Y no podemos acceder a `interno.example1.org`. 
-
-7. Para solucionar el problema de la redirección, vamos a usar la directiva `ProxyPassReverse`, para ello modifica los VirtualHost de esta manera:
-
-		<VirtualHost *:80>
-			ServerName www.app1.org
-			ProxyPass  / "http://interno.example1.org/" 
-			ProxyPassReverse / "http://interno.example1.org/" 
-			...
-		
-	O de esta forma:
-		
-		<VirtualHost *:80>
-			ServerName www.app1.org
-			<Location "/"">
-				ProxyPass "http://interno.example1.org/"
-				ProxyPassReverse "http://interno.example1.org/" 
-			</Location>
-			...
-
-	Vuelve a acceder a la URL `http://www.app1.org/directorio` y comprueba que ya funciona de manera adecuada.
-
-8. Modifica la configuración del proxy para acceder a las páginas web con las siguientes URL: `www.servidor.org/app1` y `www.servidor.org/app2`.
+    En la máquina `servidorweb` tenemos instalado un apache2 con dos VirtualHosts (`interno.example1.org` y `interno.example2.org`). Suponemos que no podemos acceder a ella por la red de mantenimiento. 
+2. Ejecuta el playbook de ansible para configurar el `servidorweb`.
+3. Instala un servidor web apache2 en la máquina `proxy`. Vamos a configurar el proxy para acceder a las páginas del `servidorweb`: A la primera página con la URL `www.app1.org` y a la segunda página con la URL `www.app2.org`. Realiza la configuración para que las redirecciones funcionen: al acceder a `http://www.app1.org/directorio` se debe realizar una redirección al directorio `nuevodirectorio`. 
+4. Modifica la configuración del proxy para acceder a las páginas web con las siguientes URL: `www.servidor.org/app1` y `www.servidor.org/app2`. Debe seguir funcionando las redirecciones.
+5. Desisntala apache2 e instala nginx.
+6. configurar nginx como proxy inverso para acceder a las páginas del `servidorweb`: A la primera página con la URL `www.app1.org` y a la segunda página con la URL `www.app2.org`.
+7. Modifica la configuración del proxy para acceder a las páginas web con las siguientes URL: `www.servidor.org/app1` y `www.servidor.org/app2`.
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. Configuración de apache2 para la realización del punto 8.
-2. Pantallazos donde se compruebe el acceso a las dos páginas web: `www.servidor.org/app1` y `www.servidor.org/app2`.
-3. Quita la directiva `ProxyPassReverse` y comprueba que no se sigue la redirección. Realiza una petición HEAD con `curl` a `http://www.app1.org/directorio`. ¿Qué cabecera tienes que comprobar para asegurar que la redirección no funciona?
-4. Añade la directiva `ProxyPassReverse`, y vuelve a hacer una petición HEAD con `curl` a `http://www.app1.org/app/directorio`. ¿Qué cabecera debemos mirar para comprobar que la redirección va a funcionar?
+1. Con apache2, pantallazos donde se compruebe el acceso a las dos páginas web: `www.app1.org` y `www.app2.org`.
+2. Quita la directiva `ProxyPassReverse` y comprueba que no se sigue la redirección. Realiza una petición HEAD con `curl` a `http://www.app1.org/directorio`. ¿Qué cabecera tienes que comprobar para asegurar que la redirección no funciona?
+3. Con apache2, pantallazos donde se compruebe el acceso a las dos páginas web: `www.servidor.org/app1` y `www.servidor.org/app2`.
+4. Con nginx, pantallazos donde se compruebe el acceso a las dos páginas web: `www.app1.org` y `www.app2.org`.
+5. Con nginx, pantallazos donde se compruebe el acceso a las dos páginas web: `www.servidor.org/app1` y `www.servidor.org/app2`.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
