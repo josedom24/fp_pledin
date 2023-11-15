@@ -10,11 +10,10 @@ Un proxy inverso es un tipo de servidor proxy que recupera recursos en nombre de
 
 Apache2.4 puede funcionar como proxy inverso usando el módulo `proxy` junto a otros módulos, por ejemplo:
 
-  * proxy_http: Para trabajar con el protocolo HTTP.
-  * proxy_ftp: Para trabajar con el protocolo FTP.
-  * proxy_html: Permite reescribir los enlaces HTML en el espacio de direcciones de un proxy.
-  * proxy_ajp: Para trabajar con el protocolo AJP para Tomcat.
-  * &#8230;
+  * `proxy_http`: Para trabajar con el protocolo HTTP.
+  * `proxy_ftp`: Para trabajar con el protocolo FTP.
+  * `proxy_html`: Permite reescribir los enlaces HTML en el espacio de direcciones de un proxy.
+  * ...
 
 ## Ejemplo de utilización de proxy inverso
 
