@@ -55,7 +55,7 @@ En el servidor `proxy` vamos a activar la funcionalidad de proxy inverso. Por lo
 
     # a2enmod proxy proxy_http
     
-Creamos un viirtualhost para servir el contenido ofrecido con el nombre del host `proxy.example.org`.
+Creamos un virtualhost para servir el contenido ofrecido con el nombre del host `proxy.example.org`.
 
 Vamos a utilizar la directiva [`ProxyPass`](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html#proxypass) en el fichero de configuración del virtual host, de la siguiente forma:
 
