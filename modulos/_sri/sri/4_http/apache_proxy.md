@@ -46,7 +46,7 @@ En nuestro servidor interno hemos creado un virtual host para servir una página
             <a href="carpeta/index.html">Enlace tipo 3</a>
     </body>
 
-**Debemos que recordar que desde el nuestro cliente no tenemos acceso al servidor web interno. Np vamos a usar la IP de la red de mantenimeinto para acceder**.
+**Debemos recordar que desde nuestro cliente no tenemos acceso al servidor web interno. No vamos a usar la IP de la red de mantenimeinto para acceder**.
 
 Por lo tanto necesitamos un proxy inverso:
 
