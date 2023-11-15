@@ -154,3 +154,31 @@ location / {
 }
 ```
 
+Todas las peticiones HTTP vienen con cabeceras, que contienen información sobre el petición HTTP. En el fichero `/etc/nginx/proxyparams` se definen parámetro para reenviar las cabeceras más importantes. El contenido del fichero es el siguiente:
+
+```
+proxy_set_header Host $http_host;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto $scheme;
+```
+
+Para pasar las cabeceras provinientes de la petición del cliente al servidor interno se utiliza la directiva `proxy_set_header`.
+
+Estas son las cabeceras reenviadas por nginx y las variables en las que almacena los datos:
+
+* `Host`: Esta cabecera contiene el host original solicitado por el cliente, que es el dominio del sitio web y el puerto. Nginx guarda esto en la variable `$http_host`.
+* `X-Forwarded-For`: Esta cabecera contiene la dirección IP del cliente que envió la solicitud original. También guarda la lista de IP de los proxy inversos intermedios. Nginx guarda esto en la variable `$proxy_add_x_forwarded_for`.
+* `X-Real-IP`: Esta cabecera siempre contiene una única dirección IP que pertenece al cliente remoto. Nginx guarda ese valor en la variable `$remote_addr`.
+* X-Forwarded-Proto: Esta cabecera contiene el protocolo utilizado por el cliente original para conectarse, ya sea HTTP o HTTPS. Nginx lo guarda en la variable `$scheme`.
+
+En la configuración para servir algunas aplicaciones web es necesrio el reenvio de más cabeceras.
+
+Por último si queremos ofrecer la aplicación en una ruta concreta, la configuración sería:
+
+```
+location /web/ {
+    proxy_pass http://interno.example.org/;
+    include proxy_params;
+}
+```
