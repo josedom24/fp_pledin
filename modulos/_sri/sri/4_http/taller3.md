@@ -11,7 +11,7 @@ title: "Taller 3: Introducción a proxy inverso"
 
 ## ¿Qué tienes que hacer?
 
-1. Vamos a usar los ficheros del directorio `taller_proxy_inverso` del repositorio [taller_http](https://github.com/josedom24/taller_http) donde encontrarás un escenario vagrant para configurar el siguiente escenario:
+1. Vamos a usar los ficheros del directorio `taller3` del repositorio [taller_http](https://github.com/josedom24/taller_http) donde encontrarás un escenario vagrant para configurar el siguiente escenario:
 
 	* Una máquina `proxy` conectada al exterior y a una red interna.
     * Una máquina `servidorweb` conectada a la red interna.
