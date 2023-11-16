@@ -170,9 +170,9 @@ Estas son las cabeceras reenviadas por nginx y las variables en las que almacena
 * `Host`: Esta cabecera contiene el host original solicitado por el cliente, que es el dominio del sitio web y el puerto. Nginx guarda esto en la variable `$http_host`.
 * `X-Forwarded-For`: Esta cabecera contiene la dirección IP del cliente que envió la solicitud original. También guarda la lista de IP de los proxy inversos intermedios. Nginx guarda esto en la variable `$proxy_add_x_forwarded_for`.
 * `X-Real-IP`: Esta cabecera siempre contiene una única dirección IP que pertenece al cliente remoto. Nginx guarda ese valor en la variable `$remote_addr`.
-* X-Forwarded-Proto: Esta cabecera contiene el protocolo utilizado por el cliente original para conectarse, ya sea HTTP o HTTPS. Nginx lo guarda en la variable `$scheme`.
+* `X-Forwarded-Proto`: Esta cabecera contiene el protocolo utilizado por el cliente original para conectarse, ya sea HTTP o HTTPS. Nginx lo guarda en la variable `$scheme`.
 
-En la configuración para servir algunas aplicaciones web es necesrio el reenvio de más cabeceras.
+En la configuración para servir algunas aplicaciones web es necesario el reenvío de más cabeceras.
 
 Por último si queremos ofrecer la aplicación en una ruta concreta, la configuración sería:
 
