@@ -64,10 +64,12 @@ ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s TERM $MAINPID
 
 WorkingDirectory=/home/debian/guestbook
-Environment=PYTHONPATH='/home/debian/guestbook:/home/debian/venv/flask/lib/python3.9/site-packages'
+Environment=PYTHONPATH='/home/debian/guestbook:/home/debian/venv/flask/lib/pythonX.X/site-packages'
 
 PrivateTmp=true
 ```
+
+**Nota: Tienes que mirar la versión de python3 para sustituir el nombre del directorio `pythonX.X`.**
 
 Activamos la unidad de systemd, y la iniciamos:
 

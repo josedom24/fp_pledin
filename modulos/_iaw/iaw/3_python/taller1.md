@@ -37,13 +37,14 @@ Veamos:
 Crea un virtualhost que se acceda con el nombre `flask.tunombre.org`, esta configuración irá en el fichero correspondiente:
 
 	DocumentRoot /home/debian/guestbook
-    WSGIDaemonProcess flask_guestbook python-path=/home/debian/guestbook:/home/debian/venv/flask/lib/python3.9/site-packages
+    WSGIDaemonProcess flask_guestbook python-path=/home/debian/guestbook:/home/debian/venv/flask/lib/pythonX.X/site-packages
     WSGIProcessGroup flask_guestbook
     WSGIScriptAlias / /home/debian/guestbook/wsgi.py process-group=flask_guestbook
     <Directory /home/debian/guestbook>
             Require all granted
     </Directory>
 
+**Nota: Tienes que mirar la versión de python3 para sustituir el nombre del directorio `pythonX.X`.**
 
 Vamos a explicar la configuración:
 
