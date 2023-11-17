@@ -73,7 +73,7 @@ Nos muestra el nombre del target y ya podemos hacer la conexión:
 
 A partir de ahora tendremos un nuevo dispositivo de bloque en la máquina cliente que podremos formatear y montar.
 
-Si el target tiene definido un usuario y contraseña para la conexión, tendremos que definirla despues de conectarnos:
+Si el target tiene definido un usuario y contraseña para la conexión, tendremos que definirla después de conectarnos:
 
     iscsiadm --mode node -T iqn.2021-11.org.example:target1 --portal 10.0.0.1 -o update \
     -n node.session.auth.username -v username
