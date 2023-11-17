@@ -29,12 +29,12 @@ title: "Práctica: Instalación de nginx con PHP"
 {% capture notice-text %}
 ## Entrega
 
-1. Entrega la URL del repositorio GitHub donde has alojado la práctica.
-2. Pantallazos para comprobar que se han creado los dos VirtualHost después de ejecutar el playbook ansible.
-3. Comprobación de que al acceder a `www.pagina1.org` se produce una redirección. Pantallazo accediendo desde un navegador web.
+1. Entrega un zip con el código que has generado en la práctica.
+2. Pantallazos para comprobar que se han creado los dos VirtualHost después de ejecutar el playbook ansible y están activos.
+3. Comprobación de que al acceder a `www.pagina1.org` se produce una redirección. Prueba de funcionamiento usando `curl`.
 4. Pantallazo accediendo a `www.pagina1.org/principal/documentos` (pon algunos ficheros para que se vea la lista).
 5. Pantallazos de la autentificación básica.
-6. Finalmente, configura el playbook ansible para desactivar el VirtualHost `www.pagina2.org`. Pasa de nuevo el playbook y manda algún prueba de que se ha borrado dicho VirtualHost.
+6. Finalmente, configura el playbook ansible para desactivar el VirtualHost `www.pagina2.org`. Pasa de nuevo el playbook y manda algún prueba de que se ha desactivado dicho VirtualHost.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
