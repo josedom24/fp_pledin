@@ -29,7 +29,7 @@ Vamos a usar `ab` para comprobar cuantas peticiones por segundos se responden. P
 ```
 ab -k -n 1000 -c 100 http://www.example.org/app.php
 ```
-El anterior comando simula 100 usuarios al mismo tiempo haciendo 1000 peticiones. La opción -k (`keep_alive`) habilita la opción de no cerrar la sesión HTTP (conexión persistente). Lo realizamos sobre el fichero `app.php` que tiene una instrucción `sleep(2)` simulando que es un proceso que tarda un poco.
+El anterior comando simula 100 usuarios al mismo tiempo haciendo 1000 peticiones. La opción -k (`keep_alive`) habilita la opción de no cerrar la sesión HTTP (conexión persistente). Lo realizamos sobre el fichero `app.php` que tiene una instrucción `sleep(2)` simulando que es un proceso que tarda tiempo en ejecutarse.
 
 De la salida nos interesa el parámetro `Requests per second:`, que nos da el numero de peticiones servidas por segundos.
 
