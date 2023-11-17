@@ -96,7 +96,7 @@ Podríamos resumir las correspondencias en el siguiente cuadro:
 |`Require all granted`                        |`allow all`
 |`allow 127.0.0.1`                            |`allow 127.0.0.1;`
 |`deny all`                                   |`deny all;`
-|`proxy_pass / http://localhost:8080` <br/>`proxy_pass_reverse / http://localhost:8080 `|`location / {`<br/>`    proxy_pass http://localhost:8080;`<br/>`    include proxy_params;`<br/>``}`
+|`proxy_pass / http://localhost:8080` <br/>`proxy_pass_reverse / http://localhost:8080 `|`location / {`<br/>`    proxy_pass http://localhost:8080;`<br/>`    include proxy_params;`<br/> `}`
 
 
 
