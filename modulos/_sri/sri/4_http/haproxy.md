@@ -1,5 +1,5 @@
 ---
-title: Introducción a HAProxy
+title: Introducción al balanceo de carga con HAProxy
 ---
 
 Un **Balanceador de carga** es un dispositivo de hardware o software que se pone al frente de un conjunto de servidores que atienden una aplicación y, tal como su nombre lo indica, asigna o balancea las solicitudes que llegan de los clientes a los servidores usando algún algoritmo.

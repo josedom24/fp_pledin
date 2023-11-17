@@ -87,8 +87,8 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 
 <!--
-
-	* [Taller 4: haproxy como balanceador de carga](4_http/taller4.html)
+* [Teoría: Introducción al balanceo de carga con HAProxy](4_http/haproxy.html)
+	* [Taller 4: Taller 4: HAproxy como balanceador de carga](4_http/taller4.html)
 * [Práctica: Instalación de nginx con PHP](4_http/practica.html)
 
 

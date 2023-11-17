@@ -1,10 +1,10 @@
 ---
-title: "Taller 4: haproxy como balanceador de carga"
+title: "Taller 4: HAproxy como balanceador de carga"
 ---
 
 ## Ejercicio 1: Configuración de haproxy
 
-Vamos a usar los ficheros del directorio `taller4` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear un escenario similar con el que hemos presentado en el apartado: [Introducción a HAProxy](haproxy.html). Para ello ejecuta el escenario vagrant y posteriormente pasa el playbook de ansible.
+Vamos a usar los ficheros del directorio `taller4` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear un escenario similar con el que hemos presentado en el apartado: [Introducción al balanceo de carga con HAProxy](haproxy.html). Para ello ejecuta el escenario vagrant y posteriormente pasa el playbook de ansible.
 
 En este escenario los servidores web ejecutan php, y se ha copiado en el DocumentRoot un fichero `app.php` que utilizaremos posteriormente.
 
