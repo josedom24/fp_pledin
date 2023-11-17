@@ -17,7 +17,7 @@ Vamos a usar los ficheros del directorio `taller_balanceador_de_carga` del repos
 
 ## Configuración de HAProxy
 
-Una vez levantado el escenario accede a `frontend` y vamos a configurar el HAProxy. Para ello añade la siguiente configuración en el fichero `/etc/haproxy/haproxy.cfg`:
+Una vez levantado el escenario accede a `frontend` y vamos a configurar el HAProxy. Para ello añade la siguiente configuración en el fichero `/etc/haproxy/haproxy.cfg` y luego reinicia el servicio:
 
 ```
 frontend servidores_web
@@ -44,6 +44,7 @@ backend servidores_web_backend
 	* `mode`: Indica el modo de balanceo en nuestro caso http.
 	* `balance`: Indica el algoritmo de balanceo, en nuestro caso **roundrobin**.
 	* `server`: Para cada servidor se indica el nombre, la ip y el puerto y con el parámetro `check` se indica que se va a comprobar si está funcionando para mandarle peticiones.
+
 
 ## Acceso a HAProxy
 
