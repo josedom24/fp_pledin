@@ -63,15 +63,13 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 3: Delegación de subdominios con bind9](5_dns/t3.html)
 * [Práctica: Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack](5_dns/practica.html)
 
-## Unidad 4: Cloud Computing IaaS. OpenStack 
+## Unidad 5: Cloud Computing IaaS. OpenStack 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
-	* [Ejercicio 1: Creación de instancias desde Horizon](4_iaas/ejercicio1.html)
-	* [Ejercicio 2: Creación de instancias desde OSC](4_iaas/ejercicio2.html)
-	* [Ejercicio 3: Gestión de almacenamiento](4_iaas/ejercicio3.html)
-	* [Taller 1: Configuración del cliente VPN](4_iaas/t1.html)
-	* [Taller 2: Gestión de redes en OpenStack](4_iaas/t2.html)
+	* [Taller 1: Trabajo con instancias en OpenStack](5_iaas/taller1.html)
+	* [Taller 2: Gestión del almacenamiento en OpenStack](5_iaas/taller2.html)
+	* [Taller 3: Gestión de redes en OpenStack](5_iaas/taller3.html)
 * [Práctica: Escenario en OpenStack](4_iaas/practica.html)
 -->
 
