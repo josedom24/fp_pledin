@@ -1,5 +1,5 @@
 ---
-title: "Taller 4: Gestión del almacenamiento en OpenStack"
+title: "Taller 2: Gestión del almacenamiento en OpenStack"
 ---
 
 ## ¿Qué vas a aprender en este taller?
