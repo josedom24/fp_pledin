@@ -31,7 +31,7 @@ Configura la resolución estática para acceder al balanceador con el nombre `ww
 
 Como estamos repartiendo las peticiones entre varios servidores web, el rendimiento (**número de peticiones respondidas por segundos**) aumenta.
 
-La utilidad [ab](http://httpd.apache.org/docs/2.4/programs/ab.html) (Apache Benchmark) sirve para hacer pruebas de carga a un servidor apache2. Es un programa que forma parte del paquete `apache2-utils`.
+La utilidad [ab](http://httpd.apache.org/docs/2.4/programs/ab.html) (Apache Benchmark) sirve para hacer pruebas de carga a un servidor web. Es un programa que forma parte del paquete `apache2-utils`.
 
 Vamos a usar `ab` para comprobar cuantas peticiones por segundos se responden. Por ejemplo:
 
