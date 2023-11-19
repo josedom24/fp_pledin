@@ -2,7 +2,16 @@
 title: "Taller 4: HAproxy como balanceador de carga"
 ---
 
-## Ejercicio 1: Configuración de haproxy
+## ¿Qué vas a aprender en este taller?
+
+* Vamos a aprender el concepto de balanceador de carga.
+* Vamos a montar un escenario usando Vagrant y Ansible.
+* Vamos a configurar HaProxy como balanceador de carga.
+* Vamos a comprobar el aumento de rendimiento que obtenemos al usar un balanceador de carga.
+
+## ¿Qué tienes que hacer?
+
+### Ejercicio 1: Configuración de haproxy
 
 Vamos a usar los ficheros del directorio `taller4` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear un escenario similar con el que hemos presentado en el apartado: [Introducción al balanceo de carga con HAProxy](haproxy.html). Para ello ejecuta el escenario vagrant y posteriormente pasa el playbook de ansible.
 
@@ -18,7 +27,7 @@ Configura la resolución estática para acceder al balanceador con el nombre `ww
 * **Tarea 3**: Desde uno de los servidores (`backend1` o `backend2`), verificar los logs del servidor Apache. En todos los casos debería figurar como única dirección IP cliente la IP interna de la máquina balanceador `10.10.10.1`. ¿Por qué?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Ejercicio 2: Aumento de rendimiento usando el balanceo de carga
+### Ejercicio 2: Aumento de rendimiento usando el balanceo de carga
 
 Como estamos repartiendo las peticiones entre varios servidores web, el rendimiento (**número de peticiones respondidas por segundos**) aumenta.
 

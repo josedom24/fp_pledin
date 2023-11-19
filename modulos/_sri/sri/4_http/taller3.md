@@ -4,7 +4,7 @@ title: "Taller 3: Introducción a proxy inverso"
 
 ## ¿Qué vas a aprender en este taller?
 
-* Vamos a prender el concepto de proxy inverso.
+* Vamos a aprender el concepto de proxy inverso.
 * Vamos a montar un escenario usando Vagrant y Ansible.
 * Vamos a configurar Apache2 y nginx como proxy inverso.
 * Vamos a configurar el proxy inverso para que sea capaz de resolver las redirecciones.
