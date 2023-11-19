@@ -70,7 +70,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 1: Trabajo con instancias en OpenStack](5_iaas/taller1.html)
 	* [Taller 2: Gestión del almacenamiento en OpenStack](5_iaas/taller2.html)
 	* [Taller 3: Gestión de redes en OpenStack](5_iaas/taller3.html)
-* [Práctica: Escenario en OpenStack](4_iaas/practica.html)
+* [Práctica: Escenario en OpenStack](5_iaas/practica.html)
 -->
 
 ## Unidad 4: Protocolo HTTP
