@@ -10,7 +10,7 @@ Ejemplos: apache2, nginx, haproxy, . . .
 Vamos a usar los ficheros del directorio `taller_balanceador_de_carga` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear el escenario, con las siguientes máquinas:
 
 * `frontend`: Será a la máquina que realizará el balanceo de carga. En ella instalaremos `HAProxy` y accederemos con el nombre `www.example.org`.
-* `backend1` y `backend2`: Los dos servidores web entre los que vamos a balancear la carga. Cada uno tiene un fichero `index.html` para que veamos bien el balanceo.
+* `backend1` y `backend2`: Los dos servidores web entre los que vamos a balancear la carga. Cada uno tiene un fichero `index.html` distinto para que veamos bien el balanceo.
 
 ## Configuración de HAProxy
 
