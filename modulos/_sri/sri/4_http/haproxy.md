@@ -2,7 +2,7 @@
 title: Introducción al balanceo de carga con HAProxy
 ---
 
-Un **Balanceador de carga** es un dispositivo de hardware o software que se pone al frente de un conjunto de servidores que atienden una aplicación y, tal como su nombre lo indica, asigna o balancea las solicitudes que llegan de los clientes a los servidores usando algún algoritmo (round robin, conexiones mínimas, ...).
+Un **Balanceador de carga** es un dispositivo de hardware o software que se pone al frente de un conjunto de servidores que ofrecen una aplicación y, tal como su nombre lo indica, asigna o balancea las solicitudes que llegan de los clientes a los servidores usando algún algoritmo (round robin, conexiones mínimas, ...).
 Ejemplos: apache2, nginx, haproxy, . . .
 
 [HAProxy](https://www.haproxy.org/) es un software que nos permite balancear carga entre varios servidores. Se suele usar para balancear servicios web, pero puede balancear cualquier servicio que funcione bajo protocolo TCP.
