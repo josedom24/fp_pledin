@@ -66,13 +66,6 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
-
-<!--
-
-
--->
-
-
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 
 * [Teoría: Introducción a Git y GitHub](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/git.pdf)
