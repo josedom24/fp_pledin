@@ -45,21 +45,21 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 3: Creación de un cluster DRBD + OCFS2](7_almacenamiento/t3.html)
 
 
-## Unidad 6: Servidor de correo electrónico
+## Unidad 7: Servidor de correo electrónico
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/correo.pdf)
 * [Curso Correo Electrónico](https://github.com/josedom24/curso_correo_electronico_ies)
-	* [Taller 1: Servidor de correo en los servidores de clase](6_correo/t1.html)
-* [Práctica: Instalación y configuración de un servidor de correos en el VPS](6_correo/practica.html)
+	* [Taller 1: Servidor de correo en los servidores de clase](7_correo/taller1.html)
+* [Práctica: Instalación y configuración de un servidor de correos en el VPS](7_correo/practica.html)
 
 ## Unidad 6: Protocolo DNS
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dns.pdf)
 * [Servidor DNS bind9](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/bind9.pdf)
 	* [Ejercicio 1: Consultas DNS con dig](6_dns/ejercicio1.html)
-	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](6_dns/t1.html)
-	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](6_dns/t2.html)
-	* [Taller 3: Delegación de subdominios con bind9](6_dns/t3.html)
+	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](6_dns/taller1.html)
+	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](6_dns/taller2.html)
+	* [Taller 3: Delegación de subdominios con bind9](6_dns/taller3.html)
 * [Práctica: Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack](6_dns/practica.html)
 
 ## Unidad 5: Cloud Computing IaaS. OpenStack 
