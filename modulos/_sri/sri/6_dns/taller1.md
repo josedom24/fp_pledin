@@ -11,14 +11,14 @@ title: "Taller 1: Instalación y configuración del servidor bind9 en nuestra re
 
 ## ¿Qué tienes que hacer?
 
-1. Crea una máquina en Proxmox (configúrala para que se llame `dns1.tunombre.org`) clonándola de la plantilla `debian11-cloud`, Con cloud-init puedes crear un usuario y poner tu clave ssh pública.
+1. Crea una máquina (configúrala para que se llame `dns1.tunombre.org`).
 En esta máquina vamos a instalar un servidor el servidor DNS `bind9`.
 
 		apt install bind9
 
 	Ejecuta el comando `hostname -f` para comprobar que el nombre FQDN se ha configurado de forma adecuada.
 
-2. De principio no es necesario ninguna configuración para que el serevidor funciones como servidor recursivo/caché. Sin embargo vamos a hacer una pequeña configuración:
+2. De principio no es necesario ninguna configuración para que el servidor funcione como servidor recursivo/caché. Sin embargo vamos a hacer una pequeña configuración:
 
 	* Para que no se intente resolver usando la dirección ipv6 de los servidores DNS, vamos a modificar la opción `OPTION` en el fichero de configuración `/etc/default/named` con las siguientes opciones:
 
