@@ -9,7 +9,7 @@ Ejemplos: apache2, nginx, haproxy, . . .
 
 Vamos a usar los ficheros del directorio `taller_balanceador_de_carga` del repositorio [taller_http](https://github.com/josedom24/taller_http) para crear el escenario, con las siguientes máquinas:
 
-* `frontned`: Será a la máquina que realizará el balanceo de carga. En ella instalaremos `HAProxy` y accedermos con el nombre `www.example.org`.
+* `frontend`: Será a la máquina que realizará el balanceo de carga. En ella instalaremos `HAProxy` y accederemos con el nombre `www.example.org`.
 * `backend1` y `backend2`: Los dos servidores web entre los que vamos a balancear la carga. Cada uno tiene un fichero `index.html` para que veamos bien el balanceo.
 
 ## Configuración de HAProxy
@@ -33,13 +33,13 @@ backend servidores_web_backend
 ```
 
 * La sección `frontend` representa al balanceador de carga:
-    * `bind`: identifica desde que red se va a responderm este caso se va a escuchar en todas las interfaces en el puerto 80.
+    * `bind`: identifica desde que red se va a responder, en este caso se va a escuchar en todas las interfaces en el puerto 80.
     * `mode`: Se va a balancear la carga usando el protocolo http.
     * `stats enable`:: Se va a ofrecer estadística en la URL `/ha_stats` y el usuario y contraseña de la autentificación para acceder a la estadística se configura en el parámetro `stats auth`.
     * `default_backend`:y que va a balancear en los servidores definido en el `default_backend`.
 * La sección `backend` define los servidores entre los que se va a balancear, el tipo de balanceo y el modo.
 	* `mode`: Indica el modo de balanceo en nuestro caso http.
-	* `balance`: Indica el algoritmo de balanceo, en nuestro caso **roundrobin**.
+	* `balance`: Indica el algoritmo de balanceo, en nuestro caso **round robin**.
 	* `server`: Para cada servidor se indica el nombre, la ip y el puerto y con el parámetro `check` se indica que se va a comprobar si está funcionando para mandarle peticiones.
 
 
