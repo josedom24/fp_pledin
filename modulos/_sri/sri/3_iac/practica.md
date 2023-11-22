@@ -33,7 +33,7 @@ Estas tareas se deben ejecutar en **todos** los nodos: actualizar los paquetes y
 
 ### router
 
-Todas las tareas necesarias para configurar `router`: está máquina tiene que hacer SNAT, y salir a internet por eth1 (la red pública). Las configuraciones deben ser permanentes. ¿Existe algún módulo de ansible que te permita ejecutar `sysctl`?.
+Todas las tareas necesarias para configurar `router`: está máquina tiene que hacer SNAT, y salir a internet por eth1 (la red pública). Las configuraciones deben ser permanentes. ¿Existe algún módulo de ansible que te permita ejecutar `sysctl`?. Además, como hemos dicho, tiene que hacer DNAT para poder acceder a la página del servidor web.
 
 ### redinterna
 
