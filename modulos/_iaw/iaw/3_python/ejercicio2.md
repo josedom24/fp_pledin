@@ -96,7 +96,7 @@ Veamos el ficheros `settings.py` que encontramos dentro del directorio `django_t
 
 * `DEBUG = True`: Si está activo los errores que se produzcan en la aplicación se verán con todo lujo de detalles en el navegador. Si tenemos la aplicación en producción debería ser `False`.
 * `ALLOWED_HOSTS = []`: Una lista con los nombres con los que se va a permitir el acceso a la aplicación.
-* `INSTALLED_APPS = [...`: La lista de las aplicaciones que tiene instalada el proyecto, por ejemplo vemos que se ha incluido la aplicación polls (`polls.apps.PollsConfig`). También tenemos una aplicación que nos permite tener un panel de control de la aplicación (`django.contrib.admin`). Y otras cuantas aplicaciones...
+* `INSTALLED_APPS = [...]`: La lista de las aplicaciones que tiene instalada el proyecto, por ejemplo vemos que se ha incluido la aplicación polls (`polls.apps.PollsConfig`). También tenemos una aplicación que nos permite tener un panel de control de la aplicación (`django.contrib.admin`). Y otras cuantas aplicaciones...
 * `DATABASES`: Configuración de la base de datos que se va a utilizar en el proyecto. Por defecto se utiliza una base de datos sqlite llamada `db.sqlite3`.
 
 ## El modelo de la aplicación
