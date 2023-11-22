@@ -14,7 +14,7 @@ El modelo MVC es un patrón de diseño software que separa los datos de la aplic
 
 Como siempre cuando trabajamos en Python vamos a usar un entorno virtual:
 
-```bash
+```
 $ python3 -m venv django
 $ source django/bin/activate
 (django)$ pip install django
@@ -26,13 +26,13 @@ $ source django/bin/activate
 
 En un primer paso, vamos a ver cómo sería la creación de una aplicación django, posteriormente trabajaremos con una aplicación ya desarrollada. Si vamos a crear una aplicación django lo primero sería la creación de un proyecto:
 
-```bash
+```
 (django)$ django-admin startproject mysite
 ```
 
 Esto crearía el directorio del proyecto `mysite` que tendría los siguientes ficheros:
 
-```bash
+```
 mysite/
     manage.py
     mysite/
@@ -54,13 +54,13 @@ mysite/
 
 Si queremos iniciar el servidor web de desarrollo para ver cómo va quedando la aplicación, ejecutamos:
 
-```bash
+```
 (django)$ python3 manage.py runserver
 ```
 
 Si queremos que el servidor escuche en todas las direcciones y en un puerto determinado:
 
-```bash
+```
 (django)$ python3 manage.py runserver 0.0.0.0:8000
 ```
 
@@ -68,13 +68,13 @@ Si queremos que el servidor escuche en todas las direcciones y en un puerto dete
 
 Hasta ahora tenemos un proyecto django, pero no tiene ninguna funcionalidad. En un proyecto django podemos ir añadiendo distintas aplicaciones donde vamos implementando las distintas funcionalidades del programa. Siguiendo el tutorial de django, vamos a crear la aplicación polls (encuestas), para ello:
 
-```bash
+```
 (django)$ python3 manage.py startapp polls
 ```
 
 Esto creará un directorio `polls` en el proyecto con los siguientes ficheros:
 
-```bash
+```
 polls/
     __init__.py
     admin.py
@@ -150,7 +150,7 @@ El programa va a trabajar para gestionar los datos con estas dos clases, pero ca
 
 Lo primero que vamos a hacer es crear las tablas definidas en el modelo de la aplicación en la base de datos configurada, para ello ejecutamos:
 
-```bash
+```
 (django)$ python3 manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, polls, sessions
@@ -178,7 +178,7 @@ Running migrations:
 
 Podemos comprobar que cada una de las aplicaciones que forman el proyecto han creado sus tablas:
 
-```bash
+```
 $ sqlite3 db.sqlite3
 ...
 sqlite> .tables
@@ -194,7 +194,7 @@ auth_user_user_permissions  polls_question
 
 Vamos a poner un ejemplo de como podemos crear una encuesta utilizando las clases, para ello vamos a acceder a una shell de django:
 
-```bash
+```
 (django)$ python3 manage.py shell
 ...
 >>> from polls.models import Choice, Question
@@ -223,7 +223,7 @@ Pero lo importante: **Es que da igual la base de datos que tengamos configurada:
 
 Podemos comprobar que se ha añadido un registro en la tabla Question:
 
-```bash
+```
 sqlite> select * from polls_question;
 1|What's up?|2021-11-07 17:45:36.939817
 ```
@@ -232,13 +232,13 @@ sqlite> select * from polls_question;
 
 Si modificamos el modelo, es porque estamos cambiando la estructura de la base de datos. Para que siga funcionando bien la aplicación tendremos que crear una migración:
 
-```bash
+```
 (django)$ python3 manage.py makemigrations
 ```
 
 Esto creara un fichero de migración en el directorio `polls/migrations`. Una migración es un script que al ejecutarlo se cambia la estructura de la base de datos según el cambio del modelo. Para ejecutar la migración:
 
-```bash
+```
 (django)$ python3 manage.py migrate
 ```
 
@@ -246,13 +246,13 @@ Esto creara un fichero de migración en el directorio `polls/migrations`. Una mi
 
 Como hemos visto anteriormente nuestro proyecto tiene una aplicación de administración y una aplicación de autentificación para guardar los usuarios. Para acceder a la zona de administración antes hay que crear al usuario administrador de la aplicación, para ello:
 
-```bash
+```
 (django)$ python3 manage.py createsuperuser
 ```
 
 Podemos comprobar que efectivamente se ha creado un usuario en la tabla correspondiente:
 
-```bash
+```
 sqlite> select * from auth_user;
 1|pbkdf2_sha256$260000$U6iFl8rdYciSxgBRwSlDIT$Mp1pIcSQTurHNW82F3gQ7UgH8G2+goJE0V5EeASg2xE=||1|admin||admin@admin.es|1|1|2021-11-07 18:03:45.427069|
 ```
