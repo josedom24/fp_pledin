@@ -86,7 +86,7 @@ polls/
     views.py
 ```
 
-Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/4.1/intro/tutorial01/) que os da una visión general del desarrollo de aplicaciones web en django.
+Ahora iremos estudiando cada uno de estos ficheros. Es muy recomendable que hagáis el [tutorial de django](https://docs.djangoproject.com/en/4.2/intro/tutorial01/) que os da una visión general del desarrollo de aplicaciones web en django.
 
 En el siguiente apartado seguiremos estudiando las aplicaciones django pero utilizando la aplicación desarrollada en el tutorial, que podéis encontrar en: [https://github.com/josedom24/django_tutorial](https://github.com/josedom24/django_tutorial).
 
@@ -290,4 +290,4 @@ Hemos visto distintas formas de desplegar aplicaciones flask en los ejercicios d
 
 * El fichero wsgi, que será el punto de acceso a la aplicación se encuentra en `django_tutorial/django_tutorial/wsgi.py`.
 * Cuando usamos apache2 + mod_wsgi, Django no sirve el contenido estático, por lo que tendremos que configurar el servidor web para que lo haga. Tendremos que usar `alias` para que el contenido estático sea accesible. Por ejemplo, ¿dónde se encuentra la hoja de estilo de la zona de administración de nuestra aplicación?
-* Tienes una guia de despliegue de aplicaciones django en: [How to deploy with WSGI](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/).
+* Tienes una guia de despliegue de aplicaciones django en: [How to deploy with WSGI](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/).
