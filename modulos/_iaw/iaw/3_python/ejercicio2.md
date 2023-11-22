@@ -1,5 +1,5 @@
 ---
-title: Introducción a django
+title: "Ejercicio 2: Introducción a django"
 ---
 
 [Django](https://www.djangoproject.com/) es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador (MVC).
@@ -19,7 +19,7 @@ $ python3 -m venv django
 $ source django/bin/activate
 (django)$ pip install django
 (django)$ python -m django --version
-4.1.3
+4.2
 ```
 
 ## Creando un proyecto django
@@ -44,7 +44,7 @@ mysite/
 ```
 
 * `manage.py`: La utilidad de terminal que vamos a usar para manejar nuestra aplicación.
-* El directorio `mysite` es un paquete python (agrupa distintos módulos (ficheros python)). Esto se indica con un fichero vacio que se de be llamar `__init__.py`.
+* El directorio `mysite` es un paquete python (agrupa distintos módulos (ficheros python)). Esto se indica con un fichero vacío que se de be llamar `__init__.py`.
 * `settings.py`: La configuración de la aplicación.
 * `urls.py`: Donde se declaran las rutas que va tener la aplicación.
 * `wsgi.py`: Fichero wsgi para el despliegue de la aplicación utilizando el protocolo wsgi.
