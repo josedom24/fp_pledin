@@ -61,7 +61,7 @@ Recuerda reiniciar el servicio si es necesario (handler) al cambiar la configura
 {% capture notice-text %}
 ## Entrega
 
-1. Entrega los ficheros que has generado en la página comprimidos en un zip.
+1. Entrega los ficheros de vagrant y ansible que has generado, comprimidos en un zip.
 2. Entrega una captura de pantalla accediendo por ssh a las dos máquinas (**sin utilizar `vagrant ssh`, es decir sin hacer conexiones a `eth0`**). Usa la opción `-A`  de ssh para acceder a `www` o a `db`.
 3. Entrega capturas de pantalla donde se vean las puertas de enlaces de los dos equipos.
 4. Entrega capturas de pantalla donde se vean las máquinas haciendo ping al exterior.
