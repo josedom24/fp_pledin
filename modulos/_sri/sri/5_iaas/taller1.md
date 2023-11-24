@@ -24,6 +24,7 @@ title: "Taller 1: Trabajo con instancias en OpenStack"
 	* Al iniciarse se deben actualizar los paquetes.
 	* Se debe instalar Apache2.
 	* Se debe crear un usuario (con tu nombre) y contraseña.
+	* Se debe configurar el fqdn a `maquina1.example.org`.
 8. Muestra tus ips flotantes. Solicita una nueva y asígnala a la instancia.
 9. Accede por ssh a la instancia que has creado.
 10. Lista todas las instancias que tienes creada, y elimina la que has creado en el punto 7.
