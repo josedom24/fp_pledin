@@ -61,11 +61,15 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](6_dns/taller2.html)
 	* [Taller 3: Delegación de subdominios con bind9](6_dns/taller3.html)
 * [Práctica: Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack](6_dns/practica.html)
+-->
 
 ## Unidad 5: Cloud Computing IaaS. OpenStack 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
+
+<!-->
+
 	* [Taller 1: Trabajo con instancias en OpenStack](5_iaas/taller1.html)
 	* [Taller 2: Gestión del almacenamiento en OpenStack](5_iaas/taller2.html)
 	* [Taller 3: Gestión de redes en OpenStack](5_iaas/taller3.html)
