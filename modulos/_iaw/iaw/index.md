@@ -34,16 +34,6 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Introducción a Java](5_java/tomcat.html)
 	* [Taller 1: Desarrollo y despliegue de una aplicación Java simple](5_java/t1.html)
 * [Práctica: Despliegue de aplicaciones Java](5_java/practica.html)
-
-## Unidad 3: Implantación de aplicaciones web Python
-
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/python.pdf)
-	* [Ejercicio 1: Ejecución de aplicaciones python flask](3_python/ejercicio1.html)
-	
-	
-	
-* [Práctica: Instalación/migración de aplicaciones web Python](3_python/practica.html)
-
 -->
 
 ## Unidad 3: Implantación de aplicaciones web Python
@@ -53,6 +43,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	* [Taller 1: Desplegando aplicaciones flask con apache2 + mod_wsgi](3_python/taller1.html)
 	* [Taller 2: Desplegando aplicaciones flask con apache2/nginx + uwsgi](3_python/taller2.html)
 	* [Ejercicio 2: Introducción a django](3_python/ejercicio2.html)
+* [Práctica: Instalación/migración de aplicaciones web Python](3_python/practica.html)
 	
 ## Unidad 2: Implantación de aplicaciones web PHP
 

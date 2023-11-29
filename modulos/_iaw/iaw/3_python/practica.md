@@ -4,11 +4,7 @@ title: Despliegue de aplicaciones python
 
 ## Tarea 1: Entorno de desarrollo 
 
-Vamos a desplegar la aplicación del tutorial de django. 
-Como entorno de desarrollo tienes dos opciones:
-
-1. Que tu entorno de desarrollo se la máquina `bravo` de tu infraestructura de OpenStack. Opción que dará más puntos.
-2. Que tu entorno de desarrollo sea una máquina de openstack con el sistema operativo que quieras. Opción que dará menos puntos.
+Vamos a desplegar la aplicación del tutorial de django. Utiliza una máquina de openstack como entorno de desarrollo.
 
 Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:
 
@@ -20,16 +16,17 @@ Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la apl
 * Ejecuta el servidor web de desarrollo y entra en la zona de administración (`/admin`) para comprobar que los datos se han añadido correctamente.
 * Crea dos preguntas, con posibles respuestas.
 * Comprueba en el navegador que la aplicación está funcionando, accede a la url `/polls`.
-* Configura el servidor web apache2 con el módulo wsgi para servir la página web. Si utilizas como entorno de desarrollo la máquina `bravo`, se accederá con el nombre `python.tunombre.gonzalonazareno.org`. Si tu entorno de desarrollo es una máquina de openstack, elige el nombre con el que acceder y entrega la dirección IP de la máquina.
+* Configura el servidor web apache2 con el módulo wsgi para servir la página web. 
+
 {% capture notice-text %}
-En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. Y pantallazos que demuestren que la aplicación está funcionando. (3 puntos si eliges como entorno de desarrollo a `bravo` y 1 punto si eliges como entorno de desarrollo una máquina de openstack).
+En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea. Y pantallazos que demuestren que la aplicación está funcionando. 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 2: Entorno de producción
 
 Vamos a realizar el despliegue de nuestra aplicación en un entorno de producción, para ello vamos a utilizar nuestro VPS, sigue los siguientes pasos:
 
-* Clona el repositorio en el VPS.
+* Clona tu repositorio en el VPS.
 * Crea un entorno virtual e instala las dependencias de tu aplicación.
 * Instala el módulo que permite que python trabaje con mysql: 
 
@@ -57,7 +54,7 @@ Vamos a realizar el despliegue de nuestra aplicación en un entorno de producci�
 * Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.
 
 {% capture notice-text %}
-En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea y pantallazos donde se vea que todo está funcionando. (3,5 puntos)
+En este momento, muestra al profesor la aplicación funcionando. Entrega una documentación resumida donde expliques los pasos fundamentales para realizar esta tarea y pantallazos donde se vea que todo está funcionando. 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Tarea 3: Modificación de nuestra aplicación
@@ -103,5 +100,17 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
     * Despliega el cambio producido al crear la nueva tabla en el entorno de producción.
 
 {% capture notice-text %}
-Explica los cambios que has realizado en el entorno de desarrollo y cómo lo has desplegado en producción para cada una de las modificaciones. Entrega pantallazos donde se vean las distintas modificaciones y que todo está funcionando. (3,5 puntos)
+Explica los cambios que has realizado en el entorno de desarrollo y cómo lo has desplegado en producción para cada una de las modificaciones. Entrega pantallazos donde se vean las distintas modificaciones y que todo está funcionando.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## Tarea 4: Entorno de producción
+
+En esta tarea vamos a desplegar un CMS python. Hay varios CMS python basado en django (puedes encontrar varios en el siguiente [enlace](https://djangopackages.org/grids/g/cms/). Puedes instalar cualquiera, yo he probado Mezzanine.
+
+* Instala el CMS en el entorno de desarrollo. Debes utilizar un entorno virtual.
+* Personaliza la página (cambia el nombre al blog y pon tu nombre) y añade contenido (algún artículo).
+* Realiza la migración de tu aplicación en tu entorno de producción. La aplicación será accesible en la url `https://portal.tudominio.algo`.
+
+{% capture notice-text %}
+Explica los pasos fundamentales para hacer la instalación y la migración. Adjunta capturas de pantallas para demostrar que todo está funcionando.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
