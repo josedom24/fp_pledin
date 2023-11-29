@@ -103,7 +103,7 @@ Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a su
 Explica los cambios que has realizado en el entorno de desarrollo y cómo lo has desplegado en producción para cada una de las modificaciones. Entrega pantallazos donde se vean las distintas modificaciones y que todo está funcionando.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Tarea 4: Entorno de producción
+## Tarea 4: Instalación/migración de uns CMS Python Django
 
 En esta tarea vamos a desplegar un CMS python. Hay varios CMS python basado en django (puedes encontrar varios en el siguiente [enlace](https://djangopackages.org/grids/g/cms/). Puedes instalar cualquiera, yo he probado Mezzanine.
 
