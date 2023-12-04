@@ -11,12 +11,8 @@ title: "Taller 1: Instalación y configuración del servidor bind9 en nuestra re
 
 ## ¿Qué tienes que hacer?
 
-1. Crea una máquina (configúrala para que se llame `dns1.tunombre.org`).
-En esta máquina vamos a instalar un servidor el servidor DNS `bind9`.
-
-		apt install bind9
-
-	Ejecuta el comando `hostname -f` para comprobar que el nombre FQDN se ha configurado de forma adecuada.
+1. Crea una máquina (configúrala para que se llame `dns1.tunombre.org`). Ejecuta el comando `hostname -f` para comprobar que el nombre FQDN se ha configurado de forma adecuada.
+En esta máquina vamos a instalar un servidor DNS `bind9`.
 
 2. De principio no es necesario ninguna configuración para que el servidor funcione como servidor recursivo/caché. Sin embargo vamos a hacer una pequeña configuración:
 
@@ -87,7 +83,7 @@ En esta máquina vamos a instalar un servidor el servidor DNS `bind9`.
 
 	**Nota: Modifica la zona para que el servidor DNS tenga la IP real de tu máquina.**
 		
-5. Vamos a crear una zona inversa. suponemos que estamos trabajando en la red `172.22.0.0/16`. Lo primero es determinarle nombre de esta zona:
+5. Vamos a crear una zona inversa. suponemos que estamos trabajando en la red `172.22.0.0/16`. Lo primero es determinar el nombre de esta zona:
 
 	* El nombre de dominio será `<los números de la IP correspondiente a la red ordenados de forma inversa>.in-addr.arpa`.
 	* Si la máscara de red es 16 los dos primeros números de la dirección corresponde a la red y los dos último corresponden a la máquina. Por lo tanto, en nuestra red `172.22.0.0/16` el nombre de dominio sería `22.172.in-addr.arpa`.

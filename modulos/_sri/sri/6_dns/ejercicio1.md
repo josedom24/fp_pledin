@@ -41,7 +41,5 @@ Utilizando el comando `dig` realiza las siguientes consultas al servidor DNS (re
 		www.josedomingo.org
 		informatica.gonzalonazareno.org
 
-5. Comprueba la dirección ip y el servidor DNS asociado a `dit.gonzalonazareno.org`, desde dentro de la intranet del ciclo formativo y desde fuera (para ello haz una consulta al servidor `1.1.1.1`). ¿Cuáles son las diferencias? ¿A qué es debido?
-
-6. Pregunta sobre resolución inversa: En clase, ¿a qué nombre corresponde la dirección ip `172.22.0.1`?
+5. Pregunta sobre resolución inversa: En clase, ¿a qué nombre corresponde la dirección ip `172.22.0.1`?
 
