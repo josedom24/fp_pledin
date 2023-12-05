@@ -51,9 +51,23 @@ El **interprete** nos permite ejecutar instrucciones python para ver su funciona
 
 ## Ejecución de un programa a partir del fichero py
 
-Hemos visto como ejecutar un programa python desde el entorno de desarrollo Thonny. Perro, una vez que hemos terminado nuestro programa podemos ejecutarlo desde un terminal bash. Por ejemploo, si el programa lo hemos guardado en un fichero `programa.py`,lo ejecutaríamos de la siguiente manera.
+Hemos visto como ejecutar un programa python desde el entorno de desarrollo Thonny. Perro, una vez que hemos terminado nuestro programa podemos ejecutarlo desde un terminal bash. Por ejemplo, si el programa lo hemos guardado en un fichero `programa.py`,lo ejecutaríamos de la siguiente manera.
 
 ```
 $ python3 programa.py
 ```
+
+
+## Mi primer programa en python3
+
+Vamos a escribir nuestro primer programa para estudiar la estructura de un programa en python3. El programa que vamos a realizar es el siguiente: **Programa que pida la edad y diga si es mayor de edad**. El código sería el siguiente:
+
+![ ](../lmgs/hlc2324/img/img3.png)
+
+### Estructura del programa
+
+* Un programa python está formado por instrucciones que acaban en un **carácter de “salto de línea”**.
+* Una **línea empieza en la primera posición**, si tenemos instrucciones dentro de un bloque de una estructura de control de flujo habrá que hacer una identación.
+* La **identación** se puede hacer con **espacios y tabulaciones** pero ambos tipos no se pueden mezclar. Se recomienda usar 4 espacios.
+* Se utiliza el carácter # para indicar los comentarios.
 
