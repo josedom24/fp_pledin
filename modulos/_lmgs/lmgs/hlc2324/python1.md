@@ -71,3 +71,43 @@ Vamos a escribir nuestro primer programa para estudiar la estructura de un progr
 * La **identación** se puede hacer con **espacios y tabulaciones** pero ambos tipos no se pueden mezclar. Se recomienda usar 4 espacios.
 * Se utiliza el carácter # para indicar los comentarios.
 
+{% capture notice-text %}
+
+**Ejercicio**
+
+* Copia el programa en el editor de texto de Thonny.
+* Una vez terminado, ejecuta el programa dentro del entorno de desarrollo Thonny.
+* Guarda el programa en un fichero llamado `edad.py`.
+* Ejecuta el programa desde un terminal.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## ¿Qué tienes que entregar?
+
+Vamos a copiar varios programas en Python:
+
+**Programa 1**
+
+![ ](../lmgs/hlc2324/img/img4.png)
+
+**Programa 2**
+
+![ ](../lmgs/hlc2324/img/img5.png)
+
+**Programa 3**
+
+![ ](../lmgs/hlc2324/img/img6.png)
+
+**Programa 4**
+
+![ ](../lmgs/hlc2324/img/img7.png)
+
+{% capture notice-text %}
+
+**Entrega**
+
+Escribe cada uno de los programas en thonny. Guárdalos en un fichero con extensión py. Y entrega un documento pdf con lo siguiente:
+
+1. Captura de pantalla ejecutando cada programa en Thonny.
+2. Captura de pantalla ejecutando cada programa desde la línea de comandos.
+3. Para cad programa, escribe una descripción de lo que hace el programa.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
