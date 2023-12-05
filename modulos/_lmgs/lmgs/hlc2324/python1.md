@@ -37,4 +37,4 @@ Este editor al estar pensado para escribir texto en Python, tiene además la par
 
 El editor de código nos permitirá guardar nuestro programa en archivos que deben tener la extensión **.py**. Para ejecutar nuestro programa pulsaremos sobre el botón **Play** o la tecla **F5**.
 
-![ ](lmgs/hlc2324/img/img1.png)
+![ ](../lmgs/hlc2324/img/img1.png)
