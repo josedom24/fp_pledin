@@ -15,7 +15,7 @@ Para escribir programa en Python, sólo necesitamos un **editor de textos** y el
 
 Realmente nosotros vamos a usar un **IDE (Entorno de Desarrollo Integrado)**, que son programas que además de ofrecer un editor de texto, posee muchas herramientas que nos facilitan la labor de programar. Por ejemplo: Visual Studio Code, Sublime Text,...
 
-Sin embargo, las herramientas que hemos nombrados tienen tantas posibilidades, que para personas que están empezando a programar es conveniente usar un IDE más básico. Nosotros  recomendamos usar el el entorno de programación **Thonny**, el cual está diseñado y pensado precisamente para las personas que desean iniciarse en el mundo de la programación en Python.
+Sin embargo, las herramientas que hemos nombrados tienen tantas funcionalidades, que para personas que están empezando a programar es conveniente usar un IDE más básico. Nosotros  recomendamos usar el el entorno de programación **Thonny**, el cual está diseñado y pensado precisamente para las personas que desean iniciarse en el mundo de la programación en Python.
 
 {% capture notice-text %}
 
@@ -24,3 +24,17 @@ Sin embargo, las herramientas que hemos nombrados tienen tantas posibilidades, q
 * Instala el entorno de programación **Thonny**, con la herramienta `apt`.
 * Configura el entorno para que funcione de manera adecuada, para ello activa la opción **Use cuadros de diálogo de archivos Tk en lugar de Zenety** en la opción **Herramientas->Opciones**.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## El entorno de desarrollo Thonny
+
+El programa inicialmente divide la ventana en 2 partes bien diferenciadas:
+
+### Editor de Texto
+
+La región superior de la ventana, se trata de un **editor de texto** donde vamos a escribir nuestros programas. 
+
+Este editor al estar pensado para escribir texto en Python, tiene además la particularidad de que nos resaltará la sintaxis y nos ayudará con la escritura de instrucciones (pulsando **CTRL + Espacio**).
+
+El editor de código nos permitirá guardar nuestro programa en archivos que deben tener la extensión **.py**. Para ejecutar nuestro programa pulsaremos sobre el botón **Play** o la tecla **F5**.
+
+![ ](img/img1.png)
