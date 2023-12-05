@@ -38,3 +38,22 @@ Este editor al estar pensado para escribir texto en Python, tiene además la par
 El editor de código nos permitirá guardar nuestro programa en archivos que deben tener la extensión **.py**. Para ejecutar nuestro programa pulsaremos sobre el botón **Play** o la tecla **F5**.
 
 ![ ](../lmgs/hlc2324/img/img1.png)
+
+El resultado de la ejecución del programa se verá en la parte inferior de la pantalla, en la **Consola**.
+
+### Consola
+
+Es la parte inferior de la pantalla. Como hemos indicado en ella se mostrará el resultado de ejecutar nuestro programa. Además la consola, muestra lo que en Python se denomina el **intérprete**. Se trata de una línea de comando donde podemos introducir instrucciones y comprobar el resultado que produce su ejecución.
+
+![ ](../lmgs/hlc2324/img/img2.png)
+
+El **interprete** nos permite ejecutar instrucciones python para ver su funcionamiento.
+
+## Ejecución de un programa a partir del fichero py
+
+Hemos visto como ejecutar un programa python desde el entorno de desarrollo Thonny. Perro, una vez que hemos terminado nuestro programa podemos ejecutarlo desde un terminal bash. Por ejemploo, si el programa lo hemos guardado en un fichero `programa.py`,lo ejecutaríamos de la siguiente manera.
+
+```
+$ python3 programa.py
+```
+
