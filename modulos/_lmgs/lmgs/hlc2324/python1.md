@@ -51,7 +51,7 @@ El **interprete** nos permite ejecutar instrucciones python para ver su funciona
 
 ## Ejecución de un programa a partir del fichero py
 
-Hemos visto como ejecutar un programa python desde el entorno de desarrollo Thonny. Perro, una vez que hemos terminado nuestro programa podemos ejecutarlo desde un terminal bash. Por ejemplo, si el programa lo hemos guardado en un fichero `programa.py`,lo ejecutaríamos de la siguiente manera.
+Hemos visto como ejecutar un programa python desde el entorno de desarrollo Thonny. Pero, una vez que hemos terminado nuestro programa podemos ejecutarlo desde una terminal bash. Por ejemplo, si el programa lo hemos guardado en un fichero `programa.py`, lo ejecutaríamos de la siguiente manera:
 
 ```
 $ python3 programa.py
