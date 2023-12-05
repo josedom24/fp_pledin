@@ -105,7 +105,7 @@ Vamos a copiar varios programas en Python:
 
 **Entrega**
 
-Escribe cada uno de los programas en thonny. Guárdalos en un fichero con extensión py. Y entrega un documento pdf con lo siguiente:
+Escribe cada uno de los programas en Thonny. Guárdalos en un fichero con extensión **py** y entrega un documento pdf con lo siguiente:
 
 1. Captura de pantalla ejecutando cada programa en Thonny.
 2. Captura de pantalla ejecutando cada programa desde la línea de comandos.
