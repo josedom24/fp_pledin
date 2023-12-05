@@ -109,5 +109,5 @@ Escribe cada uno de los programas en Thonny. Guárdalos en un fichero con extens
 
 1. Captura de pantalla ejecutando cada programa en Thonny.
 2. Captura de pantalla ejecutando cada programa desde la línea de comandos.
-3. Para cad programa, escribe una descripción de lo que hace el programa.
+3. Para cada programa, escribe una descripción de lo que hace.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
