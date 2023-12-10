@@ -57,3 +57,23 @@ En este ejercicio vamos a usar el interprete de Python para comparar números:
 * A los valores **True y False**, se le llaman **datos lógicos o booleanos**.
 * Estos valores se utilizan para comprobar si se cumple alguna condición en un determinado momento. 
 
+## Tipos de datos y operadores
+
+Hemos visto que los datos con los que podemos trabajar en un programa Python lo podemos dividir en los siguientes **tipos**:
+
+* **Numéricos enteros (int)**.
+* **Numéricos decimales (float)**.
+* **Textos o cadenas de caracteres (strings)**.
+* **Datos lógicos o booleanos (bool)**.
+
+Python tiene más tipos de datos, pero por el momento, nos quedaremos con estos que son los más comunes cuando se empieza a programar.
+
+También hemos visto que podemos hacer distintas operaciones con distintos **operadores**:
+
+* **Operadores matemáticos**
+* **Operadores de cadenas**
+* **Operadores de comparación**
+
+Resumen de operadores:
+
+![ ](../lmgs/hlc2324/img/img4_p2.png)
