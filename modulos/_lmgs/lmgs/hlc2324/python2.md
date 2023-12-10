@@ -19,6 +19,7 @@ Vamos a comenzar a usar Python desde el intérprete como si se tratase de una ca
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+* Podemos trabajar con números **enteros (int)** (son decimales) o con números **reales (float)** (con decimales) (utilizamos el punto para separar la parte entera de la parte decimal). 
 * Podemos realizar las operaciones básicas de **suma(+), resta(-), multiplicación(*) y división(/)**.
 * También podemos hacer operaciones un poco más complejas, por ejemplo la **potenciación(\*\*), división entera(//) y el resto de la división o módulo (%)**.
 * Más adelante veremos que podemos hacer **más operaciones matemáticas**.
@@ -39,3 +40,20 @@ En este ejercicio vamos a usar el interprete de Python para trabajar con cadenas
 * En Python las cadenas de texto se pueden escribir entre **comillas dobles o entre comillas simples**.
 * Para unir dos cadenas usamos la operación **concatenar (+)**.
 * Podemos concatenar varias veces una cadena varias veces para ello usamos el operador **repetir (*)**.
+
+## Trabajando con comparaciones
+
+{% capture notice-text %}
+
+**Ejercicio**
+
+En este ejercicio vamos a usar el interprete de Python para comparar números:
+
+![ ](../lmgs/hlc2324/img/img3_p2.png)
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+* Hemos comparado valores numéricos y Python no ha dicho si el resultado de las comparaciones es **cierto (True)** o **falso (False)**.
+* A los valores **True y False**, se le llaman **datos lógicos o booleanos**.
+* Estos valores se utilizan para comprobar si se cumple alguna condición en un determinado momento. 
+
