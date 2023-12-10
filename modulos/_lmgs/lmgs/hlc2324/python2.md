@@ -77,3 +77,83 @@ También hemos visto que podemos hacer distintas operaciones con distintos **ope
 Resumen de operadores:
 
 ![ ](../lmgs/hlc2324/img/img4_p2.png)
+
+## Variables
+
+En muchas ocasiones necesitamos "recordar" un dato (númerico, texto o lógico). Para poder recordarlo podemos guardarlo en la memoria del ordenador dándole un **nombre** y **asignándole el valor a dicho nombre**.
+Este es el concepto de **variable**, se trata de **un nombre al cual se le asigna un valor**. Este valor puede ser directo o como resultado de una operación.
+
+{% capture notice-text %}
+
+**Ejercicio**
+
+En este ejercicio vamos a usar el interprete de Python para trabajar con variables:
+
+![ ](../lmgs/hlc2324/img/img5_p2.png)
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+* Las **variables** son un almacén donde guardar una información y que en cualquier momento podemos recuperarla para volver a utilizarla. Los nombres de las variables deben cumplir lo siguiente:
+    * No deben se palabras reservadas de Python.
+    * Deben comenzar por una letra.
+    * No pueden contener espacios ni caracteres extraños.
+    * Python hace distinción entre mayúsculas y minúsculas.
+
+* En los lenguajes de programación, **el símbolo = debe entenderse como una asignación**, no como una igualdad matemática.
+* En Python, las variables **no es necesario declararlas ni indicar qué tipo de información va a contener**, basta con asignarles un valor y nada más.
+
+## Entrada y salida de información 
+
+La instrucción **print** la usaremos para mostrar mensajes por pantalla.
+
+{% capture notice-text %}
+
+**Ejercicio**
+
+En este ejercicio vamos a usar el interprete de Python para trabajar con la instrucción print:
+
+![ ](../lmgs/hlc2324/img/img6_p2.png)
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+* Observa que cuando se le pasan varios argumentos separados por comas, la función print al mostrar estos valores,  introduce un espacio entre ellos para que se visualicen mejor.
+
+Al igual que la función print sirve para mostrar información, disponemos de la función **input** para introducir datos en el programa para que puedan ser procesados. Estos datos se almacenan en una variable y se utilizan cuando el programa los necesita en función de las tareas que deba llevar a cabo.
+
+{% capture notice-text %}
+
+**Ejercicio**
+
+En este ejercicio vamos a usar el interprete de Python para trabajar con la instrucción input:
+
+![ ](../lmgs/hlc2324/img/img7_p2.png)
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+
+* La función input devuelve una cadena de texto.
+* En este ejemplo podemos comprobar que el valor de n es el texto '12', sin embargo, el valor de v es el número 12.
+* La conversión de n en un valor numérico podemos hacer de varias formas distintas:
+    * v = int(n), si queremos convertirla a un número entero.
+    * v = float(n), si queremos convertirla a un número real.
+
+Para que la conversión de una cadena de texto a entero o float, se realice correctamente, si usamos las funciones int() o float() los valores deben ser del tipo correspondiente.
+
+{% capture notice-text %}
+
+**Ejercicio**
+
+En este ejercicio vamos a usar el interprete de Python para trabajar con la instrucción input:
+
+![ ](../lmgs/hlc2324/img/img8_p2.png)
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+* Se produce **un error por ser n un valor inválido para convertirlo en un valor entero**.
+
+Para terminar indicar que podemos convertir directamente el valor leido por la instrucción input, por ejemplo:
+
+```python
+edad = int(input("Indiica tu edad:"))
+precio = float(input("Indica el precio del producto:"))
+```
