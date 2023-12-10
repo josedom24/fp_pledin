@@ -5,13 +5,13 @@ layout: single3
 
 # Tipos de datos, Operadores y Variables
 
+En esta práctica vamos a estudiar cómo trabajar con los datos en el lenguaje Python, también veremos los distintos tipos que existen y las operaciones que podemos realizar con ellos.
+
 {% capture notice-text %}
 
 **Ejercicio**
 
-Vamos a comenzar a usar Python desde el intérprete como si se tratase de una calculadora inteligente capaz de hacer cálculos matemáticos.
-
-Usando el interprete realiza los siguientes cálculos:
+Vamos a comenzar a usar Python desde el intérprete como si se tratase de una calculadora inteligente capaz de hacer cálculos matemáticos. Usando el interprete realiza los siguientes cálculos:
 
 ![ ](../lmgs/hlc2324/img/img1_p2.png)
 
