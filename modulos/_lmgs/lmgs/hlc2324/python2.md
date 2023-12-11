@@ -151,9 +151,9 @@ En este ejercicio vamos a usar el interprete de Python para trabajar con la inst
 
 * Se produce **un error por ser n un valor inválido para convertirlo en un valor entero**.
 
-Para terminar indicar que podemos convertir directamente el valor leido por la instrucción input, por ejemplo:
+Para terminar indicar que podemos convertir directamente el valor leído por la instrucción input, por ejemplo:
 
 ```python
-edad = int(input("Indiica tu edad:"))
+edad = int(input("Indica tu edad:"))
 precio = float(input("Indica el precio del producto:"))
 ```
