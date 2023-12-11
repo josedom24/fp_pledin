@@ -48,7 +48,7 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 ## Instalación de los contenedores
 
 En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
-1. Crea en **máquina1 (xxx)** un linux bridge llamado `br-intra` (no lo hagas von `virsh` ya que se configura una reglas de cortafuego muy estrictas) y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (xxx)** conectada a este switch virtual y será la puerta de enlace de los contenedores.
+1. Crea en **máquina1 (xxx)** un linux bridge llamado `br-intra` (no lo hagas con `virsh` ya que se configura una reglas de cortafuego muy estrictas) y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (xxx)** conectada a este switch virtual y será la puerta de enlace de los contenedores. Tienes que teneer en cuenta que la imagen de Debian 12 Bookworm de OpenStack tiene **netplan** para la configuración de las redes, por lo tanto tienes que configurar el bridge usando el fichero de configuración de netplan, para ello te puede ser útil esta [página](https://fabianlee.org/2022/09/20/kvm-creating-a-bridged-network-with-netplan-on-ubuntu-22-04/). No olviides poner la mtu a 1450 al crear el bridge.
 2. Instala LXC y crea dos contenedores con la distribución **Ubuntu 22.04**. Estos contenedores serán la **máquina3 (zzz)** y la **máquina4 (aaa)**.
 3. Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.
 4. Conecta los contenedores al bridge `br-intra` y configúralo de forma estática con las siguientes direcciones: **máquina3 (zzz)** la `192.168.0.2` y **máquina4 (aaa)** la `192.168.0.3`.
