@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-12T05:07:06.130Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="EoCvBhAmSvC-65PI_lxz" version="22.1.7" type="device">
+<mxfile host="app.diagrams.net" modified="2023-12-12T05:11:32.384Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="h6swOR0bqOCYuW5T44Ta" version="22.1.7" type="device">
   <diagram id="ZRCxBpTzS2BKZ5gksIRV" name="Page-1">
     <mxGraphModel dx="1434" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -70,8 +70,8 @@
         <mxCell id="Vj5H4rQFQBF9NuJBoQj7-5" value="máquina1" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="623.52" y="566.67" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="WjZnrGhMDGb6yXfnJUzB-2" value="RouterMaquina" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="130" y="150" width="110" height="30" as="geometry" />
+        <mxCell id="WjZnrGhMDGb6yXfnJUzB-2" value="RouterPractica" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="150" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="WjZnrGhMDGb6yXfnJUzB-3" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;10.0.200.1&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="100" width="70" height="30" as="geometry" />
