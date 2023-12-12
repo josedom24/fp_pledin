@@ -42,7 +42,7 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 	* Crea una instancia sobre un volumen de 15Gb, usando una imagen de **Debian 12 Bookworm**. Elige el sabor `vol.medium`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Está instancia estará conectada a la red **Red Intra de tu_usuario**. Asigna a la instancia una IP flotante.
 6. Configuración de la **máquina1 (xxx)**:
-	* Conecta la instancia a tu **Red DMZ**, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red.
+	* Conecta la instancia a tu **Red DMZ**, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red (recuerda que deberás configurar la red de la instancia para que tome dicha configuración).
 	* Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.
 	* Configura de forma permanente la regla SNAT para que las máquinas de la **Red DMZ** tengan acceso a internet.
 7. Creación de la **máquina2 (yyy)**:
