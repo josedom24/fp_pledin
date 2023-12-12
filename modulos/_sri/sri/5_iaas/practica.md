@@ -62,7 +62,7 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 6. Configura los contenedores para que se auto inicien al reiniciar la instancia. 
 7. Los contenedores tendrán características parecidas a las instancias anteriormente:
 	* Debes actualizar los paquetes de la distribución instalada.
-	* El dominio utilizado será del tipo `tunombre.gonzalonazareno.org`. Por lo tanto configura de manera adecuda el hostname y el FQDN.
+	* El dominio utilizado será del tipo `tunombre.gonzalonazareno.org`. Por lo tanto configura de manera adecuada el hostname y el FQDN.
 	* Para acceder a los contenedores vamos a usar ssh.
 	* Crea dos usuarios: 
 		* Un usuario sin privilegios. Se puede llamar como quieras (el nombre de usuario que usaste en las instancias) y accederás a los contenedores usando tu clave ssh privada.
@@ -76,9 +76,9 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 3. Los ficheros `cloud-config.yaml` que has usado para crear las instancias.
 4. La IP flotante de la **máquina1 (xxx)**.
 5. Una captura de pantalla donde se vea el esquema de red en Horizon que has creado.
-6. Prueba de funcionamiento de qué los FQDN están bien configurados.
-7. Prueba de funcionamiento de que se pueden acceder a todas las máquinas por ssh.
-8. Prueba de funcionamiento de que las máquinas tienen acceso a internet.
+6. Prueba de funcionamiento (4 capturas de pantalla) de qué los FQDN están bien configurados.
+7. Prueba de funcionamiento (4 capturas de pantalla) de que se pueden acceder a todas las máquinas por ssh.
+8. Prueba de funcionamiento (4 capturas de pantalla) de que las máquinas tienen acceso a internet accediendo a un nombre de dominio, para comprobar que funciona el DNS.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
