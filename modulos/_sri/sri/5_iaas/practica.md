@@ -75,7 +75,7 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 2. Las instrucciones para crear y configurar la **máquina1 (odin)**.
 3. Los ficheros `cloud-config.yaml` que has usado para crear las instancias.
 4. La IP flotante de la **máquina1 (odin)**.
-5. Una captura de pantalla donde se vea el esquema de red en Horizon que has creado.
+5. Una captura de pantalla donde se vea la Topología de Red en Horizon que has creado.
 6. Prueba de funcionamiento (4 capturas de pantalla) de qué los FQDN están bien configurados.
 7. Prueba de funcionamiento (4 capturas de pantalla) de que se pueden acceder a todas las máquinas por ssh.
 8. Prueba de funcionamiento (4 capturas de pantalla) de que las máquinas tienen acceso a internet accediendo a un nombre de dominio, para comprobar que funciona el DNS.
