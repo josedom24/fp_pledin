@@ -4,16 +4,16 @@ title: "Práctica: Escenario en OpenStack"
 
 En esta tarea se va a crear el escenario de trabajo que se va a usar durante todo el curso, que va a constar inicialmente de 4 máquinas: 2 instancias en OpenStack y dos contenedores LXC que se ejecutarán en una de las instancias.
 
-Para nombrar las máquinas se va a utilizarlos nombres: **...**.
+Para nombrar las máquinas se va a utilizarlos nombres: **odin, hela, thor, loki**. Estos nombres pertenecen a dioses de la mitología nórdica.
 
 Además el dominio será un subdominio de la forma `tunombre.gonzalonazareno.org`. De esta forma tendremos:
 
-* Máquina 1: Instancia en OpenStack con Debian 12 Bookworm que se llama `xxx.tunombre.gonzalonazareno.org`.
-* Máquina 2: Instancia en OpenStack con Rocky Linux 9 que se llama `yyy.tunombre.gonzalonazareno.org`.
-* Máquina 3: Contenedor LXC con Ubuntu 22.04 que se llama `zzz.tunombre.gonzalonazareno.org`.
-* Máquina 4: Contenedor LXC con Ubuntu 22.04 que se llama `aaa.tunombre.gonzalonazareno.org`.
+* Máquina 1: Instancia en OpenStack con **Debian 12 Bookworm** que se llama `odin.tunombre.gonzalonazareno.org`.
+* Máquina 2: Instancia en OpenStack con **Rocky Linux 9** que se llama `hela.tunombre.gonzalonazareno.org`.
+* Máquina 3: Contenedor LXC con **Ubuntu 22.04** que se llama `thor.tunombre.gonzalonazareno.org`.
+* Máquina 4: Contenedor LXC con **Ubuntu 22.04** que se llama `loki.tunombre.gonzalonazareno.org`.
 
-La creación y configuración (conexión a las redes, creación de volumen, quitarle la seguridad a los puertos, ...) de la **máquina1 (xxx)** la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
+La creación y configuración del router y de las redes y la creación y configuración (conexión a las redes, creación de volumen, quitarle la seguridad a los puertos, ...) de la **máquina1 (odin)** la debes hacer con OSC. Lo demás lo puedes hacer con horizon.
 
 ## Escenario
 
@@ -38,14 +38,14 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 		* Un usuario sin privilegios. Se puede llamar como quieras (pero el nombre será el mismo en todas las máquinas) y accederás a las máquinas usando tu clave ssh privada.
 		* Un usuario `profesor`, que puede utilizar `sudo` sin contraseña. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario `profesor`.
 	* Cambia la contraseña al usuario `root`.
-5. Creación de la **máquina1 (xxx)**:
+5. Creación de la **máquina1 (odin)**:
 	* Crea una instancia sobre un volumen de 15Gb, usando una imagen de **Debian 12 Bookworm**. Elige el sabor `vol.medium`. Y configuralá con `cloud-init` como se ha indicado anteriormente.
 	* Está instancia estará conectada a la red **Red Intra de tu_usuario**. Asigna a la instancia una IP flotante.
-6. Configuración de la **máquina1 (xxx)**:
+6. Configuración de la **máquina1 (odin)**:
 	* Conecta la instancia a tu **Red DMZ**, asígnale la dirección `172.16.0.1` para que sea la puerta de enlace las máquinas conectadas a esta red (recuerda que deberás configurar la red de la instancia para que tome dicha configuración).
 	* Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.
 	* Configura de forma permanente la regla SNAT para que las máquinas de la **Red DMZ** tengan acceso a internet.
-7. Creación de la **máquina2 (yyy)**:
+7. Creación de la **máquina2 (hela)**:
 	* Está instancia se conectará a la **Red DMZ**. Usando un puerto asigna a esta máquina la dirección `172.16.0.200`.
 	* Crea una instancia sobre un volumen de 15Gb, usando una imagen de **Rocky Linux 9**. Elige el sabor `vol.normal`. Y configúrala con `cloud-init` como se ha indicado anteriormente.
 	* Deshabilita la seguridad de los puertos en la interfaz de red para que funcione de manera adecuada el NAT.
@@ -54,10 +54,10 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 ## Instalación de los contenedores
 
 En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
-1. Crea en **máquina1 (xxx)** un linux bridge llamado `br-intra` (no lo hagas con `virsh` ya que se configura una reglas de cortafuego muy estrictas) y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (xxx)** conectada a este switch virtual y será la puerta de enlace de los contenedores. Tienes que tener en cuenta que la imagen de Debian 12 Bookworm de OpenStack tiene **netplan** para la configuración de las redes, por lo tanto tienes que configurar el bridge usando el fichero de configuración de netplan, para ello te puede ser útil esta [página](https://fabianlee.org/2022/09/20/kvm-creating-a-bridged-network-with-netplan-on-ubuntu-22-04/). No olvides poner la mtu a 1450 al crear el bridge.
-2. Instala LXC y crea dos contenedores con la distribución **Ubuntu 22.04**. Estos contenedores serán la **máquina3 (zzz)** y la **máquina4 (aaa)**.
+1. Crea en **máquina1 (odin)** un linux bridge llamado `br-intra` (no lo hagas con `virsh` ya que se configura una reglas de cortafuego muy estrictas) y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (odin)** conectada a este switch virtual y será la puerta de enlace de los contenedores. Tienes que tener en cuenta que la imagen de Debian 12 Bookworm de OpenStack tiene **netplan** para la configuración de las redes, por lo tanto tienes que configurar el bridge usando el fichero de configuración de netplan, para ello te puede ser útil esta [página](https://fabianlee.org/2022/09/20/kvm-creating-a-bridged-network-with-netplan-on-ubuntu-22-04/). No olvides poner la mtu a 1450 al crear el bridge.
+2. Instala LXC y crea dos contenedores con la distribución **Ubuntu 22.04**. Estos contenedores serán la **máquina3 (thor)** y la **máquina4 (loki)**.
 3. Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.
-4. Conecta los contenedores al bridge `br-intra` y configúralo de forma estática con las siguientes direcciones: **máquina3 (zzz)** la `192.168.0.2` y **máquina4 (aaa)** la `192.168.0.3`. Su DNS será el `172.22.0.1`.
+4. Conecta los contenedores al bridge `br-intra` y configúralo de forma estática con las siguientes direcciones: **máquina3 (thor)** la `192.168.0.2` y **máquina4 (loki)** la `192.168.0.3`. Su DNS será el `172.22.0.1`.
 5. Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (*Unidad máxima de transferencia*) a 1450 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: `lxc.net.0.mtu = 1450`.
 6. Configura los contenedores para que se auto inicien al reiniciar la instancia. 
 7. Los contenedores tendrán características parecidas a las instancias anteriormente:
@@ -72,9 +72,9 @@ En **maquina1** vamos a crear dos contenedores en un red interna, para ello:
 ## Entrega
 
 1. Las instrucciones para crear el router y las redes.
-2. Las instrucciones para crear y configurar la **máquina1 (xxx)**.
+2. Las instrucciones para crear y configurar la **máquina1 (odin)**.
 3. Los ficheros `cloud-config.yaml` que has usado para crear las instancias.
-4. La IP flotante de la **máquina1 (xxx)**.
+4. La IP flotante de la **máquina1 (odin)**.
 5. Una captura de pantalla donde se vea el esquema de red en Horizon que has creado.
 6. Prueba de funcionamiento (4 capturas de pantalla) de qué los FQDN están bien configurados.
 7. Prueba de funcionamiento (4 capturas de pantalla) de que se pueden acceder a todas las máquinas por ssh.
