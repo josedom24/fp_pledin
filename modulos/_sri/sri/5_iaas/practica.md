@@ -23,9 +23,10 @@ La creación y configuración (conexión a las redes, creación de volumen, quit
 
 1. Crea un nuevo router llamado **RouterPractica** conectado a la red externa.
 2. Crea una red interna que se llame **Red Intra de tu_usuario**, con las siguientes características:
-	* Está conectada al router que has creado.
+	* Está conectada al router que has creado en el punto anterior.
 	* Direccionamiento: 10.0.200.0/24
-	* Con DHCP y DNS (`10.0.200.1`).
+	* Con DHCP y DNS (`172.22.0.1`).
+	* La puerta de enlace de los dispositivos conectados a esta red será el `10.0.200.1`.
 3. Crea una red interna que se llame **Red DMZ de tu_usuario**, con las siguientes características:
 	* Direccionamiento: 172.16.0.0/16
 	* Con DHCP y DNS (`172.22.0.1`).
