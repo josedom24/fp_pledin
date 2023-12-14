@@ -164,15 +164,48 @@ precio = float(input("Indica el precio del producto:"))
 
 ### Ejercicio 1
 
-Utilizando el interprete de Python3 calcula las siguientes operaciones:
+Escribe el siguiente programa y ejecútalo:
 
 ![ ](../lmgs/hlc2324/img/img9_p2.png)
 
 ### Ejercicio 2
 
-Utilizando el interprete de Python3 crea una variable llamada **n** y asígnale el valor 5 (n=5). Luego realiza en el orden que aparecen las siguientes operaciones y escribe el resultado obtenido (de izquierda a derecha y después hacia abajo):
+Utilizando el interprete de Python3 calcula las siguientes operaciones:
 
 ![ ](../lmgs/hlc2324/img/img10_p2.png)
+
+### Ejercicio 3
+
+Utilizando el interprete de Python3 crea una variable llamada **n** y asígnale el valor 5 (n=5). Luego realiza en el orden que aparecen las siguientes operaciones y escribe el resultado obtenido (de izquierda a derecha y después hacia abajo):
+
+![ ](../lmgs/hlc2324/img/img11_p2.png)
+
+### Ejercicio 4
+
+Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente desea saber cuanto deberá pagar finalmente por su compra. Escribe un programa que pida el precio de un artículo y que muestre el precio restándole el 15%.
+
+### Ejercicio 5
+
+Un alumno desea saber cual será su calificación final en una asignatura. Para ello escribe un programa que pida la calificación del examen, la calificación de las prácticas y la calificación de los ejercicios. Y muestra la nota final sabiendo que se calcula de la siguiente forma:
+    * 50% de de la nota final es la nota del examen.
+    * 30% de la nota final es la nota de las prácticas.
+    * 20% de la nota final es la nota de los ejercicios.
+
+### Ejercicio 6
+
+Realiza un programa que pida una distancia en kilómetros y te muestre los metros a los que corresponde.
+
+Ejemplo de ejecución:
+![ ](../lmgs/hlc2324/img/img12_p2.png)
+![ ](../lmgs/hlc2324/img/img13_p2.png)
+
+### Ejercicio 7
+
+Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde.
+
+
+
+
 
 
 **Entrega**
