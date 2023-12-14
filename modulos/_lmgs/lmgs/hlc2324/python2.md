@@ -187,9 +187,10 @@ Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente 
 ### Ejercicio 5
 
 Un alumno desea saber cual será su calificación final en una asignatura. Para ello escribe un programa que pida la calificación del examen, la calificación de las prácticas y la calificación de los ejercicios. Y muestra la nota final sabiendo que se calcula de la siguiente forma:
-    * 50% de de la nota final es la nota del examen.
-    * 30% de la nota final es la nota de las prácticas.
-    * 20% de la nota final es la nota de los ejercicios.
+
+* 50% de de la nota final es la nota del examen.
+* 30% de la nota final es la nota de las prácticas.
+* 20% de la nota final es la nota de los ejercicios.
 
 ### Ejercicio 6
 
