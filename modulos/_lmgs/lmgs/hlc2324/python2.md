@@ -213,13 +213,19 @@ Ejemplo de ejecución:
 
 ### Ejercicio 8
 
-Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde.
+Escriba un programa que pida una cantidad de segundos y que escriba cuántos minutos y segundos son.
 
+Ejemplo de ejecución:
 
+![ ](../lmgs/hlc2324/img/img16_p2.png)
 
+### Ejercicio 9
 
+Escriba un programa que pida una cantidad de segundos y que escriba cuántas horas, minutos y segundos son.
 
+Ejemplo de ejecución:
 
-**Entrega**
+![ ](../lmgs/hlc2324/img/img17_p2.png)
+
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
