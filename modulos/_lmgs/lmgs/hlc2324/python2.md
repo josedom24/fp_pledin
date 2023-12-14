@@ -162,6 +162,8 @@ precio = float(input("Indica el precio del producto:"))
 
 ## ¿Qué tienes que entregar?
 
+Entrega un documento pdf, con el código de los programas y capturas de pantalla de que están funcionando. Del ejercicio 2 y 3 entrega capturas de pantalla de las operaciones y sus resultados.
+
 ### Ejercicio 1
 
 Escribe el siguiente programa y ejecútalo:
