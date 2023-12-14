@@ -19,7 +19,7 @@ Vamos a comenzar a usar Python desde el intérprete como si se tratase de una ca
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-* Podemos trabajar con números **enteros (int)** (son decimales) o con números **reales (float)** (con decimales) (utilizamos el punto para separar la parte entera de la parte decimal). 
+* Podemos trabajar con números **enteros (int)** (sin decimales) o con números **reales (float)** (con decimales) (utilizamos el punto para separar la parte entera de la parte decimal). 
 * Podemos realizar las operaciones básicas de **suma(+), resta(-), multiplicación(*) y división(/)**.
 * También podemos hacer operaciones un poco más complejas, por ejemplo la **potenciación(\*\*), división entera(//) y el resto de la división o módulo (%)**.
 * Más adelante veremos que podemos hacer **más operaciones matemáticas**.
@@ -80,7 +80,7 @@ Resumen de operadores:
 
 ## Variables
 
-En muchas ocasiones necesitamos "recordar" un dato (númerico, texto o lógico). Para poder recordarlo podemos guardarlo en la memoria del ordenador dándole un **nombre** y **asignándole el valor a dicho nombre**.
+En muchas ocasiones necesitamos "recordar" un dato (numérico, texto o lógico). Para poder recordarlo podemos guardarlo en la memoria del ordenador dándole un **nombre** y **asignándole el valor a dicho nombre**.
 Este es el concepto de **variable**, se trata de **un nombre al cual se le asigna un valor**. Este valor puede ser directo o como resultado de una operación.
 
 {% capture notice-text %}
@@ -157,3 +157,13 @@ Para terminar indicar que podemos convertir directamente el valor leído por la 
 edad = int(input("Indica tu edad:"))
 precio = float(input("Indica el precio del producto:"))
 ```
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## ¿Qué tienes que entregar?
+
+
+
+**Entrega**
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
