@@ -158,10 +158,21 @@ edad = int(input("Indica tu edad:"))
 precio = float(input("Indica el precio del producto:"))
 ```
 
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% capture notice-text %}
 
 ## ¿Qué tienes que entregar?
 
+### Ejercicio 1
+
+Utilizando el interprete de Python3 calcula las siguientes operaciones:
+
+![ ](../lmgs/hlc2324/img/img9_p2.png)
+
+### Ejercicio 2
+
+Utilizando el interprete de Python3 crea una variable llamada **n** y asígnale el valor 5 (n=5). Luego realiza en el orden que aparecen las siguientes operaciones y escribe el resultado obtenido (de izquierda a derecha y después hacia abajo):
+
+![ ](../lmgs/hlc2324/img/img10_p2.png)
 
 
 **Entrega**
