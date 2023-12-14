@@ -196,10 +196,21 @@ Un alumno desea saber cual será su calificación final en una asignatura. Para 
 Realiza un programa que pida una distancia en kilómetros y te muestre los metros a los que corresponde.
 
 Ejemplo de ejecución:
+
 ![ ](../lmgs/hlc2324/img/img12_p2.png)
 ![ ](../lmgs/hlc2324/img/img13_p2.png)
 
-### Ejercicio 7
+## Ejercicio 7
+
+Realiza un programa que pida una distancia en metros y te muestre los kilómetros a los que corresponde.
+
+Ejemplo de ejecución:
+
+![ ](../lmgs/hlc2324/img/img14_p2.png)
+![ ](../lmgs/hlc2324/img/img15_p2.png)
+
+
+### Ejercicio 8
 
 Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde.
 
