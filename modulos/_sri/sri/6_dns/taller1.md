@@ -137,8 +137,10 @@ En esta máquina vamos a instalar un servidor DNS `bind9`.
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. Responde a las preguntas del apartado 2.
-2. El resultado de las siguientes consultas desde otra máquina:
+1. Realiza una consulta con dig a tu servidor para averiguar ula IP de `www.marca.es`. Contesta las siguientes preguntas:
+	* ¿Cuánto ha tardado en realizar la consulta? ¿Qué consultas se han realizado para averiguar la dirección IP? 
+	* Realiza de nuevo la consulta. ¿Cuánto ha tardado ahora? ¿Por qué ha tardado menos? ¿Qué consultas se han realizado para averiguar la dirección IP?
+2. El resultado de las siguientes consultas a tu servidor DNS desde otra máquina:
 	* Dirección IP de una máquina o servicio.
 	* Servidor DNS con autoridad del dominio.
 	* Servidor de correo del dominio.
