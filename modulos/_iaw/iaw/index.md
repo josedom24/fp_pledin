@@ -29,6 +29,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
 * [Curso Docker](https://github.com/josedom24/curso_docker_ies)
+* [Artículo: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
 
 
 <!--
