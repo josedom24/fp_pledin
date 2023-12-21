@@ -15,18 +15,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	* [Taller 3: Integración continua de aplicación django con Jenkins (Test)](7_ic/t3.html)
 * [Práctica: IC/DC con Jenkins](7_ic/practica.html)
 
-## Unidad 6: Docker
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
-* [Curso Docker](https://github.com/josedom24/curso_docker_ies)
-* [Artículo: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
-	* [Ejercicio 1: Introducción a los contenedores Docker](6_docker/ejercicio1.html)
-	* [Ejercicio 2: Imágenes Docker](6_docker/ejercicio2.html)
-	* [Taller 1: Almacenamiento y redes en Docker](6_docker/t1.html)
-	* [Taller 2: Escenarios multicontenedor en Docker](6_docker/t2.html)
-	* [Taller 3: Creación de imágenes Docker](6_docker/t3.html)
-* [Práctica 1: Implantación de aplicaciones web PHP en docker](6_docker/practica1.html)
-* [Práctica 2: Implantación de aplicaciones web Python en docker](6_docker/practica2.html)
 
 ## Unidad 4: Implantación de aplicaciones web Java
 
@@ -34,6 +23,22 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Introducción a Tomcat 10](4_java/tomcat.html)
 	* [Taller 1: Desarrollo y despliegue de una aplicación Java simple](4_java/taller1.html)
 * [Práctica: Despliegue de aplicaciones Java](4_java/practica.html)
+-->
+
+## Unidad 4: Docker
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
+* [Curso Docker](https://github.com/josedom24/curso_docker_ies)
+
+
+<!--
+	* [Ejercicio 1: Introducción a los contenedores Docker](4_docker/ejercicio1.html)
+	* [Ejercicio 2: Imágenes Docker](4_docker/ejercicio2.html)
+	* [Taller 1: Almacenamiento y redes en Docker](4_docker/t1.html)
+	* [Taller 2: Escenarios multicontenedor en Docker](4_docker/t2.html)
+	* [Taller 3: Creación de imágenes Docker](4_docker/t3.html)
+* [Práctica 1: Implantación de aplicaciones web PHP en docker](4_docker/practica1.html)
+* [Práctica 2: Implantación de aplicaciones web Python en docker](4_docker/practica2.html)
 -->
 
 ## Unidad 3: Implantación de aplicaciones web Python
