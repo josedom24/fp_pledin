@@ -114,6 +114,22 @@ Realiza un programa cuya salida sea similar a la que se muestra en la imagen sig
 
 ### Ejercicio 6
 
+Pedir el nombre y los dos apellidos de una persona y mostrar las iniciales.
 
+### Ejercicio 7
+
+Escribir un algoritmo para calcular la nota final de un estudiante, considerando que: por cada respuesta correcta 5 puntos, por una incorrecta -1 y por respuestas en blanco 0. Imprime el resultado obtenido por el estudiante.
+
+### Ejercicio 8
+
+Diseñar un algoritmo que nos diga el dinero que tenemos (en euros y céntimos) después de pedirnos cuantas monedas tenemos (de 2€, 1€, 50 céntimos, 20 céntimos o 10 céntimos).
+
+### Ejercicio 9
+
+Crea un programa que genere e imprima un número decimal entre 0 y 1; un número entero entre 10 y 100; un número decimal entre 10 y 20.
+
+### Ejercicio 10
+
+Realiza un programa que genere 2 número aleatorios entre 1 y 6 simulando el lanzamiento de 2 dados. Debe mostrar los 2 números obtenidos y la suma de dichos números.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
