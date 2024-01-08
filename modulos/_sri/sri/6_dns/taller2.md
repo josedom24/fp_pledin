@@ -144,7 +144,7 @@ Un **servidor DNS esclavo** contiene una réplica de las zonas del servidor maes
 
 			dig @x.x.x.x tunombre.org. axfr
 
-	* **Cada vez que realice una modificación en el servidor DNS maestro recuerda incrementar el número de serie**.
+	* **Cada vez que realices una modificación en el servidor DNS maestro recuerda incrementar el número de serie**.
 
 {% capture notice-text %}	
 ## ¿Qué tienes que entregar?
