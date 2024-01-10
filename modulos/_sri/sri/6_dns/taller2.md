@@ -102,7 +102,7 @@ Un **servidor DNS esclavo** contiene una réplica de las zonas del servidor maes
 
 
 		root@dns2:~# systemctl restart bind9
-		root@dns2:~# tail /var/log/syslog
+		root@dns2:~# journalctl -u named
 		... dns2 named[5739]: zone 22.172.in-addr.arpa/IN: transferred serial 1
 		... dns2 named[5739]: transfer of '22.172.in-addr.arpa/IN' from 172.22.200.100#53: Transfer status: success
 		... dns2 named[5739]: transfer of '22.172.in-addr.arpa/IN' from 172.22.200.100#53: Transfer completed: ...
