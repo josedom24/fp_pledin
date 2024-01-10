@@ -22,7 +22,7 @@ title: "Taller 3: Delegación de subdominios con bind9"
 		@		IN	 NS		dns
 		dns 	IN	 A 		172.22.200.120
 
-	* EL parámetro `$ORIGIN` nos permite usar nombres no cualificados totalmente.
+	* El parámetro `$ORIGIN` nos permite usar nombres no cualificados totalmente.
 	* Indicamos que el servidor con autoridad para la zona `informatica.tunombre.org` (registro `NS`), es `dns.informatica.tunombre.org`.
 	* Y se indica la dirección IP del servidor DNS.
 	* **Si incrementas el número de serie la delegación que hemos realizado se transferirá al servidor DNS esclavo.**
