@@ -30,14 +30,14 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
 * [Curso Docker](https://github.com/josedom24/curso_docker_ies)
 * [Artículo: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
+	* [Ejercicio 1: Introducción a los contenedores Docker](4_docker/ejercicio1.html)
 
 
 <!--
-	* [Ejercicio 1: Introducción a los contenedores Docker](4_docker/ejercicio1.html)
 	* [Ejercicio 2: Imágenes Docker](4_docker/ejercicio2.html)
-	* [Taller 1: Almacenamiento y redes en Docker](4_docker/t1.html)
-	* [Taller 2: Escenarios multicontenedor en Docker](4_docker/t2.html)
-	* [Taller 3: Creación de imágenes Docker](4_docker/t3.html)
+	* [Taller 1: Almacenamiento y redes en Docker](4_docker/taller1.html)
+	* [Taller 2: Escenarios multicontenedor en Docker](4_docker/taller2.html)
+	* [Taller 3: Creación de imágenes Docker](4_docker/taller3.html)
 * [Práctica 1: Implantación de aplicaciones web PHP en docker](4_docker/practica1.html)
 * [Práctica 2: Implantación de aplicaciones web Python en docker](4_docker/practica2.html)
 -->
