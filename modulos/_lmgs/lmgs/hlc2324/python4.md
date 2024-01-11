@@ -54,55 +54,54 @@ Escribe el siguiente programa y comprueba como funciona:
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
+## Estructuras alternativas anidadas
 
-
-
-
-
-
-
-
-
-
-
-
-
-3.555140411923311
-```
-
-## Más operaciones sobre cadenas de caracteres
-
-* **Indexación**: Puedo obtener el dato de una secuencia indicando la posición en la secuencia. En este caso puedo obtener el carácter de la cadena indicando la posición (**empezando por la posición 0**).
-
-```python
->>> cadena = "josé"
->>> cadena[0]
-'j'
->>> cadena[3]
-'é'
-```
-
-* Para obtener la **longitud de una cadena** (número de caracteres que tiene), utilizamos la función `len`:
-
-```python
- >>> cadena = "josé"
->>> print(len(cadena))
-4
-```
-
-* **Slice (rebanada)**: Puedo obtener una subcadena de la cadena de caracteres. Se indica el carácter inicial, y el carácter final. Si no se indica el carácter inicial se supone que es desde el primero, sino se indica el carácter final se supone que es hasta el final. 
-
-```python
->>> cad="informática"
->>> print(cad[:4])
-info
->>> print(cad[2:7])
-formá
->>> print(cad[7:])
-tica
-```
+Anidar estructuras significa incluir unas estructuras dentro de otras.
 
 {% capture notice-text %}
+
+**Ejercicio**
+
+Para hacer este ejercicio, vamos a aprender dos cosas:
+
+1. Si tenemos una cadena, podemos calcular el número de caracteres que tiene usando la función **len**. Por ejemplo:
+
+    ``` 
+    cadena = "programa"
+    print(len(cadena))
+    8
+    ```
+2. El operador **in** nos permite averiguar si una cadena está dentro de otra. Devuelve **True** si la primera cadena está dentro de la segunda, y **False** en caso contrario. Por ejemplo:
+
+    ```
+    >>> cadena = "informática"
+    >>> "info" in cadena
+    True
+    >>> "mati" in cadena
+    False
+    ```
+El programa que queremos hacer es el siguiente:
+
+El programa mostrará un mensaje indicando lo que hace.
+
+* Solicitará el nombre del usuario.
+* Contará el número de caracteres del nombre.
+* Si el nombre tiene 7 caracteres o menos, sólo contará mostrará el numero de caracteres del nombre.
+* Si el nombre tiene más de 7 caracteres, comprobará además si contiene algún espacio.
+* En el caso de que contenga algún espacio dirá que el nombre es compuesto.
+* Si no contiene ningún espacio, dirá que el nombre no es compuesto.
+
+Escribe el programa y comprueba como funciona:
+
+![ ](../lmgs/hlc2324/img/img4_p4.png)
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+
+
+
+
+
 
 ## ¿Qué tienes que entregar?
 
@@ -110,52 +109,5 @@ Entrega un documento pdf, con el código de los programas y capturas de pantalla
 
 ### Ejercicio 1
 
-Realizando previamente la asignación `palabra1='Informática'` y `palabra2='programación'`, obtén los resultados de estas expresiones:
-
-![ ](../lmgs/hlc2324/img/img1_p3.png)
-
-### Ejercicio 2
-
-Realiza un programa cuya salida sea similar a la que se muestra en la imagen siguiente.
-
-![ ](../lmgs/hlc2324/img/img2_p3.png)
-
-### Ejercicio 3
-
-Realiza un programa cuya salida sea similar a la que se muestra en la imagen siguiente.
-
-![ ](../lmgs/hlc2324/img/img3_p3.png)
-
-### Ejercicio 4
-
-Realiza un programa cuya salida sea similar a la que se muestra en la imagen siguiente.
-
-![ ](../lmgs/hlc2324/img/img4_p3.png)
-
-### Ejercicio 5
-
-Realiza un programa cuya salida sea similar a la que se muestra en la imagen siguiente.
-
-![ ](../lmgs/hlc2324/img/img5_p3.png)
-
-### Ejercicio 6
-
-Pedir el nombre y los dos apellidos de una persona y mostrar las iniciales.
-
-### Ejercicio 7
-
-Escribir un algoritmo para calcular la nota final de un estudiante, considerando que: por cada respuesta correcta 5 puntos, por una incorrecta -1 y por respuestas en blanco 0. Imprime el resultado obtenido por el estudiante.
-
-### Ejercicio 8
-
-Diseñar un algoritmo que nos diga el dinero que tenemos (en euros y céntimos) después de pedirnos cuantas monedas tenemos (de 2€, 1€, 50 céntimos, 20 céntimos o 10 céntimos).
-
-### Ejercicio 9
-
-Crea un programa que genere e imprima un número decimal entre 0 y 1; un número entero entre 10 y 100; un número decimal entre 10 y 20.
-
-### Ejercicio 10
-
-Realiza un programa que genere 2 número aleatorios entre 1 y 6 simulando el lanzamiento de 2 dados. Debe mostrar los 2 números obtenidos y la suma de dichos números.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
