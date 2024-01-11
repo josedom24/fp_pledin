@@ -98,10 +98,7 @@ Escribe el programa y comprueba como funciona:
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
-
-
-
-
+{% capture notice-text %}
 
 ## ¿Qué tienes que entregar?
 
