@@ -106,5 +106,50 @@ Entrega un documento pdf, con el código de los programas y capturas de pantalla
 
 ### Ejercicio 1
 
+Programa que pida dos números e indique si el primero es mayor que el segundo o no.
+
+### Ejercicio 2
+
+Programa que pida un número y diga si es positivo, negativo o 0.
+
+### Ejercicio 3
+
+Escribe un programa que pida un nombre de usuario y una contraseña y si se ha introducido “pepe” y “asdasd” se indica “Has entrado al sistema”, sino se da un error.
+
+### Ejercicio 4
+
+Escribe un programa que pide un mes (un número del 1 y al 12). Si se introduce un mes incorrecto se dará un error y terminará el programa. Si el mes es correcto se escribirá en pantalla el nombre del mes.
+
+### Ejercicio 5
+
+Escribe un programa que pide un mes (un número del 1 y al 12). Si se introduce un mes incorrecto se dará un error y terminará el programa. Si el mes es correcto se escribirá en pantalla los días que tiene dicho mes (suponemos que febrero tiene 28 días).
+
+### Ejercicio 6
+
+Escribe un programa que genere las siguientes salidas en su ejecución.
+
+![ ](../lmgs/hlc2324/img/img5_p4.png)
+
+### Ejercicio 7
+
+Escribe un programa que genere las siguientes salidas en su ejecución.
+
+![ ](../lmgs/hlc2324/img/img6_p4.png)
+
+### Ejercicio 8
+
+El programa comprobará si la palabra tiene 5 letras o menos, en cuyo caso mostrará la primera y la última letra.
+En el caso de que tenga más de 5 letras, mostrará las 4 primeras letras por un lado y las 4 últimas letras por otro, aunque haya letras coincidentes en las 2 particiones.
+El programa debe generar las siguientes salidas en su ejecución.
+
+![ ](../lmgs/hlc2324/img/img7_p4.png)
+
+## Ejercicio 9
+
+Programa que pida dos números y muestre primero el mayor y luego el menor. Si son iguales, indica con un mensaje que los dos números son iguales.
+
+## Ejercicio 10
+
+Algoritmo que pida tres números y los muestre ordenados (de mayor a menor);
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
