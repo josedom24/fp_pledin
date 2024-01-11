@@ -19,7 +19,7 @@ Utilizando la utilidad `mail` manda un correo desde un usuario del servidor a ot
 
 ### Ejercicio 2: Envío de correo desde usuarios del servidor a correos de internet
 
-Configura tu servidor de correo para que use como relay el servidor de correo de nuestra red `babuino-smtp.gonzalonazareno.org`. Con la utilidad `mail` envía un correo a tu cuenta personal de gmail, hotmail,... 
+Configura tu servidor de correo para que use como relay el servidor de correo de nuestra red `mail.gonzalonazareno.org`. Con la utilidad `mail` envía un correo a tu cuenta personal de gmail, hotmail,... 
 
 Muestra el log del sistema donde se comprueba que el correo se ha enviado con éxito.
 
@@ -27,7 +27,7 @@ Comprueba las cabeceras del correo que has recibido e indica donde vemos los ser
 
 ### Ejercicio 3: Recibir correos desde internet a usuarios del servidor
 
-En este ejercicio debes responder desde tu cuenta de correo personal al correo que recibiste en el ejercicio anterior. Recuerda que para que todo funcione debes indicarle al profesor el nombre de tu dominio para que configure de manera adecuada el parámetro `relay_domains` en `babuino-smtp`. Además debes configurar de manera adecuada el registro MX de tu servidor DNS.
+En este ejercicio debes responder desde tu cuenta de correo personal al correo que recibiste en el ejercicio anterior. Recuerda que para que todo funcione debes indicarle al profesor el nombre de tu dominio para que configure de manera adecuada el parámetro `relay_domains` en `satelite.gonzalonazareno.org`. Además debes configurar de manera adecuada el registro MX de tu servidor DNS.
 
 Muestra el log del sistema donde se comprueba que el correo se ha recibido con éxito.
 
