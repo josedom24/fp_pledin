@@ -19,7 +19,7 @@ Hay que tener en cuenta los siguientes aspectos:
     Realiza pruebas desde los otros equipos para comprobar que tu servidor DNS funciona de manera adecuada en las redes locales.
 3. Será necesario realizar consultas desde el exterior (ya que vamos a hacer una delegación del subdominio). Determina la regla DNAT en `odin` para que podamos hacer consultas DNS desde el exterior. Prueba hacer una consulta desde tu anfitrión usando la IP flotante de `odin`.
 4. Indica al profesor el nombre de tu dominio para que pueda realizar la delegación en el servidor DNS principal `dns.gonzalonazareno.org`. Ahora prueba, desde tu anfitrión a resolver tus nombres pero preguntando al DNS de nuestra red (`172.22.0.1`).
-5. Queremos que el servidor DNS que has configurado también pueda resolver los nombres de los dNS de los compañeros. Para ello lo vamos a configurar como **servidor DNS forward/caché**, de tal manera que las consultas la realizará sobre nuestro servidor `172.22.0.1`. Para configurar el servidor como forwarder hay que modificar el parámetro en el fichero `named.conf.options`.
+5. Queremos que el servidor DNS que has configurado también pueda resolver los nombres de los DNS de los compañeros. Para ello lo vamos a configurar como **servidor DNS forward/caché**, de tal manera que las consultas la realizará sobre nuestro servidor `172.22.0.1`. Para configurar el servidor como forwarder hay que modificar el parámetro en el fichero `named.conf.options`.
 6. Por último vamos a configurar los equipos de nuestro escenario para que usen por defecto el servidor DNS de thor, para ello: modifica la configuración de la subred en las redes que estás usando en tu escenario de OpenStack para que el servidor DNS principal sea **thor** (`192.168.0.2`) y modifica la configuración de los contenedores para que usen **thor** como DNS.
 7. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio. Como no podemos enviar esa información con el servidor DHCP de las redes de OpenStack, vamos a configurar los clientes DHCP de las máquinas para que autoconfiguren el parámetro `search`, para ello modifica el fichero `//etc/dhcp/dhclient.conf` y añade la siguiente línea:
 
@@ -46,8 +46,9 @@ En `loki` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.g
     * Una resolución de www.
     * Una resolución de bd.
     * Un resolución inversa de IP fija en cada una de las redes. (Esta consulta sólo funcionará desde una máquina interna).
-4. Desde `odin` entrega la salida de `ping hela` y `ssh loki` para comprobar que funcionan los nombres cortos en la resolución.
-5. Entrega el contenido del fichero de configuración de Wordpress (`wp-config.php`) para comprobar el nombre de la base de datos que has configurado.
-6. Entrega una captura de pantalla accediendo a `www.tunombre.gonzalonazareno.org` donde se vea el Wordpress.
+4. Realiza una consulta a tu DNS preguntando por el nombre de un dns de un compañero, para comprobar si se está comportando como DNS fordward/caché.
+5. Desde `odin` entrega la salida de `ping hela` y `ssh loki` para comprobar que funcionan los nombres cortos en la resolución.
+6. Entrega el contenido del fichero de configuración de Wordpress (`wp-config.php`) para comprobar el nombre de la base de datos que has configurado.
+7. Entrega una captura de pantalla accediendo a `www.tunombre.gonzalonazareno.org` donde se vea el Wordpress.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
