@@ -27,7 +27,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 
 ## Unidad 4: Docker
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_docker_ies.pdf)
+* [Teoría](pdf/introduccion_docker_ies.pdf)
 * [Curso Docker](https://github.com/josedom24/curso_docker_ies)
 * [Artículo: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
 	* [Ejercicio 1: Introducción a los contenedores Docker](4_docker/ejercicio1.html)
@@ -44,7 +44,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 
 ## Unidad 3: Implantación de aplicaciones web Python
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/python.pdf)
+* [Teoría](pdf/python.pdf)
 	* [Ejercicio 1: Ejecución de aplicaciones python flask](3_python/ejercicio1.html)
 	* [Taller 1: Desplegando aplicaciones flask con apache2 + mod_wsgi](3_python/taller1.html)
 	* [Taller 2: Desplegando aplicaciones flask con apache2/nginx + uwsgi](3_python/taller2.html)
@@ -53,7 +53,7 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	
 ## Unidad 2: Implantación de aplicaciones web PHP
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/php.pdf)
+* [Teoría](pdf/php.pdf)
 	* [Ejercicio 1: Instalación de un servidor LAMP](2_php/ejercicio1.html)
 	* [Ejercicio 2: VirtualHosting con Apache](2_php/ejercicio2.html)
 	* [Taller 1: Instalación de la aplicación Biblioteca](2_php/taller1.html)
@@ -61,18 +61,18 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Teoría: Introducción al servidor web nginx](2_php/nginx.html)
 	* [Taller 3: Instalación de WordPress en un servidor LEMP](2_php/taller3.html)
 	* [Taller 4: Contratación y configuración de un VPS](2_php/taller4.html)
-* [Teoría: Introducción a HTTPS con Let’s Encrypt](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/https.pdf)
+* [Teoría: Introducción a HTTPS con Let’s Encrypt](pdf/https.pdf)
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 
-* [Teoría: Introducción a Git y GitHub](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/git.pdf)
+* [Teoría: Introducción a Git y GitHub](pdf/git.pdf)
 	* [Ejercicio 1: Introducción a git y GitHub](1_introduccion/ejercicio1.html)
 	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
 	* [Taller 1: Git. Trabajando con ramas y uniones](1_introduccion/taller1.html)
 	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
-* [Teoría: Introducción a las Aplicaciones Web](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_aplicaciones_web.pdf)
+* [Teoría: Introducción a las Aplicaciones Web](pdf/introduccion_aplicaciones_web.pdf)
 	* [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/practica.html)
-* [Teoría: Introducción a la Implantación de Aplicaciones Web](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/introduccion_iaw.pdf)
+* [Teoría: Introducción a la Implantación de Aplicaciones Web](pdf/introduccion_iaw.pdf)
 
