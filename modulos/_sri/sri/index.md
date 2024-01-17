@@ -5,7 +5,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 <!--
 ## Unidad 9: Clúster de alta disponibilidad
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/clusterHA.pdf)
+* [Teoría](pdf/clusterHA.pdf)
 * [Escenarios de HA con pacemaker y corosync](https://github.com/josedom24/escenarios-HA)
     * [Escenario 1: Balanceo de carga por DNS](https://github.com/josedom24/escenarios-HA/tree/master/01-Balanceo-DNS)
     * [Escenario 2: Balanceo de carga por DNS con nombre virtuales](https://github.com/josedom24/escenarios-HA/tree/master/02-Balanceo-DNS-Delegado)
@@ -55,8 +55,8 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 ## Unidad 6: Protocolo DNS
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dns.pdf)
-* [Servidor DNS bind9](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/bind9.pdf)
+* [Teoría](pdf/dns.pdf)
+* [Servidor DNS bind9](pdf/bind9.pdf)
 	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](6_dns/taller1.html)
 	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](6_dns/taller2.html)
 	* [Taller 3: Delegación de subdominios con bind9](6_dns/taller3.html)
@@ -65,7 +65,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 ## Unidad 5: Cloud Computing IaaS. OpenStack 
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/cloudcomputing.pdf)
+* [Teoría](pdf/cloudcomputing.pdf)
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
 	* [Taller 1: Trabajo con instancias en OpenStack](5_iaas/taller1.html)
 	* [Taller 2: Gestión del almacenamiento en OpenStack](5_iaas/taller2.html)
@@ -76,7 +76,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 ## Unidad 4: Protocolo HTTP
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/http.pdf)
+* [Teoría](pdf/http.pdf)
 	* [Ejercicio 1: Peticiones HTTP](4_http/ejercicio1.html)
 * [Teoría: Configuración básica de Apache2](4_http/apache2.html)
 	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
@@ -89,19 +89,19 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 ## Unidad 3: Infraestructura como código
 	
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/iac.pdf)
+* [Teoría](pdf/iac.pdf)
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
 	* [Taller 2: Ansible - Playbook con roles](3_iac/taller2.html)
 * [Teoría: Introducción al uso de vagrant + libvirt + QEMU/KVM](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
 	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/taller3.html)
-* [Teoría: Presentación - Configuración de redes en KVM y en Vagrant](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/redes_kvm_vagrant.pdf)
+* [Teoría: Presentación - Configuración de redes en KVM y en Vagrant](pdf/redes_kvm_vagrant.pdf)
 	* [Taller 4: Vagrant - Creación de escenarios](3_iac/taller4.html)
 	* [Taller 5: Vagrant + Ansible](3_iac/taller5.html)
 * [Práctica: Creación y configuración de un servidor LAMP](3_iac/practica.html)
 
 ## Unidad 2: Protocolo DHCP
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/servicios/dhcp.pdf)
+* [Teoría](pdf/dhcp.pdf)
 	* [Taller 0: Configuración del cliente VPN](2_dhcp/taller0.html)
 	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/taller1.html)
 	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/taller2.html)
@@ -109,7 +109,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 ## Unidad 1: Virtualización en Linux (HLC)
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/hlc/virtualizacion.pdf)
+* [Teoría](pdf/virtualizacion.pdf)
 * [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
 	* [Ejercicio 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/ejercicio1.html)
     * [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
