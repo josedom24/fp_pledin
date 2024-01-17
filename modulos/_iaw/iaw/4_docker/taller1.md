@@ -54,8 +54,8 @@ Vamos a desplegar la aplicación Nextcloud con una base de datos (**NOTA: Para q
 
 1. Instrucción para crear la red
 2. Instrucción para crear el contenedor de base de datos.
-3. Instrucción para crear el contenedor de nextcloud.
-4. Pantallazos accediendo a nextcloud para comprobar que funciona de manera correcta.
+3. Instrucción para crear el contenedor de Nextcloud.
+4. Pantallazos accediendo a Nextcloud para comprobar que funciona de manera correcta.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
