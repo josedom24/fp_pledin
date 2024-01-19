@@ -26,7 +26,7 @@ Vamos a trabajar con bind mount:
 
 ### Despliegue de Nextcloud + mariadb
 
-Vamos a desplegar la aplicación Nextcloud con una base de datos (**NOTA: Para que no te de errores utiliza la imagen `mariadb:10.5`**). Te puede servir el ejercicio que hemos realizado para desplegar [Wordpress](wordpress.html). Para ello sigue los siguientes pasos:
+Vamos a desplegar la aplicación Nextcloud con una base de datos (**NOTA: Para que no te de errores utiliza la imagen `mariadb:10.5`**). Te puede servir el ejercicio que hemos realizado para desplegar [Wordpress](https://github.com/josedom24/curso_docker_ies/blob/main/modulo3/wordpress.md). Para ello sigue los siguientes pasos:
 
 1. Crea una red de tipo bridge.
 2. Crea el contenedor de la base de datos conectado a la red que has creado. La base de datos se debe configurar para crear una base de datos y un usuario. Además el contenedor debe utilizar almacenamiento (volúmenes o bind mount) para guardar la información. Puedes seguir la documentación de [mariadb](https://hub.docker.com/_/mariadb) o la de [PostgreSQL](https://hub.docker.com/_/postgres).
