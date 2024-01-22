@@ -43,13 +43,16 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 1: Gestión de pool de almacenamiento lógico en KVM/libvirt](7_almacenamiento/t1.html)
 	* [Taller 2: Introducción a iSCSI](7_almacenamiento/t2.html)
 	* [Taller 3: Creación de un cluster DRBD + OCFS2](7_almacenamiento/t3.html)
-
+-->
 
 ## Unidad 7: Servidor de correo electrónico
 
-* [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/correo.pdf)
+* [Teoría](pdf/correo.pdf)
 * [Curso Correo Electrónico](https://github.com/josedom24/curso_correo_electronico_ies)
 	* [Taller 1: Servidor de correo en los servidores de clase](7_correo/taller1.html)
+
+
+<!--
 * [Práctica: Instalación y configuración de un servidor de correos en el VPS](7_correo/practica.html)
 -->
 
