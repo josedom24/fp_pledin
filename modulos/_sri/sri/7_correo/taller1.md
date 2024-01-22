@@ -13,7 +13,7 @@ title: "Taller 1: Servidor de correo en los servidores de clase"
 
 ### Ejercicio 1: Envío local, entre usuarios del mismo servidor
 
-Instala y configura un servidor de correo en `delta`. El nombre del sistema de correo será tu nombre de dominio `tudominio.gonzalonazareno.org`.
+Instala y configura un servidor de correo en `loki`. El nombre del sistema de correo será tu nombre de dominio `tudominio.gonzalonazareno.org`.
 
 Utilizando la utilidad `mail` manda un correo desde un usuario del servidor a otro usuario del servidor. El usuario destinatario debe leer el correo con el mismo programa.
 
