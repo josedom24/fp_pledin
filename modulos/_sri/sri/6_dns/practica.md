@@ -17,15 +17,23 @@ Hay que tener en cuenta los siguientes aspectos:
     * Vamos a crear las zonas de resolución inversas correspondientes al direccionamiento de las redes privadas (`192.168.0.0/24` y `172.16.0.0/16`).
 
     Realiza pruebas desde los otros equipos para comprobar que tu servidor DNS funciona de manera adecuada en las redes locales.
-3. Será necesario realizar consultas desde el exterior (ya que vamos a hacer una delegación del subdominio). Determina la regla DNAT en `odin` para que podamos hacer consultas DNS desde el exterior. Prueba hacer una consulta desde tu anfitrión usando la IP flotante de `odin`.
-4. Indica al profesor el nombre de tu dominio para que pueda realizar la delegación en el servidor DNS principal `dns.gonzalonazareno.org`. Ahora prueba, desde tu anfitrión a resolver tus nombres pero preguntando al DNS de nuestra red (`172.22.0.1`).
-5. Queremos que el servidor DNS que has configurado también pueda resolver los nombres de los DNS de los compañeros. Para ello lo vamos a configurar como **servidor DNS forward/caché**, de tal manera que las consultas la realizará sobre nuestro servidor `172.22.0.1`. Para configurar el servidor como forwarder hay que modificar el parámetro en el fichero `named.conf.options`.
-6. Por último vamos a configurar los equipos de nuestro escenario para que usen por defecto el servidor DNS de thor, para ello: modifica la configuración de la subred en las redes que estás usando en tu escenario de OpenStack para que el servidor DNS principal sea **thor** (`192.168.0.2`) y modifica la configuración de los contenedores para que usen **thor** como DNS.
-7. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio. Como no podemos enviar esa información con el servidor DHCP de las redes de OpenStack, vamos a configurar los clientes DHCP de las máquinas para que autoconfiguren el parámetro `search`, para ello modifica el fichero `/etc/dhcp/dhclient.conf` y añade la siguiente línea:
+2. Será necesario realizar consultas desde el exterior (ya que vamos a hacer una delegación del subdominio). Determina la regla DNAT en `odin` para que podamos hacer consultas DNS desde el exterior. Prueba hacer una consulta desde tu anfitrión usando la IP flotante de `odin`.
+3. Indica al profesor el nombre de tu dominio para que pueda realizar la delegación en el servidor DNS principal `dns.gonzalonazareno.org`. Ahora prueba, desde tu anfitrión a resolver tus nombres pero preguntando al DNS de nuestra red (`172.22.0.1`).
+4. Queremos que el servidor DNS que has configurado también pueda resolver los nombres de los DNS de los compañeros. Para ello lo vamos a configurar como **servidor DNS forward/caché**, de tal manera que las consultas la realizará sobre nuestro servidor `172.22.0.1`. Para configurar el servidor como forwarder hay que modificar el parámetro en el fichero `named.conf.options`.~~
 
-        prepend domain-search "tu_nombre.gonzalonazareno.org";
+    ~~6. Por último vamos a configurar los equipos de nuestro escenario para que usen por defecto el servidor DNS de thor, para ello: modifica la configuración de la subred en las redes que estás usando en tu escenario de OpenStack para que el servidor DNS principal sea **thor** (`192.168.0.2`) y modifica la configuración de los contenedores para que usen **thor** como DNS.~~
+ 
+    ~~7. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio. Como no podemos enviar esa información con el servidor DHCP de las redes de OpenStack, vamos a configurar los clientes DHCP de las máquinas para que autoconfiguren el parámetro `search`, para ello modifica el fichero `/etc/dhcp/dhclient.conf` y añade la siguiente línea:~~
 
-    Toma de nuevo configuración dinámica y comprueba en el fichero `/etc/resolv.conf` si se ha configurado de manera adecuada el parámetro `search`.
+    ~~prepend domain-search "tu_nombre.gonzalonazareno.org";~~
+
+    ~~Toma de nuevo configuración dinámica y comprueba en el fichero `/etc/resolv.conf` si se ha configurado de manera adecuada el parámetro `search`.~~
+
+5. Necesitamos configurar como DNS de nuestras máquina a **thor**. En los contenedores no hay problema ya que el direccionamiento es estático, en `hela` también podemos hacer el cambio de manera estática (investiga como hacer el cambio en Rocky Linux). En `odin`, como recibe la configuración dinámica por dhcp, habíamos comentado que podíamos cambiar el DNS en la configuración del servidor DHCP de la subred de OpenStack. Sin embargo, nos hemos dado cuenta, de que OpenStack añade una ruta que asegura que la máquina accede al servidor DNS que hemos configurado, el problema es que esa ruta nos lleva por la interfaz conectada a internet, y en nuestra caso al indicar el `192.168.0.2` necesitaríamos acceder a través de `br-intra`. Este comportamiento del servidor DHCP de OpenStack no lo podemos modificar.
+
+    **Solución**:Vamos a configurar de forma estática la interfaz de red conecta a la red interna, asignando la misma IP que OpenStack le ha dado (`10.0.200.X`). Puedes seguir este [manual](http://people.ubuntu.com/~slyon/netplan-docs/examples/) para realizar la configuración de la dirección ip, la puerta de enlace, el servidor DNS,...
+
+6. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio.Como hemos visto en el ejemplo de la configuración de netplan del enlace del punto anterior, el parámetro `search` se puede configurar en netplan. Por lo tanto lo tenemos solucionado para **odin, thor y loki**. Investiga como hacer el cambio del parámetro `search` en `hela` (Rocky Linux).
 
 ## Servidor Web
 
