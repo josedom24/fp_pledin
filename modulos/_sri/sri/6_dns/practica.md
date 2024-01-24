@@ -33,7 +33,7 @@ Hay que tener en cuenta los siguientes aspectos:
 
     **Solución**:Vamos a configurar de forma estática la interfaz de red conecta a la red interna, asignando la misma IP que OpenStack le ha dado (`10.0.200.X`). Puedes seguir este [manual](http://people.ubuntu.com/~slyon/netplan-docs/examples/) de netplan para realizar la configuración de la dirección ip, la puerta de enlace, el servidor DNS,...
 
-6. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio.Como hemos visto en el ejemplo de la configuración de netplan del enlace del punto anterior, el parámetro `search` se puede configurar en netplan. Por lo tanto lo tenemos solucionado para `odin, thor` y `loki`W. Investiga como hacer el cambio del parámetro `search` en `hela` (Rocky Linux).
+6. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio.Como hemos visto en el ejemplo de la configuración de netplan del enlace del punto anterior, el parámetro `search` se puede configurar en netplan. Por lo tanto lo tenemos solucionado para `odin, thor` y `loki`. Investiga como hacer el cambio del parámetro `search` en `hela` (Rocky Linux).
 
 ## Servidor Web
 
