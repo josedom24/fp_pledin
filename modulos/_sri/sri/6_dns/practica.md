@@ -8,7 +8,7 @@ Vamos a instalar un servidor dns en **thor** que nos permita gestionar la resolu
 
 Hay que tener en cuenta los siguientes aspectos:
 
-1. El servidor DNS se va a configurar en un principio de la siguiente manera:
+1. El servidor DNS se va a configurar de la siguiente manera:
 
     * El servidor DNS se llama `thor.tu_nombre.gonzalonazareno.org` y va a ser el servidor con autoridad para la zona `tu_nombre.gonzalonazareno.org`.
     * El servidor debe resolver el nombre de todas las máquinas.
