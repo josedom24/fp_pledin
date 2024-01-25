@@ -38,11 +38,11 @@ Tenemos que tener en cuenta los siguientes aspectos:
 
 ## Tarea 2: Despliegue en el entorno de desarrollo
 
-*  Crea un script con `docker-compose` que levante el escenario con los dos contenedores.
+* Utiliza Compose para levantar el escenario con los dos contenedores.
 * Recuerda que para acceder a la aplicación: Usuario: **admin**, contraseña: **admin**.
 
 {% capture notice-text %} 
-* Entrega la url del repositorio GitHub donde hayas añadido el fichero `docker-compose.yml`.
+* Entrega la url del repositorio GitHub donde hayas añadido el fichero `docker-compose.yaml`.
 * Entrega la instrucción para ver los dos contenedores del escenario funcionando.
 * Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
@@ -51,7 +51,7 @@ Tenemos que tener en cuenta los siguientes aspectos:
 
 * Vamos a crear una imagen que se llame `usuario/bookmedik:v2`.
 * Realiza la imagen docker de la aplicación a partir de la imagen oficial [PHP](https://hub.docker.com/_/php/) que encuentras en docker hub. Lee la documentación de la imagen para configurar una imagen con apache2 y php, además seguramente tengas que instalar alguna extensión de php.
-* Modifica el fichero docker-compose.yml` para probar esta imagen.
+* Modifica el fichero `docker-compose.yaml` para probar esta imagen.
 
 {% capture notice-text %} 
 * Entrega la url del repositorio GitHub donde tengas los ficheros necesarios para hacer la construcción de la imagen.
@@ -82,7 +82,7 @@ A lo mejor te puede ayudar el siguiente enlace: [Dockerise your PHP application 
 ## Tarea 5: Puesta en producción de nuestra aplicación
 
 * Elige una de las tres imágenes y súbela a Docker Hub.
-* En tu VPS instala Docker y utilizando el `docker-compose.yml` correspondiente, crea un contenedor en ella de la aplicación.
+* En tu VPS instala Docker y utilizando el `docker-compose.yaml` correspondiente, crea un contenedor en ella de la aplicación.
 * Configura el nginx de tu VPS para que haga de proxy inverso y nos permita acceder a la aplicación con `https://bookmedik.tudominio.xxx`.
 
 {% capture notice-text %} 
@@ -95,7 +95,7 @@ A lo mejor te puede ayudar el siguiente enlace: [Dockerise your PHP application 
 
 * En el entorno de desarrollo vamos a hacer una modificación de la aplicación. Por ejemplo modifica el fichero `core/app/view/login-view.php` y pon tu nombre en la línea `<h4 class="title">Acceder a BookMedik</h4>`.
 * Vamos a trabajar con la primera imagen que construimos. Vuelve a crear la imagen con la etiqueta `v1_2`.
-* Cambia el `docker-compose` para probar el cambio.
+* Cambia el `docker-compose.yaml` para probar el cambio.
 * Modifica la aplicación en producción.
 
 {% capture notice-text %} 
