@@ -11,7 +11,7 @@ Tenemos que tener en cuenta los siguientes aspectos:
 **Contenedor mariadb**
 
 * Es necesario que nuestra aplicación guarde su información en un contenedor docker **mariadb**.
-*  El script para generar la base de datos y los registros lo encuentras en el repositorio y se llama `schema.sql`. Debes crear un usuario con su contraseña en la base de datos. La base de datos se llama `bookmedik` y se crea al ejecutar el script.
+* El script para generar la base de datos y los registros lo encuentras en el repositorio y se llama `schema.sql`. Debes crear un usuario con su contraseña en la base de datos. La base de datos se llama `bookmedik` y se crea al ejecutar el script.
 * Ejecuta el contenedor **mariadb** y carga los datos del script `schema.sql`. Para más [información](https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb).
 * El contenedor **mariadb** debe tener un volumen para guardar la base de datos.
 
