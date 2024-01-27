@@ -96,4 +96,19 @@ Escribe un programa que pida un número inicial a otro final y muestre los núme
 ![ ](../lmgs/hlc2324/img/img7_p6.png)
 ![ ](../lmgs/hlc2324/img/img8_p6.png)
 
+### Ejercicio 3
+
+Realiza un programa parecido al anterior, pero en este caso si el valor inicial es mayor que el final, también se mostrarán los números que hay desde el inicial al final, por ejemplo:
+
+![ ](../lmgs/hlc2324/img/img9_p6.png)
+
+### Ejercicio 4
+
+Hacer un programa que nos pida por teclado un número y nos muestre la tabla de multiplicar, por ejemplo:
+
+![ ](../lmgs/hlc2324/img/img10_p6.png)
+
+
+
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
