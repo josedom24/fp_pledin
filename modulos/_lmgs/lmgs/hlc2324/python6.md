@@ -108,7 +108,56 @@ Hacer un programa que nos pida por teclado un número y nos muestre la tabla de 
 
 ![ ](../lmgs/hlc2324/img/img10_p6.png)
 
+### Ejercicio 5
 
+Realiza un programa que nos pida 10 números. Al finalizar, nos indicara cuantos de ellos son positivos, cuantos negativos y cuantos 0. Ejemplo de salida:
 
+![ ](../lmgs/hlc2324/img/img11_p6.png)
+
+### Ejercicio 6
+
+Realizar un programa que muestre todos los divisores de un número. si el número no es positivo se dará un error y se terminará el programa. Ejemplo:
+
+![ ](../lmgs/hlc2324/img/img12_p6.png)
+
+### Ejercicio 7
+
+Realiza un programa que pida por teclado 10 números y finalmente muestre la siguiente información:
+
+* La cantidad de números pares introducidos.
+* La suma de todos los números pares.
+* La cantidad de números impares introducidos.
+* El producto de todos los números impares.
+
+![ ](../lmgs/hlc2324/img/img13_p6.png)
+
+### Ejercicio 8
+
+Realiza un programa que nos pida por teclado cuantas cadenas de caracteres vamos a introducir. A continuación iremos introduciendo cadenas, y al finalizar el programa nos mostrará la siguiente información:
+
+* Cuantas cadenas tenían más de 5 caracteres.
+* Cuantas cadenas tenía al menos un espacio.
+* La suma de la cantidad de caracteres de cada una de las cadenas introducidas.
+
+![ ](../lmgs/hlc2324/img/img14_p6.png)
+
+### Ejercicio 9
+
+Vamos a realizar un programa que nos pida por teclado la cantidad de multiplicaciones que nos va a preguntar. A continuación va generando multiplicaciones (igual que el ejercicio 4 del boletín anterior).
+
+* Genera dos números del 1 al 10 de forma aleatoria.
+* Por ejemplo si se ha generado el 4 y el 7, muestra por pantalla la cadena "4 x 7 =".
+* Pide al usuario que introduzca el resultado.
+* Indica al usuario si el resultado que ha puesto es correcto o no es correcto.
+
+Esto se repite tantas veces como le hayamos indicado. Al final nos dirá cuantas multiplicaciones hemos acertado.
+
+![ ](../lmgs/hlc2324/img/img15_p6.png)
+
+### Ejercicio 10
+
+Hacer un ejercicio, que nos pida por teclado el número de alumnos que hay en una clase. A continuación nos irá pidiendo la nota que ha sacado en un examen. Al finalizar no dirá cuantos alumnos han aprobado, cuantos alumnos han suspendido y la nota media de la clase.
+
+![ ](../lmgs/hlc2324/img/img16_p6.png)
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
