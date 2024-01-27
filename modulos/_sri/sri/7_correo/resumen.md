@@ -40,6 +40,7 @@ title: "Resumen: Servidor de correos"
 ### Desde el aula
 
 * Vamos a tener un correo de la forma usuario@dominio_de_cada_alumno, por ejemplo `jose@josedom.gonzalonazareno.org`.
+* Servidor de correos en **loki**.
 * Tenemos que tener en cuenta los siguientes aspectos:
     1. Si queremos recibir correos desde internet a nuestro servidor, todos nuestros dominios tienen que apuntar a nuestra ip pública `5.39.73.79` (IP de `satelite.gonzalonazareno.org`), esto se consigue con el registro en nuestro DNS:
     ```
@@ -50,6 +51,8 @@ title: "Resumen: Servidor de correos"
         * Yo como administrador de **satelite** añado vuestro correo en el parámetro `relay_domains` del servidor de correos de satelite.
         **satelite** tiene configurado como primer DNS a **macaco**, por lo que puede preguntarle por nuestro registro MX, ya que tiene delegada todos nuestros subdominios. 
         * Por lo tanto tenemos que crear un registro **MX** en nuestro servidor DNS para realizar la resolución. 
+        * En la vista externa el registro MX será `odin.loquesea.gonzalonazareno.org`. En las otras vistas, será `loki.loquesea.gonzalonazareno.org`.
+	    * El correo llegará a **odin** y para reenviarlo a **loki** tendrás que configurar un DNAT del puerto 25/TCP.
     3. Con la configuración que tenemos en el servidor de correo de nuestra máquina debe ser suficiente para recibir el correo. Recuerda mandar un mensaje a un usuario que exista en el servidor.
 
 ### Desde tu VPS
