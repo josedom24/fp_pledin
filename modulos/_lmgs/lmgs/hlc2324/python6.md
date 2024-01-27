@@ -85,5 +85,15 @@ Entrega un documento pdf, con el código de los programas y capturas de pantalla
 
 ### Ejercicio 1
 
+Realizar un programa que muestre los números del  1 al 20, su cuadrado y su cubo. La salida del programa será:
+
+![ ](../lmgs/hlc2324/img/img6_p6.png)
+
+### Ejercicio 2
+
+Escribe un programa que pida un número inicial a otro final y muestre los números que van desde el inicial hasta el final. Si el valor inical es mayoor que el ginal se dará un mensaje de error y se terminará el programa. Ejemplo de salida:
+
+![ ](../lmgs/hlc2324/img/img7_p6.png)
+![ ](../lmgs/hlc2324/img/img8_p6.png)
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
