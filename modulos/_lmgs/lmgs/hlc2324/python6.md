@@ -91,7 +91,7 @@ Realizar un programa que muestre los números del  1 al 20, su cuadrado y su cub
 
 ### Ejercicio 2
 
-Escribe un programa que pida un número inicial a otro final y muestre los números que van desde el inicial hasta el final. Si el valor inical es mayoor que el ginal se dará un mensaje de error y se terminará el programa. Ejemplo de salida:
+Escribe un programa que pida un número inicial a otro final y muestre los números que van desde el inicial hasta el final. Si el valor inicial es mayor que el final se dará un mensaje de error y se terminará el programa. Ejemplo de salida:
 
 ![ ](../lmgs/hlc2324/img/img7_p6.png)
 ![ ](../lmgs/hlc2324/img/img8_p6.png)
