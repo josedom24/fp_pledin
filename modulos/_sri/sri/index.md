@@ -18,20 +18,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 * [Práctica: Clúster de Alta Disponibilidad](9_clusterha/practica.html)
 
 
-## Unidad 8: Kubernetes
 
-* [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
-* [Curso Kubernetes](https://github.com/josedom24/curso_kubernetes_ies)
-	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
-	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
-	* [Taller 1: Trabajando con Pods](8_k8s/t1.html)
-	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
-	* [Taller 3: Trabajando con Deployments](8_k8s/t3.html)
-	* [Taller 4: Trabajando con Services](8_k8s/t4.html)
-	* [Taller 5: Despliegues parametrizados](8_k8s/t5.html)
-	* [Taller 6: Almacenamiento en Kubernetes](8_k8s/t6.html)
-	* [Taller 7: Instalación de un CMS con Helm](8_k8s/t7.html)
-* [Práctica: Kubernetes](8_k8s/practica.html)
 
 ## Unidad 7: Almacenamiento
 
@@ -43,7 +30,25 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 1: Gestión de pool de almacenamiento lógico en KVM/libvirt](7_almacenamiento/t1.html)
 	* [Taller 2: Introducción a iSCSI](7_almacenamiento/t2.html)
 	* [Taller 3: Creación de un cluster DRBD + OCFS2](7_almacenamiento/t3.html)
+
+
+	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
+	* [Taller 1: Trabajando con Pods](8_k8s/t1.html)
+	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
+	* [Taller 3: Trabajando con Deployments](8_k8s/t3.html)
+	* [Taller 4: Trabajando con Services](8_k8s/t4.html)
+	* [Taller 5: Despliegues parametrizados](8_k8s/t5.html)
+	* [Taller 6: Almacenamiento en Kubernetes](8_k8s/t6.html)
+	* [Taller 7: Instalación de un CMS con Helm](8_k8s/t7.html)
+* [Práctica: Kubernetes](8_k8s/practica.html)
 -->
+
+## Unidad 8: Kubernetes
+
+* [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
+* [Curso Kubernetes](https://github.com/josedom24/curso_kubernetes_ies)
+	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
+
 
 ## Unidad 7: Servidor de correo electrónico
 
