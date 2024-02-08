@@ -125,8 +125,9 @@ print(cantidad)
 ```
 
 Escribe un programa en Python que solicite al usuario que ingrese cadenas de caracteres una tras otra. El programa continuará pidiendo cadenas hasta que el usuario introduzca un asterisco *. Por cada cadena, el programa mostrará la cadena y el número de caracteres que tiene. Al final el programa mostrará.
-    * La cantidad de cadenas que has introducido.
-    * La cantidad de espacios que has introducido.
-    * La cantidad de palabras que tienen una "a".
+
+* La cantidad de cadenas que has introducido.
+* La cantidad de espacios que has introducido.
+* La cantidad de palabras que tienen una "a".
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
