@@ -45,63 +45,74 @@ print("Los primeros cinco números primos son:" primos[:5])
 
 ### Ejercicio 2
 
-Escribe un programa que vaya pidiendo números. Nos ira informando si el número es par o impar. el programa termina al introducir un 0.
+Escribe un programa en Python que calcule el índice de masa corporal (IMC) de una persona. El IMC se calcula utilizando la fórmula:
 
-![ ](../lmgs/hlc2324/img/img4_p7.png)
+IMC=peso / altura**2
+
+El programa debe solicitar al usuario que ingrese su peso en kilogramos y su altura en metros. Luego, calculará el IMC y mostrará un mensaje indicando si la persona está por debajo del peso saludable (IMC menor a 18.5), dentro del rango de peso saludable (IMC entre 18.5 y 24.9), o en sobrepeso (IMC igual o mayor a 25).
 
 ### Ejercicio 3
 
-Realizar un programa que vaya pidiendo números, hasta que se introduzca el 0 (dicho de otra manera mientras el número introducido sea distinto de 0 sigo pidiendo números). Al finalizar me dirá cuántos números he introducido y la suma de todos. Nota: Si el primer número que meto es 0, me dirá que he metido 0 números.
-
-![ ](../lmgs/hlc2324/img/img5_p7.png)
-
-![ ](../lmgs/hlc2324/img/img6_p7.png)
+Escribe un programa en Python que ayude a un estudiante a calcular su calificación final en un curso. El programa debe solicitar al usuario que ingrese las calificaciones obtenidas en tres evaluaciones parciales y la calificación obtenida en el examen final del curso. Luego, calculará la calificación final a partir de las calificaciones parciales y el examen final, donde las evaluaciones parciales cuentan un 30% cada una y el examen final cuenta un 40%. Finalmente, mostrará la calificación final del estudiante.
 
 ### Ejercicio 4
 
-Realiza un programa que pida cadena de caracteres hasta que se introduzca la cadena "*". Por cada cadena introducida me saldrá la longitud. Al finalizar me mostrará la cantidad de cadenas con más de 5 caracteres, la cantidad de cadenas con menos o igual de 5 caracteres.
-
-![ ](../lmgs/hlc2324/img/img7_p7.png)
+Escribe un programa en Python que calcule el perímetro y el área de un rectángulo. El programa debe solicitar al usuario que ingrese la longitud y la anchura del rectángulo. Luego, calculará el perímetro sumando los cuatro lados del rectángulo y el área multiplicando la longitud por la anchura. Finalmente, el programa mostrará el perímetro y el área del rectángulo.
 
 ### Ejercicio 5
 
-Hacer un programa de login. El programa pedirá un nombre de usuario y una contraseña. Si el usuario es **pepe** y la contraseña **asdasd** el programa terminará dando un mensaje de bienvenida. Mientras no aciertes el usuario o la contraseña, el programa dará un error y volverá a pedir el usuario y la contraseña. Al finalizar el programa el programa nos dirá el número de intentos que has realizado.
+Escribe un programa en Python que ayude a un cajero automático a dispensar dinero en efectivo. Suponemos que el usuario tiene en el banco una cantidad (saldo) de 500€. El programa debe solicitar al usuario que introduzca la cantidad que desea retirar. 
+Luego, verificará si la cantidad es un valor válido:
+* Es múltiplo de 10 y
+* no excede el saldo disponible en la cuenta. 
 
-![ ](../lmgs/hlc2324/img/img8_p7.png)
+Si la cantidad es válida, el programa mostrará la cantidad que has solicitado y el saldo que te queda en el banco. En caso contrario, mostrará un mensaje de error indicando que la cantidad no es válida. 
 
 ### Ejercicio 6
 
-Escriba un programa que simule una hucha. El programa solicitará primero una cantidad, que será la cantidad de dinero que queremos ahorrar. A continuación, el programa solicitará una y otra vez las cantidades que se irán ahorrando, hasta que el total ahorrado iguale o supere al objetivo. El programa no comprobará que las cantidades sean positivas.
+Realiza un programa Python que comprueba si una cadena introducida por teclado es pentavocálica. Una cadena pentavocálica es aquella que tiene al menos una vez todas las vocales.
 
-![ ](../lmgs/hlc2324/img/img9_p7.png)
-
-![ ](../lmgs/hlc2324/img/img10_p7.png)
-
-![ ](../lmgs/hlc2324/img/img11_p7.png)
-
+Debes probar las vocales minúsculas y mayúsculas.
+Se introduce la cadena, y el programa te dice si es pentavocálica o no.
 
 ### Ejercicio 7
 
-Realiza un programa que vaya pidiendo las notas de los alumnos de una asignatura, cada vez que introducimos una nota nos pregunta "¿Quieres introducir otra nota (S/N)?". Si podemos "S" nos pedirá otra nota. Cuando pongamos "N" nos dirá el número de alumnos de la clase y la nota media obtenida.
+Escribe un programa en Python que determine el tipo de triángulo basado en las longitudes de sus lados. El programa solicitará al usuario que ingrese las longitudes de los tres lados del triángulo. 
 
-![ ](../lmgs/hlc2324/img/img12_p7.png)
+Primero verifica si la longitud de los lados corresponde a un triangulo, para ello la suma de cualquiera de dos lados debe ser mayor que el otro lado.
+Si no cumple esa condición dará un mensaje de error.
+
+Luego, determinará y mostrará el tipo de triángulo según las siguientes condiciones:
+
+* Si todos los lados son iguales, el triángulo es equilátero.
+* Si dos lados son iguales, el triángulo es isósceles.
+* Si todos los lados son diferentes, el triángulo es escaleno.
+
 
 ### Ejercicio 8
 
-Escribe un programa que dados dos números, uno real (base) y un entero positivo (exponente), saque por pantalla el resultado de la potencia. No se puede utilizar el operador de potencia.
-Recuerda que 2 elevado a 3 es 2 * 2 * 2.
+Escribe un programa en Python que calcule el costo total de una compra en un supermercado. 
+
+El programa debe solicitar cuántos productos has comprado. A continuación por cada producto, pedirá lo que vale y la cantidad que ha comprado. Irá calculando el costo total de la compra sumando el precio de cada artículo multiplicado por su cantidad correspondiente. 
+El programa debe mostrar el costo total de la compra.
+
 
 ### Ejercicio 9
 
-Realizar un programa que genere un número aleatorio del 1 al 100. El objetivo es acertar ese número, por lo tanto me irá pidiendo números hasta que lo acierte. Al final me dirá en cuantos intentos lo he acertado.
+Vamos a mejorar el ejercicio 5. Vamos a realizar un programa que simule un cajero automática. El usuario al principio tiene 500€.
+El programa pedirá elegir entre tres opciones:
 
-![ ](../lmgs/hlc2324/img/img13_p7.png)
+"Ingresar (I), Retirar (R), Terminar(T)"
+
+* Si pulsamos la I, nos pedirá una cantidad, que debe ser múltiplo de 10 y lo sumará al saldo.
+* Si pulsamos la R, nos pedirá una cantidad, que debe ser múltiplo de 10 y menor que el saldo y lo restará al saldo.
+* Si pulsamos la T el programa se terminará.
+
+A continuación se mostrará el saldo,y se volverá a preguntar hasta que se introduzca la opción de salir.
+
+![ ](../lmgs/hlc2324/img/img1_p8.png)
 
 ### Ejercicio 10
-
-Vamos a mejorar el ejercicio anterior, para que cuando introduzca un número me diga si el que el ha generado es mayor o menor, de esta forma me ayudará a acertar el número más fácilmente.
-
-![ ](../lmgs/hlc2324/img/img14_p7.png)
 
 El método `count` de las cadenas de caracteres en python devuelve el número de ves que aparece una cadena dentro de otra.
 
@@ -119,4 +130,3 @@ Escribe un programa en Python que solicite al usuario que ingrese cadenas de car
     * La cantidad de palabras que tienen una "a".
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
-
