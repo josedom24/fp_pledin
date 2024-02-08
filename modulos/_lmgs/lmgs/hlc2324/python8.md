@@ -17,7 +17,7 @@ Entrega un documento pdf, con el código de los programas y capturas de pantalla
 Escribe el siguiente programa, arreglando los errores que tiene para que se pueda ejecutar:
 
 ```python
- Este programa verifica si un número es par o impar y luego muestra los primeros cinco números primos.
+Este programa verifica si un número es par o impar y luego muestra los primeros cinco números primos.
 
 # Solicitar al usuario que ingrese un número
 numero = intinput("Ingrese un número: "
