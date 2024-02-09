@@ -37,6 +37,11 @@ Tenemos que tener en cuenta los siguientes aspectos:
     * Ejecute el servidor web.
 * El contenedor que creas debe tener un volumen para guardar los logs del servidor web.
 * La imagen debe tener activa el mod_rewrite de apache2.
+* Debemos configurar el apache2 para permitir el uso de ficheros `.htaccess`. Para ello necesitamos cambiar la configuración del fichero `/etc/apache2/apache2.conf`. Esto se puede hacer de varias formas:
+
+    1. Copiando un fichero `apache2.conf` con la modificación hecha en la imagen.
+    2. Que el script `docker-entrypoint.sh` modifique el fichero `apache2.conf` con la utilidad `sed` por ejemplo.
+
 * La imagen la tienes que crear en tu entorno de desarrollo con el comando `docker build`.
 
 ## Tarea 1: Creación de una imagen docker con una aplicación web desde una imagen base
