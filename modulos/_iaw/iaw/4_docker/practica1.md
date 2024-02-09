@@ -18,6 +18,18 @@ Tenemos que tener en cuenta los siguientes aspectos:
 
 * Vamos a crear dos versiones de la imagen que nos permite implantar la aplicación PHP.
 * Antes de generar la imagen, modifica el fichero `Config/Config.php` para que lea las variables de entorno. Para obtener las variables de entorno en PHP usar la función `getenv`. [Para más información](http://php.net/manual/es/function.getenv.php).
+    Los cambios que tenemos que realizar para crear las constantes con el valor de las variables de entorno es la siguiente. Si tenemos en el fichero original:
+
+    ```
+    const base_url = "http://localhost/biblio/";
+    ```
+    Hay que sustituirlo por:
+
+    ```
+    define('base_url',getenv('BASE_URL'));
+    ```
+    Así con cada una de las variables.
+
 * La imagen debe crear las variables de entorno necesarias con datos de conexión por defecto.
 * Al crear un contenedor a partir de estas imágenes se ejecutará un script bash llamado `docker-entrypoint.sh` que realizará las siguientes tareas:
     * Se asegura que el contenedor mariadb está funcionando. Por ejemplo, puedes hacer un bucle hasta que puedas conectar a la base de datos.
