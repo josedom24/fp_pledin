@@ -33,7 +33,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 
 	
-	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
+	
 	* [Taller 3: Trabajando con Deployments](8_k8s/t3.html)
 	* [Taller 4: Trabajando con Services](8_k8s/t4.html)
 	* [Taller 5: Despliegues parametrizados](8_k8s/t5.html)
@@ -49,6 +49,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
 	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
 	* [Taller 1: Trabajando con Pods](8_k8s/taller1.html)
+	* [Taller 2: Trabajando con ReplicaSet](8_k8s/t2.html)
 
 
 ## Unidad 7: Servidor de correo electrónico
