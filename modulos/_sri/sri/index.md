@@ -33,9 +33,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 
 	
-	
-	* [Taller 3: Trabajando con Deployments](8_k8s/t3.html)
-	* [Taller 4: Trabajando con Services](8_k8s/t4.html)
+
 	* [Taller 5: Despliegues parametrizados](8_k8s/t5.html)
 	* [Taller 6: Almacenamiento en Kubernetes](8_k8s/t6.html)
 	* [Taller 7: Instalación de un CMS con Helm](8_k8s/t7.html)
