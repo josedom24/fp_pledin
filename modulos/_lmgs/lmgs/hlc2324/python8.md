@@ -53,7 +53,7 @@ El programa debe solicitar al usuario que ingrese su peso en kilogramos y su alt
 
 ### Ejercicio 3
 
-Escribe un programa en Python que ayude a un estudiante a calcular su calificación final en un curso. El programa debe solicitar al usuario que ingrese las calificaciones obtenidas en tres evaluaciones parciales y la calificación obtenida en el examen final del curso. Luego, calculará la calificación final a partir de las calificaciones parciales y el examen final, donde las evaluaciones parciales cuentan un 30% cada una y el examen final cuenta un 40%. Finalmente, mostrará la calificación final del estudiante.
+Escribe un programa en Python que ayude a un estudiante a calcular su calificación final en un curso. El programa debe solicitar al usuario que ingrese las calificaciones obtenidas en tres evaluaciones parciales y la calificación obtenida en el examen final del curso. Luego, calculará la calificación final a partir de las calificaciones parciales y el examen final, donde las evaluaciones parciales cuentan un 20% cada una y el examen final cuenta un 40%. Finalmente, mostrará la calificación final del estudiante.
 
 ### Ejercicio 4
 
