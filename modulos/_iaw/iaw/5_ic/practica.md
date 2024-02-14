@@ -10,7 +10,7 @@ Vamos a construir el Pipeline en varias fases:
 
 ## Ejercicio 1: Construcción de una imagen docker
 
-Partimos del pipeline que hemos desarrollado en el [Taller 3: Integración continua de aplicación django (Test)](t3.html), donde hemos automatizado el test de la aplicación.
+Partimos del pipeline que hemos desarrollado en el [Taller 3: Integración continua de aplicación django (Test)](taller3.html), donde hemos automatizado el test de la aplicación.
 
 Modifica el pipeline para que después de hacer el test sobre la aplicación, genere una imagen docker. tienes que tener en cuenta que los pasos para generar la imagen lo tienes que realizar en la máquina donde está instalado Jenkins. Tendrás que añadir las siguientes acciones:
 
