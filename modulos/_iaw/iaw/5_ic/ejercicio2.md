@@ -12,8 +12,8 @@ Antes de empezar vamos a aprender a trabajar con [surge.sh](http://surge.sh/):
 Vamos a añadir la funcionalidad de IC y DC con GitHub Actions, para ello:
 
 * Realiza un fork del repositorio de GitHub: [https://github.com/josedom24/ic-html5](https://github.com/josedom24/ic-html5).
-* Comprueba la prueba y el despliegue que vamos a realizar estudiando el fichero `.github/workflows\ic.yaml`.
-* Modifica el fichero `.github/workflows\ic.yaml` para poner el nombre de dominio que vas a utilizar.
+* Comprueba la prueba y el despliegue que vamos a realizar estudiando el fichero `.github/workflows/ic.yaml`.
+* Modifica el fichero `.github/workflows/ic.yaml` para poner el nombre de dominio que vas a utilizar.
 * Para que GiHub Actions pueda hacer el despliegue en surge le tenemos que indicar un TOKEN. Genera el token:
 	
 		surge token
