@@ -22,6 +22,7 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 apt-get update
 apt-get install jenkins
+```
 
 Instalamos docker, y añadimos el usuario `jenkins` al grupo `docker`:
 
