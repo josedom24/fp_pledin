@@ -13,13 +13,19 @@ Para realizar la configuración necesitamos instalar docker en la máquina de je
 Según el [manual de instalación](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu). ejecutamos los siguientes comandos:
 
 ```
-apt install openjdk-11-jre
-curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+apt update
+apt install fontconfig openjdk-17-jre
+wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
 apt-get update
 apt-get install jenkins
 
-apt install docker.io
+Instalamos docker, y añadimos el usuario `jenkins` al grupo `docker`:
+
+``````
 usermod -aG docker jenkins
 ```
 
