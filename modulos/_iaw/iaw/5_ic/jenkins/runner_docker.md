@@ -26,7 +26,7 @@ apt-get install jenkins
 
 Instalamos docker, y añadimos el usuario `jenkins` al grupo `docker`:
 
-``````
+```
 usermod -aG docker jenkins
 ```
 
