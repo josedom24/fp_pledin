@@ -21,6 +21,6 @@ jobs:
 Por lo tanto realiza los siguientes pasos:
 
 * Realiza un fork del repositorio de GitHub: [https://github.com/josedom24/ic-diccionario](https://github.com/josedom24/ic-diccionario).
-* Comprueba la prueba que vamos a realizar estudiando el fichero `.github/workflows\ic.yaml`.
+* Comprueba la prueba que vamos a realizar estudiando el fichero `.github/workflows/ic.yaml`.
 * Realiza cambios en los ficheros que están en el directorio `doc` y comprueba en Github Actions como se van ejecutando las pruebas.
 
