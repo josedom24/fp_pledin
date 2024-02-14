@@ -4,7 +4,7 @@ title: "Tests en la aplicación tutorial Django"
 
 ## Requisitos de la aplicación
 
-En nuestro programa de encuestas que desarrollamos en el tutorial djangom, se tienen que tener en cuanta los siguiente elementos:
+En nuestro programa de encuestas que desarrollamos en el tutorial django, se tienen que tener en cuanta los siguiente elementos:
 
 * Cada pregunta se identifica con un identificador.
 * Al crear una pregunta de una encuesta se debe indicar la fecha de publicación.
