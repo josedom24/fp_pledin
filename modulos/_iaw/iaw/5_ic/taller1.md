@@ -59,7 +59,13 @@ En este ejercicio vamos a usar la opción **Consultar repositorio (SCM)**. Esta 
 
 ## Notificaciones del pipeline
 
-Vamos a aprender como podemos hacer que el pipeline mande un correo al finalizar. Para ello lo primero instala un servidor de correo de forma adecuada en la máquina que tiene Jenkins. Lo siguiente es configurar Jenkins en **Administrar Jenkins -> Configurar el sistema**: 
+Vamos a aprender como podemos hacer que el pipeline mande un correo al finalizar. 
+
+Lo primero es poner como dirección de email del administrador una dirección en el dominio `gonzalonazanreno.org`:
+
+![pipe](img/pipe89.png)
+
+Vamos a configurar como servidor de correo a `mail.gonzalonazareno.org`, además ponemos el sufijo como `@gonzalonazareno.org`. Lo siguiente es configurar Jenkins en **Administrar Jenkins -> Configurar el sistema**: 
 
 ![pipe](img/pipe9.png)
 
