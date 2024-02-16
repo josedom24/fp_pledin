@@ -12,7 +12,7 @@ title: "Taller 5: Despliegues parametrizados"
 
 ## Ejercicio 1: Configurando nuestra aplicación Temperaturas 
 
-	En un ejemplo anterior: [Ejemplo completo: Desplegando y accediendo a la aplicación Temperaturas](https://github.com/josedom24/curso_kubernetes_ies/blob/main/modulo6/temperaturas.md) habíamos desplegado una aplicación formada por dos microservicios que nos permitía visualizar las temperaturas de municipios.
+En un ejemplo anterior: [Ejemplo completo: Desplegando y accediendo a la aplicación Temperaturas](https://github.com/josedom24/curso_kubernetes_ies/blob/main/modulo6/temperaturas.md) habíamos desplegado una aplicación formada por dos microservicios que nos permitía visualizar las temperaturas de municipios.
 
 Recordamos que el componente `frontend` hace peticiones al componente `backend` utilizando el nombre `temperaturas-backend`, que es el nombre que asignamos al Service ClusterIP para el acceso al `backend`.
 
@@ -22,7 +22,7 @@ Podemos configurar el nombre del servidor `backend` al que vamos acceder desde e
 
 Por defecto el valor de esa variable es:
 
-```yaml
+```
 TEMP_SERVER temperaturas-backend:5000
 ```
 
