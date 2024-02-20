@@ -27,7 +27,7 @@ En nuestro programa de encuestas que desarrollamos en el tutorial django, se tie
 
 	* **¿Donde se consigue esto?**: En el template `detail.html` en la primera línea:
 			```
-		    <h1>{{ question.question_text }}</h1>
+		    <h1>\{\{ question.question_text \}\}</h1>
 		    ```
 	* **¿Dónde se prueba esto?**: En la función `test_past_question` de la `class QuestionDetailViewTests` en el fichero `tests.py`.
 	
