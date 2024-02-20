@@ -113,7 +113,7 @@ Prueba a cambiar el código para que un test falle y comprueba como el pipeline 
 
 {% capture notice-text %}
 1. Una captura de pantalla donde se vea la salida de un build que se ha ejecutado de manera correcta.
-2. Modifica el código de la aplicación para que se produzca un fallo en el código. **Recuerda que para hacer fallar un test, no hay que tocar el fichero `test.py`. Los test no se pasan porque al modificar el código de la aplicación se dejan de cumplir las condiciones indicadas en los test. Recuerda no elegir en el que hemos visto en este taller:mensaje *"No polls are available"* **.
+2. Modifica el código de la aplicación para que se produzca un fallo en el código. **Recuerda que para hacer fallar un test, no hay que tocar el fichero `test.py`. Los test no se pasan porque al modificar el código de la aplicación se dejan de cumplir las condiciones indicadas en los test. Recuerda no elegir en el que hemos visto en este taller:mensaje "No polls are available".**
 3. Una captura de pantalla donde se vea la salida de un build que se ha ejecutado con errores de testeo.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
