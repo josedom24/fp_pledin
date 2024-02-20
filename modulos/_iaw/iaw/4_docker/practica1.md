@@ -70,7 +70,7 @@ Tenemos que tener en cuenta los siguientes aspectos:
 
 {% capture notice-text %} 
 **La tarea 3 no la vamos a realizar.**
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 
 * Vamos a crear una imagen que se llame `usuario/biblioteca:v2`.
