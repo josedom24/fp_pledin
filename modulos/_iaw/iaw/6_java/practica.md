@@ -11,12 +11,19 @@ De forma similar a lo que hemos hecho en el Taller 1, despliegue de forma manual
 
 Aunque Java se utiliza normalmente para desarrollar aplicaciones a medida, tenemos varios CMS construidos con Java: [Wikipedia - List of content management systems Java](https://en.wikipedia.org/wiki/List_of_content_management_systems#Java).
 
-En esta tarea vamos a hacer un despliegue sencillo de una aplicación Java: **OpenCMS**. Siguiendo la [documentación](https://documentation.opencms.org/central/) realiza la implantación en el tomcat que instalaste en el taller1. Tienes que tener en cuenta lo siguiente:
+En esta tarea vamos a hacer un despliegue sencillo de una aplicación Java: **OpenCMS**. El problema que tenemos que este CMS no es compatible con tomcat10, pero no hay problemas lo vamos a instalar sobre un contenedor docker:
 
-* Tienes que descargar el fichero war para realizar el despliegue [Enlace](https://cloud.josedomingo.org/index.php/s/cwMj6NAZ4fNMoRA).
-* Necesitas una base de datos MariaDB para que el CMS funcione.
+
+Siguiendo la [documentación](https://documentation.opencms.org/central/) realiza la implantación en el tomcat que instalaste en el taller1. Tienes que tener en cuenta lo siguiente:
+
+* Puedes seguir esta guía para trabajar con tomcat en docker: [Configuración de imágenes con una aplicación Java](https://github.com/josedom24/curso_docker_ow/blob/main/contenido/modulo7/ejemplo5.md).
+* Puedes seguir la [documentación](https://documentation.opencms.org/central/) de OpenCMS.
+* Tienes que descargar el fichero war para realizar el despliegue. [Enlace](http://www.opencms.org/en/modules/downloads/dl-opencms-8.0.4-distribution.html).
+* Necesitas una base de datos MariaDB para que el CMS funcione. Lo más fácil es crear un docker compose que te ayude a desplegar los dos contenedores.
 
 Cuando este desplegado, accede a la aplicación y realiza alguna modificación para que aparezca tu nombre en la página principal.
+
+Despliega la aplicación **rock-paper-scissors** en este contenedor con tomcat.
 
 ## Tarea 3: Acceso a las aplicaciones
 
