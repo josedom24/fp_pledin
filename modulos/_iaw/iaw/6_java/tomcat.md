@@ -95,6 +95,6 @@ Su ruta real es `aplicacion/web-inf/web.xml`, se trata de un descriptor de despl
 {% capture notice-text %}
 **Ejercicio**
 
-Instala **apache tomcat** en un equipo y despliega la aplicación: [EjemploPruebaCarga.war](war/EjemploPruebaCarga.war) desde la línea de comandos.
+Instala **apache tomcat** en un equipo y despliega la aplicación: [sample.war](war/sample.war) desde la línea de comandos.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
