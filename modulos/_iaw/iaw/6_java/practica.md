@@ -13,9 +13,6 @@ Aunque Java se utiliza normalmente para desarrollar aplicaciones a medida, tenem
 
 En esta tarea vamos a hacer un despliegue sencillo de una aplicación Java: **OpenCMS**. El problema que tenemos que este CMS no es compatible con tomcat10, pero no hay problemas lo vamos a instalar sobre un contenedor docker:
 
-
-Siguiendo la [documentación](https://documentation.opencms.org/central/) realiza la implantación en el tomcat que instalaste en el taller1. Tienes que tener en cuenta lo siguiente:
-
 * Puedes seguir esta guía para trabajar con tomcat en docker: [Configuración de imágenes con una aplicación Java](https://github.com/josedom24/curso_docker_ow/blob/main/contenido/modulo7/ejemplo5.md).
 * Puedes seguir la [documentación](https://documentation.opencms.org/central/) de OpenCMS.
 * Tienes que descargar el fichero war para realizar el despliegue. [Enlace](http://www.opencms.org/en/modules/downloads/dl-opencms-8.0.4-distribution.html).
