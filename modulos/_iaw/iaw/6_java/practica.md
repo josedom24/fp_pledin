@@ -24,16 +24,19 @@ Despliega la aplicación **rock-paper-scissors** en este contenedor con tomcat.
 
 ## Tarea 3: Acceso a las aplicaciones
 
-Cuando trabajamos con tomcat no se accedemos directamente al servidor de aplicaciones, se instala un proxy inverso que nos permita el acceso a las aplicaciones. Instala un proxy inverso para acceder a las aplicaciones con las siguientes urls:
+Cuando trabajamos con tomcat no se accedemos directamente al servidor de aplicaciones, se instala un proxy inverso que nos permita el acceso a las aplicaciones. 
+
+Vamos a instalar un proxy inverso en un contenedor docker con la imagen `nginx`. En el contenedor vamos a montar con bind mount el fichero de configuración de nginx. Puedes ver un ejemplo en el artículo [Despliegue de Apache Tomcat + nginx](https://github.com/josedom24/curso_docker_ow/blob/main/contenido/modulo6/ejemplo4.md). Tienes que configurar el proxy inverso para acceder a las aplicaciones con las siguientes urls:
 
 * A la aplicación **rock-paper-scissors** se accede con la url `java.tunombre.org/game`.
 * A la aplicación **OpenCMS** se accede con la url `java.tunombre.org`.
 
+Añade a tu docker Compose otro servicio para levantar el proxy inverso. Evidentemente el contenedor de nginx será el único que exponga el puerto para acceder a la aplicación.
+
 
 {% capture notice-text %}
 
-1. Entrega una captura de la aplicación de administración `Tomcat-Manager` donde se compruebe que las aplicaciones están desplegadas.
-2. Configuración del proxy inverso para acceder a las aplicaciones cómo nos indica la práctica.
-3. Acceso desde un navegar web a la aplicación **rock-paper-scissors** con la url `java.tunombre.org/game`.
-4. Acceso desde un navegar web a la aplicación **OpenCMS** con la url `java.tunombre.org`.
+1. Configuración del proxy inverso para acceder a las aplicaciones cómo nos indica la práctica.
+2. Acceso desde un navegar web a la aplicación **rock-paper-scissors** con la url `java.tunombre.org/game`.
+3. Acceso desde un navegar web a la aplicación **OpenCMS** con la url `java.tunombre.org`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
