@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
       nodo1.vm.hostname = "nodo1"
       nodo1.vm.synced_folder ".", "/vagrant", disabled: true
       nodo1.vm.provider :libvirt do |libvirt|
-          libvirt.storage :file, :size => '3G'
+          libvirt.storage :file, :size => '1G'
       end
     end
     config.vm.define :nodo2 do |nodo2|
@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
       nodo2.vm.hostname = "nodo2"
       nodo2.vm.synced_folder ".", "/vagrant", disabled: true
       nodo2.vm.provider :libvirt do |libvirt|
-            libvirt.storage :file, :size => '3G'
+            libvirt.storage :file, :size => '1G'
      end
     end
   end
