@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
 
     config.vm.define :nodo1 do |nodo1|
-      nodo1.vm.box = "debian/bullseye64"
+      nodo1.vm.box = "debian/bookworm64"
       nodo1.vm.hostname = "nodo1"
       nodo1.vm.synced_folder ".", "/vagrant", disabled: true
       nodo1.vm.provider :libvirt do |libvirt|
