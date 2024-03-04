@@ -107,10 +107,10 @@ La técnica "copy on write" sirve para que al copiar un fichero, este realmente 
      386.80MiB   386.80MiB       0.00B  /mnt
 	```
 
-2. Ahora realizaremos una copia, y como tiene activado el CoW, no debería aumentar el tamaño, ya que no hemos realizado ningún cambio. Para realizar una copia con estas características usamos el parámetro `-reflink=always`:
+2. Ahora realizaremos una copia, y como tiene activado el CoW, no debería aumentar el tamaño, ya que no hemos realizado ningún cambio:
 
 	```
-	cp --reflink=always /mnt/prueba /mnt/prueba2
+	cp /mnt/prueba /mnt/prueba2
 	```
 
 	Ahora comprobemos que el espacio usado no es el doble, ya que realmente no se ha copiado el fichero:
