@@ -18,24 +18,23 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 * [Práctica: Clúster de Alta Disponibilidad](9_clusterha/practica.html)
 
 
+-->
 
-
-## Unidad 7: Almacenamiento
+## Unidad 9: Almacenamiento
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/almacenamiento.pdf)
-* [Introducción al sistema de ficheros btrfs](7_almacenamiento/btrfs.html)
-* [Introducción a iSCSI](7_almacenamiento/iscsi.html)
-* [Introducción a DRBD](7_almacenamiento/drbd.html)
+* [Introducción al sistema de ficheros btrfs](9_almacenamiento/btrfs.html)
+* [Introducción a iSCSI](9_almacenamiento/iscsi.html)
+* [Introducción a DRBD](9_almacenamiento/drbd.html)
 * [Introducción a GlusterFS](https://github.com/josedom24/taller_glusterfs)
-	* [Taller 1: Gestión de pool de almacenamiento lógico en KVM/libvirt](7_almacenamiento/t1.html)
-	* [Taller 2: Introducción a iSCSI](7_almacenamiento/t2.html)
-	* [Taller 3: Creación de un cluster DRBD + OCFS2](7_almacenamiento/t3.html)
+	* [Taller 1: Introducción a iSCSI](9_almacenamiento/taller1.html)
+	* [Taller 2: Creación de un cluster DRBD + OCFS2](9_almacenamiento/taller2.html)
 
 
 	
 
 	
--->
+
 
 ## Unidad 8: Kubernetes
 
