@@ -184,6 +184,7 @@ Btrfs también puede redimensionarse en caliente. Veamos como:
 	Comprueba con la instrucción del punto 1 que ha funcionado. Además podemos ejecutar un `df -h` y también lo comprobamos.
 
 3. Aumentamos el tamaño con la instrucción `btrfs filesystem resize +500M /mnt/`.
+
 ## Desfragmentación
 
 Debido a singularidad del sistema de ficheros, Btrfs sufre de una fragmentación elevada. Es por ello, que es necesario desfragmentar el disco frecuentemente. Para ello vamos a usar la herramienta que viene incluida con btrfs:
