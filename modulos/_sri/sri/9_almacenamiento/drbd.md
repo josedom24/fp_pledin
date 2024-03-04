@@ -28,7 +28,7 @@ Podemos configurar DRBD en dos modos:
 
 ## Configuración del modo Single-primary 
 
-Tenemos un escenario donde tenemos dos máquinas. Cada máquina tiene conectado un disco, que es el dispositivo de bloque que vamos a duplicar.
+Tenemos un escenario donde tenemos dos máquinas. Cada máquina tiene conectado un disco, que es el dispositivo de bloque que vamos a duplicar. Podemos usar el siguiente escenario Vagrant: [Vagrantfile](files/drbd/Vagrantfile).
 
 Lo primero que haremos es instalar las herramientas del espacio de usuario de DRBD:
 
