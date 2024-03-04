@@ -107,10 +107,10 @@ La técnica "copy on write" sirve para que al copiar un fichero, este realmente 
      386.80MiB   386.80MiB       0.00B  /mnt
 	```
 
-2. Ahora realizaremos una copia, y como tiene activado el CoW, no debería aumentar el tamaño, ya que no hemos realizado ningún cambio:
+2. Ahora realizaremos una copia, y como tiene activado el CoW, no debería aumentar el tamaño, ya que no hemos realizado ningún cambio. Para realizar una copia con estas características usamos el parámetro `-reflink=always`:
 
 	```
-	cp  /mnt/prueba /mnt/prueba2
+	cp --reflink=always /mnt/prueba /mnt/prueba2
 	```
 
 	Ahora comprobemos que el espacio usado no es el doble, ya que realmente no se ha copiado el fichero:
@@ -134,6 +134,41 @@ Para poder hacer uso de esta funcionalidad, es necesario instalar un paquete adi
 ```
 apt install duperemove
 ```
+
+1. Desmontamos el sistema de ficheros y lo volvemos a montar sin la opción de compresión. Borramos los ficheros del ejercicio anterior, y nos descargamos un fichero:
+
+	```
+	umount /mnt 
+	mount /dev/vdb /mnt
+	
+	wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso
+	```			
+2. Realizamos una copia (sin usar la característica de CoW) del fichero y comprobamos que ocupa unos  1,2 Gb.
+
+	```
+	cp debian-12.5.0-amd64-netinst.iso debian-12.5.0-amd64-netinst.iso.bak
+	btrfs fi du -s /mnt
+	    Total   Exclusive  Set shared  Filename
+   1.23GiB       0.00B   629.00MiB  /mnt
+
+	```
+
+3. Ahora usaremos el paquete que hemos descargado antes para hacer la deduplicación:
+
+	```
+	duperemove -d --lookup-extents=no /mnt
+	```
+
+	Como vemos ha encontrado dos ficheros iguales y podemos comprobar que aunque tenemos dos ficheros (aproximadamente 780 Mb), en realizada ocupa sólo lo que ocupa uno de los ficheros:
+
+	```
+	btrfs fi usage /mnt
+	...
+	Used:			 389.41MiB
+	...
+	```
+
+	Como vemos, ha funcionado, volviendo a ocupar el mismo espacio, ya que ambos ficheros eran idénticos.
 
 ## Redimensión 
 
