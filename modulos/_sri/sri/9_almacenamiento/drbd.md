@@ -38,7 +38,7 @@ apt install drbd-utils
 
 Creamos el recurso DRBD. Creamos el fichero `/etc/drbd.d/datos.res`:
 
-```code
+```
 resource datos {
  protocol C;
  meta-disk internal;
@@ -251,25 +251,22 @@ mount /dev/drbd1 /mnt
 
 Podríamos probar que podemos escribir de forma simultánea, ejecutando la siguiente instrucción en cada nodo:
 
-	En el nodo1:
+En el nodo1:
 
-	```
-	for ((;;)) do date >> /mnt/fecha_nodo1.txt;sleep 1; done
-	```
-
-	En el nodo 2:
-	```
-	for ((;;)) do date >> /mnt/fecha_nodo2.txt;sleep 1; done
-	```
-
-	Puedes acceder a uno de los nodos desde otra terminal y comprobar los ficheros que se están escribiendo en el directorio `/mnt`:
-
-	```
-	root@nodo1:/mnt# ls -al
-	total 16
-	drwxr-xr-x  3 root root 3896 Jan 22 13:06 .
-	drwxr-xr-x 19 root root 4096 Jan 22 12:53 ..
-	-rw-r--r--  1 root root 1740 Jan 22 13:08 fecha_nodo1.txt
-	-rw-r--r--  1 root root 1885 Jan 22 13:08 fecha_nodo2.txt
-	```
+```
+for ((;;)) do date >> /mnt/fecha_nodo1.txt;sleep 1; done
+```
+En el nodo 2:
+```
+for ((;;)) do date >> /mnt/fecha_nodo2.txt;sleep 1; done
+```
+Puedes acceder a uno de los nodos desde otra terminal y comprobar los ficheros que se están escribiendo en el directorio `/mnt`:
+```
+root@nodo1:/mnt# ls -al
+total 16
+drwxr-xr-x  3 root root 3896 Jan 22 13:06 .
+drwxr-xr-x 19 root root 4096 Jan 22 12:53 ..
+-rw-r--r--  1 root root 1740 Jan 22 13:08 fecha_nodo1.txt
+-rw-r--r--  1 root root 1885 Jan 22 13:08 fecha_nodo2.txt
+```
 	
