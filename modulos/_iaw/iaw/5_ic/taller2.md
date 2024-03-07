@@ -24,6 +24,7 @@ Para crear la credencial:
 
 En el repositorio puedes encontrar el fichero `Jenkinsfile` con el siguiente contenido:
 
+
 ```groovy
 pipeline {
     environment {
@@ -81,3 +82,80 @@ Tenemos un problema: al crear el webhook debemos indicar la dirección de nuestr
 4. Explica la configuración necesaria y una prueba de funcionamiento para que se dispare el pipeline cuando hagamos un push al repositorio.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
+## Solución de Javier Cruces
+
+Solución de Javier Cruces, porque faltaba la operación de la validación html5:
+
+```groovy
+pipeline {
+    agent {
+        docker {
+            image 'josedom24/debian-npm'
+            args '-u root:root'
+        }
+    }
+   
+    environment {
+        TOKEN = credentials('SURGE_TOKEN')
+    }
+   
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'master', url: 'https://github.com/javierasping/taller2_ic-html5.git'
+            }
+        }
+       
+        stage('Change Repositories to HTTPS') {
+            steps {
+                script {
+                    sh """
+                    sed -i 's/http:/https:/g' /etc/apt/sources.list
+                    apt update
+                    """
+                }
+            }
+        }
+       
+        stage('Install Surge') {
+            steps {
+                script {
+                    sh 'npm install -g surge'
+                }
+            }
+        }
+       
+        stage('Install Pip') {
+            steps {
+                script {
+                    sh 'apt update -y && apt install pip default-jre -y'
+                }
+            }
+        }
+       
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    sh 'pip install html5validator '
+                }
+            }
+        }
+       
+        stage('Test HTML') {
+            steps {
+                script {
+                    sh 'html5validator --root _build/'
+                }
+            }
+        }
+       
+        stage('Deploy') {
+            steps {
+                script {
+                    sh 'surge ./_build/ javierasping.surge.sh --token $TOKEN'
+                }
+            }
+        }
+    }
+}
+```
