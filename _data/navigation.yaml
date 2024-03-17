@@ -3,6 +3,8 @@ main:
     url: https://www.josedomingo.org
   - title: "Blog"
     url: https://www.josedomingo.org/pledin/blog
+  - title: "Microblog"
+    url: https://www.josedomingo.org/pledin/microblog
   - title: "Plataforma"
     url: https://plataforma.josedomingo.org
   - title: "Módulos"
