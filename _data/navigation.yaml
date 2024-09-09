@@ -58,6 +58,33 @@ iaw:
 #      - title: "HLC: Cloud Computing"
 #        url: /hlc2223/
 #
+sri2324:
+  - title: Servicios de Red e Internet + HLC (2023-2024)
+    children:
+      - title: "Inicio"
+        url: /sri/
+      - title: "Virtualización en Linux"
+        url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux-hlc
+      - title: DHCP
+        url: /sri/#unidad-2-protocolo-dhcp
+      - title: Infraestructura como código
+        url: /sri/#unidad-3-infraestructura-como-c%C3%B3digo
+      - title: HTTP
+        url: /sri/#unidad-4-protocolo-http
+      - title: IaaS
+        url: /sri/#unidad-5-cloud-computing-iaas-openstack
+      - title: DNS
+        url: /sri/#unidad-6-protocolo-dns
+#      - title: Correo
+#        url: /sri/#unidad-6-servidor-de-correo-electr%C3%B3nico
+#      - title: Almacenamiento
+#        url: /sri/#unidad-7-almacenamiento
+#      - title: Kubernetes
+#        url: /sri/#unidad-8-kubernetes
+#      - title: Alta Disponibilidad
+#        url: /sri/#unidad-9-cl%C3%BAster-de-alta-disponibilidad
+
+
 sri:
   - title: Servicios de Red e Internet + HLC (2023-2024)
     children:
@@ -84,6 +111,7 @@ sri:
 #      - title: Alta Disponibilidad
 #        url: /sri/#unidad-9-cl%C3%BAster-de-alta-disponibilidad
 #
+
 
   - title: Módulos
     children:
