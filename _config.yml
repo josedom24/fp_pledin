@@ -242,7 +242,7 @@ defaults:
       sidebar:
         nav: "iaw2324"
 
-- scope:
+  - scope:
       path: ""
       type: sri2324
     values:
