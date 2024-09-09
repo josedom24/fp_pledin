@@ -1,5 +1,5 @@
 ---
-title: "Servicios de Red e Internet + HLC (2023-2024)"
+title: "Servicios de Red e Internet + HLC (2024-2025)"
 ---
 
 <!--
@@ -119,6 +119,18 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 
 * [Teoría](pdf/virtualizacion.pdf)
 * [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
+	* Ejercicio 1: Introducción a la virtualización
+	* Ejercicio 2: Instalación de QEMU/libvirt. Conexión local y remota
+	* Ejercicio 3: Creación de máquinas virtuales desde la línea de comandos
+	* Ejercicio 4: Creación de máquinas virtuales con virt-mananger
+	* Ejercicio 5: Gestión del almacenamiento en QEMU/KVM + libvirt
+	* Ejercicio 6: Clonación e instantáneas de maquinas virtuales
+	* Ejercicio 7: Gestión de redes en QEMU/KVM + libvirt
+	
+	
+	
+	
+<!--
 	* [Ejercicio 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/ejercicio1.html)
     * [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
 	* [Ejercicio 3: Creación de máquinas virtuales con virt-manager](1_virtualizacion/ejercicio3.html)
@@ -128,3 +140,4 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/taller4.html)
     * [Taller 5: Trabajando con contenedores LXC](1_virtualizacion/taller5.html)
 * [Práctica: Virtualización en Linux y servidor DHCP (Parte 1)](1_virtualizacion/practica.html)
+-->
