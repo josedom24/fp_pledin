@@ -225,7 +225,7 @@ defaults:
       sidebar:
         nav: "sri"
 
-- scope:
+  - scope:
       path: ""
       type: sri2324
     values:

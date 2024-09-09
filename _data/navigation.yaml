@@ -58,23 +58,23 @@ iaw:
 #      - title: "HLC: Cloud Computing"
 #        url: /hlc2223/
 #
-#sri2324:
-#  - title: Servicios de Red e Internet + HLC (2023-2024)
-#    children:
-#      - title: "Inicio"
-#        url: /sri2324/
-#      - title: "Virtualización en Linux"
-#        url: /sri2324/#unidad-1-virtualizaci%C3%B3n-en-linux-hlc
-#      - title: DHCP
-#        url: /sri2324/#unidad-2-protocolo-dhcp
-#      - title: Infraestructura como código
-#        url: /sri2324/#unidad-3-infraestructura-como-c%C3%B3digo
-#      - title: HTTP
-#        url: /sri2324/#unidad-4-protocolo-http
-#      - title: IaaS
-#        url: /sri2324/#unidad-5-cloud-computing-iaas-openstack
-#      - title: DNS
-#        url: /sri2324/#unidad-6-protocolo-dns
+sri2324:
+  - title: Servicios de Red e Internet + HLC (2023-2024)
+    children:
+      - title: "Inicio"
+        url: /sri2324/
+      - title: "Virtualización en Linux"
+        url: /sri2324/#unidad-1-virtualizaci%C3%B3n-en-linux-hlc
+      - title: DHCP
+        url: /sri2324/#unidad-2-protocolo-dhcp
+      - title: Infraestructura como código
+        url: /sri2324/#unidad-3-infraestructura-como-c%C3%B3digo
+      - title: HTTP
+        url: /sri2324/#unidad-4-protocolo-http
+      - title: IaaS
+        url: /sri2324/#unidad-5-cloud-computing-iaas-openstack
+      - title: DNS
+        url: /sri2324/#unidad-6-protocolo-dns
 #      - title: Correo
 #        url: /sri/#unidad-6-servidor-de-correo-electr%C3%B3nico
 #      - title: Almacenamiento
