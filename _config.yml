@@ -94,7 +94,7 @@ collections:
 #    output: true
 #    permalink: /:path
 
-  sri2324:
+  iaw2324:
     output: true
     permalink: /:path
 
@@ -227,7 +227,7 @@ defaults:
 
   - scope:
       path: ""
-      type: sri2324
+      type: iaw2324
     values:
       layout: single2
       classes: wide
@@ -236,7 +236,7 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "sri2324"
+        nav: "iaw2324"
 
   - scope:
       path: ""
