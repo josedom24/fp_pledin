@@ -82,10 +82,10 @@ iaw2324:
 sri:
   - title: Servicios de Red e Internet + HLC (2024-2025)
     children:
-#      - title: "Inicio"
-#        url: /sri/
-#      - title: "Virtualización en Linux"
-#        url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux-hlc
+      - title: "Inicio"
+        url: /sri/
+      - title: "Virtualización en Linux"
+        url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux
 #      - title: DHCP
 #        url: /sri/#unidad-2-protocolo-dhcp
 #      - title: Infraestructura como código

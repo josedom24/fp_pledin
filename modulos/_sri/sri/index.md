@@ -18,7 +18,7 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 * [Práctica: Clúster de Alta Disponibilidad](9_clusterha/practica.html)
 
 
--->
+
 
 ## Unidad 9: Almacenamiento
 
@@ -113,7 +113,9 @@ title: "Servicios de Red e Internet + HLC (2023-2024)"
 	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/taller2.html)
 * [Práctica: Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica.html)
 
-## Unidad 1: Virtualización en Linux (HLC)
+-->
+
+## Unidad 1: Virtualización en Linux
 
 * [Teoría](pdf/virtualizacion.pdf)
 * [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
