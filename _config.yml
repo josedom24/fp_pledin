@@ -94,6 +94,10 @@ collections:
 #    output: true
 #    permalink: /:path
 
+  sri2324:
+    output: true
+    permalink: /:path
+
   sri:
     output: true
     permalink: /:path
