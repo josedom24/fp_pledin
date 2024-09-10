@@ -1,29 +1,23 @@
 ---
-title: "Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos"
+title: "Ejercicio 2: Instalación de QEMU/libvirt"
 ---
 
-## ¿Qué vas a aprender en este taller?
+## ¿Qué vas a aprender en este ejercicio?
 
-* A crear máquinas virtuales usando `virt-install`.
-* A acceder a las máquinas virtuales usando `virt-view`.
-* A gestionar el ciclo de vida de las máquinas virtuales.
-* A comprobar las características de las máquinas virtuales creadas.
+* A realizar la instalación del sistema de virtualización QEMU/libivrt.
+* A entender y realizar distintos tipos de conexión a libvirt.
+* A configurar un servidor para realizar una conexión remoto a libvirt.
 
-## Recursos para realizar este taller
+## Recursos para realizar este ejercicio
 
-* Capítulo 3 del [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
+* Capítulo 2 del [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
+
+## Duración
+
+1 hora
 
 ## ¿Qué tienes que hacer?
 
-1. Crea una máquina virtual Linux con la herramienta `virt-install`, con las siguientes características:
-	* Nombre: **linux_tu_nombre**.
-	* Tamaño de disco: 15 Gb.
-	* Memoria: 2 Gb
-	* Número de CPUs: 2
-	* No es necesario entorno gráfico.
-2. Una vez creada accede a ella usando la herramienta `virt-viewer`.
-3. Comprueba la dirección IP que ha tomado, el tamaño del disco y de la memoria.
-4. Con `virsh`: lista las máquinas, para la máquina que has creado, vuelve a ejecutarla, reinicia la máquina,...
-5. Con `virsh` muestra la definición XML de la máquina y fíjate en los elementos de la definición que se comentan en el apartado [Definición XML de una máquina virtual](https://github.com/josedom24/curso_virtualizacion_linux/blob/main/modulo3/xml.md).
-6. Con `virsh` modifica el nombre de la máquina, el número de CPU y el tamaño de la memoria.
+1. Realiza la instalación de QEMU/libvirt.
+2. Configura tu usuario sin privilegios para que puedas hacer conexiones privilegiadas sin usar el usuario `root`. Para probarlo: Ejecuta el comando `list` de `virsh` realizando una conexión privilegiada con tu usuario sin privilegios (no uses el `root`).
 
