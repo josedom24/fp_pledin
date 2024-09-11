@@ -63,7 +63,7 @@ Seguimos los siguientes pasos:
 		```
 		dev tun
 		remote sputnik.gonzalonazareno.org
-		ifconfig 172.23.0.0 255.255.255.0
+		ifconfig 172.23.0.0 255.255.255.0 <- Creo que no es necesario
 		pull
 		proto tcp-client
 		tls-client
