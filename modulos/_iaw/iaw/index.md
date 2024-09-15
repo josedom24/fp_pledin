@@ -2,7 +2,7 @@
 title: "Implantación de aplicaciones web (2023-2024)"
 ---
 
-
+<!--
 ## Unidad 6: Implantación de aplicaciones web Java
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/java.pdf)
@@ -59,10 +59,15 @@ title: "Implantación de aplicaciones web (2023-2024)"
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
 * [Práctica: Instalación/migración de aplicaciones web PHP](2_php/practica.html)
 
+-->
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 
 * [Teoría: Introducción a Git y GitHub](pdf/git.pdf)
 	* [Ejercicio 1: Introducción a git y GitHub](1_introduccion/ejercicio1.html)
+
+
+
+<!--
 	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
 	* [Taller 1: Git. Trabajando con ramas y uniones](1_introduccion/taller1.html)
 	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
@@ -70,3 +75,4 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	* [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/practica.html)
 * [Teoría: Introducción a la Implantación de Aplicaciones Web](pdf/introduccion_iaw.pdf)
 
+-->
