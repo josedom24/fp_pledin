@@ -9,7 +9,7 @@ classes: wide
 
 ### 2º ASIR
 
-* Servicios de red e internet + HLC
+* [Servicios de red e internet + HLC](sri)
 * Implantación de aplicaciones web
 
 ---
