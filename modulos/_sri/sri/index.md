@@ -119,27 +119,18 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 
 * [Teoría](pdf/virtualizacion.pdf)
 * [Curso: Virtualización en Linux](https://github.com/josedom24/curso_virtualizacion_linux)
+* [Resumen: Virtualización en Linux](pdf/resumen_virtualizacion.pdf)
 	* [Ejercicio 1: Instalación de QEMU/libvirt](1_virtualizacion/ejercicio1.html)
 	* [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
 	* [Ejercicio 3: Creación de máquinas virtuales con virt-mananger](1_virtualizacion/ejercicio3.html)
-	
+    * [Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/taller1.html)
+		
 <!--
 	
 
-
-
-	* Ejercicio 4: Gestión del almacenamiento en QEMU/KVM + libvirt
-	* Ejercicio 5: Clonación e instantáneas de maquinas virtuales
-	* Ejercicio 6: Gestión de redes en QEMU/KVM + libvirt
-	
-	
-	
 	
 
-	* [Ejercicio 1: Instalación de QEMU/libvirt. Conexión local y remota](1_virtualizacion/ejercicio1.html)
-    * [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
-	* [Ejercicio 3: Creación de máquinas virtuales con virt-manager](1_virtualizacion/ejercicio3.html)
-    * [Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/taller1.html)
+
 	* [Taller 2: Gestión de pool de almacenamiento lógico en KVM/libvirt](1_virtualizacion/taller2.html)
     * [Taller 3: Clonación e instantáneas de maquinas virtuales](1_virtualizacion/taller3.html)
 	* [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/taller4.html)
