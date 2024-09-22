@@ -124,14 +124,14 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Ejercicio 2: Creación de máquinas virtuales desde la línea de comandos](1_virtualizacion/ejercicio2.html)
 	* [Ejercicio 3: Creación de máquinas virtuales con virt-mananger](1_virtualizacion/ejercicio3.html)
     * [Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/taller1.html)
-		
+	* [Taller 2: Gestión de pool de almacenamiento lógico en KVM/libvirt (OPTATIVO)](1_virtualizacion/taller2.html)	
 <!--
 	
 
 	
 
 
-	* [Taller 2: Gestión de pool de almacenamiento lógico en KVM/libvirt](1_virtualizacion/taller2.html)
+	
     * [Taller 3: Clonación e instantáneas de maquinas virtuales](1_virtualizacion/taller3.html)
 	* [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/taller4.html)
     * [Taller 5: Trabajando con contenedores LXC](1_virtualizacion/taller5.html)
