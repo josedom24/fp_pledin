@@ -15,16 +15,16 @@ title: "Ejercicio 2: Introducción a Markdown"
 
 1. En el repositorio que has creado en el taller anterior, crea un fichero llamado `markdown.md`. Este fichero tiene que tener los siguientes elementos en este orden:
 
-* Un título principal
-* Un subtítulo
-* Un párrafo, con palabras en negrita, en cursiva, en código (por ejemplo esto está escrito en `código`).
-* Un trozo de código.
-* Una lista ordenada
-* Una lista desordenada.
-* Un enlace a una URL externa.
-* Un enlace a otro fichero Markdown que tengas en el repositorio.
-* Una imagen
-* Una tabla
+    * Un título principal
+    * Un subtítulo
+    * Un párrafo, con palabras en negrita, en cursiva, en código (por ejemplo esto está escrito en `código`).
+    * Un trozo de código.
+    * Una lista ordenada
+    * Una lista desordenada.
+    * Un enlace a una URL externa.
+    * Un enlace a otro fichero Markdown que tengas en el repositorio.
+    * Una imagen
+    * Una tabla
 
-2. Sube el fichero al repositorio remoto.
+2. Sube el fichero al repositorio remoto y visualízalo en GitHub.
 
