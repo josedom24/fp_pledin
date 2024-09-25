@@ -6,7 +6,7 @@ title: "Taller 4: Gestión de redes en QEMU/KVM + libvirt"
 
 * Conocer los distintos tipos de redes virtuales que podemos definir con KVM/libvirt.
 * Gestionar switch virtuales con Linux Bridge
-* Gestionar los distintos tipos de redes con `virsh` y `virt-manager`.
+* Gestionar los distintos tipos de redes.
 * Configurar un bridge externo para conectar las máquinas virtuales a una red pública.
 * Gestionar las interfaces de red en las máquinas virtuales.
 

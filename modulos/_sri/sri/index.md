@@ -126,7 +126,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
     * [Taller 1: Gestión del almacenamiento en QEMU/KVM + libvirt](1_virtualizacion/taller1.html)
 	* [Taller 2: Gestión de pool de almacenamiento lógico en KVM/libvirt (OPTATIVO)](1_virtualizacion/taller2.html)	
 	* [Taller 3: Clonación e instantáneas de maquinas virtuales](1_virtualizacion/taller3.html)
-
+	* [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/taller4.html)
 
 
 <!--
@@ -137,7 +137,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 
 	
     
-	* [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/taller4.html)
+	
     * [Taller 5: Trabajando con contenedores LXC](1_virtualizacion/taller5.html)
 * [Práctica: Virtualización en Linux y servidor DHCP (Parte 1)](1_virtualizacion/practica.html)
 -->
