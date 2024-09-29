@@ -28,5 +28,3 @@ title: "Taller 5: Trabajando con contenedores LXC"
     * **Entrega**: Después de conectar el contenedor a la red `red-externa`, comprobación de la nueva IP que ha tomado.
 6. Crea en el host el directorio `/opt/web`, crea el fichero `index.html` y monta este directorio en el directorio `/srv/www` del contenedor.
     * **Entrega**: Indica la configuración que has hecho para montar el directorio `/opt/web`. Lista el directorio `/srv/www` del contenedor para comprobar que se ha montado de forma correcta.
-7. (Optativo)(**Te recomiendo que lo hagas en una máquina virtual limpia**). Instala LXD y crea un contenedor y una máquina virtual.
-    * **Entrega**: Lista el contenedor y la máquina virtual creadas con LXD.
