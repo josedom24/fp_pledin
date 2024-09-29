@@ -2,9 +2,7 @@
 title: "Práctica (1 / 2): Despliegue de página web estática"
 ---
 
-## Descripción
-
-### Generadores de páginas estáticas
+## Generadores de páginas estáticas
 
 En los últimos años se han desarrollado programas de ordenador que nos permiten de forma sencilla generar sitios web estáticos.
 
@@ -16,7 +14,7 @@ En los últimos años se han desarrollado programas de ordenador que nos permite
 * Una vez generado el sitio estático sólo tenemos que desplegar el sitio en nuestro servidor en producción.
 * Tenemos muchos generadores de páginas estáticas: Jekyll, Hugo, Pelican, ...  
 
-¿Qué tienes que hacer?
+## ¿Qué tienes que hacer?
 
 1. Elige entre alguno de los programas generadores de páginas web estáticas: lo más usados, son **Jekyll** y **Hugo**. Pero puedes elegir cualquier otro.
 2. Lee en la documentación e instala el programa en tu ordenador (en tu host o en alguna máquina virtual).
@@ -29,8 +27,9 @@ En los últimos años se han desarrollado programas de ordenador que nos permite
 {% capture notice-text %}
 ## Entrega
 
-1. Entrega una captura de pantalla, donde se vea la página web funcionando en local, con las modificaciones realizadas.
-2. Entrega la URL del repositorio donde has guardado tu proyecto.
+1. Indica el generador que vas a utilizar.
+2. Entrega una captura de pantalla, donde se vea la página web funcionando en local, con las modificaciones realizadas.
+3. Entrega la URL del repositorio donde has guardado tu proyecto.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
