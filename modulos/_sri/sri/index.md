@@ -130,16 +130,5 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 4: Gestión de redes en QEMU/KVM + libvirt](1_virtualizacion/taller4.html)
 	* [Taller 5: Trabajando con contenedores LXC](1_virtualizacion/taller5.html)
 	* [Taller 6: Introducción a LXD (OPTATIVO)](1_virtualizacion/taller6.html)
+* [Práctica (1 / 3): Virtualización en Linux y servidor DHCP (Parte 1)](1_virtualizacion/practica1.html)
 
-<!--
-	
-
-	
-
-
-	
-    
-	
-    
-* [Práctica: Virtualización en Linux y servidor DHCP (Parte 1)](1_virtualizacion/practica.html)
--->
