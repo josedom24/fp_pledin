@@ -1,5 +1,5 @@
 ---
-title: "Implantación de aplicaciones web (2023-2024)"
+title: "Implantación de aplicaciones web (2024-2025)"
 ---
 
 <!--
