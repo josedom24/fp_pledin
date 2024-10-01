@@ -69,13 +69,10 @@ title: "Implantación de aplicaciones web (2023-2024)"
 	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
 * [Teoría: Introducción a las Aplicaciones Web](pdf/introduccion_aplicaciones_web.pdf)
 	* [Práctica (1 / 2): Despliegue de página web estática](1_introduccion/practica1.html)
+	* [Práctica (2 / 2): Despliegue de página web estática](1_introduccion/practica2.html)
 
 <!--
 	
-	
-	
-
-	* [Práctica: Implantación y despliegue de una aplicación web estática](1_introduccion/practica.html)
 * [Teoría: Introducción a la Implantación de Aplicaciones Web](pdf/introduccion_iaw.pdf)
 
 -->
