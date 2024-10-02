@@ -22,7 +22,6 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
     * La máquina tendrá un disco qcow2 de 15Gb.
     * El hostname de esta máquina debe ser `nas-tunombre`.
 	* Se debe poder acceder a ella por ssh con el usuario `user` sin que te pida contraseña (configura tu clave pública y la mia).
-	* El usuario `user` debe poder ejecutar el comando `sudo` sin que te pida contraseña.
     * Está máquina se debe iniciar cada vez que arrancamos el host.
 4. Crea dos contenedores LXC conectados a la red **red_intra**. 
 	* **servidorDHCP**: Es un contador creado a partir de la plantilla **Debian Bookworm**. Configura su red de forma estática. Su dirección IP debe ser la `192.168.200.3`.
