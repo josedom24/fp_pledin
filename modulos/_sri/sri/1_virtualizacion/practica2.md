@@ -14,7 +14,7 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
 	* Esta máquina utiliza un disco en formato **raw** de 10 Gb.
 	* El hostname de esta máquina debe ser `router-tunombre`.
 	* Se debe poder acceder a ella por ssh con el usuario `user` sin que te pida contraseña (configura tu clave pública y la mia).
-    * El usuario `user` debe poder ejecutar el comando `sudo`.
+    * El usuario `user` debe poder ejecutar el comando `sudo` sin que te pida contraseña.
 	* Debes configurar la segunda interfaz de red con direccionamiento estático para que tenga la dirección `192.168.200.1`.
 	* Está máquina se debe iniciar cada vez que arrancamos el host.
 3. Crea con `virt-install` la máquina **servidorNAS** con Alpine Linux 3.20.
@@ -22,6 +22,7 @@ Todas las operaciones las tiene que hacer desde la línea de comandos:
     * La máquina tendrá un disco qcow2 de 15Gb.
     * El hostname de esta máquina debe ser `nas-tunombre`.
 	* Se debe poder acceder a ella por ssh con el usuario `user` sin que te pida contraseña (configura tu clave pública y la mia).
+	* El usuario `user` debe poder ejecutar el comando `sudo` sin que te pida contraseña.
     * Está máquina se debe iniciar cada vez que arrancamos el host.
 4. Crea dos contenedores LXC conectados a la red **red_intra**. 
 	* **servidorDHCP**: Es un contador creado a partir de la plantilla **Debian Bookworm**. Configura su red de forma estática. Su dirección IP debe ser la `192.168.200.3`.
