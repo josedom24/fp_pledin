@@ -13,7 +13,7 @@ Vamos a crear una plantilla que utilizaremos para la creación de las máquinas 
 1. Crea con `virt-install` una máquina virtual de Debian 12 con formato qcow2 y un tamaño de 3GiB. 
 	* La máquina debe tener un usuario `debian` con contraseña `debian` que puede utilizar `sudo` sin contraseña.
 	* Instala el servidor ssh en la máquina.
-	* En el usuario `debian` copia tu clave pública y la [mia](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_de_los_profesores) para que podamos acceder sin introducir la contraseña por ssh.
+	* ~~En el usuario `debian` copia tu clave pública y la [mia](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_de_los_profesores) para que podamos acceder sin introducir la contraseña por ssh~~.
 2. Convierte la máquina virtual en una plantilla llamada **plantilla-cliente**. El hostname de la máquina debe ser **plantilla-cliente-tunombre**. ¿Cuánto ocupa el volumen de la plantilla en disco?
 3. Utiliza la herramienta `virt-sparsify` para reducir el tamaño ocupado en disco del volumen. ¿Cuánto ocupa ahora el volumen de la plantilla en disco?
 

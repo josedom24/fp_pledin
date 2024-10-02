@@ -9,6 +9,7 @@ title: "Práctica 3/3: Virtualización en Linux y servidor DHCP (Parte 1)"
 	* La máquina se conecta a la red **red_intra**.
 	* La máquina tiene una configuración estática de red.
 	* La máquina debe tener el hostname **cliente1-tunombre**.
+	* En el usuario `debian` copia tu clave pública y la [mia](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_de_los_profesores) para que podamos acceder sin introducir la contraseña por ssh
 2. Accede a **cliente1**, realiza una configuración estática de la red y comprueba si tiene acceso al exterior.
 
 {% capture notice-text %}
