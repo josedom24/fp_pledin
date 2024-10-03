@@ -105,10 +105,16 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 5: Vagrant + Ansible](3_iac/taller5.html)
 * [Práctica: Creación y configuración de un servidor LAMP](3_iac/practica.html)
 
+-->
+
 ## Unidad 2: Protocolo DHCP
 
 * [Teoría](pdf/dhcp.pdf)
 * [Introducción al servidor ISC DHCP](2_dhcp/iscdhcp.html)
+
+
+<!--
+
 	* [Taller 0: Configuración del cliente VPN](2_dhcp/taller0.html)
 	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/taller1.html)
 	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/taller2.html)

@@ -86,8 +86,8 @@ sri:
         url: /sri/
       - title: "Virtualización en Linux"
         url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux
-#      - title: DHCP
-#        url: /sri/#unidad-2-protocolo-dhcp
+      - title: DHCP
+        url: /sri/#unidad-2-protocolo-dhcp
 #      - title: Infraestructura como código
 #        url: /sri/#unidad-3-infraestructura-como-c%C3%B3digo
 #      - title: HTTP
