@@ -5,7 +5,7 @@ title: "Práctica 3/3: Virtualización en Linux y servidor DHCP (Parte 1)"
 ## Creación de las máquinas clientes
 
 1. Crea una nueva máquina virtual llamada **cliente1** a partir de la plantilla **plantilla-cliente** que tenga un volumen de 5G. Tienes que tener en cuenta los siguientes aspectos:
-	* Antes de crear la máquina virtual redimensiona su sistema de fichero para que ocupe el espacio completo del disco.
+	* Tienes que redimensionar su sistema de fichero para que ocupe el espacio completo del disco.
 	* La máquina se conecta a la red **red_intra**.
 	* La máquina tiene una configuración estática de red.
 	* La máquina debe tener el hostname **cliente1-tunombre**.
