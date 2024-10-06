@@ -2,12 +2,12 @@
 title: "Práctica (1 / 3): Virtualización en Linux y servidor DHCP (Parte 2)"
 ---
 
-{% capture notice-text %}
+{% capture warning-text %}
 ## Aviso
 
 Antes de comenzar esta práctica, **enseña al profesor el funcionamiento de la práctica anterior**.
 
-{% endcapture %}<div class="warning--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="warning--info">{{ warning-text | markdownify }}</div>
 
 
 ## Descripción
