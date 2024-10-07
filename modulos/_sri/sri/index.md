@@ -111,17 +111,9 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 
 * [Teoría](pdf/dhcp.pdf)
 * [Introducción al servidor ISC DHCP](2_dhcp/iscdhcp.html)
-
-
-<!--
-
-	* [Taller 0: Configuración del cliente VPN](2_dhcp/taller0.html)
-	* [Taller 1: Instalación y configuración del servidor DHCP](2_dhcp/taller1.html)
-	* [Taller 2: Funcionamiento del servidor DHCP](2_dhcp/taller2.html)
-* [Práctica: Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica.html)
-
--->
-
+* [Gestión del ciclo de vida y monitorización de servicios](2_dhcp/systemctl_journalctl.html)
+* [Práctica (1/3): Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica1.html)
+	
 ## Unidad 1: Virtualización en Linux
 
 * [Teoría](pdf/virtualizacion.pdf)
