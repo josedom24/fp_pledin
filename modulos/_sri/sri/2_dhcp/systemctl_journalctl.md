@@ -1,4 +1,6 @@
-# Gestión del ciclo de vida y monitorización de servicios
+---
+title: "Gestión del ciclo de vida y monitorización de servicios"
+---
 
 ## systemctl
 
