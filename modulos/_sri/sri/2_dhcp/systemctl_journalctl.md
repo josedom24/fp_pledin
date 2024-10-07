@@ -145,11 +145,25 @@ Aquí están las opciones más comunes que puedes utilizar para gestionar y visu
     ```
 
 8. Borrar los logs de journalctl
-    En ocasiones, es necesario liberar espacio eliminando logs antiguos. Puedes eliminar todos los logs o especificar un tamaño máximo permitido:
+    En ocasiones, es necesario liberar espacio eliminando logs antiguos.  Para saber cuanto espacio ocupan tus logs:
+
+    ``````bash
+    sudo journalctl --disk-usage
+    ```
+
+    Puedes eliminar todos los logs o especificar un tamaño máximo permitido:
     ``````bash
     sudo journalctl --vacuum-size=500M
     ```
+    
     Esto eliminará los logs más antiguos hasta que los archivos ocupen menos de 500 MB.
+    También podemos decir que queremos borrar todos los logs más antiguos de una fecha. En este caso, se aceptan unidades como «s» para segundo, «m» para minutos, «h» para horas, «w» para semanas o «M» para meses.
+
+    ``````bash
+    sudo journalctl --vacuum-time=1M
+    ```
+
+    Esto borraría los logs más antiguos de un mes.
 
 ### Ejemplo Práctico
 
