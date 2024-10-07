@@ -97,56 +97,56 @@ Aquí están las opciones más comunes que puedes utilizar para gestionar y visu
 1. Ver todos los logs del sistema
     Muestra todos los logs del sistema de manera cronológica:
 
-    ```bash
+    ``````bash
     sudo journalctl
     ```
 
 2. Filtrar por servicio
     Para ver los logs de un servicio específico, por ejemplo, nginx:
 
-    ```bash
+    ``````bash
     sudo journalctl -u nginx
     ```
 
 3. Mostrar solo los logs recientes
     Puedes limitar la salida a los logs recientes con la opción -b, que muestra solo los mensajes desde el último arranque:
-    ```bash
+    ``````bash
     sudo journalctl -b
     ```
 
 4. Ver logs en tiempo real
     Al igual que `tail -f`, puedes seguir los logs en tiempo real:
 
-    ```bash
+    ``````bash
     sudo journalctl -f
     ```
 
 5. Filtrar por fecha y hora
     Puedes buscar logs dentro de un rango de tiempo específico. Por ejemplo, para ver los logs desde una fecha específica:
-    ```bash
+    ``````bash
     sudo journalctl --since "2024-10-07 10:00:00"
     ```
     También puedes especificar un rango hasta una fecha y hora concreta:
-    ```bash
+    ``````bash
     sudo journalctl --since "2024-10-07 10:00:00" --until "2024-10-07 12:00:00"
     ```
 
 6. Filtrar por prioridad
     journalctl permite filtrar los logs por su nivel de prioridad. Las prioridades están numeradas del 0 (emergencia) al 7 (depuración). Para mostrar solo los mensajes de error, puedes usar. Sepuede poner un rango de prioridades con `-p err1..err2`:
 
-    ```bash
+    ``````bash
     sudo journalctl -p err
     ```
 
 7. Mostrar mensajes del kernel
     Para ver solo los mensajes del kernel (`dmesg`):
-    ```bash
+    ``````bash
     sudo journalctl -k
     ```
 
 8. Borrar los logs de journalctl
     En ocasiones, es necesario liberar espacio eliminando logs antiguos. Puedes eliminar todos los logs o especificar un tamaño máximo permitido:
-    ```bash
+    ``````bash
     sudo journalctl --vacuum-size=500M
     ```
     Esto eliminará los logs más antiguos hasta que los archivos ocupen menos de 500 MB.
@@ -157,24 +157,24 @@ Imagina que estás administrando un servidor y necesitas investigar por qué un 
 
 * Ver los logs recientes del servicio nginx:
 
-    ```bash
+    ``````bash
     sudo journalctl -u nginx --since "1 hour ago"
     ```
 
 * Seguir los logs en tiempo real para ver si el servicio se recupera:
 
-    ```bash
+    ``````bash
     sudo journalctl -u nginx -f
     ```
 
 * Consultar solo los mensajes de error:
 
-    ```bash
+    ``````bash
     sudo journalctl -u nginx -p 0..4
     ```
 
 * Investigar los mensajes del kernel si sospechas de un problema de hardware:
 
-    ```bash
+    ``````bash
     sudo journalctl -k --since "1 hour ago"
     ```
