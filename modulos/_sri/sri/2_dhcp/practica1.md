@@ -25,8 +25,8 @@ Vamos as seguir trabajando con el escenario que hemos construido en la práctica
 4. Realizar una captura, desde el servidor usando `tcpdump`, de los cuatro paquetes que corresponden a una concesión: `DISCOVER`, `OFFER`, `REQUEST`, `ACK`.
 5. **Para hacer esta prueba configura un tiempo de concesión bajo**. Los clientes toman una configuración, y a continuación apagamos el servidor DHCP. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?. Comprueba el funcionamiento y razona el motivo.
 6. Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor DHCP (por ejemplo el rango). ¿qué ocurriría con un cliente windows? ¿Y con el cliente linux?. Comprueba el funcionamiento y razona el motivo.
-7. Actualmente el servidor web **servidorWeb** tiene una configuración de red estática. Vamos a configurar una reserva para esta máquina. Configura de forma adecuada el servidor dhcp para que ofrezca al servidor Web la misma IP (**reserva**) que habíamos configurado de forma estática.
-8. Modifica la configuración de red del servidor Web para que tome la configuración de red de forma dinámica.
+7. Actualmente los servidores **servidorWeb** y **servidorNAS** tienen una configuración de red estática. Vamos a configurar una reserva para cada máquina. Configura de forma adecuada el servidor dhcp para que ofrezca a estos servidores la misma IP (**reserva**) que habíamos configurado de forma estática.
+8. Modifica la configuración de red del **servidorWeb** y el **servidorNAS** para que tomen la configuración de red de forma dinámica.
 
 {% capture notice-text %}
 ## Entrega
@@ -37,6 +37,6 @@ Vamos as seguir trabajando con el escenario que hemos construido en la práctica
 4. El contenido del fichero de concesiones en el servidor dhcp para comprobar que se han concedido esas direcciones IP.
 5. Comprobación donde se vean los 4 paquetes que se transmite en la negociación de la concesión.
 6. Explica, con pruebas de funcionamiento, el motivo del comportamiento que se indica en los puntos 5 y 6. **Muestra al profesor el funcionamiento del punto 5 y 6**.
-7. Muestra la configuración para hacer la reserva.
-8. Una captura de pantalla donde se vea la ip que ha tomado de forma dinámica el servidor web. ¿Las reservas se guardan en el fichero de concesión del servidor dhcp?
+7. Muestra la configuración para hacer las reservas.
+8. Una captura de pantalla donde se vea la ip que ha tomado de forma dinámica el **servidorWeb** y el **servidorNAS**. ¿Las reservas se guardan en el fichero de concesión del servidor dhcp?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
