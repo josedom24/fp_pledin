@@ -8,7 +8,7 @@ Para ello sigue los siguientes pasos:
 
 1. Instala el servidor `apache2` en el contenedor **servidorWeb**.
 2. Instala el servidor `nfs` en la máquina **servidorNAS**.
-3. Crea en el **servidorNAS** un directorio `/srv/web` con un fichero `index.html` y compartelo con el contenedor **servidorWeb**.
+3. Crea en el **servidorNAS** un directorio `/srv/web` con un fichero `index.html` y compártelo con el contenedor **servidorWeb**.
 3. Monta ese directorio en el directorio `/var/www/html` del contenedor **servidorWeb**.
 4. Configura en el **router** una regla de DNAT para que podamos acceder al servidor Web desde el exterior. (**La configuración debe ser persistente.**)
 
