@@ -114,6 +114,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Gestión del ciclo de vida y monitorización de servicios](2_dhcp/systemctl_journalctl.html)
 * [Práctica (1 / 3): Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica1.html)
 * [Práctica (2 / 3): Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica2.html)
+* [Práctica (3 / 3): Virtualización en Linux y servidor DHCP (Parte 2)](2_dhcp/practica3.html)
 	
 ## Unidad 1: Virtualización en Linux
 
