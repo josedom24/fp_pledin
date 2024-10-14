@@ -93,10 +93,14 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 4: HAproxy como balanceador de carga](4_http/taller4.html)
 * [Práctica: Instalación de nginx con PHP](4_http/practica.html)
 
+-->
+
 ## Unidad 3: Infraestructura como código
 	
 * [Teoría](pdf/iac.pdf)
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
+
+<!--
 	* [Taller 2: Ansible - Playbook con roles](3_iac/taller2.html)
 * [Teoría: Introducción al uso de vagrant + libvirt + QEMU/KVM](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
 	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/taller3.html)
