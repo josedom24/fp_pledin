@@ -15,7 +15,7 @@ title: "Taller 1: Ansible - Playbook sencillo"
 
 1. Realiza la instalación de ansible. Puedes usar los repositorios oficiales de Debian, o realizar una instalación con `pip` en un entorno virtual python.
 
-2. Crea una máquina virtual que vamos a configurar con ansible. Esta máquina debe tener las siguientes características:
+2. Crea una máquina virtual o contenedor LXC que vamos a configurar con ansible. Esta máquina debe tener las siguientes características:
 
 	* Debe tener creado un usuario sin privilegios con el que podamos acceder a la máquina usando claves ssh. 
 	* Debe tener instalado `sudo` y el usuario que estamos usando para acceder debe estar configurado para poder usar `sudo` sin que le pida la contraseña.

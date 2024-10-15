@@ -98,6 +98,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 ## Unidad 3: Infraestructura como código
 	
 * [Teoría](pdf/iac.pdf)
+	* [Taller 0: Configuración del cliente VPN](3_iac/taller0.html)
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
 
 <!--
