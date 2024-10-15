@@ -78,7 +78,7 @@ Seguimos los siguientes pasos:
 		tls-client
 
 		ca /etc/ssl/certs/gonzalonazareno.crt 
-		cert/etc/openvpn/certs/[nombredemimaquina].crt 
+		cert /etc/openvpn/certs/[nombredemimaquina].crt 
 		key /etc/ssl/private/[nombredemimaquina].key 
 		
 		comp-lzo
