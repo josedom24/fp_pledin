@@ -22,7 +22,7 @@ Para la realización de distintas prácticas que haremos en distintos módulos, 
 La máquina que alquiléis debe tener al menos estas características:
 
 * 1 vCPU
-* 512 Mb RAM
+* 1 Gb RAM
 * 10 Gb HD
 
 Además vamos a contratar un nombre de dominio. Hay mucho proveedores para alquilar un nombre de dominio: puedes hacer una simple [búsqueda](https://duckduckgo.com/?q=dominios&va=b&t=hc&ia=places).  Los dominios se alquilan normalmente por un año. 
