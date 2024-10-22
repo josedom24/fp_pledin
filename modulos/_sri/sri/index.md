@@ -101,11 +101,13 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 0: Configuración del cliente VPN](3_iac/taller0.html)
 	* [Taller 1: Ansible - Playbook sencillo](3_iac/taller1.html)
 	* [Taller 2: Ansible - Playbook con roles](3_iac/taller2.html)
+* [Teoría: Introducción al uso de vagrant + libvirt + QEMU/KVM](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
+	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/taller3.html)
+
+
 
 <!--
 	
-* [Teoría: Introducción al uso de vagrant + libvirt + QEMU/KVM](https://www.josedomingo.org/pledin/2021/09/introduccion-vagrant-libvirt/)
-	* [Taller 3: Vagrant - Creación de una máquina virtual](3_iac/taller3.html)
 * [Teoría: Presentación - Configuración de redes en KVM y en Vagrant](pdf/redes_kvm_vagrant.pdf)
 	* [Taller 4: Vagrant - Creación de escenarios](3_iac/taller4.html)
 	* [Taller 5: Vagrant + Ansible](3_iac/taller5.html)
