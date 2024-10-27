@@ -6,7 +6,7 @@ title: "Práctica: Instalación/migración de aplicaciones web PHP"
 
 ### Escenario
 
-Crea un escenario con vagrant o kvm con las siguientes características:
+Crea un escenario con vagrant. kvm o openstack con las siguientes características:
 
 * Dos máquinas virtuales que se llamen `servidor_web_tunombre` y `servidor_bd_tunombre`.
 * Las máquinas estarán conectadas a una red que les proporcione salida a internet.
