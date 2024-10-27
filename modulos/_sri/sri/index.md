@@ -106,14 +106,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Teoría: Presentación - Configuración de redes en KVM y en Vagrant](pdf/redes_kvm_vagrant.pdf)
 	* [Taller 4: Vagrant - Creación de escenarios](3_iac/taller4.html)
 	* [Taller 5: Vagrant + Ansible](3_iac/taller5.html)
-
-
-
-<!--
-	
-* [Práctica: Creación y configuración de un servidor LAMP](3_iac/practica.html)
-
--->
+* [Práctica (1 / 3): Creación y configuración de un servidor LAMP](3_iac/practica1.html)
 
 ## Unidad 2: Protocolo DHCP
 
