@@ -8,6 +8,7 @@ Vamos a usar la interfaz `eth0` de las máquinas que están conectadas a la **re
 
 Queremos configurar el escenario con ansible, para que cumpla lo siguiente:
 
+* La máquina accede a internet por la interfaz conectada a `br0`.
 * Las máquinas conectadas a la red privada muy aislada **red_intra** a la que está conectada el `router` deben tener acceso a internet. Para ello, la máquina `router` debe estar configurada para enrutar las peticiones de las máquinas conectadas a la red **red_intra**. 
 * La máquina `web` tendrá un servidor web apache2 instalado. La máquina `router` hará DNAT para que podamos acceder a la página usando su IP pública.
 * La máquina `bd` tendrá un servidor de base de datos mariadb.
