@@ -58,6 +58,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Taller 3: Instalación de WordPress en un servidor LEMP](2_php/taller3.html)
 	* [Taller 4: Contratación y configuración de un VPS](2_php/taller4.html)
 * [Práctica (1 / 3): Instalación/migración de aplicaciones web PHP](2_php/practica1.html)
+* [Práctica (2 / 3): Instalación/migración de aplicaciones web PHP](2_php/practica2.html)
 
 
 <!--
