@@ -2,7 +2,7 @@
 title: "Práctica (2 / 3): Instalación/migración de aplicaciones web PHP"
 ---
 
-## Tarea 3: Migración a tu VPS
+## Migración a tu VPS
 
 * Configura en tu VPS un servidor LEMP.
 * Configura registros DNS en tu servidor DNS de tipo **CNAME** para que el nombre `www` y `cloud` apunten al nombre de vuestro servidor.
