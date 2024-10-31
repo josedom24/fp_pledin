@@ -110,6 +110,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Práctica (2 / 3): Creación y configuración de un servidor LAMP](3_iac/practica2.html)
 	* [Introducción al almacenamiento](pdf/almacenamiento2425.pdf)
 	* [Introducción a iSCSI](3_iac/iscsi.html)
+* [Práctica (3 / 3): Creación y configuración de un servidor LAMP](3_iac/practica3.html)
 
 ## Unidad 2: Protocolo DHCP
 
