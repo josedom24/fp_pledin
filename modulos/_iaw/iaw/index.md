@@ -61,6 +61,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 * [Práctica (2 / 3): Instalación/migración de aplicaciones web PHP](2_php/practica2.html)
 * [Teoría: Introducción a HTTPS con Let’s Encrypt](pdf/https.pdf)
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
+* [Práctica (3 / 3): Instalación/migración de aplicaciones web PHP](2_php/practica3.html)
 
 ## Unidad 1: Introducción a la implantación de aplicaciones web
 
