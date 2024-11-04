@@ -71,6 +71,10 @@ Nos muestra el nombre del target y ya podemos hacer la conexión:
 
     iscsiadm --mode node -T iqn.2021-11.org.example:target1 --portal 10.0.0.1 --login
 
+Si queremos que la conexión se haga de forma automática después de un reinicio:
+
+    iscsiadm -m node -T iqn.2021-11.org.example:target1 -p 10.0.0.1 --op update -n node.startup -v automatic
+
 A partir de ahora tendremos un nuevo dispositivo de bloque en la máquina cliente que podremos formatear y montar.
 
 Si el target tiene definido un usuario y contraseña para la conexión, tendremos que definirla después de conectarnos:
