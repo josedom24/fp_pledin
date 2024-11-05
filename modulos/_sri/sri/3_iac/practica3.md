@@ -1,5 +1,5 @@
 ---
-title: "Práctica (2 / 3): Creación y configuración de un servidor LAMP"
+title: "Práctica (3 / 3): Creación y configuración de un servidor LAMP"
 ---
 
 ## SAN y iSCSI
