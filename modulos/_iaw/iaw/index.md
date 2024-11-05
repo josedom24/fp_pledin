@@ -36,10 +36,15 @@ title: "Implantación de aplicaciones web (2024-2025)"
 * [Práctica 1: Implantación de aplicaciones web PHP en docker](4_docker/practica1.html)
 * [Práctica 2: Implantación de aplicaciones web Python en docker](4_docker/practica2.html)
 
+-->
+
 ## Unidad 3: Implantación de aplicaciones web Python
 
 * [Teoría](pdf/python.pdf)
 	* [Ejercicio 1: Ejecución de aplicaciones python flask](3_python/ejercicio1.html)
+
+
+<!--
 	* [Taller 1: Desplegando aplicaciones flask con apache2 + mod_wsgi](3_python/taller1.html)
 	* [Taller 2: Desplegando aplicaciones flask con apache2/nginx + uwsgi](3_python/taller2.html)
 	* [Ejercicio 2: Introducción a django](3_python/ejercicio2.html)

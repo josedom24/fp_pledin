@@ -24,8 +24,8 @@ iaw:
         url: /iaw/#unidad-1-introducci%C3%B3n-a-la-implantaci%C3%B3n-de-aplicaciones-web
       - title: PHP
         url: /iaw/#unidad-2-implantaci%C3%B3n-de-aplicaciones-web-php
-#      - title: Python
-#        url: /iaw/#unidad-3-implantaci%C3%B3n-de-aplicaciones-web-python
+      - title: Python
+        url: /iaw/#unidad-3-implantaci%C3%B3n-de-aplicaciones-web-python
 #      - title: Docker
 #        url: /iaw/#unidad-4-docker
 #      - title: IC/DC
