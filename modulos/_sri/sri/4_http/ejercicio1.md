@@ -25,6 +25,6 @@ Ejercicios que tienes que realizar:
 3. Utiliza las herramientas de un navegador web (En firefox: Herramientas para desarrolladores -> Red ) para ver las cabeceras de la URL `https://dit.gonzalonazareno.org/gestiona/`.
 	¿Cuántas peticiones se han realizado para mostrar la página?. Fíjate en la petición a `https://dit.gonzalonazareno.org/gestiona/`: identifica las cabeceras más importantes de las peticiones y de las respuestas.
 4. Obtén la información del cuerpo de la respuesta de la URL: `https://dit.gonzalonazareno.org/gestiona/`.
-5. Usando el método GET manda tu nombre a la página `http://www2.gonzalonazareno.org/josedom/resultado.php`.
+5. Usando el método GET manda tu nombre a la página `https://http.josedomingo.org/index2.php`.
 6. Usando el método POST (que envía el contenido en el cuerpo) manda tu nombre a la misma página.
 
