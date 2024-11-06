@@ -86,11 +86,12 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Teoría](pdf/http.pdf)
 	* [Ejercicio 1: Peticiones HTTP](4_http/ejercicio1.html)
 * [Teoría: Configuración básica de Apache2](4_http/apache2.html)
+	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
 
 <!--
 
 
-	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
+
 	* [Taller 2: Instalación de phpmyadmin](4_http/taller2.html)
 * [Teoría: Introducción a proxy inverso](4_http/proxy_inverso.html)
 	* [Taller 3: Introducción a proxy inverso](4_http/taller3.html)
