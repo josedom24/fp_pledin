@@ -88,10 +88,12 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Teoría: Configuración básica de Apache2](4_http/apache2.html)
 	* [Taller 1: Configuración del servidor web Apache2](4_http/taller1.html)
 	* [Taller 2: Instalación de phpmyadmin](4_http/taller2.html)
-
-<!--
 * [Teoría: Introducción a proxy inverso](4_http/proxy_inverso.html)
 	* [Taller 3: Introducción a proxy inverso](4_http/taller3.html)
+
+
+
+<!--
 * [Teoría: Introducción al balanceo de carga con HAProxy](4_http/haproxy.html)
 	* [Taller 4: HAproxy como balanceador de carga](4_http/taller4.html)
 * [Práctica: Instalación de nginx con PHP](4_http/practica.html)
