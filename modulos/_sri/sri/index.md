@@ -92,12 +92,8 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 3: Introducción a proxy inverso](4_http/taller3.html)
 * [Teoría: Introducción al balanceo de carga con HAProxy](4_http/haproxy.html)
 	* [Taller 4: HAproxy como balanceador de carga](4_http/taller4.html)
-
-
-<!--
-
 * [Práctica: Instalación de nginx con PHP](4_http/practica.html)
--->
+
 
 ## Unidad 3: Infraestructura como código
 	
