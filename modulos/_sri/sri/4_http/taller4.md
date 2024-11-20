@@ -23,7 +23,7 @@ Configura la resolución estática para acceder al balanceador con el nombre `ww
 
 {% capture notice-text %}
 * **Tarea 1**: Entrega capturas de pantalla que el balanceador está funcionando.
-* **Tarea 2**: Entrega una captura de pantalla donde se vea la página web de estadísticas de haproxy (abrir en un navegador web la URL `http://wwww.example.org/ha_stats`.
+* **Tarea 2**: Entrega una captura de pantalla donde se vea la página web de estadísticas de haproxy (abrir en un navegador web la URL `http://www.example.org/ha_stats`.
 * **Tarea 3**: Desde uno de los servidores (`apache1` o `apache2`), verificar los logs del servidor Apache. En todos los casos debería figurar como única dirección IP cliente la IP interna de la máquina balanceador `192.168.100.1`. ¿Por qué?
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
