@@ -17,10 +17,12 @@ Como siempre cuando trabajamos en Python vamos a usar un entorno virtual:
 ```
 $ python3 -m venv django
 $ source django/bin/activate
-(django)$ pip install django
+(django)$ pip install django==4.2
 (django)$ python -m django --version
 4.2
 ```
+
+**Nota**: Aunque la versión actual de django es superior vamos a trabajar con la 4.2.
 
 ## Creando un proyecto django
 
