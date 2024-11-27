@@ -1,5 +1,5 @@
 ---
-title: "Práctica 2 / 2: Despliegue de aplicaciones python"
+title: "Práctica 2 / 2: Instalación/migración de aplicaciones web Python"
 ---
 
 ## Modificación de nuestra aplicación

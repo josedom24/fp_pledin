@@ -46,6 +46,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Taller 2: Desplegando aplicaciones flask con apache2/nginx + uwsgi](3_python/taller2.html)
 	* [Ejercicio 2: Introducción a django](3_python/ejercicio2.html)
 * [Práctica (1 / 2): Instalación/migración de aplicaciones web Python](3_python/practica1.html)
+* [Práctica (2 / 2): Instalación/migración de aplicaciones web Python](3_python/practica2.html)
 
 ## Unidad 2: Implantación de aplicaciones web PHP
 

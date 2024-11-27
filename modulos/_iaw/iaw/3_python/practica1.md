@@ -1,5 +1,5 @@
 ---
-title: "Práctica 1 / 2: Despliegue de aplicaciones python"
+title: "Práctica 1 / 2: Instalación/migración de aplicaciones web Python"
 ---
 
 ## Entorno de desarrollo 
