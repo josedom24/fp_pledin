@@ -34,3 +34,20 @@ title: "Taller 1: Trabajo con instancias en OpenStack"
 
 1. Entrega comprobaciones de las instrucciones y sus salidas para cada uno de los puntos que tienes que hacer en el taller.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## Ejercicio voluntario
+
+### Usar cloud-init con libvirt
+
+Si tenemos una imagen cloud con *cloud-init* instalado, esta imagen se puede usar con distintos hipervisores, por ejemplo con KVM/libvirt. Siguiendo las instrucciones que encontrarás en el artículo [Run cloud-init locally with libvirt](https://cloudinit.readthedocs.io/en/latest/howto/launch_libvirt.html#launch-libvirt) crea una máquina virtual Debian 12 (Tendrás que bajar la imagen cloud de Debian 12) configurado con cloud-init con las mismas características que has configurado la instancia de OpenStack:
+
+* Al iniciarse se deben actualizar los paquetes.
+* Se debe instalar Apache2.
+* Se debe crear un usuario (con tu nombre) y contraseña.
+* Se debe configurar el fqdn a `maquina-cloud.example.org`.
+
+{% capture notice-text %}
+## ¿Qué tienes que entregar?
+
+1. Entrega un pequeño manual con las instrucciones y configuraciones que has realizado, y con las comprobaciones necesarias para comprobar que has realizado de forma correcta ele ejercicio.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
