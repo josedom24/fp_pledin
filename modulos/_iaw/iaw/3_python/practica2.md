@@ -50,7 +50,7 @@ Explica los cambios que has realizado en el entorno de desarrollo y cómo lo has
 
 ## Instalación/migración de uns CMS Python Django
 
-En esta tarea vamos a desplegar un CMS python. Hay varios CMS python basado en django (puedes encontrar varios en el siguiente [enlace](https://djangopackages.org/grids/g/cms/). Puedes instalar cualquiera, yo he probado Mezzanine.
+En esta tarea vamos a desplegar un CMS python. Hay varios CMS python basado en django (puedes encontrar varios en el siguiente [enlace](https://djangopackages.org/grids/g/cms/)). Puedes instalar cualquiera, ~~yo he probado Mezzanine~~.
 
 * Instala el CMS en el entorno de desarrollo. Debes utilizar un entorno virtual.
 * Personaliza la página (cambia el nombre al blog y pon tu nombre) y añade contenido (algún artículo).
