@@ -76,13 +76,13 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Curso OpenStack](https://github.com/josedom24/curso_openstack_ies)
 	* [Taller 1: Trabajo con instancias en OpenStack](5_iaas/taller1.html)
 	* [Taller 2: Gestión del almacenamiento en OpenStack](5_iaas/taller2.html)
-
+	* [Taller 3: Gestión de redes en OpenStack](5_iaas/taller3.html)
 
 <!--
 
 
 	
-	* [Taller 3: Gestión de redes en OpenStack](5_iaas/taller3.html)
+	
 * [Teoría: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
 * [Práctica: Escenario en OpenStack](5_iaas/practica.html)
 
