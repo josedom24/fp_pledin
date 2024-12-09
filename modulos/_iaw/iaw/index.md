@@ -39,6 +39,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/java.pdf)
 * [Introducción a Tomcat 10](4_java/tomcat.html)
 	* [Taller 1: Desarrollo y despliegue de una aplicación Java simple](4_java/taller1.html)
+
 <!--
 
 * [Práctica: Despliegue de aplicaciones Java](4_java/practica.html)
