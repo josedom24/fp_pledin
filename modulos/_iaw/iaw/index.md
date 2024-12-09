@@ -3,12 +3,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 ---
 
 <!--
-## Unidad 6: Implantación de aplicaciones web Java
 
-* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/java.pdf)
-* [Introducción a Tomcat 10](6_java/tomcat.html)
-	* [Taller 1: Desarrollo y despliegue de una aplicación Java simple](6_java/taller1.html)
-* [Práctica: Despliegue de aplicaciones Java](6_java/practica.html)
 
 
 ## Unidad 5: Introducción a la integración continúa y despliegue continuo 
@@ -36,6 +31,17 @@ title: "Implantación de aplicaciones web (2024-2025)"
 * [Práctica 1: Implantación de aplicaciones web PHP en docker](4_docker/practica1.html)
 * [Práctica 2: Implantación de aplicaciones web Python en docker](4_docker/practica2.html)
 
+-->
+
+
+## Unidad 4: Implantación de aplicaciones web Java
+
+* [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/java.pdf)
+* [Introducción a Tomcat 10](4_java/tomcat.html)
+	* [Taller 1: Desarrollo y despliegue de una aplicación Java simple](4_java/taller1.html)
+<!--
+
+* [Práctica: Despliegue de aplicaciones Java](4_java/practica.html)
 -->
 
 ## Unidad 3: Implantación de aplicaciones web Python
