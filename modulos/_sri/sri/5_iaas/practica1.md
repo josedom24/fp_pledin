@@ -4,7 +4,7 @@ title: "Práctica (1 / 2): Escenario en OpenStack"
 
 En esta tarea se va a crear el escenario de trabajo que se va a usar durante todo el curso, que va a constar inicialmente de 4 máquinas: 2 instancias en OpenStack y dos contenedores LXC que se ejecutarán en una de las instancias.
 
-Para nombrar las máquinas se van a utilizar los siguientes nombres: **luffy, zoro, nami, sanji**. Estos nombres pertenecen a dioses de la mitología nórdica.
+Para nombrar las máquinas se van a utilizar los siguientes nombres: **luffy, zoro, nami, sanji**. Estos nombres pertenecen la serie manga **One Piece**.
 
 Además el dominio será un subdominio de la forma `tunombre.gonzalonazareno.org`. De esta forma tendremos:
 
