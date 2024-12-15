@@ -79,6 +79,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 3: Gestión de redes en OpenStack](5_iaas/taller3.html)
 * [Teoría: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
 * [Práctica (1 / 2): Escenario en OpenStack](5_iaas/practica1.html)
+* [Práctica (2 / 2): Escenario en OpenStack](5_iaas/practica2.html)
 
 ## Unidad 4: Protocolo HTTP
 
