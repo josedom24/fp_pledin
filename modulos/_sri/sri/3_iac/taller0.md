@@ -15,9 +15,9 @@ title: "Taller 0: Configuración del cliente VPN"
 
 Para poder acceder a la red local desde el exterior, existe una red privada configurada con OpenVPN que utiliza certificados x509 para autenticar los usuarios y el servidor. 
 
-Desde el cliente OpenVPN (en casa) nos conectaremos (puerto 1194/tcp) a `satelite.gonzalonazareno.org` (servidor contratado en OVH), que a su vez está conectado a nuestra red del instituto usando la fibra óptica del instituto (puerto 10001/tcp).
+Desde el cliente OpenVPN (en casa) nos conectaremos (puerto 1194/tcp) a ~~`satelite.gonzalonazareno.org`~~`macaco.gonzalonazareno.org` (servidor contratado en OVH), que a su vez está conectado a nuestra red del instituto usando la fibra óptica del instituto (puerto 10001/tcp).
 
-Necesitamos dos cosas: disponer de un certificado x509 para nuestro equipo firmado por la **CA Gonzalo Nazareno** y configurar el cliente OpenVPN para que se conecte a **satelite**.
+Necesitamos dos cosas: disponer de un certificado x509 para nuestro equipo firmado por la **CA Gonzalo Nazareno** y configurar el cliente OpenVPN para que se conecte a ~~**satelite**~~ **macaco**.
 
 
 Seguimos los siguientes pasos:
@@ -49,7 +49,7 @@ Seguimos los siguientes pasos:
 
 	Se sube el correspondiente fichero csr mediante la aplicación [Gestiona](https://dit.gonzalonazareno.org/gestiona), dentro del menú **Utilidades -> Certificados**. Se tiene que subir como **Certificado de equipo**. Una vez firmado el fichero csr aparecerá un fichero con extensión crt que se corresponde con el certificado firmado por la autoridad certificadora del Gonzalo Nazareno. Ese fichero lo puedes guardar en /etc/openvpn/certs`
 
-3. [Descargar](https://dit.gonzalonazareno.org/gestiona/info/documentacion/ca) el certificado de la **CA Gonzalo Nazareno**. Este fichero se llama `gonzalonazareno.crt`. Una vez descargado y para evitar que estés usando otro de cursos pasos asegúrate que la fecha de caducidad del certificado es 2034, para ello si lo hemos guardado `/etc/ssl/certs/gonzalonazareno.crt` ejecuta la siguiente instrucción:
+3. [Descargar](https://dit.gonzalonazareno.org/gestiona/info/documentacion/ca) el certificado de la **CA Gonzalo Nazareno**. Este fichero se llama `gonzalonazareno.crt`. ~~Una vez descargado y para evitar que estés usando otro de cursos pasos asegúrate que la fecha de caducidad del certificado es 2034, para ello si lo hemos guardado `/etc/ssl/certs/gonzalonazareno.crt` ejecuta la siguiente instrucción:~~
 
 	```
 	# openssl x509 -text -noout -in /etc/ssl/certs/gonzalonazareno.crt
@@ -72,7 +72,7 @@ Seguimos los siguientes pasos:
 	* Creamos el siguiente fichero con extensión `.conf` (exigencia de OpenVPN) en el directorio `/etc/openvpn/client`:
 		```
 		dev tun
-		remote satelite.gonzalonazareno.org
+		remote macaco.gonzalonazareno.org
 		pull
 		proto tcp-client
 		tls-client
@@ -81,7 +81,6 @@ Seguimos los siguientes pasos:
 		cert /etc/openvpn/certs/[nombredemimaquina].crt 
 		key /etc/ssl/private/[nombredemimaquina].key 
 		
-		comp-lzo
 		keepalive 10 60
 		log /var/log/openvpn-satelite.log
 		verb 1
@@ -105,7 +104,7 @@ Seguimos los siguientes pasos:
 	
 	* **Nota importante**: El servicio vpn no está habilitado, por lo tanto debemos indicarlo cada vez que arranquemos el ordenador (también podemos configurarlo a través de network-manager).
 	
-	* Es también conveniente actualizar el fichero `/etc/hosts` para realizar resolución estática de las máquinas más usadas del centro:
+	* ~~Es también conveniente actualizar el fichero `/etc/hosts` para realizar resolución estática de las máquinas más usadas del centro:~~
 
 		```
 		172.22.123.100    openstack.gonzalonazareno.org
