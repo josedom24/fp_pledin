@@ -39,8 +39,8 @@ $base0d: #3777e6;
 $base0e: #ad00a1;
 $base0f: #cc6633;
 
-@use "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@use "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
 
 html {
