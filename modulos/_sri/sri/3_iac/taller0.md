@@ -96,7 +96,7 @@ Seguimos los siguientes pasos:
 		```
 		$ ip r
 		...
-		172.22.0.0/16 via 172.29.0.x dev tun0 
+		172.22.0.0/16 via 172.201.0.x dev tun0 
 		...
 		```
 
