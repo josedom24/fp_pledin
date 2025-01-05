@@ -59,9 +59,17 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 1: Servidor de correo en los servidores de clase](7_correo/taller1.html)
 * [Práctica: Instalación y configuración de un servidor de correos en el VPS](7_correo/practica.html)
 
+
+-->
+
 ## Unidad 6: Protocolo DNS
 
-* [Teoría](pdf/dns.pdf)
+* [Teoría: Resolución de nombres de dominios en sistemas Linux](pdf/resolucion_nombres.pdf)
+	* Ejercicio 1: Resolución de nombres de dominios en sistemas Linux
+
+<!--
+* [Teoría: Protocolo DNS](pdf/dns.pdf)
+	* Ejercicio 2: Consultas DNS con dig
 * [Servidor DNS bind9](pdf/bind9.pdf)
 	* [Taller 1: Instalación y configuración del servidor bind9 en nuestra red local](6_dns/taller1.html)
 	* [Taller 2: Instalación y configuración de un servidor DNS esclavo](6_dns/taller2.html)
