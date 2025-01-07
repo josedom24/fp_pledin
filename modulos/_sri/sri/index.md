@@ -65,7 +65,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 ## Unidad 6: Protocolo DNS
 
 * [Teoría: Resolución de nombres de dominios en sistemas Linux](pdf/resolucion_nombres.pdf)
-	* Ejercicio 1: Resolución de nombres de dominios en sistemas Linux
+	* [Ejercicio 1: Resolución de nombres de dominios en sistemas Linux](6_dns/ejercicio1.html)
 
 <!--
 * [Teoría: Protocolo DNS](pdf/dns.pdf)
