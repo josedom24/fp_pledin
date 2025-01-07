@@ -33,7 +33,7 @@ title: "Ejercicio 1: Resolución de nombres de dominios en sistemas Linux"
 3. systemd-resolved. Realiza las siguientes tareas:
 	* en esta máquina no está instalado `systemd-resolved`, instálalo con `apt` y comprueba que está funcionando con `systemctl status`.
 	* Accede al fichero `/etc/nsswitch.conf` y comprueba los nuevos mecanismos de resolución.
-	* Accede al fichero `/etc/resolv.conf`. ¿Qué configuración DNS se ha configurado? (archivo "stub", DNS del sistema, o ha mantenido el `resolv.conf`). Comprueba que el nuevo `/etc/resolv.conf` es un enlace simbólico?. ¿Qué es el servidor DNS 127.0.0.53?
+	* Accede al fichero `/etc/resolv.conf`. ¿Qué configuración DNS se ha configurado? (archivo "stub", DNS del sistema, o ha mantenido el `resolv.conf`). Comprueba que el nuevo `/etc/resolv.conf` es un enlace simbólico. ¿Qué es el servidor DNS 127.0.0.53?
 	* Usa el comando de `resolvectl` para que te muestre la configuración de resolución actual.
 	* Añade de nuevo la resolución estática del ejercicio anterior, y usando `resolvectl` realiza una consulta a `ẁww.example.org`.
 	* Vamos a comprobar la resolución del nombre local (mecanismo `myhostname`): con `resolvectl` realiza una consulta al nombre del equipo. También lo puedes hacer al `nombre_del_equipo.local`. Este nombre no es necesario que este en en `/etc/hosts`.
