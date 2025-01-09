@@ -25,7 +25,12 @@ En esta máquina vamos a instalar un servidor DNS `bind9`.
 	* Además tienes que tener en cuenta que el servidor bind9 sólo permite consultas desde la misma red local, si por ejemplo estamos en casa y con la VPN queremos hacer una consulta, se estaría realizando desde otra red, en este caso, en el fichero `/etc/bind/named.conf.options` debemos configurar el parámetro `allow-query`:
 
 		```
-		allow-query {172.29.0.0/16; 172.22.0.0/16;};
+		allow-query {172.201.0.0/16; 172.22.0.0/16;};
+		```
+	* Desactivamos, en el mismo fichero, la validación DNSSEC, que es un sistema de seguridad para proteger nuestro servidor, para ello cambiamos la siguiente directiva:
+
+		```
+		dnssec-validation no;
 		```
 
 	Reiniciamos el servidor, y ya  está funcionando, para ello realiza la siguiente consulta desde tu ordenador:
