@@ -150,4 +150,5 @@ En esta máquina vamos a instalar un servidor DNS `bind9`.
 	* Servidor DNS con autoridad del dominio.
 	* Servidor de correo del dominio.
 	* Una resolución inversa.
+3. Avisa al profesor y enséñale el servidor DNS funcionando.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>		
