@@ -146,7 +146,7 @@ En esta máquina vamos a instalar un servidor DNS `bind9`.
 	* ¿Cuánto ha tardado en realizar la consulta? ¿Qué consultas se han realizado para averiguar la dirección IP? 
 	* Realiza de nuevo la consulta. ¿Cuánto ha tardado ahora? ¿Por qué ha tardado menos? ¿Qué consultas se han realizado para averiguar la dirección IP?
 2. El resultado de las siguientes consultas a tu servidor DNS desde otra máquina:
-	* Dirección IP de una máquina o servicio.
+	* Dirección IP de una máquina o servicio de tu dominio.
 	* Servidor DNS con autoridad del dominio.
 	* Servidor de correo del dominio.
 	* Una resolución inversa.
