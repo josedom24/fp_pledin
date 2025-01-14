@@ -22,7 +22,6 @@ Hay que tener en cuenta los siguientes aspectos:
 4. Queremos que el servidor DNS que has configurado también pueda resolver los nombres de los DNS de los compañeros. Para ello lo vamos a configurar como **servidor DNS forward/caché**, de tal manera que las consultas la realizará sobre nuestro servidor `172.22.0.1`. Para configurar el servidor como forwarder hay que modificar el parámetro en el fichero `named.conf.options`.
 
     ~~5. Por último vamos a configurar los equipos de nuestro escenario para que usen por defecto el servidor DNS de thor, para ello: modifica la configuración de la subred en las redes que estás usando en tu escenario de OpenStack para que el servidor DNS principal sea **thor** (`192.168.0.2`) y modifica la configuración de los contenedores para que usen **thor** como DNS.~~
- 
     ~~6. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh hela`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio. Como no podemos enviar esa información con el servidor DHCP de las redes de OpenStack, vamos a configurar los clientes DHCP de las máquinas para que autoconfiguren el parámetro `search`, para ello modifica el fichero `/etc/dhcp/dhclient.conf` y añade la siguiente línea:~~
 
     ~~prepend domain-search "tu_nombre.gonzalonazareno.org";~~
