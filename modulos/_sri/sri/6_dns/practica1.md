@@ -13,7 +13,8 @@ Hay que tener en cuenta los siguientes aspectos:
     * El servidor DNS se llama `nami.tu_nombre.gonzalonazareno.org` y va a ser el servidor con autoridad para la zona `tu_nombre.gonzalonazareno.org`.
     * El servidor debe resolver el nombre de todas las máquinas.
     * El servidor debe resolver los distintos servicios (virtualhost, servidor de base de datos, servidor ldap, ...).
-    * Vamos a usar vistas en bind9, para que el nombre de `luffy` se corresponda con una ip distinta según desde se realice la consulta. Determina cuantas vistas vamos a crear y que nombres se van a crear en cada vista.
+    * Vamos a usar vistas en bind9, para que el nombre de `luffy` se corresponda con una ip distinta según desde se realice la consulta. Vamos a crear dos vistas, una para cuando se hacen consultas desde la **red_intra** y otra para cuando se hacen consultas desde la **red_dmz**.
+
     * Vamos a crear las zonas de resolución inversas correspondientes al direccionamiento de las redes privadas (`192.168.0.0/24` y `172.16.0.0/16`).
 
     
