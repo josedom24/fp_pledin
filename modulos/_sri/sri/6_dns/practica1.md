@@ -18,7 +18,7 @@ Hay que tener en cuenta los siguientes aspectos:
 
     
 2. Configura como servidor DNS de nuestras máquinas a **nami**:
-    * En los contenedores no hay problema ya que el direccionamiento es estático
+    * En los contenedores no hay problema ya que el direccionamiento es estático.
     * En `zoro` también podemos hacer el cambio de manera estática (investiga como hacer el cambio en Rocky Linux). 
     * En `luffy`: tenemos instalado `systemd-resolved`. Investiga como cambiar el servidor DNS cuando tenemos este sistema de resolución funcionando.
 
@@ -29,7 +29,7 @@ Hay que tener en cuenta los siguientes aspectos:
 {% capture notice-text %}
 ## Entrega
 
-1. Entrega la configuración DNS de cada máquina: donde se compruebe que el servidor que están utilizando en **nami** y que tienes configurado de manera adecuada el parámetro `search`.
+1. Entrega la configuración DNS de cada máquina: donde se compruebe que el servidor que están utilizando es **nami** y que tienes configurado de manera adecuada el parámetro `search`.
 2. Entrega la definición de las vistas y de las zonas.
 3. Entrega el resultado de las siguientes consultas desde **sanji**:
     * El servidor DNS con autoridad sobre la zona del dominio `tu_nombre.gonzalonazareno.org`.
