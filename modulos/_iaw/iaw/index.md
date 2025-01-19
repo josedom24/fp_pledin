@@ -27,10 +27,11 @@ title: "Implantación de aplicaciones web (2024-2025)"
 * [Artículo: Contenedores en instancias de OpenStack](https://www.josedomingo.org/pledin/2022/12/contenedores-instancias-openstack/)
 	* [Ejercicio 1: Introducción a los contenedores Docker](5_docker/ejercicio1.html)
 	* [Ejercicio 2: Imágenes Docker](5_docker/ejercicio2.html)
+	* [Taller 1: Almacenamiento y redes en Docker](5_docker/taller1.html)
 
 <!--
 
-	* [Taller 1: Almacenamiento y redes en Docker](5_docker/taller1.html)
+	
 	* [Taller 2: Escenarios multicontenedor en Docker](5_docker/taller2.html)
 	* [Taller 3: Creación de imágenes Docker](5_docker/taller3.html)
 * [Práctica 1: Implantación de aplicaciones web PHP en docker](5_docker/practica1.html)
