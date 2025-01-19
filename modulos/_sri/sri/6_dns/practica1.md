@@ -9,23 +9,16 @@ Vamos a instalar un servidor dns en **nami** que nos permita gestionar la resolu
 Hay que tener en cuenta los siguientes aspectos:
 
 1. El servidor DNS se va a configurar de la siguiente manera:
-
     * El servidor DNS se llama `nami.tu_nombre.gonzalonazareno.org` y va a ser el servidor con autoridad para la zona `tu_nombre.gonzalonazareno.org`.
     * El servidor debe resolver el nombre de todas las máquinas.
-    * El servidor debe resolver los distintos servicios (virtualhost, servidor de base de datos, servidor ldap, ...).
+    * En la siguiente parte de la práctica instalaremos un servidor web que llamaremos `www` en **zoro** y una base de datos que llamaremos `bd` en **sanji**.
     * Vamos a usar vistas en bind9, para que el nombre de `luffy` se corresponda con una ip distinta según desde se realice la consulta. Vamos a crear dos vistas, una para cuando se hacen consultas desde la **red_intra** y otra para cuando se hacen consultas desde la **red_dmz**.
-
     * Vamos a crear las zonas de resolución inversas correspondientes al direccionamiento de las redes privadas (`192.168.0.0/24` y `172.16.0.0/16`).
-
-    
 2. Configura como servidor DNS de nuestras máquinas a **nami**:
     * En los contenedores no hay problema ya que el direccionamiento es estático.
     * En `zoro` también podemos hacer el cambio de manera estática (investiga como hacer el cambio en Rocky Linux). 
     * En `luffy`: tenemos instalado `systemd-resolved`. Investiga como cambiar el servidor DNS cuando tenemos este sistema de resolución funcionando.
-
 3. Para que podamos usar los nombres cortos (por ejemplo, para hacer `ssh zoro`) es necesario que el parámetro `search` del fichero `/etc/resolv.conf` este configurado con nuestro nombre de dominio. Investiga como hacer el cambio del parámetro `search` en las distintas máquinas.
-
-4. En la siguiente parte de la práctica instalaremos un servidor web que llamaremos `www` en **zoro** y una base de datos que llamaremos `bd` en **sanji**.
 
 {% capture notice-text %}
 ## Entrega
