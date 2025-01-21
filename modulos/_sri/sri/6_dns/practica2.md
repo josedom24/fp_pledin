@@ -17,3 +17,17 @@ En `hela` vamos a instalar un servidor web apache. Configura el servidor para qu
 ## Servidor de base de datos
 
 En `loki` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este servidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
+
+{% capture notice-text %}
+## Entrega
+
+1. Entrega la definición de la nueva vista.
+2. Entrega el resultado de las siguientes consultas desde la máquina anfitriona, preguntando a nuestro servidor DNS `172.22.0.1`:
+    * El servidor DNS con autoridad sobre la zona del dominio `tu_nombre.gonzalonazareno.org`.
+    * La dirección IP de `luffy`.
+    * Una resolución de www.
+3. Realiza una consulta a tu DNS preguntando por el nombre de un dns de un compañero, para comprobar si se está comportando como DNS fordward/caché.
+4. Entrega el contenido del fichero de configuración de Wordpress (`wp-config.php`) para comprobar el nombre de la base de datos que has configurado.
+5. Entrega una captura de pantalla accediendo a `www.tunombre.gonzalonazareno.org` donde se vea el Wordpress.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
