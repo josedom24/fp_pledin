@@ -75,6 +75,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 3: Delegación de subdominios con bind9](6_dns/taller3.html)
 	* [Taller 4: Implementación de un DNS dinámico](6_dns/taller4.html)
 * [Práctica (1 / 2): Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack](6_dns/practica1.html)
+* [Práctica (2 / 2): Servidores Web, Base de Datos y DNS en nuestros escenario de OpenStack](6_dns/practica2.html)
 
 ## Unidad 5: Cloud Computing IaaS. OpenStack 
 
