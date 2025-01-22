@@ -12,11 +12,11 @@ title: "Práctica (2 / 2): Servidores Web, Base de Datos y DNS en nuestros escen
 
 ## Servidor Web
 
-En `hela` vamos a instalar un servidor web apache. Configura el servidor para que sea capaz de ejecutar código php. Investiga las reglas DNAT de cortafuegos que tienes que configurar en `luffy` para, cuando accedemos a la IP flotante/pública se acceda al servidor web. Instala un CMS WordPress que debe ser accesible con el nombre `www.tu_nombre.gonzalonazareno.org`.
+En `zoro` vamos a instalar un servidor web apache. Configura el servidor para que sea capaz de ejecutar código php. Investiga las reglas DNAT de cortafuegos que tienes que configurar en `luffy` para, cuando accedemos a la IP flotante/pública se acceda al servidor web. Instala un CMS WordPress que debe ser accesible con el nombre `www.tu_nombre.gonzalonazareno.org`.
 
 ## Servidor de base de datos
 
-En `loki` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este servidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
+En `samji` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este servidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
 
 {% capture notice-text %}
 ## Entrega
