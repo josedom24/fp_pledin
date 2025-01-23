@@ -74,7 +74,7 @@ title: "Resumen: Servidor de correos"
 
 * Protocolo para recibir correos:
     * **POP3**: Mail Delivery Agent [Agente de Entrega de Correo]. Protocolo para recuperar correos electrónicos de un MDA. Su principal característica es que se descargan todos los correos.
-    * **IMAP**: Internet Message Access Protocol [Protocolo de Acceso a Mensajes de Internet]. Prótocolo para recuperar correos electrónicos de un MDA. En este caso, se sincroniza el estado de los correos entre el servidor y el cliente.
+    * **IMAP**: Internet Message Access Protocol [Protocolo de Acceso a Mensajes de Internet]. Protocolo para recuperar correos electrónicos de un MDA. En este caso, se sincroniza el estado de los correos entre el servidor y el cliente.
 * **Vamos a trabajar con IMAP**.
 * La comunicación con estos protocolos es autentificada y debería ser cifrada.
 * Tipos de buzones:
