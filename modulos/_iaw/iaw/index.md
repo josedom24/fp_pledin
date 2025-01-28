@@ -30,6 +30,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Taller 1: Almacenamiento y redes en Docker](5_docker/taller1.html)
 	* [Taller 2: Escenarios multicontenedor en Docker](5_docker/taller2.html)
 	* [Taller 3: Creación de imágenes Docker](5_docker/taller3.html)
+	* [Taller 4: Construcción de imágenes configurables con variables de entorno](5_docker/taller4.html)
 
 <!--
 
