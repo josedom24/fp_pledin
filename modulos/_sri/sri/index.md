@@ -58,8 +58,8 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 ## Unidad 7: Servidor de correo electrónico
 
 * [Teoría](pdf/correo.pdf)	
-* [Resumen: Servidor de correos](7_correo/resumen.html)
 * [Curso Correo Electrónico](https://github.com/josedom24/curso_correo_electronico_ies)
+* [Resumen: Servidor de correos](7_correo/resumen.html)
 
 <!--
 	* [Taller 1: Servidor de correo en los servidores de clase](7_correo/taller1.html)
