@@ -1,5 +1,5 @@
 ---
-title: "teller 4: Construcción de imágenes configurables con variables de entorno"
+title: "Taller 4: Construcción de imágenes configurables con variables de entorno"
 ---
 
 en este taller vamos a hacer un ejercicio similar al mostrado en el apartado [Ejemplo 4: Construcción de imágenes configurables con variables de entorno](https://github.com/josedom24/curso_docker_ies/blob/main/modulo5/ejemplo4.md) del curso de Docker.
