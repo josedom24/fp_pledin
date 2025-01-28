@@ -4,7 +4,7 @@ title: "Taller 1: Servidor de correo en los servidores de clase"
 
 ## ¿Qué vas a aprender en este taller?
 
-* Instalar un servidor de correo postfix y configúrarlo de manera adecuada.
+* Instalar un servidor de correo postfix y configurarlo de manera adecuada.
 * Enviar correos entre usuarios del mismo servidor.
 * Enviar correos a usuarios externos.
 * Recibir correos de usuarios externos.
