@@ -24,7 +24,8 @@ INSERT INTO libros VALUES (5,'Don Quijote de la Mancha', 'Miguel de Cervantes', 
 
 La aplicación que queremos desplegar estaría guardada en el fichero `index.php`:
 
-```<?php
+```
+<?php
 // Variables
 $hostDB = getenv('DB_HOST');
 $nombreDB = getenv('DB_NAME');
