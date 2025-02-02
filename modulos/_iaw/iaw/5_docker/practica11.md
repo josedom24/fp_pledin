@@ -9,7 +9,7 @@ Queremos crear una imagen Docker para implantar dicha aplicación.
 Tenemos que tener en cuenta los siguientes aspectos:
 
 * Es necesario que nuestra aplicación guarde su información en un contenedor docker **mariadb**.
-* en la creación del contenedor, usando variables de entorno, se creará una base de datos, un usuario y su contraseña.
+* En la creación del contenedor de base de datos, usando variables de entorno, se creará una base de datos, un usuario y su contraseña.
 * El contenedor **mariadb** debe tener un volumen para guardar la base de datos.
 * Antes de generar la imagen, modifica el fichero `Config/Config.php` para que lea las variables de entorno. Para obtener las variables de entorno en PHP usar la función `getenv`. [Para más información](http://php.net/manual/es/function.getenv.php).
     Los cambios que tenemos que realizar para crear las constantes con el valor de las variables de entorno es la siguiente. Si tenemos en el fichero original:
@@ -38,7 +38,7 @@ Tenemos que tener en cuenta los siguientes aspectos:
 ## Creación de una imagen docker con una aplicación web desde una imagen base
 
 * Vamos a crear una imagen que se llame `usuario/biblioteca:v1`.
-* Crea una imagen docker con la aplicación desde una imagen base de debian o ubuntu.
+* Crea una imagen docker con la aplicación desde una imagen base de debian o ubuntu o desde una imagen php.
 * Está imagen debe tener apache2 instalado y todas las características indicadas anteriormente.
 
 {% capture notice-text %} 
