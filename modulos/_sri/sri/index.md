@@ -61,6 +61,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Curso Correo Electrónico](https://github.com/josedom24/curso_correo_electronico_ies)
 * [Resumen: Servidor de correos](7_correo/resumen.html)
 	* [Taller 1: Servidor de correo en los servidores de clase](7_correo/taller1.html)
+	* [Taller 2: Servidores satélites, alias y redirecciones](7_correo/taller2.html)
 	
 <!--
 	
