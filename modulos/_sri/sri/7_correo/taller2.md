@@ -31,8 +31,8 @@ Muchos de los servicios que podemos instalar en un servidor manda correos a usua
 * Durante la instalación puedes escoger estas opciones:
     * **Internet with smarthost**: Este servidor no envía directamente correo, siempre utiliza un relay. Este servidor puede recibir correo.
     * **Satellite system**: Igual que el anterior, pero no puede recibir correo del exterior.
-* Cuando se indica el nombre del sistema de correo en este tipo de servidor se suele poner **el nombre del equipo**. Por un lado porque así diferenciamos correos que vienen de otro servidor SMTP de otro servidor, y además como normalmente no recibe correos no es necesario hacer ninguna configuración adicional para que los correos lleguen a este servidor.
-* Durante la configuración os preguntara el servidor relay, para rellenar el parámetro `relay_host`, en nuestro caso, `sanji.tudominio.gonzalonazareno.org`.
+* Cuando se indica el nombre del sistema de correo en este tipo de servidor se suele poner **el nombre del equipo**. Por un lado porque así diferenciamos correos que vienen de otro servidor SMTP, y además como normalmente no recibe correos no es necesario hacer ninguna configuración adicional para que los correos lleguen a este servidor.
+* Durante la configuración os preguntará el servidor relay, para rellenar el parámetro `relay_host`, en nuestro caso, `sanji.tudominio.gonzalonazareno.org`.
 * Para que podamos usar nuestro servidor de correo `samji` desde otros servidores tenemos que darle permiso. Para ello añade en el parámetro `mynetworks` las redes desde las que podemos mandar correos.
 
 {% capture notice-text %}
