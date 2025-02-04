@@ -54,6 +54,15 @@ En el servidor de correos con el que estamos trabajando y has instalado el nuevo
 * Este correo crea una tarea cron definida en `/etc/cron.d/apticron`. Todos los días a una determinada hora te manda un correo con las actualizaciones de paquetes que tienes que hacer.
 * Si no quieres esperar a que se ejecuta la tarea del cron, puedes ejecutar el servicio manualmente `sudo apticron`.
 
+### Si apticron no envía correo
+
+Si tienes los paquetes actualizados `apticron` no envía correos. Para simular el envío de correo a `root` vamos a usar el cron. Edita el cron con `sudo crontab -e` y pon lo siguiente:
+
+```
+MAILTO="root"
+* * * * * echo "Message from cron"
+```
+
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
