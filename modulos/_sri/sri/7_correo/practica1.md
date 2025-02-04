@@ -2,7 +2,7 @@
 title: "Práctica (1 / 2): Servidor de correos"
 ---
 
-Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será `mail.tudominio.es` (este es el nombre que deberá aparecer en el registro MX).
+Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será `nompre_vps.tudominio.algo` (este es el nombre que deberá aparecer en el registro MX).
 
 ## Gestión de correos desde el servidor
 
@@ -15,7 +15,7 @@ El envío y recepción se hará desde el servidor usando la herramienta `mail`. 
 * Realiza un envío de correo desde tu servidor al exterior.
 * Envía un correo desde el exterior (gmail, hotmail,...) a tu servidor local. 
 * **Optativo**: Vamos a configurar distintas mediadas para luchar contra el SPAM:
-    * Configura de manera adecuada Postfix para que tenga en cuenta el registro SPF de los correos que recibes (no hace falta configarar la comprobación de DKIM porque se hace automáticamente). 
+    * Configura de manera adecuada Postfix para que tenga en cuenta el registro SPF de los correos que recibes (no hace falta configurar la comprobación de DKIM porque se hace automáticamente). 
     * Configura un sistema antispam. 
     * Si tu VPS tiene más de 1Gb de RAM, instala un antivirus.
 
