@@ -59,7 +59,7 @@ En el servidor de correos con el que estamos trabajando y has instalado el nuevo
 Si tienes los paquetes actualizados `apticron` no envía correos. Para simular el envío de correo a `root` vamos a usar el cron. Edita el cron con `sudo crontab -e` y pon lo siguiente:
 
 ```
-MAILTO="root"
+MAILTO="root@localhost"
 * * * * * echo "Message from cron"
 ```
 
