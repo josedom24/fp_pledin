@@ -19,14 +19,6 @@ El envío y recepción se hará desde el servidor usando la herramienta `mail`. 
     * Configura un sistema antispam. 
     * Si tu VPS tiene más de 1Gb de RAM, instala un antivirus.
 
-## Para luchar contra el SPAM
-
-* **Tarea 6 (No obligatorio)**:
-
-* **Tarea 7 (No obligatoria)**: 
-
-* **Tarea 8 (No obligatoria)**: Configura un sistema antivirus. Realiza comprobaciones para comprobarlo. 
-
 {% capture notice-text %}
 ## Entrega
 
