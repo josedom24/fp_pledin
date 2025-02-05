@@ -1,5 +1,5 @@
 ---
-title: "Práctica (1 / 2): Servidor de correos"
+title: "Práctica (1 / 2): Instalación y configuración de un servidor de correos en el VPS"
 ---
 
 Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será `nompre_vps.tudominio.algo` (este es el nombre que deberá aparecer en el registro MX).

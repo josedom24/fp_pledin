@@ -62,11 +62,7 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Resumen: Servidor de correos](7_correo/resumen.html)
 	* [Taller 1: Servidor de correo en los servidores de clase](7_correo/taller1.html)
 	* [Taller 2: Servidores satélites, alias y redirecciones](7_correo/taller2.html)
-	
-<!--
-	
-* [Práctica: Instalación y configuración de un servidor de correos en el VPS](7_correo/practica.html)
--->
+* [Práctica (1 / 2): Instalación y configuración de un servidor de correos en el VPS](7_correo/practica1.html)	
 
 ## Unidad 6: Protocolo DNS
 

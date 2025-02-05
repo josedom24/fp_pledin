@@ -1,5 +1,5 @@
 ---
-title: "Práctica (2 / 2): Servidor de correos"
+title: "Práctica (2 / 2): Instalación y configuración de un servidor de correos en el VPS"
 ---
 
 ## Gestión de correos desde un cliente
