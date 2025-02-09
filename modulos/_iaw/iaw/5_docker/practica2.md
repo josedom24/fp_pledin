@@ -2,12 +2,13 @@
 title: "Práctica: Implantación de aplicaciones web Python en docker"
 ---
 
-Queremos desplegar en docker la aplicación escrita en python django: **Django Publicaciones** [django_publicaciones](https://github.com/josedom24/django_publicaciones), que desplegamos en la tarea Despliegue de aplicaciones python.
+Queremos desplegar en docker la aplicación escrita en python django: **Django Publicaciones** [django_publicaciones](https://github.com/josedom24/django_publicaciones). Si quieres puedes hacer un fork para modificar los ficheros del repositorio.
 
 Tienes que tener en cuenta los siguientes aspectos:
 
 * La aplicación debe guardar los datos en una base de datos mariadb persistente.
 * La aplicación se podrá configurar para indicar los parámetros de conexión a la base de datos: usuario, contraseña, host y base de datos.
+* Durante la construcción de la imagen se deberá clonar tu fork del repsoitorio 
 * La aplicación deberá tener creado un usuario administrador para el acceso.
 
 {% capture notice-text %}
