@@ -27,7 +27,7 @@ Ahora vamos a usar un cliente de correo para enviar y recibir correos usando nue
 ## Entrega
 
 1. Indica qué método has usado para recibir el correo de forma autentificada y cifrada. Detalla la configuración que has realizado. Muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes leer los correos enviado a tu usuario.
-2.Indica que método has usado para enviar correo de forma autentificada y cifrada. Detalla la configuración que has realizado. Muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes enviar los correos.
+2. Indica que método has usado para enviar correo de forma autentificada y cifrada. Detalla la configuración que has realizado. Muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes enviar los correos.
 3. Muestra el método de instalación del cliente webmail. Realiza una prueba de envío y recepción de correos con el webmail.
 4. Captura la pantalla del envío de correo al página mail-tester mostrando la puntuación que has sacado.
 5. Si has hecho la parte optativa: Usando el ejemplo de correo SPAM que hemos visto en clase, mándatelo y demuestra que tu servidor lo ha marcado como SPAM.
