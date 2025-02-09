@@ -26,7 +26,7 @@ Despliega la aplicación **rock-paper-scissors** en este contenedor con tomcat.
 
 Cuando trabajamos con tomcat no se accedemos directamente al servidor de aplicaciones, se instala un proxy inverso que nos permita el acceso a las aplicaciones. 
 
-Vamos a instalar un proxy inverso en un contenedor docker con la imagen `nginx`. En el contenedor vamos a montar con bind mount el fichero de configuración de nginx. Puedes ver un ejemplo en el artículo [Despliegue de Apache Tomcat + nginx](https://github.com/josedom24/curso_docker_ow/blob/main/contenido/modulo6/ejemplo4.md). Tienes que configurar el proxy inverso para acceder a las aplicaciones con las siguientes urls:
+Vamos a instalar un proxy inverso en un contenedor docker con la imagen `nginx`. En el contenedor vamos a montar con bind mount el fichero de configuración de nginx. Puedes ver un ejemplo en el artículo [Ejemplo 4: Despliegue de tomcat + nginx](https://github.com/josedom24/curso_docker_ies/blob/main/modulo4/tomcat.md). Tienes que configurar el proxy inverso para acceder a las aplicaciones con las siguientes urls:
 
 * A la aplicación **rock-paper-scissors** se accede con la url `java.tunombre.org/game`.
 * A la aplicación **OpenCMS** se accede con la url `java.tunombre.org`.
