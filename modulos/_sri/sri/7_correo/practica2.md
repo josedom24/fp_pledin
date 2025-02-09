@@ -19,12 +19,17 @@ Ahora vamos a usar un cliente de correo para enviar y recibir correos usando nue
     Elige una de las opciones anterior para realizar el cifrado. Y
 * Configura un cliente webmail (puedes usar docker) para el envío y recepción de correos. 
 * Prueba de envío de correo. En esta [página](https://www.mail-tester.com/) tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. 
+* **Optativo**: 
+    * Configura un sistema antispam. 
+    * Si tu VPS tiene más de 1Gb de RAM, instala un antivirus.
 
 {% capture notice-text %}
 ## Entrega
 
 1. Indica qué método has usado para recibir el correo de forma autentificada y cifrada. Detalla la configuración que has realizado. Muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes leer los correos enviado a tu usuario.
 2.Indica que método has usado para enviar correo de forma autentificada y cifrada. Detalla la configuración que has realizado. Muestra la configuración de un cliente de correo (evolution, thunderbird, ...) y muestra como puedes enviar los correos.
-3. Muestra el método de instalación del cliente webmail. Realiza una prueba de envío y recpción de correos con el webmail.
+3. Muestra el método de instalación del cliente webmail. Realiza una prueba de envío y recepción de correos con el webmail.
 4. Captura la pantalla del envío de correo al página mail-tester mostrando la puntuación que has sacado.
+5. Si has hecho la parte optativa: Usando el ejemplo de correo SPAM que hemos visto en clase, mándatelo y demuestra que tu servidor lo ha marcado como SPAM.
+6. Si has hecho la parte optativa: Usando el ejemplo de correo con virus que hemos visto en clase, mándatelo y demuestra que tu servidor lo ha detectado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
