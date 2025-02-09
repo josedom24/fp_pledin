@@ -8,7 +8,7 @@ Tienes que tener en cuenta los siguientes aspectos:
 
 * La aplicación debe guardar los datos en una base de datos mariadb persistente.
 * La aplicación se podrá configurar para indicar los parámetros de conexión a la base de datos: usuario, contraseña, host y base de datos.
-* Durante la construcción de la imagen se deberá clonar tu fork del repsoitorio 
+* Durante la construcción de la imagen se deberá clonar tu fork del repositorio para copiarlo al contenedor durante su construcción.
 * La aplicación deberá tener creado un usuario administrador para el acceso.
 
 {% capture notice-text %}
