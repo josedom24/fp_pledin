@@ -33,18 +33,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Taller 4: Construcción de imágenes configurables con variables de entorno](5_docker/taller4.html)
 * [Práctica 1 (1 / 2): Implantación de aplicaciones web PHP en docker](5_docker/practica11.html)
 * [Práctica 1 (2 / 2): Implantación de aplicaciones web PHP en docker](5_docker/practica12.html)
-
-
-<!--
-
-	
-
-	
-
 * [Práctica 2: Implantación de aplicaciones web Python en docker](5_docker/practica2.html)
-
--->
-
 
 ## Unidad 4: Implantación de aplicaciones web Java
 
