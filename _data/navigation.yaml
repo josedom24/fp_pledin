@@ -99,12 +99,8 @@ sri:
         url: /sri/#unidad-6-protocolo-dns
       - title: Correo
         url: /sri/#unidad-7-servidor-de-correo-electr%C3%B3nico
-#      - title: Almacenamiento
-#        url: /sri/#unidad-7-almacenamiento
-#      - title: Kubernetes
-#        url: /sri/#unidad-8-kubernetes
-#      - title: Alta Disponibilidad
-#        url: /sri/#unidad-9-cl%C3%BAster-de-alta-disponibilidad
+      - title: Kubernetes
+        url: /sri/#unidad-8-kubernetes
 #
 
 
