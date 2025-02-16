@@ -2,20 +2,20 @@
 title: "Implantación de aplicaciones web (2024-2025)"
 ---
 
-## Unidad 5: Introducción a la integración continúa y despliegue continuo 
+## Unidad 6: Introducción a la integración continúa y despliegue continuo 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/ic.pdf)
-	* [Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)](5_ic/ejercicio1.html)
-	* [Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](5_ic/ejercicio2.html)
+	* [Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)](6_ic/ejercicio1.html)
+	* [Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](6_ic/ejercicio2.html)
 
 
 
 <!--
-* [Introducción a Jenkins](5_ic/jenkins)
-	* [Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)](5_ic/taller1.html)
-	* [Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)](5_ic/taller2.html)
-	* [Taller 3: Integración continua de aplicación django con Jenkins (Test)](5_ic/taller3.html)
-* [Práctica: IC/DC con Jenkins](5_ic/practica.html)
+* [Introducción a Jenkins](6_ic/jenkins)
+	* [Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)](6_ic/taller1.html)
+	* [Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)](6_ic/taller2.html)
+	* [Taller 3: Integración continua de aplicación django con Jenkins (Test)](6_ic/taller3.html)
+* [Práctica: IC/DC con Jenkins](6_ic/practica.html)
 
 -->
 
