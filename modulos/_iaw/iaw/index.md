@@ -10,7 +10,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 
 
 
-<!-->
+<!--
 * [Introducción a Jenkins](5_ic/jenkins)
 	* [Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)](5_ic/taller1.html)
 	* [Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)](5_ic/taller2.html)
