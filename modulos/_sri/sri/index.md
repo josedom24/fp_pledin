@@ -6,11 +6,11 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
 * [Curso Kubernetes](https://github.com/josedom24/curso_kubernetes_ies)
-
+	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
 
 
 <!--
-	* [Ejercicio 1: Instalación y configuración de minikube y kubectl](8_k8s/ejercicio1.html)
+	
 	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
 	* [Taller 1: Trabajando con Pods](8_k8s/taller1.html)
 	* [Taller 2: Trabajando con ReplicaSet](8_k8s/taller2.html)

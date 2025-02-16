@@ -2,15 +2,15 @@
 title: "Implantación de aplicaciones web (2024-2025)"
 ---
 
-<!--
-
-
-
 ## Unidad 5: Introducción a la integración continúa y despliegue continuo 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/ic.pdf)
 	* [Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)](5_ic/ejercicio1.html)
 	* [Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](5_ic/ejercicio2.html)
+
+
+
+<!-->
 * [Introducción a Jenkins](5_ic/jenkins)
 	* [Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)](5_ic/taller1.html)
 	* [Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)](5_ic/taller2.html)
