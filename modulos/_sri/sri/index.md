@@ -10,11 +10,12 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 	* [Taller 1: Trabajando con Pods](8_k8s/taller1.html)
 	* [Ejercicio 2: Trabajando con un Pod multicontenedor (**VOLUNTARIO**)](8_k8s/ejercicio2.html)
 	* [Taller 2: Trabajando con ReplicaSet](8_k8s/taller2.html)
+	* [Taller 3: Trabajando con Deployments](8_k8s/taller3.html)
 	
 <!--
 	
 	
-	* [Taller 3: Trabajando con Deployments](8_k8s/taller3.html)
+	
 	* [Taller 4: Trabajando con Services](8_k8s/taller4.html)
 	* [Taller 5: Despliegues parametrizados](8_k8s/taller5.html)
 	* [Taller 6: Almacenamiento en Kubernetes](8_k8s/taller6.html)
