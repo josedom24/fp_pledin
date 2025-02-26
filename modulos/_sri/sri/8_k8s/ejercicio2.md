@@ -57,7 +57,7 @@ spec:
     command: ["/bin/sh", "-c"]
     args:
       - while true; do
-          date >> /html/index.html;
+          date > /html/index.html;
           sleep 1;
         done
 ```

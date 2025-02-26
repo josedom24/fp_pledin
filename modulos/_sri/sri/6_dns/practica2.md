@@ -16,7 +16,7 @@ En `zoro` vamos a instalar un servidor web apache. Configura el servidor para qu
 
 ## Servidor de base de datos
 
-En `samji` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este servidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
+En `sanji` vamos a instalar un servidor de base de datos mariadb (`bd.tu_nombre.gonzalonazareno.org`). A este servidor de base de datos se debe permitir el acceso desde todas las máquinas del escenario.
 
 {% capture notice-text %}
 ## Entrega

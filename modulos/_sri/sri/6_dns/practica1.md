@@ -33,6 +33,6 @@ Hay que tener en cuenta los siguientes aspectos:
     * Un resolución inversa de IP fija en cada una de las redes.
 4. Entrega el resultado de las siguientes consultas desde **zoro**:
     * La dirección IP de `luffy`.
-5. Desde `luffy` entrega la salida de `ping zoro` y `ssh samji` para comprobar que funcionan los nombres cortos en la resolución.
+5. Desde `luffy` entrega la salida de `ping zoro` y `ssh sanji` para comprobar que funcionan los nombres cortos en la resolución.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
