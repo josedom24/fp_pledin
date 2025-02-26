@@ -11,14 +11,7 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Taller 1: Corrector ortográfico de documentos markdown con Jenkins (test)](6_ic/taller1.html)
 	* [Taller 2: Comprobación de HTML5 válido y despliegue en surge.sh con Jenkins (test y deploy)](6_ic/taller2.html)
 	* [Taller 3: Integración continua de aplicación django con Jenkins (Test)](6_ic/taller3.html)
-
-<!--
-
-	
 * [Práctica: IC/DC con Jenkins](6_ic/practica.html)
-
--->
-
 
 ## Unidad 5: Docker
 
