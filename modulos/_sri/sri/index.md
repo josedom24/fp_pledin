@@ -7,8 +7,8 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 1: Instalación y creación de una máquina virtual con virt-manager](2526/u1/clase1.html)
 * [Clase 2: Gestión de redes con virt-manager](2526/u1/clase2.html)
 * [Clase 3: Configuración de red y DNS en sistemas Linux](2526/u1/clase3.html)
-* [Clase 4: Configuración básica de un servidor](2526/u1/clase4.md)
-* [Clase 5: Tarea - Configuración de un router (SNAT y DNAT)](2526/u1/clase5.md)
+* [Clase 4: Configuración básica de un servidor](2526/u1/clase4.html)
+* [Clase 5: Tarea - Configuración de un router (SNAT y DNAT)](2526/u1/clase5.html)
 
 
 ## Unidad 2: Servidor DHCP
