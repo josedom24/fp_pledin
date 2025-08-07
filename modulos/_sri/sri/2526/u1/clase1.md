@@ -80,6 +80,10 @@ title: "Clase 1: Instalación y creación de una máquina virtual con virt-manag
 ## Recursos
 
 * Curso completo: [Introducción a la virtualización con KVM/libvirt usando virt-manager](https://github.com/josedom24/curso_kvm_ow/tree/main/curso1)
+* En concreto los apartados:
+  * Introducción a la virtualización con KVM/libvirt
+  * Introducción a virt-manager
+  * Creación de máquinas virtuales con virt-manager
 
 ## Ejercicio
 
