@@ -1,5 +1,5 @@
 ---
-title: "Clase 5: Tarea - Configuración de un router (SNAT y DNAT)
+title: "Clase 5: Tarea - Configuración de un router (SNAT y DNAT)"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
