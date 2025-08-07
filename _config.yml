@@ -94,13 +94,13 @@ collections:
 #    output: true
 #    permalink: /:path
 
-  iaw2324:
-    output: true
-    permalink: /:path
+#  iaw2324:
+#    output: true
+#    permalink: /:path
 
-  sri2324:
-    output: true
-    permalink: /:path
+#  sri2324:
+#    output: true
+#    permalink: /:path
 
   sri:
     output: true
@@ -110,9 +110,13 @@ collections:
     output: true
     permalink: /:path
 
-  #hlc:
-  #  output: true
-  #  permalink: /:path
+#  hlc:
+#    output: true
+#    permalink: /:path
+
+  iv:
+    output: true
+    permalink: /:path
 
 
 collections_dir: modulos
@@ -229,31 +233,31 @@ defaults:
       sidebar:
         nav: "sri"
 
-  - scope:
-      path: ""
-      type: iaw2324
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "iaw2324"
+#  - scope:
+#      path: ""
+#      type: iaw2324
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "iaw2324"
 
-  - scope:
-      path: ""
-      type: sri2324
-    values:
-      layout: single2
-      classes: wide
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "sri2324"
+#  - scope:
+#      path: ""
+#      type: sri2324
+#    values:
+#      layout: single2
+#      classes: wide
+#      read_time: false
+#      author_profile: false
+#      share: false
+#      comments: false
+#      sidebar:
+#        nav: "sri2324"
 
   - scope:
       path: ""
@@ -281,3 +285,16 @@ defaults:
   #    sidebar:
   #      nav: "hlc"
 #
+
+  - scope:
+      path: ""
+      type: iv
+    values:
+      layout: single2
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "iv"
