@@ -81,27 +81,27 @@ iaw2324:
 
 
 sri:
-  - title: Servicios de Red e Internet + HLC (2024-2025)
+  - title: Servicios de Red e Internet (2025-2026)
     children:
       - title: "Inicio"
         url: /sri/
-      - title: "Virtualización en Linux"
-        url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux
-      - title: DHCP
-        url: /sri/#unidad-2-protocolo-dhcp
-      - title: Infraestructura como código
-        url: /sri/#unidad-3-infraestructura-como-c%C3%B3digo
-      - title: HTTP
-        url: /sri/#unidad-4-protocolo-http
-      - title: IaaS
-        url: /sri/#unidad-5-cloud-computing-iaas-openstack
-      - title: DNS
-        url: /sri/#unidad-6-protocolo-dns
-      - title: Correo
-        url: /sri/#unidad-7-servidor-de-correo-electr%C3%B3nico
-      - title: Kubernetes
-        url: /sri/#unidad-8-kubernetes
-#
+#      - title: "Virtualización en Linux"
+#        url: /sri/#unidad-1-virtualizaci%C3%B3n-en-linux
+#      - title: DHCP
+#        url: /sri/#unidad-2-protocolo-dhcp
+#      - title: Infraestructura como código
+#        url: /sri/#unidad-3-infraestructura-como-c%C3%B3digo
+#      - title: HTTP
+#        url: /sri/#unidad-4-protocolo-http
+#      - title: IaaS
+#        url: /sri/#unidad-5-cloud-computing-iaas-openstack
+#      - title: DNS
+#        url: /sri/#unidad-6-protocolo-dns
+#      - title: Correo
+#        url: /sri/#unidad-7-servidor-de-correo-electr%C3%B3nico
+#      - title: Kubernetes
+#        url: /sri/#unidad-8-kubernetes
+##
 
 
 sri2324:
