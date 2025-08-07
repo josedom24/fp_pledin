@@ -1,59 +1,105 @@
 ---
-title: "Clase 4: Configuración de un router (SNAT y DNAT)
+title: "Clase 4: Configuración básica de un servidor"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
 
-* Realiza la configuración de un router Linux
-* Activar el reenvío de paquetes.
-* Configurar reglas SNAT y DNAT.
+* Configurar el acceso por SHH con clave pública.
+* Configuración de la herramienta `sudo`.
+* Configuración del hostname y el FQDN del sistema. 
 
 ## Teoría
 
-* **¿Para qué se usa un router Linux?**
+* **Acceso por SSH con clave pública**
 
-* Para **conectar dos o más redes** y permitir el **enrutamiento de paquetes** entre ellas.
-* Útil en redes domésticas, laboratorios o firewalls personalizados.
-* Puede realizar funciones como:
-  * NAT (traducción de direcciones).
-  * Filtrado de paquetes.
-  * Redirección de puertos.
-  * Compartir conexión a Internet.
+    * **Objetivo:** Establecer conexión segura sin necesidad de contraseña, usando un par de claves pública/privada.
+    * Pasos en el cliente (máquina desde la que te conectas):
+        1. **Generar un par de claves (si no tienes):**
+           ```bash
+           ssh-keygen
+           ```
+           * Guarda por defecto en `~/.ssh/id_rsa` (clave privada) y `~/.ssh/id_rsa.pub` (clave pública).
 
-* **Habilitar el reenvío de IPs (IP Forwarding)**: Permite que el kernel reenvíe paquetes entre interfaces de red.
-    * Comando temporal: `echo 1 > /proc/sys/net/ipv4/ip_forward`
-    * Para hacerlo **persistente**:  Editar el archivo `/etc/sysctl.conf` y añadir o descomentar `net.ipv4.ip_forward = 1`. Y ejecutar: `sysctl -p`.
-* **SNAT (Source NAT)**: Se usa para **salir a Internet** desde una red local con IPs privadas. Cambia la **IP de origen** de los paquetes por la IP pública del router.
+        2. **Copiar la clave pública al servidor:**
 
-    * Con `iptables`:
+           ```bash
+           ssh-copy-id usuario@servidor
+           ```
 
-    ```bash
-    iptables -t nat -A POSTROUTING -o eth0 -s 192.168.0.0/24 -j SNAT --to-source 192.0.2.1
-    ```
+           * Alternativa manual: copiar el contenido de `~/.ssh/id_rsa.pub` al archivo `~/.ssh/authorized_keys` del usuario en el servidor.
 
-    * `eth0`: interfaz de salida (por ejemplo, hacia Internet).
-    * `-s`: Se indica la red desde la que queremos tener acceso a internet.
-    * `192.0.2.1`: IP pública del router.
+* **Configuración de `sudo`**
 
-    * Alternativa más sencilla (masquerade) si se usa IP dinámica:
+    * **Objetivo:** Permitir a ciertos usuarios ejecutar comandos como superusuario (`root`) sin iniciar sesión como tal.
 
-    ```bash
-    iptables -t nat -A POSTROUTING -o eth0 -s 192.168.0.0/24 -j MASQUERADE
-    ```
-* **DNAT (Destination NAT)**: Se usa para **redirigir tráfico entrante** desde el exterior a una máquina interna. Cambia la **IP de destino** de los paquetes.
-    * Con `iptables`:
+    * Añadir un usuario al grupo `sudo` (Debian/Ubuntu):
 
-      ```bash
-      iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination 192.168.1.100:80
-      ```
+        1. Agregar usuario al grupo:
 
-    * Redirige el puerto 80 entrante a una máquina interna con IP 192.168.1.100.
+           ```bash
+           sudo usermod -aG sudo nombre_usuario
+           ```
 
+        2. Cerrar sesión y volver a iniciar para que el cambio surta efecto.
 
-* **Hacer reglas `iptables` persistentes**: Las reglas de `iptables` no sobreviven a un reinicio, se deben guardar. Lo más sencillo para hacerla persistente es usar el paquete `iptables-persistent` (Debian/Ubuntu):
-    * Guarda las reglas actuales:
+    * Editar configuración avanzada de `sudo`:
 
-    ```bash
-    iptables-save > /etc/iptables/rules.v4
-    ```
-    * Se restauran automáticamente al iniciar el sistema.
+        1. **Editar el archivo de configuración:**
+
+           ```bash
+           sudo visudo
+           ```
+
+           * Ejemplos dentro de visudo:
+
+             ```plaintext
+             nombre_usuario ALL=(ALL) NOPASSWD:ALL   # Ejecuta sudo sin contraseña
+             ```
+
+             ```plaintext
+             %admin ALL=(ALL) ALL                    # El grupo "admin" puede usar sudo
+             ```
+
+        2. **Archivos adicionales:**
+            * También se pueden añadir configuraciones personalizadas en `/etc/sudoers.d/`.
+
+* Configuración del `hostname` (nombre del sistema)
+
+    * **Objetivo:** Establecer correctamente el nombre del host para que el sistema se identifique correctamente en la red.
+    * Tu máquina tendrá un nombre en tu dominio (FQDN), por ejemplo: `sauron.mordor.com`.
+    * Establecer el hostname permanente:
+
+        1. **Editar el archivo `/etc/hostname`:**
+
+           * Contiene solo el nombre del host (una línea):
+
+             ```plaintext
+             sauron
+             ```
+
+        2. **Editar el archivo `/etc/hosts`:**
+
+            * Para configurar de forma adecuada el FQDN crea una línea en el fichero `/etc/hosts` donde identificas el nombre completo y el nombre corto. Por ejemplo:
+
+    	    ```
+    	    127.0.1.1	sauron.mordor.com sauron
+    	    ```
+
+        3. **Aplicar el cambio sin reiniciar (temporal):**
+
+           ```bash
+           sudo hostnamectl set-hostname sauron.mordor.com
+        ```
+        **Recordatorio**: `hostnamectl` cambia el hostname, pero NO actualiza `/etc/hosts`. Es responsabilidad del administrador editarlo manualmente para garantizar la resolución local del FQDN.
+
+    * Comprobar el hostname:
+        * `hostname`: Muestra el hostname.
+        * `hostname -f`: Ver el nombre de dominio completo (FQDN).
+        * `hostnamectl status`: Muestra todos los nombres configurados.
+
+## Ejercicio
+
+1. Crea una clave SSH, si na la tienes ya, y configura un servidor Linux para el acceso con el usuario `admin`` con clave SSH para que no te pida la contraseña.
+2. Añade el usuario `admin` al sudo para que pueda ejecutarlo sin que te pida la contraseña.
+3. Configura de manera adecuada el FQDN para que sea del tipo: `servidor.tunombre.org`.
+
