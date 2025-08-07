@@ -64,3 +64,33 @@ title: "Clase 5: Tarea - Configuración de un router (SNAT y DNAT)"
 
 ## Ejercicio
 
+Crea un escenario similar al que encuentras en el Ejemplo 3:
+
+![router](img/router.png)
+
+Llamaremos a las máquinas de la siguiente manera: 
+
+* La máquina router/nat la llamaremos `router.tunombre.org`.
+* La máquina interna la llamaremos `interna.tunombre.org`.
+
+Realiza las siguientes tareas:
+
+1. Configura de forma estática las interfaces de red de las máquinas que están conectas a la red muy aisladas, comprueba que hay conectividad entre ellas.
+2. Configura el FQDN de forma correcta en las dos máquinas.
+3. Crea un usuario llamado `tunombre` que tenga permisos para ejecutar `sudo` sin que te pida contraseña en las dos máquinas.
+4. Configura el acceso a las dos máquinas por shh con tu clave pública para acceder con el usuario que has creado. Investiga el uso de `ssh -A` para acceder a la máquina interna desde el exterior. 
+5. Configura la máquina router para que permita que la máquina interna tenga acceso a internet. Las reglas que has configurado deben ser persistentes.
+6. Instala un servidor web en la máquina interna: `sudo apt install apache2`. Crea la regla necesaria para acceder desde el exterior al servidor web con un navegador. Usa resolución estática para acceder a la página web usando el nombre `www.tunombre.org`.
+
+{% capture notice-text %}
+## Entrega
+
+1. Configuración de red de las dos máquinas. Comprobación de que las máquinas hacen ping.
+2. Comprobación de que el nombre FQDN está bien configurado.
+3. Comprobación de que al ejecutar sudo no se pide la contraseña.
+4. Comprobación del acceso a las dos máquinas con ssh.
+5. Comprobación de que la máquina interna tiene acceso a internet y resolución DNS.
+6. Comprobación del acceso a la página web con un navegador desde el exterior.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
