@@ -77,9 +77,7 @@ title: "Clase 4: Configuración básica de un servidor"
 
         2. **Editar el archivo `/etc/hosts`:** Para configurar de forma adecuada el FQDN crea una línea en el fichero `/etc/hosts` donde identificas el nombre completo y el nombre corto. Por ejemplo:
 
-    	    ```plaintext
-    	    127.0.1.1	sauron.mordor.com sauron
-    	    ```
+                127.0.1.1	sauron.mordor.com sauron
 
         3. **Aplicar el cambio sin reiniciar (temporal):**
 
