@@ -90,7 +90,7 @@ title: "Clase 4: Configuración básica de un servidor"
                 ```bash
                 sudo hostnamectl set-hostname sauron.mordor.com
                  ```
-                 
+
         **Recordatorio**: `hostnamectl` cambia el hostname, pero NO actualiza `/etc/hosts`. Es responsabilidad del administrador editarlo manualmente para garantizar la resolución local del FQDN.
 
     * Comprobar el hostname:
@@ -100,7 +100,7 @@ title: "Clase 4: Configuración básica de un servidor"
 
 ## Ejercicio
 
-1. Crea una clave SSH, si na la tienes ya, y configura un servidor Linux para el acceso con el usuario `admin`` con clave SSH para que no te pida la contraseña.
+1. Crea una clave SSH, si no la tienes ya, y configura un servidor Linux para el acceso con el usuario `admin` con clave SSH para que no te pida la contraseña.
 2. Añade el usuario `admin` al sudo para que pueda ejecutarlo sin que te pida la contraseña.
 3. Configura de manera adecuada el FQDN para que sea del tipo: `servidor.tunombre.org`.
 
