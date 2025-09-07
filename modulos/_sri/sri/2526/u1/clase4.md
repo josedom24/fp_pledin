@@ -69,19 +69,15 @@ title: "Clase 4: Configuración básica de un servidor"
     * Tu máquina tendrá un nombre en tu dominio (FQDN), por ejemplo: `sauron.mordor.com`.
     * Establecer el hostname permanente:
 
-        1. **Editar el archivo `/etc/hostname`:**
-
-           * Contiene solo el nombre del host (una línea):
+        1. **Editar el archivo `/etc/hostname`:** Contiene solo el nombre del host (una línea):
 
              ```plaintext
              sauron
              ```
 
-        2. **Editar el archivo `/etc/hosts`:**
+        2. **Editar el archivo `/etc/hosts`:** Para configurar de forma adecuada el FQDN crea una línea en el fichero `/etc/hosts` donde identificas el nombre completo y el nombre corto. Por ejemplo:
 
-            * Para configurar de forma adecuada el FQDN crea una línea en el fichero `/etc/hosts` donde identificas el nombre completo y el nombre corto. Por ejemplo:
-
-    	    ```
+    	    ```plaintext
     	    127.0.1.1	sauron.mordor.com sauron
     	    ```
 
