@@ -81,17 +81,17 @@ title: "Clase 4: Configuración básica de un servidor"
 
             * Para configurar de forma adecuada el FQDN crea una línea en el fichero `/etc/hosts` donde identificas el nombre completo y el nombre corto. Por ejemplo:
 
-    	        ```
-    	        127.0.1.1	sauron.mordor.com sauron
-    	        ```
+    	    ```
+    	    127.0.1.1	sauron.mordor.com sauron
+    	    ```
 
         3. **Aplicar el cambio sin reiniciar (temporal):**
 
-                ```bash
-                sudo hostnamectl set-hostname sauron.mordor.com
-                 ```
+            ```bash
+            sudo hostnamectl set-hostname sauron.mordor.com
+            ```
 
-        **Recordatorio**: `hostnamectl` cambia el hostname, pero NO actualiza `/etc/hosts`. Es responsabilidad del administrador editarlo manualmente para garantizar la resolución local del FQDN.
+    * **Recordatorio**: `hostnamectl` cambia el hostname, pero NO actualiza `/etc/hosts`. Es responsabilidad del administrador editarlo manualmente para garantizar la resolución local del FQDN.
 
     * Comprobar el hostname:
         * `hostname`: Muestra el hostname.
