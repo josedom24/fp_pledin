@@ -10,8 +10,6 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
 ## Teoría
 
-### Infraestructura como código
-
 **Infraestructura como Código (IaC)** es la práctica de **definir y gestionar la infraestructura de TI (servidores, redes, bases de datos, etc.) mediante archivos de configuración legibles por máquina**, en lugar de configurarla manualmente. Dos tipos de programas:
 
 * **Software de Orquestación**: Nos permiten **programar la creación de escenarios**. Por ejemplo: **vagrant**.
