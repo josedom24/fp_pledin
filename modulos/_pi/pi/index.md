@@ -4,7 +4,7 @@ title: "Proyecto intermodular (2025-2026)"
 
 ## Proyecto 1: Infraestructura como código
 
-* [Introducción a ansible. Playbook sencillo](2526/u1/clase1.md)
+* [Clase 1: Introducción a ansible. Playbook sencillo](2526/u1/clase1.md)
 
 <!--
 

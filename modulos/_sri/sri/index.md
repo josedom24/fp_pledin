@@ -5,7 +5,10 @@ title: "Servicios de Red e Internet (2025-2026)"
 ## Unidad 1: Introducción a la virtualización Linux
 
 * [Clase 1: Instalación y creación de una máquina virtual con virt-manager](2526/u1/clase1.html)
-
+* Clase 2: Gestión de redes con virt-manager
+* Clase 3: Configuración de red y DNS en sistemas Linux
+* Clase 4: Configuración básica de un servidor
+* Clase 5: Tarea - Configuración de un router (SNAT y DNAT)
 
 <!--
 

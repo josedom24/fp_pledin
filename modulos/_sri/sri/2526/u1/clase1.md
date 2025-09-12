@@ -88,10 +88,10 @@ title: "Clase 1: Instalación y creación de una máquina virtual con virt-manag
 ## Ejercicio
 
 1. Realiza la instalación de QEMU/KVM, libvirt y virt-manager. Apartado: [Instalación de virt-manager](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad02/clase2.md).
-2. Siguiendo lo indicando en el apartado [Conexión local privilegiada a libvirt con virt-manager](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad02/clase3.md), comprueba que por defecto estamos usando **una conexión provilegiada a libviert**, y comprueba la red y el almacenamiento disponible. Estudia las características de la red *default* que tenemos a nuestra disposición.
+2. Siguiendo lo indicando en el apartado [Conexión local privilegiada a libvirt con virt-manager](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad02/clase3.md), comprueba que por defecto estamos usando **una conexión privilegiada a libvirt**, y comprueba la red y el almacenamiento disponible. Estudia las características de la red *default* que tenemos a nuestra disposición.
 3. Siguiendo el apartado [Creación de máquinas virtuales Linux](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase1.md) instala una máquina virtual con el sistema operativo Linux.
     * Si no tienes un fichero ISO para la instalación puedes probar [Creación de máquinas virtuales por red](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad07/clase2.md).
     * Una vez instalada la máquina comprueba las [Características de las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase2.md).
     * Estudia las distintas operaciones para la [Gestión de máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase3.md).
     * Estudia los [Detalles de las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase4.md).
-    * Accede a la máquina virtual usando el protocolo SSH, tienes distintos métos de acceso en el apartado [Acceso a las máquinas virtuales desde el exterior](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase7.md).
+    * Accede a la máquina virtual usando el protocolo SSH, tienes distintos métodos de acceso en el apartado [Acceso a las máquinas virtuales desde el exterior](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase7.md).
