@@ -69,6 +69,5 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Taller 1: Git. Trabajando con ramas y uniones](1_introduccion/taller1.html)
 	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
 * [Teoría: Introducción a las Aplicaciones Web](pdf/introduccion_aplicaciones_web.pdf)
-	* [Práctica (1 / 2): Despliegue de página web estática](1_introduccion/practica1.html)
-	* [Práctica (2 / 2): Despliegue de página web estática](1_introduccion/practica2.html)
+	* [Práctica: Despliegue de página web estática](1_introduccion/practica.html)
 * [Teoría: Introducción a la Implantación de Aplicaciones Web](pdf/introduccion_iaw.pdf)
