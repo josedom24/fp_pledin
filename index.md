@@ -10,7 +10,8 @@ classes: wide
 ### 2º ASIR
 
 * [Servicios de red e internet](sri)
-
+* [Proyecto intermodular](pi)
+* [Infraestructura virtual](iv)
 
 
 <!--

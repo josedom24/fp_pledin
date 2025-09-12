@@ -4,6 +4,9 @@ title: "Infraestructura virtual (2025-2026)"
 
 ## Unidad 1: Virtualización Linux
 
+
+<!--
+
 * Introducción a la virtualización y a QEMU/KVM/libvirt
 * Creación de máquinas virtuales desde la línea de comandos
 * Gestión del almacenamiento en QEMU/KVM + libvirt
@@ -37,3 +40,5 @@ title: "Infraestructura virtual (2025-2026)"
 * Despliegues parametrizados
 * Almacenamiento en Kubernetes
 * Instalación de un CMS con Helm
+
+-->

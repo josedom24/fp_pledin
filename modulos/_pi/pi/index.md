@@ -1,10 +1,13 @@
 ---
-title: "Proyecto Integrado (2025-2026)"
+title: "Proyecto intermodular (2025-2026)"
 ---
 
 ## Proyecto 1: Infraestructura como código
 
-* Introducción a ansible. Playbook sencillo.
+* [Introducción a ansible. Playbook sencillo](2526/u1/clase1.md)
+
+<!--
+
 * Ansible - Playbook con roles
 * Introducción al uso de vagrant + libvirt + QEMU/KVM. Creación de una máquina virtual,
 * Configuración de redes en KVM y en Vagrant
@@ -26,3 +29,5 @@ title: "Proyecto Integrado (2025-2026)"
 * Servidor de correos en el escenario OpenStack (Parte 2)
 
 ## Proyecto 3: Proyecto final
+
+-->
