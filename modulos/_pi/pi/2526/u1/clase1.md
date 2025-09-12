@@ -10,23 +10,6 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
 ## Teoría
 
-### API / API restfull
-
-Una **API** (*Application Programming Interface*) es un conjunto de reglas y funciones que permiten que dos programas se comuniquen entre sí.
-
-Una **API RESTful** es un tipo de API que sigue el estilo **REST** (*Representational State Transfer*), usando el protocolo HTTP (operaciones **GET**, **POST**,...)
-
-Imagina una API RESTful para gestionar libros:
-
-* `GET /libros` → devuelve la lista de libros
-* `GET /libros/5` → devuelve el libro con ID 5
-* `POST /libros` → crea un nuevo libro
-* `PUT /libros/5` → actualiza el libro con ID 5
-* `DELETE /libros/5` → elimina el libro con ID 5
-
-La información que devuelve una API restfull viene representada por algún lenguaje de marcas (json, xml, yaml,...)
-
-
 ### Infraestructura como código
 
 **Infraestructura como Código (IaC)** es la práctica de **definir y gestionar la infraestructura de TI (servidores, redes, bases de datos, etc.) mediante archivos de configuración legibles por máquina**, en lugar de configurarla manualmente. Dos tipos de programas:
