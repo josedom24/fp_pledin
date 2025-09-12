@@ -29,7 +29,7 @@ Una vez generada nuestra página podemos desplegarla en nuestro servidor en prod
 
 * Vamos a usar un hosting externo para desplegar nuestra página.
 * Los servicios modernos para alojar páginas estáticas pueden proporcionar métodos de despliegues automáticos o semiautomáticos, y suelen usar repositorios git (el uso de servidores FTP está desapareciendo).
-* Hosting que podemos usar: Netlify, GitHub Pages, GitLab Pages, Render, Vercel, ...
+* Hosting que podemos usar: **Netlify, GitHub Pages, GitLab Pages, Render, Vercel**, ...
 * Algunos de estos servicios te permiten de forma automática generar en ellos la página estática (Integración Continua). En nuestra práctica no vamos a usar esa característica. **La página se genera en nuestro ordenador y posteriormente se despliega al hosting externo**.
 * Si nos permite varias formas de subir la página al hosting **siempre elegiremos el uso de repositorio Git**.
 
