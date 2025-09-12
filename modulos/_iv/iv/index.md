@@ -11,11 +11,15 @@ title: "Infraestructura virtual (2025-2026)"
 * Gestión de redes en QEMU/KVM + libvirt
 * Práctica: KVM
 
-## Unidad 2: Contenedores de sistemas
+## Unidad 2: Contenedores
 
-* Introducción a la virtualización ligera y LXC
+* Introducción a la virtualización ligera
+* Introducción a LXC
 * Gestión de redes y almacenamiento en LXC
 * Práctica: LXC
+* Introducción a los contenedores Docker
+* Almacenamiento y redes en Docker
+* Escenarios multicontenedor en Docker
 
 ## Unidad 3: Cloud Computing IaaS. OpenStack 
 
@@ -25,13 +29,7 @@ title: "Infraestructura virtual (2025-2026)"
 * Gestión de redes en OpenStack
 * Práctica: OpenStack
 
-## Unidad 4: Contenedores de aplicación
-
-* Introducción a los contenedores Docker
-* Almacenamiento y redes en Docker
-* Escenarios multicontenedor en Docker
-
-## Unidad 5: Orquestadores de contenedores
+## Unidad 4: Orquestadores de contenedores
 
 * Introducción a Kubernetes
 * Trabajando con Pods y ReplicaSet
