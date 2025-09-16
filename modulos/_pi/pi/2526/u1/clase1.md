@@ -27,12 +27,12 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 1. Realiza la instalación de ansible. Puedes usar los repositorios oficiales de Debian, o realizar una instalación con `pip` en un entorno virtual python.
 2. Crea una máquina virtual que vamos a configurar con ansible. Esta máquina debe tener las siguientes características:
 
-	* Debe tener creado un usuario sin privilegios con el que podamos acceder a la máquina usando claves ssh. 
-	* Debe tener instalado `sudo` y el usuario que estamos usando para acceder debe estar configurado para poder usar `sudo` sin que le pida la contraseña.
+    * Debe tener creado un usuario sin privilegios con el que podamos acceder a la máquina usando claves ssh. 
+    * Debe tener instalado `sudo` y el usuario que estamos usando para acceder debe estar configurado para poder usar `sudo` sin que le pida la contraseña.
 
 3. El **inventario** es el fichero donde definimos los equipos que vamos a configurar. Crea un directorio y dentro un fichero llamado `hosts`, con el siguiente contenido:
 
-	```
+    ```
     all:
       children:
         servidores:
@@ -44,117 +44,117 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
     ```
 
 
-	En el inventario se clasifican los equipos por grupos:
+    En el inventario se clasifican los equipos por grupos:
 
-	* El grupo `all` corresponde a todos los equipos definidos.
-	* En este ejemplo hemos creado un grupo `servidores`, donde hemos definido nuestra máquina.
-	* A la máquina la hemos llamado `nodo1` (**cambia el nombre y pon el de tu máquina**), además **debes rellenar la siguiente información del nodo**:
-		* `ansible_ssh_host`: Dirección IP del equipo que queremos configurar.
-		* `ansible_ssh_user`: Usuario sin privilegios con el que vamos  acceder por ssh (lo hemos creado en el equipo en el punto 2).
-		* `ansible_ssh_private_key_file`: Fichero con la clave privada que vamos a usar para el acceso.
+    * El grupo `all` corresponde a todos los equipos definidos.
+    * En este ejemplo hemos creado un grupo `servidores`, donde hemos definido nuestra máquina.
+    * A la máquina la hemos llamado `nodo1` (**cambia el nombre y pon el de tu máquina**), además **debes rellenar la siguiente información del nodo**:
+        * `ansible_ssh_host`: Dirección IP del equipo que queremos configurar.
+        * `ansible_ssh_user`: Usuario sin privilegios con el que vamos  acceder por ssh (lo hemos creado en el equipo en el punto 2).
+        * `ansible_ssh_private_key_file`: Fichero con la clave privada que vamos a usar para el acceso.
 
 4. Vamos a crear un **fichero de configuración**, en el directorio crearemos un fichero llamado `ansible.cfg`, con el siguiente contenido:
 
-	``` 
-	[defaults]
-	inventory = hosts
-	host_key_checking = False
-	``` 
-	Donde **ponemos el nombre del fichero de inventario en el parámetro `inventory`** y el parámetro `host_key_checking = False`, que impide que se haga la comprobación del equipo cada vez que se hace la conexión ssh.
+    ``` 
+    [defaults]
+    inventory = hosts
+    host_key_checking = False
+    ``` 
+    Donde **ponemos el nombre del fichero de inventario en el parámetro `inventory`** y el parámetro `host_key_checking = False`, que impide que se haga la comprobación del equipo cada vez que se hace la conexión ssh.
 
 5. Vamos a comprobar si tenemos conectividad con el nodo. Para ello vamos a usar el módulo `ping` de ansible. Un **módulo de ansible** me permite ejecutar una acción en un servidor remoto o en un conjunto de servidores.
-	
-	Ejecuta alguna de estas instrucciones:
+    
+    Ejecuta alguna de estas instrucciones:
 
-	* `ansible all -m ping`: Comprueba la conectividad con **todos** los equipos del inventario.
-	* `ansible servidores -m ping`: Comprueba la conectividad con  los equipos del **grupo servidores**.
-	* `ansible nodo1 -m ping`: Comprueba la conectividad con el equipo **nodo1** (Cambia el nombre con el que has configurado en el fichero).
-	
-	Debe salir el mensaje "pong" en verde.
+    * `ansible all -m ping`: Comprueba la conectividad con **todos** los equipos del inventario.
+    * `ansible servidores -m ping`: Comprueba la conectividad con  los equipos del **grupo servidores**.
+    * `ansible nodo1 -m ping`: Comprueba la conectividad con el equipo **nodo1** (Cambia el nombre con el que has configurado en el fichero).
+    
+    Debe salir el mensaje "pong" en verde.
 
 6. Hay muchos módulos que podemos usar ([All modules](https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html)). Veamos algún ejemplo:
 
-	* **command**: Ejecutas comandos en el nodo remoto o en un conjunto de nodos. Con `-a` indicamos los **parámetros** del **módulo**, en este caso indicamos la instrucción a ejecutar. 
+    * **command**: Ejecutas comandos en el nodo remoto o en un conjunto de nodos. Con `-a` indicamos los **parámetros del módulo**, en este caso indicamos la instrucción a ejecutar. 
 
-		Por ejemplo, para ejecutar `uptime` en toodos los nodos.
+        Por ejemplo, para ejecutar `uptime` en toodos los nodos.
 
-  		```bash
-  		ansible all -m command -a "uptime"
-  		```
-		El módulo **shell** es igual que `command`, pero permite redirecciones, pipes y variables, y que usa una shell. Por ejemplo:
-		
-  		```bash
-  		ansible all -m shell -a "echo $HOME | wc -c"
-  		```
-	* **copy**: Permite copiar ficheros desde nuestro ordenador al nodo remoto o grupo de nodos. Los parámetros principales son:
-  		* `src`: archivo origen en el nodo de control.
-  		* `dest`: ruta de destino en el nodo remoto.
-  		* `mode`: permisos opcionales.
+          ```bash
+          ansible all -m command -a "uptime"
+          ```
+        El módulo **shell** es igual que `command`, pero permite redirecciones, pipes y variables, y que usa una shell. Por ejemplo:
+        
+          ```bash
+          ansible all -m shell -a "echo $HOME | wc -c"
+          ```
+    * **copy**: Permite copiar ficheros desde nuestro ordenador al nodo remoto o grupo de nodos. Los parámetros principales son:
+          * `src`: archivo origen en el nodo de control.
+          * `dest`: ruta de destino en el nodo remoto.
+          * `mode`: permisos opcionales.
 
-		Ejemplo:
+        Ejemplo:
 
-  		```bash
-  		ansible all -m copy -a "src=./index.html dest=/tmp/index.html mode=0644"
-  		```
-		[Documentación de copy](https://docs.ansible.com/ansible/2.9/modules/copy_module.html#copy-module)
+          ```bash
+          ansible all -m copy -a "src=./index.html dest=/tmp/index.html mode=0644"
+          ```
+        [Documentación de copy](https://docs.ansible.com/ansible/2.9/modules/copy_module.html#copy-module)
 
-	* **file**: Gestiona archivos, directorios y permisos. Parámetros principales:
-		* `path`: ruta del archivo/directorio en el nodo remoto.
-  		* `state`: qué debe existir (`file`, `directory`, `absent`, `link`).
-  		* `mode`: permisos.
-	
-		Ejemplo, crea un directorio: 
+    * **file**: Gestiona archivos, directorios y permisos. Parámetros principales:
+        * `path`: ruta del archivo/directorio en el nodo remoto.
+          * `state`: qué debe existir (`file`, `directory`, `absent`, `link`).
+          * `mode`: permisos.
+    
+        Ejemplo, crea un directorio: 
 
-  		```bash
-  		ansible all -m file -a "path=/tmp/ansible_demo state=directory mode=0755"
-  		```
+          ```bash
+          ansible all -m file -a "path=/tmp/ansible_demo state=directory mode=0755"
+          ```
 
-		[Documentación de file](https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module)
+        [Documentación de file](https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module)
 
-	* **apt**: Instala, actualiza o elimina paquetes. Parámetros principales:
-		* `name`: paquete a instalar.
-  		* `state`: `present` (instalado), `absent` (eliminado), `latest` (última versión).
+    * **apt**: Instala, actualiza o elimina paquetes. Parámetros principales:
+        * `name`: paquete a instalar.
+          * `state`: `present` (instalado), `absent` (eliminado), `latest` (última versión).
 
-		Ejemplo, instalamos el servidor web Apache:
+        Ejemplo, instalamos el servidor web Apache:
 
-  		```bash
-  		ansible nodo1 -m apt -a "name=apache2 state=present" --become
-  		```
-		`--become` se utiliza para que la acción se ejecute como `root` en la máquina remota.	
-	
-		[Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#apt-module)
+          ```bash
+          ansible nodo1 -m apt -a "name=apache2 state=present" --become
+          ```
+        `--become` se utiliza para que la acción se ejecute como `root` en la máquina remota.	
+    
+        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#apt-module)
 
-	* **service**: Gestiona servicios del sistema. Parámetros principales:
+    * **service**: Gestiona servicios del sistema. Parámetros principales:
 
-		* `name`: nombre del servicio.
-  		* `state`: `started`, `stopped`, `restarted`, `reloaded`.
-  		* `enabled`: `yes`/`no` (si debe arrancar con el sistema).
+        * `name`: nombre del servicio.
+          * `state`: `started`, `stopped`, `restarted`, `reloaded`.
+          * `enabled`: `yes`/`no` (si debe arrancar con el sistema).
 
-		Ejemplo, iniciar el servidor apache2:
+        Ejemplo, iniciar el servidor apache2:
 
-  		```bash
-  		ansible nodo1 -m service -a "name=apache2 state=started enabled=yes" --become
-  		```
-		[Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#service-module)
+          ```bash
+          ansible nodo1 -m service -a "name=apache2 state=started enabled=yes" --become
+          ```
+        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#service-module)
 
-	* **user**: Crea, modifica o elimina usuarios. Parámetros principales:
+    * **user**: Crea, modifica o elimina usuarios. Parámetros principales:
 
-		* `name`: nombre del usuario.
-  		* `state`: `present` (crear/asegurar que existe), `absent` (eliminar).
-  		* `shell`: shell por defecto.
-  		* `groups`: grupos a los que pertenece.
+        * `name`: nombre del usuario.
+          * `state`: `present` (crear/asegurar que existe), `absent` (eliminar).
+          * `shell`: shell por defecto.
+          * `groups`: grupos a los que pertenece.
 
-		Ejemplo, creación de un usuario:
+        Ejemplo, creación de un usuario:
 
-  		```bash
-  		ansible all -m user -a "name=demo shell=/bin/bash groups=sudo state=present" --become
-  		```
+          ```bash
+          ansible all -m user -a "name=demo shell=/bin/bash groups=sudo state=present" --become
+          ```
 
-		[Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#user-module)
+        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#user-module)
 
 4. Realmente no estamos usando un esquema **imperativo** (por ejemplo: **instala apache en el servidor**). Ansible utiliza un esquema **declarativo**, indicamos el **estado** en que queremos tener el servidor (por ejemplo, **me gustaría que el servidor tenga instalado apache**).
 
-	ansible **hará todas las operaciones necesarias para que el estado declarado se cumpla de forma exitosa.** Si el estado que deseamos alcanzar ya lo tiene el servidor **no se ejecutará ninguna operación** (**Idempotencia**).
+    ansible **hará todas las operaciones necesarias para que el estado declarado se cumpla de forma exitosa.** Si el estado que deseamos alcanzar ya lo tiene el servidor **no se ejecutará ninguna operación** (**Idempotencia**).
 
 
 {% capture notice-text %}	 
