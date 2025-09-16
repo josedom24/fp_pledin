@@ -1,0 +1,42 @@
+7. ansible puede trabajar con variables que obtiene de distinta manera:
+
+	* A nivel de **nodo**: definimos variables para cada nodo en el inventario, por ejemplo: `ansible_ssh_host`, `ansible_ssh_user`, ...
+	* A nivel de **grupo de nodos**: Hemos creado un directorio que se tiene que llamar `group_vars`, dentro de este directorio podemos crear ficheros con las variables que creamos a nivel del grupo. En este ejemplo hemos creado un fichero `all`, por lo que las variables serán conocidas para todos los nodos. Hemos definido 3 variables para todos los nodos:`bd_name`, `bd_user` y `bd_pass`.
+	* **Gathering Facts**: Variables que obtiene ansible de los nodos que está configurando. La primera tarea que ejecuta el play es obtener información del nodo que va a configurar. Toda esa información se puede usar al definir las tareas, por ejemplo: `ansible_hostname`, `ansible_distribution`,... Para ver esa información podemos ejecutar:`ansible nodo1 -m setup`.
+
+8. Veamos el playbook que se encuentra en el fichero `site.yml`:
+
+	* Primera línea: `hosts: all`. Significa que las tareas se van a ejecutar en todos los nodos definidos en el inventario. Podríamos haber puesto `hosts: servidores` o `hosts: nodo1`.
+	* `become: true`: En las tareas que necesiten ejecutarse como administrador se utilizará `sudo`. 
+	* `tasks`: Lista de tareas. Todas las tareas tienen un mensaje en el parámetro `name` y el uso de un módulo.
+
+9. Ejecuta el playbook:
+
+	```
+	ansible-playbook site.yaml
+	```
+
+	* **Si tienes errores, repasa las modificaciones que has realizado para corregirlos.** 
+	* **Cuando funcione la ejecución de la receta, cambia el fichero `foo.txt` y ejecuta de nuevo la receta. ¿Se ejecutan todas las tareas?**
+	* **¿Cómo se llama la propiedad que permite que las tareas que ya se han realizado no se vuelvan a ejecutar?**
+	* **Comprobación del funcionamiento: Comprueba que se ha copiado un fichero `foo.txt` en el servidor, accede desde un navegador al servidor y comprueba que aparece el fichero `index.html` que hemos creado.**
+
+	Veamos las tareas que están definidas:
+
+	1. **Actualizamos el sistema**: Se utiliza el módulo [apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html) para actualizar los paquetes del sistema.
+	2. **Instalar paquetes con apt**: **Busca en la documentación del módulo [apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html) y termina la segunda tarea para hacer la instalación del paquete `git` y `apache2`.**
+	3. **Copiar fichero a la máquina remota**: El módulo [copy](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html) nos permite copiar ficheros desde el equipo donde tenemos ansible instalado hasta la máquina que estamos configurando. Los ficheros se suelen guardar en un directorio llamado `files`. **Modifica la tarea para guardar el fichero `foo.txt` al directorio `/etc` de la máquina remota**.
+	4. **Copiar un template a un fichero de la máquina remota**: El módulo [template](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html#) nos permite copiar una plantilla jinja2 (que normalmente tenemos en un directorio llamado `template`) a la máquina remota después de cambiar las variables por los valores adecuados. 
+		* **Modifica la plantilla `index.j2` para indicar los nombres correctos de las variables. Tienes que cambiar las variables `modifica_el_nombre` por el nombre correcto de las variables.**
+		* **Modifica la tarea para guardar el template en el directorio `/var/www/html/index.html` de la máquina que estamos configurando.**
+        
+{% capture notice-text %}	 
+## ¿Qué tienes que entregar?
+
+1. Entrega los ficheros: `site.yaml`, `hosts` y `template/index.j2`.
+2. Entrega una captura de pantalla donde se vea que se ha finalizado la ejecución del playbook.
+3. Responde: ¿Cómo se llama la propiedad que permite que las tareas que ya se han realizado no se vuelvan a ejecutar?
+4. Captura de pantalla, donde se vea el fichero `foo.txt` en el servidor configurado.
+5. Captura de pantalla donde se vea el acceso desde el navegador al servidor web, y se vea el contenido del fichero `index.html`.
+6. Entrega la URL de tu repositorio con el que estás trabajando.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
