@@ -46,7 +46,7 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
     En el inventario se clasifican los equipos por grupos:
 
-    * El grupo `all` corresponde a todos los equipos definidos.
+    * El grupo `all` (se puede llamar como queráis, pero se suele llamar de esta forma) corresponde a todos los equipos definidos.
     * En este ejemplo hemos creado un grupo `servidores`, donde hemos definido nuestra máquina.
     * A la máquina la hemos llamado `nodo1` (**cambia el nombre y pon el de tu máquina**), además **debes rellenar la siguiente información del nodo**:
         * `ansible_ssh_host`: Dirección IP del equipo que queremos configurar.
