@@ -79,11 +79,11 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
         Por ejemplo, para ejecutar `uptime` en toodos los nodos.
 
           ansible all -m command -a "uptime"
-          ```
+          
         El módulo **shell** es igual que `command`, pero permite redirecciones, pipes y variables, y que usa una shell. Por ejemplo:
         
           ansible all -m shell -a "echo $HOME | wc -c"
-          ```
+          
     * **copy**: Permite copiar ficheros desde nuestro ordenador al nodo remoto o grupo de nodos. Los parámetros principales son:
           * `src`: archivo origen en el nodo de control.
           * `dest`: ruta de destino en el nodo remoto.
