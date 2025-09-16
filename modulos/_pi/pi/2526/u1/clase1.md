@@ -129,7 +129,7 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
           ansible nodo1 -m service -a "name=apache2 state=started enabled=yes" --become
           
-        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#service-module)
+        [Documentación de service](https://docs.ansible.com/ansible/2.9/modules/file_module.html#service-module)
 
     * **user**: Crea, modifica o elimina usuarios. Parámetros principales:
 
@@ -143,7 +143,7 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
           ansible all -m user -a "name=demo shell=/bin/bash groups=sudo state=present" --become
           
 
-        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#user-module)
+        [Documentación de user](https://docs.ansible.com/ansible/2.9/modules/file_module.html#user-module)
 
 4. Realmente no estamos usando un esquema **imperativo** (por ejemplo: **instala apache en el servidor**). Ansible utiliza un esquema **declarativo**, indicamos el **estado** en que queremos tener el servidor (por ejemplo, **me gustaría que el servidor tenga instalado apache**).
 
