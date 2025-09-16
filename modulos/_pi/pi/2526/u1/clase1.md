@@ -78,12 +78,10 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
         Por ejemplo, para ejecutar `uptime` en toodos los nodos.
 
-          ```bash
           ansible all -m command -a "uptime"
           ```
         El módulo **shell** es igual que `command`, pero permite redirecciones, pipes y variables, y que usa una shell. Por ejemplo:
         
-          ```bash
           ansible all -m shell -a "echo $HOME | wc -c"
           ```
     * **copy**: Permite copiar ficheros desde nuestro ordenador al nodo remoto o grupo de nodos. Los parámetros principales son:
@@ -93,7 +91,6 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
         Ejemplo:
 
-          ```bash
           ansible all -m copy -a "src=./index.html dest=/tmp/index.html mode=0644"
           ```
         [Documentación de copy](https://docs.ansible.com/ansible/2.9/modules/copy_module.html#copy-module)
@@ -105,9 +102,8 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
     
         Ejemplo, crea un directorio: 
 
-          ```bash
           ansible all -m file -a "path=/tmp/ansible_demo state=directory mode=0755"
-          ```
+          
 
         [Documentación de file](https://docs.ansible.com/ansible/2.9/modules/file_module.html#file-module)
 
@@ -117,9 +113,8 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
         Ejemplo, instalamos el servidor web Apache:
 
-          ```bash
           ansible nodo1 -m apt -a "name=apache2 state=present" --become
-          ```
+          
         `--become` se utiliza para que la acción se ejecute como `root` en la máquina remota.	
     
         [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#apt-module)
@@ -132,9 +127,8 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
         Ejemplo, iniciar el servidor apache2:
 
-          ```bash
           ansible nodo1 -m service -a "name=apache2 state=started enabled=yes" --become
-          ```
+          
         [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#service-module)
 
     * **user**: Crea, modifica o elimina usuarios. Parámetros principales:
@@ -146,9 +140,8 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
 
         Ejemplo, creación de un usuario:
 
-          ```bash
           ansible all -m user -a "name=demo shell=/bin/bash groups=sudo state=present" --become
-          ```
+          
 
         [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#user-module)
 
