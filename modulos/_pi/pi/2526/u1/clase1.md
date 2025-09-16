@@ -92,7 +92,7 @@ title: "Clase 1: Introducción a ansible. Playbook sencillo."
         Ejemplo:
 
           ansible all -m copy -a "src=./index.html dest=/tmp/index.html mode=0644"
-          ```
+          
         [Documentación de copy](https://docs.ansible.com/ansible/2.9/modules/copy_module.html#copy-module)
 
     * **file**: Gestiona archivos, directorios y permisos. Parámetros principales:
