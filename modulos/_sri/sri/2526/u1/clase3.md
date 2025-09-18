@@ -1,132 +1,70 @@
 ---
-title: "Clase 3: Configuración de red y DNS en sistemas Linux"
+title: "Clase 3: Gestión de redes con virt-manager"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
 
-* Los distintos mecanismos de configuración de red en sistemas Linux.
-* Configurar los sistemas Linux según el mecanismo de configuración de red que tengan instalado.
-* Los distintos mecanismos de resolución de nombres en sistemas Linux.
-* Configurar los servidores DNS según el mecanimos de resolución denombres que estemos usando.
+* A conocer los distintos de tipos de redes virtuales que podemos gestionar con QEMU/KVM/libvirt.
+* A definir los distintos tipos de red.
+* A configurar nuevas conexiones de red en las máquinas virtuales. 
 
 ## Teoría
 
-### Configuración de red
+* Tenemos dos grandes grupos de redes que podemos configurar:
 
-Actualmente según la distribución que utilicemos y la configuración del sistema que estemos utilizando, tendremos a nuestra disposición algunos de estos métodos:
+  * **Redes Virtuales (Privadas)**: Son **redes privadas** que podemos configurar para que tengan distintas características.
+  * **Redes Puente (Públicas)**: Las podemos considerar como **redes públicas**, desde el punto de vista que las máquinas virtuales estarán conectadas a la misma red a la que está conectada el host.
 
-* **ifupdown**: Es una herramienta tradicional para configurar redes en Linux basada en los archivos que encontramos en el directorio `/etc/network`. En sistemas modernos con `systemd`, su funcionamiento está vinculado a la unidad `networking.service`, que activa las configuraciones definidas en estos archivos durante el inicio del sistema o cuando se reinicia el servicio. Aunque es más antigua, sigue siendo usada en sistemas donde se prefieren configuraciones más simples o específicas.
-* **NetworkManager**: Es una solución moderna y flexible diseñada para entornos de escritorio y servidores. Ofrece una interfaz gráfica (como `nm-applet`) y herramientas de línea de comandos (`nmcli` y `nmtui`). Está orientada a la gestión dinámica de redes y se integra bien con configuraciones más complejas, como Wi-Fi, VPNs y conexiones móviles.
-* **systemd-networkd**: Es una alternativa más reciente que forma parte de `systemd`. Se utiliza principalmente en servidores y entornos que buscan configuraciones administradas de manera declarativa a través de archivos de configuración en `/etc/systemd/network/`. Es particularmente ç
-eficiente en sistemas modernos que ya utilizan `systemd` para otros servicios.
-* **netplan**: Herramienta de configuración de red introducida en Ubuntu, que permite gestionar la red de forma declarativa utilizando archivos YAML. Esta herramienta se encarga de traducir la configuración declarada en sus archivos en configuraciones aplicables por `NetworkManager` o `systemd-networkd`, dependiendo del backend elegido.
+* Recordemos un **puente o bridge/switch** es un dispositivo de interconexión de redes. La gestión de redes de libvirt se basa en el concepto de **switch virtual**, para ello utiliza **Linux Bridge**, que es un software que nos permite crear bridge virtuales con la misma funcionalidad que un bridge físico.
 
-### DNS
+### Redes Virtuales (Privadas)
 
-* **DNS (Domain Name System):** sistema jerárquico que traduce nombres de dominio (como `www.google.com`) en direcciones IP.
-* **Servidor DNS:** máquina que responde a estas consultas. Se configura en el archivo `/etc/resolv.conf`.
-* **Resolución estática:** asignaciones fijas de nombres a IPs definidas manualmente en `/etc/hosts`.
+* **Redes Virtuales de tipo NAT**
 
-**Orden de resolución: NSS y nsswitch.conf**
+  Es una Red Virtual Privada, las máquinas virtuales tendrán un direccionamiento privado y se nos proporciona un mecanismo de **router/nat** para que tengan conectividad al exterior.
 
-* Linux usa una biblioteca llamada **NSS (Name Service Switch)** para definir **el orden en que se consultan las fuentes de información**, como por ejemplo el mecanismo de resolución de nombre.
-* Este orden se configura en el archivo `/etc/nsswitch.conf`, en la línea que comienza con `hosts:`.
-  * Ejemplo:
+  ![red_nat](img/red_nat.drawio.png)
 
-    ```plaintext
-    hosts: files dns
-    ```
-    * Primero consulta `/etc/hosts` (resolución estática).
-    * Si no encuentra el nombre, consulta los servidores DNS.
+  La red `default` con la que hemos trabajado es de este tipo. Veamos sus características:
 
-**El archivo `/etc/resolv.conf`**
+  * Crea un bridge virtual donde se conectan las máquinas virtuales. En el caso de la red `default` se llama `vmbr0`. A este bridge también está conectado el host.
+  * Las máquinas virtuales se configurarán de forma dinámica por medio de un servidor DHCP. En el caso de la red `default`, el **rango de direcciones** es `192.168.122.2` - `192.168.122.254`. La **puerta de enlace** de las máquinas se configura con la dirección IP `192.168.122.1` que corresponde al host. El **servidor DHCP** está configurado en el host. 
+  * En el host también se configura un **servidor DNS** que es el que se configura en las máquinas virtuales.
+  * El host hace la función de **router/nat** de tal manera que las máquinas virtuales tienen conectividad al exterior, usando la dirección IP de la interfaz de red del host que está conectada al exterior.
 
-* Contiene los servidores DNS que se usan para resolver nombres.
-* Parámetros comunes:
+* **Redes Virtuales aisladas (Isolated)**
 
-  * `nameserver`: dirección del servidor DNS (pueden indicarse varios).
-  * `search` / `domain`: dominios que se añaden al nombre buscado si no está completo.
-  * `options`: opciones como tiempo de espera o número de intentos.
-* **¡Ojo!**: A menudo este archivo **se genera automáticamente** (por ejemplo, por `resolvconf` o `systemd-resolved`). No se debe editar directamente si hay un sistema que lo gestiona.
+  Es una Red Virtual Privada, donde las máquinas virtuales tomas direccionamiento privado. No tenemos un mecanismo de router/nat, por lo que las máquinas virtuales no tienen conectividad con el exterior.
 
-**Herramientas para consultar nombres**
+  ![red_aislada](img/red_aislada.drawio.png)
 
-* **Herramientas como `dig`, `host` y `nslookup`:**
+  Por lo tanto, tienen las mismas características que una Red Virtual de tipo NAT, pero sin la característica de router/nat. Se gestiona un bridge virtual donde se conectan las máquinas virtuales y el host, seguimos teniendo un servidor DNS y es posible tener un servidor DHCP en el host que asigna dinámicamente un direccionamiento privado a las máquinas.
+  
+* **Redes Virtuales muy aisladas (Very Isolated)**
 
-  * Consultan directamente al servidor DNS.
-  * **No usan** el orden definido en `/etc/nsswitch.conf`.
-* **`getent ahosts`:**
+  Es una Red Virtual Aislada, en la que el host no está conectado a las máquinas virtuales. Por lo tanto, no tenemos servidor DNS ni DHCP para ser utilizados por las máquinas. Al ser aislada, tampoco tienen salida al exterior.
 
-  * Usa el orden definido por NSS.
-  * Consulta primero `/etc/hosts` y después DNS (si está configurado así).
+  ![red_muy_aislada](img/red_muy_aislada.drawio.png)
 
-**systemd-resolved (nuevo método de resolución)**
+  En este tipo de red se suele configurar la red de las máquinas virtuales de forma estática.
 
-* Es un servicio moderno de Linux para gestionar la resolución de nombres.
-* Ofrece:
-
-  * **Caché local de DNS** (mejora el rendimiento).
-  * **Integración con NSS** (`resolve`, `myhostname`, `mymachines`).
-  * **Servidor local en `127.0.0.53`** que actúa como intermediario para reenviar consultas DNS.
-* Modos de uso comunes:
-
-  * **Stub DNS (`127.0.0.53`)**:
-    * `/etc/resolv.conf` apunta a `/run/systemd/resolve/stub-resolv.conf`.
-    * Muy común en **Ubuntu**.
-  * **DNS directo**:
-    * `/etc/resolv.conf` apunta a `/run/systemd/resolve/resolv.conf`.
-    * Típico en **Debian**.
-  * **Modo pasivo**:
-    * Se mantiene un `/etc/resolv.conf` gestionado manualmente o por DHCP.
-  * El orden se ajusta en `/etc/nsswitch.conf`, por ejemplo:
-
-    ```plaintext
-    hosts: mymachines resolve files myhostname dns
-    ```
-  * Herramienta propia: `resolvectl`: Comando para interactuar con `systemd-resolved`.
-    * Ver configuración: `resolvectl status`
-    * Consultar DNS: `resolvectl query nombre`
-    * Ver servidores DNS: `resolvectl dns`
-    * Borrar caché: `resolvectl flush-caches`
 
 ## Recursos
 
-* [Configuración de red en sistemas Linux - ifupdown](https://www.josedomingo.org/pledin/2025/01/configuracion-red-linux-ifupdown/)
-* [Configuración de red en sistemas Linux - NetworkManager](https://www.josedomingo.org/pledin/2025/01/configuracion-red-linux-networkmanager/)
-* [Configuración de red en sistemas Linux - systemd-networkd](https://www.josedomingo.org/pledin/2025/03/configuracion-red-linux-systemd-networkd/)
-* [Configuración de red en sistemas Linux - Netplan](https://www.josedomingo.org/pledin/2025/04/configuracion-red-linux-netplan/)
-* [Resolución de nombres de dominios en sistemas Linux](https://www.josedomingo.org/pledin/2024/02/resolucion-nombres-linux/)
+* Curso completo: [Introducción a la virtualización con KVM/libvirt usando virt-manager](https://github.com/josedom24/curso_kvm_ow/tree/main/curso1)
+* En concreto el apartado:
+  * Gestión de redes en virt-manager
 
 ## Ejercicio
 
-1. Necesitamos una maquina Linux con el sistema operativo Debian conecta a una red de tipo NAT. En este caso estamos usando el mecanismo **ifupdown**. 
-  * Comprueba la configuración actual y visualiza la configuración de red actual.
-  * Visualiza las rutas de enrutamiento definidas en el sistema.
-  * ¿Cómo se añade una nueva ruta? ¿Cómo se configura una ruta de manera permanente?
-  * Cambia a una configuración estática indicando la dirección IP que había tomado de forma dinámica.
-2. Para trabajar con **NetworkManager** tenemos varias alternativas:
-  * Trabajar con Debian con entorno gráfico gnome.
-  * Instalando NetworkManager en nuestro Debian sin entorno gráfico.
-  * Usando una distribución Linux que lo use por defecto, por ejemplo Fedora.
-3. Prepara una máquina que utilice NetworkManager y realiza los siguientes pasos desde la línea de comandos:
-  * Visualiza la configuración de red actual.
-  * Cambia a una configuración estática indicando la dirección IP que había tomado de forma dinámica.
-  * Si tienes entorno gráfico, utiliza `nm-applet` para gestionar la configuración de red.
-4. Normalmente no se trabaja directamente con **networkd-systemd**- Los sistemas que usan este mecanismo de gestión de red suelen tener instalado **netplan**. Es el caso de Ubuntu. Instala una máquina Ubuntu, y realiza los siguientes ejercicios:
-  * Comprueba el backend con el que está trabajando netplan.
-  * Visualiza la configuración actual del fichero de configuración de netplan.
-  * Visualiza la configuración de red actual.
-  * Cambia a una configuración estática indicando la dirección IP que había tomado de forma dinámica.
-
-5. En el sistema Debian:
-  * Comprueba el orden de mecanismos de resolución de nombres que tienes configurado.
-  * Comprueba los servidores DNS que tienes configurado.
-  * Añade una resolución estática con el nombre `www.example.com` y un dirección IP privada.
-  * Realiza una consulta con `dig` para averiguar la dirección IP de `www.example.com` y otra con `getent ahosts`. ¿Por qué salen resultados distintos?
-
-6. En el sistema Ubuntu:
-  * Comprueba el orden de mecanismos de resolución de nombres que tienes configurado.
-  * ¿Usa `systemd-resolved`? ¿Por qué?
-  * Comprueba los servidores DNS que tienes configurado con `resolvectl`.
-  * Realiza una consulta con `resolvectl` para averiguar la dirección IP de `www.example.com`. Quita la resolución estática y vuelve a hacer la consulta.
-  * ¿Qué modo uso está utilizando `systemd-resolved`?¿Cómo lo compruebas? 
+1. Para hacer este ejercicio necesitamos dos máquinas virtuales. La primera máquina virtual será la que creamos en la clase anterior. La segunda máquina virtual será una máquina con el sistema operativo Windows para ello puedes seguir la documentación del curso: [Creación de máquinas virtuales Windows (1ª parte)](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase5.md) y [Creación de máquinas virtuales Windows (2ª parte)](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase6.md).
+  * Recuerda que hay que configurar el disco duro y la tarjeta de red como como dispositivio **VirtIO** y por lo tanto tienes que utilizar los driver que encontrarás en la ISO de los drivers VirtIO.
+2. Siguiendo el apartado [Definición de redes](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase2.md) crea una red de cada tipo: NAT, aislada (sin DHCP) y muy aislada.
+3. Siguiendo el apartado [Configuración de red en las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase4.md) conecta las dos máquinas virtuales a la **red NAT** que has creado. Te puedes guiar por el [Ejemplo 2: Trabajando con redes virtuales privadas](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase6.md). Responde a estas preguntas:
+  * ¿Qué tipo de configuración de red has necesitado (estática o dinámica)?
+  * ¿Qué configuración de red han tomado cada máquina?
+  * ¿Tiene conectividad con el exterior? ¿Tiene resolución DNS? ¿Cuál es el servidor DNS?
+  * ¿Hay conectividad entre las máquinas?
+  * ¿Hay conectividad con el host?
+4. Siguiendo el apartado [Configuración de red en las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase4.md) conecta las dos máquinas virtuales a la **red aislada** que has creado. Te puedes guiar por el [Ejemplo 2: Trabajando con redes virtuales privadas](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase6.md). Responde a las preguntas del apartado anterior.
+5. Siguiendo el apartado [Configuración de red en las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase4.md) conecta las dos máquinas virtuales a la **red muy aislada** que has creado. Te puedes guiar por el [Ejemplo 2: Trabajando con redes virtuales privadas](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase6.md). Responde a las preguntas del apartado anterior.
