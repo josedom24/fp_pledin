@@ -63,7 +63,7 @@ title: "Clase 2: Configuración básica de un servidor"
         2. **Archivos adicionales:**
             * También se pueden añadir configuraciones personalizadas en `/etc/sudoers.d/`.
 
-* Configuración del `hostname` (nombre del sistema)
+* **Configuración del `hostname` (nombre del sistema)**
 
     * **Objetivo:** Establecer correctamente el nombre del host para que el sistema se identifique correctamente en la red.
     * Tu máquina tendrá un nombre en tu dominio (FQDN), por ejemplo: `sauron.mordor.com`.
