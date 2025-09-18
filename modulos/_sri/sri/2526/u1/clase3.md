@@ -108,26 +108,23 @@ eficiente en sistemas modernos que ya utilizan `systemd` para otros servicios.
   * Trabajar con Debian con entorno gráfico gnome.
   * Instalando NetworkManager en nuestro Debian sin entorno gráfico.
   * Usando una distribución Linux que lo use por defecto, por ejemplo Fedora.
-
-    Prepara una máquina que utilice NetworkManager y realiza los siguientes pasos desde la línea de comandos:
-
+3. Prepara una máquina que utilice NetworkManager y realiza los siguientes pasos desde la línea de comandos:
   * Visualiza la configuración de red actual.
   * Cambia a una configuración estática indicando la dirección IP que había tomado de forma dinámica.
   * Si tienes entorno gráfico, utiliza `nm-applet` para gestionar la configuración de red.
-
-3. Normalmente no se trabaja directamente con **networkd-systemd**- Los sistemas que usan este mecanismo de gestión de red suelen tener instalado **netplan**. Es el caso de Ubuntu. Instala una máquina Ubuntu, y realiza los siguientes ejercicios:
+4. Normalmente no se trabaja directamente con **networkd-systemd**- Los sistemas que usan este mecanismo de gestión de red suelen tener instalado **netplan**. Es el caso de Ubuntu. Instala una máquina Ubuntu, y realiza los siguientes ejercicios:
   * Comprueba el backend con el que está trabajando netplan.
   * Visualiza la configuración actual del fichero de configuración de netplan.
   * Visualiza la configuración de red actual.
   * Cambia a una configuración estática indicando la dirección IP que había tomado de forma dinámica.
 
-4. En el sistema Debian:
+5. En el sistema Debian:
   * Comprueba el orden de mecanismos de resolución de nombres que tienes configurado.
   * Comprueba los servidores DNS que tienes configurado.
   * Añade una resolución estática con el nombre `www.example.com` y un dirección IP privada.
   * Realiza una consulta con `dig` para averiguar la dirección IP de `www.example.com` y otra con `getent ahosts`. ¿Por qué salen resultados distintos?
 
-5. En el sistema Ubuntu:
+6. En el sistema Ubuntu:
   * Comprueba el orden de mecanismos de resolución de nombres que tienes configurado.
   * ¿Usa `systemd-resolved`? ¿Por qué?
   * Comprueba los servidores DNS que tienes configurado con `resolvectl`.
