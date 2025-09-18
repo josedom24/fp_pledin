@@ -109,7 +109,7 @@ eficiente en sistemas modernos que ya utilizan `systemd` para otros servicios.
   * Instalando NetworkManager en nuestro Debian sin entorno gráfico.
   * Usando una distribución Linux que lo use por defecto, por ejemplo Fedora.
 
-  Prepara una máquina que utilice NetworkManager y realiza los siguientes pasos desde la línea de comandos:
+    Prepara una máquina que utilice NetworkManager y realiza los siguientes pasos desde la línea de comandos:
 
   * Visualiza la configuración de red actual.
   * Cambia a una configuración estática indicando la dirección IP que había tomado de forma dinámica.
