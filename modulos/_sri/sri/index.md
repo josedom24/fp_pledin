@@ -6,7 +6,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 
 * [Clase 1: Instalación y creación de una máquina virtual con virt-manager](2526/u1/clase1.html)
 * [Clase 2: Configuración básica de un servidor](2526/u1/clase2.html)
-* Clase 3: Gestión de redes con virt-manager
+* [Clase 3: Gestión de redes con virt-manager](2526/u1/clase3.html)
 * Clase 4: Configuración de red y DNS en sistemas Linux
 * Clase 5: Tarea - Configuración de un router (SNAT y DNAT)
 

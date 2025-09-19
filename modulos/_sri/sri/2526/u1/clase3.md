@@ -51,14 +51,20 @@ title: "Clase 3: Gestión de redes con virt-manager"
 
 ## Recursos
 
-* Curso completo: [Introducción a la virtualización con KVM/libvirt usando virt-manager](https://github.com/josedom24/curso_kvm_ow/tree/main/curso1)
-* En concreto el apartado:
-  * Gestión de redes en virt-manager
+* Curso completo: [Introducción a la virtualización con KVM/libvirt usando virt-manager](https://github.com/josedom24/curso_kvm_ow/tree/main/curso1), el capítulo 6: **Gestión de redes en virt-manager**.
+* En concreto los apartados:
+  * [Introducción a la gestión de redes](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase1.md) 
+  * [Definición de redes](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase2.md)
+  * [Configuración de red en las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase4.md)
 
 ## Ejercicio
 
 1. Para hacer este ejercicio necesitamos dos máquinas virtuales. La primera máquina virtual será la que creamos en la clase anterior. La segunda máquina virtual será una máquina con el sistema operativo Windows para ello puedes seguir la documentación del curso: [Creación de máquinas virtuales Windows (1ª parte)](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase5.md) y [Creación de máquinas virtuales Windows (2ª parte)](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase6.md).
-  * Recuerda que hay que configurar el disco duro y la tarjeta de red como como dispositivio **VirtIO** y por lo tanto tienes que utilizar los driver que encontrarás en la ISO de los drivers VirtIO.
+  * Recuerda que hay que configurar el disco duro y la tarjeta de red como como dispositivos **VirtIO** y por lo tanto tienes que utilizar los driver que encontrarás en la ISO de los drivers VirtIO.
+  * Te recomiendo que uses la ISO tiny11 que encontrarás en nuestra **nas**. Es una versión liviana de Windows11 (funciona con 4Gb de RAM para la instalación, luego puedes poner 2Gb y 15 Gb de disco duro).
+  * Si quieres hacer una instalación más rápida (sin instalar actualizaciones, ni introducir cuenta de microsoft), cuando llegues a la pantalla para cargar los drivers de la tarjeta de red, sigue las instrucciones de esta [página](https://techcommunity.microsoft.com/discussions/windows11/possible-to-install-windows-11-without-microsoft-account/4176334) y se volverá a inicar la instalación dándote la opción de que **no tienes internet**.
+  * Si al iniciar el sistema no funciona la tarjeta de red, instala los drivers VirtIO.
+  * Instala desde la Store un navegador web.
 2. Siguiendo el apartado [Definición de redes](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase2.md) crea una red de cada tipo: NAT, aislada (sin DHCP) y muy aislada.
 3. Siguiendo el apartado [Configuración de red en las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase4.md) conecta las dos máquinas virtuales a la **red NAT** que has creado. Te puedes guiar por el [Ejemplo 2: Trabajando con redes virtuales privadas](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase6.md). Responde a estas preguntas:
   * ¿Qué tipo de configuración de red has necesitado (estática o dinámica)?
