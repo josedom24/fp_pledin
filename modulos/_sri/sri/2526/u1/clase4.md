@@ -7,7 +7,7 @@ title: "Clase 4: Configuración de red y DNS en sistemas Linux"
 * Los distintos mecanismos de configuración de red en sistemas Linux.
 * Configurar los sistemas Linux según el mecanismo de configuración de red que tengan instalado.
 * Los distintos mecanismos de resolución de nombres en sistemas Linux.
-* Configurar los servidores DNS según el mecanimos de resolución denombres que estemos usando.
+* Configurar los servidores DNS según el mecanismos de resolución de nombres que estemos usando.
 
 ## Teoría
 
@@ -17,8 +17,7 @@ Actualmente según la distribución que utilicemos y la configuración del siste
 
 * **ifupdown**: Es una herramienta tradicional para configurar redes en Linux basada en los archivos que encontramos en el directorio `/etc/network`. En sistemas modernos con `systemd`, su funcionamiento está vinculado a la unidad `networking.service`, que activa las configuraciones definidas en estos archivos durante el inicio del sistema o cuando se reinicia el servicio. Aunque es más antigua, sigue siendo usada en sistemas donde se prefieren configuraciones más simples o específicas.
 * **NetworkManager**: Es una solución moderna y flexible diseñada para entornos de escritorio y servidores. Ofrece una interfaz gráfica (como `nm-applet`) y herramientas de línea de comandos (`nmcli` y `nmtui`). Está orientada a la gestión dinámica de redes y se integra bien con configuraciones más complejas, como Wi-Fi, VPNs y conexiones móviles.
-* **systemd-networkd**: Es una alternativa más reciente que forma parte de `systemd`. Se utiliza principalmente en servidores y entornos que buscan configuraciones administradas de manera declarativa a través de archivos de configuración en `/etc/systemd/network/`. Es particularmente ç
-eficiente en sistemas modernos que ya utilizan `systemd` para otros servicios.
+* **systemd-networkd**: Es una alternativa más reciente que forma parte de `systemd`. Se utiliza principalmente en servidores y entornos que buscan configuraciones administradas de manera declarativa a través de archivos de configuración en `/etc/systemd/network/`. Es particularmente eficiente en sistemas modernos que ya utilizan `systemd` para otros servicios.
 * **netplan**: Herramienta de configuración de red introducida en Ubuntu, que permite gestionar la red de forma declarativa utilizando archivos YAML. Esta herramienta se encarga de traducir la configuración declarada en sus archivos en configuraciones aplicables por `NetworkManager` o `systemd-networkd`, dependiendo del backend elegido.
 
 ### DNS
