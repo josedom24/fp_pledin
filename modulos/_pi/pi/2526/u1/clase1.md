@@ -1,5 +1,5 @@
 ---
-title: "Clase 1: Introducción a ansible. Playbook sencillo."
+title: "Clase 1: Introducción a ansible"
 ---
 
 ## ¿Qué vas a aprender en esta clase?

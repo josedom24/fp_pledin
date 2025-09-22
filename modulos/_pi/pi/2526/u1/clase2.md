@@ -1,16 +1,45 @@
-7. ansible puede trabajar con variables que obtiene de distinta manera:
+---
+title: "Clase 2: Ansible. Ejecución de Playbooks"
+---
 
+## ¿Qué vas a aprender en esta clase?
+
+* Conocer los ficheros fundamentales en la configuración de ansible.
+* Trabajar con la estructura de un playbook.
+* Trabajar con variables.
+* Aprender algunos módulos de ansible.
+* Ejecutar un playbook ansible.
+
+## Teoria
+
+* **Jugada (play)**: Declaración en yaml de una acción (se utiliza un módulo) que quiero conseguir. Ejemplo: Quiero que en la máquina este instalado un paquete de una versión determinada.
+* **Libro de jugadas (playbooks)**: Conjuntos de jugadas (plays), para conseguir una configuración compleja de la máquina.
+* **Variables**: Los plays, normalmente, están parametrizados. Se utilizan variables para concretar la configuración en cada caso. Ansible puede trabajar con variables que obtiene de distinta manera:
 	* A nivel de **nodo**: definimos variables para cada nodo en el inventario, por ejemplo: `ansible_ssh_host`, `ansible_ssh_user`, ...
-	* A nivel de **grupo de nodos**: Hemos creado un directorio que se tiene que llamar `group_vars`, dentro de este directorio podemos crear ficheros con las variables que creamos a nivel del grupo. En este ejemplo hemos creado un fichero `all`, por lo que las variables serán conocidas para todos los nodos. Hemos definido 3 variables para todos los nodos:`bd_name`, `bd_user` y `bd_pass`.
+	* A nivel de **grupo de nodos**: Hemos creado un directorio que se tiene que llamar `group_vars`, dentro de este directorio podemos crear ficheros con las variables que creamos a nivel del grupo. 
 	* **Gathering Facts**: Variables que obtiene ansible de los nodos que está configurando. La primera tarea que ejecuta el play es obtener información del nodo que va a configurar. Toda esa información se puede usar al definir las tareas, por ejemplo: `ansible_hostname`, `ansible_distribution`,... Para ver esa información podemos ejecutar:`ansible nodo1 -m setup`.
 
-8. Veamos el playbook que se encuentra en el fichero `site.yml`:
+## Recursos
+
+* [Presentación: Infraestructura como código. Ansible y Vagrant](https://fp.josedomingo.org/sri/pdf/iac.pdf). 
+
+## Ejercicio
+
+1. Haz un fork del repositorio [ taller_ansible_vagrant](https://github.com/josedom24/taller_ansible_vagrant) y realiza una clonación en el ordenador donde has instalado ansible. Vamos a trabajar en el directorio **Taller1**.
+
+2. Rellena de manera adecuada el inventario y la configuración de ansible.
+
+3. Contesta estas preguntas: ¿Qué variables están definida a nivel de nodo?. ¿Qué variables están definidas a a nivel de grupos de nodos?, ¿qué fichero has consultado?.
+
+4. Ejecuta el método necesario para obtener las variables del nodo (**Gathering Facts**).
+
+5. Veamos el playbook que se encuentra en el fichero `site.yml`:
 
 	* Primera línea: `hosts: all`. Significa que las tareas se van a ejecutar en todos los nodos definidos en el inventario. Podríamos haber puesto `hosts: servidores` o `hosts: nodo1`.
 	* `become: true`: En las tareas que necesiten ejecutarse como administrador se utilizará `sudo`. 
 	* `tasks`: Lista de tareas. Todas las tareas tienen un mensaje en el parámetro `name` y el uso de un módulo.
 
-9. Ejecuta el playbook:
+6. Ejecuta el playbook:
 
 	```
 	ansible-playbook site.yaml
