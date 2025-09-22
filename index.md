@@ -15,7 +15,7 @@ classes: wide
 
 
 
-[![SRI1](https://fp.josedomingo.org/assets/images/sri.png/sri.png)](sri1) [![iv](https://fp.josedomingo.org/assets/images/sri.png/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/sri.png/pi.png)](pi)
+[![SRI1](https://fp.josedomingo.org/assets/images/sri.png)](sri1) [![iv](https://fp.josedomingo.org/assets/images/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/pi.png)](pi)
 
 <!--
 
