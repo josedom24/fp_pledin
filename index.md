@@ -14,7 +14,6 @@ classes: wide
 * [Proyecto intermodular](pi)
 
 
-https://www.josedomingo.org/pledin/assets
 
 [![SRI1](https://fp.josedomingo.org/assets/images/sri.png/sri.png)](sri1) [![iv](https://fp.josedomingo.org/assets/images/sri.png/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/sri.png/pi.png)](pi)
 
