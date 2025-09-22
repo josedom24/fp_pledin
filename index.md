@@ -9,13 +9,7 @@ classes: wide
 
 ### 2º ASIR
 
-* [Servicios de red e internet](sri)
-* [Infraestructura virtual](iv)
-* [Proyecto intermodular](pi)
-
-
-
-[![SRI1](https://fp.josedomingo.org/assets/images/sri.png)](sri1) [![iv](https://fp.josedomingo.org/assets/images/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/pi.png)](pi)
+[![SRI1](https://fp.josedomingo.org/assets/images/sri.png)](sri) [![iv](https://fp.josedomingo.org/assets/images/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/pi.png)](pi)
 
 <!--
 
