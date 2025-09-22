@@ -62,25 +62,15 @@ Actualmente según la distribución que utilicemos y la configuración del siste
 **systemd-resolved (nuevo método de resolución)**
 
 * Es un servicio moderno de Linux para gestionar la resolución de nombres.
-* Ofrece:
+* Es mucho más complejo, pero simplificando ofrece un servidor DNs forward local en `127.0.0.53` que ofrece:
 
+  * Consulta los **servidores DNS** que tiene configurado para resolver nombres.
   * **Caché local de DNS** (mejora el rendimiento).
-  * **Integración con NSS** (`resolve`, `myhostname`, `mymachines`).
-  * **Servidor local en `127.0.0.53`** que actúa como intermediario para reenviar consultas DNS.
-* Modos de uso comunes:
-
-  * **Stub DNS (`127.0.0.53`)**:
-    * `/etc/resolv.conf` apunta a `/run/systemd/resolve/stub-resolv.conf`.
-    * Muy común en **Ubuntu**.
-  * **DNS directo**:
-    * `/etc/resolv.conf` apunta a `/run/systemd/resolve/resolv.conf`.
-    * Típico en **Debian**.
-  * **Modo pasivo**:
-    * Se mantiene un `/etc/resolv.conf` gestionado manualmente o por DHCP.
+  * **Integración con NSS** (`resolve`, `myhostname` (resuelve el nombre del host local), `mymachines` (resuelve nombres de contenedores gestionados por `systemd`)).
   * El orden se ajusta en `/etc/nsswitch.conf`, por ejemplo:
 
     ```plaintext
-    hosts: mymachines resolve files myhostname dns
+    hosts: mymachines resolve myhostname
     ```
   * Herramienta propia: `resolvectl`: Comando para interactuar con `systemd-resolved`.
     * Ver configuración: `resolvectl status`
