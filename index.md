@@ -16,7 +16,7 @@ classes: wide
 
 https://www.josedomingo.org/pledin/assets
 
-[![SRI1](https://www.josedomingo.org/pledin/assets/images/sri.png)](sri1) [![iv](https://www.josedomingo.org/pledin/assets/images/iv.png)](iv) [![pi](https://www.josedomingo.org/pledin/assets/images/pi.png)](pi)
+[![SRI1](https://fp.josedomingo.org/assets/images/sri.png/sri.png)](sri1) [![iv](https://fp.josedomingo.org/assets/images/sri.png/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/sri.png/pi.png)](pi)
 
 <!--
 
