@@ -76,7 +76,7 @@ title: "Clase 1: Introducción a ansible"
 
     * **command**: Ejecutas comandos en el nodo remoto o en un conjunto de nodos. Con `-a` indicamos los **parámetros del módulo**, en este caso indicamos la instrucción a ejecutar. 
 
-        Por ejemplo, para ejecutar `uptime` en toodos los nodos.
+        Por ejemplo, para ejecutar `uptime` en todos los nodos.
 
           ansible all -m command -a "uptime"
           
@@ -117,7 +117,7 @@ title: "Clase 1: Introducción a ansible"
           
         `--become` se utiliza para que la acción se ejecute como `root` en la máquina remota.	
     
-        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/file_module.html#apt-module)
+        [Documentación de apt](https://docs.ansible.com/ansible/2.9/modules/apt_module.html#apt-module)
 
     * **service**: Gestiona servicios del sistema. Parámetros principales:
 
@@ -129,7 +129,7 @@ title: "Clase 1: Introducción a ansible"
 
           ansible nodo1 -m service -a "name=apache2 state=started enabled=yes" --become
           
-        [Documentación de service](https://docs.ansible.com/ansible/2.9/modules/file_module.html#service-module)
+        [Documentación de service](https://docs.ansible.com/ansible/2.9/modules/service_module.html#service-module)
 
     * **user**: Crea, modifica o elimina usuarios. Parámetros principales:
 
@@ -143,7 +143,7 @@ title: "Clase 1: Introducción a ansible"
           ansible all -m user -a "name=demo shell=/bin/bash groups=sudo state=present" --become
           
 
-        [Documentación de user](https://docs.ansible.com/ansible/2.9/modules/file_module.html#user-module)
+        [Documentación de user](https://docs.ansible.com/ansible/2.9/modules/user_module.html#user-module)
 
 4. Realmente no estamos usando un esquema **imperativo** (por ejemplo: **instala apache en el servidor**). Ansible utiliza un esquema **declarativo**, indicamos el **estado** en que queremos tener el servidor (por ejemplo, **me gustaría que el servidor tenga instalado apache**).
 
