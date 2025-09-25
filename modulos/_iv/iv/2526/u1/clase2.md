@@ -1,5 +1,5 @@
 ---
-Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt
+title: "Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
