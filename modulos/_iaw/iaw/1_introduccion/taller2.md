@@ -13,7 +13,7 @@ title: "Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es 
 ## ¿Qué tienes que hacer?
 
 Un pull request es una petición que se hace al propietario de un repositorio original para que este último incorpore los cambios que se sugieren.
-En este ejercicio tienes que hacer un pull request sobre el siguiente repositorio: [https://github.com/josedom24/prueba-pr-asir](https://github.com/josedom24/prueba-pr-asir). Para ello:
+En este ejercicio tienes que hacer un pull request sobre el siguiente repositorio: [https://github.com/Javier-IESGonzaloNazareno/prueba-pr-asir](https://github.com/Javier-IESGonzaloNazareno/prueba-pr-asir). Para ello:
 
 1. Realiza un pull request a este repositorio para solicitar dos cambios:
 
