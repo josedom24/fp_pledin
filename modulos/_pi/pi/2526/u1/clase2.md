@@ -64,8 +64,8 @@ title: "Clase 2: Ansible. Ejecución de Playbooks"
 
 1. Entrega los ficheros: `site.yaml`, `hosts` y `template/index.j2`.
 2. Entrega una captura de pantalla donde se vea que se ha finalizado la ejecución del playbook.
-3. Responde: ¿Cómo se llama la propiedad que permite que las tareas que ya se han realizado no se vuelvan a ejecutar?
-4. Captura de pantalla, donde se vea el fichero `foo.txt` en el servidor configurado.
+3. Vuelve a ejecutar el playbook, ¿se ejecutan todas las tareas?. ¿Cómo se llama la propiedad que permite que las tareas que ya se han realizado no se vuelvan a ejecutar?
+4. Comprueba que el fichero `foo.txt` se ha copiado al servidor configurado. Modifica o barra el fichero en el servidor y vuelve a ejecutar el playbook. ¿Qué ocurre?
 5. Captura de pantalla donde se vea el acceso desde el navegador al servidor web, y se vea el contenido del fichero `index.html`.
 6. Entrega la URL de tu repositorio con el que estás trabajando.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
