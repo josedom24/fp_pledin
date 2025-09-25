@@ -16,7 +16,7 @@ title: "Clase 2: Ansible. Ejecución de Playbooks"
 * **Libro de jugadas (playbooks)**: Conjuntos de jugadas (plays), para conseguir una configuración compleja de la máquina.
 * **Variables**: Los plays, normalmente, están parametrizados. Se utilizan variables para concretar la configuración en cada caso. Ansible puede trabajar con variables que obtiene de distinta manera:
 	* A nivel de **nodo**: definimos variables para cada nodo en el inventario, por ejemplo: `ansible_ssh_host`, `ansible_ssh_user`, ...
-	* A nivel de **grupo de nodos**: Hemos creado un directorio que se tiene que llamar `group_vars`, dentro de este directorio podemos crear ficheros con las variables que creamos a nivel del grupo. 
+	* A nivel de **grupo de nodos**: Hemos creado un directorio que se tiene que llamar `group_vars`, dentro de este directorio podemos crear ficheros con las variables que creamos a nivel del grupo. Dentro de este directorio suele haber un fichero `all` donde se definen las variables que se pueden utilizar al configurar todos los nodos. Si en el inventario tuviéramos un grupo llamado `servidores`, dentro de este directorio podríamos crear un fichero con el mismo nombre, y en él declararíamos las variables que podemos usar al configurar los nodos del grupo `servidores`. Para simplificar, solemos usar el fichero `all`.
 	* **Gathering Facts**: Variables que obtiene ansible de los nodos que está configurando. La primera tarea que ejecuta el play es obtener información del nodo que va a configurar. Toda esa información se puede usar al definir las tareas, por ejemplo: `ansible_hostname`, `ansible_distribution`,... Para ver esa información podemos ejecutar:`ansible nodo1 -m setup`.
 
 ## Recursos
