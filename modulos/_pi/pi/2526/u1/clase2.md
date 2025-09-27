@@ -29,13 +29,13 @@ title: "Clase 2: Ansible. Ejecución de Playbooks"
 
 2. Rellena de manera adecuada el inventario y la configuración de ansible.
 
-3. Contesta estas preguntas: ¿Qué variables están definida a nivel de nodo?. ¿Qué variables están definidas a a nivel de grupos de nodos?, ¿qué fichero has consultado?.
+3. Contesta estas preguntas: ¿Qué variables están definidas a nivel de nodo?. ¿Qué variables están definidas a a nivel de grupos de nodos?, ¿qué fichero has consultado?.
 
 4. Ejecuta el método necesario para obtener las variables del nodo (**Gathering Facts**).
 
 5. Veamos el playbook que se encuentra en el fichero `site.yml`:
 
-	* Primera línea: `hosts: all`. Significa que las tareas se van a ejecutar en todos los nodos definidos en el inventario. Podríamos haber puesto `hosts: servidores` o `hosts: nodo1`.
+	* Primera línea: `hosts: all`. Significa que las tareas se van a ejecutar en todos los nodos definidos en el inventario. Podríamos haber puesto `hosts: servidores` u `hosts: nodo1`.
 	* `become: true`: En las tareas que necesiten ejecutarse como administrador se utilizará `sudo`. 
 	* `tasks`: Lista de tareas. Todas las tareas tienen un mensaje en el parámetro `name` y el uso de un módulo.
 
@@ -65,7 +65,7 @@ title: "Clase 2: Ansible. Ejecución de Playbooks"
 1. Entrega los ficheros: `site.yaml`, `hosts` y `template/index.j2`.
 2. Entrega una captura de pantalla donde se vea que se ha finalizado la ejecución del playbook.
 3. Vuelve a ejecutar el playbook, ¿se ejecutan todas las tareas?. ¿Cómo se llama la propiedad que permite que las tareas que ya se han realizado no se vuelvan a ejecutar?
-4. Comprueba que el fichero `foo.txt` se ha copiado al servidor configurado. Modifica o barra el fichero en el servidor y vuelve a ejecutar el playbook. ¿Qué ocurre?
+4. Comprueba que el fichero `foo.conf` se ha copiado al servidor configurado. Modifica o barra el fichero en el servidor y vuelve a ejecutar el playbook. ¿Qué ocurre?
 5. Captura de pantalla donde se vea el acceso desde el navegador al servidor web, y se vea el contenido del fichero `index.html`.
 6. Entrega la URL de tu repositorio con el que estás trabajando.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

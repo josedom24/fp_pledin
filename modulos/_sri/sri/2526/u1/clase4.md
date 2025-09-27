@@ -7,7 +7,7 @@ title: "Clase 4: Configuración de red y DNS en sistemas Linux"
 * Los distintos mecanismos de configuración de red en sistemas Linux.
 * Configurar los sistemas Linux según el mecanismo de configuración de red que tengan instalado.
 * Los distintos mecanismos de resolución de nombres en sistemas Linux.
-* Configurar los servidores DNS según el mecanismos de resolución de nombres que estemos usando.
+* Configurar los servidores DNS según el mecanismo de resolución de nombres que estemos usando.
 
 ## Teoría
 
@@ -88,7 +88,7 @@ Actualmente según la distribución que utilicemos y la configuración del siste
 
 ## Ejercicio
 
-1. Necesitamos una maquina Linux con el sistema operativo Debian conecta a una red de tipo NAT. En este caso estamos usando el mecanismo **ifupdown**. 
+1. Necesitamos una máquina Linux con el sistema operativo Debian conecta a una red de tipo NAT. En este caso estamos usando el mecanismo **ifupdown**. 
   * Comprueba la configuración actual y visualiza la configuración de red actual.
   * Visualiza las rutas de enrutamiento definidas en el sistema.
   * ¿Cómo se añade una nueva ruta? ¿Cómo se configura una ruta de manera permanente?
@@ -110,7 +110,7 @@ Actualmente según la distribución que utilicemos y la configuración del siste
 5. En el sistema Debian:
   * Comprueba el orden de mecanismos de resolución de nombres que tienes configurado.
   * Comprueba los servidores DNS que tienes configurado.
-  * Añade una resolución estática con el nombre `www.example.com` y un dirección IP privada.
+  * Añade una resolución estática con el nombre `www.example.com` y una dirección IP privada.
   * Realiza una consulta con `dig` para averiguar la dirección IP de `www.example.com` y otra con `getent ahosts`. ¿Por qué salen resultados distintos?
 
 6. En el sistema Ubuntu:

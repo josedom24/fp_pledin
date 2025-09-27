@@ -7,7 +7,7 @@ title: "Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt"
 * Los conceptos de pool de almacenamiento y volúmenes.
 * La gestión de los pool de almacenamientos.
 * La gestión de los volúmenes.
-* La características de aprovisionamiento ligero de los ficheros de discos qcow2.
+* La característica de aprovisionamiento ligero de los ficheros de discos qcow2.
 * La gestión de nuevos discos en las máquinas virtuales.
 
 ## Recursos

@@ -15,7 +15,7 @@ title: "Clase 3: Gestión de redes con virt-manager"
   * **Redes Virtuales (Privadas)**: Son **redes privadas** que podemos configurar para que tengan distintas características.
   * **Redes Puente (Públicas)**: Las podemos considerar como **redes públicas**, desde el punto de vista que las máquinas virtuales estarán conectadas a la misma red a la que está conectada el host.
 
-* Recordemos un **puente o bridge/switch** es un dispositivo de interconexión de redes. La gestión de redes de libvirt se basa en el concepto de **switch virtual**, para ello utiliza **Linux Bridge**, que es un software que nos permite crear bridge virtuales con la misma funcionalidad que un bridge físico.
+* Recordemos un **puente o bridge/switch** es un dispositivo de interconexión de redes. La gestión de redes de libvirt se basa en el concepto de **switch virtual**, para ello utiliza **Linux Bridge**, que es un software que nos permite crear bridges virtuales con la misma funcionalidad que un bridge físico.
 
 ### Redes Virtuales (Privadas)
 
@@ -60,7 +60,7 @@ title: "Clase 3: Gestión de redes con virt-manager"
 ## Ejercicio
 
 1. Para hacer este ejercicio necesitamos dos máquinas virtuales. La primera máquina virtual será la que creamos en la clase anterior. La segunda máquina virtual será una máquina con el sistema operativo Windows para ello puedes seguir la documentación del curso: [Creación de máquinas virtuales Windows (1ª parte)](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase5.md) y [Creación de máquinas virtuales Windows (2ª parte)](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad03/clase6.md).
-  * Recuerda que hay que configurar el disco duro y la tarjeta de red como como dispositivos **VirtIO** y por lo tanto tienes que utilizar los driver que encontrarás en la ISO de los drivers VirtIO.
+  * Recuerda que hay que configurar el disco duro y la tarjeta de red como dispositivos **VirtIO** y por lo tanto tienes que utilizar los drivers que encontrarás en la ISO de los drivers VirtIO.
   * Te recomiendo que uses la ISO tiny11 que encontrarás en nuestra **nas**. Es una versión liviana de Windows11 (funciona con 4Gb de RAM para la instalación, luego puedes poner 2Gb y 15 Gb de disco duro).
   * Si quieres hacer una instalación más rápida (sin instalar actualizaciones, ni introducir cuenta de microsoft), cuando llegues a la pantalla para cargar los drivers de la tarjeta de red, sigue las instrucciones de esta [página](https://techcommunity.microsoft.com/discussions/windows11/possible-to-install-windows-11-without-microsoft-account/4176334) y se volverá a inicar la instalación dándote la opción de que **no tienes internet**.
   * Si al iniciar el sistema no funciona la tarjeta de red, instala los drivers VirtIO.
