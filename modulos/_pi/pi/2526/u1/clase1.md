@@ -6,7 +6,7 @@ title: "Clase 1: Introducción a ansible"
 
 * El concepto de infraestructura como código.
 * El concepto de Software de gestión de la configuración (CMS)
-* Para que sirve ansible y vamos a comenzar a trabajar con este software.
+* Para qué sirve ansible y vamos a comenzar a trabajar con este software.
 
 ## Teoría
 
@@ -50,7 +50,7 @@ title: "Clase 1: Introducción a ansible"
     * En este ejemplo hemos creado un grupo `servidores`, donde hemos definido nuestra máquina.
     * A la máquina la hemos llamado `nodo1` (**cambia el nombre y pon el de tu máquina**), además **debes rellenar la siguiente información del nodo**:
         * `ansible_ssh_host`: Dirección IP del equipo que queremos configurar.
-        * `ansible_ssh_user`: Usuario sin privilegios con el que vamos  acceder por ssh (lo hemos creado en el equipo en el punto 2).
+        * `ansible_ssh_user`: Usuario sin privilegios con el que vamos a acceder por ssh (lo hemos creado en el equipo en el punto 2).
         * `ansible_ssh_private_key_file`: Fichero con la clave privada que vamos a usar para el acceso.
 
 4. Vamos a crear un **fichero de configuración**, en el directorio crearemos un fichero llamado `ansible.cfg`, con el siguiente contenido:
@@ -161,7 +161,7 @@ title: "Clase 1: Introducción a ansible"
 6. Vuelve a ejecutar la copia del fichero. ¿Qué pone la primera línea de la salida de la ejecución del comando? ¿De qué color se muestra la salida? ¿Por qué?
 7. Modifica el fichero en tu ordenador o en el servidor remoto y vuelve a ejecutar la copia. ¿Qué sucede ahora?
 8. Crea un directorio en el servidor remoto y comprueba que se ha creado.
-9. Instala el servidor nginx en el servidor remoto.Comprueba que se ha realizado la instalación.
+9. Instala el servidor nginx en el servidor remoto. Comprueba que se ha realizado la instalación.
 10. Intenta volver a ejecutar nginx en el servidor remoto. ¿Qué ocurre?
 11. ¿Qué módulo de ansible tienes que usar para gestionar el servicio que acabas de instalar? Para el servicio nginx. Comprueba que has parado el servicio.
 12. Desinstala el servidor nginx. Comprueba la desinstalación.
