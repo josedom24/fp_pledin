@@ -2,13 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-
 @charset "utf-8";
 
-$monospace  : "Liberation Mono", Consolas, Monaco, "Lucida Console", monospace;
+// ============================================
+// Variables de estilo
+// ============================================
+
+$monospace: "Liberation Mono", Consolas, Monaco, "Lucida Console", monospace;
 $text-color: #24292e;
 
-$code-background-color-dark: #fafafa;
 $code-background-color: #fafafa;
 $muted-text-color: #8e8b82 !default;
 $primary-color: #e2cdcd !default;
@@ -22,6 +24,7 @@ $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: $primary-color !default;
 $navicon-link-color-hover: $primary-color !default;
 
+// Paleta de colores base
 $base00: #f6f8fa;
 $base01: #e0e0e0;
 $base02: #d0d0d0;
@@ -39,73 +42,76 @@ $base0d: #3777e6;
 $base0e: #ad00a1;
 $base0f: #cc6633;
 
+// ============================================
+// Importar Minimal Mistakes
+// ============================================
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// ============================================
+// Estilos globales
+// ============================================
 
 html {
-    font-size: 12px; // originally 16px
-    @include breakpoint($medium) {
-        font-size: 14px; // originally 18px
-    }
+  font-size: 12px; // originalmente 16px
 
-    @include breakpoint($large) {
-        font-size: 16px; // originally 20px
-    }
+  @include breakpoint($medium) {
+    font-size: 14px; // originalmente 18px
+  }
 
-        @include breakpoint($x-large) {
-        font-size: 18px; // originally 22px
-    }
+  @include breakpoint($large) {
+    font-size: 16px; // originalmente 20px
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // originalmente 22px
+  }
 }
 
-a.site-title
-{
-    font-size: 2.2em;
+a.site-title {
+  font-size: 2.2em;
 }
 
-div.masthead 
-{
-    background-color: #24292e;
-    color: #8e8b82;
+div.masthead, 
+nav#site-nav {
+  background-color: #24292e;
+  color: #8e8b82;
 }
-nav#site-nav
-{
-    background-color: #24292e;
-    color: #8e8b82;
-}
+
 .archive__item-teaser img {
-    width: auto;
+  width: auto;
 }
 
 .notice--info {
-    font-size: 0.9em !important;
-    background-color: #ebfaff;
-    border: 4px outset #0366D6;
-    border-radius: 0px 40px 0px 0px;
+  font-size: 0.9em !important;
+  background-color: #ebfaff;
+  border: 4px outset #0366D6;
+  border-radius: 0 40px 0 0;
 }
 
 .notice--warning {
-    font-size: 0.9em !important;
-    background-color: #f5dda7;
-    border: 4px outset #FD5D47;
-    border-radius: 0px 40px 0px 0px;
+  font-size: 0.9em !important;
+  background-color: #f5dda7;
+  border: 4px outset #FD5D47;
+  border-radius: 0 40px 0 0;
 }
 
 .nav__list a {
-    display: block;
-      padding: 8px;
-      text-decoration: none;
-      font-size: 1.1em;
-  }
-  .nav__list a:hover {
-      background-color: #78ace9;
-  }
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
 
-  .highlight pre {
-    width: 100%;
-    
+  &:hover {
+    background-color: #78ace9;
+  }
 }
+
+.highlight pre {
+  width: 100%;
+}
+
 a:link, a:visited, a:active {
-    text-decoration:none;
+  text-decoration: none;
 }
-
