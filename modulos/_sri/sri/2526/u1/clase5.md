@@ -64,33 +64,54 @@ title: "Clase 5: Tarea - Configuración de un router (SNAT y DNAT)"
 
 ## Ejercicio
 
-Crea un escenario similar al que encuentras en el Ejemplo 3:
+Vamos a crear el siguiente escenario:
 
-![router](img/router.png)
+![router](img/clase5.png)
 
 Llamaremos a las máquinas de la siguiente manera: 
 
-* La máquina router/nat la llamaremos `router.tunombre.org`.
-* La máquina interna la llamaremos `interna.tunombre.org`.
+* La máquina **router** la llamaremos `router.tunombre.org`, y tendrá una distribución Debian sin entorno gráfico.
+* La máquina **Servidor Web** la llamaremos `web.tunombre.org`, y tendrá una distribución Ubuntu Server (sin entorno gráfico),
+* El **cliente1** la llamaremos `cliente1.tunombre.org`, y tendrá una distribución Fedora.
+* El **cliente2** la llamaremos `cliente2.tunombre.org`, y tendrá un sistema operativo Windows 11.
+
+Puedes reutilizar las máquinas que has usado en los distintos ejercicios.
+
+Tendremos 3 redes:
+
+* Una **red de tipo NAT**, cuyas características son:
+  * Utiliza un bridge llamado **br-nat**.
+  * No tiene servidor DHCP.
+  * Está conectada la máquina **router**.
+* Una red de tipo **muy aislada**, cuyas características son:
+  * Utiliza un bridge llamado **br-red2**.
+  * Tiene que tener un direccionamiento con masca de red /16.
+  * Están conectada las máquinas **router**, **cliente1** y **cliente2**.
+* Una red de tipo **aislada**, cuyas características son:
+  * Utiliza un bridge llamado **br-red1**.
+  * Tiene que tener un direccionamiento con masca de red /24.
+  * Están conectada las máquinas **router**, **Servidor Web**.
+
 
 Realiza las siguientes tareas:
 
-1. Configura de forma estática las interfaces de red de las máquinas que están conectas a la red muy aisladas, comprueba que hay conectividad entre ellas.
-2. Configura el FQDN de forma correcta en las dos máquinas.
-3. Crea un usuario llamado `tunombre` que tenga permisos para ejecutar `sudo` sin que te pida contraseña en las dos máquinas.
-4. Configura el acceso a las dos máquinas por shh con tu clave pública para acceder con el usuario que has creado. Investiga el uso de `ssh -A` para acceder a la máquina interna desde el exterior. 
-5. Configura la máquina router para que permita que la máquina interna tenga acceso a internet. Las reglas que has configurado deben ser persistentes.
-6. Instala un servidor web en la máquina interna: `sudo apt install apache2`. Crea la regla necesaria para acceder desde el exterior al servidor web con un navegador. Usa resolución estática para acceder a la página web usando el nombre `www.tunombre.org`.
+1. Configura de forma adecuada las interfaces de red de las máquinas que están conectadas a las distintas redes, comprueba que hay conectividad entre ellas.
+2. Configura el FQDN de forma correcta en las máquinas.
+3. Crea un usuario llamado `tunombre` que tenga permisos para ejecutar `sudo` sin que te pida contraseña en las máquinas Linux.
+4. Configura el acceso a todas las máquinas Linux por shh con tu clave pública para acceder con el usuario que has creado. Investiga el uso de `ssh -A` para acceder a las máquinas internas desde el exterior. 
+5. Configura la máquina router para que permita que las máquinas internas tenga acceso a internet. Las reglas que has configurado deben ser persistentes.
+6. Instala un servidor web en la máquina **Servidor WEb**: `sudo apt install apache2`. Crea la regla necesaria para acceder desde el exterior al servidor web con un navegador. Usa resolución estática para acceder a la página web usando el nombre `www.tunombre.org`, para acceder desde el exterior, y desde las máquinas conectadas a la red **muy aislada**. **Nota**: Desde el exterior se debe acceder a la máquina **router** para acceder a la página web.
 
 {% capture notice-text %}
 ## Entrega
 
-1. Configuración de red de las dos máquinas. Comprobación de que las máquinas hacen ping.
-2. Comprobación de que el nombre FQDN está bien configurado.
-3. Comprobación de que al ejecutar sudo no se pide la contraseña.
-4. Comprobación del acceso a las dos máquinas con ssh.
-5. Comprobación de que la máquina interna tiene acceso a internet y resolución DNS.
-6. Comprobación del acceso a la página web con un navegador desde el exterior.
+1. Configuración de red de las máquinas. Comprobación de que las máquinas que están conectadas en distintas redes hacen ping entre ellas (usa una de las máquinas conectada a la red **muy aislada**).
+2. Comprobación de que el nombre FQDN está bien configurado en las máquinas.
+3. Comprobación de que al ejecutar sudo no se pide la contraseña en las máquinas Linux.
+4. Comprobación del acceso a la máquina **cliente1** y **Servidor Web** con ssh desde el exterior.
+5. Comprobación de que las máquinas internas tienen acceso a internet y resolución DNS.
+6. Comprobación del acceso a la página web con un navegador desde el exterior y desde alguna de las máquinas conectadas a la red **muy aisladad**.
+7. ¿Se puede acceder a la máquina **Servidor Web** desde el exterior sin acceder por el router?. Razona tu respuesta.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
