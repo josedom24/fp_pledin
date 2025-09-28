@@ -82,7 +82,7 @@ Tendremos 3 redes:
 * Una **red de tipo NAT**, cuyas características son:
   * Utiliza un bridge llamado **br-nat**.
   * No tiene servidor DHCP.
-  * Está conectada la máquina **router**.
+  * Está conectada la máquina **router**, y le da acceso a internet.
 * Una red de tipo **muy aislada**, cuyas características son:
   * Utiliza un bridge llamado **br-red2**.
   * Tiene que tener un direccionamiento con masca de red /16.
