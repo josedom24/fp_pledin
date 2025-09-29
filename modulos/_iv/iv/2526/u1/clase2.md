@@ -29,3 +29,19 @@ title: "Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt"
 8. Siguiendo el apartado [Redimensión de discos en máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso2/contenidos/unidad04/clase6.md), redimensiona el **disco1** a 2 Gb usando `virsh`, redimensiona el **disco2** a 3Gb usando `qemu-img`. Finalmente redimensiona el sistema de ficheros de cada uno de los discos.
 9. Crea un nuevo volumen **nuevo_disco.img** de tipo raw y tamaño 10Gb en el pool **discos**. Lista los volúmenes del pool de almacenamiento `discos` visualizando la capacidad del disco y el tamaño que ocupa realmente en disco. ¿Cuánto espacio ocupa realmente el volumen **nuevo_disco.img**.
 10. Siguiendo el apartado [Trabajar con volúmenes en las máquinas virtuales](https://github.com/josedom24/curso_kvm_ow/blob/main/curso2/contenidos/unidad04/clase5.md), realiza la instalación de una MV con `virt-install` que use el volumen anterior que has creado como disco de la máquina.
+
+
+{% capture notice-text %}
+## Entrega
+
+1. Del ejercicio 1: El comando `virsh` y su salida que nos permite ver los pool de almacenamiento. Responde las preguntas.
+2. Del ejercicio 2: El comando `virsh` y la salida que nos muestra información del pool que has creado. El comando `virsh` que crea el directorio asociado al nuevo pool.
+3. Del ejercicio 3: El comando `virsh` y su salida que nos permite ver los volúmenes que tienes creado en el pool `default`. 
+4. Del ejercicio 4 y 5:  Una vez que crees los dos nuevos volúmenes, el comando `virsh` y su salida que nos permite ver los volúmenes que tienes creado en el pool `discos`. Muestra las instrucciones que has usado para crear los dos volúmenes.
+6. Del ejercicio 6: responde la pregunta. Los comandos y las salidas que nos permiten comprobar el aprovisionamiento ligero.
+7. Del ejercicio 7: Instrucción para añadir el **disco1**. Ejecución de un subcomando de `virsh` para visualizar los dispositivos de bloques conectados a la máquina.
+8. Del ejercicio 8: Las instrucciones que has ejecutado para redimensionar los discos y los sistemas de archivos.
+9. Del ejercicio 9: La instrucción y la salida de la instrucción que has ejecutado para crear el fichero raw. La instrucción y la salida que nos permite ver cuánto espacio ocupa el volumen que hemos creado.
+10. Del ejercicio 10: La instrucción que has usado para comenzar la instalación. Una vez la instalación haya terminado, la configuración XML de la máquina donde se comprueba que volumen está usando como disco principal.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
