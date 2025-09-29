@@ -3,16 +3,16 @@ layout: single
 author_profile: true
 classes: wide
 gallery:
-  - url: (https://fp.josedomingo.org/assets/images/sri.png
-    image_path: (https://fp.josedomingo.org/assets/images/sri.png   # o thumbnail si la tienes distinta
+  - url: /assets/images/sri.png
+    image_path: /assets/images/sri.png   # o thumbnail si la tienes distinta
     alt: "SRI"
     title: ""
-  - url: https://fp.josedomingo.org/assets/images/iv.pn
-    image_path: https://fp.josedomingo.org/assets/images/iv.pn
+  - url: /assets/images/iv.png
+    image_path: /assets/images/iv.png
     alt: "iv"
     title: ""
-  - url: https://fp.josedomingo.org/assets/images/pi.png)
-    image_path: https://fp.josedomingo.org/assets/images/pi.png)
+  - url: /assets/images/pi.png
+    image_path: /assets/images/pi.png
     alt: "pi"
     title: ""
 ---
