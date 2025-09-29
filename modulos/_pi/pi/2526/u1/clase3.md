@@ -17,7 +17,7 @@ title: "Clase 3:  Ansible. Playbook con roles"
 	* Ejemplo: Rol “apache2”: Permite la instalación y configuración de apache2,. . .
 	* Nos permite la reutilización de código.
 
-* Un **handler (manejadores)** es una tarea especial que solo se ejecuta cuando es notificada por otra tarea. Por ejemplo, sólo se ejecuta la tarea de reiniciar un servicio, si la configuración del servicio ha cambiado.
+* Un **handler (manejadores)** es una tarea especial que solo se ejecuta cuando es notificada por otra tarea. Por ejemplo, sólo se ejecuta la tarea de reiniciar un servicio, si la configuración del servicio ha cambiado. Esta tarea solo se ejecuta una vez, al terminar la ejecución del playbook.
 
 ## Recursos
 
