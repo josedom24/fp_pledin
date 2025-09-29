@@ -3,15 +3,15 @@ layout: single
 author_profile: true
 classes: wide
 gallery:
-  - url: /assets/images/sri.png
+  - url: sri
     image_path: /assets/images/sri.png   # o thumbnail si la tienes distinta
     alt: "SRI"
     title: ""
-  - url: /assets/images/iv.png
+  - url: iv
     image_path: /assets/images/iv.png
     alt: "iv"
     title: ""
-  - url: /assets/images/pi.png
+  - url: pi
     image_path: /assets/images/pi.png
     alt: "pi"
     title: ""
