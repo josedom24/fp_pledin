@@ -89,6 +89,7 @@ Tendremos 3 redes:
   * Están conectadas las máquinas **router**, **cliente1** y **cliente2**.
 * Una red de tipo **aislada**, cuyas características son:
   * Utiliza un bridge llamado **br-red1**.
+  * No tiene servidor DHCP.
   * Tiene que tener un direccionamiento con masca de red /24.
   * Están conectadas las máquinas **router**, **Servidor Web**.
 
