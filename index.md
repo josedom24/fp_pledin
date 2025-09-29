@@ -2,6 +2,19 @@
 layout: single
 author_profile: true
 classes: wide
+gallery:
+  - url: (https://fp.josedomingo.org/assets/images/sri.png
+    image_path: (https://fp.josedomingo.org/assets/images/sri.png   # o thumbnail si la tienes distinta
+    alt: "SRI"
+    title: ""
+  - url: https://fp.josedomingo.org/assets/images/iv.pn
+    image_path: https://fp.josedomingo.org/assets/images/iv.pn
+    alt: "iv"
+    title: ""
+  - url: https://fp.josedomingo.org/assets/images/pi.png)
+    image_path: https://fp.josedomingo.org/assets/images/pi.png)
+    alt: "pi"
+    title: ""
 ---
 # Módulos de Formación Profesional (Curso 2025-2026)
 
@@ -9,7 +22,7 @@ classes: wide
 
 ### 2º ASIR
 
-[![SRI1](https://fp.josedomingo.org/assets/images/sri.png)](sri) [![iv](https://fp.josedomingo.org/assets/images/iv.png)](iv) [![pi](https://fp.josedomingo.org/assets/images/pi.png)](pi)
+{% include gallery caption="" %}
 
 <!--
 
