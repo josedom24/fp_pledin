@@ -6,10 +6,11 @@ title: "Proyecto intermodular (2025-2026)"
 
 * [Clase 1: Introducción a ansible](2526/u1/clase1.html)
 * [Clase 2: Ansible. Ejecución de Playbooks](2526/u1/clase2.html)
+* Clase 3:Ansible. Playbooks con roles
 
 <!--
 
-* Clase 3:Ansible - Playbooks con roles
+
 * Introducción al uso de vagrant + libvirt + QEMU/KVM. Creación de una máquina virtual,
 * Configuración de redes en KVM y en Vagrant
 * Vagrant - Creación de escenarios.
