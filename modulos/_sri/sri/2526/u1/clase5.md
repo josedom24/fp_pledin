@@ -22,7 +22,7 @@ title: "Clase 5: Tarea - Configuración de un router (SNAT y DNAT)"
 
 * **Habilitar el reenvío de IPs (IP Forwarding)**: Permite que el kernel reenvíe paquetes entre interfaces de red.
     * Comando temporal: `echo 1 > /proc/sys/net/ipv4/ip_forward`
-    * Para hacerlo **persistente**:  ~~Editar el archivo `/etc/sysctl.conf` y añadir o descomentar `net.ipv4.ip_forward = 1`. Y ejecutar: `sysctl -p`~~. En Debian13 ha cambiado la gestión de los parámetros del kernel, tienes que buscar información para añadir el parámetro `net.ipv4.ip_forward = 1` y de esas forma activar el bit de forwarding.
+    * Para hacerlo **persistente**:  ~~Editar el archivo `/etc/sysctl.conf` y añadir o descomentar `net.ipv4.ip_forward = 1`. Y ejecutar: `sysctl -p`~~. En Debian13 ha cambiado la gestión de los parámetros del kernel, tienes que buscar información para añadir el parámetro `net.ipv4.ip_forward = 1` y de esas forma activar el bit de forwarding.  
     
 * **SNAT (Source NAT)**: Se usa para **salir a Internet** desde una red local con IPs privadas. Cambia la **IP de origen** de los paquetes por la IP pública del router.
 
