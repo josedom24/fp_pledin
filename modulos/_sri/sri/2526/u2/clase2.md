@@ -1,4 +1,6 @@
-# Introducción a Kea DHCP
+---
+title: "Introducción a Kea DHCP"
+---
 
 **Kea** es un servidor DHCP (proyecto de ISC, sucesor moderno de `isc-dhcp-server`) diseñado para ofrecer asignación de direcciones IP dinámica y configuración automática de red a clientes.
 
