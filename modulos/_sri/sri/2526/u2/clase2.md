@@ -4,8 +4,6 @@
 
 El protocolo **DHCP (Dynamic Host Configuration Protocol)** permite a los dispositivos obtener información de red automáticamente, como la IP, puerta de enlace, servidores DNS, etc.
 
----
-
 # Análisis del fichero de configuración `kea-dhcp4.conf`
 
 A continuación se describen los parámetros principales del siguiente fragmento de configuración:
@@ -18,7 +16,6 @@ A continuación se describen los parámetros principales del siguiente fragmento
 }
 ```
 
----
 
 ## 1. interfaces-config
 
@@ -32,7 +29,6 @@ A continuación se describen los parámetros principales del siguiente fragmento
 * `"ens18"` debe coincidir con el nombre de la interfaz real del sistema.
 * Solo los paquetes DHCP recibidos por esta interfaz serán procesados.
 
----
 
 ## 2. lease-database
 
@@ -50,7 +46,6 @@ A continuación se describen los parámetros principales del siguiente fragmento
   * `"persist": true`: los arrendamientos sobreviven a un reinicio del servicio.
   * `"name"`: ruta del fichero donde se guardan las concesiones activas.
 
----
 
 ## 3. Tiempos de validez de concesiones
 
@@ -64,7 +59,7 @@ A continuación se describen los parámetros principales del siguiente fragmento
   * 86400 = 24 horas.
   * Después de este tiempo, el cliente debe renovar la IP.
 
-* `"max-valid-lifetime"`: valor máximo permitido para una concesión.
+* `"max-valid-lifetime"`: valor máximo permitido para una concesión. Si el cliente solicita más tiempo, este es el máximo que se concede.
 
 ### Ampliación teórica: tiempos T1, T2 y T3
 
@@ -78,7 +73,6 @@ En DHCP, los tiempos clave son:
 
 > Nota: Kea no configura explícitamente T1 y T2; los clientes los calculan según el `valid-lifetime`.
 
----
 
 ## 4. subnet4
 
@@ -96,7 +90,7 @@ En DHCP, los tiempos clave son:
 
 ---
 
-### 5. pools
+## 5. pools
 
 ```json
 "pools": [
@@ -109,7 +103,7 @@ En DHCP, los tiempos clave son:
 
 ---
 
-### 6. option-data
+## 6. option-data
 
 ```json
 "option-data": [
@@ -129,21 +123,4 @@ Cada opción especifica un parámetro de red que se entrega a los clientes:
 * **domain-name-servers**: servidores DNS a utilizar.
 * **broadcast-address**: dirección de difusión de la red.
 
----
 
-# Resumen final
-
-| Parámetro           | Función                                              |
-| ------------------- | ---------------------------------------------------- |
-| `interfaces-config` | Define en qué interfaces escucha el servidor         |
-| `lease-database`    | Especifica cómo y dónde se almacenan las concesiones |
-| `valid-lifetime`    | Tiempo de validez de las IPs asignadas               |
-| `subnet4`           | Red sobre la que se opera y se asignan IPs           |
-| `pools`             | Rango de direcciones IP a asignar                    |
-| `option-data`       | Información adicional que se entrega a los clientes  |
-
-> **Importante**: Si se modifica el fichero de configuración, se debe reiniciar el servicio Kea para aplicar los cambios:
->
-> ```bash
-> sudo systemctl restart kea-dhcp4-server
-> ```
