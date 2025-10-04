@@ -6,9 +6,9 @@ title: "Infraestructura virtual (2025-2026)"
 
 * [Clase 1: Introducción a la virtualización y a QEMU/KVM/libvirt. Creación de máquinas virtuales desde la línea de comandos](2526/u1/clase1.html)
 * [Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt](2526/u1/clase2.html)
-* Clase 3: Clonación e instantáneas de maquinas virtuales
-* Gestión de redes en QEMU/KVM + libvirt
-* Práctica: KVM
+* [Clase 3: Clonación e instantáneas de maquinas virtuales](2526/u1/clase3.html)
+* Clase 4: Gestión de redes en QEMU/KVM + libvirt
+* Clase 5: Práctica: KVM
 
 <!--
 
