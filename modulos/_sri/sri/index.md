@@ -10,7 +10,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 4: Configuración de red y DNS en sistemas Linux](2526/u1/clase4.html)
 * [Clase 5: Tarea - Configuración de un router (SNAT y DNAT)](2526/u1/clase5.html)
 
-## Unidad 2: Servidor DHCP
+## Unidad 2: Protocolo DHCP
 
 * [Clase 1: Introducción al protocolo DHCP](2526/u2/clase1.html)
 * [Clase 2: Tarea - Instalación del servidor Kea DHCP](2526/u2/clase2.html)
