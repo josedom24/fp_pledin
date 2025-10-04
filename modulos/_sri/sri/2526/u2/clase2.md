@@ -1,5 +1,5 @@
 ---
-title: "Clase 2: Instalación del servidor Kea DHCP"
+title: "Clase 2: Tarea - Instalación del servidor Kea DHCP"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
@@ -33,5 +33,22 @@ Vamos a seguir trabajando con el escenario de la unidad anterior.
 	  * Determinar el rango de direcciones, la máscara de red, la puerta de enlace, el servidor DNS y la dirección de broadcast.
 	  * Duración de la concesión: 24 horas.
 
-  Crea una reserva en el servidor para que el **servidorWeb* tenga la misma IP que había configurado de forma estática.
-7. Modifica la configuración de red del **servidorWeb** para que configure la red de forma .
+  Crea una reserva en el servidor para que el **servidorWeb** tenga la misma IP que había configurado de forma estática.
+7. Modifica la configuración de red del **servidorWeb** para que configure la red de forma dinámica.
+8. Conecta la máquina **router** a una red de tipo NAT con servidor DHCP (por ejemplo la `default`). Configura la interfaz correspondiente para que tome direccionamiento dinámico.
+9. Recuerda que si la interfaz "pública" de un router toma direccionamiento dinámico, las reglas de SNAT deben usar la técnica de enmascaramiento, Modifica las reglas de SNAT para que el escenario siga funcionando.
+
+{% capture notice-text %}
+## Entrega
+
+1. Entrega el fichero de configuración que tienes que realizar en el apartado 1 del servidor DHCP.
+2. Muestra la configuración de los clientes para que tomen direccionamiento dinámico. Muestra la configuración de red (dirección ip, puesta de enlace, DNS,...) con la que se han configurado. Muestra la lista de concesiones.
+3. Una comprobación donde se comprueba que los dos clientes tienen conectividad al exterior.
+4. Comprobación donde se vean los 4 paquetes que se transmite en la negociación de la concesión, del apartado 3.
+5. Explica, con pruebas de funcionamiento, el motivo del comportamiento que se indica en los puntos 4 y 5. Muestra al profesor el funcionamiento del punto 4 y 5.
+6. la configuración del servidor DHCP que se solicita en el apartado 6. Muestra la configuración del **servidorWeb** después de cambiar su configuración de red. Comprueba que puedes seguir accediendo a la página web desde el exterior y desde los clientes.
+7. Muestra el cambio que has realizado en la configuración de la interface "pública" del **router**. Muestra la configuración de red que ha tomado.
+8. Muestras las nuevas reglas SNAT.
+9. Comprueba que los clientes y el **servidorWeb** siguen teniendo conectividad con el exterior.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
