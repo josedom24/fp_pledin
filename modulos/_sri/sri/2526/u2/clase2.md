@@ -33,7 +33,7 @@ Vamos a seguir trabajando con el escenario de la unidad anterior.
 	  * Determinar el rango de direcciones, la máscara de red, la puerta de enlace, el servidor DNS y la dirección de broadcast.
 	  * Duración de la concesión: 24 horas.
 
-  Crea una reserva en el servidor para que el **servidorWeb** tenga la misma IP que había configurado de forma estática.
+  	Crea una reserva en el servidor para que el **servidorWeb** tenga la misma IP que había configurado de forma estática.
 7. Modifica la configuración de red del **servidorWeb** para que configure la red de forma dinámica.
 8. Conecta la máquina **router** a una red de tipo NAT con servidor DHCP (por ejemplo la `default`). Configura la interfaz correspondiente para que tome direccionamiento dinámico.
 9. Recuerda que si la interfaz "pública" de un router toma direccionamiento dinámico, las reglas de SNAT deben usar la técnica de enmascaramiento, Modifica las reglas de SNAT para que el escenario siga funcionando.
