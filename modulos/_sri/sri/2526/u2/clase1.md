@@ -15,7 +15,7 @@ title: "Clase 1: Introducción al protocolo DHCP"
 
 ## Teoría
 
-* [Teoría: Protocolo DHCP](kea.html)
+* [Teoría: Protocolo DHCP](https://fp.josedomingo.org/sri/pdf/dhcp.pdf)
 
 ## Ejercicio
 
