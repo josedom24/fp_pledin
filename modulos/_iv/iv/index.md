@@ -10,6 +10,12 @@ title: "Infraestructura virtual (2025-2026)"
 * Clase 4: Gestión de redes en QEMU/KVM + libvirt
 * Clase 5: Práctica: KVM
 
+
+## Unidad 3: Cloud Computing IaaS. OpenStack 
+
+* [Clase 1: Primeros pasos con OpenStack](2526/u2/clase1.html)
+* [Clase 2: Configuración del cliente VPN](2526/u2/clase2.html) 
+
 <!--
 
 ## Unidad 2: Contenedores
@@ -22,7 +28,6 @@ title: "Infraestructura virtual (2025-2026)"
 * Almacenamiento y redes en Docker
 * Escenarios multicontenedor en Docker
 
-## Unidad 3: Cloud Computing IaaS. OpenStack 
 
 * Introducción al Cloud Computing y a OpenStack.
 * Trabajo con instancias en OpenStack
