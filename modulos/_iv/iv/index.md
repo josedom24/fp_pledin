@@ -13,8 +13,8 @@ title: "Infraestructura virtual (2025-2026)"
 
 ## Unidad 3: Cloud Computing IaaS. OpenStack 
 
-* [Clase 1: Primeros pasos con OpenStack](2526/u2/clase1.html)
-* [Clase 2: Configuración del cliente VPN](2526/u2/clase2.html) 
+* [Clase 1: Primeros pasos con OpenStack](2526/u3/clase1.html)
+* [Clase 2: Configuración del cliente VPN](2526/u3/clase2.html) 
 
 <!--
 
