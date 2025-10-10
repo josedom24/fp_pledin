@@ -192,7 +192,7 @@ data "libvirt_domain" "debian13_info" {
 
 output "vm_info" {
   value = <<EOT
-✅ Máquina Debian 13 (Trixie) creada con clonación ligada (backing store)
+Máquina Debian 13 (Trixie) creada con clonación ligada (backing store)
 
 Nombre: ${libvirt_domain.debian13_vm.name}
 Disco:  ${libvirt_volume.debian13_clone.name} (ligado a ${libvirt_volume.debian13_base.name})
@@ -209,7 +209,7 @@ EOT
 
 
 
-## 📦 Verificación del *backing store*
+## Verificación del *backing store*
 
 Cuando Terraform termine, puedes comprobar que la clonación es **ligada** (no copia completa):
 
