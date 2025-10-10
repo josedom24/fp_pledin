@@ -30,14 +30,14 @@ Los contenidos necesarios para la realización de esta clase y para profundizar 
 1. Realiza la instalación de vagrant y del plugin `vagrant-libvirt` como se indica en el artículo.
 2. **A partir de este punto, vamos a trabajar con un usuario sin privilegios. Cada usuario tendrá sus box propios y sus máquinas virtuales.** 
 3. Descarga el box de Debian 12 (**`debian/bookworm64`** de [Vagrant Cloud](https://app.vagrantup.com/boxes/search). Y comprueba los boxes que tienes descargado, como se indica en el artículo.
-4. Todavía no se encuentra en [Vagrant Cloud](https://app.vagrantup.com/boxes/search) la versión 13 de Debian. El profesor ha creado un box llamado `josedom24/debain13`. Descargalo de [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
+4. Todavía no se encuentra en [Vagrant Cloud](https://app.vagrantup.com/boxes/search) la versión 13 de Debian. El profesor ha creado un box llamado `josedom24/debian13`. Descargalo de [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
 5. Vamos a crear un fichero `Vagrantfile`, para ello en un directorio ejecuta `vagrant init` y modifica el fichero. Tienes un modelo de `Vagrantfile` en el directorio **Taller3** del repositorio [taller_ansible_vagrant](https://github.com/josedom24/taller_ansible_vagrant). Veamos la configuración que hemos indicado:
 
 	* `.vm.box`: Indicamos el box que vamos a utilizar.
 	* `.vm.hostname`: Indicamos el *hostname* de la máquina.
 	* `.vm.synced_folder ".", "/vagrant", disabled: true`: No es obligatorio, pero con esta opción deshabilitamos el directorio de sincronización entre el host y la máquina virtual.
 
-    **Nota**: Modifica el fichero `Vagrantfile` para indicar el box `josedom24/debain13`.
+    **Nota**: Modifica el fichero `Vagrantfile` para indicar el box `josedom24/debian13`.
 
 6. Recuerda que las instrucciones `vagrant` hay que ejecutarlas en el directorio donde se encuentra el fichero `Vagrantfile`. Ejecuta la instrucción para iniciar la máquina. Posteriormente ejecuta la instrucción para acceder a la máquina.
 7. Ejecuta las instrucciones para parar e iniciar de nuevo la máquina. 
