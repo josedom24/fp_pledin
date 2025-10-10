@@ -7,7 +7,7 @@ title: "Proyecto intermodular (2025-2026)"
 * [Clase 1: Introducción a ansible](2526/u1/clase1.html)
 * [Clase 2: Ansible. Ejecución de Playbooks](2526/u1/clase2.html)
 * [Clase 3: Ansible. Playbooks con roles](2526/u1/clase3.html)
-* [Clase 4: Introducción a vagrant](2526/u1/clase4.html)
+* [Clase 4: Introducción a terraform + libvirt](2526/u1/clase4.html)
 * Clase 5: Vagrant - Creación de escenarios
 
 <!--
