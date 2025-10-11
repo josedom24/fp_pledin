@@ -57,7 +57,7 @@ sudo apt update && sudo apt install terraform
 
 ## Ejercicios
 
-1. Vamos a descargar la imágenes cloud con la que vamos a trabajr. La vamos a copiar en el directorio correspondiente al pool `default`:
+1. Vamos a descargar la imágenes cloud con la que vamos a trabajar. La vamos a copiar en el directorio correspondiente al pool `default`:
 
   ```
   cd /var/lib/libvirt/images
