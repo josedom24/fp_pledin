@@ -78,11 +78,12 @@ Empezamos a trabajar en el directorio`ejemplo1`. En este ejemplo vamos a crear u
   * `var.libvirt_pool_name`: donde guardamos el nombre del pool en el que queremos crear la máquina virtual. Su valor por defecto es `default`.
   * `var.libvirt_pool_path`: donde se guarda el directorio correspondiente al pool `default`, normalmente es `/var/lib/libvirt/images`. 
   Este fichero **se modifica una vez** indicando vuestros datos particulares.
+* `cloud-init/base.yaml`: Fichero para configurar la máquina instalando los paquetes y configurando lo necesario para que el teclado este en español cuando accedemos a la máquina. **No hay que modificarlo**.
 * `cloud-init/server1/user-data.yaml`: Fichero para configurar la máquina virtual con el mecanismo de cloud-init. En este ejemplo:
   * Se indica el hostnmae.
   * Se configura el usuario `debian` y se lo pone una contraseña.
   * Se ejecuta una `apt update`.
-  * Se instalan los paquetes y se hace la configuración necesaria para que el teclado este en español cuando accedemos a la máquina.
+* `cloud-init`: Se crea la variable local `local.merged` con la unión de los dos ficheros de configuración cloud-init: `cloud-init/base.yaml` y `cloud-init/server1/user-data.yaml`. Esta variable se usará posteriormente para crear la imagen ISO donde esta la configuración cloud-init.
 * `server1.tf`: Aquí está la definición de los recursos con los que queremos trabajar. Los recursos se definen con el parámetro `resource "<tipo del recurso>" "<nombre del recurso>"`. El nombre del recurso debe ser único. Cada tipo de recurso tiene un conjunto de parámetros. En este fichero se definen los siguiente recursos:
   * `resource "libvirt_volume" "server1-disk"`: Un volumen creado con clonación enlazada cuya imagen base está indicado con el parámetro `base_volume_id`. Este volumen se crea en el pool indicado en la variable `var.libvirt_pool_name`.
   * `resource "libvirt_cloudinit_disk" "server1-cloudinit"`: Un disco con formato ISO donde se guarda el fichero de configuración de cloud-init.
@@ -105,7 +106,7 @@ Una vez hecho los cambios, **los comandos se ejecutan en el directorio del proye
 ## ¿Qué tienes que entregar?
 
 1. Configura tu escenario de forma adecuada para crear una máquina virtual con debian13. Conecta por ssh con la máquina. Destruye el escenario.
-2. Modifica los ficheros necesario para crear una máquina virtual con ubuntu. Utiliza el fichero `cloud-init/server1/user-data-ubuntu.yaml` para configurar la máquina. Conecta por ssh con la máquina. Destruye el escenario.
+2. Modifica los ficheros necesarios para crear una máquina virtual con ubuntu: `cloud-init/server1/user-data.yaml` y `server1.tf`. Conecta por ssh con la máquina. Destruye el escenario.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Ejemplo 2: Máquina virtual con disco adicional
