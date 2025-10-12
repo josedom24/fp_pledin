@@ -8,19 +8,11 @@ title: "Proyecto intermodular (2025-2026)"
 * [Clase 2: Ansible. Ejecución de Playbooks](2526/u1/clase2.html)
 * [Clase 3: Ansible. Playbooks con roles](2526/u1/clase3.html)
 * [Clase 4: Introducción a terraform + libvirt  ](2526/u1/clase4.html)
-* Clase 5: Vagrant - Creación de escenarios
+* Clase 5: teraform + libvirt - Creación de escenarios
+* Clase 6: Introducción al almacenamiento. ISCSI.
+* Clase 7: Proyecto 1: Infraestructura como código
 
 <!--
-
-
-* Introducción al uso de vagrant + libvirt + QEMU/KVM. Creación de una máquina virtual,
-* Configuración de redes en KVM y en Vagrant
-* Vagrant - Creación de escenarios.
-* Introducción al almacenamiento. ISCSI.
-* Creación y configuración de un servidor LAMP (Parte 1)
-* Creación y configuración de un servidor LAMP (Parte 2)
-* Creación y configuración de un servidor LAMP (Parte 3)
-
 ## Proyecto 2: Escenario en OpenStack
 
 * Escenario OpenStack (Parte 1)
