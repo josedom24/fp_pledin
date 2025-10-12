@@ -26,27 +26,26 @@ title: "Clase 4: Gestión de redes en QEMU/KVM + libvirt"
 		* Direccionamiento: `192.168.125.0/24`
 		* Dirección del host (puerta de enlace): `192.168.125.1`
 		* Rango DHCP: `192.168.125.2  - 192.168.125.100`
-	* Una red privada aislada
+	* Una red privada aislada sin DHCP
 		* Nombre: **red-aislada**
 		* Nombre del bridge: virbr2
 		* Direccionamiento: `192.168.126.0/24`
 		* Dirección del host (puerta de enlace): `192.168.126.1`
-		* Rango DHCP: `192.168.126.2  - 192.168.126.100`
-	* Una red privada muy aislada
-		* Nombre: **red-muy-aislada**
-		* Nombre del bridge: virbr3
 
-	Activa las redes y configúralas para que se inicien de forma automática.
+	Activa las redes y configúralas para que se inicien de forma automática. **Si tienes conficto con el nombre del bridge o el direccionamiento modifícalos.**
 
-	* **Entrega**: Y el comando `virsh` y la salida para listar las redes que se han creado. 
+2. Desconecta una maquina que tengas conectada a la red `default` y conéctala a `red-nat`. ¿Puedes hacer esta modificación con la máquina encendida?. Comprueba la nueva IP que ha tomado.
+3. Si tuvieras que crear una nueva máquina virtual conectada a la red `red-nat`, ¿cómo sería la instrucción `virt-install`?. **No hay que hacer la instalación**.
+4. Conecta la máquina a la `red-aislada`. ¿Qué tienes que hacer en la máquina para que tenga direccionamiento?. Realiza la configuración. ¿Puedes hacer `ping` a la `192.168.126.1`?. Razona la respuesta.
+5. Crea un puente externo, llamado **br0**. Si estás usando Gnome sigue esta guía: [Creación de un puente externo en un entorno gráfico](https://github.com/josedom24/curso_kvm_ow/blob/main/curso1/contenidos/unidad06/clase3.md), si estás en una máquina sin entorno gráfico: [Creación de un puente externo con Linux Bridge](https://github.com/josedom24/curso_kvm_ow/blob/main/curso2/contenidos/unidad06/clase4.md). Crea una red de tipo puente con libvirt.
+6. Desconecta la máquina de la `red-nat` y conéctala a la red puente (**recuerda que en la conexión puedes indicar la red o el puente**). Comprueba que se configura con una IP del direccionamiento de nuestra red local `172.22.0.0/16` (ha obtenido la dirección del servidor DHCP de nuestro instituto). Comprueba que podemos acceder a esta máquina desde cualquier máquina conectada a la misma red.
 
-	Vamos a trabajar con dos máquinas virtuales (las puedes clonar a partir de la plantilla del taller anterior). Las máquinas las vamos a llamar **cliente1** y **cliente2**. 
+{% capture notice-text %}
+## Entrega
 
-2. Desconecta la máquina `cliente1` de la red `default` y conéctala a la red `red-nat`. Obtén de nuevo una dirección y comprueba la dirección IP que ha tomado, que tiene acceso a internet y que la dirección del host (puerta de enlace) corresponde a la `192.168.125.1`.
-	* **Entrega**: Capturas de pantalla donde se vea el direccionamiento, la puerta de enlace y la prueba de funcionamiento de que tiene conectividad al exterior.
-3. Desconecta la máquina `cliente2` del la red `default`. Conecta las máquinas `cliente1` y `cliente2` a la red `red-aislada`. Comprueba que las máquinas han cogido una dirección IP en la red `192.168.126.0/24`, comprueba que pueden hacer ping entre ellas, y hacer ping al host (`192.168.126.1`). Comprueba que la máquina `cliente1` tiene conexión al exterior (por estar conectada a la red NAT `red-nat`), pero sin embargo el `cliente2` no tiene conexión al exterior.
-	* **Entrega**: Capturas de pantalla donde se vean las direcciones que han tomado, que se pueden hacer ping, que pueden hacer ping al host, pero que el `cliente2` no puede hacer ping al exterior.
-4. Desconecta todas las interfaces de las dos máquinas. Conéctalas a la red `red-muy-aislada`. Configura de forma estática sus direcciones y comprueba que pueden hacer ping entre ellas, sin embargo no pueden hacer ping ni al host, ni al exterior.
-	* **Entrega**: Capturas de pantalla donde se vean las direcciones que han tomado, que se pueden hacer ping y que no pueden hacer ping al exterior.
-5. Crea un puente externo, llamado **br0** como se explica en el apartado [Creación de un Puente Externo con Linux Bridge](https://github.com/josedom24/curso_virtualizacion_linux/blob/main/modulo7/bridge.md). Crea una red de tipo Puente que nos permita conectar las máquinas a este bridge, llámala **red-externa**. Conecta el `cliente1` a esta red y obtén direccionamiento, comprueba que se configura con una IP del direccionamiento de nuestra red local `172.22.0.0/16` (ha obtenido la dirección del servidor DHCP de nuestro instituto). Comprueba que podemos acceder a esta máquina desde cualquier máquina conectada a la misma red.
-	* **Entrega**: Capturas de pantalla donde se vean la dirección que ha tomado y la comprobación de que hay conexión a la máquina virtual desde el exterior.
+1. Del ejercicio 1: Los ficheros XML que has usado. Y la lista de redes que has creado usando el comando `virsh`.
+2. Del ejercicio 2: La instrucción para desconectar la red. La instrucción para conectarla a la nueva red. Comprobación del nuevo direccionamiento (dirección ip y puerta de enlace). Responde la pregunta.
+3. Del ejercicio 3: La instrucción `virt-install`.
+4. Del ejercicio 4: La instrucción para realizar la nueva conexión. Comprobación de que tiene una nueva configuración de red. Responde las preguntas.
+5. Del ejercicio 5 y 6: Entrega dos instrucciones para conectar la máquina a la red puente (**una conectando a la red y otra conectando al bridge**). Comprobaciones del nuevo direccionamiento (IP, puerta de enlaces, servidor DNS). Comprobación de que hay conexión a la máquina virtual desde el exterior.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
