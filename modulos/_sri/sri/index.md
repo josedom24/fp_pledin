@@ -15,13 +15,14 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 1: Introducción al protocolo DHCP](2526/u2/clase1.html)
 * [Clase 2: Tarea - Instalación del servidor Kea DHCP](2526/u2/clase2.html)
 
-<!--
-
 ## Unidad 3: Protocolo HTTP
 
-* Protocolo HTTP. Peticiones.
+* [Clase 1: Introducción al protocolo HTTP](2526/u3/clase1.html)
 * Configuración básica de apache2
 * Configuración básica de nginx
+* 
+
+<!--
 * Proxy inverso
 * Balanceo de carga
 
