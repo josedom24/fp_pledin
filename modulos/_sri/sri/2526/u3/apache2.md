@@ -1,5 +1,5 @@
 ---
-title: "Introducción al servidor web Apache2
+title: "Introducción al servidor web Apache2"
 ---
 
 ## Introducción a Apache
