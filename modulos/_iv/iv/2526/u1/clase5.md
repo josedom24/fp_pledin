@@ -57,7 +57,7 @@ Dado que OpenStack suele operar sobre redes encapsuladas (por ejemplo, con VXLAN
 		* Esta máquina debe tener un disco extra de 1Gb que deberás montar en el directorio `/srv/data`.
 		* El hostname de esta máquina debe ser `nas-tunombre`.
 		* Se debe poder acceder a ella por ssh con el usuario `user` sin que te pida contraseña (configura tu clave pública y la mia).
-    	* Está máquina se debe iniciar cada vez que arrancamos el host.
+		* Está máquina se debe iniciar cada vez que arrancamos el host.
 	* `servidorWeb`:
 		* Máquina virtual Ubuntu 24.04.
 		* Crea esta máquina usando clonación enlazada y configuración de cloud-init desde la imagen cloud.
