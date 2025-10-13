@@ -65,13 +65,13 @@ Puedes ver los detalles en la página [Installing OpenTofu on .deb-based Linux (
 
 1. Vamos a descargar la imágenes cloud con la que vamos a trabajar. La vamos a copiar en el directorio correspondiente al pool `default`:
 
-  ```
-  cd /var/lib/libvirt/images
-  sudo wget https://cloud.debian.org/images/cloud/trixie/daily/latest/debian-13-genericcloud-amd64-daily.qcow2 -O debian13-base.qcow2
-  sudo wget https://cloud-images.ubuntu.com/noble/20251001/noble-server-cloudimg-amd64.img -O ubuntu2404-base.qcow2
-  ```
-
-  Las imágenes bases se llaman `debian13-base.qcow2` y `ubuntu2404-base.qcow2`.
+    ```
+    cd /var/lib/libvirt/images
+    sudo wget https://cloud.debian.org/images/cloud/trixie/daily/latest/debian-13-genericcloud-amd64-daily.qcow2 -O debian13-base.qcow2
+    sudo wget https://cloud-images.ubuntu.com/noble/20251001/noble-server-cloudimg-amd64.img -O ubuntu2404-base.qcow2
+    ```
+  
+    Las imágenes bases se llaman `debian13-base.qcow2` y `ubuntu2404-base.qcow2`.
 
 2. Instala OpenTofu y haz un fork del repositorio de ejemplos: [https://github.com/josedom24/opentofu-libvirt/](https://github.com/josedom24/opentofu-libvirt/).
 
@@ -79,7 +79,7 @@ Puedes ver los detalles en la página [Installing OpenTofu on .deb-based Linux (
 
 Empezamos a trabajar en el directorio`ejemplo1`. En este ejemplo vamos a crear un máquina virtual conectada a la red `default`. OpenTofu trabaja con fichero **tf** que se pueden llamar como queremos. Veamos los ficheros con los que vamos a trabajar:
 
-* `provider.tf`: Configura el provider que vamos a usar y lo configura. El plugin del provider se instala en el directorio `.terraform` cuando ejecutamos `tofu init`. Este comando **sólo se ejecuta una vez**. Este fichero **noo hay que modificarlo**.
+* `provider.tf`: Configura el provider que vamos a usar y lo configura. El plugin del provider se instala en el directorio `.terraform` cuando ejecutamos `tofu init`. Este comando normalmente **sólo se ejecuta una vez**. Este fichero **no hay que modificarlo**.
 * `variables.tf`: Se declaran variables globales, que podemos usar en nuestras definiciones. En este caso se definen:
   * `var.libvirt_pool_name`: donde guardamos el nombre del pool en el que queremos crear la máquina virtual. Su valor por defecto es `default`.
   * `var.libvirt_pool_path`: donde se guarda el directorio correspondiente al pool `default`, normalmente es `/var/lib/libvirt/images`. 
