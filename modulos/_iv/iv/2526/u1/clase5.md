@@ -63,7 +63,7 @@ Dado que OpenStack suele operar sobre redes encapsuladas (por ejemplo, con VXLAN
 		* Crea esta máquina usando clonación enlazada y configuración de cloud-init desde la imagen cloud.
 		* El hostname de esta máquina debe ser `cliente-tunombre`.
 		* Se debe poder acceder a ella por ssh con el usuario `user` sin que te pida contraseña (configura tu clave pública y la mia).
-    	* Está máquina se debe iniciar cada vez que arrancamos el host.
+		* Está máquina se debe iniciar cada vez que arrancamos el host.
 * Configura la máquina **router** para que haga SNAT y permita que las máquinas tengan acceso al exterior (**La configuración debe ser persistente.**). 
 
 
