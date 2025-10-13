@@ -1,20 +1,20 @@
 ---
-title: "Clase 5: teraform + libvirt - Creación de escenarios"
+title: "Clase 5: OpenTofu + libvirt - Creación de escenarios"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
 
-* Creación de escenarios con terraform.
+* Creación de escenarios con OpenTofu.
 * Configuración de máquinas virtuales con cloud-init
 
 ## Teoría
 
-En **Terraform**, un **módulo** es un conjunto de archivos de configuración que agrupan recursos relacionados, de forma que puedan **reutilizarse, organizarse y parametrizarse** fácilmente.
+En **OpenTofu**, un **módulo** es un conjunto de archivos de configuración que agrupan recursos relacionados, de forma que puedan **reutilizarse, organizarse y parametrizarse** fácilmente.
 
 ### Qué es un módulo
 
-Un **módulo** es, esencialmente, una **unidad lógica de infraestructura** que encapsula uno o más recursos de Terraform.
-El directorio raíz de un proyecto de Terraform ya es un módulo implícito (llamado *root module*), y puedes crear módulos adicionales en subdirectorios o reutilizar módulos externos (por ejemplo, del **Terraform Registry**).
+Un **módulo** es, esencialmente, una **unidad lógica de infraestructura** que encapsula uno o más recursos de OpenTofu.
+El directorio raíz de un proyecto de OpenTofu ya es un módulo implícito (llamado *root module*), y puedes crear módulos adicionales en subdirectorios o reutilizar módulos externos (por ejemplo, del **OpenTofu Registry**).
 
 ### Para qué sirve
 
@@ -42,7 +42,7 @@ Llamar a un módulo desde otro archivo es como **invocar una función** con argu
 
 ## Ejercicios
 
-Seguimos trabajando con el repositorio de ejemplos: [https://github.com/josedom24/terraform-libvirt/](https://github.com/josedom24/terraform-libvirt/).
+Seguimos trabajando con el repositorio de ejemplos: [https://github.com/josedom24/opentofu-libvirt/](https://github.com/josedom24/opentofu-libvirt/).
 
 ### Ejemplo 4: Máquina virtual conectada a dos redes: una con DHCP y otra con direccionamiento estático
 
@@ -94,7 +94,7 @@ En este ejemplo, el primer servidor está conectado a una red NAT y una red muy 
 
 ## Ejemplo 6: Generados de escenarios con módulos
 
-Para solucionar el problema del ejemplo anterior. en este ejemplo vamos a usar un **módulo** de terraform para generar máquinas virtuales.
+Para solucionar el problema del ejemplo anterior. en este ejemplo vamos a usar un **módulo** de OpenTofu para generar máquinas virtuales.
 El módulo se encuentra en el directorio `modules/mv` y en ese directorio están todos los ficheros necesarios para crear una máquina virtual. 
 * Los datos para crear una máquina virtual estarán declarada en variables en el fichero `main.tf`.
 * En el fichero `main.tf` podré llamar cuantas veces quiera al módulo `mv` para crear las máquinas que necesite. En este ejemplo están definida dos máquina. Cada una empieza con estas líneas:
@@ -114,6 +114,9 @@ El módulo se encuentra en el directorio `modules/mv` y en ese directorio están
   * Los discos extras que tiene.
   * El path donde se encuentra el `user-data.yaml` y el `network-config.yaml`.
 * Si queremos tener 
+
+
+
 
 
 

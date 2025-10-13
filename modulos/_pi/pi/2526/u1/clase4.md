@@ -1,12 +1,12 @@
 ---
-title: "Clase 4: Introducción a terraform + libvirt"
+title: "Clase 4: Introducción a OpenTofu + libvirt"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
 
 * El concepto de orquestador de escenarios
-* El uso básico de terraform + libvirt
-* Creación de recursos virtualizados con terraform.
+* El uso básico de OpenTofu + libvirt
+* Creación de recursos virtualizados con OpenTofu.
 * Configuración de máquinas virtuales con cloud-init
 
 ## Teoría
@@ -17,16 +17,23 @@ Podemos crear máquinas virtuales de forma automática es el uso de **imágenes 
 
 * [Despliegue automatizado de máquinas virtuales usando cloud-init](https://github.com/josedom24/curso_kvm_ow/blob/main/curso2/contenidos/unidad07/clase3.md)
 
-### ¿Qué es Terraform?
+### ¿Qué es OpenTofu?
 
-**Terraform** es una herramienta de **Infraestructura como Código (IaC)** desarrollada por HashiCorp.
+**OpenTofu** es un *fork* de **Terraform 1.5.x**, creado por la comunidad (liderado por la *Linux Foundation*) después de que HashiCorp cambiara la licencia de Terraform a **BUSL 1.1** en 2023.
+OpenTofu conserva el **modelo declarativo de infraestructura como código (IaC)**, totalmente compatible con los ficheros `.tf` y los *providers* existentes de Terraform.
+Su objetivo es mantener una herramienta **100 % libre y abierta**, compatible con el ecosistema de Terraform, pero sin restricciones de uso.
+
 Permite **definir, crear y administrar infraestructura** (máquinas virtuales, redes, contenedores, etc.) usando archivos de texto declarativos (`.tf`).
+En lugar de crear recursos manualmente, describes **qué infraestructura quieres**, y OpenTofu se encarga de **construirla, modificarla o destruirla** de forma reproducible.
 
-En lugar de crear recursos manualmente, describes **qué infraestructura quieres**, y Terraform se encarga de **construirla, modificarla o destruirla** de forma reproducible.
+* OpenTofu está licenciado bajo **MPL 2.0** (*Mozilla Public License*), reconocida como licencia libre y open source.
+* Está gobernado por la **Linux Foundation**, no por una empresa.
+* Todo el desarrollo es abierto y las decisiones se discuten públicamente.
+
 
 ### ¿Qué es un *provider*?
 
-Un **provider** (proveedor) es un **plugin** que permite a Terraform interactuar con una plataforma o tecnología concreta.
+Un **provider** (proveedor) es un **plugin** que permite a OpenTofu interactuar con una plataforma o tecnología concreta.
 Cada provider sabe cómo crear, leer, actualizar y eliminar recursos.
 
 Ejemplos:
@@ -36,27 +43,23 @@ Ejemplos:
 * `libvirt` → Máquinas virtuales locales con KVM
 * `docker` → Contenedores Docker
 
-En el caso de **libvirt**, el provider permite a Terraform crear y gestionar VMs en tu sistema KVM local.
+En el caso de **libvirt**, el provider permite a OpenTofu crear y gestionar VMs en tu sistema KVM local.
 
-### Comandos más importantes de Terraform
+### Comandos más importantes de OpenTofu
 
 | Comando              | Descripción                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
-| `terraform init`     | Inicializa el proyecto, descarga los *providers* y prepara el entorno.          |
-| `terraform plan`     | Muestra qué acciones realizará Terraform (sin aplicar cambios).                 |
-| `terraform apply`    | Aplica los cambios: crea, modifica o elimina recursos según los archivos `.tf`. |
-| `terraform destroy`  | Elimina todos los recursos gestionados por el proyecto.                         |
-| `terraform validate` | Verifica que la sintaxis de los archivos `.tf` sea correcta.                    |
-| `terraform show`     | Muestra el estado actual de los recursos creados.                               |
-| `terraform output`   | Muestra los valores definidos en bloques `output`.                              |
+| `tofu init`     | Inicializa el proyecto, descarga los *providers* y prepara el entorno.          |
+| `tofu plan`     | Muestra qué acciones realizará OpenTofu (sin aplicar cambios).                 |
+| `tofu apply`    | Aplica los cambios: crea, modifica o elimina recursos según los archivos `.tf`. |
+| `tofu destroy`  | Elimina todos los recursos gestionados por el proyecto.                         |
+| `tofu validate` | Verifica que la sintaxis de los archivos `.tf` sea correcta.                    |
+| `tofu show`     | Muestra el estado actual de los recursos creados.                               |
+| `tofu output`   | Muestra los valores definidos en bloques `output`.                              |
 
-### Instalación de terraform
+### Instalación de OpenTofu
 
-```
-wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update && sudo apt install terraform
-```
+Puedes ver los detalles en la página [Installing OpenTofu on .deb-based Linux (Debian, Ubuntu, etc.)](https://opentofu.org/docs/intro/install/deb/).
 
 ## Ejercicios
 
@@ -70,20 +73,20 @@ sudo apt update && sudo apt install terraform
 
   Las imágenes bases se llaman `debian13-base.qcow2` y `ubuntu2404-base.qcow2`.
 
-2. Instala terraform y haz un fork del repositorio de ejemplos: [https://github.com/josedom24/terraform-libvirt/](https://github.com/josedom24/terraform-libvirt/).
+2. Instala OpenTofu y haz un fork del repositorio de ejemplos: [https://github.com/josedom24/opentofu-libvirt/](https://github.com/josedom24/opentofu-libvirt/).
 
 ### Ejemplo 1: Máquina virtual conectada a la red "default"
 
-Empezamos a trabajar en el directorio`ejemplo1`. En este ejemplo vamos a crear un máquina virtual conectada a la red `default`. Terraform trabaja con fichero **tf** que se pueden llamar como queremos. Veamos los ficheros con los que vamos a trabajar:
+Empezamos a trabajar en el directorio`ejemplo1`. En este ejemplo vamos a crear un máquina virtual conectada a la red `default`. OpenTofu trabaja con fichero **tf** que se pueden llamar como queremos. Veamos los ficheros con los que vamos a trabajar:
 
-* `provider.tf`: Configura el provider que vamos a usar y lo configura. El plugin del provider se instala en el directorio `.terraform` cuando ejecutamos `terraform init`. Este comando **sólo se ejecuta una vez**. Este fichero **noo hay que modificarlo**.
+* `provider.tf`: Configura el provider que vamos a usar y lo configura. El plugin del provider se instala en el directorio `.terraform` cuando ejecutamos `tofu init`. Este comando **sólo se ejecuta una vez**. Este fichero **noo hay que modificarlo**.
 * `variables.tf`: Se declaran variables globales, que podemos usar en nuestras definiciones. En este caso se definen:
   * `var.libvirt_pool_name`: donde guardamos el nombre del pool en el que queremos crear la máquina virtual. Su valor por defecto es `default`.
   * `var.libvirt_pool_path`: donde se guarda el directorio correspondiente al pool `default`, normalmente es `/var/lib/libvirt/images`. 
   Este fichero **se modifica una vez** indicando vuestros datos particulares.
 * `cloud-init/base.yaml`: Fichero para configurar la máquina instalando los paquetes y configurando lo necesario para que el teclado este en español cuando accedemos a la máquina. **No hay que modificarlo**.
 * `cloud-init/server1/user-data.yaml`: Fichero para configurar la máquina virtual con el mecanismo de cloud-init. En este ejemplo:
-  * Se indica el hostnmae.
+  * Se indica el hostname.
   * Se configura el usuario `debian` y se lo pone una contraseña.
   * Se ejecuta una `apt update`.
 * `cloud-init`: Se crea la variable local `local.merged` con la unión de los dos ficheros de configuración cloud-init: `cloud-init/base.yaml` y `cloud-init/server1/user-data.yaml`. Esta variable se usará posteriormente para crear la imagen ISO donde esta la configuración cloud-init.
@@ -98,12 +101,12 @@ Realiza los cambios que creas convenientes en los siguientes ficheros: `variable
 
 Una vez hecho los cambios, **los comandos se ejecutan en el directorio del proyecto**:
 
-* Ejecutamos **una sola vez** el comando `terraform init` para instalar el plugin del provider.
-* Ahora podemos ejecutar el comando `terraform plan` para ver las acciones que se van realizar: creaciones, modificaciones, ...
-* Para indicar que aplique el escenario descrito ejecutamos `terraform apply`, nos muestra las acciones que va a realizar y espera que le indiquemos `yes` para continuar.
-* Una vez creado el escenario os saldrá la información que definimos en el fichero `output.tf`. Esta información siempre se puede mostrar ejecutando `terraform output`.
-* Ya está funcionando el escenario, podemos ver el estado de los recurso ejecutando `terraform show`.
-* Una vez que termine de trabajar con el escenario puede eliminar todos los recursos creados, ejecutando `terraform destroy`.
+* Ejecutamos **una sola vez** el comando `tofu init` para instalar el plugin del provider.
+* Ahora podemos ejecutar el comando `tofu plan` para ver las acciones que se van realizar: creaciones, modificaciones, ...
+* Para indicar que aplique el escenario descrito ejecutamos `tofu apply`, nos muestra las acciones que va a realizar y espera que le indiquemos `yes` para continuar.
+* Una vez creado el escenario os saldrá la información que definimos en el fichero `output.tf`. Esta información siempre se puede mostrar ejecutando `tofu output`.
+* Ya está funcionando el escenario, podemos ver el estado de los recurso ejecutando `tofu show`.
+* Una vez que termine de trabajar con el escenario puede eliminar todos los recursos creados, ejecutando `tofu destroy`.
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
@@ -132,7 +135,7 @@ Este ejemplo es similar al anterior, pero en esta ocasión la máquina virtual t
 
 ## Ejemplo 3: Máquina virtual conectada a dos redes con DHCP
 
-En este ejemplo vamos a comenzar a trabajar con las redes. En los dos ejemplos anteriores habíamos conectado la máquina virtual a una red no gestionada por terraform. En este ejemplo vamos a crear redes gestionadas por terraform, que se crearan con `terraform apply` y de eliminaran con `terraform destroy`.
+En este ejemplo vamos a comenzar a trabajar con las redes. En los dos ejemplos anteriores habíamos conectado la máquina virtual a una red no gestionada por OpenTofu. En este ejemplo vamos a crear redes gestionadas por OpenTofu, que se crearan con `tofu apply` y de eliminaran con `tofu destroy`.
 
 Hemos añadido el fichero `networks.tf` donde se van a definir las redes. En este caso:
 
@@ -142,8 +145,8 @@ Hemos añadido el fichero `networks.tf` donde se van a definir las redes. En est
 
 A continuación estudia la definición del recurso de la máquina virtual en el fichero `main.tf` y comprueba que la máquina está conectada a dos redes. Recuerda que cuando conectamos a un red con servidor DHCP indicamos el parámetro `wait_for_lease = true`.
 
-* Cuando la red no es creada por terraform, por ejemplo `default` indicamos el nombre con el parámetro `network_name`.
-* Cuando la red es gestionada por terraform, indicamos su id con el parámetro ` network_id`, por ejemplo: `network_id = libvirt_network.nat-dhcp.id`
+* Cuando la red no es creada por OpenTofu, por ejemplo `default` indicamos el nombre con el parámetro `network_name`.
+* Cuando la red es gestionada por OpenTofu, indicamos su id con el parámetro ` network_id`, por ejemplo: `network_id = libvirt_network.nat-dhcp.id`
 
 El hecho de que conectemos una máquina virtual a dos redes **no significa que netplan configure las dos interfaces**. Tenemos que configurarlo nosotros, para ello:
 
@@ -160,3 +163,5 @@ Finalmente hemos modificado el fichero `output.tf`para que muestre las dos ip.
 2. Crea una nueva red de tipo NAT con servidor DHCP. Modifca la definición de la máquina para conectarla a esta nueva red. Modifca la configuraciónd e red (fichero `cloud-init/server1/network-config.yaml`) para configurar la tercera interfaz y finalmente modifica el fichero `output.tf` para que salga información de la tercera IP. 
 3. Crea el escenario, comprueba que la máquina tiene 3 interfaces configuras. Destruye el escenario.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+

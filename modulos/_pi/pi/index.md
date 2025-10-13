@@ -7,8 +7,8 @@ title: "Proyecto intermodular (2025-2026)"
 * [Clase 1: Introducción a ansible](2526/u1/clase1.html)
 * [Clase 2: Ansible. Ejecución de Playbooks](2526/u1/clase2.html)
 * [Clase 3: Ansible. Playbooks con roles](2526/u1/clase3.html)
-* [Clase 4: Introducción a terraform + libvirt  ](2526/u1/clase4.html)
-* Clase 5: teraform + libvirt - Creación de escenarios
+* [Clase 4: Introducción a OpenTofu + libvirt](2526/u1/clase4.html)
+* Clase 5: OpenTofu + libvirt - Creación de escenarios
 * Clase 6: Introducción al almacenamiento. ISCSI.
 * Clase 7: Proyecto 1: Infraestructura como código
 
