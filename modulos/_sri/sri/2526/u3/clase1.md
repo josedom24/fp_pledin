@@ -10,7 +10,7 @@ title: "Clase 1: Introducción al protocolo HTTP"
 
 ## Recursos
 
-* (Protocolo HTTP)[pdf/http.pdf]
+* [Protocolo HTTP](pdf/http.pdf)
 
 ## Ejercicio
 
