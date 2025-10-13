@@ -4,7 +4,10 @@ title: "Clase 4: Introducción a terraform + libvirt"
 
 ## ¿Qué vas a aprender en esta clase?
 
-* El concepto de orquestador de escenarios.
+* El concepto de orquestador de escenarios
+* El uso básico de terraform + libvirt
+* Creación de recursos virtualizados con terraform.
+* Configuración de máquinas virtuales con cloud-init
 
 ## Teoría
 
