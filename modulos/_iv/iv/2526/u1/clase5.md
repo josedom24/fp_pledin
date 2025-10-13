@@ -82,4 +82,4 @@ Dado que OpenStack suele operar sobre redes encapsuladas (por ejemplo, con VXLAN
 ## Comprobaciones finales
 
 Comprueba que el escenario funciona de forma correcta. Muestra en la documentación las comprobaciones que has realizado.
-Comprueba lo siguiente: si cambias el contendio de la página web en el `servidorNAS` automática accedemos a la página para comprobar que ha cambiado.
+Comprueba lo siguiente: si cambias el contenido de la página web en el `servidorNAS` automáticamente accedemos a la página para comprobar que ha cambiado.
