@@ -142,6 +142,9 @@ Hemos añadido el fichero `networks.tf` donde se van a definir las redes. En est
 
 A continuación estudia la definición del recurso de la máquina virtual en el fichero `main.tf` y comprueba que la máquina está conectada a dos redes. Recuerda que cuando conectamos a un red con servidor DHCP indicamos el parámetro `wait_for_lease = true`.
 
+* Cuando la red no es creada por terraform, por ejemplo `default` indicamos el nombre con el parámetro `network_name`.
+* Cuando la red es gestionada por terraform, indicamos su id con el parámetro ` network_id`, por ejemplo: `network_id = libvirt_network.nat-dhcp.id`
+
 El hecho de que conectemos una máquina virtual a dos redes **no significa que netplan configure las dos interfaces**. Tenemos que configurarlo nosotros, para ello:
 
 * Creamos el fichero `cloud-init/server1/network-config.yaml` donde guardaremos la configuración netplan de la máquina.
