@@ -34,6 +34,10 @@ La práctica la vamos a realizar en una instancia de OpenStack. Elige el sabor `
 
 Dado que OpenStack suele operar sobre redes encapsuladas (por ejemplo, con VXLAN o GRE), el tamaño efectivo de las tramas se reduce. Cuando usamos una instancia de OpenStack como servidor de virtualización, es necesario ajustar el tamaño máximo de los paquetes de red (**MTU**) para que coincida con el de la red del entorno. Configurar la red de **libvirt** con un **MTU de 1442** evita problemas de comunicación entre las máquinas virtuales, garantizando que los paquetes se transmitan correctamente sin cortes ni errores.
 
+Añade [mi clave pública](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_de_los_profesores) a la instancia.
+
+En la documentación sólo tienes que indicar la IP flotante de la instancia.
+
 
 ## Infraestructura que vamos a crear
 
@@ -61,7 +65,7 @@ Dado que OpenStack suele operar sobre redes encapsuladas (por ejemplo, con VXLAN
 	* `servidorWeb`:
 		* Máquina virtual Ubuntu 24.04.
 		* Crea esta máquina usando clonación enlazada y configuración de cloud-init desde la imagen cloud.
-		* El hostname de esta máquina debe ser `cliente-tunombre`.
+		* El hostname de esta máquina debe ser `web-tunombre`.
 		* Se debe poder acceder a ella por ssh con el usuario `user` sin que te pida contraseña (configura tu clave pública y la mia).
 		* Está máquina se debe iniciar cada vez que arrancamos el host.
 * Configura la máquina **router** para que haga SNAT y permita que las máquinas tengan acceso al exterior (**La configuración debe ser persistente.**). 
@@ -69,9 +73,12 @@ Dado que OpenStack suele operar sobre redes encapsuladas (por ejemplo, con VXLAN
 
 ## Instalación de servicios
 
-1. Instala el servidor web **nginx** en el `servidorWeb`. Configura el `router` para que podamos acceder al servidor web desde el exterior.
-2. Instala en el `servidorNAS` un servidor nfs y comparte el directorio `/srv/data` donde has guardado una página web estática, una plantilla HTML con CSS o la página generada en IAW. En la página principal debe aparecer tu nombre completo y la fecha.
-3. Monta en el `servidorWeb` el directorio compartido en `/var/www/data` y crea un Virtual Host que sirva ese sitio web usando el nombre `data.tunombre.org`.
+1. Instala el servidor web **nginx** en el `servidorWeb`. 
+2. Para que podemos acceder desde el exterior a la página web, vamos a realizar dos configuraciones:
+	* Configuramos un proxy inverso en la instancia de OpenStack que envíe todas las peticiones al puerto 80 del `router`.
+	* Configuramos el `router` para que podamos acceder al servidor web desde el exterior.
+3. Instala en el `servidorNAS` un servidor nfs y comparte el directorio `/srv/data` donde has guardado una página web estática, una plantilla HTML con CSS o la página generada en IAW. En la página principal debe aparecer tu nombre completo y la fecha.
+4. Monta en el `servidorWeb` el directorio compartido en `/var/www/data` y crea un Virtual Host que sirva ese sitio web usando el nombre `data.tunombre.org`.
 
 ## Otras operaciones
 
