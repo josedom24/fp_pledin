@@ -8,7 +8,7 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt](2526/u1/clase2.html)
 * [Clase 3: Clonación e instantáneas de maquinas virtuales](2526/u1/clase3.html)
 * [Clase 4: Gestión de redes en QEMU/KVM + libvirt](2526/u1/clase4.html)
-* Clase 5: Práctica: KVM
+* Clase 5: Práctica: QEMU/KVM + libvirt
 
 
 ## Unidad 3: Cloud Computing IaaS. OpenStack 

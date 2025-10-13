@@ -17,7 +17,7 @@ title: "Clase 4: Gestión de redes en QEMU/KVM + libvirt"
   * Gestión de redes
 * [Presentación: Resumen virtualización en Linux](https://fp.josedomingo.org/sri/pdf/resumen_virtualizacion.pdf)
 
-## ¿Qué tienes que hacer?
+## Ejercicio
 
 1. Crea distintos tipos de redes con `virsh`:
 	* Una red privada de tipo NAT
