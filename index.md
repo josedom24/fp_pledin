@@ -25,11 +25,12 @@ gallery:
 {% include gallery caption="" %}
 
 
-
-* [Implantación de aplicaciones web](iaw)
-
 <!--
 ---
 
+
+* [Implantación de aplicaciones web](iaw)
+
 * [Cursos anteriores](anteriores.html)
+
 -->

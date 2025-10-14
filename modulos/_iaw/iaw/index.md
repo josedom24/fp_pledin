@@ -1,7 +1,7 @@
 ---
 title: "Implantación de aplicaciones web (2024-2025)"
 ---
-<!--
+
 ## Unidad 6: Introducción a la integración continúa y despliegue continuo 
 
 * [Teoría](https://raw.githubusercontent.com/josedom24/presentaciones/main/iaw/ic.pdf)
@@ -44,30 +44,11 @@ title: "Implantación de aplicaciones web (2024-2025)"
 	* [Ejercicio 2: Introducción a django](3_python/ejercicio2.html)
 * [Práctica (1 / 2): Instalación/migración de aplicaciones web Python](3_python/practica1.html)
 * [Práctica (2 / 2): Instalación/migración de aplicaciones web Python](3_python/practica2.html)
--->
-
-
-## Unidad 1: Introducción a la implantación de aplicaciones web
-
-<!--
-
-* [Teoría: Introducción a Git y GitHub](pdf/git.pdf)
-	* [Ejercicio 1: Introducción a git y GitHub](1_introduccion/ejercicio1.html)
-	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
-	* [Taller 1: Git. Trabajando con ramas y uniones](1_introduccion/taller1.html)
-	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
-* [Teoría: Introducción a las Aplicaciones Web](pdf/introduccion_aplicaciones_web.pdf)
-	* [Práctica: Despliegue de página web estática](1_introduccion/practica.html)
-
--->
-* [Teoría: Introducción a la Implantación de Aplicaciones Web](pdf/introduccion_iaw.pdf)
 
 ## Unidad 2: Implantación de aplicaciones web PHP
 
 * [Teoría](pdf/php.pdf)
 	* [Ejercicio 1: Instalación de un servidor LAMP](2_php/ejercicio1.html)
-
-<!--
 	* [Ejercicio 2: VirtualHosting con Apache](2_php/ejercicio2.html)
 	* [Taller 1: Instalación de la aplicación Biblioteca](2_php/taller1.html)
 	* [Taller 2: Configuración Apache2 + fpm-php](2_php/taller2.html)
@@ -79,4 +60,17 @@ title: "Implantación de aplicaciones web (2024-2025)"
 * [Teoría: Introducción a HTTPS con Let’s Encrypt](pdf/https.pdf)
 * [Teoría: Configuración de HTTPS en Apache2](2_php/apache2_https.html)
 * [Práctica (3 / 3): Instalación/migración de aplicaciones web PHP](2_php/practica3.html)
--->
+
+
+## Unidad 1: Introducción a la implantación de aplicaciones web
+
+* [Teoría: Introducción a Git y GitHub](pdf/git.pdf)
+	* [Ejercicio 1: Introducción a git y GitHub](1_introduccion/ejercicio1.html)
+	* [Ejercicio 2: Introducción a Markdown](1_introduccion/ejercicio2.html)
+	* [Taller 1: Git. Trabajando con ramas y uniones](1_introduccion/taller1.html)
+	* [Taller 2: ¿Cómo colaborar en un proyecto de software libre? ¿Qué es un Pull Request (PR)?](1_introduccion/taller2.html)
+* [Teoría: Introducción a las Aplicaciones Web](pdf/introduccion_aplicaciones_web.pdf)
+	* [Práctica: Despliegue de página web estática](1_introduccion/practica.html)
+
+* [Teoría: Introducción a la Implantación de Aplicaciones Web](pdf/introduccion_iaw.pdf)
+
