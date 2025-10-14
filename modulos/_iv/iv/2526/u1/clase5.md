@@ -82,8 +82,8 @@ En la documentación sólo tienes que indicar la IP flotante de la instancia.
 
 ## Otras operaciones
 
-1. El disco donde tenemos la información de la página web en el `servidorNAS` se ha quedado pequeño. Redimensiona el disco y el sistema de ficheros a 2GB-
-2. Realiza un snapshot a cada una de las máquinas para que podemos volver a ese estado si tenemos algún problema.
+1. El disco donde tenemos la información de la página web en el `servidorNAS` se ha quedado pequeño. Redimensiona el disco y el sistema de ficheros a 2GB.
+2. Realiza un snapshot a cada una de las máquinas para que podemos volver a ese estado si tenemos algún problema. Muestra la lista de snapshots.
 
 
 ## Comprobaciones finales
