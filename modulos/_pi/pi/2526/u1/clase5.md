@@ -59,12 +59,11 @@ Recuerda: el hecho de que conectemos una máquina virtual a dos redes **no signi
 * Recuerda que añadimos este fichero en la imagen ISO junto al fichero `cloud-init/server1/user-data.yaml`. Esto se hace con el parámetro `network_config` del recurso `resource "libvirt_cloudinit_disk" "server1-cloudinit"` en el fichero `main.tf`.
 
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
+
+## ¿Qué tienes que realizar?
 
 1. Configura tu escenario de forma adecuada para crear una máquina virtual con debian13. Ejecuta la configuración terreaform del ejemplo 4 y comprueba que efectivamente las dos interfaces están configuradas. ¿Puedes hacer ping a la dirección que hemos configurado de forma estática?. Razona la respuesta. Destruye el escenario, 
 2. Crea una nueva **red muy aislada** y cambia la configuración para conectar la máquina virtual a esta red. Configurala con una dirección en el direccionamiento `172.16.0.0/16`. ¿Puedes hacer ping a esta dirección que hemos configurado?. Razona la respuesta. Destruye el escenario.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Ejemplo 5: Dos máquinas virtuales conectadas entre sí
 
@@ -84,12 +83,11 @@ En este ejemplo, el primer servidor está conectado a una red NAT y una red muy 
   * Tenemos que crear 3 directorios `cloud-init/serverX` para guardar la configuración cloud-init de cada máquina.
   * Tenemos que modificar el fichero `output.tf` para mostrar información de las 3 máquinas.
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
+
+## ¿Qué tienes que realizar?
 
 1. Configura tu escenario de forma adecuada para crear las máquinas virtuales del ejemplo 5. Accede a la primera por ssh y comprueba que puedes hacer ping a la segunda. Accede de forma adecuada por ssh a la primera máquina para desde ella acceder a la segunda. Destruye el escenario
 2. Modifica lo necesario para crear otra máquina conectada a la red muy aislada. Comprueba que todo funciona de manera adecuada. Destruye el escenario.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 ## Ejemplo 6: Generados de escenarios con módulos

@@ -108,12 +108,12 @@ Una vez hecho los cambios, **los comandos se ejecutan en el directorio del proye
 * Ya está funcionando el escenario, podemos ver el estado de los recurso ejecutando `tofu show`.
 * Una vez que termine de trabajar con el escenario puede eliminar todos los recursos creados, ejecutando `tofu destroy`.
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
+
+## ¿Qué tienes que realizar?
 
 1. Configura tu escenario de forma adecuada para crear una máquina virtual con debian13. Conecta por ssh con la máquina. Destruye el escenario.
 2. Modifica los ficheros necesarios para crear una máquina virtual con ubuntu: `cloud-init/server1/user-data.yaml` y `main.tf`. Conecta por ssh con la máquina. Destruye el escenario.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 
 ## Ejemplo 2: Máquina virtual con disco adicional
 
@@ -124,13 +124,11 @@ Este ejemplo es similar al anterior, pero en esta ocasión la máquina virtual t
 * Un disco adicional de 1Gb que se conectará con la máquina virtual
 * La máquina virtual que tiene dos parámetros `disk` donde se especifican los dos discos: el principal y el extra.
 
-{% capture notice-text %}
-## ¿Qué tienes que entregar?
+## ¿Qué tienes que realizar?
 
 1. Modifica el fichero `main.tf` para crear otro disco de 5Gb y añadirlo a la máquina virtual.
 2. Acceder a la máquina virtual por ssh y comprobar con `lsblk` los discos que se han añadido.
 3. Destruye el escenario.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 ## Ejemplo 3: Máquina virtual conectada a dos redes con DHCP
