@@ -18,9 +18,8 @@ title: "Servicios de Red e Internet (2025-2026)"
 ## Unidad 3: Protocolo HTTP
 
 * [Clase 1: Introducción al protocolo HTTP](2526/u3/clase1.html)
-* Configuración básica de apache2
-* Configuración básica de nginx
-* 
+* [Clase 2: Configuración básica de apache2](2526/u3/clase2.html)
+* Clase 3: Configuración básica de nginx
 
 <!--
 * Proxy inverso
