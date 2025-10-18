@@ -89,10 +89,8 @@ sri:
         url: /sri/#unidad-1-introducci%C3%B3n-a-la-virtualizaci%C3%B3n-linux
       - title: DHCP
         url: /sri/#unidad-2-protocolo-dhcp
-#      - title: Infraestructura como código
-#        url: /sri/#unidad-3-infraestructura-como-c%C3%B3digo
-#      - title: HTTP
-#        url: /sri/#unidad-4-protocolo-http
+      - title: HTTP
+        url: /sri/#unidad-3-protocolo-http
 #      - title: IaaS
 #        url: /sri/#unidad-5-cloud-computing-iaas-openstack
 #      - title: DNS
