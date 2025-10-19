@@ -27,7 +27,7 @@ El directorio raíz de un proyecto de OpenTofu ya es un módulo implícito (llam
 Los módulos suelen **definir variables de entrada** (`variable "nombre" { ... }`) que permiten **parametrizar** su comportamiento sin modificar su código interno.
 También pueden **exportar valores** mediante **outputs** (`output "nombre" { ... }`) para que otros módulos o el módulo raíz los utilicen.
 
-👉 Las variables permiten que un mismo módulo sirva para múltiples escenarios simplemente cambiando los valores de entrada.
+Las variables permiten que un mismo módulo sirva para múltiples escenarios simplemente cambiando los valores de entrada.
 
 ### Analogía con funciones
 
@@ -55,7 +55,7 @@ En el fichero `networks.tf`:
 
 Recuerda: el hecho de que conectemos una máquina virtual a dos redes **no significa que netplan configure las dos interfaces**. Tenemos que configurarlo nosotros, para ello:
 
-* Creamos el fichero `cloud-init/server1/network-config.yaml` donde guardaremos la configuración netplan de la máquina, en este ejemplo puedes observar como se ha configurado de forma estárica. Si fuera necesario podríamos indicar la puerta de enlace, el servidor DNS o cuelquier otra configuración de red que necesitemos.
+* Creamos el fichero `cloud-init/server1/network-config.yaml` donde guardaremos la configuración netplan de la máquina, en este ejemplo puedes observar como se ha configurado de forma estárica. Si fuera necesario podríamos indicar la puerta de enlace, el servidor DNS o cualquier otra configuración de red que necesitemos.
 * Recuerda que añadimos este fichero en la imagen ISO junto al fichero `cloud-init/server1/user-data.yaml`. Esto se hace con el parámetro `network_config` del recurso `resource "libvirt_cloudinit_disk" "server1-cloudinit"` en el fichero `main.tf`.
 
 
@@ -92,9 +92,17 @@ En este ejemplo, el primer servidor está conectado a una red NAT y una red muy 
 
 ## Ejemplo 6: Generados de escenarios con módulos
 
-Para solucionar el problema del ejemplo anterior. en este ejemplo vamos a usar un **módulo** de OpenTofu para generar máquinas virtuales.
-El módulo se encuentra en el directorio `modules/mv` y en ese directorio están todos los ficheros necesarios para crear una máquina virtual. 
-* Los datos para crear una máquina virtual estarán declarada en variables en el fichero `main.tf`.
+Para solucionar el problema del ejemplo anterior. en este ejemplo vamos a usar **módulos** de OpenTofu para generar máquinas virtuales y redes.
+Los módulos se encuentra en el directorio fuera del directorio de trabajo, de esta forma podremos **reutilizarlos** en distintos proyectos. En nuestro ejemplo, los módulos están guardaos en el directorio `/terraform/modules/`. Tenemos dos módulos:
+
+* `/terraform/modules/vm`: Contendrá todos los ficheros necesarios para crear máquinas virtuales según los parámetros que le mandemos.
+* `/terraform/modules/network`: Contendrá todos los ficheros necesarios para crear redes según los parámetros que le mandemos.
+
+Estudiemos lo ficheros más importantes:
+
+* En el fichero `main.tf`
+ 
+* Los datos para crear máquinas virtuales y redes estarán declarados en variables en el fichero `main.tf`.
 * En el fichero `main.tf` podré llamar cuantas veces quiera al módulo `mv` para crear las máquinas que necesite. En este ejemplo están definida dos máquina. Cada una empieza con estas líneas:
   ```
   module "server1" {
