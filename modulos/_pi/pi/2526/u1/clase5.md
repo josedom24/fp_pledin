@@ -86,7 +86,7 @@ En este ejemplo, el primer servidor está conectado a una red NAT y una red muy 
 
 ## ¿Qué tienes que realizar?
 
-1. Configura tu escenario de forma adecuada para crear las máquinas virtuales del ejemplo 5. Accede a la primera por ssh y comprueba que puedes hacer ping a la segunda. Accede de forma adecuada por ssh a la primera máquina para desde ella acceder a la segunda. Destruye el escenario
+1. Configura tu escenario de forma adecuada para crear las máquinas virtuales del ejemplo 5. Accede a la primera por ssh y comprueba que puedes hacer ping a la segunda. Accede de forma adecuada por ssh a la primera máquina para desde ella acceder a la segunda. Destruye el escenario.
 2. Modifica lo necesario para crear otra máquina conectada a la red muy aislada. Comprueba que todo funciona de manera adecuada. Destruye el escenario.
 
 
@@ -100,43 +100,43 @@ Los módulos se encuentra en el directorio fuera del directorio de trabajo, de e
 
 Estudiemos lo ficheros más importantes:
 
-* En el fichero `main.tf`
- 
-* Los datos para crear máquinas virtuales y redes estarán declarados en variables en el fichero `main.tf`.
-* En el fichero `main.tf` podré llamar cuantas veces quiera al módulo `mv` para crear las máquinas que necesite. En este ejemplo están definida dos máquina. Cada una empieza con estas líneas:
-  ```
-  module "server1" {
-  source = "./modules/vm"
-  ...
-  ```
-* De cada máquina se especifica:
-  * El nombre.
-  * La memoria.
-  * El número de cpu.
-  * El pool de trabajo.
-  * El path del pool que estamos usando.
-  * La imagen base.
-  * Las redes a las que está conectada. Con el parámetro `network` y con el parámetro `depends_on`. recuerda que en las redes con servidor DHCP se indica el parámetro `wait_for_lease = true`.
-  * Los discos extras que tiene.
-  * El path donde se encuentra el `user-data.yaml` y el `network-config.yaml`.
-* Si queremos tener 
-
-
-
-
-
-
-
-
-
-
-
-
+* En el fichero `main.tf` vemos como utilizamos los dos módulos:
+    * El módulo `network` crea una red, por tanto se recorre la declaración de las variables (`for_each = local.networks`) donde definimos las redes que queremos crear y se van creando cada una de ellas.
+  * El módulo `mv` crea una máquina virtual, por tanto se recorre la declaración de las variables (`for_each = local.servers`) donde definimos las máquinas virtuales que queremos crear y se van creando cada una de ellas.
+  Por ejemplo para usar el módulo `modules/mv`:
+    ```
+    module "server" {
+    source   = "../../terraform/modules/vm"
+    ```
+* En el fichero `escenario.tf` definimos las variables de las redes y de las máquinas virtuales que queremos crear:
+  * `local.networks` es una lista de diccionario, en cada uno de ellos se definen las variables necesarias para crear una red:
+    * `name`: El nombre de la red que se crea en libvirt.
+    * `mode`: Tipo de red. El valor para la red de tipo nat, es `nat`, para las redes aisladas y muy aisladas, `none` y para la red pública `bridge`.
+    * `domain`: El nombre de dominio que envía el servidor DHCP.
+    * `adresses`: Si es necesario, el direccionamiento de la red.
+    * `bridge`: El nombre del bridge que se crea.
+    * `dhcp`: `true` o `false` según activemos el servidor DHCP.
+    * `dns`: `true` o `false` según activemos el servidor DNS.
+    * `autostart`: `true` o `false` según activemos el inicio automática de la red.
+  * `local.servers` es una lista de diccionarios donde definimos las variables necesarias para crear cada máquina virtual:
+    * `name`: El nombre de la máquina virtual que se crea en libvirt.
+    * `memory`: Memoria de la máquina.
+    * `vcpu`: Número de núcleos virtuales de la máquina.
+    * `base_image`: Nombre de la imagen base desde la que se crea el volumen de la máquina virtual.
+    * `network`: Es un diccionario donde se definen las redes a las que está conectada la máquina. Para cada red se indica:
+      * `network_name`: Nombre de la red a la que está conectada.
+      * `wait_for_lease = true`: Esta opción se indica si la red tiene activo el servidor DHC.
+    * `disks`: Es un diccionario donde se definen los discos que tiene la máquina. Para cada disco se indica:
+      * `name`: Nombre del disco.
+      * `size`: Tamaño del disco.
+    * `user_data`: Directorio donde se encuentra el fichero de configuración `user_data.yaml`.
+    * `network_config`: Directorio donde se encuentra el fichero de configuración `network-config.yaml`.
 
 
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
-
+1. Configura tu escenario de forma adecuada para crear las máquinas virtuales del escenario del ejeemplo6. Accede a la primera por ssh y comprueba que puedes hacer ping a la segunda. Accede de forma adecuada por ssh a la primera máquina para desde ella acceder a la segunda. Destruye el escenario.
+2. Crea una nueva red de tipo NAT y crea un nuevo servidor con Ubuntu que esté conectado a esa red y a la red aislada. Accede a esa máquina y comprueba qsu direccionamiento y que puede hacer ping a las otras dos máquinas. Destruye el escenario.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
