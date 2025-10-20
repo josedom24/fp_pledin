@@ -62,8 +62,8 @@ Recuerda: el hecho de que conectemos una máquina virtual a dos redes **no signi
 
 ## ¿Qué tienes que realizar?
 
-1. Configura tu escenario de forma adecuada para crear una máquina virtual con debian13. Ejecuta la configuración terreaform del ejemplo 4 y comprueba que efectivamente las dos interfaces están configuradas. ¿Puedes hacer ping a la dirección que hemos configurado de forma estática?. Razona la respuesta. Destruye el escenario, 
-2. Crea una nueva **red muy aislada** y cambia la configuración para conectar la máquina virtual a esta red. Configurala con una dirección en el direccionamiento `172.16.0.0/16`. ¿Puedes hacer ping a esta dirección que hemos configurado?. Razona la respuesta. Destruye el escenario.
+1. Configura tu escenario de forma adecuada para crear una máquina virtual con debian13. Ejecuta la configuración del ejemplo 4 y comprueba que efectivamente las dos interfaces están configuradas. ¿Puedes hacer ping a la dirección que hemos configurado de forma estática?. Razona la respuesta. Destruye el escenario, 
+2. Crea una nueva **red muy aislada** y cambia la configuración para conectar la máquina virtual a esta red. Configúrala con una dirección en el direccionamiento `172.16.0.0/16`. ¿Puedes hacer ping a esta dirección que hemos configurado?. Razona la respuesta. Destruye el escenario.
 
 ## Ejemplo 5: Dos máquinas virtuales conectadas entre sí
 
