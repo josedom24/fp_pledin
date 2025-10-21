@@ -84,3 +84,12 @@ Si el contenedor está apagado, lo haríamos de la siguiente forma:
 $ lxc-stop contenedor1
 $ lxc-execute contenedor1 -- ls -al
 ```
+
+## Obteniendo información de un contenedor
+
+Para obtener información de un contenedor podemos ejecutar:
+
+```bash
+$ lxc-info contenedor1
+```
+Con la opción `-i` sólo nos da  la dirección ip, con la opción `-S` nos da la estadística de información enviada y recibida por la interfaz de red y con la opción `-s` nos da información del estado.
