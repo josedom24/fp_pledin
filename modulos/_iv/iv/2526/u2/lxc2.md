@@ -39,7 +39,7 @@ lxc.start.auto = 1
 
 ## Limitando los recursos para los contenedores LXC
 
-Por defectos los contenedores LXC pueden usar todos los recursos de CPU, RAM, disco del host. Podemos limitar estos recursos. El componente del núcleo que posibilita limitar los recursos para cada contenedor son los *Grupos de control* [cgroups](https://wiki.archlinux.org/title/Cgroups).
+Por defecto, los contenedores LXC pueden usar todos los recursos de CPU, RAM, disco del host. Podemos limitar estos recursos. El componente del núcleo que posibilita limitar los recursos para cada contenedor son los *Grupos de control* [cgroups](https://wiki.archlinux.org/title/Cgroups).
 
 Vamos a limitar el uso de memoria RAM (512Mb) y de número de procesadores (1 CPU: la CPU 0), para ello en el fichero de configuración del `contenedor1` indicamos los siguientes parámetros:
 
@@ -65,38 +65,11 @@ processor	: 0
 
 Aparece un sólo procesador.
 
-# Redes en LXC
+## Redes en LXC
 
-LXC nos ofrece distintos [mecanismos](https://linuxcontainers.org/lxd/docs/master/networks/) para conectar nuestros contenedores a una red. En este curso nos vamos a centrar en las conexiones de tipo **bridge**. Tenemos dos posibilidades:
+LXC nos ofrece distintos [mecanismos](https://linuxcontainers.org/lxd/docs/master/networks/) para conectar nuestros contenedores a una red. En este curso nos vamos a centrar en las conexiones de tipo **bridge**. 
 
-* Podemos crear manualmente el *bridge* o usar libvirt para su creación (podemos crear distintos tipos de redes con [libvirt](https://wiki.libvirt.org/page/Networking)).
-* Podemos usar `lxc-net`, servicio ofrecido por LXC, que nos facilita la creación de un bridge, que por defecto se llama `lxcbr0`, y que nos ofrece una red de tipo NAT con los servicios de DHCP y DNS.
-
-## Redes con lxc-net
-
-Veamos en primer lugar la segunda opción. El servicio `lxc-net`  crea un bridge llamado `lxcbr0` que nos ofrece una red de tipo NAT con los servicios DHCP y DNS. Por defecto nos ofrece una red con direccionamiento `10.0.3.0/24`.
-
-### Conexión de los contenedores a `lxcbr0`
-
-La configuración por defecto posibilita que los contenedores que creemos se conecten a esta red. Lo podemos ver en la configuración general, en el fichero `/etc/lxc/default.conf`:
-
-```bash
-lxc.net.0.type = veth
-lxc.net.0.link = lxcbr0
-lxc.net.0.flags = up
-...
-```
-
-Si hemos creado un contenedor llamado `contenedor1` recibirá esta configuración que podremos encontrar en su fichero de configuración `/var/lib/lxc/contenedor1/config`:
-
-```bash
-lxc.net.0.type = veth
-lxc.net.0.hwaddr = 00:16:3e:cf:8f:c3
-lxc.net.0.link = lxcbr0
-lxc.net.0.flags = up
-...
-```
-
+Por defecto, si vemos la configuración del contenedor comprobamos con la directiva `lxc.net.0.link = lxcbr0` que está conectado a un bridge llamado `lxcbr0`. Este bridge corresponde a una red de tipo NAT, que ofrece los servicios de DHCP y DNS, y cuyo direccionamiento es `10.0.3.0/24`.
 Por lo tanto podemos comprobar que el `contenedor1` está conectado a esa red. Por ejemplo, si mostramos los contenedores que hemos creado, vemos que ha recibido una ip en ese rango:
 
 ```bash
@@ -107,7 +80,7 @@ contenedor1 RUNNING 1         -      10.0.3.180 -    false
 
 Si accedemos al contenedor podemos hacer varias comprobaciones:
 
-```
+```bash
 $ lxc-attach contenedor1
 root@contenedor1:~# ip a
 ...
@@ -138,53 +111,23 @@ PING endor.josedomingo.org (37.187.119.60) 56(84) bytes of data.
 
 ## Conexión de los contenedores a un bridge existente
 
-Imaginemos que tenemos en nuestro host instalado libvirt para manejar los recursos de KVM/QEMU y hemos creado una red con `virsh` de tipo NAT, que ha creado un bridge llamado `virbr0`, con las siguientes características:
+Los contenedores lo podemos conectar a cualquier bridge (**creado por nosotros o creados por libvirt**). Por ejemplo, podemos conectar nuestro contenedor a la red `default` de libvirt conectándolo al bridge `virbr0`.
 
-```
-$ virsh net-dumpxml default
-<network>
-  <name>default</name>
-  <uuid>c411a5a1-f998-42a9-bc8a-9a9052fc36f6</uuid>
-  <forward mode='nat'>
-    <nat>
-      <port start='1024' end='65535'/>
-    </nat>
-  </forward>
-  <bridge name='virbr0' stp='on' delay='0'/>
-  <mac address='52:54:00:fc:32:a2'/>
-  <ip address='192.168.122.1' netmask='255.255.255.0'>
-    <dhcp>
-      <range start='192.168.122.2' end='192.168.122.254'/>
-    </dhcp>
-  </ip>
-</network>
-```
-
-Podemos modificar el fichero de configuración por defecto `/etc/lxc/default.conf`, indicando el bridge `virbr0`:
+Paramos el contenedor, y modificamos su configuración cambiando la línea a `lxc.net.0.link = virbr0`. Volvemos a iniciar el contenedor y comprobamos:
 
 ```bash
-lxc.net.0.type = veth
-lxc.net.0.link = virbr0
-lxc.net.0.flags = up
-...
-```
-
-Todos los nuevos contenedores que creemos se conectarán a la red `default`:
-
-```bash
-$ lxc-create -n contenedor2 -t debian -- -r bullseye
-$ lxc-start contenedor2
 $ lxc-ls -f
 NAME        STATE   AUTOSTART GROUPS IPV4            IPV6 UNPRIVILEGED 
-contenedor1 RUNNING 1         -      10.0.3.10       -    false        
-contenedor2 RUNNING 1         -      192.168.122.228 -    false        
+contenedor1 RUNNING 1         -      192.168.122.228 -    false        
 ```
 
-Vemos como el `contenedor2` ha tomado en una ip de la red `default`.
+**Nota:** Si hacemos ese cambio en el fichero de configuración general `/etc/lxc/default.conf`, todos los contenedores que creemos a partir de entonces se conectarán a la red `default`.
 
-Si quisiéramos cambiar la conexión del un contenedor ya existente deberíamos hacer la modificación en su fichero de configuración: `/var/lib/lxc/<NOMBRE_CONTENEDOR>/config` y reiniciar el contenedor.
+## Conexión de un contenedor a varias redes
 
-También podríamos conectar el `contenedor1` a la red `default`, para ello vamos a añadir la información de la conexión en su fichero de configuración `/var/lib/lxc/contenedor1/config`:
+Si queremos conectar un contenedor a más redes, tenemos que declarar en la configuración parámetros con el nombre `lxc.net.X` (**X es 0 para la primera interfaz, 1 para la segunda, y así sucesivamente).
+
+Paramos el contenedor, indicamos la segunda conexión utilizando el nombre de los parámetros como `lxc.net.1.*`. Además hemos cambiado la **MAC** de la segunda tarjeta de red. Configuramos el fichero de configuración `/var/lib/lxc/contenedor1/config`:
 
 ```
 lxc.net.0.type = veth
@@ -196,12 +139,11 @@ lxc.net.1.type = veth
 lxc.net.1.hwaddr = 00:16:3e:cf:8f:d3
 lxc.net.1.link = virbr0
 lxc.net.1.flags = up
-...
 ```
 
-Indicamos la segunda conexión utilizando el nombre de los parámetros como `lxc.net.1.*`. Además hemos cambiado la mac de la segunda tarjeta de red. Ahora reiniciamos y accedemos al contenedor:
+Ahora reiniciamos y accedemos al contenedor, para configurar las interfaces de red, según el mecanismo de configuración que tenga. Por ejemplo, suponiendo que tiene **ifupdown**:
 
-```
+```bash
 $ lxc-stop -r contenedor1
 $ lxc-attach contenedor1
 root@contenedor1:~# apt install nano
@@ -246,13 +188,13 @@ contenedor1 RUNNING 1         -      10.0.3.10, 192.168.122.196  -    false
 contenedor2 RUNNING 1         -      192.168.122.228             -    false    
 ```
 
-# Almacenamiento en LXC
+## Almacenamiento en LXC
 
 Veamos cómo montar un directorio del host en un contenedor. Imaginemos que tenemos el directorio `/opt/contenedor1` con un fichero `index.html` y lo queremos montar en el `contenedor1` en el directorio `/srv/www`. Tenemos que tener en cuenta los siguiente:
 
 El directorio de montaje debe existir en el contenedor:
 
-```
+```bash
 $ lxc-attach contenedor1
 root@contenedor1:~# cd /srv
 root@contenedor1:/srv# mkdir www
@@ -268,7 +210,7 @@ Hay que tener en cuenta que al indicar el directorio de montaje hay que usar una
 
 Reiniciamos el contenedor y comprobamos que se ha montado el directorio de forma correcta:
 
-```
+```bash
 $ lxc-stop contenedor1
 $ lxc-start contenedor1
 $ lxc-attach contenedor1
