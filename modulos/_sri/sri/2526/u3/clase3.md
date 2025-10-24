@@ -1,5 +1,5 @@
 ---
-title: "Clase 2: Configuración de un servidor nginx"
+title: "Clase 3: Configuración básica de nginx"
 ---
 
 ## ¿Qué vas a aprender en esta clase?
@@ -20,7 +20,7 @@ Los contenidos necesarios para la realización de este ejercicio y para profundi
 
 ## Ejercicio
 
-Utilizando el **escenario 1** del repositorio [terraform-libvirt](https://github.com/josedom24/terraform-libvirt) vas a crear un escenario donde existe una máquina **servidorweb** y un **cliente**. Los dos están conectados a una red NAT, por lo que tienen internet. Simulamos que el cliente accede al servidor web por una red muy aislada (`servidorweb` 10.0.0.1, y `cliente` 10.0.0.2). Modifica los ficheros de configuración de cloud-init para ajustar tu configuración.
+Utilizando el **escenario 1** del repositorio [opentofu-libvirt](https://github.com/josedom24/opentofu-libvirt) vas a crear un escenario donde existe una máquina **servidorweb** y un **cliente**. Los dos están conectados a una red NAT, por lo que tienen internet. Simulamos que el cliente accede al servidor web por una red muy aislada (`servidorweb` 10.0.0.1, y `cliente` 10.0.0.2). Modifica los ficheros de configuración de cloud-init para ajustar tu configuración.
 
 Una vez creado el escenario:
 
