@@ -73,6 +73,14 @@ Puedes ver los detalles en la página [Installing OpenTofu on .deb-based Linux (
   
     Las imágenes bases se llaman `debian13-base.qcow2` y `ubuntu2404-base.qcow2`.
 
+    Estos discos son muy pequeños, por lo tanto antes de empezar a utilizarlos vamos a redimensionarlos::
+
+    ```
+    qemu-img resize debian13.qcow2 10G
+    qemu-img resize ubuntu2404-base.qcow2 10G
+    ```
+
+
 2. Instala OpenTofu y haz un fork del repositorio de ejemplos: [https://github.com/josedom24/opentofu-libvirt/](https://github.com/josedom24/opentofu-libvirt/).
 
 ### Ejemplo 1: Máquina virtual conectada a la red "default"
