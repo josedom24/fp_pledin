@@ -10,6 +10,19 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 4: Gestión de redes en QEMU/KVM + libvirt](2526/u1/clase4.html)
 * [Clase 5: Práctica: QEMU/KVM + libvirt](2526/u1/clase5.html)
 
+<!--
+
+## Unidad 2: Contenedores
+
+* Introducción a los contenedores
+* Clase 1: Introducción a Linux Containers (LXC)
+* Clase 2: Configuración de contenedores LXC
+* Clase 3: Introducción a los contenedores Docker
+* Clase 4: Imágenes Docker
+* Clase 5: Almacenamiento y redes en Docker
+* Clase 6: Escenarios multicontenedor en Docker
+
+-->
 
 ## Unidad 3: Cloud Computing IaaS. OpenStack 
 
@@ -17,18 +30,6 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 2: Configuración del cliente VPN](2526/u3/clase2.html) 
 
 <!--
-
-## Unidad 2: Contenedores
-
-* Introducción a la virtualización ligera
-* Introducción a LXC
-* Gestión de redes y almacenamiento en LXC
-* Práctica: LXC
-* Introducción a los contenedores Docker
-* Almacenamiento y redes en Docker
-* Escenarios multicontenedor en Docker
-
-
 * Introducción al Cloud Computing y a OpenStack.
 * Trabajo con instancias en OpenStack
 * Gestión del almacenamiento en OpenStack
