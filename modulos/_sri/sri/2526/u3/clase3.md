@@ -40,5 +40,5 @@ Una vez creado el escenario:
 3. Pantallazo accediendo a `www.taller1.com/principal/documentos` (pon algunos ficheros para que se vea la lista).
 4. Pantallazos de accesos a `www.taller1.com/intranet` desde el host y el cliente interno. Pantallazos de acceso a `www.taller1.com/internet` desde el host y el cliente interno.
 5. Pantallazos de la autentificación básica.
-6. Pantallazos de acceso a `www.taller1.com/secreto` desde el host y el cliente interno.
+6. Pantallazos de acceso a `www.taller1.com/secreto` desde el host y el cliente interno después de realizar el ejercicio 7.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

@@ -19,7 +19,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 
 * [Clase 1: Introducción al protocolo HTTP](2526/u3/clase1.html)
 * [Clase 2: Configuración básica de apache2](2526/u3/clase2.html)
-* Clase 3: Configuración básica de nginx
+* [Clase 3: Configuración básica de nginx](2526/u3/clase3.html)
 
 <!--
 * Proxy inverso
