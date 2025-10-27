@@ -10,12 +10,11 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 4: Gestión de redes en QEMU/KVM + libvirt](2526/u1/clase4.html)
 * [Clase 5: Práctica: QEMU/KVM + libvirt](2526/u1/clase5.html)
 
-<!--
 
-## Unidad 2: Contenedores
+## Unidad 2: Virtualización en contenedores
 
 * Introducción a los contenedores
-* Clase 1: Introducción a Linux Containers (LXC)
+* [Clase 1: Introducción a Linux Containers (LXC)](2526/u2/clase1.html)
 * Clase 2: Configuración de contenedores LXC
 * Clase 3: Introducción a los contenedores Docker
 * Clase 4: Imágenes Docker
