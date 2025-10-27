@@ -13,7 +13,7 @@ title: "Infraestructura virtual (2025-2026)"
 
 ## Unidad 2: Virtualización en contenedores
 
-* Introducción a los contenedores
+* [Presentación: Introducción a los contenedores](2526/pdf/contenedores.pdf)
 * [Clase 1: Introducción a Linux Containers (LXC)](2526/u2/clase1.html)
 * Clase 2: Configuración de contenedores LXC
 
