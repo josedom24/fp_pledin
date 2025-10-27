@@ -16,6 +16,9 @@ title: "Infraestructura virtual (2025-2026)"
 * Introducción a los contenedores
 * [Clase 1: Introducción a Linux Containers (LXC)](2526/u2/clase1.html)
 * Clase 2: Configuración de contenedores LXC
+
+
+<!--
 * Clase 3: Introducción a los contenedores Docker
 * Clase 4: Imágenes Docker
 * Clase 5: Almacenamiento y redes en Docker
