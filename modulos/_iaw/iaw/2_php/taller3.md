@@ -24,8 +24,6 @@ title: "Taller 3: Instalación de WordPress en un servidor LEMP"
 7. Accede a la zona de administración de WordPress y escribe una entrada en el blog.
 8. Intenta configurar WordPress para usar URL amigables (**Ajustes->Enlaces permanentes**). Configura nginx de forma adecuada para que permita las URL amigables. Recuerda que nginx no lee la configuración de apache2 en los ficheros `.htaccess`.
 
-Te puede servir la configuración que encuentras en la página [WordPress de nginx](https://www.nginx.com/resources/wiki/start/topics/recipes/wordpress/).
-
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
