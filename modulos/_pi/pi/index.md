@@ -9,8 +9,7 @@ title: "Proyecto intermodular (2025-2026)"
 * [Clase 3: Ansible. Playbooks con roles](2526/u1/clase3.html)
 * [Clase 4: Introducción a OpenTofu + libvirt](2526/u1/clase4.html)
 * [Clase 5: OpenTofu + libvirt - Creación de escenarios](2526/u1/clase5.html)
-* Clase 6: Introducción al almacenamiento. ISCSI.
-* Clase 7: Proyecto 1: Infraestructura como código
+* Clase 6: Proyecto 1 - Infraestructura como código
 
 <!--
 ## Proyecto 2: Escenario en OpenStack
