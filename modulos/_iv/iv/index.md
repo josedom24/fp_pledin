@@ -15,7 +15,7 @@ title: "Infraestructura virtual (2025-2026)"
 
 * [Presentación: Introducción a los contenedores](2526/pdf/contenedores.pdf)
 * [Clase 1: Introducción a Linux Containers (LXC)](2526/u2/clase1.html)
-* Clase 2: Configuración de contenedores LXC
+* [Clase 2: Configuración de contenedores LXC](2526/u2/clase2.html)
 
 
 <!--

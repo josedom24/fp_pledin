@@ -13,7 +13,8 @@ title: "Clase 2: Configuración de contenedores LXC"
 
 * [Configuración de contenedores LXC](lxc2.html)
 
-## ¿Qué tienes que hacer?
+{% capture notice-text %}
+## Entrega
 
 Seguimos trabajando con el contenedor del ejercicio anterior.
 
@@ -22,3 +23,4 @@ Seguimos trabajando con el contenedor del ejercicio anterior.
 3. Conecta los dos contenedores a un red muy aislada, sin desconectarlos de las redes en las que están conectados. Configura sus interfaces de red y prueba su conectividad por la nueva red.
 4. Crea en el host el directorio `/opt/web`, crea el fichero `index.html` y monta este directorio en el directorio `/srv/www` del contenedor.
 5. Instala apache2 en el contenedor y comprueba que se puede acceder a la página web.
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
