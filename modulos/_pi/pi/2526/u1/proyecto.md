@@ -61,6 +61,7 @@ El proyecto consiste en tomar como base dicho escenario y configuración y reali
     Tienes que tener en cuenta:
 
     * El título debe ser significativo y explicar brevemente en que consiste el proyecto.
+    * En las descripción de las funcionalidades tiene que quedar muy claro las variaciones que has introducido.
     * Puedes poner más apartados o cambiar los nombres que yo he puesto.
     * Los apartados pueden tener subapartdos.
     * Los apartados y subapartados deben estar numerados.
