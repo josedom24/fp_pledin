@@ -13,6 +13,8 @@ title: "Clase 4: Introducción a proxy inverso"
 
 1. Vamos a a usar el **escenario2** del repositorio [opentofu-libvirt](https://github.com/josedom24/opentofu-libvirt/tree/main) para montar el siguiente escenario:
 
+    ![img](img/proxyinverso.png)
+
 	* Una máquina `proxy` que esta conectada al exterior por una red NAT y a una red interna muy aislada (dirección `10.0.0.1`).
     * Una máquina `backend` que tendrá un servidor web interno, conectada a la red interna muy aislada (dirección `10.0.0.2`). También está conectado a la red NAT, pero sólo para poder configurarla con la receta ansible. 
 
