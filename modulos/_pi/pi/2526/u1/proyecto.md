@@ -22,7 +22,7 @@ Para realizar este proyecto vamos a partir del **escenario 3** del repositorio [
 
 A continuación tenemos un playbook ansible que configura el escenario:
 
-* En el servidor WEB instala un servidor LAMP e implanta una aplicación PHP que tendrá datos en la base de datos.
+* En el servidor web instala un servidor LAMP e implanta una aplicación PHP que tendrá datos en la base de datos.
 * En la base de datos instala mariadb, crea la base de datos necesarias y la configura para el acceso remoto.
 
 En este momento, y antes de continuar, estudia el escenario opentofu y el playbook ansible. Y cra el escenario y configúralo y comprueba que funciona de manera adecuada.
@@ -67,4 +67,4 @@ El proyecto consiste en tomar como base dicho escenario y configuración y reali
     * El índice debe ser autogenerado.
     * Todo el código debe tener una fuente monoespaciada.
     * En la documentación debe haber un enlace al repositorio github.
-    
+
