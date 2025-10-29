@@ -29,7 +29,7 @@ En este momento, y antes de continuar, estudia el escenario opentofu y el playbo
 
 ## Desarrollo del proyecto
 
-El proyecto consiste en tomar como base dicho escenario y configuración y realizar un proyecto donde podéis introducir distintas variaciones_
+El proyecto consiste en tomar como base dicho escenario y configuración y realizar un proyecto donde podéis introducir distintas variaciones:
 
 * Instalar otra aplicación, por ejemplo la de Biblioteca.
 * Instalar un CMS PHP completo, como WordPress, Drupal,...
