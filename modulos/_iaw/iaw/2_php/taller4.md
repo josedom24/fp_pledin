@@ -39,11 +39,12 @@ Una vez que tengas la máquina debes configurarla de la siguiente manera:
 2. Para evitar ataques configura una contraseña robusta para un usuario sin privilegio, configura el servidor ssh para que no se pueda acceder con root. Configura tu clave pública para que puedas acceder con un usuario sin privilegios.
 3. Debes dar de alta en tu DNS un registro de tipo A con el nombre de la máquina, para que al acceder al nombre de la máquina estemos accediendo a la IP pública.
 4. Crea un usuario `profesor` al que se pueda acceder los profesores por ssh, para ello sube a este usuario las [claves públicas de los profesores](https://dit.gonzalonazareno.org/redmine/projects/asir2/wiki/Claves_p%C3%BAblicas_de_los_profesores). Este usuario puede utilizar `sudo` sin contraseña.
-
+5. `fail2ban` es una aplicación que comprueba los logs de distintos servicios y si detecta algún ataque banea la ip usando iptables durante un tiempo. Instala `fail2ban` para controlar el acceso por ssh teniendo en cuenta que Debian 13 usa journald para guardar los logs.
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
 1. Nombre completo de tu máquina, para que pueda acceder a él con el usuario `profesor`.
+2. Salida del comando `fail2ba-clien status sshd` donde se vea si tienes direcciones IP baneadas.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
