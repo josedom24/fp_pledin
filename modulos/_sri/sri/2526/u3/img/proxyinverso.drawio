@@ -62,7 +62,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4pam6j6WueoaJE_evgwW-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Por esta interfaz configuramos el nackend con ansible&lt;/b&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+        <mxCell id="4pam6j6WueoaJE_evgwW-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Por esta interfaz configuramos el backend con ansible&lt;/b&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="680" y="394" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4pam6j6WueoaJE_evgwW-15" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;strokeWidth=2;" edge="1" parent="1">
