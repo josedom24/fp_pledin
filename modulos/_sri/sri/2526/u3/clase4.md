@@ -25,7 +25,7 @@ title: "Clase 4: Introducción a proxy inverso"
     * Uno en el fichero `vhost1.conf` que se acceda con el nombre `interno.example1.org`, cuyo DocumentRoot sea `/var/www/example1`.
     * Otro en el fichero `vhost2.conf` que se acceda con el nombre `interno.example2.org`, cuyo DocumentRoot sea `/var/www/example2`.
     
-    Además tienes que ir indicar n el inventario la dirección IP del servidor `backend`.
+    Además tienes que indicar en el inventario la dirección IP del servidor `backend` en la red NAT por donde vamos a realizar la configuración.
 
     Crea el escenario y ejecuta el playbook de ansible para configurar el `backend` (recuerda que tienes que poner en el inventario la ip del servidor `backend`).
 3. Instala un servidor web apache2 en la máquina `proxy`. Vamos a configurar el proxy para acceder a las páginas del `backend`: A la primera página con la URL `www.app1.org` y a la segunda página con la URL `www.app2.org`. Recuerda que debes añadir en la resolución estática del `proxy` los nombres con los que se accede internamente a las práginas web. Cuidado con la directiva `ProxyPreserveHost On`, en este ejercicio el nombre de los host virtuales del `backend` son distintos a los que usamos accediendo al proxy inverso.
