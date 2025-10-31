@@ -70,7 +70,8 @@ python manage.py createsuperuser
 Archivo principal de configuración del proyecto.
 Define:
 
-* la base de datos,
+* la base de datos (`DATABASES`),
+* la variable `ALLOWED_HOSTS` define qué nombres de dominio o direcciones IP tienen permiso para acceder a la aplicación Django,
 * el idioma y zona horaria,
 * las aplicaciones instaladas (`INSTALLED_APPS`),
 * la configuración de plantillas y archivos estáticos.
