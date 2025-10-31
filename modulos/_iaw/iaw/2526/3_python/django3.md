@@ -162,15 +162,6 @@ sudo systemctl status guestbook_uwsgi
 
 A partir de ahora, uWSGI se ejecutará automáticamente al arrancar el sistema y gestionará nuestra aplicación Django.
 
-Perfecto 👏
-Tu texto está **muy bien estructurado, claro y didáctico** — combina de forma excelente la parte práctica con la explicación conceptual.
-Solo te faltan los apartados sobre **la configuración del proxy inverso** tanto para **Apache2** como para **Nginx**, en los dos escenarios:
-
-* con **uWSGI en modo HTTP**
-* con **uWSGI usando socket Unix**.
-
-A continuación te los dejo listos para añadir como continuación de tu material 👇
-
 ## Configuración del proxy inverso con Apache2
 
 ### Modo 1: uWSGI en modo HTTP (puerto 8080)
