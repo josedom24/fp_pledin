@@ -10,7 +10,7 @@ Ejemplos de balanceadores de carga software: **Apache HTTPD (mod_proxy_balancer)
 
 ## Escenario de trabajo
 
-Para este laboratorio utilizaremos los ficheros del directorio `haproxy` del repositorio [taller_http](https://github.com/josedom24/taller_http), con las siguientes máquinas virtuales:
+Para este laboratorio utilizaremos el siguiente escenario:
 
 | Máquina    | Rol                            | Servicio principal | IP          | Notas                             |
 | ---------- | ------------------------------ | ------------------ | ----------- | --------------------------------- |
