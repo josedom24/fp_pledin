@@ -9,7 +9,13 @@ title: "Clase 4: Introducción a proxy inverso"
 * Vamos a configurar Apache2 y nginx como proxy inverso.
 * Vamos a configurar el proxy inverso para que sea capaz de resolver las redirecciones.
 
-## ¿Qué tienes que hacer?
+# Recursos
+
+Los contenidos necesarios para la realización de este ejercicio y para profundizar en la configuración de nginx, lo puedes encontrar en el siguiente apartado:
+
+* [Proxy inverso con Apache2 y Nginx](proxyinverso.html)
+
+## Ejercicios
 
 1. Vamos a a usar el **escenario2** del repositorio [opentofu-libvirt](https://github.com/josedom24/opentofu-libvirt/tree/main) para montar el siguiente escenario:
 
@@ -28,7 +34,7 @@ title: "Clase 4: Introducción a proxy inverso"
     Además tienes que indicar en el inventario la dirección IP del servidor `backend` en la red NAT por donde vamos a realizar la configuración.
 
     Crea el escenario y ejecuta el playbook de ansible para configurar el `backend` (recuerda que tienes que poner en el inventario la ip del servidor `backend`).
-3. Instala un servidor web apache2 en la máquina `proxy`. Vamos a configurar el proxy para acceder a las páginas del `backend`: A la primera página con la URL `www.app1.org` y a la segunda página con la URL `www.app2.org`. Recuerda que debes añadir en la resolución estática del `proxy` los nombres con los que se accede internamente a las práginas web. Cuidado con la directiva `ProxyPreserveHost On`, en este ejercicio el nombre de los host virtuales del `backend` son distintos a los que usamos accediendo al proxy inverso.
+3. Instala un servidor web apache2 en la máquina `proxy`. Vamos a configurar el proxy para acceder a las páginas del `backend`: A la primera página con la URL `www.app1.org` y a la segunda página con la URL `www.app2.org`. Recuerda que debes añadir en la resolución estática del `proxy` los nombres con los que se accede internamente a las páginas web. Cuidado con la directiva `ProxyPreserveHost On`, en este ejercicio el nombre de los host virtuales del `backend` son distintos a los que usamos accediendo al proxy inverso.
 4. Realiza la configuración para que las redirecciones funcionen: al acceder a `http://www.app1.org/directorio` se debe realizar una redirección al directorio `nuevodirectorio`. 
 5. Modifica la configuración del proxy para acceder a las páginas web con las siguientes URL: `www.servidor.org/app1` y `www.servidor.org/app2`. Debe seguir funcionando las redirecciones.
 6. Desisntala apache2 e instala nginx en el `proxy`.
