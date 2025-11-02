@@ -9,7 +9,7 @@ title: "Clase 4: Introducción a proxy inverso"
 * Vamos a configurar Apache2 y nginx como proxy inverso.
 * Vamos a configurar el proxy inverso para que sea capaz de resolver las redirecciones.
 
-# Recursos
+## Recursos
 
 Los contenidos necesarios para la realización de este ejercicio y para profundizar en la configuración de nginx, lo puedes encontrar en el siguiente apartado:
 
