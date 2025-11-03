@@ -28,28 +28,6 @@ Cliente (HTTP/HTTPS)
 Servidor interno (p.ej. 10.0.0.2:8080)
 ```
 
-Perfecto 👍 Aquí tienes los apuntes unificados y reorganizados con un **apartado para Apache2** y otro para **Nginx**, siguiendo **el mismo orden en ambos**:
-
-1. Proxy desde `/`
-2. Problema de redirecciones
-3. Proxy inverso usando una ruta
-4. Envío de cabeceras (con explicación detallada, especialmente en Apache2)
-
----
-
-# Proxy inverso con Apache2 y Nginx
-
-Un **proxy inverso** actúa como intermediario entre los clientes externos y uno o varios servidores internos.
-Su función principal es **recibir las peticiones HTTP del cliente**, reenviarlas a un servidor interno, y devolver la respuesta como si proviniera directamente del proxy.
-
-Esto permite:
-
-* Ocultar la infraestructura interna.
-* Centralizar el acceso y la autenticación.
-* Implementar balanceo de carga o cacheo.
-* Terminar conexiones TLS.
-* Reescribir rutas o cabeceras.
-
 ## Apache2 como proxy inverso
 
 Apache2 puede actuar como proxy inverso mediante el módulo `mod_proxy` y sus submódulos especializados (por ejemplo, `mod_proxy_http` para HTTP).
