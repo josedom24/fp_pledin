@@ -90,3 +90,33 @@ En la documentación sólo tienes que indicar la IP flotante de la instancia.
 
 Comprueba que el escenario funciona de forma correcta. Muestra en la documentación las comprobaciones que has realizado.
 Comprueba lo siguiente: si cambias el contenido de la página web en el `servidorNAS` automáticamente accedemos a la página para comprobar que ha cambiado.
+
+## Nota sobre iptables y proxy inverso
+
+En la práctica pone "Configuramos un proxy inverso en la instancia de OpenStack que envíe todas las peticiones al puerto 80 del `router`". Hay que tener en cuenta que también se puede hacer con iptables, para ello:
+
+* Activar el bit de forwarding.
+* Hay que crear una regla DNAT:
+
+	```
+	iptables -t nat -A PREROUTING -i ens3 -p tcp --dport 80 -j DNAT --to-destination 192.168.122.197:80
+	```
+* En este caso al crear la regla `default` con libvirt se introducen reglas iptables muy restrictivas por lo que hay que permitir explícitamente que los paquetes pasen de `ens3` a `virbr0` y al contrario, para ello:
+
+	```
+	iptables -I FORWARD 1 -i ens3 -o virbr0 -p tcp --dport 80 -d 192.168.122.197 -j ACCEPT
+	iptables -I FORWARD 2 -i virbr0 -o ens3 -p tcp --sport 80 -s 192.168.122.197 -j ACCEPT
+	```
+
+Aunque también podemos hacerlo a nivel de aplicación usando un proxy inverso, por ejemplo suponiendo que tenemos nginx. En `/etc/nginx/sites-available/default`:
+
+```
+...
+location / {
+                proxy_pass http://192.168.122.197/;
+                proxy_redirect http://192.168.122.197/ /;
+                include proxy_params;
+        }
+...
+```
+
