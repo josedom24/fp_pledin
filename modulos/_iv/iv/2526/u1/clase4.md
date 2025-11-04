@@ -48,4 +48,4 @@ title: "Clase 4: Gestión de redes en QEMU/KVM + libvirt"
 3. Del ejercicio 3: La instrucción `virt-install`.
 4. Del ejercicio 4: La instrucción para realizar la nueva conexión. Comprobación de que tiene una nueva configuración de red. Responde las preguntas.
 5. Del ejercicio 5 y 6: Entrega dos instrucciones para conectar la máquina a la red puente (**una conectando a la red y otra conectando al bridge**). Comprobaciones del nuevo direccionamiento (IP, puerta de enlaces, servidor DNS). Comprobación de que hay conexión a la máquina virtual desde el exterior.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

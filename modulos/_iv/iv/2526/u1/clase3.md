@@ -32,4 +32,4 @@ title: "Clase 3: Clonación e instantáneas de maquinas virtuales"
 4. Del ejercicio 4: Explica los pasos que has realizado y las instrucciones que has ejecutado para realizar la clonación enlazada. El comando y la salida que nos da información del volumen de la nueva máquina donde se demuestra que se ha creado desde una imagen base (**Backing Store**). La instrucción y la salida del comando que nos permite ver lo que ocupa el disco creado. ¿Por qué ocupa tan poco espacio?
 5. Del ejercicio 5: Capturas de pantalla para demostrar el ejercicio. El comando y la salida para mostrar las listas de snapshots desde la línea de comandos.
 
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

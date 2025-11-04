@@ -44,4 +44,4 @@ title: "Clase 2: Gestión del almacenamiento en QEMU/KVM + libvirt"
 9. Del ejercicio 9: La instrucción y la salida de la instrucción que has ejecutado para crear el fichero raw. La instrucción y la salida que nos permite ver cuánto espacio ocupa el volumen que hemos creado.
 10. Del ejercicio 10: La instrucción que has usado para comenzar la instalación. Una vez la instalación haya terminado, la configuración XML de la máquina donde se comprueba que volumen está usando como disco principal.
 
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

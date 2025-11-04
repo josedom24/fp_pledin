@@ -34,4 +34,4 @@ Vamos a realizar un ejercicio de Router/NAT con contenedores.
 1. Direccionamiento y rutas de los dos contenedores.
 2. Comprobación del acceso por SSH al contenedor **servidorweb**.
 3. Captura de pantalla accediendo a la página web.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

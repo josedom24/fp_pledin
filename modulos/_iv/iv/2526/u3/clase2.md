@@ -97,4 +97,4 @@ Seguimos los siguientes pasos:
 1. Desde casa, una vez configurado e iniciado el cliente OpenVPN: la IP del interfaz `tun0`, la ruta que nos permite acceder a la red `172.22.0.0/16` y un ping a la puerta de enlace, a la dirección `172.22.0.1`.
 2. El acceso a unas de las instancias de OpenStack.
 
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
