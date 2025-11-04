@@ -66,7 +66,7 @@ Para eliminar el contenedor: `docker rm interesting_greider`.
 
 1. Instala docker en una máquina y configúralo para que se pueda usar con un usuario sin privilegios.
 2. Ejecuta un contenedor a partir de la imagen `hello-word`. Comprueba que nos devuelve la salida adecuada. Comprueba que no se está ejecutando. Lista los contenedores que están parado. Borra el contenedor.
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Ejecución simple de contenedores
 
@@ -121,4 +121,4 @@ $ docker run -it --name contenedor1 ubuntu
 ## Ejercicio
 
 1. Crea un contenedor interactivo desde una imagen debian. Instala un paquete (por ejemplo `nano`). Sal de la terminal, ¿sigue el contenedor corriendo? ¿Por qué?. Vuelve a iniciar el contenedor y accede de nuevo a él de forma interactiva. ¿Sigue instalado el `nano`?. Sal del contenedor, y bórralo. Crea un nuevo contenedor interactivo desde la misma imagen. ¿Tiene el `nano` instalado?
-{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
