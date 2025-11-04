@@ -21,10 +21,9 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 2: Configuración básica de apache2](2526/u3/clase2.html)
 * [Clase 3: Configuración básica de nginx](2526/u3/clase3.html)
 * [Clase 4: Introducción a proxy inverso](2526/u3/clase4.html)
+* [Clase 5: HAproxy como balanceador de carga](2526/u3/clase5.html)
 
 <!--
-* Proxy inverso
-* Balanceo de carga
 
 ## Unidad 4: Servidor DNS
 
