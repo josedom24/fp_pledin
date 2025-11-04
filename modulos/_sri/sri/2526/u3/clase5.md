@@ -54,5 +54,5 @@ De la salida nos interesa el parámetro `Requests per second:`, que nos da el nu
 {% capture notice-text %}
 * **Tarea 1**: Con `hatop` habilita un solo nodo de balanceo, ejecuta la prueba y comprueba cuantas peticiones por segundos se responden. Entrega una captura donde se vea que sólo un nodo está habilitado, y la salida de la prueba.
 * **Tarea 2**: Habilita los dos nodos y vuelve a realizar la prueba. ¿Han subido las peticiones por segundos respondidas? Entrega las mimas capturas de pantalla que en el punto anterior.
-* **Tarea 3**: Modifica el escenario Vagrant y el playbook de ansible para añadir otro servidor web `apache3`. Habilita los tres nodos en el balanceo y realiza la prueba. ¿Han subido las peticiones por segundos respondidas? Entrega las mimas capturas de pantalla que en el punto anterior.
+* **Tarea 3**: Modifica el escenario opentofu y el playbook de ansible para añadir otro servidor web `apache3`. Habilita los tres nodos en el balanceo y realiza la prueba. ¿Han subido las peticiones por segundos respondidas? Entrega las mimas capturas de pantalla que en el punto anterior.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
