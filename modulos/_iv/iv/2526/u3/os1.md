@@ -44,3 +44,10 @@ También podemos crear nuevos recursos con el CLI, por ejemplo para abrir el pue
 $ openstack security group rule create --protocol tcp --remote-ip 0.0.0.0/0 --dst-port 22 default
 ```
 
+{% capture notice-text %}
+## Ejercicio
+
+1. Instala el cliente de OpenStack y configúralo con tu fichero de credenciales que debes bajar de Horizon. Los siguientes pasos los debes hacer con el cliente de OpenStack, puedes entrar en Horizon para comprobar si se ha realizado de forma correcta la acción realizada.
+2. Muestra los distintos recursos como has estudiado en los apuntes.
+3. Abre el puerto 443 en el grupo de seguridad `deafult`.
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
