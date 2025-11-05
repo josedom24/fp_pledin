@@ -4,7 +4,7 @@ title: "Práctica: Instalación/migración de aplicaciones web PHP"
 
 ## Escenario
 
-Crea un escenario con dos máquinas virtuales: en una pondremos un servidor web y en otra un servidor de base de datos. Las dos máquinas están conectadas entre si por una red muy aislada, para que el servidor web acceda a la base de datos.
+Crea un escenario con dos máquinas virtuales: en una pondremos un servidor web y en otra un servidor de base de datos. Elige la configuración de red que quieras, donde el servidor web sea accesible desde el exterior y pueda acceder al servidor de base de datos.
 
 ## Instalación de un CMS PHP en mi servidor local
 
