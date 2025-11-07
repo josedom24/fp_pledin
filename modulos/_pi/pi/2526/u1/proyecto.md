@@ -48,24 +48,5 @@ El proyecto consiste en tomar como base dicho escenario y configuración y reali
 
 1. Elige los cambios que vas a realizar al escenario base. Algunas variaciones son excluyentes pero puedes escoger las que creas conveniente.
 2. Crea un repositorio github donde vas guardando los cambios. Se tiene que ver el historial de commits con **mensajes signficativos**.
-3. Se deberá entregar un documento pdf con la documentación donde se expliquen las operaciones realizadas. El documento tendrá al menos los siguientes apartados:
-
-    1. Título
-    2. Índice
-    3. Descripción de las funcionalidades del escenario
-    4. Conceptos teóricos sobre intraestructura como código
-    5. Creación de la infraestructura con opentofu
-    6. Configuración mediante ansible
-    7. Comprobaciones finales
-
-    Tienes que tener en cuenta:
-
-    * El título debe ser significativo y explicar brevemente en que consiste el proyecto.
-    * En las descripción de las funcionalidades tiene que quedar muy claro las variaciones que has introducido.
-    * Puedes poner más apartados o cambiar los nombres que yo he puesto.
-    * Los apartados pueden tener subapartdos.
-    * Los apartados y subapartados deben estar numerados.
-    * El índice debe ser autogenerado.
-    * Todo el código debe tener una fuente monoespaciada.
-    * En la documentación debe haber un enlace al repositorio github.
-
+3. Si no quieres escoger tú los cambios, dile al profesor que te sugiera un cambio.
+4. De cada cambio, debes indicar en Redmine: el cambio realizado, los ficheros modificados y algunas pruebas de funcionamiento.
