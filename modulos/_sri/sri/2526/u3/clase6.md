@@ -66,10 +66,11 @@ El servidor web tendrá además dos aplicaciones web implantadas en contenedores
 
 ## Entrega
 
-* Indica el escenario que has escogido.
-* Configuración del balanceador de carga y del proxy inverso.
-* Comprobación de que se produce una redireción al acceder a la aplicación web `nas.tunombre.org` desde el proxy inverso.
-* Capturas de pantallas accediendo a las distintas aplicaciones.
+1. Indica el escenario que has escogido.
+2. Configuración del balanceador de carga y del proxy inverso.
+3. Comprobación de que se produce una redireción al acceder a la aplicación web `nas.tunombre.org` desde el proxy inverso.
+4. Capturas de pantallas accediendo a las distintas aplicaciones.
+5. Captura de pantalla accediendo con `hatop` al balanceador de carga.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
