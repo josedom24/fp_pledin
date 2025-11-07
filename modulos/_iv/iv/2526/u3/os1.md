@@ -51,3 +51,5 @@ $ openstack security group rule create --protocol tcp --remote-ip 0.0.0.0/0 --ds
 2. Muestra los distintos recursos como has estudiado en los apuntes.
 3. Abre el puerto 443 en el grupo de seguridad `deafult`.
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
+

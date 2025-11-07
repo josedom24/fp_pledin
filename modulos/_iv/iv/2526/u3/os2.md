@@ -20,7 +20,7 @@ openstack server create --flavor m1.normal \
 --image "Debian 13 Trixie" \
 --security-group default \
 --key-name clave_jdmr \
---network "red de josedom" \
+--network "Red de josedom" \
 instancia_prueba
 ```
 
@@ -94,12 +94,12 @@ chpasswd:
 
 Usando la línea de comandos, se indica el fichero de configuración en el parámetro `--user-data`:
 
-``
+```
 openstack server create --flavor m1.normal \
     --image "Debian 13 Trixie" \
     --security-group default \
     --key-name clave_jdmr \
-    --network "red de josedom" \
+    --network "Red de josedom" \
     --user-data cloud-config.yaml
 instancia_prueba
 ```
@@ -115,4 +115,36 @@ instancia_prueba
 2. Muestra tus ips flotantes. Solicita una nueva y asígnala a la instancia.
 3. Accede por ssh a la instancia que has creado.
 4. Para la instancia, arrancala de nuevo y finalmente elimínala.
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
+
+## Snapshot de instancias
+
+En OpenStack, las *instantáneas de instancias* se gestionan principalmente desde **Nova (Compute)**. Cuando haces un snapshot de una instancia:
+
+* Nova detiene brevemente la VM (o sincroniza el disco en caliente si lo permite).
+* Crea una **imagen nueva en Glance** con el contenido del disco raíz.
+
+Es decir: el snapshot **es una imagen en Glance**, no una copia “incremental” ni un backup directo de los volúmenes.
+
+* Para crea una instantánea de una instancia: `openstack server image create --name snapshot-instancia instancia_prueba`
+* Para ver la instantánea creada: `openstack image list`.
+    *  En la columna `Status` verás `active` cuando esté lista para usar.
+* Ver detalles de un snapshot: `openstack image show snapshot-instancia`
+* Eliminar un snapshot: `openstack image delete snapshot-instancia`
+
+Si queremos crear una nueva instancia a partir de un snapshot:
+
+```bash
+openstack server create --flavor m1.normal \
+    --image "snapshot-instancia" \
+    --security-group default \
+    --network "Red de josedom" \
+instancia_prueba2
+```
+
+{% capture notice-text %}
+## Ejercicio
+
+1. 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
