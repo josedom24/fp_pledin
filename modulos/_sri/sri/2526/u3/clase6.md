@@ -82,6 +82,7 @@ apt install netplan.io
 ```
 
 Y creamos un fichero de configuración de `netplan`, por ejemplo `/etc/netplan/10-lxc.conf`. Recuerda que este fichero debe tener permisos restrictivos: `chmod 600`.
+
 El problema surge cuando ejecutamos `netplan apply` que nos da un error. Ese error está causado por el componente `udev` no está instalado en los contenedores LXC. Lo que podemos hacer es simular que ese componente está instalado, ejecutando:
 
 ```
