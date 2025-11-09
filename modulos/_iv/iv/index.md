@@ -16,15 +16,8 @@ title: "Infraestructura virtual (2025-2026)"
 * [Presentación: Introducción a los contenedores](2526/pdf/contenedores.pdf)
 * [Clase 1: Introducción a Linux Containers (LXC)](2526/u2/clase1.html)
 * [Clase 2: Configuración de contenedores LXC](2526/u2/clase2.html)
-
-
-<!--
-* Clase 3: Introducción a los contenedores Docker
-* Clase 4: Imágenes Docker
-* Clase 5: Almacenamiento y redes en Docker
-* Clase 6: Escenarios multicontenedor en Docker
-
--->
+* [Clase 3: Introducción a los contenedores Docker](2526/u2/d1.html)
+* [Clase 4: Docker - Creando contenedores demonios](2526/u2/d2.html)
 
 ## Unidad 3: Cloud Computing IaaS. OpenStack 
 
