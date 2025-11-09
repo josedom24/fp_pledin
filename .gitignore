@@ -5,3 +5,4 @@ post.sh
 __pycache__
 .jekyll-cache
 Gemfile.lock
+.vscode
