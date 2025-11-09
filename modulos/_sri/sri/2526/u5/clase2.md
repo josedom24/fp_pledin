@@ -9,10 +9,12 @@ title: "Clase 2: Instalación y configuración del servidor bind9 en nuestra red
 * Crear una zona de resolución inversa en nuestro servidor DNS.
 * Realizar consultas sobre el servidor DNS.
 
-## Ejercicio
+## ¿Qué tienes que hacer?
 
 Crea una máquina (configúrala para que se llame `dns1.tunombre.org`). Ejecuta el comando `hostname -f` para comprobar que el nombre FQDN se ha configurado de forma adecuada.
 En esta máquina vamos a instalar un servidor DNS `bind9`.
+
+### Configuración inicial del servidor DNS
 
 De principio no es necesario ninguna configuración para que el servidor funcione como servidor recursivo/caché. Sin embargo vamos a hacer una pequeña configuración:
 
@@ -36,6 +38,7 @@ Reiniciamos el servidor, y ya  está funcionando, para ello realiza la siguiente
 * Realiza de nuevo la consulta. ¿Cuánto ha tardado ahora? ¿Por qué ha tardado menos? ¿Qué consultas se han realizado para averiguar la dirección IP?
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
+### Creación de la zona de resolución directa
 
 Vamos a crear una zona directa para el dominio `tunombre.org`, para ello vamos a añadir en el fichero `/etc/bind/named.conf.local` la definición de la zona:
 
@@ -93,6 +96,7 @@ Vamos a crear el fichero de zona en el fichero `/var/cache/bind/db.tunombre.org`
 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
+### Creación de la zona de resolución inversa
 
 Vamos a crear una zona inversa. suponemos que estamos trabajando en la red `172.22.0.0/16`. Lo primero es determinar el nombre de esta zona:
 
