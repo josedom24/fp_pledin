@@ -31,8 +31,7 @@ De principio no es necesario ninguna configuración para que el servidor funcion
 
 {% capture notice-text %}
 
-Reiniciamos el servidor, y ya  está funcionando, para ello realiza la siguiente consulta desde tu ordenador:
-	dig @<IP de tu servidor DNS> www.josedomingo.org
+Reiniciamos el servidor, y ya  está funcionando, para ello realiza la siguiente consulta desde tu ordenador: `dig @<IP de tu servidor DNS> www.josedomingo.org`.
 * ¿Cuánto ha tardado en realizar la consulta? ¿Qué consultas se han realizado para averiguar la dirección IP? 
 * Realiza de nuevo la consulta. ¿Cuánto ha tardado ahora? ¿Por qué ha tardado menos? ¿Qué consultas se han realizado para averiguar la dirección IP?
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
