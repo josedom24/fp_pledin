@@ -6,7 +6,7 @@ En esta práctica vamos a trabajar con las distintas aplicaciones que hemos estu
 
 ## Infraestructura
 
-Podemos hacer la práctica en tres escenario:
+Podemos hacer la práctica en varios escenarios distintos:
 
 * **Escenario 1**: Es más real, tenemos cada servidor en una red privada.
 * **Escenario 2**: En este caso todos los servidores están en la misma red.
