@@ -35,10 +35,10 @@ title: "Servicios de Red e Internet (2025-2026)"
 
 ## Unidad 5: Servidor DNS
 
-* Protocolo DNS. Consultas DNS.
-* Instalación y configuración del servidor bind9 en nuestra red local 
-* Instalación y configuración de un servidor DNS esclavo
-* Delegación de subdominios con bind9
+* Clase 1: Introducción al protocolo DNS
+* Clase 2: Instalación y configuración del servidor bind9 en nuestra red local
+* Clase 3: Instalación y configuración de un servidor DNS esclavo
+* Clase 4: Delegación de subdominios con bind9
 
 ## Unidad 6: Servidor de correo electrónico
 
