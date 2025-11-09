@@ -40,6 +40,7 @@ Modificamos la definición de las zona en el servidor DNS maestro. Modificamos e
 		allow-transfer { 172.22.200.110; };
 		notify yes;
 	};
+
 * `allow-tranfer`: Se permite las transferencias de zonas al servidor DNS esclavo (`172.22.200.110`).
 * `notify yes`: Cuando se reinicie el servidor DNS maestro se notificará al esclavo que ha habido cambios para que solicite una transferencia de zona.
 
@@ -56,6 +57,7 @@ Modificamos la definición de las zona en el servidor DNS esclavo. Modificamos e
 		file "db.172.22.0.0";
 		masters { 172.22.200.100; };
 	};	
+
 * `type slave`: Se indica que este servidor será esclavo para estas zonas.
 * `masters`: Se indica cuál es el maestro, para saber a que servidor hay que solicitar la transferencia de zona.
 
