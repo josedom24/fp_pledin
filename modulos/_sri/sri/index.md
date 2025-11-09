@@ -22,18 +22,25 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 3: Configuración básica de nginx](2526/u3/clase3.html)
 * [Clase 4: Introducción a proxy inverso](2526/u3/clase4.html)
 * [Clase 5: HAproxy como balanceador de carga](2526/u3/clase5.html)
-* [Clase 6: Práctica - Protocolo HTTP](2526/u3/clase6.html)
+* [Clase 6: Tarea - Protocolo HTTP](2526/u3/clase6.html)
 
 <!--
 
-## Unidad 4: Servidor DNS
+## Unidad 4: Almacenamiento
+
+* Clase 1: Protocolo NFS
+* Clase 2: Protocolo iSCSI
+* Clase 3: Tarea - Protocolos de almacenamiento
+
+
+## Unidad 5: Servidor DNS
 
 * Protocolo DNS. Consultas DNS.
 * Instalación y configuración del servidor bind9 en nuestra red local 
 * Instalación y configuración de un servidor DNS esclavo
 * Delegación de subdominios con bind9
 
-## Unidad 5: Servidor de correo electrónico
+## Unidad 6: Servidor de correo electrónico
 
 * Introducción al sistema de correo electrónico
 * Servidor de correo en los servidores de clase
