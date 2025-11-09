@@ -80,7 +80,7 @@ Vamos a crear el fichero de zona en el fichero `/var/cache/bind/db.tunombre.org`
 * Los nombres de los **servicios** se suelen indicar con registros `CNAME`.
 * Por ejemplo, tenemos una máquina física que se llama `asterix` que tiene dos servicios (parece que es un servidor web) `www` y `informatica`.
 * Por ejemplo, el servicio `ftp` está alojado en la máquina física `obelix`.
-**Nota: Modifica la zona para que el servidor DNS tenga la IP real de tu máquina.**
+* **Nota: Modifica la zona para que el servidor DNS tenga la IP real de tu máquina.**
 
 {% capture notice-text %}
 ## ¿Qué tienes que hacer?
