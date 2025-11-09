@@ -43,6 +43,7 @@ Vamos a crear una zona directa para el dominio `tunombre.org`, para ello vamos a
 		type master;
 		file "db.tunombre.org";
 	};
+
 * Es una zona de tipo maestra.
 * La información de la zona se guardará en el fichero `db.tunombre.org` que estará en `/var/cache/bind9`.
 
