@@ -10,7 +10,8 @@ Podemos hacer la práctica en tres escenario:
 
 * **Escenario 1**: Es más real, tenemos cada servidor en una red privada.
 * **Escenario 2**: En este caso todos los servidores están en la misma red.
-* **Escenario 3**: Todos los servicios están en un servidor, habrá que trabajar con los puertos.
+* **Escenario 3**: En este caso sólo tenemos dos servidores web, uno de ellos será backend para el balanceador de cargar y servidor web para el acceso desde el proxy inverso.
+* **Escenario 4**: Todos los servicios están en un servidor, habrá que trabajar con los puertos.
 
 ![practica](img/practica.png)
 
