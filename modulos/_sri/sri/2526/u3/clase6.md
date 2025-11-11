@@ -35,7 +35,7 @@ El servidor web tendrá además dos aplicaciones web implantadas en contenedores
 
 ## Balanceador de carga
 
-* En el escenario 1 tendrá qué funciona como router/nas.
+* En el escenario 1 tendrá qué funciona como router/nat.
 * Instalaremos `haproxy` y balanceara la carga sobre los servidores `backend1` y `backend2`.
 * En los servidor web instalaremos una aplicación PHP con hoja de estilo, que tendrá en el cuero de la página, el siguiente código PHP para que muestre los nombres de los servidores en los que está accediendo:
     ```php
@@ -53,7 +53,7 @@ El servidor web tendrá además dos aplicaciones web implantadas en contenedores
 
 ## Proxy inverso
 
-* En el escenario 1 y en el escenario 2 tendrá qué funciona como router/nas.
+* En el escenario 1 y en el escenario 2 tendrá qué funciona como router/nat.
 * Elige entre el servidor web apache2 o nginx.
 * Las url y las páginas a las que vamos a acceder son:
     * `nas.tunombre.org`: Accederemos al servidor web.
