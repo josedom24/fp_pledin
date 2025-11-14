@@ -30,8 +30,8 @@ Elige el escenario que más te guste.
 
 El servidor web tendrá además dos aplicaciones web implantadas en contenedores docker:
 
-* Una aplicación **mediawiki** que será accesible desde el proxy inverso con el nombre `www.tunombre.org/wiki`.
-* Un juego llamado **2048** (iamgen docker `josedom24/2048:v1`) que será accesible desde el proxy inverso con el nombre `www.tunombre.org/game`.
+* Una aplicación llamada **JuiceShop** (imagen docker `bkimminich/juice-shop`, esta aplicación sirve el contenido en el puerto 3000) que será accesible desde el proxy inverso con el nombre `www.tunombre.org/shop`.
+* Un juego llamado **2048** (imagen docker `josedom24/2048:v1`) que será accesible desde el proxy inverso con el nombre `www.tunombre.org/game`.
 
 ## Balanceador de carga
 
@@ -57,7 +57,7 @@ El servidor web tendrá además dos aplicaciones web implantadas en contenedores
 * Elige entre el servidor web apache2 o nginx.
 * Las url y las páginas a las que vamos a acceder son:
     * `nas.tunombre.org`: Accederemos al servidor web.
-    * `www.tunombre.org/wiki`: Accedemos a la aplicación docker `mediawiki`.
+    * `www.tunombre.org/shop`: Accedemos a la aplicación docker `JuiceShop`.
     * `www.tunombre.org/game`: Accedemos a la aplicación `2048`.
     * `app.tunombre.org`: Accedemos a al balanceador de carga.
 
