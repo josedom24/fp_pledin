@@ -3,7 +3,7 @@ Clase 3: "Práctica - Protocolos de almacenamiento"
 ---
 
 En esta tarea vamos a trabajar con los **protocolos de almacenamiento** que hemos estudiado. Vamos a trabajar sobre el escenario que has creado en la tarea sobre el protocolo HTTP.
-Crea una máquina virtual que va a ser nuestro **servidor de almacenamiento** que va a ofrecer una **SAN** (protoocolo **iSCSI**) y una **NAS** (protocolo **NFS**). Dicha máquina virtual tendrá las siguientes características:
+Crea una máquina virtual que va a ser nuestro **servidor de almacenamiento** que va a ofrecer una **SAN** (protocolo **iSCSI**) y una **NAS** (protocolo **NFS**). Dicha máquina virtual tendrá las siguientes características:
 
 * Estará conectada a la red del **servidorweb**, al **backend1** y al **backend2**.  si lo hiciéramos más real crearíamos una **red de datos** que conecta los servidores web con el servidor de almacenamiento.
 * Estará conectada a una red de tipo NAT para que tenga salida a internet.
@@ -39,7 +39,7 @@ Ahora vamos a crear un servidor NAS en nuestro servidor de almacenamiento, para 
 
 **Pregunta**: ¿Ha habido algún problema de que el directorio este compartido en los dos servidores? ¿Qué ocurre si modificas el fichero en uno de ellos? 
 
-% capture notice-text %}
+{% capture notice-text %}
 
 ## Entrega
 
