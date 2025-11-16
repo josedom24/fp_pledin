@@ -27,8 +27,8 @@ title: "Servicios de Red e Internet (2025-2026)"
 ## Unidad 4: Protocolos de Almacenamiento
 
 * [Protocolos de almacenamiento HTTP](2526/u4/pdf/almacenamiento2526.pdf)
-* [Clase 1: Protocolo NFS](2526/u4/clase1.md)
-* [Clase 2: Protocolo iSCSI](2526/u4/clase2.md)
+* [Clase 1: Protocolo NFS](2526/u4/clase1.html)
+* [Clase 2: Protocolo iSCSI](2526/u4/clase2.html)
 
 
 <!--* Clase 3: Tarea - Protocolos de almacenamiento
