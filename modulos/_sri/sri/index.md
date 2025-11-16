@@ -24,13 +24,14 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 5: HAproxy como balanceador de carga](2526/u3/clase5.html)
 * [Clase 6: Tarea - Protocolo HTTP](2526/u3/clase6.html)
 
-<!--
+## Unidad 4: Protocolos de Almacenamiento
 
-## Unidad 4: Almacenamiento
+* [Protocolos de almacenamiento HTTP](2526/u4/pdf/almacenamiento2526.pdf)
+* [Clase 1: Protocolo NFS](2526/u4/clase1.md)
+* [Clase 2: Protocolo iSCSI](2526/u4/clase2.md)
 
-* Clase 1: Protocolo NFS
-* Clase 2: Protocolo iSCSI
-* Clase 3: Tarea - Protocolos de almacenamiento
+
+<!--* Clase 3: Tarea - Protocolos de almacenamiento
 
 
 ## Unidad 5: Servidor DNS
