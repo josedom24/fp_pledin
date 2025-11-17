@@ -5,7 +5,7 @@ title: "Clase 3: Práctica - Protocolos de almacenamiento"
 En esta tarea vamos a trabajar con los **protocolos de almacenamiento** que hemos estudiado. Vamos a trabajar sobre el escenario que has creado en la tarea sobre el protocolo HTTP.
 Crea una máquina virtual que va a ser nuestro **servidor de almacenamiento** que va a ofrecer una **SAN** (protocolo **iSCSI**) y una **NAS** (protocolo **NFS**). Dicha máquina virtual tendrá las siguientes características:
 
-* Estará conectada a la red del **servidorweb**, al **backend1** y al **backend2**.  si lo hiciéramos más real crearíamos una **red de datos** que conecta los servidores web con el servidor de almacenamiento.
+* Estará conectada a la red del **servidorweb**, al **backend1** y al **backend2**.  Si lo hiciéramos más real crearíamos una **red de datos** que conecta los servidores web con el servidor de almacenamiento.
 * Estará conectada a una red de tipo NAT para que tenga salida a internet.
 * Tendrá tres discos adicionales de 3Gb.
 * Crearemos un RAID5 de los tres discos con **`mdadm`**. ¿Qué tamaño tiene el dispositivo de bloque correspondiente al RAID5?
