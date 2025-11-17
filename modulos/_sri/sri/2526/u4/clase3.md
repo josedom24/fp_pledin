@@ -1,5 +1,5 @@
 ---
-Clase 3: "Práctica - Protocolos de almacenamiento"
+title: "Clase 3: Práctica - Protocolos de almacenamiento"
 ---
 
 En esta tarea vamos a trabajar con los **protocolos de almacenamiento** que hemos estudiado. Vamos a trabajar sobre el escenario que has creado en la tarea sobre el protocolo HTTP.
