@@ -24,7 +24,7 @@ Ya tenemos el servidor de almacenamiento preparado, vamos a añadir la funcional
 
 El sistema debe funcionar después de un reinicio de las máquinas.
 
-**Pregunta**: ¿Qué ocurriría si montamos el mismo dispositivo en otra máquina? ¿Podrían ller las dos máquinas del mismo disco? ¿Y escribir?
+**Pregunta**: ¿Qué ocurriría si montamos el mismo dispositivo en otra máquina? ¿Podrían leer las dos máquinas del mismo disco? ¿Y escribir?
 
 ## Servidor NAS
 
@@ -34,7 +34,7 @@ Ahora vamos a crear un servidor NAS en nuestro servidor de almacenamiento, para 
 * Crea un punto de montaje en el servidor con le volumen formateado y configura el servicio NFS para **exportar** dicho directorio a la red local, de modo que cualquier servidor del mismo segmento pueda acceder con permisos de lectura y escritura.
 * En el **backend1**,  **monta el directorio compartido** en una carpeta local.
 * Haz lo mismo en el **backend2**.
-* Crea una página web en dicho directorio y modifica el virtual host de los servidores para que sirvan dicha página.
+* Crea una página web en dicho directorio y añade un **alias** al virtualhost para que se sirva dicha página.
 * Configura los servidores backend para que el **montaje NFS se realice automáticamente al arrancar** utilizando una unidad de montaje de systemd.
 
 **Pregunta**: ¿Ha habido algún problema de que el directorio este compartido en los dos servidores? ¿Qué ocurre si modificas el fichero en uno de ellos? 
