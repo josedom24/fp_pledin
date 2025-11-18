@@ -20,6 +20,11 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 4: Docker - Creando contenedores demonios](2526/u2/d2.html)
 * [Clase 5: Imágenes Docker](2526/u2/d3.html)
 * [Clase 6: Almacenamiento en Docker](2526/u2/d4.html)
+* [Clase 7: Redes en Docker](2526/u2/d5.html)
+* Clase 8: Docker - Ejemplos de despliegue
+* Clase 9: Creando escenarios multicontenedor con Docker Compose
+* Clase 10: Ejemplos de escenarios multicontenedor
+* [Tarea - Docker](2526/u2/tarea.html)
 
 ## Unidad 3: Cloud Computing IaaS. OpenStack 
 
