@@ -22,5 +22,5 @@ Ahora vamos a actualizar la aplicación: vamos a instalar la **última** versió
 3. Muestra el listado de volúmenes para ver el volumen donde se ha guardado los datos de la aplicación.
 4. El comando para crear el contenedor con la última versión. Muestra la lista de contenedores que se están ejecutando.
 5. Captura de pantalla donde se comprueba que la aplicación sigue funcionando y se sigue viendo tu nombre.
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
