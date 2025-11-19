@@ -8,7 +8,7 @@ Vamos a ir realizando distintos ejercicios:
 
 ## Ejercicio 1
 
-Instala la versión **1.43** de la aplicación `mediawiki` puedes usar la [documentación](https://hub.docker.com/_/mediawiki) de la imagen de Docker Hub. Guarda en un **volumen Docker** el directorio `/var/www/html/images`. En ese directorio está la base de datos SQLite.
+Instala la versión **1.43** de la aplicación `mediawiki` puedes usar la [documentación](https://hub.docker.com/_/mediawiki) de la imagen de Docker Hub. Guarda en un **volumen Docker** el directorio `/var/www/html/images` para no perder las imágenes que subas a la wiki. Además tienes que guardar en otro volumen el directorio `/var/www/data` que es el directorio donde se encuentra la base de datos SQLite.
 
 Durante la instalación elije **SQLite**, pon tu nombre al título de la wiki. Cuando termina la instalación te puedes bajar el fichero de configuración `LocalSettings.php`. Elimina el contenedor y vuelve a crearlo pero montando el fichero `LocalSettings.php` en el fichero del contenedor `/var/www/html/LocalSettings.php` (tienes que usar un **bind mount**)-
 
