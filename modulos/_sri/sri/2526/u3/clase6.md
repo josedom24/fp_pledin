@@ -6,6 +6,8 @@ En esta práctica vamos a trabajar con las distintas aplicaciones que hemos estu
 
 ## Infraestructura
 
+Podemos usar contenedores LXC para crear las distintas máquinas, **aunque el `servidorWeb` tiene que ser una máquina virtual, ya que posteriormente será un cliente iscsi.**
+
 Podemos hacer la práctica en varios escenarios distintos:
 
 * **Escenario 1**: Es más real, tenemos cada servidor en una red privada.
