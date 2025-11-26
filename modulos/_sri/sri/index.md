@@ -33,7 +33,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 
 ## Unidad 5: Protocolo DNS
 
-* Clase 1: Introducción al protocolo DNS
+* [Clase 1: Introducción al protocolo DNS](2526/u5/clase1.html)
 
 
 <!--
