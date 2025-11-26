@@ -31,7 +31,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 2: Protocolo iSCSI](2526/u4/clase2.html)
 * [Clase 3: Práctica - Protocolos de almacenamiento](2526/u4/clase3.html)
 
-## Unidad 5: Servidor DNS
+## Unidad 5: Protocolo DNS
 
 * Clase 1: Introducción al protocolo DNS
 
