@@ -31,12 +31,12 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 2: Protocolo iSCSI](2526/u4/clase2.html)
 * [Clase 3: Práctica - Protocolos de almacenamiento](2526/u4/clase3.html)
 
-<!--* Clase 3: Tarea - Protocolos de almacenamiento
-
-
 ## Unidad 5: Servidor DNS
 
 * Clase 1: Introducción al protocolo DNS
+
+
+<!--
 * Clase 2: Instalación y configuración del servidor bind9 en nuestra red local
 * Clase 3: Instalación y configuración de un servidor DNS esclavo
 * Clase 4: Delegación de subdominios con bind9
