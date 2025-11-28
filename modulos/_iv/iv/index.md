@@ -30,13 +30,10 @@ title: "Infraestructura virtual (2025-2026)"
 
 * [Clase 1: Primeros pasos con OpenStack](2526/u3/clase1.html)
 * [Clase 2: Configuración del cliente VPN](2526/u3/clase2.html) 
+* [Presentación: Introducción al Cloud Computing y a OpenStack](https://fp.josedomingo.org/sri/pdf/cloudcomputing.pdf)
+* [Clase 3: Instalación y uso básico de OpenStack client (OSC)](2526/u3/os1.html)
 
 <!--
-* Introducción al Cloud Computing y a OpenStack.
-* Trabajo con instancias en OpenStack
-* Gestión del almacenamiento en OpenStack
-* Gestión de redes en OpenStack
-* Práctica: OpenStack
 
 ## Unidad 4: Orquestadores de contenedores
 

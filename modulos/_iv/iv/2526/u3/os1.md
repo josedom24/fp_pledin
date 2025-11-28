@@ -1,5 +1,5 @@
 ---
-title: "Instalación y uso básico de OpenStack client (OSC)"
+title: "Clase 3: Instalación y uso básico de OpenStack client (OSC)"
 ---
 
 Además de usar **Horizon** para interactuar con OpenStack, podemos usar un cliente de línea de comandos: *Openstack Client (OSC)*.
