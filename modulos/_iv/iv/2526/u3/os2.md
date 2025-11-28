@@ -146,5 +146,6 @@ instancia_prueba2
 {% capture notice-text %}
 ## Ejercicio
 
-1. 
+1. Crea una instantánea de la máquina que has creado.
+2. Crea una nueva máquina a partir de la instantánea y comprueba que tiene la misma configuración (apache2, usuario,...).
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
