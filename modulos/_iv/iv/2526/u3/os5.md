@@ -57,15 +57,15 @@ De manera similar podemos añadir una nueva interfaz a una instancia correspondi
 
 Para quitar el grupo de seguridad a una instancia, para quitar el cortafuego que le hemos asignado:
 
-    * Lo primero es quitar el grupo de seguridad a la instancia:
+* Lo primero es quitar el grupo de seguridad a la instancia:
 
         openstack server remove security group instancia_prueba4 default
 
-    * Ahora la instancia tiene todos los puertos cerrado, por lo que a continuación hay que deshabilitar la seguridad del puerto:
+* Ahora la instancia tiene todos los puertos cerrado, por lo que a continuación hay que deshabilitar la seguridad del puerto:
 
         openstack port set --disable-port-security mi_port
     
-    * Nota: Si el puerto no tiene nombre tenemos que indicar el id del puerto.
+* Nota: Si el puerto no tiene nombre tenemos que indicar el id del puerto.
 
 Se pueden hacer también, las dos operaciones, ejecutando:
 
