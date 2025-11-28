@@ -17,15 +17,24 @@ title: "Almacenamiento en OpenStack desde el CLI"
 Para gestiona los volúmenes con OSC, usamos los comandos de `openstack volume`. Por ejemplo:
 
 * Creación de volumen:
-    openstack volume create --size 1 mi_disco1
+    
+        openstack volume create --size 1 mi_disco1
+
 * Listar los volúmenes:
-    openstack volume list
+        
+        openstack volume list
+
 * Para asociar el volumen a una instancia:
-    openstack server add volume --device /dev/sdb instancia_prueba mi_disco1
+        
+        openstack server add volume --device /dev/sdb instancia_prueba mi_disco1
+
 * Para desasociar el volumen de la instancia:
-    openstack server remove volume instancia_prueba mi_disco1
+        
+        openstack server remove volume instancia_prueba mi_disco1
+
 * Para eliminar el volumen:
-    openstack voolume delete mi_disco1
+
+        openstack voolume delete mi_disco1
 
 ## Creación de una instancia con el disco raíz sobre un volumen
 
@@ -50,29 +59,28 @@ Nota: He escogido el sabor `vol.mini` que tiene 0 de disco duro, porque estoy us
 
 * Para crear una instantánea de volumen:
 
-	openstack volume snapshot create --volume mi_disco1 copia_mi_disco1
+	    openstack volume snapshot create --volume mi_disco1 copia_mi_disco1
 		
 * Listar las instantáneas:
 
-	openstack volume snapshot list
+	    openstack volume snapshot list
 		
 * Crear un nuevo volumen a partir de la instantánea:
 
-	openstack volume create --snapshot copia_mi_disco1 disco2
+	    openstack volume create --snapshot copia_mi_disco1 disco2
 		
 * Para borramos el snapshot y el volumen creado:
 
 	* Si intentamos borrar el volumen desde el que hemos creado la instantánea:
 
-		openstack volume delete mi_disco1
-		Invalid volume: Volume still has 1 dependent snapshots. (HTTP 400) (Request-ID: req-917a4f06-8874-4e59-a693-122006454d90)
+		    openstack volume delete mi_disco1
+		    Invalid volume: Volume still has 1 dependent snapshots. (HTTP 400) (Request-ID: req-917a4f06-8874-4e59-a693-122006454d90)
 
 	* Debemos borrar primero el snapshot y posteriormente el volumen:
 
-		openstack volume snapshot delete copia_mi_disco1
-		openstack volume delete mi_disco1
+		    openstack volume snapshot delete copia_mi_disco1
+		    openstack volume delete mi_disco1
 
-    
     
 ## Extender el tamaño de un volumen
 
