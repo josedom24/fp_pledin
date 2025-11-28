@@ -34,7 +34,17 @@ Para gestiona los volúmenes con OSC, usamos los comandos de `openstack volume`.
 
 * Para eliminar el volumen:
 
-        openstack voolume delete mi_disco1
+        openstack volume delete mi_disco1
+
+{% capture notice-text %}
+## Ejercicio
+
+1. Crea un volumen.
+2. Asócialo a una instancia. En la instancia formatéalo y montálo.
+3. Intenta eliminar el volúmen. ¿Puedes hacerlo? ¿Por qué?
+4. Desacocia el volumen de la instancia.
+5. Elimina el volúmen.
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Creación de una instancia con el disco raíz sobre un volumen
 
@@ -55,10 +65,23 @@ Creamos una nueva instancia con este volumen:
 
 Nota: He escogido el sabor `vol.mini` que tiene 0 de disco duro, porque estoy usando un volumen.
 
+{% capture notice-text %}
+## Ejercicio
+
+1. Crea un volumen arrancable de 10 Gb desde una imagen.
+2. Crea una instancia cuyo disco principal sea este volumen. Recuerda que el sabor debe ser de tipo `vol`.
+3. Instala algún servicio.
+4. Elimina la instancia y crea una nueva a partir del mismo volumen.
+5. Comprueba que no se ha perdido la información guardada en el volumen.
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
 ## Creación de una instantánea de un volumen
+
+No es recomendable hacer una instantánea de un volumen asociado, puede provocar la corrupción de la instantánea.
 
 * Para crear una instantánea de volumen:
 
+        openstack server remove volume instancia_prueba mi_disco1
 	    openstack volume snapshot create --volume mi_disco1 copia_mi_disco1
 		
 * Listar las instantáneas:
@@ -74,16 +97,34 @@ Nota: He escogido el sabor `vol.mini` que tiene 0 de disco duro, porque estoy us
 	* Si intentamos borrar el volumen desde el que hemos creado la instantánea:
 
 		    openstack volume delete mi_disco1
-		    Invalid volume: Volume still has 1 dependent snapshots. (HTTP 400) (Request-ID: req-917a4f06-8874-4e59-a693-122006454d90)
+		    Invalid volume: Volume still has 1 dependent snapshots. (HTTP 400) (Request-ID: req-...)
 
 	* Debemos borrar primero el snapshot y posteriormente el volumen:
 
 		    openstack volume snapshot delete copia_mi_disco1
 		    openstack volume delete mi_disco1
 
+{% capture notice-text %}
+## Ejercicio
+
+1. Crea un volumen.
+2. Asócialo a una instancia. En la instancia formatéalo y montálo. Añade algún fichero.
+3. Crea una instantánea del volumen. Recuerda que antes debe desacociarlo de la instancia.
+4. Elimina el volumen.
+5. Crea un nuevo volumen desde la instantánea, vuele a asociarlo a la instancia y comprueba que sigue teniendo la información.
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
     
 ## Extender el tamaño de un volumen
 
 Para redimensionar el tamaño de un volumen:
 
 	openstack volume set --size 2 disco2
+
+{% capture notice-text %}
+## Ejercicio
+
+1. Redimensiona el volumen que tienes asociado a la instancia.
+2. Recuerda que posteriormente tendrás que redimensionar el sistema de archivos.
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
