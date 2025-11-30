@@ -26,7 +26,7 @@ Para cargar las variables de entorno que se definen en ese fichero podemos ejecu
 
 ```
 $ source Proyecto\ de\ josedom-openrc.sh
-Please enter your OpenStack Password for project Proyecto de josedom as user josedom: 
+Please enter your OpenStack Password ...:
 ```
 
 Y nos pide la contraseña de nuestro usuario que se guardará en otra variable de entorno. Una vez introducida la contraseña podremos usar el comando `openstack` para gestionar los recursos de nuestro proyecto. 
@@ -35,7 +35,7 @@ Y nos pide la contraseña de nuestro usuario que se guardará en otra variable d
 * Para ver tus claves ssh: `openstack keypair list`.
 * Para ver las imágenes: `opentack images list`.
 * Para ver las redes: `openstack network list`.
-* Para ver los sabores: `openstack flver list`.
+* Para ver los sabores: `openstack flavors list`.
 * Para ver las reglas del grupo de seguridad **default**: `openstack security group rule list default`.
 
 También podemos crear nuevos recursos con el CLI, por ejemplo para abrir el puerto 22 y poder acceder a las instancias por SSH, podemos ejecutar:
