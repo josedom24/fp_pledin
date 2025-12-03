@@ -55,7 +55,7 @@ Los comandos más importantes son:
 El paquete `cloud-init` está instalado habitualmente en las imágenes para IaaS. [Documentación cloud-init](https://cloudinit.readthedocs.io).
 
 Una instancia que se inicia o reinicia, puede obtener diferentes tipos de datos, en función del origen de estos:
-* **Metadatos**: Obtenidos del **servidor de metadatos** del proveedor de nube (típicamente a través de dirección de enlace local http://169.254.169.254). Incluye las características propias de la instancia: nombre, configuración de red, tamaño de los discos, etc.
+* **Metadatos**: Obtenidos del **servidor de metadatos** del proveedor de nube (típicamente a través de dirección de enlace local `http://169.254.169.254`). Incluye las características propias de la instancia: nombre, configuración de red, tamaño de los discos, etc.
 * **Datos de usuario (opcional)**: Datos adicionales de configuración que proporciona el usuario de la instancia (**user-data**).
 * **Datos del proveedor (opcional)**: Datos adicionales de configuración proporcionados por el proveedor (**vendor-data**).
 
@@ -75,20 +75,21 @@ hostname: maquina
 manage_etc_hosts: true
 # Crear dos usuarios, configura el acceso por sudo y añade clave pública ssh
 users:
-  - name: usuario1
+  - name: debian
     sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
     shell: /bin/bash
-    ssh_authorized_keys: 
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmjoVIoZCx4QFXvljqozXGqxxlSvO7V2aizqyPgMfGqnyl0J9YXo6zrcWYwyWMnMdRdwYZgHqfiiFCUn2QDm6ZuzC4Lcx0K3ZwO2lgL4XaATykVLneHR1ib6RNroFcClN69cxWsdwQW6dpjpiBDXf8m6/qxVP3EHwUTsP8XaOV7WkcCAqfYAMvpWLISqYme6e+6ZGJUIPkDTxavu5JTagDLwY+py1WB53eoDWsG99gmvyit2O1Eo+jRWN+mgRHIxJTrFtLS6o4iWeshPZ6LvCZ/Pum12Oj4B4bjGSHzrKjHZgTwhVJ/LDq3v71/PP4zaI3gVB9ZalemSxqomgbTlnT jose@debiane
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmjoVIoZCx4QFXvljqozXGqxxlSvO7V2aizqyPgMfGqnyl0J9YXo6zrcWYwyWMnMdRdwYZgHqfiiFCUn2QDm6ZuzC4Lcx0K3ZwO2lgL4XaATykVLneHR1ib6RNroFcClN69cxWsdwQW6dpjpiBDXf8m6/qxVP3EHwUTsP8XaOV7WkcCAqfYAMvpWLISqYme6e+6ZGJUIPkDTxavu5JTagDLwY+py1WB53eoDWsG99gmvyit2O1Eo+jRWN+mgRHIxJTrFtLS6o4iWeshPZ6LvCZ/Pum12Oj4B4bjGSHzrKjHZgTwhVJ/LDq3v71/PP4zaI3gVB9ZalemSxqomgbTlnT jose@debian
 # Cambia las contraseña a los usuarios creados
 chpasswd:
   expire: False
   users:
+    - name: debian
+      password: asdasd
+      type: text
     - name: root
       password: password
-      type: text
-    - name: usuario1
-      password: password1
       type: text
 ```
 
@@ -103,6 +104,8 @@ openstack server create --flavor m1.normal \
     --user-data cloud-config.yaml
 instancia_prueba
 ```
+
+**IMPORTANTE**: Si conectamos una instancia a una red sin DHCP, no tendrá direccionamiento y no podrá conectarse al servidor de metadatos, por lo que no se podrá configurar con **cloud-init**. En este caso debemos usar otra estrategia: guardar el fichero `cloud-config.yaml` en un CDROM para que lo lea la instancia, para ello en la creación de la instancia usaremos el parámetro: `--config-drive True`.
 
 {% capture notice-text %}
 ## Ejercicio
