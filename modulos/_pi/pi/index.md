@@ -11,18 +11,6 @@ title: "Proyecto intermodular (2025-2026)"
 * [Clase 5: OpenTofu + libvirt - Creación de escenarios](2526/u1/clase5.html)
 * [Proyecto 1 - Infraestructura como código](2526/u1/proyecto.html)
 
-<!--
 ## Proyecto 2: Escenario en OpenStack
 
-* Escenario OpenStack (Parte 1)
-* Escenario OpenStack (Parte 2)
-* Vistas en el servidor DNS bind9. Instalación inicial
-* Servidor DNS en el escenario de OpenStack (Parte 1)
-* Servidor DNS en el escenario OpenStack (Parte 2)
-* Servidor Web y base de datos en el escenario OpenStack
-* Servidor de correos en el escenario OpenStack (Parte 1)
-* Servidor de correos en el escenario OpenStack (Parte 2)
-
-## Proyecto 3: Proyecto final
-
--->
+* [Orquestación con Heat en OpenStack](2526/u2/heat.html)

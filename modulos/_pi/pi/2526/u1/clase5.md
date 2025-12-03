@@ -136,7 +136,7 @@ Estudiemos lo ficheros más importantes:
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
-1. Configura tu escenario de forma adecuada para crear las máquinas virtuales del escenario del ejeemplo6. Accede a la primera por ssh y comprueba que puedes hacer ping a la segunda. Accede de forma adecuada por ssh a la primera máquina para desde ella acceder a la segunda. Destruye el escenario.
+1. Configura tu escenario de forma adecuada para crear las máquinas virtuales del escenario del ejemplo6. Accede a la primera por ssh y comprueba que puedes hacer ping a la segunda. Accede de forma adecuada por ssh a la primera máquina para desde ella acceder a la segunda. Destruye el escenario.
 2. Crea una nueva red de tipo NAT y crea un nuevo servidor con Ubuntu que esté conectado a esa red y a la red aislada. Accede a esa máquina y comprueba qsu direccionamiento y que puede hacer ping a las otras dos máquinas. Destruye el escenario.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
