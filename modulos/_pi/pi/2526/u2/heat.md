@@ -107,8 +107,11 @@ Veamos distintas operaciones:
 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
 
-{% capture notice-text %}
 ## Ejemplo 2: Instancia ejecuta sobre volumen, con un disco extra
+
+{% capture notice-text %}
+
+## Ejercicio
 
 1. Crea la pila del ejemplo desde la línea de comandos con OSC.
 2. Comprueba los recursos que se han creado.
@@ -118,9 +121,10 @@ Veamos distintas operaciones:
 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
 
-
-{% capture notice-text %}
 ## Ejemplo 3: Dos instancias (una con IP flotante) conectada a una nueva red y un nuevo router
+{% capture notice-text %}
+
+## Ejercicio
 
 1. Crea la pila del ejemplo desde la línea de comandos con OSC.
 2. Comprueba los recursos que se han creado.
