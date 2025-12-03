@@ -58,7 +58,7 @@ Operaciones:
 3. Accede a la instancia, para comprobar que funciona.
 4. Elimina la pila y comprueba que todos los recursos se han eliminado.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ### Lanzar una pila con OSC
 
@@ -105,7 +105,7 @@ Veamos distintas operaciones:
 4. Accede a la instancia, para comprobar que funciona.
 5. Elimina la pila y comprueba que todos los recursos se han eliminado.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Ejemplo 2: Instancia ejecuta sobre volumen, con un disco extra
 
@@ -119,7 +119,7 @@ Veamos distintas operaciones:
 4. Accede a la instancia, para comprobar que tiene un disco adicional.
 5. Elimina la pila y comprueba que todos los recursos se han eliminado.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Ejemplo 3: Dos instancias (una con IP flotante) conectada a una nueva red y un nuevo router
 {% capture notice-text %}
@@ -133,4 +133,4 @@ Veamos distintas operaciones:
 5. Elimina la pila y comprueba que todos los recursos se han eliminado.
 6. **Modifica la plantilla para que podamos escoger la imagen para crear la segunda instancia**.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

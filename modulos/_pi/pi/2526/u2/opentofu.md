@@ -35,7 +35,8 @@ Seguimos trabajando con el repositorio [opentack_ic](https://github.com/josedom2
 4. Accede a la instancia, para comprobar que funciona.
 5. Elimina el escenario y comprueba que todos los recursos se han eliminado.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
 
 ## Ejemplo 2: Instancia ejecuta sobre volumen, con un disco extra
 
@@ -49,7 +50,7 @@ Seguimos trabajando con el repositorio [opentack_ic](https://github.com/josedom2
 4. Accede a la instancia, para comprobar que tiene un disco adicional.
 5. Elimina el escenario y comprueba que todos los recursos se han eliminado.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Ejemplo 3: Dos instancias (una con IP flotante) conectada a una nueva red y un nuevo router
 {% capture notice-text %}
@@ -63,4 +64,4 @@ Seguimos trabajando con el repositorio [opentack_ic](https://github.com/josedom2
 5. Elimina el escenario y comprueba que todos los recursos se han eliminado.
 6. **Modifica el escenario para que podamos escoger la imagen para crear la segunda instancia**.
 
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
