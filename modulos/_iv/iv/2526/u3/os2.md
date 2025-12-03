@@ -1,5 +1,5 @@
 ---
-title: "Creación de una instancia desde el CLI"
+title: "Clase 4: Creación de una instancia desde el CLI"
 ---
 
 ## Conceptos previos
