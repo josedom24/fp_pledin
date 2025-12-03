@@ -1,5 +1,5 @@
 ---
-title: "Almacenamiento en OpenStack desde el CLI"
+title: "Clase 4: Almacenamiento en OpenStack desde el CLI"
 ---
 
 ## Conceptos previos de volúmenes
