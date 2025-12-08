@@ -40,10 +40,10 @@ Para gestiona los volúmenes con OSC, usamos los comandos de `openstack volume`.
 ## Ejercicio
 
 1. Crea un volumen.
-2. Asócialo a una instancia. En la instancia formatéalo y montálo.
-3. Intenta eliminar el volúmen. ¿Puedes hacerlo? ¿Por qué?
+2. Asócialo a una instancia. En la instancia formatéalo y móntalo.
+3. Intenta eliminar el volumen. ¿Puedes hacerlo? ¿Por qué?
 4. Desacocia el volumen de la instancia.
-5. Elimina el volúmen.
+5. Elimina el volumen.
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 ## Creación de una instancia con el disco raíz sobre un volumen
@@ -108,7 +108,7 @@ No es recomendable hacer una instantánea de un volumen asociado, puede provocar
 ## Ejercicio
 
 1. Crea un volumen.
-2. Asócialo a una instancia. En la instancia formatéalo y montálo. Añade algún fichero.
+2. Asócialo a una instancia. En la instancia formatéalo y móntalo. Añade algún fichero.
 3. Crea una instantánea del volumen. Recuerda que antes debe desacociarlo de la instancia.
 4. Elimina el volumen.
 5. Crea un nuevo volumen desde la instantánea, vuele a asociarlo a la instancia y comprueba que sigue teniendo la información.

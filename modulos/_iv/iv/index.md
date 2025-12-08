@@ -33,6 +33,7 @@ title: "Infraestructura virtual (2025-2026)"
 * [Presentación: Introducción al Cloud Computing y a OpenStack](2526/u3/pdf/cloudcomputing2526.pdf)
 * [Clase 3: Instalación y uso básico de OpenStack client (OSC)](2526/u3/os1.html)
 * [Clase 4: Creación de una instancia desde el CLI](2526/u3/os2.html)
+* [Clase 5: Almacenamiento en OpenStack desde el CLI](2526/u3/os3.html)
 
 <!--
 
