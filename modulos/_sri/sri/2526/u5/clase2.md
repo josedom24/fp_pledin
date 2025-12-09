@@ -111,7 +111,7 @@ Por lo tanto en el fichero `/etc/bind/named.conf.local` añadimos la definición
 		file "db.172.22.0.0";
 	};
 
-~~Además tenemos que descomentar la línea `include "/etc/bind/zones.	18";`, de esta manera se incluirán todas las zonas correspondientes a las redes privadas para que no se pregunten por ellas al servidor DNS raíz. Como nosotros estamos definiendo la zona `22.172.in-addr.arpa`, en ese fichero deberemos comentar su definición~:
+~~Además tenemos que descomentar la línea `include "/etc/bind/zones.rfc1918";`, de esta manera se incluirán todas las zonas correspondientes a las redes privadas para que no se pregunten por ellas al servidor DNS raíz. Como nosotros estamos definiendo la zona `22.172.in-addr.arpa`, en ese fichero deberemos comentar su definición~~:
 
 ~~...
 zone "21.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
