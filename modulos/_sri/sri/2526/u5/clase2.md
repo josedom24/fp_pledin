@@ -50,7 +50,7 @@ Vamos a crear una zona directa para el dominio `tunombre.org`, para ello vamos a
 * Es una zona de tipo maestra.
 * La información de la zona se guardará en el fichero `db.tunombre.org` que estará en `/var/cache/bind9`.
 
-Vamos a crear el fichero de zona en el fichero `/var/cache/bind/db.tunombre.org` (podríamos copiar el fichero `/etc/bind/db.empty` que nos puede servir como plantilla). El contenido de este fichero quedaría (**Cambia la dirección de tu servidor `dns1.tunombre.org` para poner la dirección IP real**):
+Vamos a crear el fichero de zona en el fichero `/var/cache/bind/db.tunombre.org` ~~(podríamos copiar el fichero `/etc/bind/db.empty` que nos puede servir como plantilla)~~. El contenido de este fichero quedaría (**Cambia la dirección de tu servidor `dns1.tunombre.org` para poner la dirección IP real**):
 
 	$TTL    86400
 	@       IN      SOA     dns1.tunombre.org. root.tunombre.org. (
@@ -111,13 +111,13 @@ Por lo tanto en el fichero `/etc/bind/named.conf.local` añadimos la definición
 		file "db.172.22.0.0";
 	};
 
-Además tenemos que descomentar la línea `include "/etc/bind/zones.rfc1918";`, de esta manera se incluirán todas las zonas correspondientes a las redes privadas para que no se pregunten por ellas al servidor DNS raíz. Como nosotros estamos definiendo la zona `22.172.in-addr.arpa`, en ese fichero deberemos comentar su definición:
+~~Además tenemos que descomentar la línea `include "/etc/bind/zones.	18";`, de esta manera se incluirán todas las zonas correspondientes a las redes privadas para que no se pregunten por ellas al servidor DNS raíz. Como nosotros estamos definiendo la zona `22.172.in-addr.arpa`, en ese fichero deberemos comentar su definición~:
 
-	...
-	zone "21.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
-	//zone "22.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
-	zone "23.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
-	...
+~~...
+zone "21.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
+//zone "22.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
+zone "23.172.in-addr.arpa"  { type master; file "/etc/bind/db.empty"; };
+...~~
 
 Vamos a crear el fichero de zona inversa en el fichero `/var/cache/bind/db.172.22.0.0`:
 
