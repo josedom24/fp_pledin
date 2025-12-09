@@ -35,7 +35,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 
 * [Clase 1: Introducción al protocolo DNS](2526/u5/clase1.html)
 * [Clase 2: Instalación y configuración del servidor bind9 en nuestra red local](2526/u5/clase2.html)
-
+* [Clase 3: Instalación y configuración de un servidor DNS esclavo](2526/u5/clase3.html)
 
 <!--
 * Clase 2: Instalación y configuración del servidor bind9 en nuestra red local
