@@ -61,7 +61,7 @@ En este momento, muestra al profesor la aplicación funcionando. Entrega una doc
 
 Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlos a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entorno de desarrollo, y luego tendrás que llevar los cambios a producción:
 
-1. Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo `django_tutorial/polls/templates/polls/index.html`.
+1. Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo `django_tutorial/polls/templates/index.html`.
 2. Modifica la imagen de fondo que se ve la aplicación.
 3. Vamos a crear una nueva tabla en la base de datos, para ello sigue los siguientes pasos:
 	
