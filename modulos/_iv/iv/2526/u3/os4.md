@@ -1,5 +1,5 @@
 ---
-title: "Redes en OpenStack desde el CLI (Parte 1)"
+title: "Clase 6: Redes en OpenStack desde el CLI (Parte 1)"
 ---
 
 ## Conceptos previos de Neutron
