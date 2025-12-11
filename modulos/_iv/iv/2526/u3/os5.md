@@ -1,5 +1,5 @@
 ---
-title: "Redes en OpenStack desde el CLI (Parte 2)"
+title: "Clase 7: Redes en OpenStack desde el CLI (Parte 2)"
 ---
 
 ## Trabajar con puertos

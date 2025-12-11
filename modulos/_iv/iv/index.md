@@ -35,6 +35,7 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 4: Creación de una instancia desde el CLI](2526/u3/os2.html)
 * [Clase 5: Almacenamiento en OpenStack desde el CLI](2526/u3/os3.html)
 * [Clase 6: Redes en OpenStack desde el CLI (Parte 1)](2526/u3/os4.html)
+* [Clase 7: Redes en OpenStack desde el CLI (Parte 2)](2526/u3/os5.html)
 
 <!--
 
