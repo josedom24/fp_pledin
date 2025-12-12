@@ -82,20 +82,3 @@ openstack port set --disable-port-security --no-security-group mi_port
 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
-## Eliminación de la infraestructura de red creada
-
-El orden para eliminar la infraestructura de red creada es:
-
-1. Eliminar todas las instancias conectadas a la red.
-2. Desconectar la red del router.
-
-        openstack router remove subnet mi_router mi_subred
-
-3. Eliminar la red y el router.
-
-{% capture notice-text %}
-## Ejercicio
-
-1. Elimina las instancias, la red y el router que has creado en este ejercicio.
-
-{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
