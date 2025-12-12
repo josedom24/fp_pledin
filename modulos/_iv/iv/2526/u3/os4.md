@@ -151,7 +151,7 @@ Podríamos crear una red de tipo NAT conectada a un router, sin DHCP, para ello:
 
 * En este tipo de red la configuración de la instancia **no se hace por DHCP**.
 * **cloud-init configura la instancia de forma estática**.
-* **Hemos indica el DNS al crear la subred**, ppara que cloud-init pueda configurarlo de manera estática.
+* **Hemos indica el DNS al crear la subred**, para que cloud-init pueda configurarlo de manera estática.
 
 A continuación vamos a conectar la red al router que hemos creado en el apartado anterior:
 
@@ -182,7 +182,7 @@ Puedes asociarle una **IP flotante** y comprobar que se ha configurado la IP fij
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 
-## Creación de una instancia a una red NAT con DHCP y una IP fija estática
+## Creación de una instancia a una red NAT sin DHCP y una IP fija estática
 
 Cuando en la red no tenemos configurado el servidor DHCP, puedo **de manera estática configurar una IP fija**. Para ello usamos un puerto:
 
