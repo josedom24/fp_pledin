@@ -1,5 +1,5 @@
 ---
-title: "Red interna conectada con un router OpenStack"
+title: "Clase 7: Red interna conectada con un router OpenStack"
 ---
 
 En este apartado vamos a realiza el ejercicio de tener una red interna conectada por un router a un red NAT en Openstack. Realizamos los siguientes pasos:

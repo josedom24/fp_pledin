@@ -1,5 +1,5 @@
 ---
-title: "Clase 6: Redes en OpenStack desde el CLI (Parte 1)"
+title: "Clase 6: Redes NAT en OpenStack desde el CLI"
 ---
 
 ## Conceptos previos de Neutron
