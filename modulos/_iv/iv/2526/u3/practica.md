@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Escenario en OpenStack"
+title: "Practica: Escenario en OpenStack"
 ---
 
 
