@@ -40,9 +40,10 @@ title: "Infraestructura virtual (2025-2026)"
 
 <!--
 
-## Unidad 4: Orquestadores de contenedores
+## Unidad 4: Orquestadores de contenedores. Kubernetes
 
-* Introducción a Kubernetes
+* [Introducción a Kubernetes](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
+* Instalación y configuración de minikube y kubectl
 * Trabajando con Pods y ReplicaSet
 * Trabajando con Deployments y Services
 * Despliegues parametrizados
