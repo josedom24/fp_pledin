@@ -10,7 +10,7 @@ Además el dominio será un subdominio de la forma `tunombre.gonzalonazareno.org
 * Máquina 1: Instancia en OpenStack con **Debian 13** que se llama `ra.tunombre.gonzalonazareno.org`.
 * Máquina 2: Instancia en OpenStack con **Rocky Linux 10** que se llama `anubis.tunombre.gonzalonazareno.org`.
 * Máquina 3: Contenedor LXC con **Ubuntu 24.04** que se llama `isis.tunombre.gonzalonazareno.org`.
-* Máquina 4: Contenedor LXC con **Ubuntu 24.04** que se llama `anubis.tunombre.gonzalonazareno.org`.
+* Máquina 4: Contenedor LXC con **Ubuntu 24.04** que se llama `horus.tunombre.gonzalonazareno.org`.
 
 Todas las operaciones que realices sobre recursos de OpenStack lo tienes que hacer usando OSC.
 
@@ -22,12 +22,12 @@ Todas las operaciones que realices sobre recursos de OpenStack lo tienes que hac
 ## Creación de la infraestructura de red
 
 * Crea un nuevo router llamado **RouterProyecto** conectado a la red externa.
-* Crea una red NAT que se llame **Red_NAT**, con las siguientes características:
+* Crea una red NAT que se llame **Red_Proyecto**, con las siguientes características:
 	* Está conectada al router que has creado en el punto anterior.
 	* Direccionamiento: `10.0.200.0/24`
 	* Con DHCP y DNS (`172.22.0.1`).
 	* La puerta de enlace de los dispositivos conectados a esta red será el `10.0.200.1`.
-* Crea una red interna que se llame **Red_INTRA**, con las siguientes características:
+* Crea una red interna que se llame **Red_Intra**, con las siguientes características:
 	* Direccionamiento: `172.16.0.0/16`
 	* **Sin DHCP**.
 	* **Deshabilitamos la puerta de enlace.** Esto es para que *cloud-init* no configure la puerta de enlace en las instancias conectada a esta red.
@@ -60,15 +60,15 @@ Las dos instancias que vamos a crear se van a configurar con `cloud-init` de la 
 #### máquina1 (ra)
 
 * Crea una instancia sobre un volumen de 15Gb (el volumen se crea durante la creación de la instancia), usando una imagen de **Debian 13**. Elige el sabor `vol.medium`. Y configúrala con `cloud-init` como se ha indicado anteriormente.
-* Está instancia estará conectada a las dos redes. Recuerda que en la red **Red_DMZ** debe tomar la dirección `172.16.0.1` (puerta de enlace las máquinas conectadas a esta red). Asigna a la instancia una IP flotante.
+* Está instancia estará conectada a las dos redes. Recuerda que en la red **Red_Intra** debe tomar la dirección `172.16.0.1` (puerta de enlace las máquinas conectadas a esta red). Asigna a la instancia una IP flotante.
 * Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.
-* Configura de forma permanente la regla SNAT para que las máquinas de la **Red_DMZ** tengan acceso a internet.
+* Configura de forma permanente la regla SNAT para que las máquinas de la **Red_Intra** tengan acceso a internet.
 
 #### maquina2 (anubis)
 
 * Crea un volumen de 15Gb con la imagen **Rocky Linux 10**.
 * Crea la instancia a partir de este volumen. Elige el sabor `vol.medium`. Y configúrala con `cloud-init` como se ha indicado anteriormente.
-* Esta instancia estará conectada a la red **Red_DMZ**, a la dirección `172.16.0.200`.
+* Esta instancia estará conectada a la red **Red_Intra**, a la dirección `172.16.0.200`.
 * Deshabilita la seguridad de los puertos en la interfaz de red para que funcione de manera adecuada el NAT.
 * Comprueba que tiene acceso a internet.
 
@@ -89,10 +89,10 @@ Las dos instancias que vamos a crear se van a configurar con `cloud-init` de la 
 
 En **máquina1 (ra)** vamos a crear dos contenedores en un red interna, para ello:
 
-* Crea en **máquina1 (ra)** un linux bridge llamado `br-intra` y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (ra)** conectada a este switch virtual y será la puerta de enlace de los contenedores. Tienes que tener en cuenta que la imagen de Debian 13 de OpenStack tiene **netplan** para la configuración de las redes, por lo tanto tienes que configurar el bridge usando el fichero de configuración de netplan. **No olvides poner la mtu a 1442 al crear el bridge.**
+* Vamos a crear una red virtual **Red_DMZ**, para ello crea en **máquina1 (ra)** un linux bridge llamado `br-dmz` y asigna una dirección IP estática `192.168.0.1`. Esta será la IP de **máquina1 (ra)** conectada a este switch virtual y será la puerta de enlace de los contenedores. Tienes que tener en cuenta que la imagen de Debian 13 de OpenStack tiene **netplan** para la configuración de las redes, por lo tanto tienes que configurar el bridge usando el fichero de configuración de netplan. **No olvides poner la mtu a 1442 al crear el bridge.**
 * Instala LXC y crea dos contenedores con la distribución **Ubuntu 24.04**. Estos contenedores serán la **máquina3 (isis)** y la **máquina4 (horus)**.
 * Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.
-* Conecta los contenedores al bridge `br-intra` y configúralo de forma estática con las siguientes direcciones: **máquina3 (isis)** la `192.168.0.2` y **máquina4 (horus)** la `192.168.0.3`. Su DNS será el `172.22.0.1`.
+* Conecta los contenedores al bridge `br-dmz` y configúralo de forma estática con las siguientes direcciones: **máquina3 (isis)** la `192.168.0.2` y **máquina4 (horus)** la `192.168.0.3`. Su DNS será el `172.22.0.1`.
 * Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (*Unidad máxima de transferencia*) a 1442 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: `lxc.net.0.mtu = 1442`.
 * Configura los contenedores para que se auto inicien al reiniciar la instancia. 
 * Los contenedores tendrán características parecidas a las instancias anteriormente:
