@@ -38,16 +38,17 @@ title: "Infraestructura virtual (2025-2026)"
 * [Clase 7: Red interna conectada con un router OpenStack](2526/u3/os5.html)
 * [Clase 8: Red interna conectada con un router linux en OpenStack](2526/u3/os6.html)
 
-<!--
-
 ## Unidad 4: Orquestadores de contenedores. Kubernetes
 
 * [Introducción a Kubernetes](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
-* Instalación y configuración de minikube y kubectl
-* Trabajando con Pods y ReplicaSet
-* Trabajando con Deployments y Services
+* [Instalación y configuración de minikube y kubectl](2526/u4/k8s1.md)
+* [Trabajando con Pods](2526/u4/k8s2.md)
+* [Trabajando con ReplicaSet](2526/u4/k8s3.md)
+* [Trabajando con Deployments](2526/u4/k8s4.md)
+* [Actualización de un Deployment (rollout y rollback)](2526/u4/k8s5.md)
+* Acceso a las aplicaciones
 * Despliegues parametrizados
 * Almacenamiento en Kubernetes
 * Instalación de un CMS con Helm
 
--->
+
