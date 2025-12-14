@@ -14,3 +14,11 @@ title: "Cambios en Implantación de aplicaciones web para el curso 25-26"
 * [Despliegue de aplicaciones Django con uWSGI](3_python/d4.html)
 * [Práctica: Instalación/migración de aplicaciones web Python](3_python/practica.html)
 
+## Unidad 4: Despliegue de aplicaciones web con Docker
+
+* [Creación de imágenes a partir de un Dockerfile](4_docker/docker1.html)
+* [Ejemplo 1: Construcción de imágenes con una página estática](4_docker/docker2.html)
+* [Ejemplo 2: Construcción de imágenes con una una aplicación PHP](4_docker/docker3.html)
+* [Ejemplo 3: Construcción de imágenes con una una aplicación Python](4_docker/docker4.html)
+* [Ejemplo 4: Construcción de imágenes configurables con variables de entorno](4_docker/docker5.html)
+* [Practica: Despliegue de aplicaciones web con Docker](4_docker/practica.html)
