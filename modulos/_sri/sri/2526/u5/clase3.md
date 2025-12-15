@@ -27,7 +27,6 @@ Por seguridad, sólo debemos aceptar transferencias de zonas hacía los esclavos
 
 Modificamos la definición de las zona en el servidor DNS maestro. Modificamos el fichero `/etc/bind/named.conf.local`:
 
-	include "/etc/bind/zones.rfc1918";
 	zone "tunombre.org" {
 		type master;
 		file "db.tunombre.org";
