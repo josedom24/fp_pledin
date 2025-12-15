@@ -27,3 +27,7 @@ title: "Cambios en Implantación de aplicaciones web para el curso 25-26"
 
 * [Teoría](pdf/introduccion_docker_ies.pdf)
 * [Instalación de Jenkins](5_icdc/icdc1.html)
+* [Introducción a los Pipelines de Jenkins](5_icdc/icdc2.html)
+* [Instalación de docker como runner de Jenkins](5_icdc/icdc3.html)
+* [Ejemplo 1: Corrector ortográfico de documentos markdown (test)](5_icdc/icdc4.html)
+* [Ejemplo 2: Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](5_icdc/icdc5.html)

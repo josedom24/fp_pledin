@@ -6,7 +6,6 @@ En Jenkins se pueden realizar distintos tipos de tareas automatizadas. Pero noso
 
 Un **Pipeline** es una secuencia de tareas automatizadas que definen el ciclo de vida de la aplicación de nuestro flujo de integración/entrega/despliegue continuo. Podemos decir que un **Pipeline** es un conjunto de instrucciones del proceso que siga una aplicación desde el repositorio de control de versiones hasta que llega a los usuarios.
 
-![pipelines](img/pipelines.png)
 
 * **Disparadores**: Motivo por el cual se comienza la ejecución de tareas automáticas. Puede ser por varios motivos: push en un repositorio github, ejecución cada cierto tiempo, finalización de otra tarea,...
 * **Stage**: Son las etapas lógicas en las que se dividen los flujos de trabajo de Jenkins. Es una práctica recomendada dividir nuestro flujo de trabajo en etapas ya que nos ayudará a organizar nuestros pipelines en fases. Ejemplos de fases: build, test, deploy,...
@@ -18,7 +17,6 @@ Un **Pipeline** es una secuencia de tareas automatizadas que definen el ciclo de
 
 Creamos una **Nueva Tarea**, y le ponemos un nombre y elegimos el tipo **Pipeline**:
 
-![pipe](img/pipe1.png)
 
 En el apartado **Pipeline**, escribimos nuestro primer pipeline:
 
@@ -45,14 +43,10 @@ pipeline {
 }
 ```
 
-![pipe](img/pipe2.png)
 
 Le damos a **Guardar** y ya podemos **Construir ahora** para ejecutar el pipeline y construir un **Build**:
 
-![pipe](img/pipe4.png)
-
 Y si vemos la **Console Output** vemos la salida del **build**:
 
-![pipe](img/pipe5.png)
 
 -
