@@ -71,7 +71,7 @@ Podemos crear varios tipos de credenciales: usuario y contraseña, credenciales 
 Para crear la credencial: 
 
 * **Adminitación** -> **Credentials** --> **Global** -> **Add Credentials**
-* **Kind**: Secret TEST
+* **Kind**: Secret text
 * **Secret**: Tu token
 * **ID**: SURGE_TOKEN
 

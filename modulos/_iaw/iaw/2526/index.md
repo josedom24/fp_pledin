@@ -31,3 +31,8 @@ title: "Cambios en Implantación de aplicaciones web para el curso 25-26"
 * [Instalación de docker como runner de Jenkins](5_icdc/icdc3.html)
 * [Ejemplo 1: Corrector ortográfico de documentos markdown (test)](5_icdc/icdc4.html)
 * [Ejemplo 2: Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](5_icdc/icdc5.html)
+* [Tests en la aplicación tutorial Django](5_icdc/test_tutorial_django.html)
+* [Ejemplo 3: Integración continua de aplicación django (Test)](5_icdc/icdc6.html)
+* [Creación, testeo y publicación de imágenes docker desde Jenkins](5_icdc/icdc7.html)
+* [Ejecución de un pipeline en varios runner](5_icdc/icdc8.html)
+* [Práctica: IC/DC con Jenkins](5_icdc/practica.html)
