@@ -46,10 +46,8 @@ title: "Infraestructura virtual (2025-2026)"
 * [Trabajando con Pods](2526/u4/k8s2.html)
 * [Trabajando con ReplicaSet](2526/u4/k8s3.html)
 * [Trabajando con Deployments](2526/u4/k8s4.html)
-* [Actualización de un Deployment (rollout y rollback)](2526/u4/k8s5.html)
-* [Acceso a las aplicaciones: Services](2526/u4/k8s6.html)
-* [Acceso a las aplicaciones: DNS y ingress](2526/u4/k8s7.html)
-* [Despliegues parametrizados: Variables de entorno, ConfigMaps y Secretes](2526/u4/k8s8.html)
+* [Acceso a las aplicaciones](2526/u4/k8s5.html)
+* [Despliegues parametrizados:](2526/u4/k8s6.html)
 * Almacenamiento en Kubernetes
 * Instalación de un CMS con Helm
 
