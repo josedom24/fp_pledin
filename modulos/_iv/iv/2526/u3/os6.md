@@ -124,12 +124,14 @@ openstack port set --disable-port-security --no-security-group port_maquina2
   
   * Crea una red NAT con DHCP, la puedes llamar red1.
   * Crea una red interna sin DHCP y deshabilitando la puerta de enlace, la puedes llamar **red2**.
-  * Crea una instancia **mauqina-router** conectada a esas dos redes, ten en cuenta que sería bueno que la interfaz conectada  a la **red1** sea la primera dirección (fíjate en el diagrama).
+  * Crea una instancia **maquina-router** conectada a esas dos redes, ten en cuenta que sería bueno que la interfaz conectada  a la **red2** sea la primera dirección (fíjate en el diagrama). La interfaz conectada a la **red1** puede tener cualquier IP.
   * Crea una instancia en la **red2**, recuerda que debes configurarla usando el **config-drive**, ya que no tiene DHCP.
-  * Como la red tiene deshabilitada la puerta de enlace, la **maquina2** no la tiene configurada. Entra en la máquina y configura manualmente la puesta de enlace en netplan.
+  * Como la red tiene deshabilitada la puerta de enlace, la **maquina2** no la tiene configurada. Entra en la máquina y configura manualmente la puerta de enlace en netplan.
   * Deshabilita los grupos de seguridad de todas las interfaces de las dos máquinas.
   * Configura el router/nat de forma persistente en **maquina-router**.
   * Comprueba que funciona en la **maquina2**.
+
+3. ¿Podemos asociar una IP flotante a **máquina2**? ¿Por qué?
 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
