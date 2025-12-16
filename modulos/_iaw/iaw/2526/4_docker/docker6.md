@@ -1,5 +1,5 @@
 ---
-title: Ejemplo 5: Construcción de imágenes configurables con variables de entorno (Python)
+title: "Ejemplo 5: Construcción de imágenes configurables con variables de entorno (Python)"
 ---
 
 En este documento se explica cómo crear una **imagen Docker sencilla** de una aplicación Django (*Guestbook*) [https://github.com/josedom24/guestbook_django](https://github.com/josedom24/guestbook_django) que utiliza **MariaDB** como base de datos. En el fichero `requirements.txt` tenemos definido la librería `mysqlclient` para que la aplicación pueda acceder a la base de datos.
