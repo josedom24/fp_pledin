@@ -1,5 +1,5 @@
 ---
-title: "Ejemplo 4: Construcción de imágenes configurables con variables de entorno"
+title: "Ejemplo 4: Construcción de imágenes configurables con variables de entorno (PHP)"
 ---
 
 En este ejemplo vamos a construir una imagen de una aplicación PHP que necesita conectarse a una base de datos MariaDB para leer información. Para ello, construiremos la imagen de forma que la configuración de acceso a la base de datos se realice mediante **variables de entorno**, lo que permitirá reutilizar la misma imagen en distintos entornos sin necesidad de modificarla.

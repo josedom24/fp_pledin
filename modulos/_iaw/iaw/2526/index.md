@@ -20,7 +20,8 @@ title: "Cambios en Implantación de aplicaciones web para el curso 25-26"
 * [Ejemplo 1: Construcción de imágenes con una página estática](4_docker/docker2.html)
 * [Ejemplo 2: Construcción de imágenes con una una aplicación PHP](4_docker/docker3.html)
 * [Ejemplo 3: Construcción de imágenes con una una aplicación Python](4_docker/docker4.html)
-* [Ejemplo 4: Construcción de imágenes configurables con variables de entorno](4_docker/docker5.html)
+* [Ejemplo 4: Construcción de imágenes configurables con variables de entorno (PHP)](4_docker/docker5.html)
+* [Ejemplo 5: Construcción de imágenes configurables con variables de entorno (Python)](4_docker/docker6.html)
 * [Practica: Despliegue de aplicaciones web con Docker](4_docker/practica.html)
 
 ## Unidad 5: Introducción a la integración continúa y despliegue continuoPermalink
