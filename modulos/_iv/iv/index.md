@@ -49,7 +49,7 @@ title: "Infraestructura virtual (2025-2026)"
 * [Actualización de un Deployment (rollout y rollback)](2526/u4/k8s5.html)
 * [Acceso a las aplicaciones: Services](2526/u4/k8s6.html)
 * [Acceso a las aplicaciones: DNS y ingress](2526/u4/k8s7.html)
-* Despliegues parametrizados
+* [Despliegues parametrizados: Variables de entorno, ConfigMaps y Secretes](2526/u4/k8s8.html)
 * Almacenamiento en Kubernetes
 * Instalación de un CMS con Helm
 
