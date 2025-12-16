@@ -68,7 +68,7 @@ Tienes que tener en cuenta los siguientes aspectos:
 * La aplicación debe guardar los datos en una base de datos mariadb persistente.
 * La aplicación se podrá configurar para indicar los parámetros de conexión a la base de datos: usuario, contraseña, host y base de datos.
 * Durante la construcción de la imagen se deberá clonar tu fork del repositorio para copiarlo al contenedor durante su construcción.
-* La aplicación deberá tener creado un usuario administrador para el acceso.
+* La aplicación deberá tener creado un usuario administrador para el acces, se deberán crear las variables de entornos necesarias como vimos en el ejemplo 5.
 
 {% capture notice-text %}
 1. Crea una imagen docker para poder desplegar un contenedor con la aplicación. La imagen la puedes hacer desde una imagen base o desde la imagen oficial de python.
