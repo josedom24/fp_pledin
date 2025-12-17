@@ -43,7 +43,16 @@ title: "Servicios de Red e Internet (2025-2026)"
 ## Unidad 6: Servidor de correo electrónico
 
 * Introducción al sistema de correo electrónico
-* Servidor de correo en los servidores de clase
+* Instalación y configuración básica de postfix
+* Caso 1:  Envío local, entre usuarios del mismo servidor
+* Caso 2a: Envío de correo desde usuarios del servidor a correos de internet
+* Técnicas para asegurar que el correo llegue a su destino
+* Caso 2b: Envío de correo a través de un servidor relay en la red local
+* Caso 3: Recibir correos desde internet a usuarios del servidor
+* Soluciones al problema del spam
+* Caso 4: Recepción de correo electrónico usando nuestro servidor de correos
+* Caso 5: Envío de correo electrónico usando nuestro servidor de correos
+
 * Servidores satélites, alias y redirecciones
 * Gestión de correos desde el servidor
 * Gestión de correos desde un cliente
