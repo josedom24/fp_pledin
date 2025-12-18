@@ -50,4 +50,3 @@ debian@maquina:~$ sudo journalctl -u postfix
 
 Como se observa, el correo ha sido reenviado correctamente al servidor relay de la red local.
 
-

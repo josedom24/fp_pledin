@@ -238,3 +238,10 @@ _dmarc.gonzalonazareno.org. 0 IN TXT "v=DMARC1; p=quarantine; adkim=r; aspf=r;"
 La combinación de estos tres mecanismos es esencial para garantizar que el correo enviado desde nuestro dominio llegue a destino y no sea rechazado o clasificado como spam.
 
 
+{% capture notice-text %}
+## Práctica 1/2
+
+Ejercicio 1: Envío de correos
+
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

@@ -81,3 +81,11 @@ Además de utilizar clientes de correo tradicionales, también es posible accede
 * SquirrelMail
 
 Estas aplicaciones permiten acceder al correo desde un navegador web utilizando IMAP como protocolo de acceso.
+
+{% capture notice-text %}
+## Práctica 2/2
+
+
+
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

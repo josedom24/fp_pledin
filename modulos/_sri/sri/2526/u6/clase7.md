@@ -172,3 +172,10 @@ Las **listas grises** (*greylisting*) consisten en rechazar temporalmente el pri
 
 Esta técnica permite reducir el spam sin analizar el contenido del mensaje, aunque introduce un pequeño retraso en la entrega de correos legítimos.
 
+{% capture notice-text %}
+## Práctica 1/2
+
+Ejercicio 2: Recibir correos
+
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>

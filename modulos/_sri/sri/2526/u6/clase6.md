@@ -96,3 +96,13 @@ Cada vez que se modifica el fichero `/etc/aliases` hay que ejecutar la instrucci
 ### Redirecciones
 
 Una redirección se utiliza para enviar el correo que llegue a un usuario a una cuenta de correo exterior. Para usuarios reales las redirecciones se definen en el fichero `~/.forward` y el formato de este fichero es simplemente un listado de cuentas de correo a las que se quiere redirigir el correo.
+
+
+
+{% capture notice-text %}
+## Taller 2
+
+Modificado
+
+
+{% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
