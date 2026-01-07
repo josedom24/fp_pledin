@@ -101,7 +101,7 @@ No utilizar la etiqueta `latest` al indicar la imagen base, ya que está va camb
 
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
-## # Distribución de imágenes
+## Distribución de imágenes
 
 Una vez que hemos creado nuestra imagen personalizada, es la hora de distribuirla para desplegarla en el entorno de producción. Para ello vamos a tener varias posibilidades:
 
@@ -111,7 +111,7 @@ Una vez que hemos creado nuestra imagen personalizada, es la hora de distribuirl
 
 En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la tercera se limita a copiar el sistema de ficheros sin tener en cuenta la información de las imágenes de las que deriva el contenedor (capas, imagen de origen, autor etc..) y además si tenemos volúmenes o bind mounts montados los obviará.
 
-## Distribución a partir de un fichero
+### Distribución a partir de un fichero
 
 1. Guardar esa imagen en un archivo .tar usando el comando `docker save`:
 
@@ -129,7 +129,7 @@ En este curso nos vamos a ocupar  únicamente de las dos primeras ya que la terc
     Loaded image: josedom24/myapache2:v1
     ```
 
-## Distribución usando Docker Hub
+### Distribución usando Docker Hub
 
 1. Autentificarme en Docker Hub usando el comando `docker login`.
 
