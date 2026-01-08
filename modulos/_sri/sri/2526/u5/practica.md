@@ -31,7 +31,7 @@ Hay que tener en cuenta los siguientes aspectos:
     * Una resolución de `bd`.
     * Un resolución inversa de IP fija en cada una de las redes.
 4. Desde `ra` entrega la salida de `ping horus` y `ssh anubis` para comprobar que funcionan los nombres cortos en la resolución.
-
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Delegación de la zona
 
