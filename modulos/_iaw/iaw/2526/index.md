@@ -27,6 +27,9 @@ title: "Cambios en Implantación de aplicaciones web para el curso 25-26"
 ## Unidad 5: Introducción a la integración continúa y despliegue continuoPermalink
 
 * [Teoría](pdf/introduccion_docker_ies.pdf)
+* [Introducción a GitHub Actions](5_icdc/github1.html)
+* [Ejercicio 1: GitHub Actions - Corrector ortográfico de documentos markdown (test)](5_icdc/github2.html)
+* [Ejercicio 2: GitHub Actions - Comprobación de HTML5 válido y despliegue en surge.sh (test y deploy)](5_icdc/github3.html)
 * [Instalación de Jenkins](5_icdc/icdc1.html)
 * [Introducción a los Pipelines de Jenkins](5_icdc/icdc2.html)
 * [Instalación de docker como runner de Jenkins](5_icdc/icdc3.html)
