@@ -59,7 +59,7 @@ Instala un servidor web en **anubis**. Configura el DNS de forma correcta para q
 ## Entrega
 
 1. Entrega el resultado de la consulta a `www.tunombre.gonzalonazareno.org`desde el exterior preguntando a nuestro servidor DNS `172.22.0.1`.
-2. Entrega el resultado de la consulta a `www.tunombre.gonzalonazareno.org`desde una máquina interna.
+2. Entrega el resultado de la consulta a `www.tunombre.gonzalonazareno.org` desde una máquina interna.
 3. Realiza una consulta a tu DNS preguntando por el nombre de un dns de un compañero, para comprobar si se está comportando como DNS fordward/caché.
 4. Entrega una captura de pantalla accediendo a `www.tunombre.gonzalonazareno.org` donde se vea la página web desde  exterior y desde el interior.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
