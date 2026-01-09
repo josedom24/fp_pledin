@@ -1,5 +1,5 @@
 ---
-tittle: "Introducción a GitHub Actions"
+title: "Introducción a GitHub Actions"
 ---
 
 **GitHub Actions** es una herramienta integrada en **GitHub** que permite **automatizar tareas** dentro de un repositorio. Estas tareas pueden ejecutarse automáticamente cuando ocurre un evento, como subir código o crear una rama.
