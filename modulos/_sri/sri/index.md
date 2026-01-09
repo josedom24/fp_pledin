@@ -37,7 +37,8 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 2: Instalación y configuración del servidor bind9 en nuestra red local](2526/u5/clase2.html)
 * [Clase 3: Instalación y configuración de un servidor DNS esclavo](2526/u5/clase3.html)
 * [Clase 4: Delegación de subdominios con bind9](2526/u5/clase4.html)
-
+* [Clase 5: Vistas en bind](2526/u5/clase5.html)
+* [Práctica protocolo DNS](2526/u5/practica.html)
 
 <!--
 ## Unidad 6: Servidor de correo electrónico

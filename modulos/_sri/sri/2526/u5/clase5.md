@@ -1,5 +1,5 @@
 ---
-tittle: Vistas en bind9
+tittle: Clase 5: Vistas en bind9
 ---
 
 Antes de explicas las vistas, vamos a repasar como se controla el acceso a nuestro DNS.
