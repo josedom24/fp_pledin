@@ -9,7 +9,7 @@ Imaginemos que estamos escribiendo documentos markdown y lo guardamos en un repo
 Hasta ahora al definir un pipeline lo hemos escrito directamente en la configuración. Otra forma de hacerlo es tener definido el pipeline en un fichero llamado `Jenkinsfile` que estará en un repositorio. Al crear el pipeline lo indicaremos de la siguiente forma:
 
 * **Definition** -> Pipeline script from SCM
-* **SCM** -> Fit
+* **SCM** -> Git
 * **Repository URL** -> https://github.com/josedom24/ic-diccionario
 * **Branch Specifier** -> Asegúrate de tener el nombre de la rama bien (si es **main** la tendrás que cambiar).
 
