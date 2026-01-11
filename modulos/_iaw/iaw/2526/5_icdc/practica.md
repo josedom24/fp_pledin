@@ -10,7 +10,7 @@ Vamos a construir el Pipeline en varias fases:
 
 ## Ejercicio 1: Construcción de una imagen docker
 
-Partimos del pipeline que hemos desarrollado en el [Taller 3: Integración continua de aplicación django (Test)](taller3.html), donde hemos automatizado el test de la aplicación.
+Partimos del pipeline que hemos desarrollado en el [[Ejemplo 3: Integración continua de aplicación django (Test)](icdc6.html), donde hemos automatizado el test de la aplicación.
 
 Modifica el pipeline para que después de hacer el test sobre la aplicación, genere una imagen docker. tienes que tener en cuenta que los pasos para generar la imagen lo tienes que realizar en la máquina donde está instalado Jenkins. Tendrás que añadir las siguientes acciones:
 
@@ -18,7 +18,7 @@ Modifica el pipeline para que después de hacer el test sobre la aplicación, ge
 2. Subir la imagen a tu cuenta de Docker Hub.
 3. Borrar la imagen que se ha creado.
 
-Por lo tanto tienes que estudiar el apartado [Ejecución de un pipeline en varios runner](jenkins/runner.html) para ejecutar el pipeline en dos runner:
+Por lo tanto tienes que estudiar el apartado [Ejecución de un pipeline en varios runner](icdc8,html) para ejecutar el pipeline en dos runner:
 
 * En el contenedor docker a partir de la imagen `python:3` los pasos del taller 3.
 * En la máquina de Jenkins los pasos de este ejercicio.
