@@ -43,7 +43,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 <!--
 ## Unidad 6: Servidor de correo electrónico
 
-* Introducción al sistema de correo electrónico
+* [Introducción al sistema de correo electrónico](pdf/correo.pdf)
 * [Instalación y configuración básica de postfix](2526/u6/clase1.html)
 * [Caso 1:  Envío local, entre usuarios del mismo servidor](2526/u6/clase2.html)
 * [Caso 2a: Envío de correo desde usuarios del servidor a correos de internet](2526/u6/clase3.html)

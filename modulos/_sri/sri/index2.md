@@ -2,6 +2,20 @@
 title: "Servicios de Red e Internet + HLC (2024-2025)"
 ---
 
+## Unidad 6: Servidor de correo electrónico
+
+* [Introducción al sistema de correo electrónico](pdf/correo.pdf)
+* [Instalación y configuración básica de postfix](2526/u6/clase1.html)
+* [Caso 1:  Envío local, entre usuarios del mismo servidor](2526/u6/clase2.html)
+* [Caso 2a: Envío de correo desde usuarios del servidor a correos de internet](2526/u6/clase3.html)
+* [Técnicas para asegurar que el correo llegue a su destino](2526/u6/clase4.html)
+* [Caso 2b: Envío de correo a través de un servidor relay en la red local](2526/u6/clase5.html)
+* [Caso 3: Recibir correos desde internet a usuarios del servidor](2526/u6/clase6.html)
+* [Soluciones al problema del spam](2526/u6/clase7.html)
+* [Caso 4: Recepción de correo electrónico usando nuestro servidor de correos](2526/u6/clase8.html)
+* [Caso 5: Envío de correo electrónico usando nuestro servidor de correos](2526/u6/clase9.html)
+
+
 ## Unidad 8: Kubernetes
 
 * [Teoría](https://github.com/josedom24/presentaciones/raw/main/servicios/kubernetes.pdf)
