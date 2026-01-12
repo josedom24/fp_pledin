@@ -26,9 +26,7 @@ Hay que tener en cuenta los siguientes aspectos:
 2. Entrega la definición de las vistas y de las zonas.
 3. Entrega el resultado de las siguientes consultas desde **horus**:
     * El servidor DNS con autoridad sobre la zona del dominio `tu_nombre.gonzalonazareno.org`.
-    * La dirección IP de `ra`.
-    * Una resolución de `www`.
-    * Una resolución de `bd`.
+    * La dirección IP de `ra`, `isis` y `anubis`.
     * Un resolución inversa de IP fija en cada una de las redes.
 4. Desde `ra` entrega la salida de `ping horus` y `ssh anubis` para comprobar que funcionan los nombres cortos en la resolución.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
