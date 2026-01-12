@@ -44,8 +44,6 @@ view interna {
                 type master;
                 file "db.0.0.10";
         };
-        include "/etc/bind/zones.rfc1918";
-        include "/etc/bind/named.conf.default-zones";
 }; 
 ```
 ## Definición de las vistas. Vista externa.
@@ -66,8 +64,6 @@ view externa {
                 type master;
                 file "db.22.172";
         };  
-        include "/etc/bind/zones.rfc1918";
-        include "/etc/bind/named.conf.default-zones";
 };
 ```
 
