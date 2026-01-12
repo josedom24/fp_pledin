@@ -27,6 +27,15 @@ En este ejemplo tenemos dos vistas:
 
 ## Definición de las vistas. Vista interna.
 
+La regla principal es que deben declararse **todas** las zonas en todas las vistas. Para ello, eitmos el fichero `/etc/bind/named.conf` y comentamos la última línea:
+
+```
+include "/etc/bind/named.conf.options";
+include "/etc/bind/named.conf.local";
+//include "/etc/bind/named.conf.root-hints";
+```
+Y esa línea la tendremos que indicar en cada vista.
+
 Fichero `etc/bind/named.conf.local`:
 
 ```
@@ -44,6 +53,8 @@ view interna {
                 type master;
                 file "db.0.0.10";
         };
+    include "/etc/bind/named.conf.root-hints";
+
 }; 
 ```
 ## Definición de las vistas. Vista externa.
@@ -64,6 +75,8 @@ view externa {
                 type master;
                 file "db.22.172";
         };  
+    include "/etc/bind/named.conf.root-hints";
+
 };
 ```
 
