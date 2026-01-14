@@ -47,8 +47,8 @@ title: "Infraestructura virtual (2025-2026)"
 * [Trabajando con ReplicaSet](2526/u4/k8s3.html)
 * [Trabajando con Deployments](2526/u4/k8s4.html)
 * [Acceso a las aplicaciones](2526/u4/k8s5.html)
-* [Despliegues parametrizados:](2526/u4/k8s6.html)
-* Almacenamiento en Kubernetes
-* Instalación de un CMS con Helm
+* [Despliegues parametrizados](2526/u4/k8s6.html)
+* [Almacenamiento en Kubernetes](2526/u4/k8s7.html)
+* [Instalación de un CMS con Helm](2526/u4/k8s8.html)
 
 

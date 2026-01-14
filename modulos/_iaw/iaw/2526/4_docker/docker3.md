@@ -2,7 +2,7 @@
 title: "Ejemplo 2: Construcción de imágenes con una una aplicación PHP"
 ---
 
-En este ejemplo vamos a crear una imagen con una página desarrollada con PHP. Vamos a crear dos versiones de la imagen.
+En este ejemplo vamos a crear una imagen con una página desarrollada con PHP. Vamos a crear dos versiones de la imagen. La aplicación la puedes descargar desde este [enlace](https://github.com/josedom24/curso_docker_ies/raw/refs/heads/main/ejemplos/modulo5/ejemplo2/version1/app.zip).
 
 ## Versión 1: Desde una imagen base
 
