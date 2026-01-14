@@ -4,9 +4,9 @@ title: "Practica: Despliegue de aplicaciones web con Docker"
 
 Tienes que elegir entre realizar una imagen de una aplicación web escrita en PHP o en Python:
 
- ## Opción 1: Aplicación PHP
+## Opción 1: Aplicación PHP
 
- Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama Biblioteca([https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql](https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql)).
+Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama Biblioteca([https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql](https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql)).
 
 Queremos crear una imagen Docker para implantar dicha aplicación.
 
@@ -103,4 +103,5 @@ Parametriza el fichero `docker-compose.yaml` y crea dos ficheros distintos `.env
 {% capture notice-text %} 
 * Entrega una captura de pantalla de Docker Hub donde se vea tu imagen subida.
 * Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
+* Entrega un **vídeo** donde demuestres los distintos ejercicios que has hecho e la práctica. Graba la pantalla y ve explicando lo que has realizando y mostrando que funciona.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
