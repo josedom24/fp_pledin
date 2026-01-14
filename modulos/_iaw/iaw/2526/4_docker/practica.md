@@ -76,7 +76,7 @@ Tienes que tener en cuenta los siguientes aspectos:
 3. Una vez probada en el entorno de desarrollo, despliega la aplicación en tu VPS usando Compose y configurando el nginx como proxy inverso para acceder por nombre a la aplicación `https://djangodocker.tudominio.algo`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Puesta en producción de nuestra aplicación
+## Puesta en producción de nuestra aplicación (Para la dos opciones)
 
 * Sube la imagen que has generado a Docker Hub.
 * En tu VPS instala Docker y utilizando el `docker-compose.yaml` para desplegar la aplicación.
@@ -93,7 +93,7 @@ Parametriza el fichero `docker-compose.yaml` y crea dos ficheros distintos `.env
 * Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Modificación de la aplicación
+## Modificación de la aplicación (Para la dos opciones)
 
 * En el entorno de desarrollo vamos a hacer una modificación de la aplicación, para poner tu nombre en la página principal.
 * Vuelve a crear la imagen con la etiqueta `v2`.
