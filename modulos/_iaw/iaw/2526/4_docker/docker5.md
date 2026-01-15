@@ -50,7 +50,7 @@ Algunas consideraciones importantes:
  ?>
 ```
 
-* En el fichero `schema.sql` se encuentran las instrucciones SQL necesarias para crear las tablas de la base de datos. Este fichero será utilizado por el contenedor de MariaDB en el momento de inicializar la base de datos.
+* En el fichero `schema.sql` ([descarga](https://raw.githubusercontent.com/josedom24/curso_docker_ies/refs/heads/main/ejemplos/modulo5/ejemplo4/build/schema.sql)) se encuentran las instrucciones SQL necesarias para crear las tablas de la base de datos. Este fichero será utilizado por el contenedor de MariaDB en el momento de inicializar la base de datos.
 
 ## Configurar nuestra aplicación con variables de entorno
 
@@ -166,10 +166,10 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_DATABASE: usuarios
-      MYSQL_USER: user1
-      MYSQL_PASSWORD: asdasd
-      MYSQL_ROOT_PASSWORD: asdasd
+      MARIADB_DATABASE: usuarios
+      MARIADB_USER: user1
+      MARIADB_PASSWORD: asdasd
+      MARIADB_ROOT_PASSWORD: asdasd
     volumes:
       - mariadb_data:/var/lib/mysql
       - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql

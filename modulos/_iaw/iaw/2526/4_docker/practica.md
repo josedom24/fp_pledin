@@ -4,9 +4,9 @@ title: "Practica: Despliegue de aplicaciones web con Docker"
 
 Tienes que elegir entre realizar una imagen de una aplicación web escrita en PHP o en Python:
 
- ## Opción 1: Aplicación PHP
+## Opción 1: Aplicación PHP
 
- Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama Biblioteca([https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql](https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql)).
+Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama Biblioteca([https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql](https://github.com/VidaInformatico/Sistema-de-biblioteca-basico-php-8-y-mysql)).
 
 Queremos crear una imagen Docker para implantar dicha aplicación.
 
@@ -68,15 +68,15 @@ Tienes que tener en cuenta los siguientes aspectos:
 * La aplicación debe guardar los datos en una base de datos mariadb persistente.
 * La aplicación se podrá configurar para indicar los parámetros de conexión a la base de datos: usuario, contraseña, host y base de datos.
 * Durante la construcción de la imagen se deberá clonar tu fork del repositorio para copiarlo al contenedor durante su construcción.
-* La aplicación deberá tener creado un usuario administrador para el acces, se deberán crear las variables de entornos necesarias como vimos en el ejemplo 5.
+* La aplicación deberá tener creado un usuario administrador para el acceso, se deberán crear las variables de entornos necesarias como vimos en el ejemplo 5.
 
 {% capture notice-text %}
 1. Crea una imagen docker para poder desplegar un contenedor con la aplicación. La imagen la puedes hacer desde una imagen base o desde la imagen oficial de python.
 2. Utiliza Compose para desplegar los contenedores necesarios. Configura los volúmenes que creas necesarios para que la aplicación sea persistente.
-3. Una vez probada en el entorno de desarrollo, despliega la aplicación en tu VPS usando Compose y configurando el nginx como proxy inverso para acceder por nombre a la aplicación `https://djangodocker.tudominio.algo`.
+
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Puesta en producción de nuestra aplicación
+## Puesta en producción de nuestra aplicación (Para la dos opciones)
 
 * Sube la imagen que has generado a Docker Hub.
 * En tu VPS instala Docker y utilizando el `docker-compose.yaml` para desplegar la aplicación.
@@ -93,7 +93,7 @@ Parametriza el fichero `docker-compose.yaml` y crea dos ficheros distintos `.env
 * Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Modificación de la aplicación
+## Modificación de la aplicación (Para la dos opciones)
 
 * En el entorno de desarrollo vamos a hacer una modificación de la aplicación, para poner tu nombre en la página principal.
 * Vuelve a crear la imagen con la etiqueta `v2`.
@@ -103,4 +103,5 @@ Parametriza el fichero `docker-compose.yaml` y crea dos ficheros distintos `.env
 {% capture notice-text %} 
 * Entrega una captura de pantalla de Docker Hub donde se vea tu imagen subida.
 * Entrega una captura de pantalla donde se vea funcionando la aplicación, una vez que te has logueado.
+* Entrega un **vídeo** donde demuestres los distintos ejercicios que has hecho e la práctica. Graba la pantalla y ve explicando lo que has realizando y mostrando que funciona.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>

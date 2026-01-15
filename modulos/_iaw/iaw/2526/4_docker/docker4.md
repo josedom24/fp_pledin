@@ -36,7 +36,7 @@ COPY app .
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
 EXPOSE 8000
-
+RUN python3 manage.py migrate
 CMD python3 manage.py runserver 0.0.0.0:8000
 ```
 
@@ -104,7 +104,7 @@ COPY app .
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
-
+RUN python manage.py migrate
 CMD python manage.py runserver 0.0.0.0:8000
 ```
 
