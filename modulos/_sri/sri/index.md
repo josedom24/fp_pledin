@@ -40,6 +40,18 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Clase 5: Vistas en bind](2526/u5/clase5.html)
 * [Práctica protocolo DNS](2526/u5/practica.html)
 
+## Unidad 6: Introducción al servidor de correo electrónico
+
+* [Introducción al sistema de correo electrónico](pdf/correo.pdf)
+* [Instalación y configuración básica de postfix](2526/u6/clase1.html)
+* [Caso 1:  Envío local, entre usuarios del mismo servidor](2526/u6/clase2.html)
+* [Caso 2: Envío de correo desde usuarios del servidor a correos de internet (desde el escenario de OpenStack)](2526/u6/intro1.html)
+* [Caso 3: Recibir correos desde internet a usuarios del servidor (desde el escenario de OpenStack)](2526/u6/intro2.html)
+
+
+
+
+
 <!--
 ## Unidad 6: Servidor de correo electrónico
 

@@ -32,18 +32,6 @@ title: "Servicios de Red e Internet + HLC (2024-2025)"
 * [Práctica: Kubernetes](8_k8s/practica.html)
 
 
-<!--
-	
-	
-	
-	
-	
-	
-
-
--->
-
-
 
 ## Unidad 7: Servidor de correo electrónico
 
