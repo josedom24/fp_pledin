@@ -15,9 +15,9 @@ Instalamos el cliente de correos mail:
 sudo apt install bsd-mailx
 ```
 
-Ahora envímaos el correo:
+Ahora enviamos el correo:
 
-``
+```
 debian@maquina:~$ mail usuario@localhost
 Subject: Hola
 Esto es una prueba
