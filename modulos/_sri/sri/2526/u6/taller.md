@@ -11,7 +11,7 @@ Utilizando la utilidad `mail` (paquete `bsd-mailx`) manda un correo desde un usu
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. PMuestra el log para asegurarse que se ha enviado el correo.
+1. Muestra el log para asegurarse que se ha enviado el correo.
 2. Captura de pantalla donde se vea la lectura del correo.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>		
@@ -28,7 +28,7 @@ Comprueba las cabeceras del correo que has recibido e indica donde vemos los ser
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. PMuestra el log para asegurarse que se ha enviado el correo.
+1. Muestra el log para asegurarse que se ha enviado el correo.
 2. Captura de pantalla donde se vea la lectura del correo.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>		
@@ -38,7 +38,6 @@ Comprueba las cabeceras del correo que has recibido e indica donde vemos los ser
 
 En este ejercicio debes responder desde tu cuenta de correo personal al correo que recibiste en el ejercicio anterior. Recuerda que para que todo funcione debes indicarle al profesor el nombre de tu dominio para que configure de manera adecuada el parámetro `relay_domains` en `macaco.gonzalonazareno.org`. Además debes configurar de manera adecuada el registro MX de tu servidor DNS.
 
-Muestra el log del sistema donde se comprueba que el correo se ha recibido con éxito.
 
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
