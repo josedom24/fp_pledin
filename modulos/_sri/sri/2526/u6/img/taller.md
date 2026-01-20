@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Servidor de correo en los servidores de clase
+title: "Práctica: Servidor de correo en los servidores de clase"
 ---
 
 
@@ -9,6 +9,15 @@ Instala y configura un servidor de correo en **horus**. El nombre del sistema de
 
 Utilizando la utilidad `mail` (paquete `bsd-mailx`) manda un correo desde un usuario del servidor a otro usuario del servidor. El usuario destinatario debe leer el correo con el mismo programa.
 
+{% capture notice-text %}
+## ¿Qué tienes que entregar?
+
+1. PMuestra el log para asegurarse que se ha enviado el correo.
+2. Captura de pantalla donde se vea la lectura del correo.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>		
+
+
 ## Ejercicio 2: Envío de correo desde usuarios del servidor a correos de internet
 
 Configura tu servidor de correo para que use como relay el servidor de correo de nuestra red `mail.gonzalonazareno.org`. Con la utilidad `mail` envía un correo a tu cuenta personal de gmail, hotmail,... 
@@ -16,6 +25,15 @@ Configura tu servidor de correo para que use como relay el servidor de correo de
 Muestra el log del sistema donde se comprueba que el correo se ha enviado con éxito.
 
 Comprueba las cabeceras del correo que has recibido e indica donde vemos los servidores por los que ha pasado el correo.
+
+{% capture notice-text %}
+## ¿Qué tienes que entregar?
+
+1. PMuestra el log para asegurarse que se ha enviado el correo.
+2. Captura de pantalla donde se vea la lectura del correo.
+
+{% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>		
+
 
 ## Ejercicio 3: Recibir correos desde internet a usuarios del servidor
 
@@ -26,9 +44,7 @@ Muestra el log del sistema donde se comprueba que el correo se ha recibido con �
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. Prueba de funcionamiento del ejercicio1. Se debe mostrar el log para asegurarse que se ha enviado el correo.
-2. Muestra las cabeceras del correo recibido en el ejercicio 2 mostrando las cabeceras donde vemos los servidores por los que ha pasado el correo.
-3. Muestra el log del sistema donde se comprueba que el correo se ha recibido con éxito en el ejercicio 3.
-4. Realiza el ejercicio que os va a plantear el profesor.
+1. Muestra el log del sistema donde se comprueba que el correo se ha recibido con éxito.
+2. Captura de pantalla donde se vea la lectura del correo.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>		
