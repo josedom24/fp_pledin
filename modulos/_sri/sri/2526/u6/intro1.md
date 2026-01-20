@@ -1,4 +1,6 @@
-# Caso 2: Envío de correo desde usuarios del servidor a correos de internet (desde el escenario de OpenStack)
+---
+title: "Caso 2: Envío de correo desde usuarios del servidor a correos de internet (desde el escenario de OpenStack)"
+---
 
 ## Desde el aula
 
