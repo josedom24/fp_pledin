@@ -2,7 +2,6 @@
 title: "Práctica: Servidor de correo en los servidores de clase"
 ---
 
-
 ## Ejercicio 1: Envío local, entre usuarios del mismo servidor
 
 Instala y configura un servidor de correo en **horus**. El nombre del sistema de correo será tu nombre de dominio `tunombre.gonzalonazareno.org`.
