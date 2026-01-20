@@ -57,8 +57,6 @@ Dec 17 19:01:21 glpi postfix/qmgr[12221]: 8568C6A46B: removed
 {% capture notice-text %}
 ## Ejercicio 1 taller 1
 
-
-
 {% endcapture %}<div class="notice--warning">{{ notice-text | markdownify }}</div>
 
 
