@@ -86,7 +86,7 @@ Muchos de los servicios que podemos instalar en un servidor manda correos a usua
 
 1. La configuración del cortafuegos en `ra` donde se vea que sólo puede mandar correos nuestro servidor de correos "oficial".
 2. Desde otra máquina, por ejemplo `ra`, con la utilidad `mail` manda un correo al exterior.
-3. Captura de pantalla donde se vea que has revicibido el correo desde `ra.tunombre.gonzalonazareno.org`.
+3. Captura de pantalla donde se vea que has recibido el correo desde `ra.tunombre.gonzalonazareno.org`.
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>	
 
 ## Ejercicio 5: Envío de correos de notificación
