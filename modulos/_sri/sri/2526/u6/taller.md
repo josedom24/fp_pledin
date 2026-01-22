@@ -110,7 +110,7 @@ MAILTO="root@localhost"
 {% capture notice-text %}
 ## ¿Qué tienes que entregar?
 
-1. Ejecuta el servicio manualmente y comprueba que el usuario `root` ha recibido el correo.
+1. Ejecuta el servicio manualmente y entrega la captura de pantalla donde se comprueba que el usuario `root` ha recibido el correo.
 
 {% endcapture %}<div class="notice--info">{{ notice-text | markdownify }}</div>	
 
