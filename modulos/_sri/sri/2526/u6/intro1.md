@@ -44,7 +44,6 @@ Podemos verificar el funcionamiento revisando el log de Postfix en el servidor c
 ```
 debian@maquina:~$ sudo journalctl -u postfix
 ...
-...
 
 ```
 
@@ -70,5 +69,7 @@ En nuestra red local el servidor de correo se llama `horus.tunombre.gonzalonazar
 
 relayhost = horus.tunombre.gonzalonazareno.org
 ```
+
+Para que podamos usar nuestro servidor de correo  desde otros servidores tenemos que darle permiso. Para ello añade en el parámetro `mynetworks` las redes desde las que podemos mandar correos.
 
 De este modo, cualquier correo enviado desde el servidor será reenviado automáticamente al servidor relay, que será el encargado de realizar la entrega final.
