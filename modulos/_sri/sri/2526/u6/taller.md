@@ -57,14 +57,14 @@ En la mayoría de las ocasiones cuando trabajamos con servidores, es necesario q
 En las infraestructuras locales, normalmente sólo se permite enviar correos desde el servidor de correos "oficial". Para simular este comportamiento añade al cortafuegos de `ra` estas reglas:
 
 ```
-# Permitir SMTP solo desde 192.168.0.2 (tráfico que pasa por el router)
-iptables -A FORWARD -p tcp --dport 25 -s 192.168.0.2 -j ACCEPT
-iptables -A FORWARD -p tcp --dport 25 -d 192.168.0.2 -j ACCEPT
+# Permitir SMTP solo desde 192.168.0.3 (tráfico que pasa por el router)
+iptables -A FORWARD -p tcp --dport 25 -s 192.168.0.3 -j ACCEPT
+iptables -A FORWARD -p tcp --dport 25 -d 192.168.0.3 -j ACCEPT
 # Bloquear SMTP para todas las demás máquinas
 iptables -A FORWARD -p tcp --dport 25 -j DROP
 
 # Bloquear intentos de conexión al puerto 25 desde el propio router
-iptables -A OUTPUT -p tcp --dport 25 -d 192.168.0.2 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 25 -d 192.168.0.3 -j ACCEPT
 iptables -A OUTPUT -p tcp --dport 25 -j DROP
 ```
 
