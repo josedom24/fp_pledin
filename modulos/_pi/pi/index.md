@@ -15,3 +15,4 @@ title: "Proyecto intermodular (2025-2026)"
 
 * [Orquestación con Heat en OpenStack](2526/u2/heat.html)
 * [Orquestación con OpenTofu en OpenStack](2526/u2/opentofu.html)
+* [Proyecto 2 - Escenario OpenStack](2526/u2/proyecto.html)
