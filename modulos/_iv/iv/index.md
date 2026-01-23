@@ -50,5 +50,6 @@ title: "Infraestructura virtual (2025-2026)"
 * [Despliegues parametrizados](2526/u4/k8s6.html)
 * [Almacenamiento en Kubernetes](2526/u4/k8s7.html)
 * [Instalación de un CMS con Helm](2526/u4/k8s8.html)
+* [Práctica: Kubernetes](2526/k8s/practica.html)
 
 
