@@ -74,11 +74,11 @@ Esto evita que cualquier máquina a excepción de nuestro servidor de correos pu
 
 Muchos de los servicios que podemos instalar en un servidor manda correos a usuarios del servidor, normalmente al `root`. Para que esto ocurra necesitamos instalar un servidor SMTP en nuestro servidor. En nuestro caso vamos a instalar `postfix`. En la instalación de `postfix` tendrás que tener en cuenta los siguientes aspectos:
 
-* Este servidor de correo va a utilizar como relay a nuestro servidor de correo "oficial" `horus.tunombre..gonzalonazareno.org` que es el único servidor que puede mandar correos.
+* Este servidor de correo va a utilizar como relay a nuestro servidor de correo "oficial" `horus.tunombre.gonzalonazareno.org` que es el único servidor que puede mandar correos.
 * Este servidor no va a recibir correos desde el exterior.
 * Durante la instalación escoge la opción **Satellite system**. En este modo, Postfix **no recibe correo desde la red** y únicamente se encarga de reenviar los mensajes al servidor de correo central.
 * Cuando se indica el nombre del sistema de correo en este tipo de servidor se suele poner **el nombre del equipo**. Por un lado porque así diferenciamos correos que vienen de otro servidor SMTP, y además como normalmente no recibe correos no es necesario hacer ninguna configuración adicional para que los correos lleguen a este servidor.
-* Durante la configuración os preguntará el servidor relay, para rellenar el parámetro `relay_host`, en nuestro caso, `horus.tunombre..gonzalonazareno.org`.
+* Durante la configuración os preguntará el servidor relay, para rellenar el parámetro `relay_host`, en nuestro caso, `horus.tunombre.gonzalonazareno.org`.
 * Para que podamos usar nuestro servidor de correo `horus` desde otros servidores tenemos que darle permiso. Para ello añade en el parámetro `mynetworks` las redes desde las que podemos mandar correos.
 
 {% capture notice-text %}
