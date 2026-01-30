@@ -50,7 +50,7 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Práctica: Servidor de correo en los servidores de clase](2526/u6/taller.html)
 
 
-## Unidad 6: Servidor de correo electrónico
+## Unidad 7: Servidor de correo electrónico
 
 * [Introducción al sistema de correo electrónico](pdf/correo.pdf)
 * [Instalación y configuración básica de postfix](2526/u6/clase1.html)
