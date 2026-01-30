@@ -50,9 +50,6 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Práctica: Servidor de correo en los servidores de clase](2526/u6/taller.html)
 
 
-
-
-<!--
 ## Unidad 6: Servidor de correo electrónico
 
 * [Introducción al sistema de correo electrónico](pdf/correo.pdf)
@@ -66,4 +63,3 @@ title: "Servicios de Red e Internet (2025-2026)"
 * [Caso 4: Recepción de correo electrónico usando nuestro servidor de correos](2526/u6/clase8.html)
 * [Caso 5: Envío de correo electrónico usando nuestro servidor de correos](2526/u6/clase9.html)
 
--->
